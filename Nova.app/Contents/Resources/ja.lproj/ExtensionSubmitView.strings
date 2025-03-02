@@ -1,0 +1,57 @@
+
+/* Class = "NSTextFieldCell"; title = "<<StatusDescription>>"; ObjectID = "4BY-hy-OOc"; */
+"4BY-hy-OOc.title" = "<<StatusDescription>>";
+
+/* Class = "NSTextFieldCell"; title = "<<ErrorDescription>>"; ObjectID = "6gp-KJ-pJI"; */
+"6gp-KJ-pJI.title" = "<<ErrorDescription>>";
+
+/* Class = "NSTextFieldCell"; title = "<<ExtensionIdentifier>>"; ObjectID = "BU4-VV-9yw"; */
+"BU4-VV-9yw.title" = "<<ExtensionIdentifier>>";
+
+/* Class = "NSTextFieldCell"; title = "<<IssueTitle>>"; ObjectID = "ILt-sX-J6N"; */
+"ILt-sX-J6N.title" = "<<IssueTitle>>";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "Na5-fb-zu0"; */
+"Na5-fb-zu0.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Nhu-Tu-GGi"; */
+"Nhu-Tu-GGi.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "<<IssueDescription>>"; ObjectID = "RBu-zB-Rg4"; */
+"RBu-zB-Rg4.title" = "<<IssueDescription>>";
+
+/* Class = "NSTextFieldCell"; title = "<<ExtensionName>>"; ObjectID = "RJi-xZ-EPx"; */
+"RJi-xZ-EPx.title" = "<<ExtensionName>>";
+
+/* Class = "NSTextFieldCell"; title = "<<VersionNumber>>"; ObjectID = "Tv3-ec-vWj"; */
+"Tv3-ec-vWj.title" = "<<VersionNumber>>";
+
+/* Class = "NSTextFieldCell"; title = "Organization:"; ObjectID = "X91-cS-VLl"; */
+"X91-cS-VLl.title" = "ベンダー:";
+
+/* Class = "NSTextFieldCell"; title = "<<ExtensionDescription>>"; ObjectID = "Zrm-of-CTM"; */
+"Zrm-of-CTM.title" = "<<ExtensionDescription>>";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "gDg-MA-fnQ"; */
+"gDg-MA-fnQ.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Ready to Submit"; ObjectID = "iSY-QJ-Xl1"; */
+"iSY-QJ-Xl1.title" = "提出する準備ができました";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "jWl-Zt-Xka"; */
+"jWl-Zt-Xka.title" = "Box";
+
+/* Class = "NSButtonCell"; title = "More Info…"; ObjectID = "jau-oW-x1z"; */
+"jau-oW-x1z.title" = "より詳しい情報…";
+
+/* Class = "NSTextFieldCell"; title = "Version:"; ObjectID = "nVX-C7-ewD"; */
+"nVX-C7-ewD.title" = "バージョン:";
+
+/* Class = "NSTextFieldCell"; title = "<<StatusDescription>>"; ObjectID = "qDc-At-3tq"; */
+"qDc-At-3tq.title" = "<<StatusDescription>>";
+
+/* Class = "NSTextFieldCell"; title = "Identifier:"; ObjectID = "u4Q-fu-1Ag"; */
+"u4Q-fu-1Ag.title" = "識別子";
+
+/* Class = "NSTextFieldCell"; title = "<<Organization>>"; ObjectID = "zhs-9R-69k"; */
+"zhs-9R-69k.title" = "<<Organization>>";

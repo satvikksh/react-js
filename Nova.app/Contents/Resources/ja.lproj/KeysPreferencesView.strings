@@ -1,0 +1,27 @@
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "6qu-BG-vqc"; */
+"6qu-BG-vqc.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "SSH and SFTP connections will also use the default keys stored in ~/.ssh and ~/.ssh/config. Those keys will not be synced with Panic Sync."; ObjectID = "E5M-bP-rSI"; */
+"E5M-bP-rSI.title" = "SSHおよびSFTP接続では~/.sshおよび~/.ssh/configに格納されている認証鍵も使用します。これらの認証鍵はPanic Syncで同期されません。";
+
+/* Class = "NSMenuItem"; title = "Generate Key…"; ObjectID = "EYB-5u-qiV"; */
+"EYB-5u-qiV.title" = "認証鍵を生成…";
+
+/* Class = "NSMenuItem"; title = "Import Keys…"; ObjectID = "KZp-Cf-YHY"; */
+"KZp-Cf-YHY.title" = "認証鍵を読み込む…";
+
+/* Class = "NSButtonCell"; title = "Learn More."; ObjectID = "aW3-aC-pDm"; */
+"aW3-aC-pDm.title" = "より詳しい情報。";
+
+/* Class = "NSTextFieldCell"; title = "Syncable SSH Keys:"; ObjectID = "du1-hz-bJw"; */
+"du1-hz-bJw.title" = "同期可能なSSH認証鍵:";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "qe6-2N-6Cw"; */
+"qe6-2N-6Cw.title" = "Label";
+
+/* Class = "NSButtonCell"; title = "Options…"; ObjectID = "sF6-SP-Tap"; */
+"sF6-SP-Tap.title" = "オプション…";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "yFG-E1-hj6"; */
+"yFG-E1-hj6.title" = "Text Cell";

@@ -1,0 +1,18 @@
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "2XY-6T-QUF"; */
+"2XY-6T-QUF.title" = "Box";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Actions"; ObjectID = "6nd-EJ-x8I"; */
+"6nd-EJ-x8I.placeholderString" = "アクション";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "FUm-0r-CEG"; */
+"FUm-0r-CEG.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "<<⌘>>"; ObjectID = "U0g-FV-22f"; */
+"U0g-FV-22f.title" = "<<⌘>>";
+
+/* Class = "NSTextFieldCell"; title = "<<DescriptiveText>>"; ObjectID = "jq6-oQ-3D8"; */
+"jq6-oQ-3D8.title" = "<<DescriptiveText>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "o5v-ef-MR6"; */
+"o5v-ef-MR6.title" = "<<Name>>";

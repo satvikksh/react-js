@@ -1,0 +1,27 @@
+
+/* Class = "NSMenuItem"; title = "Export Key Bindings…"; ObjectID = "Hek-pG-WLO"; */
+"Hek-pG-WLO.title" = "Tastenzuordnungen exportieren …";
+
+/* Class = "NSTextFieldCell"; title = "No custom key binding sets have been created.\nClick the + button to create one."; ObjectID = "S2l-UO-Jen"; */
+"S2l-UO-Jen.title" = "Es wurden keine eigenen Tastenzuordnungssätze erstellt.\nKlicken Sie auf die +-Taste, um einen zu erstellen.";
+
+/* Class = "NSSegmentedControl"; ibExternalAccessibilityDescription = "remove key binding set"; ObjectID = "X6K-YK-XMG"; */
+"X6K-YK-XMG.ibExternalAccessibilityDescription" = "Tastenzuordnungssatz entfernen";
+
+/* Class = "NSButtonCell"; title = "Done"; ObjectID = "ZLE-qa-hVz"; */
+"ZLE-qa-hVz.title" = "Fertig";
+
+/* Class = "NSSegmentedControl"; ibExternalAccessibilityDescription = "add key binding set"; ObjectID = "bHz-hE-8eT"; */
+"bHz-hE-8eT.ibExternalAccessibilityDescription" = "Tastenzuordnungssatz hinzufügen";
+
+/* Class = "NSMenuItem"; title = "Import Key Bindings…"; ObjectID = "ew5-as-UWg"; */
+"ew5-as-UWg.title" = "Tastenzuordnungen importieren …";
+
+/* Class = "NSSegmentedControl"; ibExternalAccessibilityDescription = "add key binding set"; ObjectID = "hrT-xZ-ASS"; */
+"hrT-xZ-ASS.ibExternalAccessibilityDescription" = "Tastenzuordnungssatz hinzufügen";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "ts3-8t-CIK"; */
+"ts3-8t-CIK.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "x3U-XA-5TF"; */
+"x3U-XA-5TF.title" = "Table View Cell";

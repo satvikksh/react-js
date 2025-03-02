@@ -1,0 +1,9 @@
+{
+    "name": "Task Provider",
+    "extension": "novaextension",
+    "description": "An extension which adds a dynamic tasks provider written in JavaScript.",
+    "rewritablePaths": [
+        "Scripts/main.js"
+    ],
+    "showEntitlements": true
+}

@@ -1,0 +1,24 @@
+
+/* Class = "NSMenuItem"; title = "Disconnect"; ObjectID = "2G8-0u-2zQ"; */
+"2G8-0u-2zQ.title" = "Trennen";
+
+/* Class = "NSMenuItem"; title = "Delete Sends Control-H"; ObjectID = "AlZ-nQ-zyK"; */
+"AlZ-nQ-zyK.title" = "Entf.-Taste sendet ctrl-H";
+
+/* Class = "NSMenuItem"; title = "Start Logging…"; ObjectID = "Ksh-dy-7Wp"; */
+"Ksh-dy-7Wp.title" = "Protokollierung starten …";
+
+/* Class = "NSMenuItem"; title = "Use Option as Meta Key"; ObjectID = "Oe8-YF-iA5"; */
+"Oe8-YF-iA5.title" = "Wahltaste als Meta-Taste verwenden";
+
+/* Class = "NSMenuItem"; title = "Send Mouse Events"; ObjectID = "Xtn-dJ-fRw"; */
+"Xtn-dJ-fRw.title" = "Mausereignisse senden";
+
+/* Class = "NSMenuItem"; title = "Encoding"; ObjectID = "gtU-xf-Eqp"; */
+"gtU-xf-Eqp.title" = "Codierung";
+
+/* Class = "NSMenu"; title = "Encoding"; ObjectID = "ixy-xm-6vv"; */
+"ixy-xm-6vv.title" = "Codierung";
+
+/* Class = "NSMenu"; title = "Terminal"; ObjectID = "lPJ-Gt-gge"; */
+"lPJ-Gt-gge.title" = "Terminal";

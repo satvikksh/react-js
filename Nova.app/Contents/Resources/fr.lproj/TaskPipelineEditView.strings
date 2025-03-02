@@ -1,0 +1,24 @@
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Add action"; ObjectID = "7sb-0S-2Dn"; */
+"7sb-0S-2Dn.ibExternalAccessibilityDescription" = "Ajouter une action";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Add a new action"; ObjectID = "7sb-0S-2Dn"; */
+"7sb-0S-2Dn.ibShadowedToolTip" = "Ajouter une nouvelle action";
+
+/* Class = "NSTextFieldCell"; title = "<<Action>>"; ObjectID = "Dqq-IP-8UE"; */
+"Dqq-IP-8UE.title" = "<<Action>>";
+
+/* Class = "NSTextFieldCell"; title = "<<DeprecationMessage>>"; ObjectID = "Ebx-aU-7x9"; */
+"Ebx-aU-7x9.title" = "<<DeprecationMessage>>";
+
+/* Class = "NSButtonCell"; title = "Build before running"; ObjectID = "Kga-Uj-DqV"; */
+"Kga-Uj-DqV.title" = "Build avant exécution";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "OJN-k6-Ifa"; */
+"OJN-k6-Ifa.title" = "<<Name>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Description>>"; ObjectID = "lUs-vm-ewd"; */
+"lUs-vm-ewd.title" = "<<Description>>";
+
+/* Class = "NSTextFieldCell"; title = "Add and reorder steps to customize the pipeline."; ObjectID = "usV-Al-YXC"; */
+"usV-Al-YXC.title" = "Ajoutez des étapes et réorganisez-les pour personnaliser le pipeline.";

@@ -1,0 +1,12 @@
+diff.change.add {
+    color: rgb(26, 198, 4);
+    background-color: rgba(0, 255, 0, 0.1);
+}
+diff.change.delete {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+diff.change.modify {
+    color: orange;
+    background-color: rgba(255, 128, 0, 0.1);
+}

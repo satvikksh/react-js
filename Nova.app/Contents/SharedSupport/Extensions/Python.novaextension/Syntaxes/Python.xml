@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="python">
+    <meta>
+        <name>Python</name>
+        <type>script</type>
+        <preferred-file-extension>py</preferred-file-extension>
+        <scriptable shebang="#!/usr/bin/env python" />
+    </meta>
+    
+    <detectors>
+        <extension>py</extension>
+        <match-content lines="2" priority="low">\#\s*\-\*\-\s*mode:\s*python\b</match-content>
+        <match-content lines="5" priority="low">^#\s*vi:\s*(syntax|ft)=(python|py)\b</match-content>
+        <match-content lines="2" priority="low">\#\!.*?\b(python(?:\d(?:\.\d)?)?)\b</match-content>
+    </detectors>
+    
+    <indentation>
+        <increase>
+            <expression>(^\s*(class|def|elif|else|match|case|except|finally|for|if|try|with|while|async\s+(def|for|with))\b.*:\s*$)|(\{[^}\"']*$)|(\[[^\]\"']*$)|(\([^)\"']*$)</expression>
+        </increase>
+        <decrease>
+            <expression>(^\s*(elif|else|except|finally)\b.*:[ \t]*$)|(^\s*(\s*/\*.*\*/\s*)*[\}\]\)\\])</expression>
+        </decrease>
+    </indentation>
+    
+    <comments>
+        <single>
+            <expression>#</expression>
+        </single>
+    </comments>
+    
+    <tree-sitter>
+        <highlights />
+        <folds />
+        <symbols />
+    </tree-sitter>
+</syntax>

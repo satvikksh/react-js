@@ -1,0 +1,15 @@
+
+/* Class = "NSButtonCell"; title = "Next"; ObjectID = "1DY-Hw-AEy"; */
+"1DY-Hw-AEy.title" = "Weiter";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "7Nn-Xl-wT8"; */
+"7Nn-Xl-wT8.title" = "Abbrechen";
+
+/* Class = "NSTextFieldCell"; title = "<<ServiceName>>"; ObjectID = "GxI-Ag-PZA"; */
+"GxI-Ag-PZA.title" = "<<ServiceName>>";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "e87-2a-vUH"; */
+"e87-2a-vUH.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Add A Service Account"; ObjectID = "t8H-xW-Ov3"; */
+"t8H-xW-Ov3.title" = "Dienstaccount hinzufügen";

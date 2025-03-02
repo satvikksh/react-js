@@ -1,0 +1,75 @@
+
+/* Class = "NSTextFieldCell"; title = "Grayscale"; ObjectID = "2OF-S1-xv3"; */
+"2OF-S1-xv3.title" = "灰度";
+
+/* Class = "NSTextFieldCell"; title = "Timestamp"; ObjectID = "4Wc-xM-ZuK"; */
+"4Wc-xM-ZuK.title" = "时间戳";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Font Family"; ObjectID = "E7w-oj-U8b"; */
+"E7w-oj-U8b.ibExternalAccessibilityDescription" = "字体系列";
+
+/* Class = "NSTextFieldCell"; placeholderString = "0.0"; ObjectID = "IM2-7i-2Np"; */
+"IM2-7i-2Np.placeholderString" = "0.0";
+
+/* Class = "NSTextFieldCell"; title = "Letter Spacing"; ObjectID = "KdI-J3-IBP"; */
+"KdI-J3-IBP.title" = "字母间距";
+
+/* Class = "NSTextFieldCell"; title = "Printing Frame"; ObjectID = "LdK-mY-Xbb"; */
+"LdK-mY-Xbb.title" = "打印框架";
+
+/* Class = "NSTextFieldCell"; title = "Line Height"; ObjectID = "Qo6-DI-7Gt"; */
+"Qo6-DI-7Gt.title" = "行高";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Font Size"; ObjectID = "US5-CH-SW0"; */
+"US5-CH-SW0.ibExternalAccessibilityDescription" = "字号";
+
+/* Class = "NSMenuItem"; title = "<<Item>>"; ObjectID = "WHt-Be-sBq"; */
+"WHt-Be-sBq.title" = "<<Item>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Font Options"; ObjectID = "XiG-Kl-VUQ"; */
+"XiG-Kl-VUQ.ibExternalAccessibilityDescription" = "字体选项";
+
+/* Class = "NSButtonCell"; title = "Options…"; ObjectID = "fqn-Bl-epj"; */
+"fqn-Bl-epj.title" = "选项…";
+
+/* Class = "NSMenuItem"; title = "<<Family>>"; ObjectID = "l0P-gq-8qO"; */
+"l0P-gq-8qO.title" = "<<Family>>";
+
+/* Class = "NSMenuItem"; title = "<<Style>>"; ObjectID = "mXg-hq-E6H"; */
+"mXg-hq-E6H.title" = "<<Style>>";
+
+/* Class = "NSTextFieldCell"; title = "px"; ObjectID = "mks-Xl-Wdm"; */
+"mks-Xl-Wdm.title" = "px";
+
+/* Class = "NSTextFieldCell"; placeholderString = "1.0"; ObjectID = "oze-3X-JzC"; */
+"oze-3X-JzC.placeholderString" = "1.0";
+
+/* Class = "NSTextFieldCell"; title = "Theme"; ObjectID = "pjo-j4-64d"; */
+"pjo-j4-64d.title" = "主题：";
+
+/* Class = "NSMenuItem"; title = "Date Last Saved"; ObjectID = "qg8-5j-8ID"; */
+"qg8-5j-8ID.title" = "上次保存日期";
+
+/* Class = "NSStepper"; ibExternalAccessibilityDescription = "Font Size"; ObjectID = "qle-uL-nsc"; */
+"qle-uL-nsc.ibExternalAccessibilityDescription" = "字号";
+
+/* Class = "NSTextFieldCell"; title = "Line Numbers"; ObjectID = "uRa-8F-nJq"; */
+"uRa-8F-nJq.title" = "行编号";
+
+/* Class = "NSTextFieldCell"; title = "Font"; ObjectID = "ups-ah-suu"; */
+"ups-ah-suu.title" = "字号：";
+
+/* Class = "NSMenuItem"; title = "<<Item>>"; ObjectID = "xEk-o1-PEI"; */
+"xEk-o1-PEI.title" = "<<Item>>";
+
+/* Class = "NSTextFieldCell"; title = "Full File Path"; ObjectID = "xF1-gh-9O4"; */
+"xF1-gh-9O4.title" = "完整文件路径";
+
+/* Class = "NSMenuItem"; title = "Date Printed"; ObjectID = "xsw-1c-mez"; */
+"xsw-1c-mez.title" = "打印日期";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Font Style"; ObjectID = "yPL-le-vGG"; */
+"yPL-le-vGG.ibExternalAccessibilityDescription" = "字型";
+
+/* Class = "NSTextFieldCell"; title = "Header and Footer"; ObjectID = "yiJ-qt-Av9"; */
+"yiJ-qt-Av9.title" = "页眉和页脚";

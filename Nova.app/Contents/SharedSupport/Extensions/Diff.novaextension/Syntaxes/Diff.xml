@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="diff">
+    <meta>
+        <name>Diff</name>
+        <type>structured</type>
+        <preferred-file-extension>diff</preferred-file-extension>
+    </meta>
+    
+    <detectors>
+        <extension>diff,patch</extension>
+    </detectors>
+    
+    <tree-sitter>
+        <highlights />
+    </tree-sitter>
+</syntax>

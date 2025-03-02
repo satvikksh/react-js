@@ -1,0 +1,75 @@
+
+/* Class = "NSMenu"; title = "Lock Focus to Document"; ObjectID = "4ZY-kr-UGW"; */
+"4ZY-kr-UGW.title" = "Verrouiller le focus sur le document";
+
+/* Class = "NSMenuItem"; title = "Lock Focus to Document"; ObjectID = "6MA-oj-rVf"; */
+"6MA-oj-rVf.title" = "Verrouiller le focus sur le document";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "go back"; ObjectID = "6lT-Mk-uA0"; */
+"6lT-Mk-uA0.ibExternalAccessibilityDescription" = "revenir";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show the previous page"; ObjectID = "6lT-Mk-uA0"; */
+"6lT-Mk-uA0.ibShadowedToolTip" = "Afficher la page précédente";
+
+/* Class = "NSTextFieldCell"; title = "<<ErrorDescription>>"; ObjectID = "BW4-8k-miW"; */
+"BW4-8k-miW.title" = "<<ErrorDescription>>";
+
+/* Class = "NSTextFieldCell"; title = "<<ErrorTitle>"; ObjectID = "M8v-hg-icE"; */
+"M8v-hg-icE.title" = "<<ErrorTitle>";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "address"; ObjectID = "OSw-KX-dHR"; */
+"OSw-KX-dHR.ibExternalAccessibilityDescription" = "adresse";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "go forward"; ObjectID = "QSe-u5-6MO"; */
+"QSe-u5-6MO.ibExternalAccessibilityDescription" = "continuer";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show the next page"; ObjectID = "QSe-u5-6MO"; */
+"QSe-u5-6MO.ibShadowedToolTip" = "Afficher la page suivante";
+
+/* Class = "NSTextFieldCell"; title = "<<Size>>"; ObjectID = "RW6-uI-zMC"; */
+"RW6-uI-zMC.title" = "<<Size>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "lock focus"; ObjectID = "VMC-i5-dCT"; */
+"VMC-i5-dCT.ibExternalAccessibilityDescription" = "verrouiller le focus";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Lock focus to a specific document"; ObjectID = "VMC-i5-dCT"; */
+"VMC-i5-dCT.ibShadowedToolTip" = "Verrouiller le focus sur un document spécifique";
+
+/* Class = "NSMenuItem"; title = "Switch Focus with Current Document"; ObjectID = "YIz-01-Ep1"; */
+"YIz-01-Ep1.title" = "Placer le focus sur le document actuel";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "linked files"; ObjectID = "Z3z-rt-OqM"; */
+"Z3z-rt-OqM.ibExternalAccessibilityDescription" = "fichiers liés";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Open linked files"; ObjectID = "Z3z-rt-OqM"; */
+"Z3z-rt-OqM.ibShadowedToolTip" = "Ouvrir les fichiers liés";
+
+/* Class = "NSMenuItem"; title = "Lock Focus to Custom URL"; ObjectID = "agC-Xv-fbr"; */
+"agC-Xv-fbr.title" = "Verrouiller le focus sur l’URL personnalisée";
+
+/* Class = "NSTextFieldCell"; title = "<<Link>>"; ObjectID = "cDn-ze-tla"; */
+"cDn-ze-tla.title" = "<<Link>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "web inspector"; ObjectID = "eGU-5Y-A8l"; */
+"eGU-5Y-A8l.ibExternalAccessibilityDescription" = "inspecteur web";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Toggle the web inspector"; ObjectID = "eGU-5Y-A8l"; */
+"eGU-5Y-A8l.ibShadowedToolTip" = "Activer/Désactiver l’inspecteur Web";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "view options"; ObjectID = "he5-Jk-nrm"; */
+"he5-Jk-nrm.ibExternalAccessibilityDescription" = "options d’affichage";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show view options"; ObjectID = "he5-Jk-nrm"; */
+"he5-Jk-nrm.ibShadowedToolTip" = "Afficher les options d’affichage";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "reload"; ObjectID = "huz-Zf-zG3"; */
+"huz-Zf-zG3.ibExternalAccessibilityDescription" = "recharger";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Reload the current page"; ObjectID = "huz-Zf-zG3"; */
+"huz-Zf-zG3.ibShadowedToolTip" = "Recharger la page active";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "certificate"; ObjectID = "v06-tF-7Ff"; */
+"v06-tF-7Ff.ibExternalAccessibilityDescription" = "certificat";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show certificate"; ObjectID = "v06-tF-7Ff"; */
+"v06-tF-7Ff.ibShadowedToolTip" = "Afficher le certificat";

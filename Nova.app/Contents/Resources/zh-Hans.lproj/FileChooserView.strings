@@ -1,0 +1,60 @@
+
+/* Class = "NSMenuItem"; title = "Move…"; ObjectID = "9VK-yM-ca7"; */
+"9VK-yM-ca7.title" = "移动…";
+
+/* Class = "NSTextFieldCell"; title = "Connecting…"; ObjectID = "AE5-RO-9v2"; */
+"AE5-RO-9v2.title" = "正在连接…";
+
+/* Class = "NSMenuItem"; title = "Duplicate"; ObjectID = "Eg3-Li-7OX"; */
+"Eg3-Li-7OX.title" = "复制";
+
+/* Class = "NSMenuItem"; title = "Quick Look"; ObjectID = "Grt-9I-eVl"; */
+"Grt-9I-eVl.title" = "快速查看";
+
+/* Class = "NSMenuItem"; title = "Compress"; ObjectID = "LVm-Zw-4dI"; */
+"LVm-Zw-4dI.title" = "压缩";
+
+/* Class = "NSButton"; ibShadowedToolTip = "New Folder"; ObjectID = "Ogy-Gm-5BA"; */
+"Ogy-Gm-5BA.ibShadowedToolTip" = "新建文件夹";
+
+/* Class = "NSMenuItem"; title = "Move to Trash"; ObjectID = "VRg-EY-c5T"; */
+"VRg-EY-c5T.title" = "移到废纸篓";
+
+/* Class = "NSMenuItem"; title = "New Folder"; ObjectID = "W58-P2-YUa"; */
+"W58-P2-YUa.title" = "新建文件夹";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "X71-2Y-Y7I"; */
+"X71-2Y-Y7I.title" = "好";
+
+/* Class = "NSMenuItem"; title = "Copy Relative Path"; ObjectID = "ZKG-uE-8PH"; */
+"ZKG-uE-8PH.title" = "拷贝相对路径";
+
+/* Class = "NSMenuItem"; title = "Copy Path"; ObjectID = "ctP-fJ-zbF"; */
+"ctP-fJ-zbF.title" = "拷贝路径";
+
+/* Class = "NSMenuItem"; title = "Refresh"; ObjectID = "ftN-i7-h5D"; */
+"ftN-i7-h5D.title" = "刷新";
+
+/* Class = "NSMenuItem"; title = "Rename"; ObjectID = "g3L-Pp-p5D"; */
+"g3L-Pp-p5D.title" = "重新命名";
+
+/* Class = "NSMenuItem"; title = "New File"; ObjectID = "ijd-nS-lhy"; */
+"ijd-nS-lhy.title" = "新建文件";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "it2-GI-zmE"; */
+"it2-GI-zmE.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Show Hidden Files"; ObjectID = "l1B-JO-VaY"; */
+"l1B-JO-VaY.title" = "显示已隐藏的文件";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "l1g-uY-f2F"; */
+"l1g-uY-f2F.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "nDj-se-wry"; */
+"nDj-se-wry.title" = "Item 3";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "pkg-an-Dwt"; */
+"pkg-an-Dwt.title" = "取消";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "View Options"; ObjectID = "sz1-Ae-JaZ"; */
+"sz1-Ae-JaZ.ibShadowedToolTip" = "视图选项";

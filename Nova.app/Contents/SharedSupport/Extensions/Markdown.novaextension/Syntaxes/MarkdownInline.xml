@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="markdown_inline" subsyntax="true">
+    <meta>
+        <name>Markdown Inline</name>
+    </meta>
+    
+    <comments>
+        <multiline>
+            <starts-with>
+                <expression>&lt;!--</expression>
+            </starts-with>
+            <ends-with>
+                <expression>--&gt;</expression>
+            </ends-with>
+        </multiline>
+    </comments>
+    
+    <surrounding-pairs>
+        <pair open="{" close="}" />
+        <pair open="[" close="]" />
+        <pair open="(" close=")" />
+        <pair open="&apos;" close="&apos;" />
+        <pair open="&quot;" close="&quot;" />
+        <pair open="`" close="`" />
+        <pair open="*" close="*" />
+        <pair open="_" close="_" />
+        <pair open="~" close="~" />
+        <pair open="“" close="”" />
+        <pair open="‘" close="’" />
+    </surrounding-pairs>
+    
+    <tree-sitter>
+        <highlights path="highlights-inline.scm" />
+        <injections path="injections-inline.scm" />
+    </tree-sitter>
+</syntax>

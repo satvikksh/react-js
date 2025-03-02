@@ -1,0 +1,9 @@
+
+/* Class = "NSButtonCell"; title = "Add Remote Project…"; ObjectID = "P2P-G8-9Ui"; */
+"P2P-G8-9Ui.title" = "Ajouter un projet distant…";
+
+/* Class = "NSButtonCell"; title = "New Project…"; ObjectID = "Zao-g4-XiY"; */
+"Zao-g4-XiY.title" = "Nouveau projet…";
+
+/* Class = "NSButtonCell"; title = "Add Existing Project…"; ObjectID = "jcx-wE-ySm"; */
+"jcx-wE-ySm.title" = "Ajouter un projet existant…";

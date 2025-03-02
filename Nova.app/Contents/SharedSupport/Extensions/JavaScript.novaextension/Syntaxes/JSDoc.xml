@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="jsdoc" subsyntax="true">
+    <meta>
+        <name>JSDoc</name>
+        <type>structured</type>
+    </meta>
+    
+    <detectors />
+    
+    <indentation>
+        <increase>
+            <expression>(\{[^}\"']*$)|(\[[^\]\"']*$)|(\([^)\"']*$)</expression>
+        </increase>
+        <decrease>
+            <expression>^\s*(\s*/\*.*\*/\s*)*[\}\]\)\\]</expression>
+        </decrease>
+    </indentation>
+    
+    <comments>
+        <single>
+            <expression>//</expression>
+        </single>
+        <multiline>
+            <starts-with>
+                <expression>/*</expression>
+            </starts-with>
+            <ends-with>
+                <expression>*/</expression>
+            </ends-with>
+        </multiline>
+    </comments>
+    
+    <autoclosing-pairs>
+        <pair open="{" close="}" />
+        <pair open="[" close="]" />
+        <pair open="(" close=")" />
+        <pair open="&apos;" close="&apos;" notIn="string,regex,comment" />
+        <pair open="&quot;" close="&quot;" notIn="string,regex" />
+        <pair open="`" close="`" notIn="string,regex,comment" />
+        <pair open="“" close="”" notIn="string,regex" />
+        <pair open="‘" close="’" notIn="string,regex,comment" />
+        <pair open="/**" close=" */" notIn="string,regex,comment" />
+    </autoclosing-pairs>
+    
+    <surrounding-pairs>
+        <pair open="{" close="}" />
+        <pair open="[" close="]" />
+        <pair open="(" close=")" />
+        <pair open="&apos;" close="&apos;" />
+        <pair open="&quot;" close="&quot;" />
+        <pair open="`" close="`" />
+        <pair open="“" close="”" />
+        <pair open="‘" close="’" />
+        <pair open="&lt;" close="&gt;" />
+    </surrounding-pairs>
+    
+    <tree-sitter>
+        <highlights path="jsdoc/highlights.scm" />
+    </tree-sitter>
+</syntax>

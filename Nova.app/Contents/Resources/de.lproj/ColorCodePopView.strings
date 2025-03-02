@@ -1,0 +1,159 @@
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Swatch List"; ObjectID = "3hP-sG-GDb"; */
+"3hP-sG-GDb.ibExternalAccessibilityDescription" = "Farbfeldliste";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Hexadecimal"; ObjectID = "4CQ-rJ-nFd"; */
+"4CQ-rJ-nFd.ibExternalAccessibilityDescription" = "Hexadezimal";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "4GU-o3-mEN"; */
+"4GU-o3-mEN.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Rename List…"; ObjectID = "5cJ-5J-fNc"; */
+"5cJ-5J-fNc.title" = "Liste umbenennen …";
+
+/* Class = "NSTextFieldCell"; title = "#"; ObjectID = "5v0-Cn-fBH"; Note = "\"Hexadecimal\" color field single-character abbreviation"; */
+"5v0-Cn-fBH.title" = "#";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Opacity"; ObjectID = "7SA-Q5-Zna"; */
+"7SA-Q5-Zna.ibExternalAccessibilityDescription" = "Deckkraft";
+
+/* Class = "NSMenuItem"; title = "HSB"; ObjectID = "8JX-PI-oWy"; */
+"8JX-PI-oWy.title" = "HSB";
+
+/* Class = "NSTextFieldCell"; title = "%"; ObjectID = "9cf-O1-Bdt"; Note = "\"Opacity\" color channel label single-character abbreviation"; */
+"9cf-O1-Bdt.title" = "%";
+
+/* Class = "NSMenuItem"; title = "RGB Float"; ObjectID = "Am8-4u-3KF"; */
+"Am8-4u-3KF.title" = "RGB Gleitkomma";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Sample Color"; ObjectID = "D7s-yF-vyT"; */
+"D7s-yF-vyT.ibExternalAccessibilityDescription" = "Farbe entnehmen";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Sample a color from the screen"; ObjectID = "D7s-yF-vyT"; */
+"D7s-yF-vyT.ibShadowedToolTip" = "Entnehmen Sie eine Farbe vom Bildschirm.";
+
+/* Class = "NSTextFieldCell"; title = "R"; ObjectID = "GZg-K4-3p3"; Note = "\"Red\" color channel label single-character abbreviation"; */
+"GZg-K4-3p3.title" = "R";
+
+/* Class = "NSMenuItem"; title = "Export…"; ObjectID = "HJ3-1K-cek"; */
+"HJ3-1K-cek.title" = "Exportieren …";
+
+/* Class = "NSView"; ibExternalAccessibilityDescription = "Hue"; ObjectID = "HR4-Kl-foj"; */
+"HR4-Kl-foj.ibExternalAccessibilityDescription" = "Farbton";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Actions"; ObjectID = "Hg5-MP-VWZ"; */
+"Hg5-MP-VWZ.ibExternalAccessibilityDescription" = "Aktionen";
+
+/* Class = "NSMenuItem"; title = "Copy Color as Hex"; ObjectID = "Iuf-Xr-L0E"; */
+"Iuf-Xr-L0E.title" = "Farbe als Hex kopieren";
+
+/* Class = "NSMenuItem"; title = "Move List…"; ObjectID = "Lmp-ub-HYa"; */
+"Lmp-ub-HYa.title" = "Liste bewegen …";
+
+/* Class = "NSButtonCell"; title = "New Project Swatch List"; ObjectID = "MIA-GB-6aH"; */
+"MIA-GB-6aH.title" = "Neue Projektfarbfeldliste";
+
+/* Class = "NSMenuItem"; title = "New Global List…"; ObjectID = "N1V-Yf-AiK"; */
+"N1V-Yf-AiK.title" = "Neue globale Liste …";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Color Space"; ObjectID = "NiF-3B-mx8"; */
+"NiF-3B-mx8.ibExternalAccessibilityDescription" = "Farbraum";
+
+/* Class = "NSMenuItem"; title = "Clamp to sRGB"; ObjectID = "TB9-zU-pkC"; */
+"TB9-zU-pkC.title" = "Auf sRGB beschränken";
+
+/* Class = "NSTextFieldCell"; title = "Swatches"; ObjectID = "Wf7-Hs-qtg"; */
+"Wf7-Hs-qtg.title" = "Farbfelder";
+
+/* Class = "NSMenuItem"; title = "HSL"; ObjectID = "Yzg-TM-VzD"; */
+"Yzg-TM-VzD.title" = "HSL";
+
+/* Class = "NSTextFieldCell"; title = "G"; ObjectID = "Zaq-Gg-iRT"; Note = "\"Green\" color channel label single-character abbreviation"; */
+"Zaq-Gg-iRT.title" = "G";
+
+/* Class = "NSMenuItem"; title = "RGB 8-bit"; ObjectID = "ZnI-V5-xR5"; */
+"ZnI-V5-xR5.title" = "RGB 8 Bit";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Input Format"; ObjectID = "ZrV-rn-sRo"; */
+"ZrV-rn-sRo.ibExternalAccessibilityDescription" = "Eingabeformat";
+
+/* Class = "NSMenuItem"; title = "<<Item>>"; ObjectID = "ZsR-68-EnP"; */
+"ZsR-68-EnP.title" = "<<Item>>";
+
+/* Class = "NSMenuItem"; title = "<<Item>>"; ObjectID = "d4p-CR-ZRd"; */
+"d4p-CR-ZRd.title" = "<<Item>>";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Green"; ObjectID = "dZu-G4-aYN"; */
+"dZu-G4-aYN.ibExternalAccessibilityDescription" = "Grün";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "fHh-g2-5c2"; */
+"fHh-g2-5c2.title" = "<<Name>>";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Red"; ObjectID = "fe4-2f-Ydm"; */
+"fe4-2f-Ydm.ibExternalAccessibilityDescription" = "Rot";
+
+/* Class = "NSTextFieldCell"; title = "B"; ObjectID = "hBd-oU-iwK"; Note = "\"Blue\" color channel label single-character abbreviation"; */
+"hBd-oU-iwK.title" = "B";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Actions"; ObjectID = "hSh-zm-Ma2"; */
+"hSh-zm-Ma2.ibExternalAccessibilityDescription" = "Aktionen";
+
+/* Class = "NSMenuItem"; title = "Duplicate List…"; ObjectID = "hbl-Cs-f5p"; */
+"hbl-Cs-f5p.title" = "Liste duplizieren …";
+
+/* Class = "NSMenuItem"; title = "Import…"; ObjectID = "jNG-kI-CyB"; */
+"jNG-kI-CyB.title" = "Importieren …";
+
+/* Class = "NSView"; ibExternalAccessibilityDescription = "Saturation and Brightness"; ObjectID = "jfO-Fs-OMg"; */
+"jfO-Fs-OMg.ibExternalAccessibilityDescription" = "Sättigung und Helligkeit";
+
+/* Class = "NSMenuItem"; title = "Remove List…"; ObjectID = "jl3-7f-6dD"; */
+"jl3-7f-6dD.title" = "Liste entfernen …";
+
+/* Class = "NSMenuItem"; title = "Rename"; ObjectID = "joh-Ji-QuO"; */
+"joh-Ji-QuO.title" = "Umbenennen";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Blue"; ObjectID = "kp0-8f-V1p"; */
+"kp0-8f-V1p.ibExternalAccessibilityDescription" = "Blau";
+
+/* Class = "NSButtonCell"; title = "New Global Swatch List"; ObjectID = "lUL-PO-uM2"; */
+"lUL-PO-uM2.title" = "Neue globale Farbfeldliste";
+
+/* Class = "NSView"; ibExternalAccessibilityDescription = "Opacity"; ObjectID = "mJ9-Tq-pEo"; */
+"mJ9-Tq-pEo.ibExternalAccessibilityDescription" = "Deckkraft";
+
+/* Class = "NSMenuItem"; title = "<<Item>>"; ObjectID = "mQd-qL-iCI"; */
+"mQd-qL-iCI.title" = "<<Item>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Space>>"; ObjectID = "mpR-vk-NtV"; */
+"mpR-vk-NtV.title" = "<<Space>>";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "(Unnamed)"; ObjectID = "ncG-az-539"; */
+"ncG-az-539.ibShadowedIsNilPlaceholder" = "(Ohne Namen)";
+
+/* Class = "NSMenuItem"; title = "Remove"; ObjectID = "pKx-o7-gBl"; */
+"pKx-o7-gBl.title" = "Entfernen";
+
+/* Class = "NSTextFieldCell"; title = "<<Value>>"; ObjectID = "sC2-Is-i8s"; */
+"sC2-Is-i8s.title" = "<<Value>>";
+
+/* Class = "NSMenuItem"; title = "New Project List…"; ObjectID = "sms-6e-4U1"; */
+"sms-6e-4U1.title" = "Neue Projektliste …";
+
+/* Class = "NSTextFieldCell"; title = "Create swatch lists to organize colors. You can store them in your project, or globally to reuse everywhere."; ObjectID = "uIS-9I-Wp0"; */
+"uIS-9I-Wp0.title" = "Erstellen Sie Farbfeldlisten, um Farben zu organisieren. Sie können sie in Ihrem Projekt oder global speichern, um sie überall wiederzuverwenden.";
+
+/* Class = "NSMenuItem"; title = "Show sRGB Clamp Curve"; ObjectID = "uSZ-Et-HPR"; */
+"uSZ-Et-HPR.title" = "sRGB-Beschränkungskurve anzeigen";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Presentation"; ObjectID = "vMz-sx-ZhJ"; */
+"vMz-sx-ZhJ.ibExternalAccessibilityDescription" = "Darstellung";
+
+/* Class = "NSSegmentedCell"; wi1-Vc-fw4.ibShadowedLabels[0] = "Picker"; ObjectID = "wi1-Vc-fw4"; */
+"wi1-Vc-fw4.ibShadowedLabels[0]" = "Picker";
+
+/* Class = "NSSegmentedCell"; wi1-Vc-fw4.ibShadowedLabels[1] = "Swatches"; ObjectID = "wi1-Vc-fw4"; */
+"wi1-Vc-fw4.ibShadowedLabels[1]" = "Swatches";
+
+/* Class = "NSMenuItem"; title = "New Swatch from Color"; ObjectID = "z4f-mf-7oh"; */
+"z4f-mf-7oh.title" = "Neues Farbfeld von Farbe";

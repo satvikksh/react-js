@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<completions>
+    <!-- "foo" -->
+    <provider>
+        <syntax>lua</syntax>
+        
+        <exclude-selector>string, comment</exclude-selector>
+        
+        <expression>(?:(?&lt;!\.|\:)\b([a-zA-Z_][a-zA-Z0-9_]*))|(?:(?&lt;![a-zA-Z0-9_\.\:]))</expression>
+        
+        <symbols type="function">
+            <behavior>
+                <arguments prefix="(" suffix=")" separator=", " />
+            </behavior>
+        </symbols>
+        <symbols type="struct,protocol,variable,constant,argument" />
+        
+        <identifiers />
+        
+        <set>lua.statements</set>
+        <set>lua.constants</set>
+        <set>lua.stdlib</set>
+    </provider>
+    
+    <!-- ".foo" or ":foo" -->
+    <provider>
+        <syntax>lua</syntax>
+        
+        <exclude-selector>string, comment, value.number</exclude-selector>
+        
+        <trigger>:.</trigger>
+        
+        <expression>(?&lt;=\.|\:)([a-zA-Z_][a-zA-Z0-9_]*)?</expression>
+        
+        <symbols type="function">
+            <behavior>
+                <arguments prefix="(" suffix=")" separator=", " />
+            </behavior>
+        </symbols>
+        <symbols type="property" />
+        
+        <identifiers />
+    </provider>
+    
+    <!-- Statements -->
+    <set name="lua.statements" symbol="statement">
+        <completion string="break" />
+        <completion string="do" />
+        <completion string="then" />
+        <completion string="end" />
+        <completion string="return" />
+        <completion string="else" />
+        <completion string="elseif">
+            <behavior>
+                <append><![CDATA[ ($[condition]) then
+    $[exprs]
+end]]></append>
+            </behavior>
+        </completion>
+        <completion string="for">
+            <behavior>
+                <append><![CDATA[ $[var] in $[iter] do
+    $[exprs]
+end]]></append>
+            </behavior>
+        </completion>
+        <completion string="for">
+            <behavior>
+                <append><![CDATA[ $[expr] do
+    $[exprs]
+end]]></append>
+            </behavior>
+        </completion>
+        <completion string="function">
+            <behavior>
+                <append><![CDATA[ $[name]($[arg, ...])
+    $[exprs]
+end]]></append>
+            </behavior>
+        </completion>
+        <completion string="if">
+            <behavior>
+                <append><![CDATA[ $[condition] then
+    $[exprs]
+end]]></append>
+            </behavior>
+        </completion>
+        <completion string="local">
+            <behavior>
+                <append> $[x]</append>
+            </behavior>
+        </completion>
+        <completion string="repeat">
+            <behavior>
+                <append><![CDATA[
+    $[exprs]
+until $[cond]]]></append>
+            </behavior>
+        </completion>
+        <completion string="require">
+            <behavior>
+                <append> "$[module]"</append>
+            </behavior>
+        </completion>
+        <completion string="while">
+            <behavior>
+                <append><![CDATA[ $[condition] do
+    $[exprs]
+end]]></append>
+            </behavior>
+        </completion>
+    </set>
+    
+    <!-- Constants -->
+    <set name="lua.constants" symbol="constant">
+        <completion string="false" />
+        <completion string="true" />
+        <completion string="nil" />
+    </set>
+    
+    <!-- Standard Library -->
+    <set name="lua.stdlib" symbol="function">
+        <completion string="assert">
+            <behavior>
+                <append>($[v], $[message])</append>
+            </behavior>
+            <description>Raises an error with message as the error object if `v` is false.</description>
+        </completion>
+        <completion string="error">
+            <behavior>
+                <append>($[message], $[level])</append>
+            </behavior>
+            <description>Raises an error with message as the error object.</description>
+        </completion>
+        <completion string="getmetatable">
+            <behavior>
+                <append>($[obj])</append>
+            </behavior>
+            <description>If the object's metatable has a __metatable field, returns the associated value. Otherwise, returns the metatable of the given object. If object does not have a metatable, returns nil.</description>
+        </completion>
+        <completion string="ipairs">
+            <behavior>
+                <append>($[t])</append>
+            </behavior>
+            <description>Returns three values (an iterator function, the table `t`, and 0) to iterate over an enumerated sequence using "for i,v in ipairs(t)".</description>
+        </completion>
+        <completion string="next">
+            <behavior>
+                <append>($[table], $[idx])</append>
+            </behavior>
+            <description>Returns the next index of the table and its associated value. If no index is provided, returns the first index. If called with the last index (or the table is empty), returns nil.</description>
+        </completion>
+        <completion string="pairs">
+            <behavior>
+                <append>($[t])</append>
+            </behavior>
+            <description>Returns three values (the `next` function, the table `t`, and `nil`, to iterate over the key-value pairs of a table using "for k,v in pairs(t)".</description>
+        </completion>
+        <completion string="pcall">
+            <behavior>
+                <append>($[f], $[args…])</append>
+            </behavior>
+            <description>Calls the function f with the given arguments in protected mode, where any error inside `f` is not propagated.</description>
+        </completion>
+        <completion string="print">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+            <description>Receives any number of arguments and prints their values to stdout.</description>
+        </completion>
+        <completion string="rawequal">
+            <behavior>
+                <append>($[v1], $[v2])</append>
+            </behavior>
+            <description>Checks whether `v1` is equal to `v2`, without invoking the `__eq` metamethod.</description>
+        </completion>
+        <completion string="rawget">
+            <behavior>
+                <append>($[table], $[idx])</append>
+            </behavior>
+            <description>Gets the real value of `table[idx]`, without using the `__index` metavalue.</description>
+        </completion>
+        <completion string="rawlen">
+            <behavior>
+                <append>($[v])</append>
+            </behavior>
+            <description>Returns the length of the object `v`, which must be a table or a string, without invoking the `__len` metamethod.</description>
+        </completion>
+        <completion string="rawset">
+            <behavior>
+                <append>($[table], $[idx], $[value])</append>
+            </behavior>
+            <description>Sets the real value of `table[index]`` to value, without using the `__newindex` metavalue.</description>
+        </completion>
+        <completion string="setmetatable">
+            <behavior>
+                <append>($[table], $[metatable])</append>
+            </behavior>
+            <description>Sets the metatable for the given table. If metatable is `nil`, removes the metatable of the given table.</description>
+        </completion>
+        <completion string="tonumber">
+            <behavior>
+                <append>($[e], $[base])</append>
+            </behavior>
+            <description>When called with no `base`, tries to convert its argument to a number. When called with `base`, then `e` must be a string to be interpreted as an integer numeral in that base.</description>
+        </completion>
+        <completion string="tostring">
+            <behavior>
+                <append>($[v])</append>
+            </behavior>
+            <description>Receives a value of any type and converts it to a string in a human-readable format.</description>
+        </completion>
+        <completion string="type">
+            <behavior>
+                <append>($[v])</append>
+            </behavior>
+            <description>Returns the type of its only argument, coded as a string.</description>
+        </completion>
+        <completion string="warn">
+            <behavior>
+                <append>($[msg])</append>
+            </behavior>
+            <description>Emits a warning with a message composed by the concatenation of all its arguments.</description>
+        </completion>
+        <completion string="xpcall">
+            <behavior>
+                <append>($[f], $[msgh], $[args…])</append>
+            </behavior>
+            <description>This function is similar to `pcall`, except that it sets a new message handler `msgh`.</description>
+        </completion>
+    </set>
+</completions>

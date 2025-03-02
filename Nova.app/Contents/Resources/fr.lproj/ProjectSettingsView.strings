@@ -1,0 +1,36 @@
+
+/* Class = "NSButtonCell"; title = "Done"; ObjectID = "0e5-pO-nyF"; */
+"0e5-pO-nyF.title" = "Terminé";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "3KX-hT-QWY"; */
+"3KX-hT-QWY.title" = "Box";
+
+/* Class = "NSMenuItem"; title = "Remove"; ObjectID = "4NL-sl-z5v"; */
+"4NL-sl-z5v.title" = "Supprimer";
+
+/* Class = "NSMenuItem"; title = "Rename"; ObjectID = "9Id-Ny-sQo"; */
+"9Id-Ny-sQo.title" = "Renommer";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "JdI-aG-DJ9"; */
+"JdI-aG-DJ9.title" = "Box";
+
+/* Class = "NSMenuItem"; title = "Duplicate"; ObjectID = "KY8-HL-bTc"; */
+"KY8-HL-bTc.title" = "Dupliquer";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "P0t-fP-aAD"; */
+"P0t-fP-aAD.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Editable Item Name"; ObjectID = "PPR-vU-6si"; */
+"PPR-vU-6si.title" = "Editable Item Name";
+
+/* Class = "NSTextFieldCell"; title = "Header Name"; ObjectID = "Vbx-si-Gyq"; */
+"Vbx-si-Gyq.title" = "Header Name";
+
+/* Class = "NSTextFieldCell"; title = "Item Name"; ObjectID = "cZL-VV-FHB"; */
+"cZL-VV-FHB.title" = "Item Name";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "gHy-BN-XNA"; */
+"gHy-BN-XNA.title" = "Text Cell";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "tPP-BN-kNW"; */
+"tPP-BN-kNW.title" = "Box";

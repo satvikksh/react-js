@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<completions>
+    <!-- (foo -->
+    <provider name="predicates">
+        <syntax>tsq</syntax>
+        
+        <exclude-selector>string, comment</exclude-selector>
+        
+        <trigger>(</trigger>
+        
+        <expression>(?&lt;=\()([a-zA-Z_-][a-zA-Z0-9_-]*)?</expression>
+        
+        <identifiers />
+    </provider>
+    
+    <!-- @foo -->
+    <provider name="predicates">
+        <syntax>tsq</syntax>
+        
+        <exclude-selector>string, comment</exclude-selector>
+        
+        <trigger>@.</trigger>
+        
+        <expression>(?&lt;=@|.)([a-zA-Z_-][a-zA-Z0-9_-]*)?</expression>
+        
+        <identifiers />
+    </provider>
+    
+    <!-- Predicates -->
+    <provider name="predicates">
+        <syntax>tsq</syntax>
+        
+        <exclude-selector>string, comment</exclude-selector>
+        
+        <trigger>#-</trigger>
+        
+        <expression>(?&lt;=\(#)([a-zA-Z0-9_-]+(\?|!)?)?</expression>
+        
+        <set>tsq.predicates</set>
+    </provider>
+    
+    <set name="tsq.predicates" symbol="expression">
+        <!-- Filter Predicates -->
+        <completion string="eq?" availability="10">
+            <behavior>
+                <append> $[capture] $[value…]</append>
+            </behavior>
+            <description>Matches if a capture is equal to one or more other captures or strings.</description>
+        </completion>
+        <completion string="not-eq?" availability="10">
+            <behavior>
+                <append> $[capture] $[value…]</append>
+            </behavior>
+            <description>Matches if a capture is not equal to one or more other captures or strings.</description>
+        </completion>
+        <completion string="any-eq?" availability="12">
+            <behavior>
+                <append> $[capture] $[value…]</append>
+            </behavior>
+            <description>Matches if a quantified capture has any member which is equal to one or more other captures or strings.</description>
+        </completion>
+        <completion string="any-not-eq?" availability="12">
+            <behavior>
+                <append> $[capture] $[value…]</append>
+            </behavior>
+            <description>Matches if a quantified capture has any member which is not equal to one or more other captures or strings.</description>
+        </completion>
+        <completion string="contains?" availability="11">
+            <behavior>
+                <append> $[capture] $[value…]</append>
+            </behavior>
+            <description>Matches if a capture contains one or more other captures or strings.</description>
+        </completion>
+        <completion string="not-contains?" availability="11">
+            <behavior>
+                <append> $[capture] $[value…]</append>
+            </behavior>
+            <description>Matches if a capture does not contain one or more other captures or strings.</description>
+        </completion>
+        <completion string="any-contains?" availability="12">
+            <behavior>
+                <append> $[capture] $[value…]</append>
+            </behavior>
+            <description>Matches if a quantified capture has any member which contains one or more other captures or strings.</description>
+        </completion>
+        <completion string="any-not-contains?" availability="12">
+            <behavior>
+                <append> $[capture] $[value…]</append>
+            </behavior>
+            <description>Matches if a quantified capture has any member which does not contain one or more other captures or strings.</description>
+        </completion>
+        <completion string="match?" availability="10">
+            <behavior>
+                <append> $[capture] $[pattern]</append>
+            </behavior>
+            <description>Matches if a capture matches a regex pattern.</description>
+        </completion>
+        <completion string="not-match?" availability="10">
+            <behavior>
+                <append> $[capture] $[pattern]</append>
+            </behavior>
+            <description>Matches if a capture does not match a regex pattern.</description>
+        </completion>
+        <completion string="any-match?" availability="12">
+            <behavior>
+                <append> $[capture] $[pattern]</append>
+            </behavior>
+            <description>Matches if a quantified capture has any member which matches a regex pattern.</description>
+        </completion>
+        <completion string="any-not-match?" availability="12">
+            <behavior>
+                <append> $[capture] $[pattern]</append>
+            </behavior>
+            <description>Matches if a quantified capture has any member which does not match a regex pattern.</description>
+        </completion>
+        <completion string="has-type?" availability="11">
+            <behavior>
+                <append> $[capture] $[type…]</append>
+            </behavior>
+            <description>Matches if a captured node's type matches one or more specified types.</description>
+        </completion>
+        <completion string="not-has-type?" availability="11">
+            <behavior>
+                <append> $[capture] $[type…]</append>
+            </behavior>
+            <description>Matches if a captured node's type does not match one or more specified types.</description>
+        </completion>
+        <completion string="any-has-type?" availability="12">
+            <behavior>
+                <append> $[capture] $[type…]</append>
+            </behavior>
+            <description>Matches if a quantified capture has any node whose type matches one or more specified types.</description>
+        </completion>
+        <completion string="any-not-has-type?" availability="12">
+            <behavior>
+                <append> $[capture] $[type…]</append>
+            </behavior>
+            <description>Matches if a quantified capture has any node whose type does not match one or more specified types.</description>
+        </completion>
+        <completion string="has-parent?" availability="11">
+            <behavior>
+                <append> $[capture] $[type…]</append>
+            </behavior>
+            <description>Matches if a captured node's parent type matches one or more specified types.</description>
+        </completion>
+        <completion string="not-has-parent?" availability="11">
+            <behavior>
+                <append> $[capture] $[type…]</append>
+            </behavior>
+            <description>Matches if a captured node's parent type does not match one or more specified types.</description>
+        </completion>
+        <completion string="any-has-parent?" availability="12">
+            <behavior>
+                <append> $[capture] $[type…]</append>
+            </behavior>
+            <description>Matches if a quantified capture has any node whose parent type does not match one or more specified types.</description>
+        </completion>
+        <completion string="any-not-has-parent?" availability="12">
+            <behavior>
+                <append> $[capture] $[type…]</append>
+            </behavior>
+            <description>Matches if a quantified capture has any node whose parent type does not match one or more specified types.</description>
+        </completion>
+        <completion string="has-ancestor?" availability="11">
+            <behavior>
+                <append> $[capture] $[type…]</append>
+            </behavior>
+            <description>Matches if a captured node has any ancestor whose type matches one or more specified types.</description>
+        </completion>
+        <completion string="not-has-ancestor?" availability="11">
+            <behavior>
+                <append> $[capture] $[type…]</append>
+            </behavior>
+            <description>Matches if a captured node has any ancestor whose type does not match one or more specified types.</description>
+        </completion>
+        <completion string="any-has-ancestor?" availability="12">
+            <behavior>
+                <append> $[capture] $[type…]</append>
+            </behavior>
+            <description>Matches if a quantified capture has any node which has any ancestor whose type matches one or more specified types.</description>
+        </completion>
+        <completion string="any-not-has-ancestor?" availability="12">
+            <behavior>
+                <append> $[capture] $[type…]</append>
+            </behavior>
+            <description>Matches if a quantified capture has any node which has any ancestor whose type does not match one or more specified types.</description>
+        </completion>
+        <completion string="has-parent-field?" availability="12">
+            <behavior>
+                <append> $[capture] $[field…]</append>
+            </behavior>
+            <description>Matches if a captured node's field within its parent matches one or more specified field names.</description>
+        </completion>
+        <completion string="not-has-parent-field?" availability="12">
+            <behavior>
+                <append> $[capture] $[field…]</append>
+            </behavior>
+            <description>Matches if a captured node's field within its parent does not match one or more specified field names.</description>
+        </completion>
+        <completion string="any-has-parent-field?" availability="12">
+            <behavior>
+                <append> $[capture] $[field…]</append>
+            </behavior>
+            <description>Matches if a quantified capture has any node whose field within its parent matches one or more specified field names.</description>
+        </completion>
+        <completion string="any-not-has-parent-field?" availability="12">
+            <behavior>
+                <append> $[capture] $[field…]</append>
+            </behavior>
+            <description>Matches if a quantified capture has any node whose field within its parent does not match one or more specified field names.</description>
+        </completion>
+        <completion string="has-ancestor-field?" availability="12">
+            <behavior>
+                <append> $[capture] $[field…]</append>
+            </behavior>
+            <description>Matches if a captured node has any ancestor whose field within its parent matches one or more specified field names.</description>
+        </completion>
+        <completion string="not-has-ancestor-field?" availability="12">
+            <behavior>
+                <append> $[capture] $[field…]</append>
+            </behavior>
+            <description>Matches if a captured node has any ancestor whose field within its parent does not match one or more specified field names.</description>
+        </completion>
+        <completion string="any-has-ancestor-field?" availability="12">
+            <behavior>
+                <append> $[capture] $[field…]</append>
+            </behavior>
+            <description>Matches if a quantified capture has any node which has any ancestor whose field within its parent matches one or more specified field names.</description>
+        </completion>
+        <completion string="any-not-has-ancestor-field?" availability="12">
+            <behavior>
+                <append> $[capture] $[field…]</append>
+            </behavior>
+            <description>Matches if a quantified capture has any node which has any ancestor whose field within its parent does not match one or more specified field names.</description>
+        </completion>
+        <completion string="nth?" availability="11">
+            <behavior>
+                <append> $[capture] $[index]</append>
+            </behavior>
+            <description>Matches if a captured node is the nth named child of its parent; negative indexes count backwards from the last child.</description>
+        </completion>
+        <completion string="not-nth?" availability="11">
+            <behavior>
+                <append> $[capture] $[index]</append>
+            </behavior>
+            <description>Matches if a captured node is not the nth named child of its parent; negative indexes count backwards from the last child.</description>
+        </completion>
+        <completion string="debug?" availability="12">
+            <description>Matches if the language being parsed is in debug mode.</description>
+        </completion>
+        
+        <!-- Property Set Predicates -->
+        <completion string="set!" availability="10">
+            <behavior>
+                <append> $[property] $[value]</append>
+            </behavior>
+            <description>Sets the value of a property. If no value is provided it is simply marked as "set".</description>
+        </completion>
+        <completion string="set-if-eq!" availability="10">
+            <behavior>
+                <append> $[compareCapture] $[compareValue] $[key] $[value]</append>
+            </behavior>
+            <description>Sets the value of a property if a capture is equal to another capture or string. If no value is provided it is simply marked as "set".</description>
+        </completion>
+        <completion string="set-if-not-eq!" availability="10">
+            <behavior>
+                <append> $[compareCapture] $[compareValue] $[key] $[value]</append>
+            </behavior>
+            <description>Sets the value of a property if a capture is not equal to another capture or string. If no value is provided it is simply marked as "set".</description>
+        </completion>
+        <completion string="set-if-any-eq!" availability="12">
+            <behavior>
+                <append> $[compareCapture] $[compareValue] $[key] $[value]</append>
+            </behavior>
+            <description>Sets the value of a property if a quantified capture has any member which is equal to another capture or string. If no value is provided it is simply marked as "set".</description>
+        </completion>
+        <completion string="set-if-any-not-eq!" availability="12">
+            <behavior>
+                <append> $[compareCapture] $[compareValue] $[key] $[value]</append>
+            </behavior>
+            <description>Sets the value of a property if a quantified capture has any member which is not equal to another capture or string. If no value is provided it is simply marked as "set".</description>
+        </completion>
+        <completion string="set-if-contains!" availability="12">
+            <behavior>
+                <append> $[compareCapture] $[compareValue] $[key] $[value]</append>
+            </behavior>
+            <description>Sets the value of a property if a capture contains another capture or string. If no value is provided it is simply marked as "set".</description>
+        </completion>
+        <completion string="set-if-not-contains!" availability="12">
+            <behavior>
+                <append> $[compareCapture] $[compareValue] $[key] $[value]</append>
+            </behavior>
+            <description>Sets the value of a property if a capture does not contain another capture or string. If no value is provided it is simply marked as "set".</description>
+        </completion>
+        <completion string="set-if-any-contains!" availability="12">
+            <behavior>
+                <append> $[compareCapture] $[compareValue] $[key] $[value]</append>
+            </behavior>
+            <description>Sets the value of a property if a quantified capture has any member which contains another capture or string. If no value is provided it is simply marked as "set".</description>
+        </completion>
+        <completion string="set-if-any-not-contains!" availability="12">
+            <behavior>
+                <append> $[compareCapture] $[compareValue] $[key] $[value]</append>
+            </behavior>
+            <description>Sets the value of a property if a quantified capture has any member which does not contain another capture or string. If no value is provided it is simply marked as "set".</description>
+        </completion>
+        <completion string="set-if-match!" availability="10">
+            <behavior>
+                <append> $[compareCapture] $[pattern] $[key] $[value]</append>
+            </behavior>
+            <description>Sets the value of a property if a capture matches a regex pattern. If no value is provided it is simply marked as "set".</description>
+        </completion>
+        <completion string="set-if-not-match!" availability="10">
+            <behavior>
+                <append> $[compareCapture] $[pattern] $[key] $[value]</append>
+            </behavior>
+            <description>Sets the value of a property if a capture does not match a regex pattern. If no value is provided it is simply marked as "set".</description>
+        </completion>
+        <completion string="set-if-any-match!" availability="12">
+            <behavior>
+                <append> $[compareCapture] $[pattern] $[key] $[value]</append>
+            </behavior>
+            <description>Sets the value of a property if a quantified capture has any member which matches a regex pattern. If no value is provided it is simply marked as "set".</description>
+        </completion>
+        <completion string="set-if-any-not-match!" availability="12">
+            <behavior>
+                <append> $[compareCapture] $[pattern] $[key] $[value]</append>
+            </behavior>
+            <description>Sets the value of a property if a quantified capture has any member which does not match a regex pattern. If no value is provided it is simply marked as "set".</description>
+        </completion>
+        <completion string="set-by-case-eq!" availability="10">
+            <behavior>
+                <append><![CDATA[ $[compareCapture] $[key]
+  $[compareValue1] $[value1]
+  $[compareValue1] $[value2]
+  $[defaultValue]]]></append>
+            </behavior>
+            <description>Sets the value of a property based on a list of cases. The first case whose "compareValue" is equal to the capture will have its "set" value set. If no case matches, an optional "else" value is set.</description>
+        </completion>
+        <completion string="set-by-case-match!" availability="10">
+            <behavior>
+                <append><![CDATA[ $[compareCapture] $[key]
+  $[pattern1] $[setValue1]
+  $[pattern2] $[setValue2]
+  $[defaultValue]]]></append>
+            </behavior>
+            <description>Sets the value of a property based on a list of cases. The first case whose regex pattern matches the capture will have its "set" value set. If no case matches, an optional "else" value is set.</description>
+        </completion>
+        
+        <!-- Property Filter Predicates -->
+        <completion string="is?" availability="10">
+            <behavior>
+                <append> $[key] $[value]</append>
+            </behavior>
+            <description>Matches if a property is set to a specified value (or, if not provided, any value).</description>
+        </completion>
+        <completion string="is-not?" availability="10">
+            <behavior>
+                <append> $[key] $[value]</append>
+            </behavior>
+            <description>Matches if a property is not set to a specified value (or, if not provided, any value).</description>
+        </completion>
+        
+        <!-- Capture Text Transform Predicates -->
+        <completion string="prefix!" availability="10">
+            <behavior>
+                <append> $[capture] $[value]</append>
+            </behavior>
+            <description>Prefixes a string onto the text captured from a node.</description>
+        </completion>
+        <completion string="append!" availability="10">
+            <behavior>
+                <append> $[capture] $[value]</append>
+            </behavior>
+            <description>Appends a string the text captured from a node.</description>
+        </completion>
+        <completion string="strip!" availability="10">
+            <behavior>
+                <append> $[capture] $[pattern]</append>
+            </behavior>
+            <description>Strips characters matching a regex pattern from the ends of the text captured from a node.</description>
+        </completion>
+        <completion string="replace!" availability="10">
+            <behavior>
+                <append> $[capture] $[pattern] $[replaceTemplate]</append>
+            </behavior>
+            <description>Performs a regex replace on the text captured from a node.</description>
+        </completion>
+        <completion string="upcase!" availability="11">
+            <behavior>
+                <append> $[capture]</append>
+            </behavior>
+            <description>Converts the text captured from a node to uppercase.</description>
+        </completion>
+        <completion string="downcase!" availability="11">
+            <behavior>
+                <append> $[capture]</append>
+            </behavior>
+            <description>Converts the text captured from a node to lowercase.</description>
+        </completion>
+    </set>
+</completions>

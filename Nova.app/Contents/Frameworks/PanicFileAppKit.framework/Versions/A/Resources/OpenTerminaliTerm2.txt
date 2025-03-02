@@ -1,0 +1,60 @@
+on openTerminal(location, remoteHost, serverPort, u, pass)
+	
+	tell application "iTerm2"
+		activate
+		
+		set targetTab to ""
+		set sshCommand to ""
+
+		if ((count of remoteHost) is greater than 0) then
+			set cdCommand to " 'cd \"" & location & "\"; eval \"$SHELL -il\"'"
+			set sshCommand to "ssh -t " & "'"
+
+			if ((count of u) is greater than 0) then
+				set sshCommand to sshCommand & u & "@" & remoteHost
+			else
+				set sshCommand to sshCommand & remoteHost
+			end if
+
+			set sshCommand to sshCommand & "'"
+
+			if (serverPort is greater than 0) then
+				set sshCommand to sshCommand & " -p " & serverPort
+			end if
+		else
+			set cdCommand to "cd \"" & location & "\""
+		end if
+
+		if ((count of location) is greater than 0) then
+			set sshCommand to sshCommand & cdCommand
+		end if
+
+		if ((count of remoteHost) is greater than 0) then
+			if (window 1 exists) and (window 1 is visible) then
+				tell current window
+					create tab with default profile command sshCommand
+				end
+			else
+				create window with default profile command sshCommand
+			end if
+		else
+			if (window 1 exists) and (window 1 is visible) then
+				tell current window
+					create tab with default profile
+				end
+			else
+				create window with default profile
+			end if
+
+			tell current tab of current window
+				set _new_session to last item of sessions
+			end tell
+
+			tell _new_session
+				write text cdCommand
+			end tell
+		end if
+		
+	end tell
+	
+end openTerminal

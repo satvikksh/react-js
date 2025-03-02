@@ -1,0 +1,6 @@
+
+/* Class = "NSButtonCell"; title = "Save Anyway"; ObjectID = "HSV-so-Haf"; */
+"HSV-so-Haf.title" = "強制的に保存";
+
+/* Class = "NSTextFieldCell"; title = "<<Message>>"; ObjectID = "jid-be-T2m"; */
+"jid-be-T2m.title" = "<<Message>>";

@@ -1,0 +1,99 @@
+
+/* Class = "NSMenuItem"; title = "Open"; ObjectID = "0Z9-GV-PtD"; */
+"0Z9-GV-PtD.title" = "Ouvrir";
+
+/* Class = "NSMenuItem"; title = "Copy URL"; ObjectID = "3Pf-cA-6ey"; */
+"3Pf-cA-6ey.title" = "Copier l’URL";
+
+/* Class = "NSMenuItem"; title = "Publish"; ObjectID = "6Fx-8y-gxK"; */
+"6Fx-8y-gxK.title" = "Publier";
+
+/* Class = "NSMenuItem"; title = "Publish Selected Items"; ObjectID = "7r5-uX-awO"; */
+"7r5-uX-awO.title" = "Publier les éléments sélectionnés";
+
+/* Class = "NSMenuItem"; title = "Transfer"; ObjectID = "B1O-vI-3EQ"; */
+"B1O-vI-3EQ.title" = "Transférer";
+
+/* Class = "NSMenuItem"; title = "Tags"; ObjectID = "GcO-iM-M5q"; */
+"GcO-iM-M5q.title" = "Balises";
+
+/* Class = "NSMenuItem"; title = "New File"; ObjectID = "IAX-Ic-yaS"; */
+"IAX-Ic-yaS.title" = "Nouveau fichier";
+
+/* Class = "NSMenuItem"; title = "Mark for Publishing"; ObjectID = "KRS-bV-2kU"; */
+"KRS-bV-2kU.title" = "Sélectionner pour la publication";
+
+/* Class = "NSMenu"; title = "Open With"; ObjectID = "Kab-qZ-b3h"; */
+"Kab-qZ-b3h.title" = "Ouvrir avec";
+
+/* Class = "NSMenuItem"; title = "Refresh"; ObjectID = "KbY-eR-Sv5"; */
+"KbY-eR-Sv5.title" = "Actualiser";
+
+/* Class = "NSMenuItem"; title = "New Folder"; ObjectID = "Meq-Th-yfx"; */
+"Meq-Th-yfx.title" = "Nouveau dossier";
+
+/* Class = "NSMenuItem"; title = "Duplicate"; ObjectID = "O8n-i0-k78"; */
+"O8n-i0-k78.title" = "Dupliquer";
+
+/* Class = "NSMenuItem"; title = "Compress"; ObjectID = "UWD-6t-0X2"; */
+"UWD-6t-0X2.title" = "Compresser";
+
+/* Class = "NSMenu"; title = "Always Open With"; ObjectID = "V4I-q9-etp"; */
+"V4I-q9-etp.title" = "Toujours ouvrir avec";
+
+/* Class = "NSMenuItem"; title = "Always Open With"; ObjectID = "WQh-6M-m4Y"; */
+"WQh-6M-m4Y.title" = "Toujours ouvrir avec";
+
+/* Class = "NSMenuItem"; title = "Show in Finder"; ObjectID = "YXA-Pl-hyv"; */
+"YXA-Pl-hyv.title" = "Afficher dans le Finder";
+
+/* Class = "NSMenuItem"; title = "Open in New Window"; ObjectID = "bRc-My-Ipj"; */
+"bRc-My-Ipj.title" = "Ouvrir dans une nouvelle fenêtre";
+
+/* Class = "NSMenuItem"; title = "Get Info"; ObjectID = "bSw-t2-8cO"; */
+"bSw-t2-8cO.title" = "Informations";
+
+/* Class = "NSMenu"; title = "Open As"; ObjectID = "c5T-mK-4at"; */
+"c5T-mK-4at.title" = "Ouvrir sous";
+
+/* Class = "NSMenuItem"; title = "Open As"; ObjectID = "fPC-PI-BZc"; */
+"fPC-PI-BZc.title" = "Ouvrir sous";
+
+/* Class = "NSMenuItem"; title = "Never Publish"; ObjectID = "fRH-V3-8uf"; */
+"fRH-V3-8uf.title" = "Ne jamais publier";
+
+/* Class = "NSMenuItem"; title = "Open With"; ObjectID = "i9L-Ok-4N0"; */
+"i9L-Ok-4N0.title" = "Ouvrir avec";
+
+/* Class = "NSMenuItem"; title = "Find in Selected Folders…"; ObjectID = "kMT-vo-Ivw"; */
+"kMT-vo-Ivw.title" = "Rechercher dans les dossiers sélectionnés…";
+
+/* Class = "NSMenuItem"; title = "Open with Finder"; ObjectID = "lXE-1g-mY9"; */
+"lXE-1g-mY9.title" = "Ouvrir avec le Finder";
+
+/* Class = "NSMenuItem"; title = "Reverse Publish Selected Items"; ObjectID = "ogr-FP-WYO"; */
+"ogr-FP-WYO.title" = "Publication inverse des éléments sélectionnés";
+
+/* Class = "NSMenuItem"; title = "Unmark for Publishing"; ObjectID = "qDJ-Vc-3n7"; */
+"qDJ-Vc-3n7.title" = "Ne plus sélectionner pour la publication";
+
+/* Class = "NSMenu"; title = "Publish"; ObjectID = "sXq-1n-M38"; */
+"sXq-1n-M38.title" = "Publier";
+
+/* Class = "NSMenuItem"; title = "Copy Path"; ObjectID = "sXx-b8-zNu"; */
+"sXx-b8-zNu.title" = "Copier le chemin";
+
+/* Class = "NSMenuItem"; title = "Rename"; ObjectID = "tRb-nw-YG3"; */
+"tRb-nw-YG3.title" = "Renommer";
+
+/* Class = "NSMenuItem"; title = "Move…"; ObjectID = "w21-yS-x4D"; */
+"w21-yS-x4D.title" = "Déplacer…";
+
+/* Class = "NSMenuItem"; title = "Copy Relative Path"; ObjectID = "wSc-Yd-qwU"; */
+"wSc-Yd-qwU.title" = "Copier le chemin relatif";
+
+/* Class = "NSMenuItem"; title = "Quick Look"; ObjectID = "yDD-75-Pdw"; */
+"yDD-75-Pdw.title" = "Coup d’œil";
+
+/* Class = "NSMenuItem"; title = "Move to Trash"; ObjectID = "ya2-ql-hBB"; */
+"ya2-ql-hBB.title" = "Placer dans la Corbeille";

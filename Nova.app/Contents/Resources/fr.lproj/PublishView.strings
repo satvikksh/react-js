@@ -1,0 +1,72 @@
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "11k-Ht-3Kq"; */
+"11k-Ht-3Kq.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "A1T-lM-m9B"; */
+"A1T-lM-m9B.title" = "Élément 1";
+
+/* Class = "NSTextFieldCell"; title = "Publishing To <destination>…"; ObjectID = "B5j-IB-BGP"; */
+"B5j-IB-BGP.title" = "Publication sur <destination>…";
+
+/* Class = "NSMenuItem"; title = "Clear All"; ObjectID = "DxS-pY-COo"; */
+"DxS-pY-COo.title" = "Effacer tout";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Publish destination"; ObjectID = "JJU-Ds-ja5"; */
+"JJU-Ds-ja5.ibExternalAccessibilityDescription" = "Destination de publication";
+
+/* Class = "NSTextFieldCell"; title = "Remote Path"; ObjectID = "JKC-Zg-Fbx"; */
+"JKC-Zg-Fbx.title" = "Chemin distant";
+
+/* Class = "NSTextFieldCell"; title = "Filename"; ObjectID = "SVm-Zr-tSR"; */
+"SVm-Zr-tSR.title" = "Nom du fichier";
+
+/* Class = "NSButtonCell"; title = "Add Destination…"; ObjectID = "UP6-JT-M6d"; */
+"UP6-JT-M6d.title" = "Ajouter une destination…";
+
+/* Class = "NSTextFieldCell"; title = "Computer Name"; ObjectID = "V8f-PM-rtk"; */
+"V8f-PM-rtk.title" = "Nom d’ordinateur";
+
+/* Class = "NSTextFieldCell"; title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."; ObjectID = "VuI-2U-Zl4"; */
+"VuI-2U-Zl4.title" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Manage Servers"; ObjectID = "YU9-Fz-O0W"; */
+"YU9-Fz-O0W.ibExternalAccessibilityDescription" = "Gérer les serveurs";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show and manage available servers"; ObjectID = "YU9-Fz-O0W"; */
+"YU9-Fz-O0W.ibShadowedToolTip" = "Afficher et gérer les serveurs disponibles";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "ZwN-Nu-7NR"; */
+"ZwN-Nu-7NR.title" = "Item 2";
+
+/* Class = "NSButtonCell"; title = "Publish"; ObjectID = "aWk-uJ-fvB"; */
+"aWk-uJ-fvB.title" = "Publier";
+
+/* Class = "NSMenuItem"; title = "Publish"; ObjectID = "ahd-Lw-5Sc"; */
+"ahd-Lw-5Sc.title" = "Publier";
+
+/* Class = "NSMenuItem"; title = "Publish All Changes"; ObjectID = "bcW-8X-SkL"; */
+"bcW-8X-SkL.title" = "Publier toutes les modifications";
+
+/* Class = "NSMenuItem"; title = "Clear"; ObjectID = "caf-WY-MX0"; */
+"caf-WY-MX0.title" = "Effacer";
+
+/* Class = "NSMenuItem"; title = "Show in Files Sidebar"; ObjectID = "ehj-QV-lfo"; */
+"ehj-QV-lfo.title" = "Afficher dans la barre latérale Fichiers";
+
+/* Class = "NSMenuItem"; title = "Show in Finder"; ObjectID = "gWH-8j-zpE"; */
+"gWH-8j-zpE.title" = "Afficher dans le Finder";
+
+/* Class = "NSTextFieldCell"; title = "No changes to publish."; ObjectID = "ijA-tX-efV"; */
+"ijA-tX-efV.title" = "Aucune modification à publier.";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "jAB-fU-psf"; */
+"jAB-fU-psf.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Never Publish"; ObjectID = "l7P-QH-ncN"; */
+"l7P-QH-ncN.title" = "Ne jamais publier";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "mbB-7x-8pS"; */
+"mbB-7x-8pS.title" = "Annuler";
+
+/* Class = "NSButtonCell"; title = "Clear All"; ObjectID = "pct-S5-G3h"; */
+"pct-S5-G3h.title" = "Effacer tout";

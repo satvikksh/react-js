@@ -1,0 +1,18 @@
+
+/* Class = "NSTextFieldCell"; placeholderString = "Auto"; ObjectID = "1LM-zq-nTe"; */
+"1LM-zq-nTe.placeholderString" = "自动";
+
+/* Class = "NSTextFieldCell"; title = "Content:"; ObjectID = "7Ho-dF-N9v"; */
+"7Ho-dF-N9v.title" = "内容：";
+
+/* Class = "NSTextFieldCell"; title = "Tab Order:"; ObjectID = "Bdq-Dj-a29"; */
+"Bdq-Dj-a29.title" = "标签页顺序：";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "optional"; ObjectID = "IIv-Sl-lhf"; */
+"IIv-Sl-lhf.ibShadowedIsNilPlaceholder" = "可选";
+
+/* Class = "NSTextFieldCell"; placeholderString = "optional"; ObjectID = "WS9-7k-z9D"; */
+"WS9-7k-z9D.placeholderString" = "可选";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "Auto"; ObjectID = "puo-PI-IQn"; */
+"puo-PI-IQn.ibShadowedIsNilPlaceholder" = "自动";

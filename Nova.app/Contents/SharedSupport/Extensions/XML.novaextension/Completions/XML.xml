@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<completions>
+    <provider>
+        <syntax>xml</syntax>
+        <expression>&amp;[a-zA-Z0-9-_]*</expression>
+        <trigger>&amp;</trigger>
+        <set>xml.entities</set>
+    </provider>
+    
+    <!-- Entities -->
+    <set name="xml.entities">
+        <completion string="&amp;quot;" />
+        <completion string="&amp;amp;" />
+        <completion string="&amp;apos;" />
+        <completion string="&amp;lt;" />
+        <completion string="&amp;gt;" />
+    </set>
+</completions>

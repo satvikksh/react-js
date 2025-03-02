@@ -1,0 +1,231 @@
+
+/* Class = "NSTextFieldCell"; title = "Your purchase of Nova gives us the resources necessary to make it the best native editor we can. It means a lot to us. From all of us at Panic, thank you."; ObjectID = "20U-rl-ITh"; */
+"20U-rl-ITh.title" = "En achetant Nova, vous nous donnez les ressources nécessaires pour en faire le meilleur éditeur natif possible. Cela est très important pour nous. Merci de la part de toute l’équipe Panic.";
+
+/* Class = "NSButtonCell"; title = "I Forgot My License Number"; ObjectID = "4uF-Fo-gsf"; */
+"4uF-Fo-gsf.title" = "J’ai oublié mon numéro de licence";
+
+/* Class = "NSButtonCell"; title = "Unlock"; ObjectID = "5Im-lV-ZQa"; */
+"5Im-lV-ZQa.title" = "Déverrouiller";
+
+/* Class = "NSTextFieldCell"; title = "<<TrialDescriptiveText>>"; ObjectID = "5cy-Yz-lSA"; */
+"5cy-Yz-lSA.title" = "<<TrialDescriptiveText>>";
+
+/* Class = "NSTextFieldCell"; title = "Unlock Nova"; ObjectID = "6KH-HO-kyP"; */
+"6KH-HO-kyP.title" = "Déverrouiller Nova";
+
+/* Class = "NSTextFieldCell"; title = "Documentation Library"; ObjectID = "8IO-Pk-9DO"; */
+"8IO-Pk-9DO.title" = "Bibliothèque de documentation";
+
+/* Class = "NSTextFieldCell"; title = "To get you started, we'd like to walk you through a few quick steps."; ObjectID = "9Oa-2y-ebk"; */
+"9Oa-2y-ebk.title" = "Pour vous aider à commencer, nous aimerions vous guider à travers quelques étapes simples.";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "9o0-a1-Ur1"; */
+"9o0-a1-Ur1.title" = "Annuler";
+
+/* Class = "NSTextFieldCell"; title = "If you don't want to do it now, you can sign in or create an account at any time from the Sync preference pane."; ObjectID = "Ayj-BM-n9W"; */
+"Ayj-BM-n9W.title" = "Si vous ne voulez pas le faire maintenant, vous pouvez vous connecter ou créer un compte à tout moment à partir de la sous-fenêtre des préférences de synchronisation.";
+
+/* Class = "NSButtonCell"; title = "Send crash reports to Panic"; ObjectID = "Bc8-Ib-Kz4"; */
+"Bc8-Ib-Kz4.title" = "Envoyer des rapports d’incident à Panic";
+
+/* Class = "NSTextFieldCell"; title = "Already Purchased?"; ObjectID = "CNr-Lo-Gh3"; */
+"CNr-Lo-Gh3.title" = "Déjà acheté ?";
+
+/* Class = "NSTextFieldCell"; title = "Help Panic improve Nova by sending anonymous analytics."; ObjectID = "D9O-c3-Jkw"; */
+"D9O-c3-Jkw.title" = "Aidez Panic à améliorer Nova en envoyant des données d’analyse anonymes.";
+
+/* Class = "NSButtonCell"; title = "Sign in"; ObjectID = "DgT-kP-79U"; */
+"DgT-kP-79U.title" = "Connexion";
+
+/* Class = "NSTextFieldCell"; title = "Diagnostics & Usage"; ObjectID = "Etg-L9-ck3"; */
+"Etg-L9-ck3.title" = "Diagnostics et utilisation";
+
+/* Class = "NSButtonCell"; title = "Next"; ObjectID = "Fbq-jb-mbB"; */
+"Fbq-jb-mbB.title" = "Suite";
+
+/* Class = "NSTextFieldCell"; title = "Panic Sync"; ObjectID = "Fja-Jp-SXv"; */
+"Fja-Jp-SXv.title" = "Panic Sync";
+
+/* Class = "NSTextFieldCell"; title = "Password:"; ObjectID = "Gky-2I-gK2"; */
+"Gky-2I-gK2.title" = "Mot de passe :";
+
+/* Class = "NSButtonCell"; title = "Get Started"; ObjectID = "I6c-wA-QaL"; */
+"I6c-wA-QaL.title" = "Commencer";
+
+/* Class = "NSTextFieldCell"; title = "Add even more great features to Nova to support your favorite languages, frameworks, and tools. Find it in the Extensions menu."; ObjectID = "ICe-fa-Q1V"; */
+"ICe-fa-Q1V.title" = "Ajoutez encore plus de fonctions exceptionnelles à Nova pour prendre en charge vos langages, cadres d’application et outils favoris. Vous les trouverez dans le menu Extensions.";
+
+/* Class = "NSTextFieldCell"; title = "We'll also offer to import your projects and settings from Coda 2."; ObjectID = "ID2-WE-2EQ"; */
+"ID2-WE-2EQ.title" = "Nous vous offrirons également la possibilité d’importer vos projets et vos réglages à partir de Coda 2.";
+
+/* Class = "NSButtonCell"; title = "Forgot?"; ObjectID = "IO4-JV-QgC"; */
+"IO4-JV-QgC.title" = "Oublié ?";
+
+/* Class = "NSTextFieldCell"; title = "Your global and syntax-specific clips will be imported."; ObjectID = "KzW-r1-KbQ"; */
+"KzW-r1-KbQ.title" = "Vos clips globaux et de syntaxe seront importés.";
+
+/* Class = "NSTextFieldCell"; title = "Sign Up for Panic News:"; ObjectID = "MYq-Ru-kMC"; */
+"MYq-Ru-kMC.title" = "Abonnez-vous aux actualités Panic :";
+
+/* Class = "NSTextFieldCell"; title = "All of your Coda 2 data will remain intact afterwards.\nIf you don't want to do it now, you can find this import at any time in the Help menu."; ObjectID = "NKF-ah-cDs"; */
+"NKF-ah-cDs.title" = "Toutes vos données Coda 2 resteront intactes après cela.\nSi vous ne voulez pas le faire maintenant, vous pouvez trouver cette importation à tout moment dans le menu Aide.";
+
+/* Class = "NSTextFieldCell"; title = "• A Project will be added for each site with a local folder\n• A Server will be added for each site's remote credentials\n• The project will be linked to the server using a Remote Destination"; ObjectID = "Nbh-ov-eKc"; */
+"Nbh-ov-eKc.title" = "• Un projet sera ajouté pour chaque site avec un dossier local\n• Un serveur sera ajouté pour les données d’identification distantes de chaque site\n• Le projet sera lié au serveur à l’aide d’une destination distante";
+
+/* Class = "NSButtonCell"; title = "Buy Now"; ObjectID = "PeO-On-e53"; */
+"PeO-On-e53.title" = "Acheter maintenant";
+
+/* Class = "NSTextFieldCell"; title = "Automatically submit crash reports to help Panic diagnose and fix issues in Nova."; ObjectID = "QQq-2o-7yX"; */
+"QQq-2o-7yX.title" = "Soumettre automatiquement des rapports d’incident pour aider Panic à diagnostiquer et corriger les problèmes de Nova.";
+
+/* Class = "NSButtonCell"; title = "Continue Trial"; ObjectID = "SA2-9j-Kg6"; */
+"SA2-9j-Kg6.title" = "Continuer l’essai";
+
+/* Class = "NSTextFieldCell"; title = "Verifying License…"; ObjectID = "TNJ-QB-wNn"; */
+"TNJ-QB-wNn.title" = "Vérification de licence…";
+
+/* Class = "NSButtonCell"; title = "Automatically change theme based on system appearance"; ObjectID = "Tk6-HO-Sgi"; */
+"Tk6-HO-Sgi.title" = "Changer automatiquement de thème selon l’apparence du système";
+
+/* Class = "NSButtonCell"; title = "Learn More About Diagnostics and Privacy… "; ObjectID = "Twt-mx-d9u"; */
+"Twt-mx-d9u.title" = "En savoir plus sur les diagnostics et la vie privée… ";
+
+/* Class = "NSButtonCell"; title = "Sidebar Layout"; ObjectID = "V3a-39-W7m"; */
+"V3a-39-W7m.title" = "Disposition de barre latérale";
+
+/* Class = "NSTextFieldCell"; title = "Enter your license number to unlock Nova."; ObjectID = "VT2-lr-1uU"; */
+"VT2-lr-1uU.title" = "Saisissez votre numéro de licence pour débloquer Nova.";
+
+/* Class = "NSTextFieldCell"; title = "<<count>>"; ObjectID = "VWE-qb-iiN"; */
+"VWE-qb-iiN.title" = "<<count>>";
+
+/* Class = "NSTextFieldCell"; title = "The position and order of your sidebars will be set up to match."; ObjectID = "Vxm-eo-EU8"; */
+"Vxm-eo-EU8.title" = "La position et l’ordre de vos barres latérales seront établies en conséquence.";
+
+/* Class = "NSTextFieldCell"; title = "Welcome to Nova"; ObjectID = "W5d-Mq-TYb"; */
+"W5d-Mq-TYb.title" = "Bienvenue dans Nova";
+
+/* Class = "NSTextFieldCell"; title = "Already have a Panic Sync account?\nSign in and your servers will automatically sync with Nova."; ObjectID = "Wmx-jV-Yql"; */
+"Wmx-jV-Yql.title" = "Vous possédez déjà un compte Panic Sync ?\nConnectez-vous et vos serveurs se connecteront automatiquement à Nova.";
+
+/* Class = "NSSegmentedCell"; XEV-Ev-YA1.ibShadowedLabels[0] = "Light Mode"; ObjectID = "XEV-Ev-YA1"; */
+"XEV-Ev-YA1.ibShadowedLabels[0]" = "Mode clair";
+
+/* Class = "NSSegmentedCell"; XEV-Ev-YA1.ibShadowedLabels[1] = "Dark Mode"; ObjectID = "XEV-Ev-YA1"; */
+"XEV-Ev-YA1.ibShadowedLabels[1]" = "Mode foncé";
+
+/* Class = "NSTextFieldCell"; title = "You can change this later in the Theme preference pane,\nand find additional themes in the Extension Library."; ObjectID = "XyN-Po-RaY"; */
+"XyN-Po-RaY.title" = "Vous pouvez changer cela plus tard dans la sous-fenêtre de préférences Thème\net rechercher des thèmes supplémentaires dans la bibliothèque d’extensions.";
+
+/* Class = "NSTextFieldCell"; title = "Email:"; ObjectID = "Xzz-JT-70R"; */
+"Xzz-JT-70R.title" = "E-mail :";
+
+/* Class = "NSButtonCell"; title = "Skip"; ObjectID = "a6V-oL-XKS"; */
+"a6V-oL-XKS.title" = "Ignorer";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "aNr-Ih-eFU"; */
+"aNr-Ih-eFU.title" = "Fenêtre";
+
+/* Class = "NSButtonCell"; title = "Send anonymous usage data to Panic"; ObjectID = "bfA-lx-k9s"; */
+"bfA-lx-k9s.title" = "Envoyer des données d’utilisation anonymes à Panic";
+
+/* Class = "NSTextFieldCell"; placeholderString = "NOVA-XXXX-XXXX-XXXX-XXXX-XXXX-X"; ObjectID = "bhS-nz-GDI"; */
+"bhS-nz-GDI.placeholderString" = "NOVA-XXXX-XXXX-XXXX-XXXX-XXXX-X";
+
+/* Class = "NSButtonCell"; title = "Import All"; ObjectID = "cF7-0Y-n2Z"; */
+"cF7-0Y-n2Z.title" = "Tout importer";
+
+/* Class = "NSTextFieldCell"; title = "Your settings for Key Bindings, the Editor, Terminal, and Files will be applied."; ObjectID = "chI-My-Vgi"; */
+"chI-My-Vgi.title" = "Vos réglages Raccourcis clavier, Éditeur, Terminal et Fichiers seront appliqués.";
+
+/* Class = "NSButtonCell"; title = "Buy Now…"; ObjectID = "eoI-ec-Bnj"; */
+"eoI-ec-Bnj.title" = "Acheter maintenant…";
+
+/* Class = "NSButtonCell"; title = "Continue"; ObjectID = "f7D-fk-bRl"; */
+"f7D-fk-bRl.title" = "Continuer";
+
+/* Class = "NSButtonCell"; title = "Skip Setup"; ObjectID = "fKa-mg-2tY"; */
+"fKa-mg-2tY.title" = "Ignorer la configuration";
+
+/* Class = "NSTextFieldCell"; title = "Need To Purchase?"; ObjectID = "fQE-P6-h8O"; */
+"fQE-P6-h8O.title" = "Besoin d’acheter ?";
+
+/* Class = "NSButtonCell"; title = "Skip"; ObjectID = "fbF-Zx-8if"; */
+"fbF-Zx-8if.title" = "Ignorer";
+
+/* Class = "NSButtonCell"; title = "Let's Go!"; ObjectID = "gb5-0I-EKa"; */
+"gb5-0I-EKa.title" = "C’est parti !";
+
+/* Class = "NSTextFieldCell"; title = "Want to find out more about how to use Nova? Check out the articles in our documentation library."; ObjectID = "hSp-j2-zMC"; */
+"hSp-j2-zMC.title" = "Vous voulez en savoir plus sur l’utilisation de Nova ? Lisez les articles disponibles dans notre bibliothèque de documentation.";
+
+/* Class = "NSTextFieldCell"; title = "<<error description>>"; ObjectID = "iJ7-7E-ZOk"; */
+"iJ7-7E-ZOk.title" = "<<error description>>";
+
+/* Class = "NSButtonCell"; title = "Preferences"; ObjectID = "kZd-Iv-1jZ"; */
+"kZd-Iv-1jZ.title" = "Préférences";
+
+/* Class = "NSButtonCell"; title = "Download"; ObjectID = "lnv-QH-qj4"; */
+"lnv-QH-qj4.title" = "Télécharger";
+
+/* Class = "NSButtonCell"; title = "Sites"; ObjectID = "mdA-22-yPp"; */
+"mdA-22-yPp.title" = "Sites";
+
+/* Class = "NSTextFieldCell"; title = "Choose Your Theme"; ObjectID = "mvL-L0-g5g"; */
+"mvL-L0-g5g.title" = "Choisissez votre thème";
+
+/* Class = "NSButtonCell"; title = "Import"; ObjectID = "nE8-6C-eSo"; */
+"nE8-6C-eSo.title" = "Importer";
+
+/* Class = "NSTextFieldCell"; title = "Learn More."; ObjectID = "ndy-9K-xcA"; */
+"ndy-9K-xcA.title" = "En savoir plus.";
+
+/* Class = "NSTextFieldCell"; title = "Finish Up"; ObjectID = "oAB-98-Fo7"; */
+"oAB-98-Fo7.title" = "Dernière étape";
+
+/* Class = "NSButtonCell"; title = "Next"; ObjectID = "pUm-RP-fXP"; */
+"pUm-RP-fXP.title" = "Suite";
+
+/* Class = "NSTextFieldCell"; title = "<<TrialTitle>>"; ObjectID = "qQF-oJ-aoL"; */
+"qQF-oJ-aoL.title" = "<<TrialTitle>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "back"; ObjectID = "qdY-uA-T6m"; */
+"qdY-uA-T6m.ibExternalAccessibilityDescription" = "retour";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Go back to the previous pane"; ObjectID = "qdY-uA-T6m"; */
+"qdY-uA-T6m.ibShadowedToolTip" = "Retourner à la sous-fenêtre précédente";
+
+/* Class = "NSButtonCell"; title = "Open"; ObjectID = "r7v-N7-wlR"; */
+"r7v-N7-wlR.title" = "Ouvrir";
+
+/* Class = "NSTextFieldCell"; title = "Import from Coda 2"; ObjectID = "rzO-Rs-Y4H"; */
+"rzO-Rs-Y4H.title" = "Importer à partir de Coda 2";
+
+/* Class = "NSButtonCell"; title = "Clips"; ObjectID = "s1W-08-RRz"; */
+"s1W-08-RRz.title" = "Clips";
+
+/* Class = "NSTextFieldCell"; title = "Extension Library"; ObjectID = "sdm-zG-dmw"; */
+"sdm-zG-dmw.title" = "Bibliothèque d’extensions";
+
+/* Class = "NSTextFieldCell"; placeholderString = "your.optional@email.com"; ObjectID = "twv-gn-RXx"; */
+"twv-gn-RXx.placeholderString" = "votre.optionnel@email.com";
+
+/* Class = "NSButtonCell"; title = "Enter Your License Number…"; ObjectID = "ubF-PO-9zs"; */
+"ubF-PO-9zs.title" = "Saisissez votre numéro de licence…";
+
+/* Class = "NSButtonCell"; title = "Quit"; ObjectID = "vKa-KP-VnS"; */
+"vKa-KP-VnS.title" = "Quitter";
+
+/* Class = "NSTextFieldCell"; title = "If something is preventing you from buying,"; ObjectID = "vXX-hk-nLf"; */
+"vXX-hk-nLf.title" = "Si quelque chose vous empêche d’acheter,";
+
+/* Class = "NSTextFieldCell"; title = "You're good to go!\nWant to learn more about what you can do in Nova?"; ObjectID = "w0V-fp-QYC"; */
+"w0V-fp-QYC.title" = "Vous êtes prêt à vous lancer !\nVous voulez en savoir plus sur les possibilités offertes par Nova ?";
+
+/* Class = "NSButtonCell"; title = "please let us know!"; ObjectID = "x6l-VL-aTl"; */
+"x6l-VL-aTl.title" = "dites-le-nous !";
+
+/* Class = "NSTextFieldCell"; title = "<<count>>"; ObjectID = "yaN-uI-B90"; */
+"yaN-uI-B90.title" = "<<count>>";

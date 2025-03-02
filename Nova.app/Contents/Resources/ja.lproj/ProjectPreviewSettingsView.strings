@@ -1,0 +1,42 @@
+
+/* Class = "NSTextFieldCell"; title = "The root folder used when determining relative paths to append to the preview server URL. By default, the project folder is used."; ObjectID = "2p0-ru-0xa"; */
+"2p0-ru-0xa.title" = "プレビューする際のURLを決定するために使用されます。デフォルト設定ではプロジェクトフォルダが使用されます。";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Automatic"; ObjectID = "4Az-Wr-jd6"; */
+"4Az-Wr-jd6.placeholderString" = "自動";
+
+/* Class = "NSTextFieldCell"; title = "Previews of local documents will be served by the built-in web server, which is great for simple static content like HTML, CSS, and JavaScript."; ObjectID = "Few-9n-EHU"; */
+"Few-9n-EHU.title" = "ビルトインのウェブサーバによってローカル書類がプレビューされます。これはHTMLやCSS、JavaScriptを組み合わせたシンプルな静的ページの確認に最適です。";
+
+/* Class = "NSButtonCell"; title = "Allow connections from other devices on the network"; ObjectID = "MQc-Rz-K3c"; */
+"MQc-Rz-K3c.title" = "ネットワーク上の他のデバイスからの接続を許可する";
+
+/* Class = "NSButtonCell"; title = "Use a custom server URL"; ObjectID = "RMZ-rv-B0d"; */
+"RMZ-rv-B0d.title" = "カスタムサーバURLを使用する";
+
+/* Class = "NSButtonCell"; title = "Use the built-in static web server"; ObjectID = "Y6L-LA-0WK"; */
+"Y6L-LA-0WK.title" = "ビルトインの静的ウェブサーバを使用する";
+
+/* Class = "NSTextFieldCell"; title = "Local Root:"; ObjectID = "e9N-Nr-LKd"; */
+"e9N-Nr-LKd.title" = "ローカルルート:";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "Automatic"; ObjectID = "eCR-55-bhZ"; */
+"eCR-55-bhZ.ibShadowedIsNilPlaceholder" = "自動";
+
+/* Class = "NSButtonCell"; title = "Choose…"; ObjectID = "eXs-eK-wVq"; */
+"eXs-eK-wVq.title" = "選択…";
+
+/* Class = "NSTextFieldCell"; title = "A custom server URL can point to a locally-running development server or a remote host."; ObjectID = "etm-ih-gm3"; */
+"etm-ih-gm3.title" = "ローカルで実行されているテストサーバ、またはリモートホストを指定することが可能です。";
+
+/* Class = "NSTextFieldCell"; title = "Local Preview:"; ObjectID = "iIM-R6-ZOL"; */
+"iIM-R6-ZOL.title" = "プレビュー:";
+
+/* Class = "NSTextFieldCell"; title = "Preferred Server Port:"; ObjectID = "nOf-sN-0gy"; */
+"nOf-sN-0gy.title" = "優先サーバポート番号:";
+
+/* Class = "NSTextFieldCell"; title = "Options for previewing remote documents can be configured within the project's remote destinations."; ObjectID = "upJ-Ij-Pvt"; */
+"upJ-Ij-Pvt.title" = "リモート書類をプレビューするためのオプションは、プロジェクト設定のリモートパスから構成することが可能です。";
+
+/* Class = "NSButtonCell"; title = "Append relative paths for previewable documents"; ObjectID = "w77-Qq-Oi1"; */
+"w77-Qq-Oi1.title" = "プレビュー可能な書類の相対パスを追加する";

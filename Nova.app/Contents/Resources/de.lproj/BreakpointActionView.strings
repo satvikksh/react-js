@@ -1,0 +1,24 @@
+
+/* Class = "NSTextFieldCell"; placeholderString = "Debugger command like `print foo`"; ObjectID = "0wh-TQ-aA8"; */
+"0wh-TQ-aA8.placeholderString" = "Debugger-Befehl wie „print foo“";
+
+/* Class = "NSMenuItem"; title = "Log Message"; ObjectID = "2jk-E0-Qxw"; */
+"2jk-E0-Qxw.title" = "Meldung protokollieren";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Message"; ObjectID = "2xN-82-LcY"; */
+"2xN-82-LcY.placeholderString" = "Nachricht";
+
+/* Class = "NSButtonCell"; title = "Log message to console"; ObjectID = "Flu-V5-2Uk"; */
+"Flu-V5-2Uk.title" = "Meldung in Konsole protokollieren";
+
+/* Class = "NSButtonCell"; title = "Speak message"; ObjectID = "hEi-CY-vTh"; */
+"hEi-CY-vTh.title" = "Meldung sprechen";
+
+/* Class = "NSMenuItem"; title = "Sound"; ObjectID = "iJc-IJ-rtb"; */
+"iJc-IJ-rtb.title" = "Ton";
+
+/* Class = "NSMenuItem"; title = "Debugger Command"; ObjectID = "mzb-bz-fU5"; */
+"mzb-bz-fU5.title" = "Debugger-Befehl";
+
+/* Class = "NSMenuItem"; title = "<<Sound>>"; ObjectID = "oeG-oV-Uyt"; */
+"oeG-oV-Uyt.title" = "<<Sound>>";

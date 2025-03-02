@@ -1,0 +1,99 @@
+
+/* Class = "NSMenuItem"; title = "Open"; ObjectID = "0Z9-GV-PtD"; */
+"0Z9-GV-PtD.title" = "打开";
+
+/* Class = "NSMenuItem"; title = "Copy URL"; ObjectID = "3Pf-cA-6ey"; */
+"3Pf-cA-6ey.title" = "拷贝 URL";
+
+/* Class = "NSMenuItem"; title = "Publish"; ObjectID = "6Fx-8y-gxK"; */
+"6Fx-8y-gxK.title" = "发布";
+
+/* Class = "NSMenuItem"; title = "Publish Selected Items"; ObjectID = "7r5-uX-awO"; */
+"7r5-uX-awO.title" = "发布所选项";
+
+/* Class = "NSMenuItem"; title = "Transfer"; ObjectID = "B1O-vI-3EQ"; */
+"B1O-vI-3EQ.title" = "传输";
+
+/* Class = "NSMenuItem"; title = "Tags"; ObjectID = "GcO-iM-M5q"; */
+"GcO-iM-M5q.title" = "标记";
+
+/* Class = "NSMenuItem"; title = "New File"; ObjectID = "IAX-Ic-yaS"; */
+"IAX-Ic-yaS.title" = "新建文件";
+
+/* Class = "NSMenuItem"; title = "Mark for Publishing"; ObjectID = "KRS-bV-2kU"; */
+"KRS-bV-2kU.title" = "为发布标记";
+
+/* Class = "NSMenu"; title = "Open With"; ObjectID = "Kab-qZ-b3h"; */
+"Kab-qZ-b3h.title" = "打开方式";
+
+/* Class = "NSMenuItem"; title = "Refresh"; ObjectID = "KbY-eR-Sv5"; */
+"KbY-eR-Sv5.title" = "刷新";
+
+/* Class = "NSMenuItem"; title = "New Folder"; ObjectID = "Meq-Th-yfx"; */
+"Meq-Th-yfx.title" = "新建文件夹";
+
+/* Class = "NSMenuItem"; title = "Duplicate"; ObjectID = "O8n-i0-k78"; */
+"O8n-i0-k78.title" = "复制";
+
+/* Class = "NSMenuItem"; title = "Compress"; ObjectID = "UWD-6t-0X2"; */
+"UWD-6t-0X2.title" = "压缩";
+
+/* Class = "NSMenu"; title = "Always Open With"; ObjectID = "V4I-q9-etp"; */
+"V4I-q9-etp.title" = "始终以此方式打开";
+
+/* Class = "NSMenuItem"; title = "Always Open With"; ObjectID = "WQh-6M-m4Y"; */
+"WQh-6M-m4Y.title" = "始终以此方式打开";
+
+/* Class = "NSMenuItem"; title = "Show in Finder"; ObjectID = "YXA-Pl-hyv"; */
+"YXA-Pl-hyv.title" = "在 Finder 中显示";
+
+/* Class = "NSMenuItem"; title = "Open in New Window"; ObjectID = "bRc-My-Ipj"; */
+"bRc-My-Ipj.title" = "在新窗口中打开";
+
+/* Class = "NSMenuItem"; title = "Get Info"; ObjectID = "bSw-t2-8cO"; */
+"bSw-t2-8cO.title" = "显示信息";
+
+/* Class = "NSMenu"; title = "Open As"; ObjectID = "c5T-mK-4at"; */
+"c5T-mK-4at.title" = "打开方式";
+
+/* Class = "NSMenuItem"; title = "Open As"; ObjectID = "fPC-PI-BZc"; */
+"fPC-PI-BZc.title" = "打开方式";
+
+/* Class = "NSMenuItem"; title = "Never Publish"; ObjectID = "fRH-V3-8uf"; */
+"fRH-V3-8uf.title" = "永不发布";
+
+/* Class = "NSMenuItem"; title = "Open With"; ObjectID = "i9L-Ok-4N0"; */
+"i9L-Ok-4N0.title" = "打开方式";
+
+/* Class = "NSMenuItem"; title = "Find in Selected Folders…"; ObjectID = "kMT-vo-Ivw"; */
+"kMT-vo-Ivw.title" = "在所选文件夹中查找…";
+
+/* Class = "NSMenuItem"; title = "Open with Finder"; ObjectID = "lXE-1g-mY9"; */
+"lXE-1g-mY9.title" = "使用 Finder 打开";
+
+/* Class = "NSMenuItem"; title = "Reverse Publish Selected Items"; ObjectID = "ogr-FP-WYO"; */
+"ogr-FP-WYO.title" = "反向发布所选项";
+
+/* Class = "NSMenuItem"; title = "Unmark for Publishing"; ObjectID = "qDJ-Vc-3n7"; */
+"qDJ-Vc-3n7.title" = "取消为发布标记";
+
+/* Class = "NSMenu"; title = "Publish"; ObjectID = "sXq-1n-M38"; */
+"sXq-1n-M38.title" = "发布";
+
+/* Class = "NSMenuItem"; title = "Copy Path"; ObjectID = "sXx-b8-zNu"; */
+"sXx-b8-zNu.title" = "拷贝路径";
+
+/* Class = "NSMenuItem"; title = "Rename"; ObjectID = "tRb-nw-YG3"; */
+"tRb-nw-YG3.title" = "重新命名";
+
+/* Class = "NSMenuItem"; title = "Move…"; ObjectID = "w21-yS-x4D"; */
+"w21-yS-x4D.title" = "移动…";
+
+/* Class = "NSMenuItem"; title = "Copy Relative Path"; ObjectID = "wSc-Yd-qwU"; */
+"wSc-Yd-qwU.title" = "拷贝相对路径";
+
+/* Class = "NSMenuItem"; title = "Quick Look"; ObjectID = "yDD-75-Pdw"; */
+"yDD-75-Pdw.title" = "快速查看";
+
+/* Class = "NSMenuItem"; title = "Move to Trash"; ObjectID = "ya2-ql-hBB"; */
+"ya2-ql-hBB.title" = "移到废纸篓";

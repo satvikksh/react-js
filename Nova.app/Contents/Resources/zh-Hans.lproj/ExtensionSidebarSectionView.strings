@@ -1,0 +1,15 @@
+
+/* Class = "NSTextFieldCell"; title = "Item"; ObjectID = "Gg3-LG-zuJ"; */
+"Gg3-LG-zuJ.title" = "Item";
+
+/* Class = "NSTextFieldCell"; title = "Section Name"; ObjectID = "NZP-8q-fVi"; */
+"NZP-8q-fVi.title" = "部分名称";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "OWx-zu-OKx"; */
+"OWx-zu-OKx.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Description"; ObjectID = "gnQ-97-isu"; */
+"gnQ-97-isu.title" = "描述";
+
+/* Class = "NSTextFieldCell"; title = "No items are available."; ObjectID = "xcY-KS-tJg"; */
+"xcY-KS-tJg.title" = "无可用项目。";

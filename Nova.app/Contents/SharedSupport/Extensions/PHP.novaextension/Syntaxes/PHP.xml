@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="php">
+    <meta>
+        <name>PHP</name>
+        <type>markup</type>
+        <preferred-file-extension>php</preferred-file-extension>
+        <parent>html</parent>
+        <scriptable shebang="#!/usr/bin/env php" />
+    </meta>
+    
+    <identifiers>
+        <prefixes>
+            <string>$</string>
+        </prefixes>
+    </identifiers>
+    
+    <detectors>
+        <extension>php,phtml,php4,php5,ctp</extension>
+        <match-content lines="5" priority="low">&lt;\?(?:php(?:\d(?:\.\d)?)?)</match-content>
+    </detectors>
+    
+    <indentation>
+        <increase>
+            <expression>(\{[^}\"']*$)|(\[[^\]\"']*$)|(\([^)\"']*$)|(\:[^}\"']*$)</expression>
+        </increase>
+        <decrease>
+            <expression>^\s*(\s*/\*.*\*/\s*)*[\}\]\)\\]</expression>
+        </decrease>
+    </indentation>
+    
+    <comments>
+        <single>
+            <expression>//</expression>
+        </single>
+        <multiline>
+            <starts-with>
+                <expression>/*</expression>
+            </starts-with>
+            <ends-with>
+                <expression>*/</expression>
+            </ends-with>
+        </multiline>
+    </comments>
+    
+    <autoclosing-pairs>
+        <pair open="{" close="}" />
+        <pair open="[" close="]" />
+        <pair open="(" close=")" />
+        <pair open="&apos;" close="&apos;" notIn="string,regex,comment" />
+        <pair open="&quot;" close="&quot;" notIn="string,regex" />
+        <pair open="`" close="`" notIn="string,regex,comment" />
+        <pair open="“" close="”" notIn="string,regex" />
+        <pair open="‘" close="’" notIn="string,regex,comment" />
+        <pair open="/**" close=" */" notIn="string,regex,comment" />
+    </autoclosing-pairs>
+    
+    <injection>
+        <expression>^(php|PHP)$</expression>
+    </injection>
+    
+    <tree-sitter>
+        <highlights />
+        <highlights path="highlights-tags.scm" />
+        <injections />
+        <injections path="injections-tags.scm" />
+        <folds />
+        <folds path="folds-tags.scm" />
+        <symbols />
+        <symbols path="symbols-tags.scm" />
+    </tree-sitter>
+    
+    
+    <!-- The PHP regular expression grammar scopes are deprecated.
+         They remain for backwards compatibility with third-party extensions.
+         Do not rely on these for new grammars.
+         They will be removed in a future release. -->
+         
+    <scopes spell-check="true" lookup="dictionary">
+        <!-- Shebang -->
+        <scope name="php.comment.shebang" spell-check="false" lookup="documentation">
+            <expression>\A\#!(.*)$</expression>
+            <capture number="1" name="php.comment.shebang.content" />
+        </scope>
+        
+        <include syntax="html" />
+    </scopes>
+    
+    <template-scopes>
+        <!-- Tags -->
+        <scope name="php.tag.framework" spell-check="false" lookup="index">
+            <symbol type="tag-framework">
+                <context behavior="subtree" group-by-name="true" />
+            </symbol>
+            <starts-with>
+                <expression>&lt;\?(?:(php|PHP)\b|=)?</expression>
+                <capture number="0" name="php.tag.framework.start" />
+                <capture number="1" name="php.tag.framework.name" />
+            </starts-with>
+            <ends-with>
+                <expression>\?&gt;</expression>
+                <capture number="0" name="php.tag.framework.end" />
+            </ends-with>
+            <subsyntax name="php-base" noncontiguous="true" export-symbols="true">
+                <cut-off>
+                    <expression>(?=\?&gt;)</expression>
+                </cut-off>
+            </subsyntax>
+        </scope>
+    </template-scopes>
+</syntax>

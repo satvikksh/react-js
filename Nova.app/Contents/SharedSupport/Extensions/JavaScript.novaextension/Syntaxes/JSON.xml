@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="json">
+    <meta>
+        <name>JSON</name>
+        <type>structured</type>
+        <preferred-file-extension>json</preferred-file-extension>
+    </meta>
+    
+    <detectors>
+        <extension>json,geojson,webmanifest</extension>
+    </detectors>
+    
+    <indentation>
+        <increase>
+            <expression>(\{[^}\"']*$)|(\[[^\]\"']*$)|(\([^)\"']*$)</expression>
+        </increase>
+        <decrease>
+            <expression>^\s*(\s*/\*.*\*/\s*)*[\}\]\)\\]</expression>
+        </decrease>
+    </indentation>
+    
+    <comments>
+        <single>
+            <expression>//</expression>
+        </single>
+        <multiline>
+            <starts-with>
+                <expression>/*</expression>
+            </starts-with>
+            <ends-with>
+                <expression>*/</expression>
+            </ends-with>
+        </multiline>
+    </comments>
+    
+    <tree-sitter>
+        <highlights path="json/highlights.scm" />
+        <folds path="json/folds.scm" />
+        <symbols path="json/symbols.scm" />
+    </tree-sitter>
+</syntax>

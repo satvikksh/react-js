@@ -1,0 +1,60 @@
+
+/* Class = "NSMenuItem"; title = "Move…"; ObjectID = "9VK-yM-ca7"; */
+"9VK-yM-ca7.title" = "Déplacer…";
+
+/* Class = "NSTextFieldCell"; title = "Connecting…"; ObjectID = "AE5-RO-9v2"; */
+"AE5-RO-9v2.title" = "Connexion en cours…";
+
+/* Class = "NSMenuItem"; title = "Duplicate"; ObjectID = "Eg3-Li-7OX"; */
+"Eg3-Li-7OX.title" = "Dupliquer";
+
+/* Class = "NSMenuItem"; title = "Quick Look"; ObjectID = "Grt-9I-eVl"; */
+"Grt-9I-eVl.title" = "Coup d’œil";
+
+/* Class = "NSMenuItem"; title = "Compress"; ObjectID = "LVm-Zw-4dI"; */
+"LVm-Zw-4dI.title" = "Compresser";
+
+/* Class = "NSButton"; ibShadowedToolTip = "New Folder"; ObjectID = "Ogy-Gm-5BA"; */
+"Ogy-Gm-5BA.ibShadowedToolTip" = "Nouveau dossier";
+
+/* Class = "NSMenuItem"; title = "Move to Trash"; ObjectID = "VRg-EY-c5T"; */
+"VRg-EY-c5T.title" = "Placer dans la Corbeille";
+
+/* Class = "NSMenuItem"; title = "New Folder"; ObjectID = "W58-P2-YUa"; */
+"W58-P2-YUa.title" = "Nouveau dossier";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "X71-2Y-Y7I"; */
+"X71-2Y-Y7I.title" = "OK";
+
+/* Class = "NSMenuItem"; title = "Copy Relative Path"; ObjectID = "ZKG-uE-8PH"; */
+"ZKG-uE-8PH.title" = "Copier le chemin relatif";
+
+/* Class = "NSMenuItem"; title = "Copy Path"; ObjectID = "ctP-fJ-zbF"; */
+"ctP-fJ-zbF.title" = "Copier le chemin";
+
+/* Class = "NSMenuItem"; title = "Refresh"; ObjectID = "ftN-i7-h5D"; */
+"ftN-i7-h5D.title" = "Actualiser";
+
+/* Class = "NSMenuItem"; title = "Rename"; ObjectID = "g3L-Pp-p5D"; */
+"g3L-Pp-p5D.title" = "Renommer";
+
+/* Class = "NSMenuItem"; title = "New File"; ObjectID = "ijd-nS-lhy"; */
+"ijd-nS-lhy.title" = "Nouveau fichier";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "it2-GI-zmE"; */
+"it2-GI-zmE.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Show Hidden Files"; ObjectID = "l1B-JO-VaY"; */
+"l1B-JO-VaY.title" = "Afficher les fichiers masqués";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "l1g-uY-f2F"; */
+"l1g-uY-f2F.title" = "Élément 1";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "nDj-se-wry"; */
+"nDj-se-wry.title" = "Item 3";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "pkg-an-Dwt"; */
+"pkg-an-Dwt.title" = "Annuler";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "View Options"; ObjectID = "sz1-Ae-JaZ"; */
+"sz1-Ae-JaZ.ibShadowedToolTip" = "Options d’affichage";

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    These completions are up to date as of:
+    mdn/data commit `af8a84a` on Jan 23, 2024.
+-->
+<completions>
+    <provider name="pseudoelements">
+        <syntax>css</syntax>
+        
+        <query>(pseudo_element_selector)</query>
+        
+        <expression>(?&lt;=::)[a-zA-Z0-9-]*</expression>
+        
+        <trigger>:</trigger>
+        
+        <set>css.pseudoelements</set>
+    </provider>
+    <provider name="pseudoclasses">
+        <syntax>css</syntax>
+        
+        <query>(pseudo_class_selector)</query>
+        
+        <expression>(?&lt;!::)(?&lt;=:)[a-zA-Z0-9-]*</expression>
+        
+        <trigger>:</trigger>
+        
+        <set>css.pseudoclasses</set>
+    </provider>
+    
+    <set name="css.pseudoclasses" symbol="style-pseudoclass">
+        <completion string="active" />
+        <completion string="any-link" />
+        <completion string="blank" />
+        <completion string="checked" />
+        <completion string="current" experimental="true" />
+        <completion string="default" />
+        <completion string="defined" />
+        <completion string="dir">
+            <append>($[])</append>
+        </completion>
+        <completion string="disabled" />
+        <completion string="empty" />
+        <completion string="enabled" />
+        <completion string="first" />
+        <completion string="first-child" />
+        <completion string="first-of-type" />
+        <completion string="fullscreen" />
+        <completion string="future" experimental="true" />
+        <completion string="focus" />
+        <completion string="focus-visible" />
+        <completion string="focus-within" />
+        <completion string="has" experimental="true">
+            <append>($[])</append>
+        </completion>
+        <completion string="host" experimental="true" />
+        <completion string="host-context" experimental="true" />
+        <completion string="hover" />
+        <completion string="indeterminate" />
+        <completion string="in-range" />
+        <completion string="invalid" />
+        <completion string="is" experimental="true">
+            <append>($[])</append>
+        </completion>
+        <completion string="lang" />
+        <completion string="last-child" />
+        <completion string="last-of-type" />
+        <completion string="left" />
+        <completion string="link" />
+        <completion string="local-link" experimental="true" />
+        <completion string="not" />
+        <completion string="nth-child" />
+        <completion string="nth-last-child" />
+        <completion string="nth-last-of-type" />
+        <completion string="nth-of-type" />
+        <completion string="only-child" />
+        <completion string="only-of-type" />
+        <completion string="optional" />
+        <completion string="out-of-range" />
+        <completion string="past" experimental="true" />
+        <completion string="paused" experimental="true" />
+        <completion string="placeholder-shown" />
+        <completion string="playing" experimental="true" />
+        <completion string="read-only" />
+        <completion string="read-write" />
+        <completion string="required" />
+        <completion string="right" />
+        <completion string="root" />
+        <completion string="scope" />
+        <completion string="target" />
+        <completion string="target-text" experimental="true" />
+        <completion string="target-within" experimental="true" />
+        <completion string="user-invalid" experimental="true" />
+        <completion string="user-valid" experimental="true" />
+        <completion string="valid" />
+        <completion string="visited" />
+        <completion string="where" />
+    </set>
+    
+    <set name="css.pseudoelements" symbol="style-pseudoelement">
+        <completion string="after" />
+        <completion string="backdrop" />
+        <completion string="before" />
+        <completion string="cue" />
+        <completion string="cue-region" />
+        <completion string="first-letter" />
+        <completion string="first-line" />
+        <completion string="grammar-error" experimental="true" />
+        <completion string="marker" />
+        <completion string="part" experimental="true" />
+        <completion string="picture-in-picture" experimental="true" />
+        <completion string="placeholder" />
+        <completion string="selection" />
+        <completion string="slotted">
+            <append>($[])</append>
+        </completion>
+        <completion string="spelling-error" experimental="true" />
+        <completion string="view-transition" experimental="true" />
+        <completion string="view-transition-group" experimental="true" />
+        <completion string="view-transition-image-pair" experimental="true" />
+        <completion string="view-transition-new" experimental="true" />
+        <completion string="view-transition-old" experimental="true" />
+    </set>
+</completions>

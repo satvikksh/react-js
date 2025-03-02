@@ -1,0 +1,48 @@
+
+/* Class = "NSMenuItem"; title = "Select Code Block"; ObjectID = "1x5-Qx-OrW"; */
+"1x5-Qx-OrW.title" = "コードブロックを選択";
+
+/* Class = "NSSlider"; ibShadowedToolTip = "Adjust the depth of the symbols displayed"; ObjectID = "LOs-bU-2fU"; */
+"LOs-bU-2fU.ibShadowedToolTip" = "表示されるシンボルの深さを調整します";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Oh6-SM-j0t"; */
+"Oh6-SM-j0t.title" = "Text Cell";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "flat symbols"; ObjectID = "TCS-2u-xg9"; */
+"TCS-2u-xg9.ibExternalAccessibilityDescription" = "シンボルをフラット化";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show symbols as a list"; ObjectID = "TCS-2u-xg9"; */
+"TCS-2u-xg9.ibShadowedToolTip" = "シンボルをリストで表示します";
+
+/* Class = "NSMenuItem"; title = "Copy Symbol"; ObjectID = "UgK-uW-q1K"; */
+"UgK-uW-q1K.title" = "シンボルをコピー";
+
+/* Class = "NSSearchFieldCell"; placeholderString = "Filter"; ObjectID = "WPI-XR-xLW"; */
+"WPI-XR-xLW.placeholderString" = "検索";
+
+/* Class = "NSMenuItem"; title = "Find in Workspace"; ObjectID = "WvY-wA-gmj"; */
+"WvY-wA-gmj.title" = "ワークスペース内を検索";
+
+/* Class = "NSTextFieldCell"; title = "No symbols found in the current document."; ObjectID = "fyC-OC-Dgs"; */
+"fyC-OC-Dgs.title" = "現在の書類からシンボルは見つかりませんでした。";
+
+/* Class = "NSTextFieldCell"; title = "<<Symbol>>"; ObjectID = "iNn-FV-uwb"; */
+"iNn-FV-uwb.title" = "<<Symbol>>";
+
+/* Class = "NSSearchField"; ibShadowedToolTip = "Show files with matching name"; ObjectID = "mM0-GT-NCt"; */
+"mM0-GT-NCt.ibShadowedToolTip" = "入力内容にマッチするファイルを表示します";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "hierarchical symbols"; ObjectID = "vUB-v4-ARf"; */
+"vUB-v4-ARf.ibExternalAccessibilityDescription" = "シンボルを階層化";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show symbols as a tree"; ObjectID = "vUB-v4-ARf"; */
+"vUB-v4-ARf.ibShadowedToolTip" = "シンボルをツリー状に階層表示します";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "sort alphabetically"; ObjectID = "yDm-Wb-wta"; */
+"yDm-Wb-wta.ibExternalAccessibilityDescription" = "アルファベット順で並び替え";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Sort symbols alphabetically"; ObjectID = "yDm-Wb-wta"; */
+"yDm-Wb-wta.ibShadowedToolTip" = "アルファベット順で並び替えます";
+
+/* Class = "NSMenuItem"; title = "Find in Document"; ObjectID = "zb2-qe-NL1"; */
+"zb2-qe-NL1.title" = "書類内を検索";

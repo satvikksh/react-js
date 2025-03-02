@@ -1,0 +1,24 @@
+
+/* Class = "NSMenuItem"; title = "Disconnect"; ObjectID = "2G8-0u-2zQ"; */
+"2G8-0u-2zQ.title" = "切断";
+
+/* Class = "NSMenuItem"; title = "Delete Sends Control-H"; ObjectID = "AlZ-nQ-zyK"; */
+"AlZ-nQ-zyK.title" = "DeleteキーでControl+Hを送信";
+
+/* Class = "NSMenuItem"; title = "Start Logging…"; ObjectID = "Ksh-dy-7Wp"; */
+"Ksh-dy-7Wp.title" = "ロギングを開始…";
+
+/* Class = "NSMenuItem"; title = "Use Option as Meta Key"; ObjectID = "Oe8-YF-iA5"; */
+"Oe8-YF-iA5.title" = "メタキーとしてOptionキーを使用";
+
+/* Class = "NSMenuItem"; title = "Send Mouse Events"; ObjectID = "Xtn-dJ-fRw"; */
+"Xtn-dJ-fRw.title" = "マウスイベントを送信";
+
+/* Class = "NSMenuItem"; title = "Encoding"; ObjectID = "gtU-xf-Eqp"; */
+"gtU-xf-Eqp.title" = "エンコード";
+
+/* Class = "NSMenu"; title = "Encoding"; ObjectID = "ixy-xm-6vv"; */
+"ixy-xm-6vv.title" = "エンコード";
+
+/* Class = "NSMenu"; title = "Terminal"; ObjectID = "lPJ-Gt-gge"; */
+"lPJ-Gt-gge.title" = "ターミナル";

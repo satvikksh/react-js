@@ -1,0 +1,51 @@
+
+/* Class = "NSTextFieldCell"; title = "<<x>>"; ObjectID = "1mD-mu-Ftb"; */
+"1mD-mu-Ftb.title" = "<<x>>";
+
+/* Class = "NSTextFieldCell"; title = "<<x>>"; ObjectID = "8Pq-4g-Fc9"; */
+"8Pq-4g-Fc9.title" = "<<x>>";
+
+/* Class = "NSMenuItem"; title = "Add Remote…"; ObjectID = "AZ3-kl-Mo5"; */
+"AZ3-kl-Mo5.title" = "Remote hinzufügen …";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "D5U-zj-kLt"; */
+"D5U-zj-kLt.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Create New Branch…"; ObjectID = "FSb-Au-kYN"; */
+"FSb-Au-kYN.title" = "Neuen Zweig erstellen …";
+
+/* Class = "NSTextFieldCell"; title = "<<Value>>"; ObjectID = "UH7-pl-vvm"; */
+"UH7-pl-vvm.title" = "<<Value>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Value>>"; ObjectID = "Utg-oB-vZH"; */
+"Utg-oB-vZH.title" = "<<Value>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Ref>>"; ObjectID = "WpQ-c8-ylj"; */
+"WpQ-c8-ylj.title" = "<<Ref>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Add Function Breakpoint"; ObjectID = "XRi-ui-EC1"; */
+"XRi-ui-EC1.ibExternalAccessibilityDescription" = "Funktionsbreakpoint hinzufügen";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Add a new function breakpoint"; ObjectID = "XRi-ui-EC1"; */
+"XRi-ui-EC1.ibShadowedToolTip" = "Neuen Funktionsbreakpoint hinzufügen";
+
+/* Class = "NSMenuItem"; title = "Create New Tag…"; ObjectID = "eVs-hG-LRG"; */
+"eVs-hG-LRG.title" = "Neues Tag erstellen …";
+
+/* Class = "NSTextFieldCell"; title = "<<x>>"; ObjectID = "hRJ-l3-7Ix"; */
+"hRJ-l3-7Ix.title" = "<<x>>";
+
+/* Class = "NSSearchField"; ibExternalAccessibilityDescription = "Clips filter"; ObjectID = "hzh-4z-o3y"; */
+"hzh-4z-o3y.ibExternalAccessibilityDescription" = "Clips-Filter";
+
+/* Class = "NSSearchField"; ibShadowedToolTip = "Show files with matching name"; ObjectID = "hzh-4z-o3y"; */
+"hzh-4z-o3y.ibShadowedToolTip" = "Dateien mit übereinstimmendem Namen anzeigen";
+
+/* Class = "NSTextFieldCell"; title = "<<Header>>"; ObjectID = "nLN-Mg-Opz"; */
+"nLN-Mg-Opz.title" = "<<Header>>";
+
+/* Class = "NSSearchFieldCell"; placeholderString = "Filter"; ObjectID = "x9d-vD-Owg"; */
+"x9d-vD-Owg.placeholderString" = "Filtern";
+
+/* Class = "NSTextFieldCell"; title = "<<Value>>"; ObjectID = "z6j-Lw-lrY"; */
+"z6j-Lw-lrY.title" = "<<Value>>";

@@ -1,0 +1,27 @@
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "2Wy-ST-Ytc"; */
+"2Wy-ST-Ytc.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Name"; ObjectID = "3gu-yX-PaD"; */
+"3gu-yX-PaD.headerCell.title" = "名称";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "6L9-p6-qQH"; */
+"6L9-p6-qQH.title" = "表格视图单元格";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "D8a-nT-uON"; */
+"D8a-nT-uON.title" = "表格视图单元格";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "TvD-dx-f1X"; */
+"TvD-dx-f1X.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Size"; ObjectID = "X5E-7D-jnH"; */
+"X5E-7D-jnH.headerCell.title" = "大小";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "XL3-t7-DKI"; */
+"XL3-t7-DKI.title" = "表格视图单元格";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "dDb-hz-2jx"; */
+"dDb-hz-2jx.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Date"; ObjectID = "zbc-UW-MBI"; */
+"zbc-UW-MBI.headerCell.title" = "日期";

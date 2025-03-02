@@ -1,0 +1,294 @@
+meta {
+    -theme-display-name: "Palette";
+    -theme-interface-style: dark;
+    -theme-accent-color: auto;
+}
+
+meta.window {
+    background-color: hsl(211, 34%, 12%);
+    border-color: hsla(0, 0%, 100%, 0.15);
+}
+meta.titlebar {
+    color: hsl(220, 17%, 76%);
+    background: linear-gradient(hsl(211, 34%, 21%), hsl(211, 34%, 12%));
+    background-color: hsl(211, 34%, 12%);
+    border-color: hsla(0, 0%, 100%, 0.15);
+}
+meta.titlebar.inactive {
+    background-color: hsl(211, 34%, 12%);
+    border-color: hsla(0, 0%, 100%, 0.15);
+}
+
+meta.button {
+    background: linear-gradient(hsl(211, 34%, 21%), hsl(211, 34%, 19%));
+    border-color: hsla(0, 0%, 100%, 0.15);
+    color: white;
+}
+meta.button.highlighted {
+    background: linear-gradient(hsl(211, 34%, 27%), hsl(211, 34%, 25%));
+    color: white;
+}
+meta.button.selected {
+    color: white;
+}
+meta.button.highlighted.selected {
+    color: white;
+}
+meta.button.disabled {
+    background: none;
+    border-color: hsla(0, 0%, 100%, 0.1);
+}
+
+meta.document {
+    background-color: hsl(211, 43%, 15%);
+    border-color: hsla(0, 0%, 100%, 0.15);
+}
+
+meta.text {
+    color: white;
+}
+meta.text.invisible {
+    color: hsl(207, 5%, 33%);
+}
+meta.text.selected {
+    background-color: hsla(214, 100%, 82%, 0.2);
+}
+
+meta.cursor {
+    border-color: white;
+    background-color: hsl(211, 43%, 18%);
+}
+meta.indentguide {
+    border-color: hsla(211, 24%, 40%, 0.3);
+}
+
+meta.gutter {
+    background-color: hsl(211, 43%, 15%);
+    border-color: hsl(211, 24%, 25%);
+    color: hsl(211, 24%, 33%);
+}
+meta.gutter.selected {
+    background-color: hsl(211, 43%, 20%);
+    color: hsl(211, 24%, 49%);
+}
+
+
+/* Syntax */
+comment {
+    color: hsl(204, 5%, 50%);
+    font-style: italic;
+}
+comment.doctag {
+    color: hsl(204, 8%, 75%);
+    font-style: italic;
+}
+processing {
+    color: hsl(204, 8%, 55%);
+    font-style: italic;
+}
+processing.argument {
+    color: hsl(204, 8%, 80%);
+    font-style: italic;
+}
+declaration {
+    color: hsl(204, 8%, 75%);
+    font-style: italic;
+}
+bracket {
+    color: hsl(208, 10%, 72%);
+}
+operator {
+    color: hsl(208, 10%, 72%);
+}
+
+invalid {
+    background-color: red;
+}
+
+/* Keywords */
+keyword {
+    color: hsl(0, 100%, 65%);
+}
+keyword.modifier {
+    font-style: italic;
+    color: hsl(20, 100%, 65%);
+}
+keyword.condition {
+    color: hsl(0, 100%, 65%);
+}
+keyword.construct {
+    color: hsl(0, 100%, 65%);
+}
+keyword.statement {
+    color: hsl(0, 100%, 65%);
+}
+
+/* Values */
+value.boolean, value.null, value.number {
+    color: hsl(305, 65%, 65%);
+}
+value.number.prefix {
+    color: hsl(305, 55%, 75%);
+}
+value.entity, value.symbol {
+    color: hsl(305, 65%, 65%);
+}
+
+/* Identifiers */
+identifier.type {
+    color: hsl(260, 100%, 75%);
+}
+identifier.type.declare {
+    color: hsl(107, 53%, 57%);
+    font-weight: bold;
+}
+identifier.constant,
+identifier.global,
+identifier.variable {
+    color: white;
+}
+identifier.constant.prefix,
+identifier.global.prefix,
+identifier.variable.prefix {
+    color: hsl(210, 40%, 70%);
+}
+identifier.property {
+}
+identifier.property.prefix {
+}
+identifier.decorator,
+identifier.function,
+identifier.method {
+    color: hsl(205, 85%, 65%);
+}
+identifier.decorator.prefix,
+identifier.function.prefix,
+identifier.method.prefix {
+}
+identifier.key {
+    color: hsl(205, 85%, 65%);
+}
+identifier.argument {
+    color: hsl(205, 85%, 65%);
+}
+identifier.argument.prefix {
+    color: hsl(205, 70%, 50%);
+}
+
+/* Strings */
+string, regex {
+    color: hsl(44, 100%, 60%);
+}
+string.delimiter, regex.delimiter {
+    color: hsl(44, 100%, 40%);
+}
+string.escape, regex.escape {
+    color: hsl(258, 47%, 52%);
+}
+string.key {
+    color: hsl(305, 65%, 65%);
+}
+string-keyword {
+    color: hsl(12, 100%, 65%);
+}
+string-template {
+    color: hsl(44, 100%, 80%);
+}
+cdata {
+    color: hsl(205, 85%, 65%);
+}
+
+/* Markup */
+markup.heading {
+    color: hsl(205, 70%, 50%);
+}
+markup.line {
+    color: hsl(60, 45%, 55%);
+}
+markup.bold {
+    color: hsl(190, 72%, 68%);
+    font-weight: bold;
+}
+markup.italic {
+    color: hsl(107, 53%, 57%);
+    font-style: italic;
+}
+markup.strikethrough {
+    color: hsl(0, 100%, 65%);
+}
+markup.list.item {
+    color: white;
+}
+markup.code {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+markup.link {
+    color: hsl(305, 65%, 65%);
+}
+
+/* Tags */
+tag {
+    color: hsl(190, 52%, 48%);
+}
+tag.name {
+    color: hsl(190, 72%, 68%);
+}
+tag.attribute.name {
+    color: hsl(205, 70%, 50%);
+}
+tag.attribute.operator {
+    color: hsl(205, 20%, 60%);
+}
+tag.attribute.value {
+    color: hsl(44, 100%, 60%);
+}
+tag.attribute.delimiter {
+    color: hsl(44, 100%, 40%);
+}
+tag.framework {
+    color: hsl(305, 45%, 45%);
+}
+tag.framework.name {
+    color: hsl(305, 65%, 65%);
+}
+tag.framework.attribute.name {
+    color: hsl(320, 60%, 70%);
+}
+
+/* Styles */
+style.at {
+    color: hsl(305, 65%, 65%);
+}
+style.selector.element {
+    font-weight: bold;
+}
+style.selector.id {
+    color: hsl(190, 72%, 68%);
+}
+style.selector.class {
+    color: hsl(258, 57%, 70%);
+}
+style.selector.pseudoclass {
+    color: hsl(205, 85%, 65%);
+}
+style.selector.pseudoelement {
+    color: hsl(190, 72%, 68%);
+}
+style.attribute.name {
+    color: hsl(190, 72%, 68%);
+}
+style.value.number {
+    color: hsl(305, 65%, 65%);
+}
+style.value.number.prefix {
+    color: hsl(305, 55%, 75%);
+}
+style.string {
+    color: hsl(44, 100%, 60%);
+}
+style.value.color.hex {
+    color: hsl(305, 65%, 65%);
+}
+style.value.keyword, style.value.color.named {
+    color: hsl(0, 100%, 65%);
+}

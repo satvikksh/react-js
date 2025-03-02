@@ -1,0 +1,27 @@
+{
+    "identifier": "{{ identifier }}",
+    "name": "{{ name }}",
+    "organization": "{{ organization }}",
+    "description": "Lorem ipsum, dolor sit amet.",
+    "version": "1.0",
+    "categories": ["commands"],
+    
+    "main": "main.js",
+    
+    "activationEvents": [
+        "onLanguage:javascript"
+    ],
+    
+    "entitlements": {
+        {{ entitlements }}
+    },
+    
+    "commands": {
+        "editor": [
+            {
+                "title": "Foobar",
+                "command": "{{ shortName }}.insertFoobar"
+            }
+        ]
+    }
+}

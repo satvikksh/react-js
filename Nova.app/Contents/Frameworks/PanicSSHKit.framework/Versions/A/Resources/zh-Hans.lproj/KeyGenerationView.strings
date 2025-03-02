@@ -1,0 +1,51 @@
+
+/* Class = "NSMenuItem"; title = "DSA"; ObjectID = "39g-YK-6Aj"; */
+"39g-YK-6Aj.title" = "DSA";
+
+/* Class = "NSTextFieldCell"; title = "PIN:"; ObjectID = "6L2-fa-Gnq"; */
+"6L2-fa-Gnq.title" = "PIN 码：";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "E3b-Fz-qGP"; */
+"E3b-Fz-qGP.title" = "取消";
+
+/* Class = "NSMenuItem"; title = "RSA"; ObjectID = "PKY-e6-Tw0"; */
+"PKY-e6-Tw0.title" = "RSA";
+
+/* Class = "NSTextFieldCell"; title = "Please touch your authenticator when the lights flash."; ObjectID = "PMc-0N-xEc"; */
+"PMc-0N-xEc.title" = "当灯光闪烁时，请触摸您的身份验证器。";
+
+/* Class = "NSButtonCell"; title = "Require PIN"; ObjectID = "QNi-EL-tXT"; */
+"QNi-EL-tXT.title" = "需要 PIN 码";
+
+/* Class = "NSButtonCell"; title = "Resident"; ObjectID = "RFg-My-jC6"; */
+"RFg-My-jC6.title" = "驻留";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "TcD-pe-Tfx"; */
+"TcD-pe-Tfx.title" = "窗口";
+
+/* Class = "NSButtonCell"; title = "Generate"; ObjectID = "a1g-us-sH3"; */
+"a1g-us-sH3.title" = "生成";
+
+/* Class = "NSMenuItem"; title = "1024"; ObjectID = "ahw-nN-30e"; */
+"ahw-nN-30e.title" = "1024";
+
+/* Class = "NSMenuItem"; title = "4096"; ObjectID = "cga-yo-C8m"; */
+"cga-yo-C8m.title" = "4096";
+
+/* Class = "NSMenuItem"; title = "2048"; ObjectID = "e25-fC-QuS"; */
+"e25-fC-QuS.title" = "2048";
+
+/* Class = "NSTextFieldCell"; title = "Passphrase:"; ObjectID = "qza-gv-imW"; */
+"qza-gv-imW.title" = "密码：";
+
+/* Class = "NSTextFieldCell"; title = "Name:"; ObjectID = "uMU-Sr-Pyf"; */
+"uMU-Sr-Pyf.title" = "名称：";
+
+/* Class = "NSTextFieldCell"; title = "Format:"; ObjectID = "vwc-SA-wDd"; */
+"vwc-SA-wDd.title" = "格式：";
+
+/* Class = "NSSecureTextFieldCell"; placeholderString = "optional"; ObjectID = "y0n-gq-bIO"; */
+"y0n-gq-bIO.placeholderString" = "可选";
+
+/* Class = "NSTextFieldCell"; title = "Size:"; ObjectID = "yA5-IN-8SV"; */
+"yA5-IN-8SV.title" = "大小：";

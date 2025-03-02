@@ -1,0 +1,64 @@
+{
+    "build-start": {
+        "name": "Starts",
+    },
+    "build-issues": {
+        "name": "Generates issues",
+        "sidebar": {
+            "action": "show",
+            "identifier": "issues"
+        }
+    },
+    "build-succeed": {
+        "name": "Succeeds",
+        "notification": true
+    },
+    "build-fail": {
+        "name": "Fails",
+        "notification": true
+    },
+    "run-start": {
+        "name": "Starts",
+    },
+    "run-pause": {
+        "name": "Pauses",
+        "sidebar": {
+            "action": "show",
+            "identifier": "debug"
+        },
+        "debugPane": {
+            "action": "show",
+            "identifier": "debug-console"
+        }
+    },
+    "run-output": {
+        "name": "Generates output",
+        "console": {
+            "action": "show"
+        }
+    },
+    "run-issues": {
+        "name": "Generates issues",
+        "sidebar": {
+            "action": "show",
+            "identifier": "issues"
+        }
+    },
+    "run-succeed": {
+        "name": "Completes"
+    },
+    "run-fail": {
+        "name": "Exits unexpectedly",
+    },
+    "publish-start": {
+        "name": "Starts",
+    },
+    "publish-succeed": {
+        "name": "Succeeds",
+        "notification": true
+    },
+    "publish-fail": {
+        "name": "Fails",
+        "notification": true
+    }
+}

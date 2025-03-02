@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    These completions are up to date as of:
+    mdn/data commit `af8a84a` on Jan 23, 2024.
+-->
+<completions>
+    <provider name="at-rules">
+        <syntax>css</syntax>
+        
+        <exclude-selector>comment</exclude-selector>
+        
+        <expression>@[a-zA-Z0-9-]*</expression>
+        
+        <trigger>@</trigger>
+        
+        <set>css.at-rules</set>
+    </provider>
+    
+    <provider name="at-rules.import.values">
+        <syntax>css</syntax>
+        
+        <query>
+            (import_statement)
+        </query>
+        
+        <expression>(?&lt;=\s)[a-zA-Z0-9-]*</expression>
+        
+        <set>css.at-rule.import.values</set>
+    </provider>
+    
+    <provider name="at-rules.charset.values">
+        <syntax>css</syntax>
+        
+        <query>
+            (charset_statement)
+        </query>
+        
+        <expression>(?&lt;=")[a-zA-Z0-9-]*</expression>
+        
+        <set>css.at-rule.charset.values</set>
+    </provider>
+    
+    <provider name="at-rule.media.keywords">
+        <!-- @media keywords -->
+        <syntax>css</syntax>
+        
+        <query>
+            (media_statement "@media" .)
+            (media_statement
+              "@media" @provider.start
+              (block "{" @provider.end)
+            )
+        </query>
+        
+        <expression>(?&lt;!:\s|:)[a-zA-Z0-9-]*</expression>
+        
+        <set>css.at-rule.media.keywords</set>
+    </provider>
+    <provider name="at-rule.media-feature.names">
+        <!-- @media features names -->
+        <syntax>css</syntax>
+        
+        <query>
+            (media_statement
+              (binary_query) @query
+             (#cursor-in? @query)
+            )
+        </query>
+        
+        <expression>(?&lt;!:\s|:)[a-zA-Z0-9-]*</expression>
+        
+        <set>css.at-rule.media.features</set>
+    </provider>
+    <provider name="at-rule.media-feature.values">
+        <!-- @media features values appearing after a colon -->
+        <syntax>css</syntax>
+        
+        <query>
+            (feature_query
+              (feature_name) @feature)
+        </query>
+        
+        <expression>(?&lt;=\s|:)[a-zA-Z0-9-]*</expression>
+        
+        <set>css.at-rule.media.feature-values.${feature}</set>
+    </provider>
+    
+    <provider name="at-rule.supports.keywords">
+        <!-- @supports keywords -->
+        <syntax>css</syntax>
+        
+        <query>
+            (supports_statement "@supports" .)
+            (supports_statement
+              "@supports" @provider.start
+              (block "{" @provider.end)
+            )
+        </query>
+        
+        <expression>(?&lt;=\s)[a-zA-Z0-9-]*</expression>
+        
+        <set>css.at-rule.supports.keywords</set>
+    </provider>
+    
+    <!-- At Rules -->
+    <set name="css.at-rules" symbol="statement">
+        <completion string="@charset">
+            <behavior suffix="(?=\s*$)" complete-on-confirm="true">
+                <append> "$[]";</append>
+            </behavior>
+        </completion>
+        <completion string="@counter-style">
+            <behavior suffix="(?=\s*$)" complete-on-confirm="true">
+                <append><![CDATA[ $[] {
+    $[attributes]
+}]]></append>
+            </behavior>
+        </completion>
+        <completion string="@document" nonstandard="true">
+            <behavior suffix="(?=\s*$)" complete-on-confirm="true">
+                <append><![CDATA[ $[] {
+    $[attributes]
+}]]></append>
+            </behavior>
+        </completion>
+        <completion string="@font-face">
+            <behavior suffix="(?=\s*$)">
+                <append><![CDATA[ {
+    $[attributes]
+}]]></append>
+            </behavior>
+        </completion>
+        <completion string="@font-feature-values">
+            <behavior suffix="(?=\s*$)">
+                <append><![CDATA[ $[family-name] {
+    $[attributes]
+}]]></append>
+            </behavior>
+        </completion>
+        <completion string="@import">
+            <behavior suffix="(?=\s*$)" complete-on-confirm="true">
+                <append> $[];</append>
+            </behavior>
+        </completion>
+        <completion string="@keyframes">
+            <behavior suffix="(?=\s*$)">
+                <append><![CDATA[ $[] {
+    $[keyframes]
+}]]></append>
+            </behavior>
+        </completion>
+        <completion string="@media">
+            <behavior suffix="(?=\s*$)" complete-on-confirm="true">
+                <append><![CDATA[ $[] {
+    $[attributes]
+}]]></append>
+            </behavior>
+        </completion>
+        <completion string="@namespace">
+            <behavior suffix="(?=\s*$)" complete-on-confirm="true">
+                <append> $[];</append>
+            </behavior>
+        </completion>
+        <completion string="@page">
+            <behavior suffix="(?=\s*$)" complete-on-confirm="true">
+                <append><![CDATA[ $[] {
+    $[attributes]
+}]]></append>
+            </behavior>
+        </completion>
+        <completion string="@supports">
+            <behavior suffix="(?=\s*$)" complete-on-confirm="true">
+                <append><![CDATA[ $[] {
+    $[attributes]
+}]]></append>
+            </behavior>
+        </completion>
+    </set>
+    
+    <set name="css.at-rule.import.values" symbol="statement">
+        <completion string="url">
+            <behavior complete-on-confirm="true">
+                <append>("$[]")</append>
+            </behavior>
+        </completion>
+        <completion string="supports">
+            <behavior complete-on-confirm="true">
+                <append>($[])</append>
+            </behavior>
+        </completion>
+    </set>
+    
+    <set name="css.at-rule.charset.values" symbol="constant">
+        <completion string="utf-8" description="UTF-8" />
+    </set>
+    
+    <set name="css.at-rule.media.keywords">
+        <completion string="all" symbol="constant" />
+        <completion string="print" symbol="constant" />
+        <completion string="screen" symbol="constant" />
+        <completion string="speech" symbol="constant" />
+        <completion string="and" symbol="keyword" />
+        <completion string="or" symbol="keyword" />
+        <completion string="not" symbol="keyword" />
+        <completion string="only" symbol="keyword" />
+    </set>
+    
+    <set name="css.at-rule.media.features">
+        <completion string="any-hover" />
+        <completion string="any-pointer" />
+        <completion string="aspect-ratio" />
+        <completion string="min-aspect-ratio" />
+        <completion string="max-aspect-ratio" />
+        <completion string="color" />
+        <completion string="min-color" />
+        <completion string="max-color" />
+        <completion string="color-gamut" />
+        <completion string="color-index" />
+        <completion string="min-color-index" />
+        <completion string="max-color-index" />
+        <completion string="device-aspect-ratio" />
+        <completion string="min-device-aspect-ratio" />
+        <completion string="max-device-aspect-ratio" />
+        <completion string="device-height" />
+        <completion string="min-device-height" />
+        <completion string="max-device-height" />
+        <completion string="device-width" />
+        <completion string="min-device-width" />
+        <completion string="max-device-width" />
+        <completion string="display-mode" />
+        <completion string="forced-colors" />
+        <completion string="grid" />
+        <completion string="height" />
+        <completion string="min-height" />
+        <completion string="max-height" />
+        <completion string="hover" />
+        <completion string="inverted-colors" />
+        <completion string="light-level" />
+        <completion string="monochrome" />
+        <completion string="min-monochrome" />
+        <completion string="max-monochrome" />
+        <completion string="orientation" />
+        <completion string="overflow-block" />
+        <completion string="overflow-inline" />
+        <completion string="pointer" />
+        <completion string="prefers-color-scheme" />
+        <completion string="prefers-contrast" />
+        <completion string="prefers-reduced-motion" />
+        <completion string="prefers-reduced-transparency" />
+        <completion string="resolution" />
+        <completion string="min-resolution" />
+        <completion string="max-resolution" />
+        <completion string="scan" />
+        <completion string="scripting" />
+        <completion string="update" />
+        <completion string="width" />
+        <completion string="min-width" />
+        <completion string="max-width" />
+    </set>
+    
+    <set name="css.at-rule.media.feature-values.any-hover">
+        <completion string="none" />
+        <completion string="hover" />
+    </set>
+    
+    <set name="css.at-rule.media.feature-values.any-pointer">
+        <completion string="none" />
+        <completion string="coarse" />
+        <completion string="fine" />
+    </set>
+    
+    <set name="css.at-rule.media.feature-values.color-gamut">
+        <completion string="srgb" />
+        <completion string="p3" />
+        <completion string="rec2020" />
+    </set>
+    
+    <set name="css.at-rule.media.feature-values.display-mode">
+        <completion string="fullscreen" />
+        <completion string="standalone" />
+        <completion string="minimal-ui" />
+        <completion string="browser" />
+    </set>
+    
+    <set name="css.at-rule.media.feature-values.forced-colors">
+        <completion string="none" />
+        <completion string="active" />
+    </set>
+    
+    <set name="css.at-rule.media.feature-values.hover">
+        <completion string="none" />
+        <completion string="hover" />
+    </set>
+    
+    <set name="css.at-rule.media.feature-values.inverted-colors">
+        <completion string="none" />
+        <completion string="inverted" />
+    </set>
+    
+    <set name="css.at-rule.media.feature-values.light-level">
+        <completion string="dim" />
+        <completion string="normal" />
+        <completion string="washed" />
+    </set>
+    
+    <set name="css.at-rule.media.feature-values.orientation">
+        <completion string="portrait" />
+        <completion string="landscape" />
+    </set>
+    
+    <set name="css.at-rule.media.feature-values.overflow-block">
+        <completion string="none" />
+        <completion string="scroll" />
+        <completion string="optional-paged" />
+        <completion string="paged" />
+    </set>
+    
+    <set name="css.at-rule.media.feature-values.overflow-inline">
+        <completion string="none" />
+        <completion string="scroll" />
+    </set>
+    
+    <set name="css.at-rule.media.feature-values.pointer">
+        <completion string="none" />
+        <completion string="coarse" />
+        <completion string="fine" />
+    </set>
+    
+    <set name="css.at-rule.media.feature-values.prefers-color-scheme">
+        <completion string="light" />
+        <completion string="dark" />
+    </set>
+    
+    <set name="css.at-rule.media.feature-values.prefers-contrast">
+        <completion string="no-preference" />
+        <completion string="high" />
+        <completion string="low" />
+    </set>
+    
+    <set name="css.at-rule.media.feature-values.prefers-reduced-motion">
+        <completion string="no-preference" />
+        <completion string="reduce" />
+    </set>
+    
+    <set name="css.at-rule.media.feature-values.prefers-reduced-transparency">
+        <completion string="no-preference" />
+        <completion string="reduce" />
+    </set>
+    
+    <set name="css.at-rule.media.feature-values.prefers-reduced-transparency">
+        <completion string="no-preference" />
+        <completion string="reduce" />
+    </set>
+    
+    <set name="css.at-rule.media.feature-values.scan">
+        <completion string="progressive" />
+        <completion string="interlace" />
+    </set>
+    
+    <set name="css.at-rule.media.feature-values.scripting">
+        <completion string="none" />
+        <completion string="initial-only" />
+        <completion string="enabled" />
+    </set>
+    
+    <set name="css.at-rule.media.feature-values.update">
+        <completion string="none" />
+        <completion string="slow" />
+        <completion string="fast" />
+    </set>
+    
+    <set name="css.at-rule.supports.keywords">
+        <completion string="and" symbol="keyword" />
+        <completion string="or" symbol="keyword" />
+        <completion string="not" symbol="keyword" />
+        <completion string="only" symbol="keyword" />
+        <completion string="selector" symbol="keyword">
+            <behavior suffix="(?!\()">
+                <append>($[])</append>
+            </behavior>
+        </completion>
+    </set>
+</completions>

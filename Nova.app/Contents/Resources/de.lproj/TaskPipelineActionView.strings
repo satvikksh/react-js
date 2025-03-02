@@ -1,0 +1,9 @@
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "delete action"; ObjectID = "KNe-rO-KoF"; */
+"KNe-rO-KoF.ibExternalAccessibilityDescription" = "Aktion löschen";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Delete this action"; ObjectID = "KNe-rO-KoF"; */
+"KNe-rO-KoF.ibShadowedToolTip" = "Diese Aktion löschen";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "Rt6-I7-mVw"; */
+"Rt6-I7-mVw.title" = "<<Name>>";

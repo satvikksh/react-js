@@ -1,0 +1,66 @@
+
+/* Class = "NSTextFieldCell"; title = "A list of patterns that are matched against files to be excluded from indexing. Patterns set in the global \"Ignored Files\" preference are also excluded automatically."; ObjectID = "4tr-jj-bfU"; */
+"4tr-jj-bfU.title" = "与要从索引中排除的文件匹配的一系列模式。全局“忽略的文件”首选项中设置的模式也会自动排除。";
+
+/* Class = "NSMenuItem"; title = "Global Default"; ObjectID = "6du-oW-5SJ"; */
+"6du-oW-5SJ.title" = "全局默认";
+
+/* Class = "NSMenuItem"; title = "CSS"; ObjectID = "7bj-es-1gV"; */
+"7bj-es-1gV.title" = "CSS";
+
+/* Class = "NSTextFieldCell"; title = "When set to \"Always\", patterns defined in the project's .gitignore file will be used when excluding files from indexing."; ObjectID = "Ckl-bv-4je"; */
+"Ckl-bv-4je.title" = "设置为“始终”时，将在从索引中排除文件时，使用在项目的 .gitignore 文件中定义的模式。";
+
+/* Class = "NSButtonCell"; title = "Automatically index files"; ObjectID = "Dho-nS-2Cg"; */
+"Dho-nS-2Cg.title" = "自动索引文件";
+
+/* Class = "NSMenuItem"; title = "Global Default"; ObjectID = "Fq1-DI-18H"; */
+"Fq1-DI-18H.title" = "全局默认";
+
+/* Class = "NSButtonCell"; title = "Reindex All Files"; ObjectID = "Jyc-b4-iV4"; */
+"Jyc-b4-iV4.title" = "重新索引全部文件";
+
+/* Class = "NSMenuItem"; title = "Always"; ObjectID = "NbG-Oe-LMP"; */
+"NbG-Oe-LMP.title" = "始终";
+
+/* Class = "NSTextFieldCell"; title = "Project Name:"; ObjectID = "Ty3-YF-pC9"; */
+"Ty3-YF-pC9.title" = "项目名称：";
+
+/* Class = "NSMenuItem"; title = "JavaScript"; ObjectID = "a9K-nP-qyj"; */
+"a9K-nP-qyj.title" = "JavaScript";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Pattern"; ObjectID = "bnd-VS-YAn"; */
+"bnd-VS-YAn.placeholderString" = "模式";
+
+/* Class = "NSTextFieldCell"; title = "Artwork:"; ObjectID = "c3c-RV-Ndj"; */
+"c3c-RV-Ndj.title" = "插图：";
+
+/* Class = "NSTextFieldCell"; title = "Default Syntax:"; ObjectID = "f92-vK-Bsi"; */
+"f92-vK-Bsi.title" = "默认语法：";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "fRD-Pr-8v2"; */
+"fRD-Pr-8v2.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Ignored Files:"; ObjectID = "kPb-8X-Kyk"; */
+"kPb-8X-Kyk.title" = "忽略的文件：";
+
+/* Class = "NSTextFieldCell"; title = "Ignore files excluded by Git:"; ObjectID = "l3K-Gy-NNH"; */
+"l3K-Gy-NNH.title" = "忽略 Git 排除的文件：";
+
+/* Class = "NSMenuItem"; title = "Never"; ObjectID = "prG-Wb-VHN"; */
+"prG-Wb-VHN.title" = "永不";
+
+/* Class = "NSButtonCell"; title = "Automatically index symbols"; ObjectID = "s04-z4-vA2"; */
+"s04-z4-vA2.title" = "自动索引符号";
+
+/* Class = "NSTextFieldCell"; title = "Indexing:"; ObjectID = "wnf-O2-KEg"; */
+"wnf-O2-KEg.title" = "正在索引：";
+
+/* Class = "NSMenuItem"; title = "HTML"; ObjectID = "wni-Pb-lUx"; */
+"wni-Pb-lUx.title" = "HTML";
+
+/* Class = "NSTextFieldCell"; title = "Symbols contained in project files will be available for Autocomplete, Quick Open, and Jump to Definition."; ObjectID = "wtY-R3-w9m"; */
+"wtY-R3-w9m.title" = "项目文件中的符号可用于自动完成、快速打开和跳到定义。";
+
+/* Class = "NSTextFieldCell"; title = "The name to display for the project, which can be different than the containing folder."; ObjectID = "yP0-Dz-mUJ"; */
+"yP0-Dz-mUJ.title" = "项目的显示名称，可以与所在文件夹不同。";

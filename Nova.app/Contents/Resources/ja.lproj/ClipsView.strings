@@ -1,0 +1,111 @@
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "action button"; ObjectID = "0NU-hX-LRG"; */
+"0NU-hX-LRG.ibExternalAccessibilityDescription" = "action button";
+
+/* Class = "NSMenuItem"; title = "Import Clips…"; ObjectID = "0TE-SH-g4R"; */
+"0TE-SH-g4R.title" = "クリップを読み込む…";
+
+/* Class = "NSSearchFieldCell"; placeholderString = "Filter"; ObjectID = "0ie-fA-5A8"; */
+"0ie-fA-5A8.placeholderString" = "検索";
+
+/* Class = "NSButtonCell"; title = "Extensions"; ObjectID = "4Yj-y2-DK0"; */
+"4Yj-y2-DK0.title" = "機能拡張";
+
+/* Class = "NSTextFieldCell"; title = "def foobar():\n    return self;"; ObjectID = "4hg-cJ-dqd"; */
+"4hg-cJ-dqd.title" = "def foobar():\n    return self;";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "(untitled group)"; ObjectID = "7cD-Uk-pva"; */
+"7cD-Uk-pva.ibShadowedIsNilPlaceholder" = "（名称未設定グループ）";
+
+/* Class = "NSMenuItem"; title = "Delete"; ObjectID = "8Ys-ss-Hfr"; */
+"8Ys-ss-Hfr.title" = "削除";
+
+/* Class = "NSButtonCell"; title = "Global"; ObjectID = "AXd-a3-Val"; */
+"AXd-a3-Val.title" = "グローバル";
+
+/* Class = "NSMenuItem"; title = "Add Clip"; ObjectID = "BxK-Eb-Nnt"; */
+"BxK-Eb-Nnt.title" = "クリップを追加";
+
+/* Class = "NSTextFieldCell"; title = "Clip Name"; ObjectID = "CWs-Wd-WJp"; */
+"CWs-Wd-WJp.title" = "クリップ名";
+
+/* Class = "NSMenuItem"; title = "Export Clips…"; ObjectID = "EXT-nV-Zbd"; */
+"EXT-nV-Zbd.title" = "クリップを書き出す…";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "(untitled clip)"; ObjectID = "Etk-78-vZY"; */
+"Etk-78-vZY.ibShadowedIsNilPlaceholder" = "（名称未設定クリップ）";
+
+/* Class = "NSButtonCell"; title = "Project"; ObjectID = "Fvd-f3-fb6"; */
+"Fvd-f3-fb6.title" = "プロジェクト";
+
+/* Class = "NSTextFieldCell"; title = "Extension"; ObjectID = "G5d-Jr-1ha"; */
+"G5d-Jr-1ha.title" = "拡張子";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "add clip"; ObjectID = "Hse-uT-4ZM"; */
+"Hse-uT-4ZM.ibExternalAccessibilityDescription" = "add clip";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Add a new clip"; ObjectID = "Hse-uT-4ZM"; */
+"Hse-uT-4ZM.ibShadowedToolTip" = "新規クリップを追加";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "(untitled group)"; ObjectID = "LB1-0A-iHT"; */
+"LB1-0A-iHT.ibShadowedIsNilPlaceholder" = "（名称未設定グループ）";
+
+/* Class = "NSButtonCell"; title = "Find More Clips…"; ObjectID = "UHI-xk-VOv"; */
+"UHI-xk-VOv.title" = "クリップを探す…";
+
+/* Class = "NSSearchField"; ibExternalAccessibilityDescription = "Clips filter"; ObjectID = "UJb-rj-CCG"; */
+"UJb-rj-CCG.ibExternalAccessibilityDescription" = "Clips filter";
+
+/* Class = "NSSearchField"; ibShadowedToolTip = "Show files with matching name"; ObjectID = "UJb-rj-CCG"; */
+"UJb-rj-CCG.ibShadowedToolTip" = "入力にマッチした項目を表示します";
+
+/* Class = "NSMenuItem"; title = "Add Clip"; ObjectID = "amk-dW-EAE"; */
+"amk-dW-EAE.title" = "クリップを追加";
+
+/* Class = "NSTextFieldCell"; title = "Click the + button to add clips."; ObjectID = "cOI-Q2-rnq"; */
+"cOI-Q2-rnq.title" = "クリップを追加するには + ボタンをクリックします。";
+
+/* Class = "NSTextFieldCell"; title = "key"; ObjectID = "eie-wa-O0P"; */
+"eie-wa-O0P.title" = "key";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "global clips"; ObjectID = "ejG-C9-gwC"; */
+"ejG-C9-gwC.ibExternalAccessibilityDescription" = "global clips";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Clips that are available for all documents"; ObjectID = "ejG-C9-gwC"; */
+"ejG-C9-gwC.ibShadowedToolTip" = "すべての言語モードで利用可能なクリップ";
+
+/* Class = "NSTextFieldCell"; title = "Group Name"; ObjectID = "iAp-PI-Maj"; */
+"iAp-PI-Maj.title" = "グループ名";
+
+/* Class = "NSMenuItem"; title = "Duplicate"; ObjectID = "j26-Yl-KKX"; */
+"j26-Yl-KKX.title" = "複製";
+
+/* Class = "NSMenuItem"; title = "Add Group"; ObjectID = "jHl-Dp-kHs"; */
+"jHl-Dp-kHs.title" = "グループを追加";
+
+/* Class = "NSTextFieldCell"; title = "trigger"; ObjectID = "md0-2B-JHJ"; */
+"md0-2B-JHJ.title" = "trigger";
+
+/* Class = "NSMenuItem"; title = "Add Group"; ObjectID = "qEI-AS-a0i"; */
+"qEI-AS-a0i.title" = "グループを追加";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "extension clips"; ObjectID = "rLk-eS-wwV"; */
+"rLk-eS-wwV.ibExternalAccessibilityDescription" = "extension clips";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Clips that are provided by extensions"; ObjectID = "rLk-eS-wwV"; */
+"rLk-eS-wwV.ibShadowedToolTip" = "機能拡張によって提供されるクリップ";
+
+/* Class = "NSMenuItem"; title = "Edit…"; ObjectID = "uSz-Gm-PRc"; */
+"uSz-Gm-PRc.title" = "編集…";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "wWS-TM-Wy0"; */
+"wWS-TM-Wy0.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "syntax"; ObjectID = "wjy-CJ-DzK"; */
+"wjy-CJ-DzK.title" = "syntax";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "project clips"; ObjectID = "xfA-LH-X9N"; */
+"xfA-LH-X9N.ibExternalAccessibilityDescription" = "project clips";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Clips that are stored within this project"; ObjectID = "xfA-LH-X9N"; */
+"xfA-LH-X9N.ibShadowedToolTip" = "特定のプロジェクトで利用可能なクリップ";

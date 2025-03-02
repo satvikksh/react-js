@@ -1,0 +1,29 @@
+{
+    "identifier": "panic.HTML",
+    "name": "HTML",
+    "author": "Panic Inc.",
+    
+    "main": "main.js",
+    
+    "entitlements": {
+        "filesystem": "readwrite"
+    },
+    
+    "activationEvents": [
+        "onLanguage:html"
+    ],
+    
+    "commands": {
+        "editor": [
+            {
+                "title": "Wrap Selection In Tag",
+                "command": "html.wrapSelectionInTag",
+                "shortcut": "cmd-<",
+                "when": "editorHasFocus",
+                "filters": {
+                    "syntaxes": ["html", "xml"]
+                }
+            }
+        ]
+    }
+}

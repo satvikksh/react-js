@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="yaml">
+    <meta>
+        <name>YAML</name>
+        <type>structured</type>
+        <preferred-file-extension>yml</preferred-file-extension>
+    </meta>
+    
+    <detectors>
+        <extension>yaml,yml</extension>
+    </detectors>
+    
+    <indentation>
+        <increase>
+            <expression>:\s*$</expression>
+        </increase>
+    </indentation>
+    
+    <comments>
+        <single>
+            <expression>#</expression>
+        </single>
+    </comments>
+    
+    <tree-sitter>
+        <highlights />
+        <folds />
+    </tree-sitter>
+</syntax>

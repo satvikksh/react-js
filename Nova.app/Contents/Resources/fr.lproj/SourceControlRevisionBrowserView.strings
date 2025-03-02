@@ -1,0 +1,54 @@
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "1vR-bA-wRQ"; */
+"1vR-bA-wRQ.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "<<Remote>>"; ObjectID = "73v-r4-Bs8"; */
+"73v-r4-Bs8.title" = "<<Remote>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Author>>"; ObjectID = "8bC-6e-MP6"; */
+"8bC-6e-MP6.title" = "<<Author>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Tag>>"; ObjectID = "Jc5-di-87r"; */
+"Jc5-di-87r.title" = "<<Tag>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Header>>"; ObjectID = "LgC-A0-MVp"; */
+"LgC-A0-MVp.title" = "<<Header>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Message>>"; ObjectID = "Ti0-gF-Uhn"; */
+"Ti0-gF-Uhn.title" = "<<Message>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Branch>>"; ObjectID = "V9X-aB-BBb"; */
+"V9X-aB-BBb.title" = "<<Branch>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Choose File"; ObjectID = "Y1z-AT-Jss"; */
+"Y1z-AT-Jss.ibExternalAccessibilityDescription" = "Choisir un fichier";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Choose a file for comparison…"; ObjectID = "Y1z-AT-Jss"; */
+"Y1z-AT-Jss.ibShadowedToolTip" = "Choisissez un fichier à comparer…";
+
+/* Class = "NSTextFieldCell"; title = "<<PlaceholderTitle>>"; ObjectID = "bIo-UX-f9D"; */
+"bIo-UX-f9D.title" = "<<PlaceholderTitle>>";
+
+/* Class = "NSSearchFieldCell"; placeholderString = "Commits"; ObjectID = "bn9-5V-ZYX"; */
+"bn9-5V-ZYX.placeholderString" = "Validations";
+
+/* Class = "NSTextFieldCell"; title = "<<Date>>"; ObjectID = "fge-mL-jq4"; */
+"fge-mL-jq4.title" = "<<Date>>";
+
+/* Class = "NSTextFieldCell"; title = "<<PlaceholderTitle>>"; ObjectID = "gTk-XL-2WB"; */
+"gTk-XL-2WB.title" = "<<PlaceholderTitle>>";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "jpj-Hc-WD9"; */
+"jpj-Hc-WD9.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "<<SHA>>"; ObjectID = "mQy-Rm-GzP"; */
+"mQy-Rm-GzP.title" = "<<SHA>>";
+
+/* Class = "NSTextFieldCell"; title = "Current Version"; ObjectID = "uvU-es-VBb"; */
+"uvU-es-VBb.title" = "Version actuelle";
+
+/* Class = "NSSearchFieldCell"; placeholderString = "Branches & Tags"; ObjectID = "xUN-Ta-zy8"; */
+"xUN-Ta-zy8.placeholderString" = "Branches et balises";
+
+/* Class = "NSTextFieldCell"; title = "<<Container>>"; ObjectID = "yKV-1y-MqI"; */
+"yKV-1y-MqI.title" = "<<Container>>";

@@ -1,0 +1,630 @@
+
+/* Class = "NSTextFieldCell"; title = "Insertion Point:"; ObjectID = "0M9-Z2-Pdj"; */
+"0M9-Z2-Pdj.title" = "插入点：";
+
+/* Class = "NSMenuItem"; title = "Underline"; ObjectID = "0Ug-Gf-0jM"; */
+"0Ug-Gf-0jM.title" = "下划线";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Font Style"; ObjectID = "1AW-Kf-G7I"; */
+"1AW-Kf-G7I.ibExternalAccessibilityDescription" = "字型";
+
+/* Class = "NSMenuItem"; title = "Red"; ObjectID = "1Gh-IP-xSB"; */
+"1Gh-IP-xSB.title" = "红色";
+
+/* Class = "NSMenuItem"; title = "Visible Always"; ObjectID = "1fe-IJ-ryV"; */
+"1fe-IJ-ryV.title" = "始终可见";
+
+/* Class = "NSTabViewItem"; label = "Extensions"; ObjectID = "1g9-bN-1Nw"; */
+"1g9-bN-1Nw.label" = "扩展";
+
+/* Class = "NSButtonCell"; title = "Wrap lines to editor width"; ObjectID = "1xY-cM-I2V"; */
+"1xY-cM-I2V.title" = "断行到编辑器宽度";
+
+/* Class = "NSMenuItem"; title = "Protanopia"; ObjectID = "2DX-3f-U9Y"; */
+"2DX-3f-U9Y.title" = "红色盲";
+
+/* Class = "NSMenuItem"; title = "HTML"; ObjectID = "2Fj-qE-TXP"; */
+"2Fj-qE-TXP.title" = "HTML";
+
+/* Class = "NSMenuItem"; title = "Yellow"; ObjectID = "2I6-0Z-uPE"; */
+"2I6-0Z-uPE.title" = "黄色";
+
+/* Class = "NSTextFieldCell"; title = "Saving:"; ObjectID = "2Uc-nI-0gc"; */
+"2Uc-nI-0gc.title" = "正在保存：";
+
+/* Class = "NSMenuItem"; title = "Windows (CRLF)"; ObjectID = "2WZ-fZ-j2k"; */
+"2WZ-fZ-j2k.title" = "Windows (CRLF)";
+
+/* Class = "NSTabViewItem"; label = "Vim"; ObjectID = "32q-Sm-13L"; */
+"32q-Sm-13L.label" = "Vim";
+
+/* Class = "NSMenuItem"; title = "Bisexual Pride"; ObjectID = "382-y8-8LG"; */
+"382-y8-8LG.title" = "双性恋自豪";
+
+/* Class = "NSMenuItem"; title = "Block"; ObjectID = "3VP-Y9-9TM"; */
+"3VP-Y9-9TM.title" = "块";
+
+/* Class = "NSMenuItem"; title = "Gray"; ObjectID = "3jq-ed-bTD"; */
+"3jq-ed-bTD.title" = "灰色";
+
+/* Class = "NSTextFieldCell"; title = "Language servers may define specific characters, beyond Return and Tab, which accept the selected completion automatically."; ObjectID = "3mS-B7-nTk"; */
+"3mS-B7-nTk.title" = "语言服务器可以定义除 Return 和 Tab 之外的特定字符，它们会自动接受选定的补全。";
+
+/* Class = "NSMenuItem"; title = "ASCII"; ObjectID = "4IT-Uu-evX"; */
+"4IT-Uu-evX.title" = "ASCII";
+
+/* Class = "NSMenuItem"; title = "Large"; ObjectID = "4q1-7M-bkZ"; */
+"4q1-7M-bkZ.title" = "大";
+
+/* Class = "NSMenuItem"; title = "Dash-Dot-Dot"; ObjectID = "5JB-bQ-Ug5"; */
+"5JB-bQ-Ug5.title" = "双点划线";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Font Options"; ObjectID = "5Oy-Tp-WNy"; */
+"5Oy-Tp-WNy.ibExternalAccessibilityDescription" = "字体选项";
+
+/* Class = "NSMenuItem"; title = "Genderfluid Pride"; ObjectID = "5YD-dv-Teq"; */
+"5YD-dv-Teq.title" = "流性别自豪";
+
+/* Class = "NSButtonCell"; title = "⇥ Tab"; ObjectID = "5YR-GS-xpq"; */
+"5YR-GS-xpq.title" = "⇥ Tab";
+
+/* Class = "NSTabViewItem"; label = "Display"; ObjectID = "5l5-bR-1I7"; */
+"5l5-bR-1I7.label" = "正在编辑";
+
+/* Class = "NSMenuItem"; title = "Gray"; ObjectID = "6BV-c8-bAI"; */
+"6BV-c8-bAI.title" = "灰色";
+
+/* Class = "NSStepper"; ibExternalAccessibilityDescription = "Font Size"; ObjectID = "6Xe-ud-oiX"; */
+"6Xe-ud-oiX.ibExternalAccessibilityDescription" = "字号";
+
+/* Class = "NSMenuItem"; title = "Deuteranopia"; ObjectID = "6ow-tH-DyM"; */
+"6ow-tH-DyM.title" = "绿色盲";
+
+/* Class = "NSButtonCell"; title = "Configure using .editorconfig files"; ObjectID = "7ig-wK-mld"; */
+"7ig-wK-mld.title" = "使用 .editorconfig 文件配置";
+
+/* Class = "NSMenuItem"; title = "Tritanopia"; ObjectID = "7n3-Zf-hoK"; */
+"7n3-Zf-hoK.title" = "蓝色盲";
+
+/* Class = "NSMenuItem"; title = "Vertical Bar"; ObjectID = "82S-Oh-eEw"; */
+"82S-Oh-eEw.title" = "垂直栏";
+
+/* Class = "NSMenuItem"; title = "Transgender Pride"; ObjectID = "8ac-3t-OOq"; */
+"8ac-3t-OOq.title" = "跨性别自豪";
+
+/* Class = "NSMenuItem"; title = "Orange"; ObjectID = "BHc-AG-TKO"; */
+"BHc-AG-TKO.title" = "橙色";
+
+/* Class = "NSButtonCell"; title = "Show an alert if opened files have inconsistent line endings"; ObjectID = "BWh-m5-1tr"; */
+"BWh-m5-1tr.title" = "如果打开的文件有不一致的行尾，则显示提示";
+
+/* Class = "NSMenuItem"; title = "Agender Pride"; ObjectID = "CaG-WB-kmh"; */
+"CaG-WB-kmh.title" = "无性别自豪";
+
+/* Class = "NSMenuItem"; title = "None"; ObjectID = "D55-MM-dJ0"; */
+"D55-MM-dJ0.title" = "无";
+
+/* Class = "NSButtonCell"; title = "Suggest completions when typing"; ObjectID = "D5P-BG-Ltt"; */
+"D5P-BG-Ltt.title" = "键入时建议完成";
+
+/* Class = "NSButtonCell"; title = "Show indentation guides"; ObjectID = "DZg-Eq-hga"; */
+"DZg-Eq-hga.title" = "显示缩进参考线";
+
+/* Class = "NSButtonCell"; title = "Wrap selection in typed delimiters"; ObjectID = "EgT-Mt-kkd"; */
+"EgT-Mt-kkd.title" = "在键入的括号中断行所选内容";
+
+/* Class = "NSMenuItem"; title = "macOS / Unix (LF)"; ObjectID = "Euf-E8-boI"; */
+"Euf-E8-boI.title" = "macOS / Unix (LF)";
+
+/* Class = "NSMenuItem"; title = "Teal"; ObjectID = "F9s-6n-mU5"; */
+"F9s-6n-mU5.title" = "蓝绿";
+
+/* Class = "NSMenuItem"; title = "Hidden"; ObjectID = "FlJ-xt-V6r"; */
+"FlJ-xt-V6r.title" = "隐藏";
+
+/* Class = "NSMenuItem"; title = "Aromantic Pride"; ObjectID = "G0h-2f-9ZL"; */
+"G0h-2f-9ZL.title" = "无浪漫自豪";
+
+/* Class = "NSMenuItem"; title = "Beach Day"; ObjectID = "GQQ-aS-yBT"; */
+"GQQ-aS-yBT.title" = "海滩日";
+
+/* Class = "NSMenuItem"; title = "Beach Day"; ObjectID = "Ghm-8h-fG1"; */
+"Ghm-8h-fG1.title" = "海滩日";
+
+/* Class = "NSTextFieldCell"; title = "Bracket Palette:"; ObjectID = "Gls-Vw-tl0"; */
+"Gls-Vw-tl0.title" = "括号面板：";
+
+/* Class = "NSMenuItem"; title = "Visible In Focused Editor"; ObjectID = "HVz-VF-ORx"; */
+"HVz-VF-ORx.title" = "在聚焦的编辑器内可见";
+
+/* Class = "NSButtonCell"; title = "Suggest Clips when typing"; ObjectID = "HYI-2X-Flb"; */
+"HYI-2X-Flb.title" = "键入时建议剪辑";
+
+/* Class = "NSButtonCell"; title = "Insert and type-over matching delimiters"; ObjectID = "Hbt-Og-fJB"; */
+"Hbt-Og-fJB.title" = "插入并替换匹配的括号";
+
+/* Class = "NSTextFieldCell"; placeholderString = "0.0"; ObjectID = "HgK-4Y-WId"; */
+"HgK-4Y-WId.placeholderString" = "0.0";
+
+/* Class = "NSMenuItem"; title = "Blue"; ObjectID = "IBD-qv-vaT"; */
+"IBD-qv-vaT.title" = "蓝色";
+
+/* Class = "NSTextFieldCell"; placeholderString = "4"; ObjectID = "IiE-Nw-5QH"; */
+"IiE-Nw-5QH.placeholderString" = "4";
+
+/* Class = "NSMenuItem"; title = "Cyberpunk"; ObjectID = "Isc-AB-bY9"; */
+"Isc-AB-bY9.title" = "赛博朋克";
+
+/* Class = "NSButtonCell"; title = "Code actions indicator"; ObjectID = "Iup-Ru-7mJ"; */
+"Iup-Ru-7mJ.title" = "代码操作指示器";
+
+/* Class = "NSMenuItem"; title = "MacRoman"; ObjectID = "J9R-Qe-fZI"; */
+"J9R-Qe-fZI.title" = "MacRoman";
+
+/* Class = "NSMenuItem"; title = "Inserts a breakpoint"; ObjectID = "JUp-Fa-6QF"; */
+"JUp-Fa-6QF.title" = "插入断点";
+
+/* Class = "NSMenuItem"; title = "Genderfluid Pride"; ObjectID = "JmZ-5d-y0A"; */
+"JmZ-5d-y0A.title" = "流性别自豪";
+
+/* Class = "NSButtonCell"; title = "Minimap"; ObjectID = "Jqf-hI-Ikw"; */
+"Jqf-hI-Ikw.title" = "小地图";
+
+/* Class = "NSTextFieldCell"; title = "Default Line Endings:"; ObjectID = "KC7-d2-3ST"; */
+"KC7-d2-3ST.title" = "默认行尾：";
+
+/* Class = "NSButtonCell"; title = "Symbol path"; ObjectID = "KRH-o4-B6G"; */
+"KRH-o4-B6G.title" = "符号路径";
+
+/* Class = "NSMenuItem"; title = "Genderqueer Pride"; ObjectID = "LEH-Lf-SaQ"; */
+"LEH-Lf-SaQ.title" = "性别酷儿自豪";
+
+/* Class = "NSMenuItem"; title = "Rainbow"; ObjectID = "Lfq-1x-hy5"; */
+"Lfq-1x-hy5.title" = "彩虹";
+
+/* Class = "NSTextFieldCell"; title = "Font:"; ObjectID = "Lrf-55-S41"; */
+"Lrf-55-S41.title" = "字体：";
+
+/* Class = "NSMenuItem"; title = "Aromantic Pride"; ObjectID = "Lzn-a4-jYf"; */
+"Lzn-a4-jYf.title" = "无浪漫自豪";
+
+/* Class = "NSButtonCell"; title = "Automatically reload preview after typing"; ObjectID = "M0L-wv-Imh"; */
+"M0L-wv-Imh.title" = "输入后自动重新加载预览";
+
+/* Class = "NSMenuItem"; title = "Pansexual Pride"; ObjectID = "MHc-Sq-QfS"; */
+"MHc-Sq-QfS.title" = "泛性恋自豪";
+
+/* Class = "NSTextFieldCell"; title = "Status View:"; ObjectID = "MSP-0O-2bT"; */
+"MSP-0O-2bT.title" = "状态视图：";
+
+/* Class = "NSButtonCell"; title = "Enable Vim mode"; ObjectID = "MX7-Ix-ILO"; */
+"MX7-Ix-ILO.title" = "启动 Vim 模式";
+
+/* Class = "NSButtonCell"; title = "Accept completions on server-defined characters"; ObjectID = "MjW-HP-IlG"; */
+"MjW-HP-IlG.title" = "接受服务器定义字符补全";
+
+/* Class = "NSMenuItem"; title = "<<Family>>"; ObjectID = "MvR-18-45X"; */
+"MvR-18-45X.title" = "<<Family>>";
+
+/* Class = "NSTextFieldCell"; title = "px"; ObjectID = "MzD-Wj-lYg"; */
+"MzD-Wj-lYg.title" = "px";
+
+/* Class = "NSMenuItem"; title = "Bisexual Pride"; ObjectID = "N0n-ac-g0d"; */
+"N0n-ac-g0d.title" = "双性恋自豪";
+
+/* Class = "NSButtonCell"; title = "Show In Gutter"; ObjectID = "N5i-Md-BQR"; */
+"N5i-Md-BQR.title" = "在沟槽中显示";
+
+/* Class = "NSMenuItem"; title = "Yellow"; ObjectID = "NGU-gB-dPW"; */
+"NGU-gB-dPW.title" = "黄色";
+
+/* Class = "NSMenuItem"; title = "CSS"; ObjectID = "Ndb-uF-e6K"; */
+"Ndb-uF-e6K.title" = "CSS";
+
+/* Class = "NSTextFieldCell"; title = "Indentation Guides:"; ObjectID = "Opd-J6-bql"; */
+"Opd-J6-bql.title" = "缩进提示线：";
+
+/* Class = "NSButtonCell"; title = "Use pasteboard for unnamed register"; ObjectID = "Ovt-v0-aKV"; */
+"Ovt-v0-aKV.title" = "为未命名的寄存器使用粘贴板";
+
+/* Class = "NSMenuItem"; title = "Synthwave"; ObjectID = "QKv-RJ-EhV"; */
+"QKv-RJ-EhV.title" = "合成器浪潮";
+
+/* Class = "NSTextFieldCell"; title = "Wrapping Keys:"; ObjectID = "RUC-XS-wgH"; */
+"RUC-XS-wgH.title" = "包装密钥：";
+
+/* Class = "NSMenuItem"; title = "Panic Palette"; ObjectID = "RaJ-Hp-UGc"; */
+"RaJ-Hp-UGc.title" = "Panic 面板";
+
+/* Class = "NSTextFieldCell"; title = "Line height is specified as a multiple of font size."; ObjectID = "RcV-Rk-0wT"; */
+"RcV-Rk-0wT.title" = "行高被指定为字体大小的倍数。";
+
+/* Class = "NSMenuItem"; title = "Pink"; ObjectID = "RjU-cV-xMW"; */
+"RjU-cV-xMW.title" = "粉红";
+
+/* Class = "NSButtonCell"; title = "Invisibles"; ObjectID = "SDu-E8-uqH"; */
+"SDu-E8-uqH.title" = "不可见内容";
+
+/* Class = "NSButtonCell"; title = "Current line highlight"; ObjectID = "Sa8-aw-V93"; */
+"Sa8-aw-V93.title" = "当前行突出显示";
+
+/* Class = "NSMenuItem"; title = "Tabs"; ObjectID = "T3w-h1-ANs"; */
+"T3w-h1-ANs.title" = "标签页";
+
+/* Class = "NSMenuItem"; title = "Transgender Pride"; ObjectID = "T64-79-BXn"; */
+"T64-79-BXn.title" = "跨性别自豪";
+
+/* Class = "NSButtonCell"; title = "Violet"; ObjectID = "Tdj-LG-HwA"; */
+"Tdj-LG-HwA.title" = "紫罗兰色";
+
+/* Class = "NSButtonCell"; title = "Automatically insert closing tags"; ObjectID = "Tnq-yo-OEv"; */
+"Tnq-yo-OEv.title" = "自动完成结束标记";
+
+/* Class = "NSMenuItem"; title = "Intersex Pride"; ObjectID = "TtK-hF-ZPF"; */
+"TtK-hF-ZPF.title" = "间性人自豪";
+
+/* Class = "NSTextFieldCell"; title = "Completions:"; ObjectID = "Tts-cU-MsD"; */
+"Tts-cU-MsD.title" = "完成：";
+
+/* Class = "NSButtonCell"; title = "Show In Editor"; ObjectID = "TwK-Ym-pcV"; */
+"TwK-Ym-pcV.title" = "在编辑器中显示";
+
+/* Class = "NSTextFieldCell"; title = "Palette:"; ObjectID = "U9E-mr-OvQ"; */
+"U9E-mr-OvQ.title" = "面板：";
+
+/* Class = "NSButtonCell"; title = "Completions"; ObjectID = "UGE-Z1-WEk"; */
+"UGE-Z1-WEk.title" = "完成";
+
+/* Class = "NSMenuItem"; title = "Green"; ObjectID = "UVS-mA-XYf"; */
+"UVS-mA-XYf.title" = "绿色";
+
+/* Class = "NSMenuItem"; title = "Pink"; ObjectID = "UdK-RA-cJ2"; */
+"UdK-RA-cJ2.title" = "粉红";
+
+/* Class = "NSButtonCell"; title = "Contextual hover information"; ObjectID = "Ups-Op-F7i"; */
+"Ups-Op-F7i.title" = "上下文悬停信息";
+
+/* Class = "NSButtonCell"; title = "← & →"; ObjectID = "V4h-vr-pa6"; */
+"V4h-vr-pa6.title" = "← 和 →";
+
+/* Class = "NSMenuItem"; title = "Purple"; ObjectID = "VFi-3s-cqw"; */
+"VFi-3s-cqw.title" = "紫色";
+
+/* Class = "NSMenuItem"; title = "Orange"; ObjectID = "VN0-Sy-HFb"; */
+"VN0-Sy-HFb.title" = "橙色";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Font Size"; ObjectID = "Vjb-Jf-8gs"; */
+"Vjb-Jf-8gs.ibExternalAccessibilityDescription" = "字号";
+
+/* Class = "NSTextFieldCell"; title = "Accept completions with:"; ObjectID = "VkE-5S-Aug"; */
+"VkE-5S-Aug.title" = "接受完成：";
+
+/* Class = "NSTextFieldCell"; title = "Default Syntax:"; ObjectID = "WDR-sR-QN7"; */
+"WDR-sR-QN7.title" = "默认语法：";
+
+/* Class = "NSMenuItem"; title = "None"; ObjectID = "WPK-yL-SBc"; */
+"WPK-yL-SBc.title" = "无";
+
+/* Class = "NSTabViewItem"; label = "Editing"; ObjectID = "XDR-p8-i1O"; */
+"XDR-p8-i1O.label" = "编辑";
+
+/* Class = "NSMenuItem"; title = "Deuteranopia"; ObjectID = "XEe-e9-EiT"; */
+"XEe-e9-EiT.title" = "绿色盲";
+
+/* Class = "NSButtonCell"; title = "Auditory"; ObjectID = "XUo-Vm-Ww3"; */
+"XUo-Vm-Ww3.title" = "听觉";
+
+/* Class = "NSMenuItem"; title = "Tritanopia"; ObjectID = "Xfs-Nm-3fr"; */
+"Xfs-Nm-3fr.title" = "蓝色盲";
+
+/* Class = "NSButtonCell"; title = "Indent wrapped lines to match leading whitespace"; ObjectID = "XiZ-96-7u1"; */
+"XiZ-96-7u1.title" = "缩进断行以匹配段首空白";
+
+/* Class = "NSMenuItem"; title = "JavaScript"; ObjectID = "XvS-ET-zcs"; */
+"XvS-ET-zcs.title" = "JavaScript";
+
+/* Class = "NSMenuItem"; title = "Cyberpunk"; ObjectID = "Y9d-Fv-5ra"; */
+"Y9d-Fv-5ra.title" = "赛博朋克";
+
+/* Class = "NSButtonCell"; title = "Code structure headers"; ObjectID = "ZHJ-pB-lnq"; */
+"ZHJ-pB-lnq.title" = "代码结构标头";
+
+/* Class = "NSButtonCell"; title = "Highlight instances of selected symbol"; ObjectID = "ZId-hh-NwN"; */
+"ZId-hh-NwN.title" = "突出显示所选符号实例";
+
+/* Class = "NSTextFieldCell"; title = "EditorConfig:"; ObjectID = "Zbu-nT-GCw"; */
+"Zbu-nT-GCw.title" = "EditorConfig:";
+
+/* Class = "NSButtonCell"; title = "Reformat indentation of pasted text"; ObjectID = "aUd-Wl-rNn"; */
+"aUd-Wl-rNn.title" = "调整插入文本的缩进";
+
+/* Class = "NSTextFieldCell"; title = "Clicking a line number:"; ObjectID = "agS-z7-gfu"; */
+"agS-z7-gfu.title" = "点按行号：";
+
+/* Class = "NSMenuItem"; title = "Six Colors"; ObjectID = "bKs-Lf-RCJ"; */
+"bKs-Lf-RCJ.title" = "六种颜色";
+
+/* Class = "NSMenuItem"; title = "Spaces"; ObjectID = "bOl-a3-naB"; */
+"bOl-a3-naB.title" = "个空格";
+
+/* Class = "NSMenuItem"; title = "Demisexual Pride"; ObjectID = "bok-Rf-ild"; */
+"bok-Rf-ild.title" = "半性恋自豪";
+
+/* Class = "NSMenuItem"; title = "Synthwave"; ObjectID = "bud-3n-FZD"; */
+"bud-3n-FZD.title" = "合成器浪潮";
+
+/* Class = "NSMenuItem"; title = "Dash"; ObjectID = "c6w-Wa-9Wa"; */
+"c6w-Wa-9Wa.title" = "虚线";
+
+/* Class = "NSMenuItem"; title = "Rainbow"; ObjectID = "cON-cu-65v"; */
+"cON-cu-65v.title" = "彩虹";
+
+/* Class = "NSMenuItem"; title = "Hybrid"; ObjectID = "cnj-3D-6v0"; */
+"cnj-3D-6v0.title" = "混合";
+
+/* Class = "NSMenuItem"; title = "Green"; ObjectID = "cwP-UG-Flh"; */
+"cwP-UG-Flh.title" = "绿色";
+
+/* Class = "NSTextFieldCell"; title = "Line Numbers:"; ObjectID = "cy7-8E-NRK"; */
+"cy7-8E-NRK.title" = "行号：";
+
+/* Class = "NSButtonCell"; title = "Highlight matching brackets and tags"; ObjectID = "dJ6-EL-n89"; */
+"dJ6-EL-n89.title" = "突出显示匹配的括号和标记";
+
+/* Class = "NSMenuItem"; title = "Asexual Pride"; ObjectID = "dqf-3M-sHA"; */
+"dqf-3M-sHA.title" = "无性恋自豪";
+
+/* Class = "NSTextFieldCell"; title = "Vim:"; ObjectID = "e2B-mA-KzR"; */
+"e2B-mA-KzR.title" = "Vim：";
+
+/* Class = "NSTextFieldCell"; title = "Indent wrapped lines by"; ObjectID = "e9k-9b-WpP"; */
+"e9k-9b-WpP.title" = "断行缩进";
+
+/* Class = "NSButtonCell"; title = "⌫ Delete"; ObjectID = "eBT-BH-f9N"; */
+"eBT-BH-f9N.title" = "⌫ 删除";
+
+/* Class = "NSMenuItem"; title = "Purple"; ObjectID = "eVE-Ob-nZj"; */
+"eVE-Ob-nZj.title" = "紫色";
+
+/* Class = "NSButtonCell"; title = "Autodetect indentation when opening existing files"; ObjectID = "ecO-bX-Phn"; */
+"ecO-bX-Phn.title" = "打开现有文件时自动检测缩进";
+
+/* Class = "NSMenuItem"; title = "Lesbian Pride"; ObjectID = "fAQ-HB-xUc"; */
+"fAQ-HB-xUc.title" = "女同性恋自豪";
+
+/* Class = "NSMenuItem"; title = "Protanopia"; ObjectID = "fMT-7d-fcY"; */
+"fMT-7d-fcY.title" = "红色盲";
+
+/* Class = "NSMenuItem"; title = "Intersex Pride"; ObjectID = "frs-z0-QIw"; */
+"frs-z0-QIw.title" = "间性人自豪";
+
+/* Class = "NSButtonCell"; title = "Adjust indentation while typing"; ObjectID = "fwU-MQ-F0y"; */
+"fwU-MQ-F0y.title" = "输入时调整缩进";
+
+/* Class = "NSMenuItem"; title = "Dash-Dot"; ObjectID = "fwr-yN-Xm0"; */
+"fwr-yN-Xm0.title" = "点划线";
+
+/* Class = "NSMenuItem"; title = "UTF-8"; ObjectID = "g8U-EI-zM9"; */
+"g8U-EI-zM9.title" = "UTF-8";
+
+/* Class = "NSMenuItem"; title = "Absolute"; ObjectID = "gBI-DO-b4j"; */
+"gBI-DO-b4j.title" = "绝对";
+
+/* Class = "NSTextFieldCell"; title = "Pattern:"; ObjectID = "gky-jd-vFX"; */
+"gky-jd-vFX.title" = "模式：";
+
+/* Class = "NSButtonCell"; title = "Manage Extensions…"; ObjectID = "h1O-DH-eFO"; */
+"h1O-DH-eFO.title" = "管理扩展…";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Font Family"; ObjectID = "h7E-4O-akc"; */
+"h7E-4O-akc.ibExternalAccessibilityDescription" = "字体系列";
+
+/* Class = "NSMenuItem"; title = "Six Colors"; ObjectID = "hAr-f1-yqR"; */
+"hAr-f1-yqR.title" = "六种颜色";
+
+/* Class = "NSButtonCell"; title = "Select prefix when double-clicking identifiers"; ObjectID = "i7O-St-EBW"; */
+"i7O-St-EBW.title" = "连按变量时选择前缀";
+
+/* Class = "NSTabViewItem"; label = "Indentation"; ObjectID = "iOX-OW-I8A"; */
+"iOX-OW-I8A.label" = "缩进";
+
+/* Class = "NSTextFieldCell"; title = "Language Servers:"; ObjectID = "iSD-Hf-oyp"; */
+"iSD-Hf-oyp.title" = "语言服务器：";
+
+/* Class = "NSMenuItem"; title = "Asexual Pride"; ObjectID = "ihb-bl-BAe"; */
+"ihb-bl-BAe.title" = "无性恋自豪";
+
+/* Class = "NSTextFieldCell"; title = "Show:"; ObjectID = "irm-ew-a6x"; */
+"irm-ew-a6x.title" = "显示：";
+
+/* Class = "NSTextFieldCell"; title = "Editor Overscroll:"; ObjectID = "jEV-Y6-krX"; */
+"jEV-Y6-krX.title" = "编辑器 Overscroll：";
+
+/* Class = "NSMenuItem"; title = "Small"; ObjectID = "jr4-69-Pdd"; */
+"jr4-69-Pdd.title" = "小";
+
+/* Class = "NSButtonCell"; title = "Options…"; ObjectID = "kh3-UB-fGc"; */
+"kh3-UB-fGc.title" = "选项…";
+
+/* Class = "NSMenuItem"; title = "Vaporwave"; ObjectID = "ku4-Fj-bXp"; */
+"ku4-Fj-bXp.title" = "蒸汽波";
+
+/* Class = "NSMenuItem"; title = "Demisexual Pride"; ObjectID = "l5w-Us-WEF"; */
+"l5w-Us-WEF.title" = "半性恋自豪";
+
+/* Class = "NSTextFieldCell"; title = "Letter Spacing:"; ObjectID = "lT0-Bb-ULO"; */
+"lT0-Bb-ULO.title" = "字母间距：";
+
+/* Class = "NSButtonCell"; title = "Code folding ribbon"; ObjectID = "lVl-SZ-54R"; */
+"lVl-SZ-54R.title" = "折叠栏";
+
+/* Class = "NSButtonCell"; title = "Toggling comment includes a space"; ObjectID = "lZa-vE-3mY"; */
+"lZa-vE-3mY.title" = "切换注释包括一个空格";
+
+/* Class = "NSTextFieldCell"; title = "Line Height:"; ObjectID = "lhu-Yv-tPK"; */
+"lhu-Yv-tPK.title" = "行高：";
+
+/* Class = "NSTextFieldCell"; title = "The alternate behavior can be performed by using an Option-click."; ObjectID = "m9d-Aw-pQ7"; */
+"m9d-Aw-pQ7.title" = "使用“选项-点按”可以执行替代行为。";
+
+/* Class = "NSTextFieldCell"; title = "Multiple wrap guides may be specified by separating with commas."; ObjectID = "mBY-d8-IBd"; */
+"mBY-d8-IBd.title" = "可以用逗号分隔来指定多个断行提示线。";
+
+/* Class = "NSTextFieldCell"; title = "Typing:"; ObjectID = "mOQ-pR-cKo"; */
+"mOQ-pR-cKo.title" = "正在键入：";
+
+/* Class = "NSMenuItem"; title = "Gay Pride"; ObjectID = "mb2-2B-r7V"; */
+"mb2-2B-r7V.title" = "男同性恋自豪";
+
+/* Class = "NSMenuItem"; title = "Relative"; ObjectID = "mkf-UX-osq"; */
+"mkf-UX-osq.title" = "相对";
+
+/* Class = "NSButtonCell"; title = "Automatically indent new lines"; ObjectID = "mlu-a8-e5C"; */
+"mlu-a8-e5C.title" = "自动缩进新行";
+
+/* Class = "NSTextFieldCell"; title = "Options:"; ObjectID = "mr3-kb-dvJ"; */
+"mr3-kb-dvJ.title" = "选项：";
+
+/* Class = "NSButtonCell"; title = "⏎ Return"; ObjectID = "mxR-xq-I2o"; */
+"mxR-xq-I2o.title" = "⏎ Return";
+
+/* Class = "NSMenuItem"; title = "Solid"; ObjectID = "n1r-mm-Hhu"; */
+"n1r-mm-Hhu.title" = "实线";
+
+/* Class = "NSButtonCell"; title = "Trim whitespace from whitespace-only lines"; ObjectID = "nFI-dQ-1pA"; */
+"nFI-dQ-1pA.title" = "从仅限空白行修剪空白";
+
+/* Class = "NSMenuItem"; title = "Non-Binary Pride"; ObjectID = "nez-lu-kJy"; */
+"nez-lu-kJy.title" = "非二元性别自豪";
+
+/* Class = "NSTextFieldCell"; title = "Prefer Indent Using:"; ObjectID = "niT-w8-6D8"; */
+"niT-w8-6D8.title" = "首选缩进方式：";
+
+/* Class = "NSButtonCell"; title = "h & l"; ObjectID = "niY-8n-RFA"; */
+"niY-8n-RFA.title" = "h 和 l";
+
+/* Class = "NSMenuItem"; title = "Selects the line"; ObjectID = "nrY-kG-3ot"; */
+"nrY-kG-3ot.title" = "选择此行";
+
+/* Class = "NSMenuItem"; title = "Medium"; ObjectID = "oCf-Ew-12F"; */
+"oCf-Ew-12F.title" = "媒体";
+
+/* Class = "NSButtonCell"; title = "Space"; ObjectID = "oTU-yc-rha"; */
+"oTU-yc-rha.title" = "空格键";
+
+/* Class = "NSMenuItem"; title = "None"; ObjectID = "opo-ab-St2"; */
+"opo-ab-St2.title" = "无";
+
+/* Class = "NSMenuItem"; title = "Red"; ObjectID = "ov5-Du-Sfv"; */
+"ov5-Du-Sfv.title" = "红色";
+
+/* Class = "NSButtonCell"; title = "Blink insertion point"; ObjectID = "oxm-Zl-R2A"; */
+"oxm-Zl-R2A.title" = "闪烁插入点";
+
+/* Class = "NSMenuItem"; title = "Panic Palette"; ObjectID = "p2L-Kn-5jR"; */
+"p2L-Kn-5jR.title" = "Panic 面板";
+
+/* Class = "NSButtonCell"; title = "Signature help for arguments"; ObjectID = "pJm-55-rAl"; */
+"pJm-55-rAl.title" = "为参数签名帮助";
+
+/* Class = "NSTextFieldCell"; title = "Opacity:"; ObjectID = "pXx-FH-BSc"; */
+"pXx-FH-BSc.title" = "不透明：";
+
+/* Class = "NSTextFieldCell"; title = "spaces"; ObjectID = "psa-7E-yIC"; */
+"psa-7E-yIC.title" = "个空格";
+
+/* Class = "NSMenuItem"; title = "Blue"; ObjectID = "r0G-Ys-VFH"; */
+"r0G-Ys-VFH.title" = "蓝色";
+
+/* Class = "NSButtonCell"; title = "Show wrap guide at column"; ObjectID = "r9G-jA-Cta"; */
+"r9G-jA-Cta.title" = "在栏中显示断行提示线";
+
+/* Class = "NSButtonCell"; title = "Prefer commenting by line"; ObjectID = "r9m-a4-U8A"; */
+"r9m-a4-U8A.title" = "更喜欢按行注释";
+
+/* Class = "NSTextFieldCell"; title = "Requires a relevant extension compatible with the Language Server Protocol."; ObjectID = "rKW-Ye-n0R"; */
+"rKW-Ye-n0R.title" = "需要与语言服务器协议兼容的相关扩展。";
+
+/* Class = "NSButtonCell"; title = "Visual"; ObjectID = "s6x-eX-RyW"; */
+"s6x-eX-RyW.title" = "视觉";
+
+/* Class = "NSMenuItem"; title = "Gay Pride"; ObjectID = "sYU-3O-JpY"; */
+"sYU-3O-JpY.title" = "男同性恋自豪";
+
+/* Class = "NSMenuItem"; title = "Teal"; ObjectID = "sjY-8N-RaM"; */
+"sjY-8N-RaM.title" = "蓝绿";
+
+/* Class = "NSTextFieldCell"; title = "Tab Width:"; ObjectID = "slD-aU-TZM"; */
+"slD-aU-TZM.title" = "制表符宽度：";
+
+/* Class = "NSMenuItem"; title = "Pansexual Pride"; ObjectID = "snG-y1-3K6"; */
+"snG-y1-3K6.title" = "泛性恋自豪";
+
+/* Class = "NSButtonCell"; title = "Show command suggestions"; ObjectID = "u6t-8q-J3E"; */
+"u6t-8q-J3E.title" = "显示命令建议";
+
+/* Class = "NSButtonCell"; title = "Line numbers"; ObjectID = "uDQ-qd-vRA"; */
+"uDQ-qd-vRA.title" = "行编号";
+
+/* Class = "NSButtonCell"; title = "File path"; ObjectID = "uFU-TH-hja"; */
+"uFU-TH-hja.title" = "文件路径";
+
+/* Class = "NSTextFieldCell"; placeholderString = "4"; ObjectID = "uSD-jw-NzF"; */
+"uSD-jw-NzF.placeholderString" = "4";
+
+/* Class = "NSTextFieldCell"; title = "spaces"; ObjectID = "ulR-P2-Vxi"; */
+"ulR-P2-Vxi.title" = "个空格";
+
+/* Class = "NSButtonCell"; title = "Type and function separators"; ObjectID = "v4o-QC-LEj"; */
+"v4o-QC-LEj.title" = "类型和功能分隔符";
+
+/* Class = "NSMenuItem"; title = "Dot"; ObjectID = "vBr-jg-Y4f"; */
+"vBr-jg-Y4f.title" = "点线";
+
+/* Class = "NSTextFieldCell"; placeholderString = "1.0"; ObjectID = "vFk-q6-fTg"; */
+"vFk-q6-fTg.placeholderString" = "1.5";
+
+/* Class = "NSTextFieldCell"; title = "Default Text Encoding:"; ObjectID = "vTc-qt-o5I"; */
+"vTc-qt-o5I.title" = "默认文本编码：";
+
+/* Class = "NSButtonCell"; title = "Links"; ObjectID = "vak-n5-ZJA"; */
+"vak-n5-ZJA.title" = "链接";
+
+/* Class = "NSMenuItem"; title = "Classic Mac OS (CR)"; ObjectID = "w4a-ui-4jW"; */
+"w4a-ui-4jW.title" = "经典 Mac OS (CR)";
+
+/* Class = "NSMenuItem"; title = "Lesbian Pride"; ObjectID = "wEb-nT-K2x"; */
+"wEb-nT-K2x.title" = "女同性恋自豪";
+
+/* Class = "NSTextFieldCell"; title = "Color Previews:"; ObjectID = "wNV-t3-j4P"; */
+"wNV-t3-j4P.title" = "颜色预览：";
+
+/* Class = "NSMenuItem"; title = "Agender Pride"; ObjectID = "wZZ-WH-RQo"; */
+"wZZ-WH-RQo.title" = "无性别自豪";
+
+/* Class = "NSButtonCell"; title = "Ensure a trailing newline at the end of files"; ObjectID = "wwl-tE-wND"; */
+"wwl-tE-wND.title" = "请确保在文件结尾有末尾换行符";
+
+/* Class = "NSMenuItem"; title = "Vaporwave"; ObjectID = "wx3-Y9-d3D"; */
+"wx3-Y9-d3D.title" = "蒸汽波";
+
+/* Class = "NSTextFieldCell"; title = "Beep Style:"; ObjectID = "xRo-gH-AmJ"; */
+"xRo-gH-AmJ.title" = "蜂鸣类型：";
+
+/* Class = "NSMenuItem"; title = "Genderqueer Pride"; ObjectID = "xnG-40-LBJ"; */
+"xnG-40-LBJ.title" = "性别酷儿自豪";
+
+/* Class = "NSMenuItem"; title = "Non-Binary Pride"; ObjectID = "xyq-uh-WgB"; */
+"xyq-uh-WgB.title" = "非二元性别自豪";
+
+/* Class = "NSMenuItem"; title = "<<Style>>"; ObjectID = "y7P-gf-avV"; */
+"y7P-gf-avV.title" = "<<Style>>";
+
+/* Class = "NSButtonCell"; title = "~ Tilde"; ObjectID = "z1k-Ol-JTl"; */
+"z1k-Ol-JTl.title" = "~ 波浪号";
+
+/* Class = "NSTextFieldCell"; title = "Automatically set indentation style, line endings, and more based on .editorconfig files in a project."; ObjectID = "zMQ-8Z-RNM"; */
+"zMQ-8Z-RNM.title" = "使用项目文件夹中的 .editorconfig 文件自动设置缩进样式、行尾等。";
+
+/* Class = "NSButtonCell"; title = "Automatically trim trailing whitespace"; ObjectID = "zZI-Mg-bw3"; */
+"zZI-Mg-bw3.title" = "自动修剪末尾空白";

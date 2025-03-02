@@ -1,0 +1,69 @@
+
+/* Class = "NSTextFieldCell"; title = "Address"; ObjectID = "9Hk-bB-CDc"; */
+"9Hk-bB-CDc.title" = "地址";
+
+/* Class = "NSMenuItem"; title = "Servers"; ObjectID = "Bud-wQ-WNd"; */
+"Bud-wQ-WNd.title" = "服务器";
+
+/* Class = "NSTextFieldCell"; title = "Port"; ObjectID = "Dao-yw-YRm"; */
+"Dao-yw-YRm.title" = "端口";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "FIy-IR-3IF"; */
+"FIy-IR-3IF.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "Ggu-Qi-vl1"; */
+"Ggu-Qi-vl1.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "Type"; ObjectID = "Kli-lG-AE5"; */
+"Kli-lG-AE5.title" = "键入";
+
+/* Class = "NSTextFieldCell"; placeholderString = "server.com"; ObjectID = "L6w-Jx-jhr"; */
+"L6w-Jx-jhr.placeholderString" = "server.com";
+
+/* Class = "NSTextFieldCell"; title = "Username"; ObjectID = "Qgk-LZ-CZm"; */
+"Qgk-LZ-CZm.title" = "用户名";
+
+/* Class = "NSButtonCell"; title = "Add to Servers"; ObjectID = "SAI-V9-KDE"; */
+"SAI-V9-KDE.title" = "添加到服务器";
+
+/* Class = "NSButtonCell"; title = "Connect"; ObjectID = "SU8-Bs-MmK"; */
+"SU8-Bs-MmK.title" = "连接";
+
+/* Class = "NSTextFieldCell"; title = "Key Name"; ObjectID = "TzQ-xL-buB"; */
+"TzQ-xL-buB.title" = "密钥名称";
+
+/* Class = "NSMenuItem"; title = "Authenticate with Key:"; ObjectID = "WX0-gY-Hax"; */
+"WX0-gY-Hax.title" = "用密钥验证：";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "XHZ-9J-WTV"; */
+"XHZ-9J-WTV.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "XfW-Kg-lrp"; */
+"XfW-Kg-lrp.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "Protocol"; ObjectID = "cMS-Mk-SaV"; */
+"cMS-Mk-SaV.title" = "协议";
+
+/* Class = "NSImageView"; ibShadowedToolTip = "To change the server's picture, drag in a new one or click to choose one."; ObjectID = "eEa-mv-B8A"; */
+"eEa-mv-B8A.ibShadowedToolTip" = "要更改服务器的图片，请拖入新的图片或点按以选取一个。";
+
+/* Class = "NSTextFieldCell"; title = "Password"; ObjectID = "elv-Cj-1da"; */
+"elv-Cj-1da.title" = "密码";
+
+/* Class = "NSTextFieldCell"; title = "Initial Path"; ObjectID = "fMd-1w-7mA"; */
+"fMd-1w-7mA.title" = "最初路径";
+
+/* Class = "NSTextFieldCell"; placeholderString = "22"; ObjectID = "nfs-gW-eOF"; */
+"nfs-gW-eOF.placeholderString" = "22";
+
+/* Class = "NSMenuItem"; title = "Authenticate with Password"; ObjectID = "nmx-aW-dB8"; */
+"nmx-aW-dB8.title" = "用密码验证";
+
+/* Class = "NSTextFieldCell"; placeholderString = "(optional)"; ObjectID = "rFH-cs-IPb"; */
+"rFH-cs-IPb.placeholderString" = "（可选）";
+
+/* Class = "NSTextFieldCell"; placeholderString = "me"; ObjectID = "sVw-Hc-FGT"; */
+"sVw-Hc-FGT.placeholderString" = "我";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "xDh-EB-tQf"; */
+"xDh-EB-tQf.title" = "Item 3";

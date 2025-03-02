@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="sql">
+    <meta>
+        <name>SQL</name>
+        <type>structured</type>
+        <preferred-file-extension>sql</preferred-file-extension>
+    </meta>
+    
+    <detectors>
+        <extension>sql</extension>
+    </detectors>
+    
+    <indentation>
+        <increase>
+            <expression>(\([^)\"']*$)</expression>
+        </increase>
+        <decrease>
+            <expression>^\s*(\s*/\*.*\*/\s*)*[\)]</expression>
+        </decrease>
+    </indentation>
+    
+    <comments>
+        <single>
+            <expression>--</expression>
+        </single>
+        <multiline>
+            <starts-with>
+                <expression>/*</expression>
+            </starts-with>
+            <ends-with>
+                <expression>*/</expression>
+            </ends-with>
+        </multiline>
+    </comments>
+    
+    <injection>
+        <expression>^(sql|SQL)$</expression>
+    </injection>
+    
+    <tree-sitter>
+        <highlights />
+    </tree-sitter>
+</syntax>

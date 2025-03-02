@@ -1,0 +1,93 @@
+
+/* Class = "NSButtonCell"; title = "Manage Account"; ObjectID = "0GY-K6-oDU"; */
+"0GY-K6-oDU.title" = "アカウントの管理";
+
+/* Class = "NSTextFieldCell"; title = "Account:"; ObjectID = "1Ay-gx-BdA"; */
+"1Ay-gx-BdA.title" = "アカウント:";
+
+/* Class = "NSButtonCell"; title = "Notify me of new versions after my year of free updates has ended"; ObjectID = "1XB-EU-dNO"; */
+"1XB-EU-dNO.title" = "無償アップデート期間終了後も新バージョンについて通知する";
+
+/* Class = "NSButtonCell"; title = "When opening a folder, add it to projects automatically"; ObjectID = "1pI-RC-l7k"; */
+"1pI-RC-l7k.title" = "プロジェクトを新規作成したり開いたりする場合、自動的にリストに追加する";
+
+/* Class = "NSTextFieldCell"; title = "Alerts:"; ObjectID = "4cE-Z9-cOJ"; */
+"4cE-Z9-cOJ.title" = "警告:";
+
+/* Class = "NSTextFieldCell"; title = "Launcher:"; ObjectID = "5VQ-HY-DVJ"; */
+"5VQ-HY-DVJ.title" = "初期画面:";
+
+/* Class = "NSButtonCell"; title = "Learn More."; ObjectID = "6sC-Xq-ndV"; */
+"6sC-Xq-ndV.title" = "より詳しい情報。";
+
+/* Class = "NSButtonCell"; title = "More Info…"; ObjectID = "9TS-fV-HqQ"; */
+"9TS-fV-HqQ.title" = "より詳しい情報…";
+
+/* Class = "NSButtonCell"; title = "Check Now"; ObjectID = "DpA-sE-P5j"; */
+"DpA-sE-P5j.title" = "今すぐ確認";
+
+/* Class = "NSButtonCell"; title = "Show when Nova starts if no projects are open"; ObjectID = "EaD-FB-0WO"; */
+"EaD-FB-0WO.title" = "開いているプロジェクトがない場合、ランチャーウインドウを表示する";
+
+/* Class = "NSButtonCell"; title = "Learn More."; ObjectID = "GbS-OS-eeL"; */
+"GbS-OS-eeL.title" = "より詳しい情報。";
+
+/* Class = "NSTextFieldCell"; title = "Extension Development:"; ObjectID = "ILE-ZC-2os"; */
+"ILE-ZC-2os.title" = "機能拡張の開発:";
+
+/* Class = "NSTextFieldCell"; title = "<<UpdatesStatus>>"; ObjectID = "KRq-6q-VOh"; */
+"KRq-6q-VOh.title" = "<<UpdatesStatus>>";
+
+/* Class = "NSButtonCell"; title = "Beta Updates"; ObjectID = "M3u-Tu-Cjf"; */
+"M3u-Tu-Cjf.title" = "ベータアップデート";
+
+/* Class = "NSTextFieldCell"; title = "Help Panic Improve %@."; ObjectID = "OSd-2R-0Xh"; */
+"OSd-2R-0Xh.title" = "%@の改良にご協力ください。";
+
+/* Class = "NSTextFieldCell"; title = "Restores alerts which have been suppressed with the \"Don't show again\" checkbox."; ObjectID = "T5j-mW-lEg"; */
+"T5j-mW-lEg.title" = "\"次回以降表示しない\"をチェックして現れなくなった警告を元に戻します。";
+
+/* Class = "NSTextFieldCell"; title = "Not signed in."; ObjectID = "YiQ-2J-rGy"; */
+"YiQ-2J-rGy.title" = "未サインインです。";
+
+/* Class = "NSButtonCell"; title = "Check for important announcements"; ObjectID = "YvU-zw-hQ5"; */
+"YvU-zw-hQ5.title" = "重要なお知らせをチェックする";
+
+/* Class = "NSButtonCell"; title = "Automatically keep Nova up to date"; ObjectID = "by3-Ya-jaZ"; */
+"by3-Ya-jaZ.title" = "Novaを自動的に最新の状態に保つ";
+
+/* Class = "NSTextFieldCell"; title = "Receive beta updates and provide feedback to help make Nova even better. "; ObjectID = "bz5-Zh-7MO"; */
+"bz5-Zh-7MO.title" = "ベータ版アップデートを受け取り、Novaをより良くするためのフィードバックをいただけると幸いです。";
+
+/* Class = "NSTextFieldCell"; title = "Privacy:"; ObjectID = "dab-sq-V9s"; */
+"dab-sq-V9s.title" = "プライバシー:";
+
+/* Class = "NSButtonCell"; title = "Send crash reports"; ObjectID = "eO6-cw-oMc"; */
+"eO6-cw-oMc.title" = "クラッシュレポートを送信する";
+
+/* Class = "NSTextFieldCell"; title = "<<LicenseInfo>>"; ObjectID = "enE-t3-ADU"; */
+"enE-t3-ADU.title" = "<<LicenseInfo>>";
+
+/* Class = "NSButtonCell"; title = "Send anonymous usage statistics"; ObjectID = "fub-JG-3lP"; */
+"fub-JG-3lP.title" = "匿名の統計情報を送信する";
+
+/* Class = "NSButtonCell"; title = "Show extension development items in the Extensions menu"; ObjectID = "p7J-6n-D5O"; */
+"p7J-6n-D5O.title" = "機能拡張メニューに開発用メニューを表示する";
+
+/* Class = "NSTextFieldCell"; title = "Software Updates:"; ObjectID = "pkS-xS-lqw"; */
+"pkS-xS-lqw.title" = "アップデート:";
+
+/* Class = "NSButtonCell"; title = "Reset Suppressed Alerts"; ObjectID = "qGS-R7-V2R"; */
+"qGS-R7-V2R.title" = "サスペンドされた警告をリセット";
+
+/* Class = "NSButtonCell"; title = "Sign In"; ObjectID = "rYj-1w-j7g"; */
+"rYj-1w-j7g.title" = "サインイン";
+
+/* Class = "NSTextFieldCell"; title = "Extensions:"; ObjectID = "un0-hl-Lfs"; */
+"un0-hl-Lfs.title" = "機能拡張:";
+
+/* Class = "NSButtonCell"; title = "Automatically keep my extensions up to date"; ObjectID = "xAJ-Am-88u"; */
+"xAJ-Am-88u.title" = "機能拡張を自動的に最新の状態に保つ";
+
+/* Class = "NSButtonCell"; title = "Show after the last project window is closed"; ObjectID = "zeC-BQ-I0T"; */
+"zeC-BQ-I0T.title" = "前回のプロジェクトウインドウを表示する";

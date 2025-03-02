@@ -1,0 +1,15 @@
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "3qk-zp-QfP"; */
+"3qk-zp-QfP.title" = "<<Name>>";
+
+/* Class = "NSTextFieldCell"; title = "INSTALLED"; ObjectID = "52P-e0-sPx"; */
+"52P-e0-sPx.title" = "インストール済";
+
+/* Class = "NSButtonCell"; title = "Install"; ObjectID = "BO4-yM-hm0"; */
+"BO4-yM-hm0.title" = "取得する";
+
+/* Class = "NSTextFieldCell"; title = "<<Organization>>"; ObjectID = "COC-sC-N9R"; */
+"COC-sC-N9R.title" = "<<Organization>>";
+
+/* Class = "NSTextFieldCell"; title = "<<DescriptiveText>>"; ObjectID = "eLf-rA-CY4"; */
+"eLf-rA-CY4.title" = "<<DescriptiveText>>";

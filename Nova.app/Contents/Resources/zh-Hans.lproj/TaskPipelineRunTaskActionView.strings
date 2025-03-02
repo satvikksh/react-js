@@ -1,0 +1,12 @@
+
+/* Class = "NSTextFieldCell"; title = "Task:"; ObjectID = "BDc-SK-xgA"; */
+"BDc-SK-xgA.title" = "任务：";
+
+/* Class = "NSMenuItem"; title = "<<Item>>"; ObjectID = "BJS-XK-maS"; */
+"BJS-XK-maS.title" = "<<Item>>";
+
+/* Class = "NSTextFieldCell"; title = "Action:"; ObjectID = "Ssj-g8-4md"; */
+"Ssj-g8-4md.title" = "操作：";
+
+/* Class = "NSMenuItem"; title = "<<Item>>"; ObjectID = "w9q-Iy-Qco"; */
+"w9q-Iy-Qco.title" = "<<Item>>";

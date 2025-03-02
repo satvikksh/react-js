@@ -1,0 +1,10 @@
+{
+    "name": "Completions Provider",
+    "extension": "novaextension",
+    "description": "An extension which adds a dynamic completions provider written in JavaScript.",
+    "rewritablePaths": [
+		"README.md",
+        "Scripts/main.js"
+    ],
+    "showEntitlements": true
+}

@@ -1,0 +1,54 @@
+{
+    "identifier": "{{ identifier }}",
+    "name": "{{ name }}",
+    "organization": "{{ organization }}",
+    "description": "Lorem ipsum, dolor sit amet.",
+    "version": "1.0",
+    "categories": ["tasks"],
+    
+    "entitlements": {
+        "process": true
+    },
+    
+    "taskTemplates": {
+        "webserver": {
+            "name": "Example Tool",
+            "description": "Runs the example tool.",
+            "actions": ["run"],
+            "task": {
+                "command": "$ExtensionFolder/run.sh",
+                "args": [
+                ],
+                "env": {
+                    "HOST": "$(Config:example.host)",
+                    "PORT": "$(Config:example.port)",
+                    "CUSTOM_ARGS": "$(Config:example.custom-args)"
+                },
+                "persistent": false,
+                "autosaveEditors": false
+            },
+            "config": [
+                {
+                    "key": "example.host",
+                    "title": "Host",
+                    "type": "string",
+                    "placeholder": "localhost"
+                },
+                {
+                    "key": "example.port",
+                    "title": "Port",
+                    "type": "number",
+                    "placeholder": "8000",
+                    "min": 1,
+                    "max": 65535
+                },
+                {
+                    "key": "example.custom-args",
+                    "title": "Additional Arguments",
+                    "description": "Custom arguments to pass to example tool.",
+                    "type": "string"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Action Extension",
+    "description": "An extension which adds one or more project-wide actions to the Extensions menu written in JavaScript.",
+    "rewritablePaths": [
+        "README.md",
+        "Scripts/main.js"
+    ],
+    "showEntitlements": true
+}

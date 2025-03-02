@@ -1,0 +1,78 @@
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Open report"; ObjectID = "2Pu-lT-kQx"; */
+"2Pu-lT-kQx.ibExternalAccessibilityDescription" = "打开报告";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Open report"; ObjectID = "2Pu-lT-kQx"; */
+"2Pu-lT-kQx.ibShadowedToolTip" = "打开报告";
+
+/* Class = "NSTextFieldCell"; title = "<<DescriptiveText>>"; ObjectID = "HQn-jc-kew"; */
+"HQn-jc-kew.title" = "<<DescriptiveText>>";
+
+/* Class = "NSButtonCell"; title = "<<Trial Banner>>"; ObjectID = "J4F-Lc-Tdz"; */
+"J4F-Lc-Tdz.title" = "<<Trial Banner>>";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Set the active task"; ObjectID = "KRr-mq-9ej"; */
+"KRr-mq-9ej.ibShadowedToolTip" = "设置活跃任务";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Right Sidebar"; ObjectID = "P7v-Gl-vMV"; */
+"P7v-Gl-vMV.ibExternalAccessibilityDescription" = "右边栏";
+
+/* Class = "NSMenuItem"; title = "Clean"; ObjectID = "PnV-dd-yQI"; */
+"PnV-dd-yQI.title" = "清理";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "stop task"; ObjectID = "Qug-tD-sm5"; */
+"Qug-tD-sm5.ibExternalAccessibilityDescription" = "停止任务";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Stop the current task"; ObjectID = "Qug-tD-sm5"; */
+"Qug-tD-sm5.ibShadowedToolTip" = "停止当前任务";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "new tab"; ObjectID = "TNO-xt-gyR"; */
+"TNO-xt-gyR.ibExternalAccessibilityDescription" = "新建标签页";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Create a new tab"; ObjectID = "TNO-xt-gyR"; */
+"TNO-xt-gyR.ibShadowedToolTip" = "创建新标签页";
+
+/* Class = "NSMenuItem"; title = "Build"; ObjectID = "WYx-od-KwN"; */
+"WYx-od-KwN.title" = "编译";
+
+/* Class = "NSTextFieldCell"; title = "<<TitleText>>"; ObjectID = "YLi-w0-mZk"; */
+"YLi-w0-mZk.title" = "<<TitleText>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "run task"; ObjectID = "Yo5-hx-wdQ"; */
+"Yo5-hx-wdQ.ibExternalAccessibilityDescription" = "运行任务";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Run the current task"; ObjectID = "Yo5-hx-wdQ"; */
+"Yo5-hx-wdQ.ibShadowedToolTip" = "运行当前任务";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "show launcher"; ObjectID = "anc-wE-xto"; */
+"anc-wE-xto.ibExternalAccessibilityDescription" = "显示启动器";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show the Launcher"; ObjectID = "anc-wE-xto"; */
+"anc-wE-xto.ibShadowedToolTip" = "显示启动器";
+
+/* Class = "NSTextFieldCell"; title = "<<SCMBranch>>"; ObjectID = "b7R-Zp-emm"; */
+"b7R-Zp-emm.title" = "<<SCMBranch>>";
+
+/* Class = "NSButtonCell"; title = "2"; ObjectID = "fvK-v7-cvE"; */
+"fvK-v7-cvE.title" = "2";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Left Sidebar"; ObjectID = "gPp-Go-vTu"; */
+"gPp-Go-vTu.ibExternalAccessibilityDescription" = "左边栏";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Debug Pane"; ObjectID = "hbC-TT-BxT"; */
+"hbC-TT-BxT.ibExternalAccessibilityDescription" = "调试窗格";
+
+/* Class = "NSMenuItem"; title = "<<Configuration>>"; ObjectID = "kP7-Mu-GPs"; */
+"kP7-Mu-GPs.title" = "<<Configuration>>";
+
+/* Class = "NSButtonCell"; title = "Update Ready!"; ObjectID = "l3v-Cc-gJD"; */
+"l3v-Cc-gJD.title" = "更新就绪！";
+
+/* Class = "NSTextFieldCell"; title = "<<TitleText>>"; ObjectID = "pug-Rx-mgu"; */
+"pug-Rx-mgu.title" = "<<TitleText>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "build task"; ObjectID = "sfK-ff-An7"; */
+"sfK-ff-An7.ibExternalAccessibilityDescription" = "编译任务";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Build the current task"; ObjectID = "sfK-ff-An7"; */
+"sfK-ff-An7.ibShadowedToolTip" = "编译当前任务";

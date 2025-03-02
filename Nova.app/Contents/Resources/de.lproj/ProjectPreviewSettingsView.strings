@@ -1,0 +1,42 @@
+
+/* Class = "NSTextFieldCell"; title = "The root folder used when determining relative paths to append to the preview server URL. By default, the project folder is used."; ObjectID = "2p0-ru-0xa"; */
+"2p0-ru-0xa.title" = "Der Root-Ordner, der verwendet wird, um relative Pfade zu bestimmen, die an die Vorschauserver-URL angehängt werden sollen. Standardmäßig wird der Projektordner verwendet.";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Automatic"; ObjectID = "4Az-Wr-jd6"; */
+"4Az-Wr-jd6.placeholderString" = "Automatisch";
+
+/* Class = "NSTextFieldCell"; title = "Previews of local documents will be served by the built-in web server, which is great for simple static content like HTML, CSS, and JavaScript."; ObjectID = "Few-9n-EHU"; */
+"Few-9n-EHU.title" = "Vorschauen lokaler Dokumente werden vom integrierten Webserver bereitgestellt. Dies eignet sich hervorragend für einfache statische Inhalte wie HTML, CSS und JavaScript.";
+
+/* Class = "NSButtonCell"; title = "Allow connections from other devices on the network"; ObjectID = "MQc-Rz-K3c"; */
+"MQc-Rz-K3c.title" = "Verbindungen von anderen Geräten im Netzwerk erlauben";
+
+/* Class = "NSButtonCell"; title = "Use a custom server URL"; ObjectID = "RMZ-rv-B0d"; */
+"RMZ-rv-B0d.title" = "Eine angepasste Server-URL verwenden";
+
+/* Class = "NSButtonCell"; title = "Use the built-in static web server"; ObjectID = "Y6L-LA-0WK"; */
+"Y6L-LA-0WK.title" = "Integrierten statischen Webserver verwenden";
+
+/* Class = "NSTextFieldCell"; title = "Local Root:"; ObjectID = "e9N-Nr-LKd"; */
+"e9N-Nr-LKd.title" = "Lokaler Root:";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "Automatic"; ObjectID = "eCR-55-bhZ"; */
+"eCR-55-bhZ.ibShadowedIsNilPlaceholder" = "Automatisch";
+
+/* Class = "NSButtonCell"; title = "Choose…"; ObjectID = "eXs-eK-wVq"; */
+"eXs-eK-wVq.title" = "Auswählen …";
+
+/* Class = "NSTextFieldCell"; title = "A custom server URL can point to a locally-running development server or a remote host."; ObjectID = "etm-ih-gm3"; */
+"etm-ih-gm3.title" = "Eine angepasste Server-URL kann auf einen lokal ausgeführten Entwicklungsserver oder einen entfernten Host verweisen.";
+
+/* Class = "NSTextFieldCell"; title = "Local Preview:"; ObjectID = "iIM-R6-ZOL"; */
+"iIM-R6-ZOL.title" = "Lokale Vorschau:";
+
+/* Class = "NSTextFieldCell"; title = "Preferred Server Port:"; ObjectID = "nOf-sN-0gy"; */
+"nOf-sN-0gy.title" = "Bevorzugter Server-Port:";
+
+/* Class = "NSTextFieldCell"; title = "Options for previewing remote documents can be configured within the project's remote destinations."; ObjectID = "upJ-Ij-Pvt"; */
+"upJ-Ij-Pvt.title" = "Möglichkeiten für die Vorschau von entfernten Dokumenten können innerhalb der entfernten Ziele des Projekts konfiguriert werden.";
+
+/* Class = "NSButtonCell"; title = "Append relative paths for previewable documents"; ObjectID = "w77-Qq-Oi1"; */
+"w77-Qq-Oi1.title" = "Relative Pfade für vorschaubare Dokumente anhängen";

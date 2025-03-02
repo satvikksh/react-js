@@ -1,0 +1,60 @@
+
+/* Class = "NSTextFieldCell"; title = "Repository URL:"; ObjectID = "7xg-bE-qve"; */
+"7xg-bE-qve.title" = "Repository-URL:";
+
+/* Class = "NSButtonCell"; title = "<<Action>>"; ObjectID = "8E4-Cz-P3u"; */
+"8E4-Cz-P3u.title" = "<<Action>>";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "9di-0G-QfD"; */
+"9di-0G-QfD.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "Clone"; ObjectID = "IR7-SL-DjO"; */
+"IR7-SL-DjO.title" = "Klonen";
+
+/* Class = "NSTextFieldCell"; title = "<<Owner>>"; ObjectID = "K9A-YB-h5s"; */
+"K9A-YB-h5s.title" = "<<Owner>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Description>>"; ObjectID = "OcU-Ku-uzD"; */
+"OcU-Ku-uzD.title" = "<<Description>>";
+
+/* Class = "NSWindow"; title = "Clone"; ObjectID = "QvC-M9-y7g"; */
+"QvC-M9-y7g.title" = "Klonen";
+
+/* Class = "NSTextFieldCell"; title = "<<ServiceName>>"; ObjectID = "Rca-he-MSV"; */
+"Rca-he-MSV.title" = "<<ServiceName>>";
+
+/* Class = "NSTextFieldCell"; title = "Add your Git service accounts for a quicker way to clone repositories."; ObjectID = "SFr-GP-6b6"; */
+"SFr-GP-6b6.title" = "Fügen Sie Ihre Git-Dienstaccounts hinzu, um Repositorys schneller zu klonen.";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "W1B-fV-dHX"; */
+"W1B-fV-dHX.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "<<Stars>>"; ObjectID = "WMl-gi-M0j"; */
+"WMl-gi-M0j.title" = "<<Stars>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Forks>>"; ObjectID = "dH2-ZF-h3J"; */
+"dH2-ZF-h3J.title" = "<<Forks>>";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "h8o-yk-po6"; */
+"h8o-yk-po6.title" = "Abbrechen";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "hF0-eo-57o"; */
+"hF0-eo-57o.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "<<SidebarItem>>"; ObjectID = "hVb-pJ-PCv"; */
+"hVb-pJ-PCv.title" = "<<SidebarItem>>";
+
+/* Class = "NSTextFieldCell"; title = "Enter the URL of a Git repository which uses one of the following schemes: https, ssh, git, git+ssh, ssh+git."; ObjectID = "hvs-2M-msb"; */
+"hvs-2M-msb.title" = "Geben Sie die URL eines Git-Repositorys ein, das eines der folgenden Schemata verwendet: https, ssh, git, git+ssh, ssh+git.";
+
+/* Class = "NSTableColumn"; headerCell.title = "Repository"; ObjectID = "p2n-Hi-E9n"; */
+"p2n-Hi-E9n.headerCell.title" = "Repository";
+
+/* Class = "NSTextFieldCell"; title = "<<RepositoryName>>"; ObjectID = "pXB-SY-o5b"; */
+"pXB-SY-o5b.title" = "<<RepositoryName>>";
+
+/* Class = "NSTableColumn"; headerCell.title = "Owner"; ObjectID = "vHv-Ec-eju"; */
+"vHv-Ec-eju.headerCell.title" = "Eigentümer";
+
+/* Class = "NSButtonCell"; title = "Set up in Accounts preferences…"; ObjectID = "xk3-dP-0XZ"; */
+"xk3-dP-0XZ.title" = "In den Accounteinstellungen einrichten …";

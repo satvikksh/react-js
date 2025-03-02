@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="html+erb">
+    <meta>
+        <name>HTML (ERB)</name>
+        <type>markup</type>
+        <preferred-file-extension>html.erb</preferred-file-extension>
+        <parent>html</parent>
+    </meta>
+    
+    <detectors>
+        <extension>html.erb,htm.erb,rhtml</extension>
+        <extension priority="low">erb</extension>
+    </detectors>
+    
+    <comments>
+        <multiline>
+            <starts-with>
+                <expression>&lt;!--</expression>
+            </starts-with>
+            <ends-with>
+                <expression>--&gt;</expression>
+            </ends-with>
+        </multiline>
+    </comments>
+    
+    <injection>
+        <expression>^(erb|html\+ruby|html\+erb)$</expression>
+    </injection>
+    
+    <tree-sitter language="embedded_template">
+        <highlights path="html+erb/highlights.scm" />
+        <injections path="html+erb/injections.scm" />
+    </tree-sitter>
+</syntax>

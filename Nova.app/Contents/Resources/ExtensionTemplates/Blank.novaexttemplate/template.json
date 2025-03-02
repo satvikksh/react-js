@@ -1,0 +1,6 @@
+{
+    "name": "Blank",
+    "extension": "novaextension",
+    "description": "An empty extension with basic metadata.",
+    "showEntitlements": true
+}

@@ -1,0 +1,99 @@
+
+/* Class = "NSMenuItem"; title = "Open"; ObjectID = "0Z9-GV-PtD"; */
+"0Z9-GV-PtD.title" = "開く";
+
+/* Class = "NSMenuItem"; title = "Copy URL"; ObjectID = "3Pf-cA-6ey"; */
+"3Pf-cA-6ey.title" = "URL をコピー";
+
+/* Class = "NSMenuItem"; title = "Publish"; ObjectID = "6Fx-8y-gxK"; */
+"6Fx-8y-gxK.title" = "公開";
+
+/* Class = "NSMenuItem"; title = "Publish Selected Items"; ObjectID = "7r5-uX-awO"; */
+"7r5-uX-awO.title" = "選択項目をアップロード";
+
+/* Class = "NSMenuItem"; title = "Transfer"; ObjectID = "B1O-vI-3EQ"; */
+"B1O-vI-3EQ.title" = "転送";
+
+/* Class = "NSMenuItem"; title = "Tags"; ObjectID = "GcO-iM-M5q"; */
+"GcO-iM-M5q.title" = "タグ";
+
+/* Class = "NSMenuItem"; title = "New File"; ObjectID = "IAX-Ic-yaS"; */
+"IAX-Ic-yaS.title" = "新規ファイル";
+
+/* Class = "NSMenuItem"; title = "Mark for Publishing"; ObjectID = "KRS-bV-2kU"; */
+"KRS-bV-2kU.title" = "公開マークを付ける";
+
+/* Class = "NSMenu"; title = "Open With"; ObjectID = "Kab-qZ-b3h"; */
+"Kab-qZ-b3h.title" = "このアプリケーションで開く";
+
+/* Class = "NSMenuItem"; title = "Refresh"; ObjectID = "KbY-eR-Sv5"; */
+"KbY-eR-Sv5.title" = "更新";
+
+/* Class = "NSMenuItem"; title = "New Folder"; ObjectID = "Meq-Th-yfx"; */
+"Meq-Th-yfx.title" = "新規フォルダ";
+
+/* Class = "NSMenuItem"; title = "Duplicate"; ObjectID = "O8n-i0-k78"; */
+"O8n-i0-k78.title" = "複製";
+
+/* Class = "NSMenuItem"; title = "Compress"; ObjectID = "UWD-6t-0X2"; */
+"UWD-6t-0X2.title" = "圧縮";
+
+/* Class = "NSMenu"; title = "Always Open With"; ObjectID = "V4I-q9-etp"; */
+"V4I-q9-etp.title" = "常にこのアプリケーションで開く";
+
+/* Class = "NSMenuItem"; title = "Always Open With"; ObjectID = "WQh-6M-m4Y"; */
+"WQh-6M-m4Y.title" = "常にこのアプリケーションで開く";
+
+/* Class = "NSMenuItem"; title = "Show in Finder"; ObjectID = "YXA-Pl-hyv"; */
+"YXA-Pl-hyv.title" = "Finderに表示";
+
+/* Class = "NSMenuItem"; title = "Open in New Window"; ObjectID = "bRc-My-Ipj"; */
+"bRc-My-Ipj.title" = "新規ウインドウで開く";
+
+/* Class = "NSMenuItem"; title = "Get Info"; ObjectID = "bSw-t2-8cO"; */
+"bSw-t2-8cO.title" = "情報を見る";
+
+/* Class = "NSMenu"; title = "Open As"; ObjectID = "c5T-mK-4at"; */
+"c5T-mK-4at.title" = "このアプリケーションとして開く";
+
+/* Class = "NSMenuItem"; title = "Open As"; ObjectID = "fPC-PI-BZc"; */
+"fPC-PI-BZc.title" = "このアプリケーションとして開く";
+
+/* Class = "NSMenuItem"; title = "Never Publish"; ObjectID = "fRH-V3-8uf"; */
+"fRH-V3-8uf.title" = "公開機能から除外";
+
+/* Class = "NSMenuItem"; title = "Open With"; ObjectID = "i9L-Ok-4N0"; */
+"i9L-Ok-4N0.title" = "このアプリケーションで開く";
+
+/* Class = "NSMenuItem"; title = "Find in Selected Folders…"; ObjectID = "kMT-vo-Ivw"; */
+"kMT-vo-Ivw.title" = "フォルダを指定して検索…";
+
+/* Class = "NSMenuItem"; title = "Open with Finder"; ObjectID = "lXE-1g-mY9"; */
+"lXE-1g-mY9.title" = "Finderで開く";
+
+/* Class = "NSMenuItem"; title = "Reverse Publish Selected Items"; ObjectID = "ogr-FP-WYO"; */
+"ogr-FP-WYO.title" = "選択項目をダウンロード";
+
+/* Class = "NSMenuItem"; title = "Unmark for Publishing"; ObjectID = "qDJ-Vc-3n7"; */
+"qDJ-Vc-3n7.title" = "公開マークを削除";
+
+/* Class = "NSMenu"; title = "Publish"; ObjectID = "sXq-1n-M38"; */
+"sXq-1n-M38.title" = "公開";
+
+/* Class = "NSMenuItem"; title = "Copy Path"; ObjectID = "sXx-b8-zNu"; */
+"sXx-b8-zNu.title" = "パスをコピー";
+
+/* Class = "NSMenuItem"; title = "Rename"; ObjectID = "tRb-nw-YG3"; */
+"tRb-nw-YG3.title" = "リネーム";
+
+/* Class = "NSMenuItem"; title = "Move…"; ObjectID = "w21-yS-x4D"; */
+"w21-yS-x4D.title" = "パスを指定して移動…";
+
+/* Class = "NSMenuItem"; title = "Copy Relative Path"; ObjectID = "wSc-Yd-qwU"; */
+"wSc-Yd-qwU.title" = "相対パスをコピー";
+
+/* Class = "NSMenuItem"; title = "Quick Look"; ObjectID = "yDD-75-Pdw"; */
+"yDD-75-Pdw.title" = "クイックルック";
+
+/* Class = "NSMenuItem"; title = "Move to Trash"; ObjectID = "ya2-ql-hBB"; */
+"ya2-ql-hBB.title" = "ゴミ箱に入れる";

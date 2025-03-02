@@ -1,0 +1,12 @@
+
+/* Class = "NSTextFieldCell"; title = "Report Name"; ObjectID = "04l-da-dF5"; */
+"04l-da-dF5.title" = "Report Name";
+
+/* Class = "NSTextFieldCell"; title = "Today, 12:00pm"; ObjectID = "1ui-IO-fa9"; */
+"1ui-IO-fa9.title" = "Today, 12:00pm";
+
+/* Class = "NSTextFieldCell"; title = "No tasks have been run yet for this session."; ObjectID = "ODJ-K7-qHh"; */
+"ODJ-K7-qHh.title" = "Aucune tâche n’a encore été exécutée pour cette session.";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "bBB-eJ-PU9"; */
+"bBB-eJ-PU9.title" = "Text Cell";

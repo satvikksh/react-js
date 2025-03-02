@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<completions>
+    <!-- foo -->
+    <provider>
+        <syntax>shell</syntax>
+        
+        <exclude-selector>string, comment</exclude-selector>
+        
+        <expression>(?&lt;!\.|\$)\b([a-zA-Z_][a-zA-Z0-9_]*)?</expression>
+        
+        <symbols type="function">
+            <behavior>
+                <arguments prefix="(" suffix=")" separator=", " />
+            </behavior>
+        </symbols>
+        
+        <identifiers />
+        
+        <set>shell.core.statements</set>
+    </provider>
+    
+    <!-- $foo -->
+    <provider>
+        <syntax>shell</syntax>
+        
+        <exclude-selector>string, comment</exclude-selector>
+        
+        <trigger>$</trigger>
+        
+        <expression>(?&lt;=\$)([a-zA-Z_][a-zA-Z0-9_]*)?</expression>
+        
+        <identifiers />
+    </provider>
+    
+    <!-- Statements -->
+    <set name="shell.core.statements" symbol="statement">
+        <completion string="case">
+            <behavior>
+                <append><![CDATA[ $[expression] in
+    $[statements]
+    esac]]></append>
+            </behavior>
+        </completion>
+        <completion string="else" />
+        <completion string="for">
+            <behavior>
+                <append><![CDATA[ $[expr] do
+    $[statements]
+done]]></append>
+            </behavior>
+        </completion>
+        <completion string="function">
+            <behavior>
+                <append><![CDATA[ $[name]() {
+    $[statements]
+}]]></append>
+            </behavior>
+        </completion>
+        <completion string="if">
+            <behavior>
+                <append><![CDATA[ [ $[condition] ] then
+    $[statements]
+fi]]></append>
+            </behavior>
+        </completion>
+        <completion string="while">
+            <behavior>
+                <append><![CDATA[ $[condition] do
+    $[statements]
+done]]></append>
+            </behavior>
+        </completion>
+    </set>
+</completions>

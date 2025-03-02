@@ -1,0 +1,78 @@
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Open report"; ObjectID = "2Pu-lT-kQx"; */
+"2Pu-lT-kQx.ibExternalAccessibilityDescription" = "レポートを開きます";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Open report"; ObjectID = "2Pu-lT-kQx"; */
+"2Pu-lT-kQx.ibShadowedToolTip" = "レポートを開きます";
+
+/* Class = "NSTextFieldCell"; title = "<<DescriptiveText>>"; ObjectID = "HQn-jc-kew"; */
+"HQn-jc-kew.title" = "<<DescriptiveText>>";
+
+/* Class = "NSButtonCell"; title = "<<Trial Banner>>"; ObjectID = "J4F-Lc-Tdz"; */
+"J4F-Lc-Tdz.title" = "<<Trial Banner>>";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Set the active task"; ObjectID = "KRr-mq-9ej"; */
+"KRr-mq-9ej.ibShadowedToolTip" = "動作中のタスクを設定します";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Right Sidebar"; ObjectID = "P7v-Gl-vMV"; */
+"P7v-Gl-vMV.ibExternalAccessibilityDescription" = "右に表示";
+
+/* Class = "NSMenuItem"; title = "Clean"; ObjectID = "PnV-dd-yQI"; */
+"PnV-dd-yQI.title" = "クリーン";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "stop task"; ObjectID = "Qug-tD-sm5"; */
+"Qug-tD-sm5.ibExternalAccessibilityDescription" = "タスクを終了";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Stop the current task"; ObjectID = "Qug-tD-sm5"; */
+"Qug-tD-sm5.ibShadowedToolTip" = "現在のタスクを終了します";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "new tab"; ObjectID = "TNO-xt-gyR"; */
+"TNO-xt-gyR.ibExternalAccessibilityDescription" = "新規タブ";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Create a new tab"; ObjectID = "TNO-xt-gyR"; */
+"TNO-xt-gyR.ibShadowedToolTip" = "新規タブを作成します";
+
+/* Class = "NSMenuItem"; title = "Build"; ObjectID = "WYx-od-KwN"; */
+"WYx-od-KwN.title" = "ビルド";
+
+/* Class = "NSTextFieldCell"; title = "<<TitleText>>"; ObjectID = "YLi-w0-mZk"; */
+"YLi-w0-mZk.title" = "<<TitleText>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "run task"; ObjectID = "Yo5-hx-wdQ"; */
+"Yo5-hx-wdQ.ibExternalAccessibilityDescription" = "タスクの実行";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Run the current task"; ObjectID = "Yo5-hx-wdQ"; */
+"Yo5-hx-wdQ.ibShadowedToolTip" = "現在のタスクを実行します";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "show launcher"; ObjectID = "anc-wE-xto"; */
+"anc-wE-xto.ibExternalAccessibilityDescription" = "ランチャーを表示";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show the Launcher"; ObjectID = "anc-wE-xto"; */
+"anc-wE-xto.ibShadowedToolTip" = "ランチャー画面を表示します";
+
+/* Class = "NSTextFieldCell"; title = "<<SCMBranch>>"; ObjectID = "b7R-Zp-emm"; */
+"b7R-Zp-emm.title" = "<<SCMBranch>>";
+
+/* Class = "NSButtonCell"; title = "2"; ObjectID = "fvK-v7-cvE"; */
+"fvK-v7-cvE.title" = "2";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Left Sidebar"; ObjectID = "gPp-Go-vTu"; */
+"gPp-Go-vTu.ibExternalAccessibilityDescription" = "左に表示";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Debug Pane"; ObjectID = "hbC-TT-BxT"; */
+"hbC-TT-BxT.ibExternalAccessibilityDescription" = "デバッグペイン";
+
+/* Class = "NSMenuItem"; title = "<<Configuration>>"; ObjectID = "kP7-Mu-GPs"; */
+"kP7-Mu-GPs.title" = "<<Configuration>>";
+
+/* Class = "NSButtonCell"; title = "Update Ready!"; ObjectID = "l3v-Cc-gJD"; */
+"l3v-Cc-gJD.title" = "更新準備完了！";
+
+/* Class = "NSTextFieldCell"; title = "<<TitleText>>"; ObjectID = "pug-Rx-mgu"; */
+"pug-Rx-mgu.title" = "<<TitleText>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "build task"; ObjectID = "sfK-ff-An7"; */
+"sfK-ff-An7.ibExternalAccessibilityDescription" = "タスクをビルド";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Build the current task"; ObjectID = "sfK-ff-An7"; */
+"sfK-ff-An7.ibShadowedToolTip" = "現在のタスクをビルドします";

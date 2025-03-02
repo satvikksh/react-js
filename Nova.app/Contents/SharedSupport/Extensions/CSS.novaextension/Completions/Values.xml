@@ -1,0 +1,4723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    These completions are up to date as of:
+    mdn/data commit `af8a84a` on Jan 23, 2024.
+-->
+<completions>
+    <!-- Property values -->
+    <provider name="values">
+        <syntax>css</syntax>
+        
+        <query>(declaration (property_name) @property)</query>
+        
+        <exclude-selector>style.attribute.name, var-function.arguments</exclude-selector>
+        
+        <expression>(?&lt;=(:|,|\(|\s))[a-zA-Z0-9-]*</expression>
+        
+        <trigger> </trigger>
+        
+        <set>css.values.all</set>
+        <set>css.values.${property}</set>
+    </provider>
+    <provider name="values.last-property">
+        <syntax>css</syntax>
+        
+        <query>
+            (block 
+              (declaration (property_name) @property ":") @provider.start
+              .
+              "}" @provider.end
+            )
+        </query>
+        
+        <expression>(?&lt;=(:|,|\(|\s))[a-zA-Z0-9-]*</expression>
+        
+        <exclude-selector>style.attribute, var-function.arguments</exclude-selector>
+        
+        <trigger> </trigger>
+        
+        <set>css.values.all</set>
+        <set>css.values.${property}</set>
+    </provider>
+    
+    <!-- !important -->
+    <provider name="values.important">
+        <syntax>css</syntax>
+        
+        <query>(declaration (property_name) @property)</query>
+        
+        <exclude-selector>style.attribute.name, var-function.arguments</exclude-selector>
+        
+        <expression>(?&lt;=\s)\![a-zA-Z0-9-]*</expression>
+        
+        <trigger>!</trigger>
+        
+        <set>css.values.important</set>
+    </provider>
+    <provider name="values.last-property.important">
+        <syntax>css</syntax>
+        
+        <query>
+            (block 
+              (declaration (property_name) @property ":") @provider.start
+              .
+              (ERROR)
+              .
+              "}" @provider.end
+            )
+        </query>
+        
+        <expression>(?&lt;=\s)\![a-zA-Z0-9-]*</expression>
+        
+        <exclude-selector>style.attribute, var-function.arguments</exclude-selector>
+        
+        <trigger>!</trigger>
+        
+        <set>css.values.important</set>
+    </provider>
+    
+    <!-- Custom properties -->
+    <provider name="custom-property.declaration">
+        <syntax>css</syntax>
+        
+        <query>
+            ((declaration (property_name) @property)
+             (#match? @property "^--")
+            )
+        </query>
+        
+        <exclude-selector>style.attribute.name</exclude-selector>
+        
+        <expression>(?&lt;=(:|,|\(|\s))[a-zA-Z0-9-]*</expression>
+        
+        <trigger> </trigger>
+        
+        <set>css.colors</set>
+        <set>css.gradients</set>
+    </provider>
+    <provider name="custom-property.values">
+        <syntax>css</syntax>
+        
+        <query>(declaration (property_name) @property)</query>
+        
+        <exclude-selector>style.attribute.name</exclude-selector>
+        
+        <expression>(?&lt;=\()(-(-[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]*)?)?</expression>
+        
+        <trigger>-(</trigger>
+        
+        <symbols type="property" />
+    </provider>
+    
+    <set name="css.values.all">
+        <completion string="initial" symbol="constant" />
+        <completion string="inherit" symbol="constant" />
+        <completion string="unset" symbol="constant" />
+        <completion string="revert" symbol="constant" />
+        <completion string="revert-layer" symbol="constant" experimental="true" />
+        
+        <completion string="var" symbol="function">
+            <behavior complete-on-confirm="true">
+                <append>($[])</append>
+            </behavior>
+        </completion>
+    </set>
+    
+    <set name="css.values.important">
+        <completion string="!important" symbol="constant" priority="-1" />
+    </set>
+    
+    <set name="css.colors">
+        <completion type="color-picker" />
+        <completion string="color" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="hsl" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="hsla" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="rgb" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="rgba" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        
+        <completion string="transparent" symbol="constant" />
+        <completion string="currentcolor" symbol="constant" />
+        
+        <!-- Named Colors -->
+        <completion string="aliceblue" symbol="color" color="#eff7ff" />
+        <completion string="antiquewhite" symbol="color" color="#f9ead6" />
+        <completion string="aqua" symbol="color" color="#00ffff" />
+        <completion string="aquamarine" symbol="color" color="#7fffd3" />
+        <completion string="azure" symbol="color" color="#efffff" />
+        <completion string="beige" symbol="color" color="#f4f4db" />
+        <completion string="bisque" symbol="color" color="#ffe2c4" />
+        <completion string="black" symbol="color" color="#000000" />
+        <completion string="blanchedalmond" symbol="color" color="#ffeacc" />
+        <completion string="blue" symbol="color" color="#0000ff" />
+        <completion string="blueviolet" symbol="color" color="#892be2" />
+        <completion string="brown" symbol="color" color="#a52828" />
+        <completion string="burlywood" symbol="color" color="#ddb787" />
+        <completion string="cadetblue" symbol="color" color="#5e9ea0" />
+        <completion string="chartreuse" symbol="color" color="#7fff00" />
+        <completion string="chocolate" symbol="color" color="#d1681e" />
+        <completion string="coral" symbol="color" color="#ff7f4f" />
+        <completion string="cornflowerblue" symbol="color" color="#6393ed" />
+        <completion string="cornsilk" symbol="color" color="#fff7db" />
+        <completion string="crimson" symbol="color" color="#db143d" />
+        <completion string="cyan" symbol="color" color="#00ffff" />
+        <completion string="darkblue" symbol="color" color="#00008c" />
+        <completion string="darkcyan" symbol="color" color="#008c8c" />
+        <completion string="darkgoldenrod" symbol="color" color="#b7870a" />
+        <completion string="darkgray" symbol="color" color="#a8a8a8" />
+        <completion string="darkgreen" symbol="color" color="#006300" />
+        <completion string="darkgrey" symbol="color" color="#a8a8a8" />
+        <completion string="darkkhaki" symbol="color" color="#bcb76b" />
+        <completion string="darkmagenta" symbol="color" color="#8c008c" />
+        <completion string="darkolivegreen" symbol="color" color="#546b2d" />
+        <completion string="darkorange" symbol="color" color="#ff8c00" />
+        <completion string="darkorchid" symbol="color" color="#9933cc" />
+        <completion string="darkred" symbol="color" color="#8c0000" />
+        <completion string="darksalmon" symbol="color" color="#e8967a" />
+        <completion string="darkseagreen" symbol="color" color="#8ebc8e" />
+        <completion string="darkslateblue" symbol="color" color="#473d8c" />
+        <completion string="darkslategray" symbol="color" color="#2d4f4f" />
+        <completion string="darkslategrey" symbol="color" color="#2d4f4f" />
+        <completion string="darkturquoise" symbol="color" color="#00ced1" />
+        <completion string="darkviolet" symbol="color" color="#9300d3" />
+        <completion string="deeppink" symbol="color" color="#ff1493" />
+        <completion string="deepskyblue" symbol="color" color="#00bfff" />
+        <completion string="dimgray" symbol="color" color="#686868" />
+        <completion string="dimgrey" symbol="color" color="#686868" />
+        <completion string="dodgerblue" symbol="color" color="#1e8eff" />
+        <completion string="firebrick" symbol="color" color="#b22121" />
+        <completion string="floralwhite" symbol="color" color="#fff9ef" />
+        <completion string="forestgreen" symbol="color" color="#218c21" />
+        <completion string="fuchsia" symbol="color" color="#ff00ff" />
+        <completion string="gainsboro" symbol="color" color="#dbdbdb" />
+        <completion string="ghostwhite" symbol="color" color="#f7f7ff" />
+        <completion string="gold" symbol="color" color="#ffd600" />
+        <completion string="goldenrod" symbol="color" color="#d8a521" />
+        <completion string="gray" symbol="color" color="#7f7f7f" />
+        <completion string="green" symbol="color" color="#007f00" />
+        <completion string="greenyellow" symbol="color" color="#adff2d" />
+        <completion string="grey" symbol="color" color="#7f7f7f" />
+        <completion string="honeydew" symbol="color" color="#efffef" />
+        <completion string="hotpink" symbol="color" color="#ff68b5" />
+        <completion string="indianred" symbol="color" color="#cc5b5b" />
+        <completion string="indigo" symbol="color" color="#490082" />
+        <completion string="ivory" symbol="color" color="#ffffef" />
+        <completion string="khaki" symbol="color" color="#efe58c" />
+        <completion string="lavender" symbol="color" color="#e5e5f9" />
+        <completion string="lavenderblush" symbol="color" color="#ffeff4" />
+        <completion string="lawngreen" symbol="color" color="#7cfc00" />
+        <completion string="lemonchiffon" symbol="color" color="#fff9cc" />
+        <completion string="lightblue" symbol="color" color="#add8e5" />
+        <completion string="lightcoral" symbol="color" color="#ef7f7f" />
+        <completion string="lightcyan" symbol="color" color="#e0ffff" />
+        <completion string="lightgoldenrodyellow" symbol="color" color="#f9f9d1" />
+        <completion string="lightgray" symbol="color" color="#d3d3d3" />
+        <completion string="lightgreen" symbol="color" color="#8eed8e" />
+        <completion string="lightgrey" symbol="color" color="#d3d3d3" />
+        <completion string="lightpink" symbol="color" color="#ffb5c1" />
+        <completion string="lightsalmon" symbol="color" color="#ffa07a" />
+        <completion string="lightseagreen" symbol="color" color="#21b2aa" />
+        <completion string="lightskyblue" symbol="color" color="#87cef9" />
+        <completion string="lightslategray" symbol="color" color="#778799" />
+        <completion string="lightslategrey" symbol="color" color="#778799" />
+        <completion string="lightsteelblue" symbol="color" color="#afc4dd" />
+        <completion string="lightyellow" symbol="color" color="#ffffe0" />
+        <completion string="lime" symbol="color" color="#00ff00" />
+        <completion string="limegreen" symbol="color" color="#33cc33" />
+        <completion string="linen" symbol="color" color="#f9efe5" />
+        <completion string="magenta" symbol="color" color="#ff00ff" />
+        <completion string="maroon" symbol="color" color="#7f0000" />
+        <completion string="mediumaquamarine" symbol="color" color="#66ccaa" />
+        <completion string="mediumblue" symbol="color" color="#0000cc" />
+        <completion string="mediumorchid" symbol="color" color="#ba54d3" />
+        <completion string="mediumpurple" symbol="color" color="#9370db" />
+        <completion string="mediumseagreen" symbol="color" color="#3db270" />
+        <completion string="mediumslateblue" symbol="color" color="#7a68ed" />
+        <completion string="mediumspringgreen" symbol="color" color="#00f999" />
+        <completion string="mediumturquoise" symbol="color" color="#47d1cc" />
+        <completion string="mediumvioletred" symbol="color" color="#c61484" />
+        <completion string="midnightblue" symbol="color" color="#191970" />
+        <completion string="mintcream" symbol="color" color="#f4fff9" />
+        <completion string="mistyrose" symbol="color" color="#ffe2e0" />
+        <completion string="moccasin" symbol="color" color="#ffe2b5" />
+        <completion string="navajowhite" symbol="color" color="#ffddad" />
+        <completion string="navy" symbol="color" color="#00007f" />
+        <completion string="oldlace" symbol="color" color="#fcf4e5" />
+        <completion string="olive" symbol="color" color="#7f7f00" />
+        <completion string="olivedrab" symbol="color" color="#6b8e23" />
+        <completion string="orange" symbol="color" color="#ffa500" />
+        <completion string="orangered" symbol="color" color="#ff4400" />
+        <completion string="orchid" symbol="color" color="#d870d6" />
+        <completion string="palegoldenrod" symbol="color" color="#ede8aa" />
+        <completion string="palegreen" symbol="color" color="#99f999" />
+        <completion string="paleturquoise" symbol="color" color="#afeded" />
+        <completion string="palevioletred" symbol="color" color="#db7093" />
+        <completion string="papayawhip" symbol="color" color="#ffefd6" />
+        <completion string="peachpuff" symbol="color" color="#ffd8ba" />
+        <completion string="peru" symbol="color" color="#cc843f" />
+        <completion string="pink" symbol="color" color="#ffbfcc" />
+        <completion string="plum" symbol="color" color="#dda0dd" />
+        <completion string="powderblue" symbol="color" color="#afe0e5" />
+        <completion string="purple" symbol="color" color="#7f007f" />
+        <completion string="rebeccapurple" symbol="color" color="#663399" />
+        <completion string="red" symbol="color" color="#ff0000" />
+        <completion string="rosybrown" symbol="color" color="#bc8e8e" />
+        <completion string="royalblue" symbol="color" color="#3f68e0" />
+        <completion string="saddlebrown" symbol="color" color="#8c4411" />
+        <completion string="salmon" symbol="color" color="#f97f72" />
+        <completion string="sandybrown" symbol="color" color="#f4a360" />
+        <completion string="seagreen" symbol="color" color="#2d8c56" />
+        <completion string="seashell" symbol="color" color="#fff4ed" />
+        <completion string="sienna" symbol="color" color="#a0512d" />
+        <completion string="silver" symbol="color" color="#bfbfbf" />
+        <completion string="skyblue" symbol="color" color="#87ceea" />
+        <completion string="slateblue" symbol="color" color="#6b59cc" />
+        <completion string="slategray" symbol="color" color="#707f8e" />
+        <completion string="slategrey" symbol="color" color="#707f8e" />
+        <completion string="snow" symbol="color" color="#fff9f9" />
+        <completion string="springgreen" symbol="color" color="#00ff7f" />
+        <completion string="steelblue" symbol="color" color="#4482b5" />
+        <completion string="tan" symbol="color" color="#d1b58c" />
+        <completion string="teal" symbol="color" color="#007f7f" />
+        <completion string="thistle" symbol="color" color="#d8bfd8" />
+        <completion string="tomato" symbol="color" color="#ff6347" />
+        <completion string="turquoise" symbol="color" color="#3fe0d1" />
+        <completion string="violet" symbol="color" color="#ed82ed" />
+        <completion string="wheat" symbol="color" color="#f4ddb2" />
+        <completion string="white" symbol="color" color="#ffffff" />
+        <completion string="whitesmoke" symbol="color" color="#f4f4f4" />
+        <completion string="yellow" symbol="color" color="#ffff00" />
+        <completion string="yellowgreen" symbol="color" color="#99cc33" />
+        
+        <!-- System Colors -->
+        <completion string="AccentColor" symbol="constant" />
+        <completion string="AccentColorText" symbol="constant" />
+        <completion string="ActiveText" symbol="constant" />
+        <completion string="ButtonBorder" symbol="constant" />
+        <completion string="ButtonFace" symbol="constant" />
+        <completion string="ButtonText" symbol="constant" />
+        <completion string="Canvas" symbol="constant" />
+        <completion string="CanvasText" symbol="constant" />
+        <completion string="Field" symbol="constant" />
+        <completion string="FieldText" symbol="constant" />
+        <completion string="GrayText" symbol="constant" />
+        <completion string="Highlight" symbol="constant" />
+        <completion string="HighlightText" symbol="constant" />
+        <completion string="LinkText" symbol="constant" />
+        <completion string="Mark" symbol="constant" />
+        <completion string="MarkText" symbol="constant" />
+        <completion string="SelectedItem" symbol="constant" />
+        <completion string="SelectedItemText" symbol="constant" />
+        <completion string="VisitedText" symbol="constant" />
+        
+        <!-- Deprecated System Colors -->
+        <completion string="ActiveBorder" deprecated="true" symbol="constant" />
+        <completion string="ActiveCaption" deprecated="true" symbol="constant" />
+        <completion string="AppWorkspace" deprecated="true" symbol="constant" />
+        <completion string="Background" deprecated="true" symbol="constant" />
+        <completion string="ButtonHighlight" deprecated="true" symbol="constant" />
+        <completion string="ButtonShadow" deprecated="true" symbol="constant" />
+        <completion string="CaptionText" deprecated="true" symbol="constant" />
+        <completion string="InactiveBorder" deprecated="true" symbol="constant" />
+        <completion string="InactiveCaption" deprecated="true" symbol="constant" />
+        <completion string="InactiveCaptionText" deprecated="true" symbol="constant" />
+        <completion string="InfoBackground" deprecated="true" symbol="constant" />
+        <completion string="InfoText" deprecated="true" symbol="constant" />
+        <completion string="Menu" deprecated="true" symbol="constant" />
+        <completion string="MenuText" deprecated="true" symbol="constant" />
+        <completion string="Scrollbar" deprecated="true" symbol="constant" />
+        <completion string="ThreeDDarkShadow" deprecated="true" symbol="constant" />
+        <completion string="ThreeDFace" deprecated="true" symbol="constant" />
+        <completion string="ThreeDHighlight" deprecated="true" symbol="constant" />
+        <completion string="ThreeDLightShadow" deprecated="true" symbol="constant" />
+        <completion string="ThreeDShadow" deprecated="true" symbol="constant" />
+        <completion string="Window" deprecated="true" symbol="constant" />
+        <completion string="WindowFrame" deprecated="true" symbol="constant" />
+        <completion string="WindowText" deprecated="true" symbol="constant" />
+    </set>
+    
+    <set name="css.gradients">
+        <completion string="linear-gradient" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="repeating-linear-gradient" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="radial-gradient" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="repeating-radial-gradient" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="conic-gradient" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+    </set>
+    
+    <set name="css.values.-moz-appearance" symbol="constant">
+        <completion string="none" />
+        <completion string="button" />
+        <completion string="button-arrow-down" />
+        <completion string="button-arrow-next" />
+        <completion string="button-arrow-previous" />
+        <completion string="button-arrow-up" />
+        <completion string="button-bevel" />
+        <completion string="button-focus" />
+        <completion string="caret" />
+        <completion string="checkbox" />
+        <completion string="checkbox-container" />
+        <completion string="checkbox-label" />
+        <completion string="checkmenuitem" />
+        <completion string="dualbutton" />
+        <completion string="groupbox" />
+        <completion string="listbox" />
+        <completion string="listitem" />
+        <completion string="menuarrow" />
+        <completion string="menubar" />
+        <completion string="menucheckbox" />
+        <completion string="menuimage" />
+        <completion string="menuitem" />
+        <completion string="menuitemtext" />
+        <completion string="menulist" />
+        <completion string="menulist-button" />
+        <completion string="menulist-text" />
+        <completion string="menulist-textfield" />
+        <completion string="menupopup" />
+        <completion string="menuradio" />
+        <completion string="menuseparator" />
+        <completion string="meterbar" />
+        <completion string="meterchunk" />
+        <completion string="progressbar" />
+        <completion string="progressbar-vertical" />
+        <completion string="progresschunk" />
+        <completion string="progresschunk-vertical" />
+        <completion string="radio" />
+        <completion string="radio-container" />
+        <completion string="radio-label" />
+        <completion string="radiomenuitem" />
+        <completion string="range" />
+        <completion string="range-thumb" />
+        <completion string="resizer" />
+        <completion string="resizerpanel" />
+        <completion string="scale-horizontal" />
+        <completion string="scalethumbend" />
+        <completion string="scalethumb-horizontal" />
+        <completion string="scalethumbstart" />
+        <completion string="scalethumbtick" />
+        <completion string="scalethumb-vertical" />
+        <completion string="scale-vertical" />
+        <completion string="scrollbarbutton-down" />
+        <completion string="scrollbarbutton-left" />
+        <completion string="scrollbarbutton-right" />
+        <completion string="scrollbarbutton-up" />
+        <completion string="scrollbarthumb-horizontal" />
+        <completion string="scrollbarthumb-vertical" />
+        <completion string="scrollbartrack-horizontal" />
+        <completion string="scrollbartrack-vertical" />
+        <completion string="searchfield" />
+        <completion string="separator" />
+        <completion string="sheet" />
+        <completion string="spinner" />
+        <completion string="spinner-downbutton" />
+        <completion string="spinner-textfield" />
+        <completion string="spinner-upbutton" />
+        <completion string="splitter" />
+        <completion string="statusbar" />
+        <completion string="statusbarpanel" />
+        <completion string="tab" />
+        <completion string="tabpanel" />
+        <completion string="tabpanels" />
+        <completion string="tab-scroll-arrow-back" />
+        <completion string="tab-scroll-arrow-forward" />
+        <completion string="textfield" />
+        <completion string="textfield-multiline" />
+        <completion string="toolbar" />
+        <completion string="toolbarbutton" />
+        <completion string="toolbarbutton-dropdown" />
+        <completion string="toolbargripper" />
+        <completion string="toolbox" />
+        <completion string="tooltip" />
+        <completion string="treeheader" />
+        <completion string="treeheadercell" />
+        <completion string="treeheadersortarrow" />
+        <completion string="treeitem" />
+        <completion string="treeline" />
+        <completion string="treetwisty" />
+        <completion string="treetwistyopen" />
+        <completion string="treeview" />
+        <completion string="-moz-mac-unified-toolbar" />
+        <completion string="-moz-win-borderless-glass" />
+        <completion string="-moz-win-browsertabbar-toolbox" />
+        <completion string="-moz-win-communicationstext" />
+        <completion string="-moz-win-communications-toolbox" />
+        <completion string="-moz-win-exclude-glass" />
+        <completion string="-moz-win-glass" />
+        <completion string="-moz-win-mediatext" />
+        <completion string="-moz-win-media-toolbox" />
+        <completion string="-moz-window-button-box" />
+        <completion string="-moz-window-button-box-maximized" />
+        <completion string="-moz-window-button-close" />
+        <completion string="-moz-window-button-maximize" />
+        <completion string="-moz-window-button-minimize" />
+        <completion string="-moz-window-button-restore" />
+        <completion string="-moz-window-frame-bottom" />
+        <completion string="-moz-window-frame-left" />
+        <completion string="-moz-window-frame-right" />
+        <completion string="-moz-window-titlebar" />
+        <completion string="-moz-window-titlebar-maximized" />
+    </set>
+    
+    <set name="css.values.-moz-binding" symbol="constant">
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.-moz-border-bottom-colors" symbol="constant">
+        <completion string="none" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.-moz-border-left-colors" symbol="constant">
+        <completion string="none" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.-moz-border-right-colors" symbol="constant">
+        <completion string="none" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.-moz-border-top-colors" symbol="constant">
+        <completion string="none" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.-moz-context-properties" symbol="constant">
+        <completion string="none" />
+        <completion string="fill" />
+        <completion string="fill-opacity" />
+        <completion string="stroke" />
+        <completion string="stroke-opacity" />
+    </set>
+    
+    <set name="css.values.-moz-float-edge" symbol="constant">
+        <completion string="border-box" />
+        <completion string="content-box" />
+        <completion string="margin-box" />
+        <completion string="padding-box" />
+    </set>
+    
+    <set name="css.values.-moz-image-region" symbol="constant">
+        <completion string="rect" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.-moz-orient" symbol="constant">
+        <completion string="inline" />
+        <completion string="block" />
+        <completion string="horizontal" />
+        <completion string="vertical" />
+    </set>
+    
+    <set name="css.values.-moz-stack-sizing" symbol="constant">
+        <completion string="ignore" />
+        <completion string="stretch-to-fit" />
+    </set>
+    
+    <set name="css.values.-moz-text-blink" symbol="constant">
+        <completion string="none" />
+        <completion string="blink" />
+    </set>
+    
+    <set name="css.values.-moz-user-focus" symbol="constant">
+        <completion string="ignore" />
+        <completion string="normal" />
+        <completion string="select-after" />
+        <completion string="select-before" />
+        <completion string="select-menu" />
+        <completion string="select-same" />
+        <completion string="select-all" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.-moz-user-input" symbol="constant">
+        <completion string="auto" />
+        <completion string="none" />
+        <completion string="enabled" />
+        <completion string="disabled" />
+    </set>
+    
+    <set name="css.values.-moz-user-modify" symbol="constant">
+        <completion string="read-only" />
+        <completion string="read-write" />
+        <completion string="write-only" />
+    </set>
+    
+    <set name="css.values.-moz-window-dragging" symbol="constant">
+        <completion string="drag" />
+        <completion string="no-drag" />
+    </set>
+    
+    <set name="css.values.-moz-window-shadow" symbol="constant">
+        <completion string="default" />
+        <completion string="menu" />
+        <completion string="tooltip" />
+        <completion string="sheet" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.-webkit-appearance" symbol="constant">
+        <completion string="none" />
+        <completion string="button" />
+        <completion string="button-bevel" />
+        <completion string="caret" />
+        <completion string="checkbox" />
+        <completion string="default-button" />
+        <completion string="inner-spin-button" />
+        <completion string="listbox" />
+        <completion string="listitem" />
+        <completion string="media-controls-background" />
+        <completion string="media-controls-fullscreen-background" />
+        <completion string="media-current-time-display" />
+        <completion string="media-enter-fullscreen-button" />
+        <completion string="media-exit-fullscreen-button" />
+        <completion string="media-fullscreen-button" />
+        <completion string="media-mute-button" />
+        <completion string="media-overlay-play-button" />
+        <completion string="media-play-button" />
+        <completion string="media-seek-back-button" />
+        <completion string="media-seek-forward-button" />
+        <completion string="media-slider" />
+        <completion string="media-sliderthumb" />
+        <completion string="media-time-remaining-display" />
+        <completion string="media-toggle-closed-captions-button" />
+        <completion string="media-volume-slider" />
+        <completion string="media-volume-slider-container" />
+        <completion string="media-volume-sliderthumb" />
+        <completion string="menulist" />
+        <completion string="menulist-button" />
+        <completion string="menulist-text" />
+        <completion string="menulist-textfield" />
+        <completion string="meter" />
+        <completion string="progress-bar" />
+        <completion string="progress-bar-value" />
+        <completion string="push-button" />
+        <completion string="radio" />
+        <completion string="searchfield" />
+        <completion string="searchfield-cancel-button" />
+        <completion string="searchfield-decoration" />
+        <completion string="searchfield-results-button" />
+        <completion string="searchfield-results-decoration" />
+        <completion string="slider-horizontal" />
+        <completion string="slider-vertical" />
+        <completion string="sliderthumb-horizontal" />
+        <completion string="sliderthumb-vertical" />
+        <completion string="square-button" />
+        <completion string="textarea" />
+        <completion string="textfield" />
+        <completion string="-apple-pay-button" />
+    </set>
+    
+    <set name="css.values.-webkit-border-before" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.-webkit-border-before-color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.-webkit-border-before-style" symbol="constant">
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+    </set>
+    
+    <set name="css.values.-webkit-border-before-width" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+    </set>
+    
+    <set name="css.values.-webkit-box-reflect" symbol="constant">
+        <completion string="above" />
+        <completion string="below" />
+        <completion string="right" />
+        <completion string="left" />
+        <completion string="image" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="image-set" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="element" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="paint" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="cross-fade" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <set>css.gradients</set>
+    </set>
+    
+    <set name="css.values.-webkit-line-clamp" symbol="constant">
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.-webkit-mask" symbol="constant">
+        <completion string="none" />
+        <completion string="image" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="image-set" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="element" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="paint" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="cross-fade" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <set>css.gradients</set>
+        <completion string="left" />
+        <completion string="center" />
+        <completion string="right" />
+        <completion string="top" />
+        <completion string="bottom" />
+        <completion string="auto" />
+        <completion string="cover" />
+        <completion string="contain" />
+        <completion string="repeat-x" />
+        <completion string="repeat-y" />
+        <completion string="repeat" />
+        <completion string="space" />
+        <completion string="round" />
+        <completion string="no-repeat" />
+        <completion string="border-box" />
+        <completion string="padding-box" />
+        <completion string="content-box" />
+        <completion string="border" />
+        <completion string="padding" />
+        <completion string="content" />
+        <completion string="text" />
+    </set>
+    
+    <set name="css.values.-webkit-mask-attachment" symbol="constant">
+        <completion string="scroll" />
+        <completion string="fixed" />
+        <completion string="local" />
+    </set>
+    
+    <set name="css.values.-webkit-mask-clip" symbol="constant">
+        <completion string="border-box" />
+        <completion string="padding-box" />
+        <completion string="content-box" />
+        <completion string="border" />
+        <completion string="padding" />
+        <completion string="content" />
+        <completion string="text" />
+    </set>
+    
+    <set name="css.values.-webkit-mask-composite" symbol="constant">
+        <completion string="clear" />
+        <completion string="copy" />
+        <completion string="source-over" />
+        <completion string="source-in" />
+        <completion string="source-out" />
+        <completion string="source-atop" />
+        <completion string="destination-over" />
+        <completion string="destination-in" />
+        <completion string="destination-out" />
+        <completion string="destination-atop" />
+        <completion string="xor" />
+    </set>
+    
+    <set name="css.values.-webkit-mask-image" symbol="constant">
+        <completion string="none" />
+        <completion string="image" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="image-set" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="element" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="paint" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="cross-fade" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <set>css.gradients</set>
+    </set>
+    
+    <set name="css.values.-webkit-mask-origin" symbol="constant">
+        <completion string="border-box" />
+        <completion string="padding-box" />
+        <completion string="content-box" />
+        <completion string="border" />
+        <completion string="padding" />
+        <completion string="content" />
+    </set>
+    
+    <set name="css.values.-webkit-mask-position" symbol="constant">
+        <completion string="left" />
+        <completion string="center" />
+        <completion string="right" />
+        <completion string="top" />
+        <completion string="bottom" />
+    </set>
+    
+    <set name="css.values.-webkit-mask-position-x" symbol="constant">
+        <completion string="left" />
+        <completion string="center" />
+        <completion string="right" />
+    </set>
+    
+    <set name="css.values.-webkit-mask-position-y" symbol="constant">
+        <completion string="top" />
+        <completion string="center" />
+        <completion string="bottom" />
+    </set>
+    
+    <set name="css.values.-webkit-mask-repeat" symbol="constant">
+        <completion string="repeat-x" />
+        <completion string="repeat-y" />
+        <completion string="repeat" />
+        <completion string="space" />
+        <completion string="round" />
+        <completion string="no-repeat" />
+    </set>
+    
+    <set name="css.values.-webkit-mask-repeat-x" symbol="constant">
+        <completion string="repeat" />
+        <completion string="no-repeat" />
+        <completion string="space" />
+        <completion string="round" />
+    </set>
+    
+    <set name="css.values.-webkit-mask-repeat-y" symbol="constant">
+        <completion string="repeat" />
+        <completion string="no-repeat" />
+        <completion string="space" />
+        <completion string="round" />
+    </set>
+    
+    <set name="css.values.-webkit-mask-size" symbol="constant">
+        <completion string="auto" />
+        <completion string="cover" />
+        <completion string="contain" />
+    </set>
+    
+    <set name="css.values.-webkit-overflow-scrolling" symbol="constant">
+        <completion string="auto" />
+        <completion string="touch" />
+    </set>
+    
+    <set name="css.values.-webkit-tap-highlight-color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.-webkit-text-fill-color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.-webkit-text-stroke" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.-webkit-text-stroke-color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.-webkit-touch-callout" symbol="constant">
+        <completion string="default" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.-webkit-user-modify" symbol="constant">
+        <completion string="read-only" />
+        <completion string="read-write" />
+        <completion string="read-write-plaintext-only" />
+    </set>
+    
+    <set name="css.values.accent-color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.align-content" symbol="constant">
+        <completion string="normal" />
+        <completion string="first" />
+        <completion string="last" />
+        <completion string="baseline" />
+        <completion string="space-between" />
+        <completion string="space-around" />
+        <completion string="space-evenly" />
+        <completion string="stretch" />
+        <completion string="unsafe" />
+        <completion string="safe" />
+        <completion string="center" />
+        <completion string="start" />
+        <completion string="end" />
+        <completion string="flex-start" />
+        <completion string="flex-end" />
+    </set>
+    
+    <set name="css.values.align-items" symbol="constant">
+        <completion string="normal" />
+        <completion string="stretch" />
+        <completion string="first" />
+        <completion string="last" />
+        <completion string="baseline" />
+        <completion string="unsafe" />
+        <completion string="safe" />
+        <completion string="center" />
+        <completion string="start" />
+        <completion string="end" />
+        <completion string="self-start" />
+        <completion string="self-end" />
+        <completion string="flex-start" />
+        <completion string="flex-end" />
+    </set>
+    
+    <set name="css.values.align-self" symbol="constant">
+        <completion string="auto" />
+        <completion string="normal" />
+        <completion string="stretch" />
+        <completion string="first" />
+        <completion string="last" />
+        <completion string="baseline" />
+        <completion string="unsafe" />
+        <completion string="safe" />
+        <completion string="center" />
+        <completion string="start" />
+        <completion string="end" />
+        <completion string="self-start" />
+        <completion string="self-end" />
+        <completion string="flex-start" />
+        <completion string="flex-end" />
+    </set>
+    
+    <set name="css.values.align-tracks" symbol="constant">
+        <completion string="auto" />
+        <completion string="normal" />
+        <completion string="stretch" />
+        <completion string="first" />
+        <completion string="last" />
+        <completion string="baseline" />
+        <completion string="unsafe" />
+        <completion string="safe" />
+        <completion string="center" />
+        <completion string="start" />
+        <completion string="end" />
+        <completion string="self-start" />
+        <completion string="self-end" />
+        <completion string="flex-start" />
+        <completion string="flex-end" />
+    </set>
+    
+    <set name="css.values.animation" symbol="constant">
+        <completion string="linear" />
+        <completion string="ease" />
+        <completion string="ease-in" />
+        <completion string="ease-out" />
+        <completion string="ease-in-out" />
+        <completion string="cubic-bezier" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="step-start" />
+        <completion string="step-end" />
+        <completion string="steps" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="infinite" />
+        <completion string="normal" />
+        <completion string="reverse" />
+        <completion string="alternate" />
+        <completion string="alternate-reverse" />
+        <completion string="none" />
+        <completion string="forwards" />
+        <completion string="backwards" />
+        <completion string="both" />
+        <completion string="running" />
+        <completion string="paused" />
+    </set>
+    
+    <set name="css.values.animation-composition" symbol="constant">
+        <completion string="accumulate" />
+        <completion string="add" />
+        <completion string="replace" />
+    </set>
+    
+    <set name="css.values.animation-direction" symbol="constant">
+        <completion string="normal" />
+        <completion string="reverse" />
+        <completion string="alternate" />
+        <completion string="alternate-reverse" />
+    </set>
+    
+    <set name="css.values.animation-fill-mode" symbol="constant">
+        <completion string="none" />
+        <completion string="forwards" />
+        <completion string="backwards" />
+        <completion string="both" />
+    </set>
+    
+    <set name="css.values.animation-iteration-count" symbol="constant">
+        <completion string="infinite" />
+    </set>
+    
+    <set name="css.values.animation-name" symbol="constant">
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.animation-play-state" symbol="constant">
+        <completion string="running" />
+        <completion string="paused" />
+    </set>
+    
+    <set name="css.values.animation-range" symbol="constant">
+        <completion string="normal" />
+        <completion string="cover" />
+        <completion string="contain" />
+        <completion string="entry" />
+        <completion string="exit" />
+        <completion string="entry-crossing" />
+        <completion string="exit-crossing" />
+    </set>
+    
+    <set name="css.values.animation-range-end" symbol="constant">
+        <completion string="normal" />
+        <completion string="cover" />
+        <completion string="contain" />
+        <completion string="entry" />
+        <completion string="exit" />
+        <completion string="entry-crossing" />
+        <completion string="exit-crossing" />
+    </set>
+    
+    <set name="css.values.animation-range-start" symbol="constant">
+        <completion string="normal" />
+        <completion string="cover" />
+        <completion string="contain" />
+        <completion string="entry" />
+        <completion string="exit" />
+        <completion string="entry-crossing" />
+        <completion string="exit-crossing" />
+    </set>
+    
+    <set name="css.values.animation-timing-function" symbol="constant">
+        <completion string="linear" />
+        <completion string="ease" />
+        <completion string="ease-in" />
+        <completion string="ease-out" />
+        <completion string="ease-in-out" />
+        <completion string="cubic-bezier" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="step-start" />
+        <completion string="step-end" />
+        <completion string="steps" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+    </set>
+    
+    <set name="css.values.animation-timeline" symbol="constant">
+        <completion string="none" />
+        <completion string="auto" />
+        <completion string="scroll" experimental="true">
+            <append>($[])</append>
+        </completion>
+        <completion string="view" experimental="true">
+            <append>($[])</append>
+        </completion>
+    </set>
+    
+    <set name="css.values.appearance" symbol="constant">
+        <completion string="none" />
+        <completion string="auto" />
+        <completion string="button" />
+        <completion string="checkbox" />
+        <completion string="listbox" />
+        <completion string="menulist" />
+        <completion string="menulist-button" />
+        <completion string="meter" />
+        <completion string="progress-bar" />
+        <completion string="push-button" />
+        <completion string="radio" />
+        <completion string="searchfield" />
+        <completion string="slider-horizontal" />
+        <completion string="square-button" />
+        <completion string="square-textarea" />
+        <completion string="textfield" />
+    </set>
+    
+    <set name="css.values.aspect-ratio" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.backdrop-filter" symbol="constant">
+        <completion string="none" />
+        <completion string="blur" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="brightness" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="contrast" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="drop-shadow" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="grayscale" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="hue-rotate" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="invert" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="opacity" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="saturate" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="sepia" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+    </set>
+    
+    <set name="css.values.backface-visibility" symbol="constant">
+        <completion string="visible" />
+        <completion string="hidden" />
+    </set>
+    
+    <set name="css.values.background" symbol="constant">
+        <completion string="none" />
+        <completion string="image" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="image-set" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="element" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="paint" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="cross-fade" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="left" />
+        <completion string="center" />
+        <completion string="right" />
+        <completion string="top" />
+        <completion string="bottom" />
+        <completion string="auto" />
+        <completion string="cover" />
+        <completion string="contain" />
+        <completion string="repeat-x" />
+        <completion string="repeat-y" />
+        <completion string="repeat" />
+        <completion string="space" />
+        <completion string="round" />
+        <completion string="no-repeat" />
+        <completion string="scroll" />
+        <completion string="fixed" />
+        <completion string="local" />
+        <completion string="border-box" />
+        <completion string="padding-box" />
+        <completion string="content-box" />
+        <set>css.colors</set>
+        <set>css.gradients</set>
+    </set>
+    
+    <set name="css.values.background-attachment" symbol="constant">
+        <completion string="scroll" />
+        <completion string="fixed" />
+        <completion string="local" />
+    </set>
+    
+    <set name="css.values.background-blend-mode" symbol="constant">
+        <completion string="normal" />
+        <completion string="multiply" />
+        <completion string="screen" />
+        <completion string="overlay" />
+        <completion string="darken" />
+        <completion string="lighten" />
+        <completion string="color-dodge" />
+        <completion string="color-burn" />
+        <completion string="hard-light" />
+        <completion string="soft-light" />
+        <completion string="difference" />
+        <completion string="exclusion" />
+        <completion string="hue" />
+        <completion string="saturation" />
+        <completion string="color" />
+        <completion string="luminosity" />
+    </set>
+    
+    <set name="css.values.background-clip" symbol="constant">
+        <completion string="border-box" />
+        <completion string="padding-box" />
+        <completion string="content-box" />
+    </set>
+    
+    <set name="css.values.background-color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.background-image" symbol="constant">
+        <completion string="none" />
+        <completion string="image" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="image-set" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="element" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="paint" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="cross-fade" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <set>css.gradients</set>
+    </set>
+    
+    <set name="css.values.background-origin" symbol="constant">
+        <completion string="border-box" />
+        <completion string="padding-box" />
+        <completion string="content-box" />
+    </set>
+    
+    <set name="css.values.background-position" symbol="constant">
+        <completion string="left" />
+        <completion string="center" />
+        <completion string="right" />
+        <completion string="top" />
+        <completion string="bottom" />
+    </set>
+    
+    <set name="css.values.background-repeat" symbol="constant">
+        <completion string="repeat-x" />
+        <completion string="repeat-y" />
+        <completion string="repeat" />
+        <completion string="space" />
+        <completion string="round" />
+        <completion string="no-repeat" />
+    </set>
+    
+    <set name="css.values.background-size" symbol="constant">
+        <completion string="auto" />
+        <completion string="cover" />
+        <completion string="contain" />
+    </set>
+    
+    <set name="css.values.block-size" symbol="constant">
+        <completion string="border-box" />
+        <completion string="content-box" />
+        <completion string="available" />
+        <completion string="min-content" />
+        <completion string="max-content" />
+        <completion string="fit-content" />
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.border" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-block" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-block-color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-block-style" symbol="constant">
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+    </set>
+    
+    <set name="css.values.border-block-width" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+    </set>
+    
+    <set name="css.values.border-block-end" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-block-end-color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-block-end-style" symbol="constant">
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+    </set>
+    
+    <set name="css.values.border-block-end-width" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+    </set>
+    
+    <set name="css.values.border-block-start" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-block-start-color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-block-start-style" symbol="constant">
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+    </set>
+    
+    <set name="css.values.border-block-start-width" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+    </set>
+    
+    <set name="css.values.border-bottom" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-bottom-color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-bottom-style" symbol="constant">
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+    </set>
+    
+    <set name="css.values.border-bottom-width" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+    </set>
+    
+    <set name="css.values.border-collapse" symbol="constant">
+        <completion string="collapse" />
+        <completion string="separate" />
+    </set>
+    
+    <set name="css.values.border-color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-image" symbol="constant">
+        <completion string="none" />
+        <completion string="image" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="image-set" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="element" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="paint" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="cross-fade" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="fill" />
+        <completion string="auto" />
+        <completion string="stretch" />
+        <completion string="repeat" />
+        <completion string="round" />
+        <completion string="space" />
+        <set>css.gradients</set>
+    </set>
+    
+    <set name="css.values.border-image-repeat" symbol="constant">
+        <completion string="stretch" />
+        <completion string="repeat" />
+        <completion string="round" />
+        <completion string="space" />
+    </set>
+    
+    <set name="css.values.border-image-slice" symbol="constant">
+        <completion string="fill" />
+    </set>
+    
+    <set name="css.values.border-image-source" symbol="constant">
+        <completion string="none" />
+        <completion string="image" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="image-set" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="element" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="paint" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="cross-fade" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <set>css.gradients</set>
+    </set>
+    
+    <set name="css.values.border-image-width" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.border-inline" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-inline-end" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-inline-color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-inline-style" symbol="constant">
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+    </set>
+    
+    <set name="css.values.border-inline-width" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+    </set>
+    
+    <set name="css.values.border-inline-end-color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-inline-end-style" symbol="constant">
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+    </set>
+    
+    <set name="css.values.border-inline-end-width" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+    </set>
+    
+    <set name="css.values.border-inline-start" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-inline-start-color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-inline-start-style" symbol="constant">
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+    </set>
+    
+    <set name="css.values.border-inline-start-width" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+    </set>
+    
+    <set name="css.values.border-left" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-left-color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-left-style" symbol="constant">
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+    </set>
+    
+    <set name="css.values.border-left-width" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+    </set>
+    
+    <set name="css.values.border-right" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-right-color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-right-style" symbol="constant">
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+    </set>
+    
+    <set name="css.values.border-right-width" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+    </set>
+    
+    <set name="css.values.border-style" symbol="constant">
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+    </set>
+    
+    <set name="css.values.border-top" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-top-color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.border-top-style" symbol="constant">
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+    </set>
+    
+    <set name="css.values.border-top-width" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+    </set>
+    
+    <set name="css.values.border-width" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+    </set>
+    
+    <set name="css.values.bottom" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.box-align" symbol="constant">
+        <completion string="start" />
+        <completion string="center" />
+        <completion string="end" />
+        <completion string="baseline" />
+        <completion string="stretch" />
+    </set>
+    
+    <set name="css.values.box-decoration-break" symbol="constant">
+        <completion string="slice" />
+        <completion string="clone" />
+    </set>
+    
+    <set name="css.values.box-direction" symbol="constant">
+        <completion string="normal" />
+        <completion string="reverse" />
+        <completion string="inherit" />
+    </set>
+    
+    <set name="css.values.box-lines" symbol="constant">
+        <completion string="single" />
+        <completion string="multiple" />
+    </set>
+    
+    <set name="css.values.box-orient" symbol="constant">
+        <completion string="horizontal" />
+        <completion string="vertical" />
+        <completion string="inline-axis" />
+        <completion string="block-axis" />
+        <completion string="inherit" />
+    </set>
+    
+    <set name="css.values.box-pack" symbol="constant">
+        <completion string="start" />
+        <completion string="center" />
+        <completion string="end" />
+        <completion string="justify" />
+    </set>
+    
+    <set name="css.values.box-shadow" symbol="constant">
+        <completion string="none" />
+        <completion string="inset" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.box-sizing" symbol="constant">
+        <completion string="content-box" />
+        <completion string="border-box" />
+    </set>
+    
+    <set name="css.values.break-after" symbol="constant">
+        <completion string="auto" />
+        <completion string="avoid" />
+        <completion string="always" />
+        <completion string="all" />
+        <completion string="avoid-page" />
+        <completion string="page" />
+        <completion string="left" />
+        <completion string="right" />
+        <completion string="recto" />
+        <completion string="verso" />
+        <completion string="avoid-column" />
+        <completion string="column" />
+        <completion string="avoid-region" />
+        <completion string="region" />
+    </set>
+    
+    <set name="css.values.break-before" symbol="constant">
+        <completion string="auto" />
+        <completion string="avoid" />
+        <completion string="always" />
+        <completion string="all" />
+        <completion string="avoid-page" />
+        <completion string="page" />
+        <completion string="left" />
+        <completion string="right" />
+        <completion string="recto" />
+        <completion string="verso" />
+        <completion string="avoid-column" />
+        <completion string="column" />
+        <completion string="avoid-region" />
+        <completion string="region" />
+    </set>
+    
+    <set name="css.values.break-inside" symbol="constant">
+        <completion string="auto" />
+        <completion string="avoid" />
+        <completion string="avoid-page" />
+        <completion string="avoid-column" />
+        <completion string="avoid-region" />
+    </set>
+    
+    <set name="css.values.caption-side" symbol="constant">
+        <completion string="top" />
+        <completion string="bottom" />
+        <completion string="block-start" />
+        <completion string="block-end" />
+        <completion string="inline-start" />
+        <completion string="inline-end" />
+    </set>
+    
+    <set name="css.values.caret" symbol="constant">
+        <completion string="auto" />
+        <completion string="bar" />
+        <completion string="block" />
+        <completion string="underline" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.caret-color" symbol="constant">
+        <completion string="auto" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.caret-shape" symbol="constant">
+        <completion string="auto" />
+        <completion string="bar" />
+        <completion string="block" />
+        <completion string="underline" />
+    </set>
+    
+    <set name="css.values.clear" symbol="constant">
+        <completion string="none" />
+        <completion string="left" />
+        <completion string="right" />
+        <completion string="both" />
+        <completion string="inline-start" />
+        <completion string="inline-end" />
+    </set>
+    
+    <set name="css.values.clip" symbol="constant">
+        <completion string="rect" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.clip-path" symbol="constant">
+        <completion string="inset" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="circle" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="ellipse" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="polygon" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="border-box" />
+        <completion string="padding-box" />
+        <completion string="content-box" />
+        <completion string="margin-box" />
+        <completion string="fill-box" />
+        <completion string="stroke-box" />
+        <completion string="view-box" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.color-scheme" symbol="constant">
+        <completion string="normal" />
+        <completion string="light" />
+        <completion string="dark" />
+        <completion string="only" />
+    </set>
+    
+    <set name="css.values.column-count" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.column-fill" symbol="constant">
+        <completion string="auto" />
+        <completion string="balance" />
+        <completion string="balance-all" />
+    </set>
+    
+    <set name="css.values.column-gap" symbol="constant">
+        <completion string="normal" />
+    </set>
+    
+    <set name="css.values.column-rule" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.column-rule-color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.column-rule-style" symbol="constant">
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+    </set>
+    
+    <set name="css.values.column-rule-width" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+    </set>
+    
+    <set name="css.values.column-span" symbol="constant">
+        <completion string="none" />
+        <completion string="all" />
+    </set>
+    
+    <set name="css.values.column-width" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.columns" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.contain" symbol="constant">
+        <completion string="none" />
+        <completion string="strict" />
+        <completion string="content" />
+        <completion string="inline-size" />
+        <completion string="size" />
+        <completion string="layout" />
+        <completion string="style" />
+        <completion string="paint" />
+    </set>
+    
+    <set name="css.values.contain-intrinsic-size" symbol="constant">
+        <completion string="auto" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.contain-intrinsic-block-size" symbol="constant">
+        <completion string="auto" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.contain-intrinsic-height" symbol="constant">
+        <completion string="auto" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.contain-intrinsic-inline-size" symbol="constant">
+        <completion string="auto" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.contain-intrinsic-width" symbol="constant">
+        <completion string="auto" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.container" symbol="constant">
+        <completion string="none" />
+        <completion string="normal" />
+        <completion string="size" />
+        <completion string="inline-size" />
+    </set>
+    
+    <set name="css.values.container-name" symbol="constant">
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.container-type" symbol="constant">
+        <completion string="normal" />
+        <completion string="size" />
+        <completion string="inline-size" />
+    </set>
+    
+    <set name="css.values.content" symbol="constant">
+        <completion string="normal" />
+        <completion string="none" />
+        <completion string="image" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="image-set" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="element" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="paint" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="cross-fade" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="contents" />
+        <completion string="open-quote" />
+        <completion string="close-quote" />
+        <completion string="no-open-quote" />
+        <completion string="no-close-quote" />
+        <completion string="target-counter" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="target-counters" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="target-text" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="leader" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <set>css.gradients</set>
+    </set>
+    
+    <set name="css.values.content-visibility" symbol="constant">
+        <completion string="visible" />
+        <completion string="auto" />
+        <completion string="hidden" />
+    </set>
+    
+    <set name="css.values.counter-increment" symbol="constant">
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.counter-reset" symbol="constant">
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.counter-set" symbol="constant">
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.cursor" symbol="constant">
+        <completion string="auto" />
+        <completion string="default" />
+        <completion string="none" />
+        <completion string="context-menu" />
+        <completion string="help" />
+        <completion string="pointer" />
+        <completion string="progress" />
+        <completion string="wait" />
+        <completion string="cell" />
+        <completion string="crosshair" />
+        <completion string="text" />
+        <completion string="vertical-text" />
+        <completion string="alias" />
+        <completion string="copy" />
+        <completion string="move" />
+        <completion string="no-drop" />
+        <completion string="not-allowed" />
+        <completion string="e-resize" />
+        <completion string="n-resize" />
+        <completion string="ne-resize" />
+        <completion string="nw-resize" />
+        <completion string="s-resize" />
+        <completion string="se-resize" />
+        <completion string="sw-resize" />
+        <completion string="w-resize" />
+        <completion string="ew-resize" />
+        <completion string="ns-resize" />
+        <completion string="nesw-resize" />
+        <completion string="nwse-resize" />
+        <completion string="col-resize" />
+        <completion string="row-resize" />
+        <completion string="all-scroll" />
+        <completion string="zoom-in" />
+        <completion string="zoom-out" />
+        <completion string="grab" />
+        <completion string="grabbing" />
+    </set>
+    
+    <set name="css.values.direction" symbol="constant">
+        <completion string="ltr" />
+        <completion string="rtl" />
+    </set>
+    
+    <set name="css.values.display" symbol="constant">
+        <completion string="block" />
+        <completion string="inline" />
+        <completion string="run-in" />
+        <completion string="flow" />
+        <completion string="flow-root" />
+        <completion string="table" />
+        <completion string="flex" />
+        <completion string="grid" />
+        <completion string="ruby" />
+        <completion string="list-item" />
+        <completion string="table-row-group" />
+        <completion string="table-header-group" />
+        <completion string="table-footer-group" />
+        <completion string="table-row" />
+        <completion string="table-cell" />
+        <completion string="table-column-group" />
+        <completion string="table-column" />
+        <completion string="table-caption" />
+        <completion string="ruby-base" />
+        <completion string="ruby-text" />
+        <completion string="ruby-base-container" />
+        <completion string="ruby-text-container" />
+        <completion string="contents" />
+        <completion string="none" />
+        <completion string="inline-block" />
+        <completion string="inline-list-item" />
+        <completion string="inline-table" />
+        <completion string="inline-flex" />
+        <completion string="inline-grid" />
+    </set>
+    
+    <set name="css.values.empty-cells" symbol="constant">
+        <completion string="show" />
+        <completion string="hide" />
+    </set>
+    
+    <set name="css.values.filter" symbol="constant">
+        <completion string="none" />
+        <completion string="blur" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="brightness" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="contrast" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="drop-shadow" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="grayscale" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="hue-rotate" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="invert" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="opacity" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="saturate" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="sepia" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+    </set>
+    
+    <set name="css.values.flex" symbol="constant">
+        <completion string="none" />
+        <completion string="content" />
+        <completion string="border-box" />
+        <completion string="content-box" />
+        <completion string="available" />
+        <completion string="min-content" />
+        <completion string="max-content" />
+        <completion string="fit-content" />
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.flex-basis" symbol="constant">
+        <completion string="content" />
+        <completion string="border-box" />
+        <completion string="content-box" />
+        <completion string="available" />
+        <completion string="min-content" />
+        <completion string="max-content" />
+        <completion string="fit-content" />
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.flex-direction" symbol="constant">
+        <completion string="row" />
+        <completion string="row-reverse" />
+        <completion string="column" />
+        <completion string="column-reverse" />
+    </set>
+    
+    <set name="css.values.flex-flow" symbol="constant">
+        <completion string="row" />
+        <completion string="row-reverse" />
+        <completion string="column" />
+        <completion string="column-reverse" />
+        <completion string="nowrap" />
+        <completion string="wrap" />
+        <completion string="wrap-reverse" />
+    </set>
+    
+    <set name="css.values.flex-wrap" symbol="constant">
+        <completion string="nowrap" />
+        <completion string="wrap" />
+        <completion string="wrap-reverse" />
+    </set>
+    
+    <set name="css.values.float" symbol="constant">
+        <completion string="left" />
+        <completion string="right" />
+        <completion string="none" />
+        <completion string="inline-start" />
+        <completion string="inline-end" />
+    </set>
+    
+    <set name="css.values.font" symbol="constant">
+        <completion string="normal" />
+        <completion string="italic" />
+        <completion string="oblique" />
+        <completion string="small-caps" />
+        <completion string="bold" />
+        <completion string="bolder" />
+        <completion string="lighter" />
+        <completion string="ultra-condensed" />
+        <completion string="extra-condensed" />
+        <completion string="condensed" />
+        <completion string="semi-condensed" />
+        <completion string="semi-expanded" />
+        <completion string="expanded" />
+        <completion string="extra-expanded" />
+        <completion string="ultra-expanded" />
+        <completion string="xx-small" />
+        <completion string="x-small" />
+        <completion string="small" />
+        <completion string="medium" />
+        <completion string="large" />
+        <completion string="x-large" />
+        <completion string="xx-large" />
+        <completion string="xxx-large" />
+        <completion string="larger" />
+        <completion string="smaller" />
+        <completion string="serif" />
+        <completion string="sans-serif" />
+        <completion string="cursive" />
+        <completion string="fantasy" />
+        <completion string="monospace" />
+        <completion string="system-ui" />
+        <completion string="ui-serif" />
+        <completion string="ui-sans-serif" />
+        <completion string="ui-monospace" />
+        <completion string="ui-rounded" />
+        <completion string="emoji" />
+        <completion string="math" />
+        <completion string="fangsong" />
+        <completion string="caption" />
+        <completion string="icon" />
+        <completion string="menu" />
+        <completion string="message-box" />
+        <completion string="small-caption" />
+        <completion string="status-bar" />
+    </set>
+    
+    <set name="css.values.font-family" symbol="constant">
+        <completion string="serif" />
+        <completion string="sans-serif" />
+        <completion string="cursive" />
+        <completion string="fantasy" />
+        <completion string="monospace" />
+        <completion string="system-ui" />
+        <completion string="ui-serif" />
+        <completion string="ui-sans-serif" />
+        <completion string="ui-monospace" />
+        <completion string="ui-rounded" />
+        <completion string="emoji" />
+        <completion string="math" />
+        <completion string="fangsong" />
+    </set>
+    
+    <set name="css.values.font-feature-settings" symbol="constant">
+        <completion string="normal" />
+        <completion string="on" />
+        <completion string="off" />
+    </set>
+    
+    <set name="css.values.font-kerning" symbol="constant">
+        <completion string="auto" />
+        <completion string="normal" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.font-language-override" symbol="constant">
+        <completion string="normal" />
+    </set>
+    
+    <set name="css.values.font-optical-sizing" symbol="constant">
+        <completion string="auto" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.font-palette" symbol="constant">
+        <completion string="normal" />
+        <completion string="light" />
+        <completion string="dark" />
+    </set>
+    
+    <set name="css.values.font-variation-settings" symbol="constant">
+        <completion string="normal" />
+    </set>
+    
+    <set name="css.values.font-size" symbol="constant">
+        <completion string="xx-small" />
+        <completion string="x-small" />
+        <completion string="small" />
+        <completion string="medium" />
+        <completion string="large" />
+        <completion string="x-large" />
+        <completion string="xx-large" />
+        <completion string="xxx-large" />
+        <completion string="larger" />
+        <completion string="smaller" />
+    </set>
+    
+    <set name="css.values.font-size-adjust" symbol="constant">
+        <completion string="none" />
+        <completion string="cap-height" />
+        <completion string="ch-width" />
+        <completion string="ex-height" />
+        <completion string="ic-width" />
+        <completion string="ic-height" />
+        <completion string="from-font" />
+    </set>
+    
+    <set name="css.values.font-smooth" symbol="constant">
+        <completion string="auto" />
+        <completion string="never" />
+        <completion string="always" />
+    </set>
+    
+    <set name="css.values.font-stretch" symbol="constant">
+        <completion string="normal" />
+        <completion string="ultra-condensed" />
+        <completion string="extra-condensed" />
+        <completion string="condensed" />
+        <completion string="semi-condensed" />
+        <completion string="semi-expanded" />
+        <completion string="expanded" />
+        <completion string="extra-expanded" />
+        <completion string="ultra-expanded" />
+    </set>
+    
+    <set name="css.values.font-style" symbol="constant">
+        <completion string="normal" />
+        <completion string="italic" />
+        <completion string="oblique" />
+    </set>
+    
+    <set name="css.values.font-synthesis" symbol="constant">
+        <completion string="none" />
+        <completion string="weight" />
+        <completion string="style" />
+        <completion string="small-caps" />
+        <completion string="position" />
+    </set>
+    
+    <set name="css.values.font-synthesis-position" symbol="constant">
+        <completion string="auto" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.font-synthesis-small-caps" symbol="constant">
+        <completion string="auto" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.font-synthesis-style" symbol="constant">
+        <completion string="auto" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.font-synthesis-weight" symbol="constant">
+        <completion string="auto" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.font-variant" symbol="constant">
+        <completion string="normal" />
+        <completion string="none" />
+        <completion string="common-ligatures" />
+        <completion string="no-common-ligatures" />
+        <completion string="discretionary-ligatures" />
+        <completion string="no-discretionary-ligatures" />
+        <completion string="historical-ligatures" />
+        <completion string="no-historical-ligatures" />
+        <completion string="contextual" />
+        <completion string="no-contextual" />
+        <completion string="stylistic" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="historical-forms" />
+        <completion string="styleset" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="character-variant" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="swash" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="ornaments" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="annotation" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="small-caps" />
+        <completion string="all-small-caps" />
+        <completion string="petite-caps" />
+        <completion string="all-petite-caps" />
+        <completion string="unicase" />
+        <completion string="titling-caps" />
+        <completion string="lining-nums" />
+        <completion string="oldstyle-nums" />
+        <completion string="proportional-nums" />
+        <completion string="tabular-nums" />
+        <completion string="diagonal-fractions" />
+        <completion string="stacked-fractions" />
+        <completion string="ordinal" />
+        <completion string="slashed-zero" />
+        <completion string="jis78" />
+        <completion string="jis83" />
+        <completion string="jis90" />
+        <completion string="jis04" />
+        <completion string="simplified" />
+        <completion string="traditional" />
+        <completion string="full-width" />
+        <completion string="proportional-width" />
+        <completion string="ruby" />
+    </set>
+    
+    <set name="css.values.font-variant-alternates" symbol="constant">
+        <completion string="normal" />
+        <completion string="stylistic" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="historical-forms" />
+        <completion string="styleset" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="character-variant" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="swash" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="ornaments" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="annotation" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+    </set>
+    
+    <set name="css.values.font-variant-caps" symbol="constant">
+        <completion string="normal" />
+        <completion string="small-caps" />
+        <completion string="all-small-caps" />
+        <completion string="petite-caps" />
+        <completion string="all-petite-caps" />
+        <completion string="unicase" />
+        <completion string="titling-caps" />
+    </set>
+    
+    <set name="css.values.font-variant-east-asian" symbol="constant">
+        <completion string="normal" />
+        <completion string="jis78" />
+        <completion string="jis83" />
+        <completion string="jis90" />
+        <completion string="jis04" />
+        <completion string="simplified" />
+        <completion string="traditional" />
+        <completion string="full-width" />
+        <completion string="proportional-width" />
+        <completion string="ruby" />
+    </set>
+    
+    <set name="css.values.font-variant-emoji" symbol="constant">
+        <completion string="normal" />
+        <completion string="text" />
+        <completion string="emoji" />
+        <completion string="unicode" />
+    </set>
+    
+    <set name="css.values.font-variant-ligatures" symbol="constant">
+        <completion string="normal" />
+        <completion string="none" />
+        <completion string="common-ligatures" />
+        <completion string="no-common-ligatures" />
+        <completion string="discretionary-ligatures" />
+        <completion string="no-discretionary-ligatures" />
+        <completion string="historical-ligatures" />
+        <completion string="no-historical-ligatures" />
+        <completion string="contextual" />
+        <completion string="no-contextual" />
+    </set>
+    
+    <set name="css.values.font-variant-numeric" symbol="constant">
+        <completion string="normal" />
+        <completion string="lining-nums" />
+        <completion string="oldstyle-nums" />
+        <completion string="proportional-nums" />
+        <completion string="tabular-nums" />
+        <completion string="diagonal-fractions" />
+        <completion string="stacked-fractions" />
+        <completion string="ordinal" />
+        <completion string="slashed-zero" />
+    </set>
+    
+    <set name="css.values.font-variant-position" symbol="constant">
+        <completion string="normal" />
+        <completion string="sub" />
+        <completion string="super" />
+    </set>
+    
+    <set name="css.values.font-weight" symbol="constant">
+        <completion string="normal" />
+        <completion string="bold" />
+        <completion string="bolder" />
+        <completion string="lighter" />
+        <completion string="100" />
+        <completion string="200" />
+        <completion string="300" />
+        <completion string="400" />
+        <completion string="500" />
+        <completion string="600" />
+        <completion string="700" />
+        <completion string="800" />
+        <completion string="900" />
+    </set>
+    
+    <set name="css.values.forced-color-adjust" symbol="constant">
+        <completion string="auto" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.gap" symbol="constant">
+        <completion string="normal" />
+    </set>
+    
+    <set name="css.values.grid" symbol="constant">
+        <completion string="none" />
+        <completion string="min-content" />
+        <completion string="max-content" />
+        <completion string="auto" />
+        <completion string="minmax" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="fit-content" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="repeat" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="subgrid" />
+        <completion string="auto-flow" />
+        <completion string="dense" />
+    </set>
+    
+    <set name="css.values.grid-area" symbol="constant">
+        <completion string="auto" />
+        <completion string="span" />
+    </set>
+    
+    <set name="css.values.grid-auto-columns" symbol="constant">
+        <completion string="min-content" />
+        <completion string="max-content" />
+        <completion string="auto" />
+        <completion string="minmax" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="fit-content" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+    </set>
+    
+    <set name="css.values.grid-auto-flow" symbol="constant">
+        <completion string="row" />
+        <completion string="column" />
+        <completion string="dense" />
+    </set>
+    
+    <set name="css.values.grid-auto-rows" symbol="constant">
+        <completion string="min-content" />
+        <completion string="max-content" />
+        <completion string="auto" />
+        <completion string="minmax" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="fit-content" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+    </set>
+    
+    <set name="css.values.grid-column" symbol="constant">
+        <completion string="auto" />
+        <completion string="span" />
+    </set>
+    
+    <set name="css.values.grid-column-end" symbol="constant">
+        <completion string="auto" />
+        <completion string="span" />
+    </set>
+    
+    <set name="css.values.grid-column-start" symbol="constant">
+        <completion string="auto" />
+        <completion string="span" />
+    </set>
+    
+    <set name="css.values.grid-row" symbol="constant">
+        <completion string="auto" />
+        <completion string="span" />
+    </set>
+    
+    <set name="css.values.grid-row-end" symbol="constant">
+        <completion string="auto" />
+        <completion string="span" />
+    </set>
+    
+    <set name="css.values.grid-row-start" symbol="constant">
+        <completion string="auto" />
+        <completion string="span" />
+    </set>
+    
+    <set name="css.values.grid-template" symbol="constant">
+        <completion string="none" />
+        <completion string="min-content" />
+        <completion string="max-content" />
+        <completion string="auto" />
+        <completion string="minmax" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="fit-content" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="repeat" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="subgrid" />
+    </set>
+    
+    <set name="css.values.grid-template-areas" symbol="constant">
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.grid-template-columns" symbol="constant">
+        <completion string="none" />
+        <completion string="min-content" />
+        <completion string="max-content" />
+        <completion string="auto" />
+        <completion string="minmax" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="fit-content" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="repeat" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="subgrid" />
+    </set>
+    
+    <set name="css.values.grid-template-rows" symbol="constant">
+        <completion string="none" />
+        <completion string="min-content" />
+        <completion string="max-content" />
+        <completion string="auto" />
+        <completion string="minmax" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="fit-content" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="repeat" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="subgrid" />
+    </set>
+    
+    <set name="css.values.hanging-punctuation" symbol="constant">
+        <completion string="none" />
+        <completion string="first" />
+        <completion string="force-end" />
+        <completion string="allow-end" />
+        <completion string="last" />
+    </set>
+    
+    <set name="css.values.height" symbol="constant">
+        <completion string="auto" />
+        <completion string="border-box" />
+        <completion string="content-box" />
+        <completion string="available" />
+        <completion string="min-content" />
+        <completion string="max-content" />
+        <completion string="fit-content" />
+    </set>
+    
+    <set name="css.values.hyphenate-character" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.hyphenate-limit-chars" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.hyphens" symbol="constant">
+        <completion string="none" />
+        <completion string="manual" />
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.image-orientation" symbol="constant">
+        <completion string="from-image" />
+        <completion string="flip" />
+    </set>
+    
+    <set name="css.values.image-rendering" symbol="constant">
+        <completion string="auto" />
+        <completion string="crisp-edges" />
+        <completion string="pixelated" />
+    </set>
+    
+    <set name="css.values.inline-size" symbol="constant">
+        <completion string="border-box" />
+        <completion string="content-box" />
+        <completion string="available" />
+        <completion string="min-content" />
+        <completion string="max-content" />
+        <completion string="fit-content" />
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.inset" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.inset-block" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.inset-block-end" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.inset-block-start" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.inset-inline" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.inset-inline-end" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.inset-inline-start" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.input-security" symbol="constant">
+        <completion string="auto" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.isolation" symbol="constant">
+        <completion string="auto" />
+        <completion string="isolate" />
+    </set>
+    
+    <set name="css.values.justify-content" symbol="constant">
+        <completion string="normal" />
+        <completion string="space-between" />
+        <completion string="space-around" />
+        <completion string="space-evenly" />
+        <completion string="stretch" />
+        <completion string="unsafe" />
+        <completion string="safe" />
+        <completion string="center" />
+        <completion string="start" />
+        <completion string="end" />
+        <completion string="flex-start" />
+        <completion string="flex-end" />
+        <completion string="left" />
+        <completion string="right" />
+    </set>
+    
+    <set name="css.values.justify-items" symbol="constant">
+        <completion string="normal" />
+        <completion string="stretch" />
+        <completion string="first" />
+        <completion string="last" />
+        <completion string="baseline" />
+        <completion string="unsafe" />
+        <completion string="safe" />
+        <completion string="center" />
+        <completion string="start" />
+        <completion string="end" />
+        <completion string="self-start" />
+        <completion string="self-end" />
+        <completion string="flex-start" />
+        <completion string="flex-end" />
+        <completion string="left" />
+        <completion string="right" />
+        <completion string="legacy" />
+    </set>
+    
+    <set name="css.values.justify-self" symbol="constant">
+        <completion string="auto" />
+        <completion string="normal" />
+        <completion string="stretch" />
+        <completion string="first" />
+        <completion string="last" />
+        <completion string="baseline" />
+        <completion string="unsafe" />
+        <completion string="safe" />
+        <completion string="center" />
+        <completion string="start" />
+        <completion string="end" />
+        <completion string="self-start" />
+        <completion string="self-end" />
+        <completion string="flex-start" />
+        <completion string="flex-end" />
+        <completion string="left" />
+        <completion string="right" />
+    </set>
+    
+    <set name="css.values.justify-tracks" symbol="constant">
+        <completion string="auto" />
+        <completion string="normal" />
+        <completion string="stretch" />
+        <completion string="first" />
+        <completion string="last" />
+        <completion string="baseline" />
+        <completion string="unsafe" />
+        <completion string="safe" />
+        <completion string="center" />
+        <completion string="start" />
+        <completion string="end" />
+        <completion string="self-start" />
+        <completion string="self-end" />
+        <completion string="flex-start" />
+        <completion string="flex-end" />
+        <completion string="left" />
+        <completion string="right" />
+    </set>
+    
+    <set name="css.values.left" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.letter-spacing" symbol="constant">
+        <completion string="normal" />
+    </set>
+    
+    <set name="css.values.line-break" symbol="constant">
+        <completion string="auto" />
+        <completion string="loose" />
+        <completion string="normal" />
+        <completion string="strict" />
+        <completion string="anywhere" />
+    </set>
+    
+    <set name="css.values.line-height" symbol="constant">
+        <completion string="normal" />
+    </set>
+    
+    <set name="css.values.list-style" symbol="constant">
+        <completion string="symbols" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="none" />
+        <completion string="inside" />
+        <completion string="outside" />
+    </set>
+    
+    <set name="css.values.list-style-image" symbol="constant">
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.list-style-position" symbol="constant">
+        <completion string="inside" />
+        <completion string="outside" />
+    </set>
+    
+    <set name="css.values.list-style-type" symbol="constant">
+        <completion string="symbols" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.margin" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.margin-block" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.margin-block-end" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.margin-block-start" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.margin-bottom" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.margin-inline" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.margin-inline-end" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.margin-inline-start" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.margin-left" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.margin-right" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.margin-top" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.margin-trim" symbol="constant">
+        <completion string="none" />
+        <completion string="in-flow" />
+        <completion string="all" />
+    </set>
+    
+    <set name="css.values.mask" symbol="constant">
+        <completion string="none" />
+        <completion string="image" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="image-set" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="element" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="paint" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="cross-fade" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="left" />
+        <completion string="center" />
+        <completion string="right" />
+        <completion string="top" />
+        <completion string="bottom" />
+        <completion string="auto" />
+        <completion string="cover" />
+        <completion string="contain" />
+        <completion string="repeat-x" />
+        <completion string="repeat-y" />
+        <completion string="repeat" />
+        <completion string="space" />
+        <completion string="round" />
+        <completion string="no-repeat" />
+        <completion string="border-box" />
+        <completion string="padding-box" />
+        <completion string="content-box" />
+        <completion string="margin-box" />
+        <completion string="fill-box" />
+        <completion string="stroke-box" />
+        <completion string="view-box" />
+        <completion string="no-clip" />
+        <completion string="add" />
+        <completion string="subtract" />
+        <completion string="intersect" />
+        <completion string="exclude" />
+        <completion string="alpha" />
+        <completion string="luminance" />
+        <completion string="match-source" />
+        <set>css.gradients</set>
+    </set>
+    
+    <set name="css.values.mask-border" symbol="constant">
+        <completion string="none" />
+        <completion string="image" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="image-set" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="element" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="paint" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="cross-fade" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="fill" />
+        <completion string="auto" />
+        <completion string="stretch" />
+        <completion string="repeat" />
+        <completion string="round" />
+        <completion string="space" />
+        <completion string="luminance" />
+        <completion string="alpha" />
+        <set>css.gradients</set>
+    </set>
+    
+    <set name="css.values.mask-border-mode" symbol="constant">
+        <completion string="luminance" />
+        <completion string="alpha" />
+    </set>
+    
+    <set name="css.values.mask-border-repeat" symbol="constant">
+        <completion string="stretch" />
+        <completion string="repeat" />
+        <completion string="round" />
+        <completion string="space" />
+    </set>
+    
+    <set name="css.values.mask-border-slice" symbol="constant">
+        <completion string="fill" />
+    </set>
+    
+    <set name="css.values.mask-border-source" symbol="constant">
+        <completion string="none" />
+        <completion string="image" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="image-set" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="element" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="paint" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="cross-fade" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <set>css.gradients</set>
+    </set>
+    
+    <set name="css.values.mask-border-width" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.mask-clip" symbol="constant">
+        <completion string="border-box" />
+        <completion string="padding-box" />
+        <completion string="content-box" />
+        <completion string="margin-box" />
+        <completion string="fill-box" />
+        <completion string="stroke-box" />
+        <completion string="view-box" />
+        <completion string="no-clip" />
+    </set>
+    
+    <set name="css.values.mask-composite" symbol="constant">
+        <completion string="add" />
+        <completion string="subtract" />
+        <completion string="intersect" />
+        <completion string="exclude" />
+    </set>
+    
+    <set name="css.values.mask-image" symbol="constant">
+        <completion string="none" />
+        <completion string="image" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="image-set" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="element" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="paint" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="cross-fade" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <set>css.gradients</set>
+    </set>
+    
+    <set name="css.values.mask-mode" symbol="constant">
+        <completion string="alpha" />
+        <completion string="luminance" />
+        <completion string="match-source" />
+    </set>
+    
+    <set name="css.values.mask-origin" symbol="constant">
+        <completion string="border-box" />
+        <completion string="padding-box" />
+        <completion string="content-box" />
+        <completion string="margin-box" />
+        <completion string="fill-box" />
+        <completion string="stroke-box" />
+        <completion string="view-box" />
+    </set>
+    
+    <set name="css.values.mask-position" symbol="constant">
+        <completion string="left" />
+        <completion string="center" />
+        <completion string="right" />
+        <completion string="top" />
+        <completion string="bottom" />
+    </set>
+    
+    <set name="css.values.mask-repeat" symbol="constant">
+        <completion string="repeat-x" />
+        <completion string="repeat-y" />
+        <completion string="repeat" />
+        <completion string="space" />
+        <completion string="round" />
+        <completion string="no-repeat" />
+    </set>
+    
+    <set name="css.values.mask-size" symbol="constant">
+        <completion string="auto" />
+        <completion string="cover" />
+        <completion string="contain" />
+    </set>
+    
+    <set name="css.values.mask-type" symbol="constant">
+        <completion string="luminance" />
+        <completion string="alpha" />
+    </set>
+    
+    <set name="css.values.masonry-auto-flow" symbol="constant">
+        <completion string="pack" />
+        <completion string="next" />
+        <completion string="definite-first" />
+        <completion string="ordered" />
+    </set>
+    
+    <set name="css.values.math-depth" symbol="constant">
+        <completion string="auto-add" />
+        <completion string="add">
+            <append>($[])</append>
+        </completion>
+    </set>
+    
+    <set name="css.values.math-shift" symbol="constant">
+        <completion string="normal" />
+        <completion string="compact" />
+    </set>
+    
+    <set name="css.values.math-style" symbol="constant">
+        <completion string="normal" />
+        <completion string="compact" />
+    </set>
+    
+    <set name="css.values.max-block-size" symbol="constant">
+        <completion string="none" />
+        <completion string="max-content" />
+        <completion string="min-content" />
+        <completion string="fit-content" />
+        <completion string="fill-available" />
+    </set>
+    
+    <set name="css.values.max-height" symbol="constant">
+        <completion string="none" />
+        <completion string="max-content" />
+        <completion string="min-content" />
+        <completion string="fit-content" />
+    </set>
+    
+    <set name="css.values.max-inline-size" symbol="constant">
+        <completion string="none" />
+        <completion string="max-content" />
+        <completion string="min-content" />
+        <completion string="fit-content" />
+        <completion string="fill-available" />
+    </set>
+    
+    <set name="css.values.max-width" symbol="constant">
+        <completion string="none" />
+        <completion string="max-content" />
+        <completion string="min-content" />
+        <completion string="fit-content" />
+    </set>
+    
+    <set name="css.values.min-block-size" symbol="constant">
+        <completion string="auto" />
+        <completion string="max-content" />
+        <completion string="min-content" />
+        <completion string="fit-content" />
+        <completion string="fill-available" />
+    </set>
+    
+    <set name="css.values.min-height" symbol="constant">
+        <completion string="auto" />
+        <completion string="max-content" />
+        <completion string="min-content" />
+        <completion string="fit-content" />
+    </set>
+    
+    <set name="css.values.min-inline-size" symbol="constant">
+        <completion string="auto" />
+        <completion string="max-content" />
+        <completion string="min-content" />
+        <completion string="fit-content" />
+        <completion string="fill-available" />
+    </set>
+    
+    <set name="css.values.min-width" symbol="constant">
+        <completion string="auto" />
+        <completion string="max-content" />
+        <completion string="min-content" />
+        <completion string="fit-content" />
+    </set>
+    
+    <set name="css.values.mix-blend-mode" symbol="constant">
+        <completion string="normal" />
+        <completion string="multiply" />
+        <completion string="screen" />
+        <completion string="overlay" />
+        <completion string="darken" />
+        <completion string="lighten" />
+        <completion string="color-dodge" />
+        <completion string="color-burn" />
+        <completion string="hard-light" />
+        <completion string="soft-light" />
+        <completion string="difference" />
+        <completion string="exclusion" />
+        <completion string="hue" />
+        <completion string="saturation" />
+        <completion string="color" />
+        <completion string="luminosity" />
+        <completion string="plus-lighter" />
+        <completion string="plus-darker" />
+    </set>
+    
+    <set name="css.values.object-fit" symbol="constant">
+        <completion string="fill" />
+        <completion string="contain" />
+        <completion string="cover" />
+        <completion string="none" />
+        <completion string="scale-down" />
+    </set>
+    
+    <set name="css.values.object-position" symbol="constant">
+        <completion string="left" />
+        <completion string="center" />
+        <completion string="right" />
+        <completion string="top" />
+        <completion string="bottom" />
+    </set>
+    
+    <set name="css.values.offset" symbol="constant">
+        <completion string="auto" />
+        <completion string="left" />
+        <completion string="center" />
+        <completion string="right" />
+        <completion string="top" />
+        <completion string="bottom" />
+        <completion string="none" />
+        <completion string="ray" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="inset" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="circle" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="ellipse" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="polygon" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="border-box" />
+        <completion string="padding-box" />
+        <completion string="content-box" />
+        <completion string="margin-box" />
+        <completion string="fill-box" />
+        <completion string="stroke-box" />
+        <completion string="view-box" />
+        <completion string="reverse" />
+    </set>
+    
+    <set name="css.values.offset-anchor" symbol="constant">
+        <completion string="auto" />
+        <completion string="left" />
+        <completion string="center" />
+        <completion string="right" />
+        <completion string="top" />
+        <completion string="bottom" />
+    </set>
+    
+    <set name="css.values.offset-path" symbol="constant">
+        <completion string="none" />
+        <completion string="ray" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="inset" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="circle" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="ellipse" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="polygon" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="border-box" />
+        <completion string="padding-box" />
+        <completion string="content-box" />
+        <completion string="margin-box" />
+        <completion string="fill-box" />
+        <completion string="stroke-box" />
+        <completion string="view-box" />
+    </set>
+    
+    <set name="css.values.offset-rotate" symbol="constant">
+        <completion string="auto" />
+        <completion string="reverse" />
+    </set>
+    
+    <set name="css.values.outline" symbol="constant">
+        <set>css.colors</set>
+        <completion string="invert" />
+        <completion string="auto" />
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+    </set>
+    
+    <set name="css.values.outline-color" symbol="constant">
+        <set>css.colors</set>
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.outline-style" symbol="constant">
+        <completion string="auto" />
+        <completion string="none" />
+        <completion string="hidden" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="groove" />
+        <completion string="ridge" />
+        <completion string="inset" />
+        <completion string="outset" />
+    </set>
+    
+    <set name="css.values.outline-width" symbol="constant">
+        <completion string="thin" />
+        <completion string="medium" />
+        <completion string="thick" />
+    </set>
+    
+    <set name="css.values.overflow" symbol="constant">
+        <completion string="visible" />
+        <completion string="hidden" />
+        <completion string="clip" />
+        <completion string="scroll" />
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.overflow-anchor" symbol="constant">
+        <completion string="auto" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.overflow-block" symbol="constant">
+        <completion string="visible" />
+        <completion string="hidden" />
+        <completion string="clip" />
+        <completion string="scroll" />
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.overflow-clip-box" symbol="constant">
+        <completion string="padding-box" />
+        <completion string="content-box" />
+        <completion string="border-box" />
+    </set>
+    
+    <set name="css.values.overflow-clip-margin" symbol="constant">
+        <completion string="padding-box" />
+        <completion string="content-box" />
+        <completion string="border-box" />
+    </set>
+    
+    <set name="css.values.overflow-inline" symbol="constant">
+        <completion string="visible" />
+        <completion string="hidden" />
+        <completion string="clip" />
+        <completion string="scroll" />
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.overflow-wrap" symbol="constant">
+        <completion string="normal" />
+        <completion string="break-word" />
+        <completion string="anywhere" />
+    </set>
+    
+    <set name="css.values.overflow-x" symbol="constant">
+        <completion string="visible" />
+        <completion string="hidden" />
+        <completion string="clip" />
+        <completion string="scroll" />
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.overflow-y" symbol="constant">
+        <completion string="visible" />
+        <completion string="hidden" />
+        <completion string="clip" />
+        <completion string="scroll" />
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.overlay" symbol="constant">
+        <completion string="none" />
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.overscroll-behavior" symbol="constant">
+        <completion string="contain" />
+        <completion string="none" />
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.overscroll-behavior-block" symbol="constant">
+        <completion string="contain" />
+        <completion string="none" />
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.overscroll-behavior-inline" symbol="constant">
+        <completion string="contain" />
+        <completion string="none" />
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.overscroll-behavior-x" symbol="constant">
+        <completion string="contain" />
+        <completion string="none" />
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.overscroll-behavior-y" symbol="constant">
+        <completion string="contain" />
+        <completion string="none" />
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.page" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.page-break-after" symbol="constant">
+        <completion string="auto" />
+        <completion string="always" />
+        <completion string="avoid" />
+        <completion string="left" />
+        <completion string="right" />
+        <completion string="recto" />
+        <completion string="verso" />
+    </set>
+    
+    <set name="css.values.page-break-before" symbol="constant">
+        <completion string="auto" />
+        <completion string="always" />
+        <completion string="avoid" />
+        <completion string="left" />
+        <completion string="right" />
+        <completion string="recto" />
+        <completion string="verso" />
+    </set>
+    
+    <set name="css.values.page-break-inside" symbol="constant">
+        <completion string="auto" />
+        <completion string="avoid" />
+    </set>
+    
+    <set name="css.values.paint-order" symbol="constant">
+        <completion string="normal" />
+        <completion string="fill" />
+        <completion string="stroke" />
+        <completion string="markers" />
+    </set>
+    
+    <set name="css.values.perspective" symbol="constant">
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.perspective-origin" symbol="constant">
+        <completion string="left" />
+        <completion string="center" />
+        <completion string="right" />
+        <completion string="top" />
+        <completion string="bottom" />
+    </set>
+    
+    <set name="css.values.place-content" symbol="constant">
+        <completion string="normal" />
+        <completion string="first" />
+        <completion string="last" />
+        <completion string="baseline" />
+        <completion string="space-between" />
+        <completion string="space-around" />
+        <completion string="space-evenly" />
+        <completion string="stretch" />
+        <completion string="unsafe" />
+        <completion string="safe" />
+        <completion string="center" />
+        <completion string="start" />
+        <completion string="end" />
+        <completion string="flex-start" />
+        <completion string="flex-end" />
+        <completion string="left" />
+        <completion string="right" />
+    </set>
+    
+    <set name="css.values.place-items" symbol="constant">
+        <completion string="normal" />
+        <completion string="stretch" />
+        <completion string="first" />
+        <completion string="last" />
+        <completion string="baseline" />
+        <completion string="unsafe" />
+        <completion string="safe" />
+        <completion string="center" />
+        <completion string="start" />
+        <completion string="end" />
+        <completion string="self-start" />
+        <completion string="self-end" />
+        <completion string="flex-start" />
+        <completion string="flex-end" />
+        <completion string="left" />
+        <completion string="right" />
+        <completion string="legacy" />
+    </set>
+    
+    <set name="css.values.place-self" symbol="constant">
+        <completion string="auto" />
+        <completion string="normal" />
+        <completion string="stretch" />
+        <completion string="first" />
+        <completion string="last" />
+        <completion string="baseline" />
+        <completion string="unsafe" />
+        <completion string="safe" />
+        <completion string="center" />
+        <completion string="start" />
+        <completion string="end" />
+        <completion string="self-start" />
+        <completion string="self-end" />
+        <completion string="flex-start" />
+        <completion string="flex-end" />
+        <completion string="left" />
+        <completion string="right" />
+    </set>
+    
+    <set name="css.values.pointer-events" symbol="constant">
+        <completion string="auto" />
+        <completion string="none" />
+        <completion string="visiblePainted" />
+        <completion string="visibleFill" />
+        <completion string="visibleStroke" />
+        <completion string="visible" />
+        <completion string="painted" />
+        <completion string="fill" />
+        <completion string="stroke" />
+        <completion string="all" />
+        <completion string="inherit" />
+    </set>
+    
+    <set name="css.values.position" symbol="constant">
+        <completion string="static" />
+        <completion string="relative" />
+        <completion string="absolute" />
+        <completion string="sticky" />
+        <completion string="fixed" />
+    </set>
+    
+    <set name="css.values.print-color-adjust" symbol="constant">
+        <completion string="economy" />
+        <completion string="exact" />
+    </set>
+    
+    <set name="css.values.quotes" symbol="constant">
+        <completion string="none" />
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.resize" symbol="constant">
+        <completion string="none" />
+        <completion string="both" />
+        <completion string="horizontal" />
+        <completion string="vertical" />
+        <completion string="block" />
+        <completion string="inline" />
+    </set>
+    
+    <set name="css.values.right" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.rotate" symbol="constant">
+        <completion string="none" />
+        <completion string="x" />
+        <completion string="y" />
+        <completion string="z" />
+    </set>
+    
+    <set name="css.values.row-gap" symbol="constant">
+        <completion string="normal" />
+    </set>
+    
+    <set name="css.values.ruby-align" symbol="constant">
+        <completion string="start" />
+        <completion string="center" />
+        <completion string="space-between" />
+        <completion string="space-around" />
+    </set>
+    
+    <set name="css.values.ruby-merge" symbol="constant">
+        <completion string="separate" />
+        <completion string="collapse" />
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.ruby-position" symbol="constant">
+        <completion string="alternate" />
+        <completion string="over" />
+        <completion string="under" />
+        <completion string="inter-character" />
+    </set>
+    
+    <set name="css.values.scale" symbol="constant">
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.scrollbar-color" symbol="constant">
+        <completion string="auto" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.scrollbar-gutter" symbol="constant">
+        <completion string="auto" />
+        <completion string="stable" />
+        <completion string="both-edges" />
+    </set>
+    
+    <set name="css.values.scrollbar-width" symbol="constant">
+        <completion string="auto" />
+        <completion string="thin" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.scroll-behavior" symbol="constant">
+        <completion string="auto" />
+        <completion string="smooth" />
+    </set>
+    
+    <set name="css.values.scroll-padding" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.scroll-padding-block" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.scroll-padding-block-start" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.scroll-padding-block-end" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.scroll-padding-bottom" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.scroll-padding-inline" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.scroll-padding-inline-start" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.scroll-padding-inline-end" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.scroll-padding-left" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.scroll-padding-right" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.scroll-padding-top" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.scroll-snap-align" symbol="constant">
+        <completion string="none" />
+        <completion string="start" />
+        <completion string="end" />
+        <completion string="center" />
+    </set>
+    
+    <set name="css.values.scroll-snap-stop" symbol="constant">
+        <completion string="normal" />
+        <completion string="always" />
+    </set>
+    
+    <set name="css.values.scroll-snap-type" symbol="constant">
+        <completion string="none" />
+        <completion string="x" />
+        <completion string="y" />
+        <completion string="block" />
+        <completion string="inline" />
+        <completion string="both" />
+        <completion string="mandatory" />
+        <completion string="proximity" />
+    </set>
+    
+    <set name="css.values.scroll-timeline" symbol="constant">
+        <completion string="none" />
+        <completion string="block" />
+        <completion string="inline" />
+        <completion string="x" />
+        <completion string="y" />
+    </set>
+    
+    <set name="css.values.scroll-timeline-axis" symbol="constant">
+        <completion string="block" />
+        <completion string="inline" />
+        <completion string="x" />
+        <completion string="y" />
+    </set>
+    
+    <set name="css.values.scroll-timeline-name" symbol="constant">
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.shape-outside" symbol="constant">
+        <completion string="none" />
+        <completion string="border-box" />
+        <completion string="padding-box" />
+        <completion string="content-box" />
+        <completion string="margin-box" />
+        <completion string="inset" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="circle" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="ellipse" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="polygon" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="image" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="image-set" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="element" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="paint" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="cross-fade" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <set>css.gradients</set>
+    </set>
+    
+    <set name="css.values.table-layout" symbol="constant">
+        <completion string="auto" />
+        <completion string="fixed" />
+    </set>
+    
+    <set name="css.values.text-align" symbol="constant">
+        <completion string="start" />
+        <completion string="end" />
+        <completion string="left" />
+        <completion string="right" />
+        <completion string="center" />
+        <completion string="justify" />
+        <completion string="match-parent" />
+    </set>
+    
+    <set name="css.values.text-align-last" symbol="constant">
+        <completion string="auto" />
+        <completion string="start" />
+        <completion string="end" />
+        <completion string="left" />
+        <completion string="right" />
+        <completion string="center" />
+        <completion string="justify" />
+    </set>
+    
+    <set name="css.values.text-combine-upright" symbol="constant">
+        <completion string="none" />
+        <completion string="all" />
+        <completion string="digits" />
+    </set>
+    
+    <set name="css.values.text-decoration" symbol="constant">
+        <completion string="none" />
+        <completion string="underline" />
+        <completion string="overline" />
+        <completion string="line-through" />
+        <completion string="blink" />
+        <completion string="spelling-error" />
+        <completion string="grammar-error" />
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="wavy" />
+        <completion string="auto" />
+        <completion string="from-font" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.text-decoration-color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.text-decoration-line" symbol="constant">
+        <completion string="none" />
+        <completion string="underline" />
+        <completion string="overline" />
+        <completion string="line-through" />
+        <completion string="blink" />
+        <completion string="spelling-error" />
+        <completion string="grammar-error" />
+    </set>
+    
+    <set name="css.values.text-decoration-skip-ink" symbol="constant">
+        <completion string="auto" />
+        <completion string="all" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.text-decoration-style" symbol="constant">
+        <completion string="solid" />
+        <completion string="double" />
+        <completion string="dotted" />
+        <completion string="dashed" />
+        <completion string="wavy" />
+    </set>
+    
+    <set name="css.values.text-decoration-thickness" symbol="constant">
+        <completion string="auto" />
+        <completion string="from-font" />
+    </set>
+    
+    <set name="css.values.text-emphasis" symbol="constant">
+        <completion string="none" />
+        <completion string="filled" />
+        <completion string="open" />
+        <completion string="dot" />
+        <completion string="circle" />
+        <completion string="double-circle" />
+        <completion string="triangle" />
+        <completion string="sesame" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.text-emphasis-color" symbol="constant">
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.text-emphasis-position" symbol="constant">
+        <completion string="over" />
+        <completion string="under" />
+        <completion string="right" />
+        <completion string="left" />
+    </set>
+    
+    <set name="css.values.text-emphasis-style" symbol="constant">
+        <completion string="none" />
+        <completion string="filled" />
+        <completion string="open" />
+        <completion string="dot" />
+        <completion string="circle" />
+        <completion string="double-circle" />
+        <completion string="triangle" />
+        <completion string="sesame" />
+    </set>
+    
+    <set name="css.values.text-indent" symbol="constant">
+        <completion string="hanging" />
+        <completion string="each-line" />
+    </set>
+    
+    <set name="css.values.text-justify" symbol="constant">
+        <completion string="auto" />
+        <completion string="inter-character" />
+        <completion string="inter-word" />
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.text-orientation" symbol="constant">
+        <completion string="mixed" />
+        <completion string="upright" />
+        <completion string="sideways" />
+    </set>
+    
+    <set name="css.values.text-overflow" symbol="constant">
+        <completion string="clip" />
+        <completion string="ellipsis" />
+    </set>
+    
+    <set name="css.values.text-rendering" symbol="constant">
+        <completion string="auto" />
+        <completion string="optimizeSpeed" />
+        <completion string="optimizeLegibility" />
+        <completion string="geometricPrecision" />
+    </set>
+    
+    <set name="css.values.text-shadow" symbol="constant">
+        <completion string="none" />
+        <set>css.colors</set>
+    </set>
+    
+    <set name="css.values.text-transform" symbol="constant">
+        <completion string="none" />
+        <completion string="capitalize" />
+        <completion string="uppercase" />
+        <completion string="lowercase" />
+        <completion string="full-width" />
+        <completion string="full-size-kana" />
+    </set>
+    
+    <set name="css.values.text-underline-offset" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.text-underline-position" symbol="constant">
+        <completion string="auto" />
+        <completion string="from-font" />
+        <completion string="under" />
+        <completion string="left" />
+        <completion string="right" />
+    </set>
+    
+    <set name="css.values.text-wrap" symbol="constant">
+        <completion string="wrap" />
+        <completion string="nowrap" />
+        <completion string="balance" />
+        <completion string="stable" />
+        <completion string="pretty" />
+    </set>
+    
+    <set name="css.values.timeline-scope" symbol="constant">
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.top" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.touch-action" symbol="constant">
+        <completion string="auto" />
+        <completion string="none" />
+        <completion string="pan-x" />
+        <completion string="pan-left" />
+        <completion string="pan-right" />
+        <completion string="pan-y" />
+        <completion string="pan-up" />
+        <completion string="pan-down" />
+        <completion string="pinch-zoom" />
+        <completion string="manipulation" />
+    </set>
+    
+    <set name="css.values.transform" symbol="constant">
+        <completion string="none" />
+        <completion string="matrix" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="translate" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="translateX" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="translateY" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="scale" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="scaleX" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="scaleY" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="rotate" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="skew" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="skewX" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="skewY" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="matrix3d" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="translate3d" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="translateZ" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="scale3d" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="scaleZ" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="rotate3d" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="rotateX" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="rotateY" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="rotateZ" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="perspective" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+    </set>
+    
+    <set name="css.values.transform-box" symbol="constant">
+        <completion string="content-box" />
+        <completion string="border-box" />
+        <completion string="fill-box" />
+        <completion string="stroke-box" />
+        <completion string="view-box" />
+    </set>
+    
+    <set name="css.values.transform-origin" symbol="constant">
+        <completion string="left" />
+        <completion string="center" />
+        <completion string="right" />
+        <completion string="top" />
+        <completion string="bottom" />
+    </set>
+    
+    <set name="css.values.transform-style" symbol="constant">
+        <completion string="flat" />
+        <completion string="preserve-3d" />
+    </set>
+    
+    <set name="css.values.transition" symbol="constant">
+        <completion string="none" />
+        <completion string="all" />
+        <completion string="linear" />
+        <completion string="ease" />
+        <completion string="ease-in" />
+        <completion string="ease-out" />
+        <completion string="ease-in-out" />
+        <completion string="cubic-bezier" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="step-start" />
+        <completion string="step-end" />
+        <completion string="steps" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="allow-discrete" />
+        <completion string="normal" />
+    </set>
+    
+    <set name="css.values.transition-behavior" symbol="constant">
+        <completion string="allow-discrete" />
+        <completion string="normal" />
+    </set>
+    
+    <set name="css.values.transition-property" symbol="constant">
+        <completion string="none" />
+        <completion string="all" />
+    </set>
+    
+    <set name="css.values.transition-timing-function" symbol="constant">
+        <completion string="linear" />
+        <completion string="ease" />
+        <completion string="ease-in" />
+        <completion string="ease-out" />
+        <completion string="ease-in-out" />
+        <completion string="cubic-bezier" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+        <completion string="step-start" />
+        <completion string="step-end" />
+        <completion string="steps" symbol="function">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+        </completion>
+    </set>
+    
+    <set name="css.values.translate" symbol="constant">
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.unicode-bidi" symbol="constant">
+        <completion string="normal" />
+        <completion string="embed" />
+        <completion string="isolate" />
+        <completion string="bidi-override" />
+        <completion string="isolate-override" />
+        <completion string="plaintext" />
+    </set>
+    
+    <set name="css.values.user-select" symbol="constant">
+        <completion string="auto" />
+        <completion string="text" />
+        <completion string="none" />
+        <completion string="contain" />
+        <completion string="all" />
+    </set>
+    
+    <set name="css.values.vertical-align" symbol="constant">
+        <completion string="baseline" />
+        <completion string="sub" />
+        <completion string="super" />
+        <completion string="text-top" />
+        <completion string="text-bottom" />
+        <completion string="middle" />
+        <completion string="top" />
+        <completion string="bottom" />
+    </set>
+    
+    <set name="css.values.view-timeline" symbol="constant">
+        <completion string="none" />
+        <completion string="block" />
+        <completion string="inline" />
+        <completion string="x" />
+        <completion string="y" />
+    </set>
+    
+    <set name="css.values.view-timeline-axis" symbol="constant">
+        <completion string="block" />
+        <completion string="inline" />
+        <completion string="x" />
+        <completion string="y" />
+    </set>
+    
+    <set name="css.values.view-timeline-inset" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.view-timeline-name" symbol="constant">
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.view-transition-name" symbol="constant">
+        <completion string="none" />
+    </set>
+    
+    <set name="css.values.visibility" symbol="constant">
+        <completion string="visible" />
+        <completion string="hidden" />
+        <completion string="collapse" />
+    </set>
+    
+    <set name="css.values.white-space" symbol="constant">
+        <completion string="normal" />
+        <completion string="nowrap" />
+        <completion string="pre" />
+        <completion string="pre-wrap" />
+        <completion string="pre-line" />
+        <completion string="break-spaces" />
+        <completion string="collapse" />
+        <completion string="preserve" />
+        <completion string="preserve-breaks" />
+        <completion string="preserve-spaces" />
+        <completion string="balance" />
+        <completion string="pretty" />
+        <completion string="stable" />
+    </set>
+    
+    <set name="css.values.white-space-collapse" symbol="constant">
+        <completion string="collapse" />
+        <completion string="preserve" />
+        <completion string="preserve-breaks" />
+        <completion string="preserve-spaces" />
+        <completion string="break-spaces" />
+    </set>
+    
+    <set name="css.values.width" symbol="constant">
+        <completion string="auto" />
+        <completion string="border-box" />
+        <completion string="content-box" />
+        <completion string="min-content" />
+        <completion string="max-content" />
+        <completion string="fit-content" />
+    </set>
+    
+    <set name="css.values.will-change" symbol="constant">
+        <completion string="auto" />
+        <completion string="scroll-position" />
+        <completion string="contents" />
+    </set>
+    
+    <set name="css.values.word-break" symbol="constant">
+        <completion string="normal" />
+        <completion string="break-all" />
+        <completion string="keep-all" />
+        <completion string="break-word" />
+    </set>
+    
+    <set name="css.values.word-spacing" symbol="constant">
+        <completion string="normal" />
+    </set>
+    
+    <set name="css.values.word-wrap" symbol="constant">
+        <completion string="normal" />
+        <completion string="break-word" />
+    </set>
+    
+    <set name="css.values.writing-mode" symbol="constant">
+        <completion string="horizontal-tb" />
+        <completion string="vertical-rl" />
+        <completion string="vertical-lr" />
+        <completion string="sideways-rl" />
+        <completion string="sideways-lr" />
+    </set>
+    
+    <set name="css.values.z-index" symbol="constant">
+        <completion string="auto" />
+    </set>
+    
+    <set name="css.values.zoom" symbol="constant">
+        <completion string="normal" />
+        <completion string="reset" />
+    </set>
+</completions>

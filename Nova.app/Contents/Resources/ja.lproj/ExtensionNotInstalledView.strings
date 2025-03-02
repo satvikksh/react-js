@@ -1,0 +1,12 @@
+
+/* Class = "NSTextFieldCell"; title = "Extension Not Installed"; ObjectID = "3UU-rX-qov"; */
+"3UU-rX-qov.title" = "機能拡張は未インストールです";
+
+/* Class = "NSTextFieldCell"; title = "<extension name>"; ObjectID = "GMn-8O-zip"; */
+"GMn-8O-zip.title" = "<extension name>";
+
+/* Class = "NSButtonCell"; title = "Show in Extension Library…"; ObjectID = "TfL-qe-aZt"; */
+"TfL-qe-aZt.title" = "機能拡張ライブラリを表示…";
+
+/* Class = "NSTextFieldCell"; title = "This object requires an extension that is not installed. You can try installing it from the extension library."; ObjectID = "eJB-pT-7bf"; */
+"eJB-pT-7bf.title" = "このオブジェクトにはインストールされていない機能拡張が必要です。ライブラリからのインストールをお試しください。";

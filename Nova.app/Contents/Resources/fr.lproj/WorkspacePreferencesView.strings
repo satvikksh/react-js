@@ -1,0 +1,150 @@
+
+/* Class = "NSMenuItem"; title = "Up To Two Lines"; ObjectID = "14G-1a-yWc"; */
+"14G-1a-yWc.title" = "Jusqu’à deux lignes";
+
+/* Class = "NSMenuItem"; title = "Apply To All Open Workspaces"; ObjectID = "1Fx-Kx-VXP"; */
+"1Fx-Kx-VXP.title" = "Appliquer à tous les espaces de travail ouverts";
+
+/* Class = "NSMenuItem"; title = "Use System Behavior"; ObjectID = "231-XL-1LC"; */
+"231-XL-1LC.title" = "Utiliser le comportement du système";
+
+/* Class = "NSMenuItem"; title = "Up To Ten Lines"; ObjectID = "2Qz-tb-Veb"; */
+"2Qz-tb-Veb.title" = "Jusqu’à dix lignes";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "5nk-5F-2Dw"; */
+"5nk-5F-2Dw.title" = "Table View Cell";
+
+/* Class = "NSMenuItem"; title = "Remove"; ObjectID = "5od-mt-eaK"; */
+"5od-mt-eaK.title" = "Supprimer";
+
+/* Class = "NSTextFieldCell"; title = "Panes:"; ObjectID = "8Co-es-3qW"; */
+"8Co-es-3qW.title" = "Sous-fenêtres :";
+
+/* Class = "NSMenuItem"; title = "Edit…"; ObjectID = "97A-VT-6fD"; */
+"97A-VT-6fD.title" = "Modifier…";
+
+/* Class = "NSTextFieldCell"; title = "Default Split Direction:"; ObjectID = "AHx-v5-wJ9"; */
+"AHx-v5-wJ9.title" = "Direction de division par défaut :";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "AIM-eY-88Q"; */
+"AIM-eY-88Q.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "Find & Replace:"; ObjectID = "AlH-F3-VcW"; */
+"AlH-F3-VcW.title" = "Rechercher et remplacer :";
+
+/* Class = "NSMenuItem"; title = "Apply To All Open Workspaces"; ObjectID = "AnL-2d-61i"; */
+"AnL-2d-61i.title" = "Appliquer à tous les espaces de travail ouverts";
+
+/* Class = "NSTextFieldCell"; title = "• Drag layouts to reorder.\n• The first layout is the default for new windows.\n• Create new layouts from the View menu."; ObjectID = "BVN-eZ-chU"; */
+"BVN-eZ-chU.title" = "• Faites glisser les dispositions pour les réordonner.\n• La première disposition est la disposition par défaut des nouvelles fenêtres.\n• Créez de nouvelles dispositions à partir du menu Présentation.";
+
+/* Class = "NSButtonCell"; title = "Close empty splits after their last tab is closed"; ObjectID = "BWq-R4-UW5"; */
+"BWq-R4-UW5.title" = "Fermer les divisions vides après la fermeture de leur dernier onglet";
+
+/* Class = "NSMenuItem"; title = "Below"; ObjectID = "CNz-lE-fJR"; */
+"CNz-lE-fJR.title" = "En dessous";
+
+/* Class = "NSTextFieldCell"; title = "Sidebar Dock Icon Size:"; ObjectID = "E3R-I7-hv7"; */
+"E3R-I7-hv7.title" = "Taille d’icône du Dock de barre latérale :";
+
+/* Class = "NSMenuItem"; title = "Make Default"; ObjectID = "EXB-10-XVQ"; */
+"EXB-10-XVQ.title" = "Utiliser par défaut";
+
+/* Class = "NSButtonCell"; title = "Use Find Pasteboard"; ObjectID = "F6d-Og-Pey"; */
+"F6d-Og-Pey.title" = "Utiliser le presse-papiers de recherche";
+
+/* Class = "NSMenuItem"; title = "Up To Thirty Lines"; ObjectID = "Gg4-r9-0jF"; */
+"Gg4-r9-0jF.title" = "Jusqu’à trente lignes";
+
+/* Class = "NSMenuItem"; title = "Edit…"; ObjectID = "HIe-jN-dg0"; */
+"HIe-jN-dg0.title" = "Modifier…";
+
+/* Class = "NSTextFieldCell"; title = "Find Sidebar Detail:"; ObjectID = "Jk5-bS-eim"; */
+"Jk5-bS-eim.title" = "Détails de la barre latérale Rechercher :";
+
+/* Class = "NSMenuItem"; title = "Horizontal"; ObjectID = "L9I-vq-6TU"; */
+"L9I-vq-6TU.title" = "Horizontal";
+
+/* Class = "NSTextFieldCell"; title = "Dragging file references"; ObjectID = "LzT-17-gvG"; */
+"LzT-17-gvG.title" = "Glisser les références de fichier";
+
+/* Class = "NSMenuItem"; title = "Up To Five Lines"; ObjectID = "MXW-0t-KSu"; */
+"MXW-0t-KSu.title" = "Jusqu’à cinq lignes";
+
+/* Class = "NSTextFieldCell"; title = "Sidebar Layouts:"; ObjectID = "Mi8-hZ-5J9"; */
+"Mi8-hZ-5J9.title" = "Dispositions de barre latérale :";
+
+/* Class = "NSMenuItem"; title = "Never"; ObjectID = "Nby-Lc-bZe"; */
+"Nby-Lc-bZe.title" = "Jamais";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "OFZ-ht-NRi"; */
+"OFZ-ht-NRi.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Up To Four Lines"; ObjectID = "Ovo-PA-0sr"; */
+"Ovo-PA-0sr.title" = "Jusqu’à quatre lignes";
+
+/* Class = "NSMenuItem"; title = "Large"; ObjectID = "PKw-wm-toQ"; */
+"PKw-wm-toQ.title" = "Grande";
+
+/* Class = "NSMenuItem"; title = "To The Right"; ObjectID = "Tmc-5D-0J1"; */
+"Tmc-5D-0J1.title" = "À droite";
+
+/* Class = "NSTextFieldCell"; title = "Sidebar Dock Orientation:"; ObjectID = "Wtt-aJ-9qD"; */
+"Wtt-aJ-9qD.title" = "Orientation du Dock de la barre latérale :";
+
+/* Class = "NSMenuItem"; title = "Vertical"; ObjectID = "YXX-Hq-Nqp"; */
+"YXX-Hq-Nqp.title" = "Vertical";
+
+/* Class = "NSMenuItem"; title = "inserts the file path"; ObjectID = "Z6H-9K-3nR"; */
+"Z6H-9K-3nR.title" = "insère le chemin du fichier";
+
+/* Class = "NSMenuItem"; title = "Make Default"; ObjectID = "ZbS-ql-pqx"; */
+"ZbS-ql-pqx.title" = "Utiliser par défaut";
+
+/* Class = "NSMenuItem"; title = "One Line"; ObjectID = "aGX-FO-ROz"; */
+"aGX-FO-ROz.title" = "Une ligne";
+
+/* Class = "NSMenuItem"; title = "Medium"; ObjectID = "bcz-yP-S60"; */
+"bcz-yP-S60.title" = "Moyenne";
+
+/* Class = "NSMenuItem"; title = "Always"; ObjectID = "bpH-zO-P4O"; */
+"bpH-zO-P4O.title" = "Toujours";
+
+/* Class = "NSMenuItem"; title = "Up To Three Lines"; ObjectID = "cJi-Jl-3oZ"; */
+"cJi-Jl-3oZ.title" = "Jusqu’à trois lignes";
+
+/* Class = "NSButtonCell"; title = "Open an empty editor for new windows"; ObjectID = "fTV-gX-aF1"; */
+"fTV-gX-aF1.title" = "Ouvrir un éditeur vide pour les nouvelles fenêtres";
+
+/* Class = "NSTextFieldCell"; title = "Drag & Drop:"; ObjectID = "hYr-i4-G1y"; */
+"hYr-i4-G1y.title" = "Glisser et déposer :";
+
+/* Class = "NSTextFieldCell"; title = "Hold the Option key while dragging to perform the opposite action."; ObjectID = "i7b-0C-ryt"; */
+"i7b-0C-ryt.title" = "Maintenez Option enfoncée en faisant glisser pour effectuer l’action opposée.";
+
+/* Class = "NSTextFieldCell"; title = "Open Projects as Tabs:"; ObjectID = "ipa-84-geo"; */
+"ipa-84-geo.title" = "Ouvrir les projets sous forme d’onglets :";
+
+/* Class = "NSTextFieldCell"; title = "Markdown Stylesheet:"; ObjectID = "j3j-CL-bvT"; */
+"j3j-CL-bvT.title" = "Feuille de style Markdown :";
+
+/* Class = "NSMenuItem"; title = "Remove"; ObjectID = "m5u-oW-FWf"; */
+"m5u-oW-FWf.title" = "Supprimer";
+
+/* Class = "NSMenuItem"; title = "opens a tab or split"; ObjectID = "pLV-c0-zXV"; */
+"pLV-c0-zXV.title" = "ouvre un onglet ou une division";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "rbx-hO-i0T"; */
+"rbx-hO-i0T.title" = "Élément 1";
+
+/* Class = "NSMenuItem"; title = "Small"; ObjectID = "rph-rk-aGM"; */
+"rph-rk-aGM.title" = "Petite";
+
+/* Class = "NSMenuItem"; title = "Restore Defaults"; ObjectID = "syu-pg-OIS"; */
+"syu-pg-OIS.title" = "Valeurs par défaut";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "tCx-2p-4Z8"; */
+"tCx-2p-4Z8.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Restore Defaults"; ObjectID = "wvc-sa-Trr"; */
+"wvc-sa-Trr.title" = "Valeurs par défaut";

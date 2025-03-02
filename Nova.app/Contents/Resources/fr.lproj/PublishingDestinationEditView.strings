@@ -1,0 +1,60 @@
+
+/* Class = "NSTextFieldCell"; title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."; ObjectID = "0CO-7D-xtl"; */
+"0CO-7D-xtl.title" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "1LG-2H-beJ"; */
+"1LG-2H-beJ.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "The destination path for publishing files. If empty, the server's default path will be used (may be configured in Preferences)."; ObjectID = "1ff-eb-K1n"; */
+"1ff-eb-K1n.title" = "Chemin de destination pour la publication de fichiers. S’il est vide, le chemin par défaut du serveur sera utilisé (configuration possible dans les Préférences).";
+
+/* Class = "NSButtonCell"; title = "Use Publishing"; ObjectID = "9nz-Le-QGv"; */
+"9nz-Le-QGv.title" = "Utiliser la publication";
+
+/* Class = "NSTextFieldCell"; title = "Files matching any of the ignored file patterns will not be automatically added to the publishing queue when modified."; ObjectID = "BcK-ey-5jh"; */
+"BcK-ey-5jh.title" = "Les fichiers correspondant à l’une des formes de fichiers ignorés ne seront pas automatiquement ajoutés à la file de publication après leur modification.";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "Ecm-2X-dDr"; */
+"Ecm-2X-dDr.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "Modified local files will automatically be enqueued in the Publish sidebar."; ObjectID = "FBP-3S-co0"; */
+"FBP-3S-co0.title" = "Les fichiers locaux modifiés seront automatiquement placés en file d’attente dans la barre latérale Publier.";
+
+/* Class = "NSButtonCell"; title = "Choose…"; ObjectID = "FGd-9b-nSw"; */
+"FGd-9b-nSw.title" = "Choisir…";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Value"; ObjectID = "YCj-YN-WFa"; */
+"YCj-YN-WFa.placeholderString" = "Valeur";
+
+/* Class = "NSTextFieldCell"; title = "Local Path:"; ObjectID = "aXW-YP-rnn"; */
+"aXW-YP-rnn.title" = "Chemin local :";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show and manage available servers"; ObjectID = "bMF-9e-Xpw"; */
+"bMF-9e-Xpw.ibShadowedToolTip" = "Afficher et gérer les serveurs disponibles";
+
+/* Class = "NSTextFieldCell"; title = "Remote Path:"; ObjectID = "dFY-IU-eZa"; */
+"dFY-IU-eZa.title" = "Chemin distant :";
+
+/* Class = "NSButtonCell"; title = "Choose…"; ObjectID = "eGV-mf-N4B"; */
+"eGV-mf-N4B.title" = "Choisir…";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "eI0-oE-FfZ"; */
+"eI0-oE-FfZ.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "gys-T5-p8k"; */
+"gys-T5-p8k.title" = "Élément 1";
+
+/* Class = "NSTextFieldCell"; title = "Server:"; ObjectID = "inE-HS-j4F"; */
+"inE-HS-j4F.title" = "Serveur :";
+
+/* Class = "NSTextFieldCell"; title = "Ignored Files:"; ObjectID = "liS-f6-4fu"; */
+"liS-f6-4fu.title" = "Fichiers ignorés :";
+
+/* Class = "NSTextFieldCell"; title = "The web URL for previewing remote files. It will be prepended to remote filenames relative to the remote path."; ObjectID = "pZY-gt-J9l"; */
+"pZY-gt-J9l.title" = "URL Web de prévisualisation de fichiers distants. Elle sera ajoutée au début des noms de fichier distants par rapport au chemin distant.";
+
+/* Class = "NSTextFieldCell"; title = "Preview URL:"; ObjectID = "uEh-qd-ch6"; */
+"uEh-qd-ch6.title" = "URL d’aperçu :";
+
+/* Class = "NSTextFieldCell"; title = "The source path for publishing files, relative to the project root. If empty, the project root will be used."; ObjectID = "uzp-BK-FNS"; */
+"uzp-BK-FNS.title" = "Chemin de la source de publication de fichiers, par rapport à la racine du projet. S’il est vide, la racine du projet est utilisée.";

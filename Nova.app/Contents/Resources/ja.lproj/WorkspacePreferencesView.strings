@@ -1,0 +1,150 @@
+
+/* Class = "NSMenuItem"; title = "Up To Two Lines"; ObjectID = "14G-1a-yWc"; */
+"14G-1a-yWc.title" = "2行まで";
+
+/* Class = "NSMenuItem"; title = "Apply To All Open Workspaces"; ObjectID = "1Fx-Kx-VXP"; */
+"1Fx-Kx-VXP.title" = "開いている全ワークスペースに適用";
+
+/* Class = "NSMenuItem"; title = "Use System Behavior"; ObjectID = "231-XL-1LC"; */
+"231-XL-1LC.title" = "システム設定";
+
+/* Class = "NSMenuItem"; title = "Up To Ten Lines"; ObjectID = "2Qz-tb-Veb"; */
+"2Qz-tb-Veb.title" = "10行まで";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "5nk-5F-2Dw"; */
+ "5nk-5F-2Dw.title" = "Table View Cell";
+
+/* Class = "NSMenuItem"; title = "Remove"; ObjectID = "5od-mt-eaK"; */
+"5od-mt-eaK.title" = "削除";
+
+/* Class = "NSTextFieldCell"; title = "Panes:"; ObjectID = "8Co-es-3qW"; */
+"8Co-es-3qW.title" = "Panes:";
+
+/* Class = "NSMenuItem"; title = "Edit…"; ObjectID = "97A-VT-6fD"; */
+"97A-VT-6fD.title" = "編集…";
+
+/* Class = "NSTextFieldCell"; title = "Default Split Direction:"; ObjectID = "AHx-v5-wJ9"; */
+"AHx-v5-wJ9.title" = "デフォルトの分割方向:";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "AIM-eY-88Q"; */
+"AIM-eY-88Q.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "Find & Replace:"; ObjectID = "AlH-F3-VcW"; */
+"AlH-F3-VcW.title" = "検索と置換:";
+
+/* Class = "NSMenuItem"; title = "Apply To All Open Workspaces"; ObjectID = "AnL-2d-61i"; */
+"AnL-2d-61i.title" = "開いている全ワークスペースに適用";
+
+/* Class = "NSTextFieldCell"; title = "• Drag layouts to reorder.\n• The first layout is the default for new windows.\n• Create new layouts from the View menu."; ObjectID = "BVN-eZ-chU"; */
+"BVN-eZ-chU.title" = "• ドラッグして順序を変更可能です。\n• リストの最初が新規ウインドウのデフォルトになります。\n• 表示メニューから新規レイアウトを作成できます。";
+
+/* Class = "NSButtonCell"; title = "Close empty splits after their last tab is closed"; ObjectID = "BWq-R4-UW5"; */
+"BWq-R4-UW5.title" = "最後のタブが閉じられたら空の分割を閉じる";
+
+/* Class = "NSMenuItem"; title = "Below"; ObjectID = "CNz-lE-fJR"; */
+"CNz-lE-fJR.title" = "下に展開";
+
+/* Class = "NSTextFieldCell"; title = "Sidebar Dock Icon Size:"; ObjectID = "E3R-I7-hv7"; */
+"E3R-I7-hv7.title" = "サイドバーDockアイコン:";
+
+/* Class = "NSMenuItem"; title = "Make Default"; ObjectID = "EXB-10-XVQ"; */
+"EXB-10-XVQ.title" = "デフォルト設定にする";
+
+/* Class = "NSButtonCell"; title = "Use Find Pasteboard"; ObjectID = "F6d-Og-Pey"; */
+"F6d-Og-Pey.title" = "検索ペーストボードを使用する";
+
+/* Class = "NSMenuItem"; title = "Up To Thirty Lines"; ObjectID = "Gg4-r9-0jF"; */
+"Gg4-r9-0jF.title" = "30行まで";
+
+/* Class = "NSMenuItem"; title = "Edit…"; ObjectID = "HIe-jN-dg0"; */
+"HIe-jN-dg0.title" = "サイト設定を編集…";
+
+/* Class = "NSTextFieldCell"; title = "Find Sidebar Detail:"; ObjectID = "Jk5-bS-eim"; */
+"Jk5-bS-eim.title" = "検索サイドバー表示:";
+
+/* Class = "NSMenuItem"; title = "Horizontal"; ObjectID = "L9I-vq-6TU"; */
+"L9I-vq-6TU.title" = "水平方向";
+
+/* Class = "NSTextFieldCell"; title = "Dragging file references"; ObjectID = "LzT-17-gvG"; */
+"LzT-17-gvG.title" = "ファイルのドラッグ時 ";
+
+/* Class = "NSMenuItem"; title = "Up To Five Lines"; ObjectID = "MXW-0t-KSu"; */
+"MXW-0t-KSu.title" = "5行まで";
+
+/* Class = "NSTextFieldCell"; title = "Sidebar Layouts:"; ObjectID = "Mi8-hZ-5J9"; */
+"Mi8-hZ-5J9.title" = "サイドバーレイアウト:";
+
+/* Class = "NSMenuItem"; title = "Never"; ObjectID = "Nby-Lc-bZe"; */
+"Nby-Lc-bZe.title" = "未同期";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "OFZ-ht-NRi"; */
+"OFZ-ht-NRi.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Up To Four Lines"; ObjectID = "Ovo-PA-0sr"; */
+"Ovo-PA-0sr.title" = "4行まで";
+
+/* Class = "NSMenuItem"; title = "Large"; ObjectID = "PKw-wm-toQ"; */
+"PKw-wm-toQ.title" = "大きく表示";
+
+/* Class = "NSMenuItem"; title = "To The Right"; ObjectID = "Tmc-5D-0J1"; */
+"Tmc-5D-0J1.title" = "右に展開";
+
+/* Class = "NSTextFieldCell"; title = "Sidebar Dock Orientation:"; ObjectID = "Wtt-aJ-9qD"; */
+"Wtt-aJ-9qD.title" = "サイドバーDockの向き:";
+
+/* Class = "NSMenuItem"; title = "Vertical"; ObjectID = "YXX-Hq-Nqp"; */
+"YXX-Hq-Nqp.title" = "垂直方向";
+
+/* Class = "NSMenuItem"; title = "inserts the file path"; ObjectID = "Z6H-9K-3nR"; */
+"Z6H-9K-3nR.title" = "ファイルパスを挿入する";
+
+/* Class = "NSMenuItem"; title = "Make Default"; ObjectID = "ZbS-ql-pqx"; */
+"ZbS-ql-pqx.title" = "デフォルト設定にする";
+
+/* Class = "NSMenuItem"; title = "One Line"; ObjectID = "aGX-FO-ROz"; */
+"aGX-FO-ROz.title" = "1行表示";
+
+/* Class = "NSMenuItem"; title = "Medium"; ObjectID = "bcz-yP-S60"; */
+"bcz-yP-S60.title" = "標準";
+
+/* Class = "NSMenuItem"; title = "Always"; ObjectID = "bpH-zO-P4O"; */
+"bpH-zO-P4O.title" = "常に";
+
+/* Class = "NSMenuItem"; title = "Up To Three Lines"; ObjectID = "cJi-Jl-3oZ"; */
+"cJi-Jl-3oZ.title" = "3行まで";
+
+/* Class = "NSButtonCell"; title = "Open an empty editor for new windows"; ObjectID = "fTV-gX-aF1"; */
+"fTV-gX-aF1.title" = "新規作成する際は空のエディタを開く";
+
+/* Class = "NSTextFieldCell"; title = "Drag & Drop:"; ObjectID = "hYr-i4-G1y"; */
+"hYr-i4-G1y.title" = "ドラッグ&ドロップ:";
+
+/* Class = "NSTextFieldCell"; title = "Hold the Option key while dragging to perform the opposite action."; ObjectID = "i7b-0C-ryt"; */
+"i7b-0C-ryt.title" = "Optionキーを押しながらドラッグすると、設定と逆の動作になります。";
+
+/* Class = "NSTextFieldCell"; title = "Open Projects as Tabs:"; ObjectID = "ipa-84-geo"; */
+"ipa-84-geo.title" = "プロジェクトをタブで開く際:";
+
+/* Class = "NSTextFieldCell"; title = "Markdown Stylesheet:"; ObjectID = "j3j-CL-bvT"; */
+"j3j-CL-bvT.title" = "マークダウンスタイルシート";
+
+/* Class = "NSMenuItem"; title = "Remove"; ObjectID = "m5u-oW-FWf"; */
+"m5u-oW-FWf.title" = "削除";
+
+/* Class = "NSMenuItem"; title = "opens a tab or split"; ObjectID = "pLV-c0-zXV"; */
+"pLV-c0-zXV.title" = "タブか分割して開く";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "rbx-hO-i0T"; */
+"rbx-hO-i0T.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Small"; ObjectID = "rph-rk-aGM"; */
+"rph-rk-aGM.title" = "小さく表示";
+
+/* Class = "NSMenuItem"; title = "Restore Defaults"; ObjectID = "syu-pg-OIS"; */
+"syu-pg-OIS.title" = "デフォルト設定に戻す";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "tCx-2p-4Z8"; */
+"tCx-2p-4Z8.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Restore Defaults"; ObjectID = "wvc-sa-Trr"; */
+"wvc-sa-Trr.title" = "デフォルト設定に戻す";

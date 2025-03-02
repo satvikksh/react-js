@@ -1,0 +1,15 @@
+
+/* Class = "NSTextFieldCell"; title = "Progress…"; ObjectID = "3oU-cM-cwP"; */
+"3oU-cM-cwP.title" = "Progress…";
+
+/* Class = "NSTextFieldCell"; title = "Progress…"; ObjectID = "Ub8-F4-hOo"; */
+"Ub8-F4-hOo.title" = "Progress…";
+
+/* Class = "NSTextFieldCell"; title = "Additional Description"; ObjectID = "iVH-Iw-xp0"; */
+"iVH-Iw-xp0.title" = "Additional Description";
+
+/* Class = "NSButtonCell"; title = "Stop"; ObjectID = "ntm-xb-auh"; */
+"ntm-xb-auh.title" = "Arrêter";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "s46-qi-1OK"; */
+"s46-qi-1OK.title" = "Annuler";

@@ -1,0 +1,10 @@
+{
+    "name": "Issues Provider",
+    "extension": "novaextension",
+    "description": "An extension which adds a dynamic issues provider written in JavaScript.",
+    "rewritablePaths": [
+		"README.md",
+        "Scripts/main.js"
+    ],
+    "showEntitlements": true
+}

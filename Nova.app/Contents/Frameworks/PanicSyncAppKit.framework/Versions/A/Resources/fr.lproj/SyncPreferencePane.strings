@@ -1,0 +1,153 @@
+
+/* Class = "NSButtonCell"; title = "Sync Now"; ObjectID = "401"; */
+"401.title" = "Synchroniser maintenant";
+
+/* Class = "NSTextFieldCell"; title = "Devices:"; ObjectID = "425"; */
+"425.title" = "Appareils :";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Your servers will automatically sync everywhere you use Transmit and Transmit iOS.\\"; ObjectID = "575"; */
+"575.ibExternalAccessibilityDescription" = "Vos serveurs seront automatiquement synchronisés partout où vous utiliserez Transmit et Transmit iOS.\\";
+
+/* Class = "NSTextFieldCell"; title = "Your servers will automatically sync everywhere you use Panic Sync enabled applications."; ObjectID = "576"; */
+"576.title" = "Vos serveurs seront automatiquement synchronisés partout où vous utiliserez Transmit et Transmit iOS.";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Your sites, clips, keys and passwords will automatically sync to other Panic applications. It's free, secure and easy."; ObjectID = "646"; */
+"646.ibExternalAccessibilityDescription" = "Vos sites, vos clips, vos clés et vos mots de passe seront automatiquement synchronisés avec les autres applications Panic. C’est gratuit, sûr et facile.";
+
+/* Class = "NSTextFieldCell"; title = "Your sites, clips, keys and passwords will automatically sync to other Panic applications. It's free, secure and easy."; ObjectID = "691"; */
+"691.title" = "Vos sites, vos clips, vos clés et vos mots de passe seront automatiquement synchronisés avec les autres applications Panic. C’est gratuit, sûr et facile.";
+
+/* Class = "NSButtonCell"; title = "Sign Out"; ObjectID = "718"; */
+"718.title" = "Déconnexion";
+
+/* Class = "NSButtonCell"; title = "Sign In"; ObjectID = "792"; */
+"792.title" = "Connexion";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Email"; ObjectID = "800"; */
+"800.ibExternalAccessibilityDescription" = "E-mail";
+
+/* Class = "NSTextFieldCell"; title = "Email:"; ObjectID = "806"; */
+"806.title" = "E-mail :";
+
+/* Class = "NSSecureTextField"; ibExternalAccessibilityDescription = "Password"; ObjectID = "809"; */
+"809.ibExternalAccessibilityDescription" = "Mot de passe";
+
+/* Class = "NSTextFieldCell"; title = "Password:"; ObjectID = "815"; */
+"815.title" = "Mot de passe :";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Sign In to Panic Sync"; ObjectID = "852"; */
+"852.ibExternalAccessibilityDescription" = "Se connecter à Panic Sync";
+
+/* Class = "NSTextFieldCell"; title = "Sign In to Panic Sync"; ObjectID = "853"; */
+"853.title" = "Se connecter à Panic Sync";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Panic Sync"; ObjectID = "862"; */
+"862.ibExternalAccessibilityDescription" = "Panic Sync";
+
+/* Class = "NSTextFieldCell"; title = "Panic Sync"; ObjectID = "863"; */
+"863.title" = "Panic Sync";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Create Panic Sync Account"; ObjectID = "996"; */
+"996.ibExternalAccessibilityDescription" = "Créer un compte Panic Sync";
+
+/* Class = "NSSecureTextField"; ibExternalAccessibilityDescription = "Password"; ObjectID = "999"; */
+"999.ibExternalAccessibilityDescription" = "Mot de passe";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Email"; ObjectID = "1001"; */
+"1001.ibExternalAccessibilityDescription" = "E-mail";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Your sites, clips, keys and passwords will automatically sync to other Panic applications. It's free, secure and easy."; ObjectID = "1023"; */
+"1023.ibExternalAccessibilityDescription" = "Vos sites, vos clips, vos clés et vos mots de passe seront automatiquement synchronisés avec les autres applications Panic. C’est gratuit, sûr et facile.";
+
+/* Class = "NSTextFieldCell"; title = "Your sites, clips, keys and passwords will automatically sync to other Panic applications. It's free, secure and easy."; ObjectID = "1028"; */
+"1028.title" = "Vos sites, vos clips, vos clés et vos mots de passe seront automatiquement synchronisés avec les autres applications Panic. C’est gratuit, sûr et facile.";
+
+/* Class = "NSTextFieldCell"; title = "Email:"; ObjectID = "1031"; */
+"1031.title" = "E-mail :";
+
+/* Class = "NSTextFieldCell"; title = "Password:"; ObjectID = "1033"; */
+"1033.title" = "Mot de passe :";
+
+/* Class = "NSButtonCell"; title = "Register"; ObjectID = "1034"; */
+"1034.title" = "S’enregistrer";
+
+/* Class = "NSTextFieldCell"; title = "Create Panic Sync Account"; ObjectID = "1035"; */
+"1035.title" = "Créer un compte Panic Sync";
+
+/* Class = "NSSecureTextField"; ibExternalAccessibilityDescription = "Confirm password"; ObjectID = "1038"; */
+"1038.ibExternalAccessibilityDescription" = "Confirmer le mot de passe";
+
+/* Class = "NSTextFieldCell"; title = "Confirm:"; ObjectID = "1040"; */
+"1040.title" = "Confirmation :";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "1063"; */
+"1063.title" = "Annuler";
+
+/* Class = "NSButtonCell"; title = "Create an Account"; ObjectID = "1137"; */
+"1137.title" = "Créer un compte";
+
+/* Class = "NSTextFieldCell"; title = "Forgot?"; ObjectID = "1162"; */
+"1162.title" = "Oublié ?";
+
+/* Class = "NSTextFieldCell"; title = "Purchase App to unlock Panic Sync."; ObjectID = "1Fp-rB-f2h"; */
+"1Fp-rB-f2h.title" = "Panic Sync n’est pas disponible dans la démo gratuite de Transmit.";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Panic Sync is not available in the free demo of Transmit."; ObjectID = "1y2-C1-GIh"; */
+"1y2-C1-GIh.ibExternalAccessibilityDescription" = "Panic Sync n’est pas disponible dans la démo gratuite de Transmit.";
+
+/* Class = "NSTextFieldCell"; title = "<DO NOT LOCALIZE>"; ObjectID = "64K-Xh-U4L"; */
+"64K-Xh-U4L.title" = "<DO NOT LOCALIZE>";
+
+/* Class = "NSTextFieldCell"; title = "With Panic Sync, you can sync your servers, keys and passwords automatically to all your computers and other Panic applications."; ObjectID = "B7p-oi-VkM"; */
+"B7p-oi-VkM.title" = "Panic Sync vous permet de synchroniser automatiquement vos serveurs, clés et mots de passe à travers tous vos ordinateurs et autres applications Panic.";
+
+/* Class = "NSTextFieldCell"; title = "Learn More."; ObjectID = "Ej5-3d-XWD"; */
+"Ej5-3d-XWD.title" = "En savoir plus.";
+
+/* Class = "NSTextFieldCell"; title = "Learn More."; ObjectID = "G8I-2d-Wzh"; */
+"G8I-2d-Wzh.title" = "En savoir plus.";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "MEc-tf-G2x"; */
+"MEc-tf-G2x.title" = "Table View Cell";
+
+/* Class = "NSButtonCell"; title = "Purchase Now"; ObjectID = "RT1-wa-lOW"; */
+"RT1-wa-lOW.title" = "Acheter maintenant";
+
+/* Class = "NSTextFieldCell"; title = "<DO NOT LOCALIZE>"; ObjectID = "TTN-dE-Ld5"; */
+"TTN-dE-Ld5.title" = "<DO NOT LOCALIZE>";
+
+/* Class = "NSTextFieldCell"; title = "Repository:"; ObjectID = "Wql-yr-1sP"; */
+"Wql-yr-1sP.title" = "Référentiel :";
+
+/* Class = "NSTextFieldCell"; title = "Manage Account"; ObjectID = "X6u-KO-tYc"; */
+"X6u-KO-tYc.title" = "Gérer le compte";
+
+/* Class = "NSButtonCell"; title = "Unlock App"; ObjectID = "XSI-8X-r47"; */
+"XSI-8X-r47.title" = "Déverrouiller";
+
+/* Class = "NSTextFieldCell"; title = "<DO NOT LOCALIZE>"; ObjectID = "Yua-1t-pwu"; */
+"Yua-1t-pwu.title" = "<DO NOT LOCALIZE>";
+
+/* Class = "NSTextFieldCell"; title = "Account:"; ObjectID = "aOb-e0-PYQ"; */
+"aOb-e0-PYQ.title" = "Compte :";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "dey-Z2-hgr"; */
+"dey-Z2-hgr.title" = "Table View Cell";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "With Panic Sync, you can sync your servers, keys and passwords automatically to all your computers and other Panic applications."; ObjectID = "lIm-Ms-0ui"; */
+"lIm-Ms-0ui.ibExternalAccessibilityDescription" = "Achetez Transmit pour synchroniser automatiquement vos serveurs, vos clés et vos mots de passe avec d’autres applications Panic. C’est gratuit, sûr et facile.";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "okG-ma-YFv"; */
+"okG-ma-YFv.title" = "Table View Cell";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Add me to the Panic Breaking News eList."; ObjectID = "rpK-LV-ZZf"; */
+"rpK-LV-ZZf.ibExternalAccessibilityDescription" = "M'ajouter à la liste d'information des dernières actualités de Panic.";
+
+/* Class = "NSButtonCell"; title = "Add me to the Panic Breaking News eList."; ObjectID = "rtV-zh-ET9"; */
+"rtV-zh-ET9.title" = "M'ajouter à la liste d'information des dernières actualités de Panic.";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "Never Synced"; ObjectID = "tmd-EF-4aL"; */
+"tmd-EF-4aL.ibShadowedIsNilPlaceholder" = "Jamais synchronisé";
+
+/* Class = "NSTextFieldCell"; title = "<DO NOT LOCALIZE>"; ObjectID = "v0u-r4-cQo"; */
+"v0u-r4-cQo.title" = "<DO NOT LOCALIZE>";

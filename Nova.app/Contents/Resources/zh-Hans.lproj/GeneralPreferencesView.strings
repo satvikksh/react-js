@@ -1,0 +1,93 @@
+
+/* Class = "NSButtonCell"; title = "Manage Account"; ObjectID = "0GY-K6-oDU"; */
+"0GY-K6-oDU.title" = "管理帐户";
+
+/* Class = "NSTextFieldCell"; title = "Account:"; ObjectID = "1Ay-gx-BdA"; */
+"1Ay-gx-BdA.title" = "帐户：";
+
+/* Class = "NSButtonCell"; title = "Notify me of new versions after my year of free updates has ended"; ObjectID = "1XB-EU-dNO"; */
+"1XB-EU-dNO.title" = "在我免费更新年度结束时通知我新版本";
+
+/* Class = "NSButtonCell"; title = "When opening a folder, add it to projects automatically"; ObjectID = "1pI-RC-l7k"; */
+"1pI-RC-l7k.title" = "创建和打开项目时，将其添加到项目列表";
+
+/* Class = "NSTextFieldCell"; title = "Alerts:"; ObjectID = "4cE-Z9-cOJ"; */
+"4cE-Z9-cOJ.title" = "警报：";
+
+/* Class = "NSTextFieldCell"; title = "Launcher:"; ObjectID = "5VQ-HY-DVJ"; */
+"5VQ-HY-DVJ.title" = "启动器：";
+
+/* Class = "NSButtonCell"; title = "Learn More."; ObjectID = "6sC-Xq-ndV"; */
+"6sC-Xq-ndV.title" = "了解更多。";
+
+/* Class = "NSButtonCell"; title = "More Info…"; ObjectID = "9TS-fV-HqQ"; */
+"9TS-fV-HqQ.title" = "更多信息…";
+
+/* Class = "NSButtonCell"; title = "Check Now"; ObjectID = "DpA-sE-P5j"; */
+"DpA-sE-P5j.title" = "现在检查";
+
+/* Class = "NSButtonCell"; title = "Show when Nova starts if no projects are open"; ObjectID = "EaD-FB-0WO"; */
+"EaD-FB-0WO.title" = "在 Nova 启动时，如果没有项目打开，则显示启动器";
+
+/* Class = "NSButtonCell"; title = "Learn More."; ObjectID = "GbS-OS-eeL"; */
+"GbS-OS-eeL.title" = "了解更多。";
+
+/* Class = "NSTextFieldCell"; title = "Extension Development:"; ObjectID = "ILE-ZC-2os"; */
+"ILE-ZC-2os.title" = "扩展开发：";
+
+/* Class = "NSTextFieldCell"; title = "<<UpdatesStatus>>"; ObjectID = "KRq-6q-VOh"; */
+"KRq-6q-VOh.title" = "<<UpdatesStatus>>";
+
+/* Class = "NSButtonCell"; title = "Beta Updates"; ObjectID = "M3u-Tu-Cjf"; */
+"M3u-Tu-Cjf.title" = "测试版更新";
+
+/* Class = "NSTextFieldCell"; title = "Help Panic Improve %@."; ObjectID = "OSd-2R-0Xh"; */
+"OSd-2R-0Xh.title" = "帮助 Panic 改进 %@。";
+
+/* Class = "NSTextFieldCell"; title = "Restores alerts which have been suppressed with the \"Don't show again\" checkbox."; ObjectID = "T5j-mW-lEg"; */
+"T5j-mW-lEg.title" = "恢复通过“不再显示”复选框禁止的警报。";
+
+/* Class = "NSTextFieldCell"; title = "Not signed in."; ObjectID = "YiQ-2J-rGy"; */
+"YiQ-2J-rGy.title" = "未登录。";
+
+/* Class = "NSButtonCell"; title = "Check for important announcements"; ObjectID = "YvU-zw-hQ5"; */
+"YvU-zw-hQ5.title" = "检查重要公告";
+
+/* Class = "NSButtonCell"; title = "Automatically keep Nova up to date"; ObjectID = "by3-Ya-jaZ"; */
+"by3-Ya-jaZ.title" = "自动将 Nova 保持到最新";
+
+/* Class = "NSTextFieldCell"; title = "Receive beta updates and provide feedback to help make Nova even better. "; ObjectID = "bz5-Zh-7MO"; */
+"bz5-Zh-7MO.title" = "接收测试版更新并提供反馈，帮助 Nova 变得更好。 ";
+
+/* Class = "NSTextFieldCell"; title = "Privacy:"; ObjectID = "dab-sq-V9s"; */
+"dab-sq-V9s.title" = "隐私：";
+
+/* Class = "NSButtonCell"; title = "Send crash reports"; ObjectID = "eO6-cw-oMc"; */
+"eO6-cw-oMc.title" = "发送崩溃报告";
+
+/* Class = "NSTextFieldCell"; title = "<<LicenseInfo>>"; ObjectID = "enE-t3-ADU"; */
+"enE-t3-ADU.title" = "<<LicenseInfo>>";
+
+/* Class = "NSButtonCell"; title = "Send anonymous usage statistics"; ObjectID = "fub-JG-3lP"; */
+"fub-JG-3lP.title" = "发送匿名使用数据";
+
+/* Class = "NSButtonCell"; title = "Show extension development items in the Extensions menu"; ObjectID = "p7J-6n-D5O"; */
+"p7J-6n-D5O.title" = "在“扩展”菜单中显示扩展开发项";
+
+/* Class = "NSTextFieldCell"; title = "Software Updates:"; ObjectID = "pkS-xS-lqw"; */
+"pkS-xS-lqw.title" = "软件更新：";
+
+/* Class = "NSButtonCell"; title = "Reset Suppressed Alerts"; ObjectID = "qGS-R7-V2R"; */
+"qGS-R7-V2R.title" = "重置禁止的警报";
+
+/* Class = "NSButtonCell"; title = "Sign In"; ObjectID = "rYj-1w-j7g"; */
+"rYj-1w-j7g.title" = "登录";
+
+/* Class = "NSTextFieldCell"; title = "Extensions:"; ObjectID = "un0-hl-Lfs"; */
+"un0-hl-Lfs.title" = "扩展：";
+
+/* Class = "NSButtonCell"; title = "Automatically keep my extensions up to date"; ObjectID = "xAJ-Am-88u"; */
+"xAJ-Am-88u.title" = "自动将扩展保持到最新";
+
+/* Class = "NSButtonCell"; title = "Show after the last project window is closed"; ObjectID = "zeC-BQ-I0T"; */
+"zeC-BQ-I0T.title" = "在上个项目窗口关闭后显示";

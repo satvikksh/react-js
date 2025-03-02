@@ -1,0 +1,48 @@
+
+/* Class = "NSMenuItem"; title = "Select Code Block"; ObjectID = "1x5-Qx-OrW"; */
+"1x5-Qx-OrW.title" = "Sélectionner le bloc de code";
+
+/* Class = "NSSlider"; ibShadowedToolTip = "Adjust the depth of the symbols displayed"; ObjectID = "LOs-bU-2fU"; */
+"LOs-bU-2fU.ibShadowedToolTip" = "Régler la profondeur des symboles affichés";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Oh6-SM-j0t"; */
+"Oh6-SM-j0t.title" = "Text Cell";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "flat symbols"; ObjectID = "TCS-2u-xg9"; */
+"TCS-2u-xg9.ibExternalAccessibilityDescription" = "symboles plats";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show symbols as a list"; ObjectID = "TCS-2u-xg9"; */
+"TCS-2u-xg9.ibShadowedToolTip" = "Afficher une liste de symboles";
+
+/* Class = "NSMenuItem"; title = "Copy Symbol"; ObjectID = "UgK-uW-q1K"; */
+"UgK-uW-q1K.title" = "Copier le symbole";
+
+/* Class = "NSSearchFieldCell"; placeholderString = "Filter"; ObjectID = "WPI-XR-xLW"; */
+"WPI-XR-xLW.placeholderString" = "Filtrer";
+
+/* Class = "NSMenuItem"; title = "Find in Workspace"; ObjectID = "WvY-wA-gmj"; */
+"WvY-wA-gmj.title" = "Rechercher dans l’espace de travail";
+
+/* Class = "NSTextFieldCell"; title = "No symbols found in the current document."; ObjectID = "fyC-OC-Dgs"; */
+"fyC-OC-Dgs.title" = "Aucun symbole trouvé dans le document actuel.";
+
+/* Class = "NSTextFieldCell"; title = "<<Symbol>>"; ObjectID = "iNn-FV-uwb"; */
+"iNn-FV-uwb.title" = "<<Symbol>>";
+
+/* Class = "NSSearchField"; ibShadowedToolTip = "Show files with matching name"; ObjectID = "mM0-GT-NCt"; */
+"mM0-GT-NCt.ibShadowedToolTip" = "Afficher les fichiers dont le nom correspond";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "hierarchical symbols"; ObjectID = "vUB-v4-ARf"; */
+"vUB-v4-ARf.ibExternalAccessibilityDescription" = "symboles hiérarchiques";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show symbols as a tree"; ObjectID = "vUB-v4-ARf"; */
+"vUB-v4-ARf.ibShadowedToolTip" = "Afficher une arborescence de symboles";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "sort alphabetically"; ObjectID = "yDm-Wb-wta"; */
+"yDm-Wb-wta.ibExternalAccessibilityDescription" = "trier par ordre alphabétique";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Sort symbols alphabetically"; ObjectID = "yDm-Wb-wta"; */
+"yDm-Wb-wta.ibShadowedToolTip" = "Trier les symboles par ordre alphabétique";
+
+/* Class = "NSMenuItem"; title = "Find in Document"; ObjectID = "zb2-qe-NL1"; */
+"zb2-qe-NL1.title" = "Rechercher dans le document";

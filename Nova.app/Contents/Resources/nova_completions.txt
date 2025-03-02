@@ -1,0 +1,25 @@
+#compdef nova
+
+# nova(1) is the command line tool for Panic Nova.
+# https://panic.com/nova
+
+case "$words[1]" in
+  nova)
+    # The name nova conflicts with the command with the same name from the
+    # OpenStack project. We delegate completion to _openstack if nova(1) is
+    # detected to be from OpenStack.
+    local variant
+    _pick_variant -r variant openstack=OpenStack nova='Panic Nova' unknown --help
+    case $variant in
+      openstack)
+        _openstack "$@"
+        ;;
+      nova)
+        _arguments \
+            '*:input:_files'
+        ;;
+      *)
+        _default "$@"
+    esac
+    ;;
+esac

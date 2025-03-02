@@ -1,0 +1,9 @@
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "窗口";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "cH6-yw-pNG"; */
+"cH6-yw-pNG.title" = "取消";
+
+/* Class = "NSTextFieldCell"; title = "Checking for updates…"; ObjectID = "fVq-ak-rgx"; */
+"fVq-ak-rgx.title" = "正在检查更新…";

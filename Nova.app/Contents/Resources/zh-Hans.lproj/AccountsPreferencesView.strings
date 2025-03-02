@@ -1,0 +1,24 @@
+
+/* Class = "NSTextFieldCell"; title = "Click the + button to add accounts."; ObjectID = "9dy-2q-pNK"; */
+"9dy-2q-pNK.title" = "点按 + 按钮添加帐户。";
+
+/* Class = "NSTextFieldCell"; title = "Multiple Selection"; ObjectID = "A6p-AO-GwT"; */
+"A6p-AO-GwT.title" = "多选";
+
+/* Class = "NSTextFieldCell"; title = "<<AccountURL>>"; ObjectID = "O6U-zX-OgZ"; */
+"O6U-zX-OgZ.title" = "<<AccountURL>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Header>>"; ObjectID = "P8j-C7-htF"; */
+"P8j-C7-htF.title" = "<<Header>>";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Add an account"; ObjectID = "dTP-TR-0wR"; */
+"dTP-TR-0wR.ibShadowedToolTip" = "添加帐户";
+
+/* Class = "NSTextFieldCell"; title = "<<AccountName>>"; ObjectID = "gDn-92-knB"; */
+"gDn-92-knB.title" = "<<AccountName>>";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Remove the selected account"; ObjectID = "lad-Ez-5tq"; */
+"lad-Ez-5tq.ibShadowedToolTip" = "移除所选帐户";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "oPn-U8-2GU"; */
+"oPn-U8-2GU.title" = "Text Cell";

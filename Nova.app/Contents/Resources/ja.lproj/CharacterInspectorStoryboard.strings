@@ -1,0 +1,33 @@
+
+/* Class = "NSTextFieldCell"; title = "Selection"; ObjectID = "0rC-IX-WeN"; */
+"0rC-IX-WeN.title" = "選択";
+
+/* Class = "NSTextFieldCell"; title = "<<255>>"; ObjectID = "6b1-RB-W7N"; */
+"6b1-RB-W7N.title" = "<<255>>";
+
+/* Class = "NSTextFieldCell"; title = "Hexadecimal"; ObjectID = "9c7-6c-4Le"; */
+"9c7-6c-4Le.title" = "16進数";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Copy Hexadecimal Value"; ObjectID = "csZ-00-AeU"; */
+"csZ-00-AeU.ibExternalAccessibilityDescription" = "16進数値をコピー";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Copy Hexadecimal Value"; ObjectID = "csZ-00-AeU"; */
+"csZ-00-AeU.ibShadowedToolTip" = "16進数値をコピーします";
+
+/* Class = "NSTextFieldCell"; title = "<<Text>>"; ObjectID = "e9i-vE-and"; */
+"e9i-vE-and.title" = "<<Text>>";
+
+/* Class = "NSTextFieldCell"; title = "Decimal"; ObjectID = "eWx-7V-yNS"; */
+"eWx-7V-yNS.title" = "10進数";
+
+/* Class = "NSWindow"; title = "Character Inspector"; ObjectID = "jzz-CS-cAD"; */
+"jzz-CS-cAD.title" = "Character Inspector";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Copy Decimal Value"; ObjectID = "rhz-90-DaT"; */
+"rhz-90-DaT.ibExternalAccessibilityDescription" = "10進数値をコピー";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Copy Decimal Value"; ObjectID = "rhz-90-DaT"; */
+"rhz-90-DaT.ibShadowedToolTip" = "10進数値をコピーします";
+
+/* Class = "NSTextFieldCell"; title = "<<00 FF>>"; ObjectID = "t0y-cf-MfK"; */
+"t0y-cf-MfK.title" = "<<00 FF>>";

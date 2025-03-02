@@ -1,0 +1,30 @@
+
+/* Class = "NSButtonCell"; title = "Add Action"; ObjectID = "FzN-pd-CYh"; */
+"FzN-pd-CYh.title" = "アクションを追加";
+
+/* Class = "NSTextFieldCell"; title = "Actions"; ObjectID = "KgT-Io-mq5"; */
+"KgT-Io-mq5.title" = "アクション";
+
+/* Class = "NSTextFieldCell"; title = "<<WarningText>>"; ObjectID = "RD1-1g-zJ5"; */
+"RD1-1g-zJ5.title" = "<<WarningText>>";
+
+/* Class = "NSTextFieldCell"; title = "times before stopping"; ObjectID = "VDY-53-G5q"; */
+"VDY-53-G5q.title" = "回停止する前";
+
+/* Class = "NSTextFieldCell"; title = "<<WarningText>>"; ObjectID = "b2q-EF-dOw"; */
+"b2q-EF-dOw.title" = "<<WarningText>>";
+
+/* Class = "NSButtonCell"; title = "Automatically continue after evaluating actions"; ObjectID = "hDs-f0-uUh"; */
+"hDs-f0-uUh.title" = "アクションの評価後、自動的に継続する";
+
+/* Class = "NSTextFieldCell"; title = "Ignore"; ObjectID = "nFU-Ei-ZVe"; */
+"nFU-Ei-ZVe.title" = "除外";
+
+/* Class = "NSTextFieldCell"; title = "Function"; ObjectID = "qfZ-Rs-r2A"; */
+"qfZ-Rs-r2A.title" = "関数";
+
+/* Class = "NSTextFieldCell"; title = "Condition"; ObjectID = "rnC-Kr-Yao"; */
+"rnC-Kr-Yao.title" = "条件";
+
+/* Class = "NSButtonCell"; title = "Breakpoint"; ObjectID = "wFo-H1-f0X"; */
+"wFo-H1-f0X.title" = "関数ブレークポイント";

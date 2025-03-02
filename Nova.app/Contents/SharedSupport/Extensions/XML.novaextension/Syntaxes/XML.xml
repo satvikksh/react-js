@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="xml">
+    <meta>
+        <name>XML</name>
+        <type>structured</type>
+        <preferred-file-extension>xml</preferred-file-extension>
+    </meta>
+    
+    <detectors>
+        <extension>xml,plist,svg</extension>
+        <match-content lines="2" priority="low">^&lt;\?xml</match-content>
+    </detectors>
+    
+    <indentation>
+        <increase>
+            <expression>^\s*&lt;(([^!/?]|%)(?!.+?([/%]&gt;|&lt;/.+?&gt;))|[%!]--\s*$)</expression>
+        </increase>
+        <decrease>
+            <expression>^\s*(&lt;/[^&gt;]+&gt;|--&gt;|--%&gt;)</expression>
+        </decrease>
+    </indentation>
+    
+    <comments>
+        <multiline>
+            <starts-with>
+                <expression>&lt;!--</expression>
+            </starts-with>
+            <ends-with>
+                <expression>--&gt;</expression>
+            </ends-with>
+        </multiline>
+    </comments>
+    
+    <injection>
+        <expression>^(xml|XML|Xml)$</expression>
+    </injection>
+    
+    <tree-sitter>
+        <highlights />
+        <folds />
+        <symbols />
+        <text-checking />
+        <tag-matching />
+    </tree-sitter>
+</syntax>

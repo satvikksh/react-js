@@ -1,0 +1,15 @@
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "2vb-7w-pcD"; */
+"2vb-7w-pcD.title" = "取消";
+
+/* Class = "NSTextFieldCell"; title = "Select a server for the remote project:"; ObjectID = "5v1-ob-cwG"; */
+"5v1-ob-cwG.title" = "为远程项目选择服务器：";
+
+/* Class = "NSTextFieldCell"; title = "Project Name:"; ObjectID = "VGn-x6-GwT"; */
+"VGn-x6-GwT.title" = "项目名称：";
+
+/* Class = "NSButtonCell"; title = "Create Remote Project"; ObjectID = "mK7-8L-pDF"; */
+"mK7-8L-pDF.title" = "创建远程项目";
+
+/* Class = "NSTextFieldCell"; title = "Artwork:"; ObjectID = "vsL-eY-5Ib"; */
+"vsL-eY-5Ib.title" = "插图：";

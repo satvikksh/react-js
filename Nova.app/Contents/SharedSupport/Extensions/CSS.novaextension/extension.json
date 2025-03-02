@@ -1,0 +1,20 @@
+{
+    "identifier": "panic.CSS",
+    "name": "CSS",
+    "author": "Panic Inc.",
+    
+    "main": "main.js",
+    
+    "entitlements": {
+        "filesystem": "readwrite"
+    },
+    
+    "activationEvents": [
+        "onLanguage:css",
+        "onLanguage:scss",
+        "onLanguage:sass",
+        "onLanguage:less",
+        "onLanguage:html",
+        "onLanguage:php"
+    ]
+}

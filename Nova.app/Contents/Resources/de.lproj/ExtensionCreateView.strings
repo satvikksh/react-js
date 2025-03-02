@@ -1,0 +1,48 @@
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "4Lq-ZV-8FV"; */
+"4Lq-ZV-8FV.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; placeholderString = "org."; ObjectID = "IFh-Bj-7Cj"; */
+"IFh-Bj-7Cj.placeholderString" = "org.";
+
+/* Class = "NSTextFieldCell"; title = "Allows your extension to directly manipulate files and directories on disk using the Files API."; ObjectID = "QHe-OX-J17"; */
+"QHe-OX-J17.title" = "Erlaubt Ihrer Erweiterung, Dateien und Verzeichnisse auf dem Datenträger mithilfe der Dateien-API direkt zu bearbeiten.";
+
+/* Class = "NSTextFieldCell"; title = "Entitlements:"; ObjectID = "Qcl-uO-KYh"; */
+"Qcl-uO-KYh.title" = "Berechtigungen:";
+
+/* Class = "NSTextFieldCell"; title = "Allows your extension to make HTTP requests using the Fetch API."; ObjectID = "SFP-D2-XvP"; */
+"SFP-D2-XvP.title" = "Erlaubt Ihrer Erweiterung, HTTP-Anforderungen mithilfe der Abrufen-API zu erstellen.";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "UFN-mE-kpJ"; */
+"UFN-mE-kpJ.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "Allows your extension to launch subprocesses using the Process API."; ObjectID = "WFc-5a-nLT"; */
+"WFc-5a-nLT.title" = "Erlaubt Ihrer Erweiterung, Unterprozesse mithilfe der Prozess-API zu starten.";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "abe-HS-8U9"; */
+"abe-HS-8U9.title" = "Item 3";
+
+/* Class = "NSButtonCell"; title = "File System"; ObjectID = "ah8-NQ-dkv"; */
+"ah8-NQ-dkv.title" = "Dateisystem";
+
+/* Class = "NSTextFieldCell"; title = "Allows your extension to read and write to the text using the Clipboard API."; ObjectID = "avv-Jh-9H0"; */
+"avv-Jh-9H0.title" = "Ermöglicht Ihrer Erweiterung das Lesen und Schreiben in den Text mithilfe der Zwischenablage-API.";
+
+/* Class = "NSButtonCell"; title = "Network"; ObjectID = "axV-lK-4A2"; */
+"axV-lK-4A2.title" = "Netzwerk";
+
+/* Class = "NSButtonCell"; title = "Processes"; ObjectID = "dKc-8q-2EQ"; */
+"dKc-8q-2EQ.title" = "Prozesse";
+
+/* Class = "NSButtonCell"; title = "Clipboard"; ObjectID = "dkd-es-VtZ"; */
+"dkd-es-VtZ.title" = "Zwischenablage";
+
+/* Class = "NSTextFieldCell"; title = "Extension Name:"; ObjectID = "gG3-fy-3yp"; */
+"gG3-fy-3yp.title" = "Erweiterungsname:";
+
+/* Class = "NSTextFieldCell"; title = "Extension Identifier:"; ObjectID = "l5z-wg-z02"; */
+"l5z-wg-z02.title" = "Erweiterungsbezeichner:";
+
+/* Class = "NSTextFieldCell"; title = "Organization:"; ObjectID = "neT-QL-hBV"; */
+"neT-QL-hBV.title" = "Anbietername:";

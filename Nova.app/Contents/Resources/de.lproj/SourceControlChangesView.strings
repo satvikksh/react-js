@@ -1,0 +1,72 @@
+
+/* Class = "NSTextFieldCell"; title = "<<Count>>"; ObjectID = "1ZK-ve-AyK"; */
+"1ZK-ve-AyK.title" = "<<Count>>";
+
+/* Class = "NSTextFieldCell"; title = "<<StateTitle>>"; ObjectID = "2ra-L3-7JJ"; */
+"2ra-L3-7JJ.title" = "<<StateTitle>>";
+
+/* Class = "NSButtonCell"; title = "Stage"; ObjectID = "3f8-Ga-D8u"; */
+"3f8-Ga-D8u.title" = "Bereitstellen";
+
+/* Class = "NSMenuItem"; title = "View as Tree"; ObjectID = "6GY-wy-rM5"; */
+"6GY-wy-rM5.title" = "Als Baum anzeigen";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Refresh status"; ObjectID = "DOo-LN-Bbu"; */
+"DOo-LN-Bbu.ibExternalAccessibilityDescription" = "Status aktualisieren";
+
+/* Class = "NSTextView"; ibExternalAccessibilityDescription = "Commit message"; ObjectID = "Des-zS-GjC"; */
+"Des-zS-GjC.ibExternalAccessibilityDescription" = "Commit-Nachricht";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Commit summaries (first line) are commonly recommended to be 50 characters or fewer."; ObjectID = "GoJ-A3-zew"; */
+"GoJ-A3-zew.ibShadowedToolTip" = "Für Commit-Zusammenfassungen (erste Zeile) wird allgemein empfohlen, 50 Zeichen oder weniger zu verwenden.";
+
+/* Class = "NSTextFieldCell"; title = "Changes"; ObjectID = "RkN-gA-Uwf"; */
+"RkN-gA-Uwf.title" = "Änderungen";
+
+/* Class = "NSTextFieldCell"; title = "<<Count>>"; ObjectID = "SDU-bX-A7z"; */
+"SDU-bX-A7z.title" = "<<Count>>";
+
+/* Class = "NSMenuItem"; title = "Expand All"; ObjectID = "WlG-E5-VYS"; */
+"WlG-E5-VYS.title" = "Alle erweitern";
+
+/* Class = "NSMenuItem"; title = "Show Ignored Items"; ObjectID = "Xr9-sN-Wpc"; */
+"Xr9-sN-Wpc.title" = "Ignorierte Objekte anzeigen";
+
+/* Class = "NSButtonCell"; title = "Amend"; ObjectID = "aDV-zV-hF7"; */
+"aDV-zV-hF7.title" = "Amend";
+
+/* Class = "NSMenuItem"; title = "Collapse All"; ObjectID = "an4-4W-eua"; */
+"an4-4W-eua.title" = "Alle reduzieren";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Replaces the latest commit with an updated one."; ObjectID = "dzL-Sl-iae"; */
+"dzL-Sl-iae.ibShadowedToolTip" = "Ersetzt den letzten Commit durch einen aktualisierten.";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "gUF-xd-opo"; */
+"gUF-xd-opo.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "<<StateDescriptiveText>>"; ObjectID = "gYr-YF-2Ly"; */
+"gYr-YF-2Ly.title" = "<<StateDescriptiveText>>";
+
+/* Class = "NSButtonCell"; title = "Show only conflicts"; ObjectID = "if5-Fd-rNU"; */
+"if5-Fd-rNU.title" = "Nur Konflikte anzeigen";
+
+/* Class = "NSMenuItem"; title = "Reload Status"; ObjectID = "kqv-CX-eFF"; */
+"kqv-CX-eFF.title" = "Status neu laden";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "lsy-eA-DTs"; */
+"lsy-eA-DTs.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "<<Filename>>"; ObjectID = "m0O-Dh-u5F"; */
+"m0O-Dh-u5F.title" = "<<Filename>>";
+
+/* Class = "NSButtonCell"; title = "Abort"; ObjectID = "mO9-BT-Pin"; */
+"mO9-BT-Pin.title" = "Abbrechen";
+
+/* Class = "NSMenuItem"; title = "View as List"; ObjectID = "nz7-uQ-TVU"; */
+"nz7-uQ-TVU.title" = "Als Liste anzeigen";
+
+/* Class = "NSButtonCell"; title = "Commit"; ObjectID = "tNn-Al-nyC"; */
+"tNn-Al-nyC.title" = "Commit";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Stage all changes in the working directory"; ObjectID = "w8o-oN-UQ5"; */
+"w8o-oN-UQ5.ibShadowedToolTip" = "Alle Änderungen im Arbeitsverzeichnis bereitstellen";

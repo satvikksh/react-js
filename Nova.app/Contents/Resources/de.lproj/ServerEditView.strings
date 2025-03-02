@@ -1,0 +1,192 @@
+
+/* Class = "NSImageView"; ibExternalAccessibilityDescription = "mac"; ObjectID = "0Fy-ue-OIP"; */
+"0Fy-ue-OIP.ibExternalAccessibilityDescription" = "Mac";
+
+/* Class = "NSMenuItem"; title = "Automatic"; ObjectID = "0ZY-3K-e84"; */
+"0ZY-3K-e84.title" = "Automatisch";
+
+/* Class = "NSButtonCell"; title = "Use Passive Mode"; ObjectID = "1GV-Wz-WSb"; */
+"1GV-Wz-WSb.title" = "Passiven Modus verwenden";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Browse for remote path"; ObjectID = "1uA-MG-iZm"; */
+"1uA-MG-iZm.ibExternalAccessibilityDescription" = "Nach entferntem Pfad suchen";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Browse for remote path"; ObjectID = "1uA-MG-iZm"; */
+"1uA-MG-iZm.ibShadowedToolTip" = "Nach entferntem Pfad suchen";
+
+/* Class = "NSImageView"; ibExternalAccessibilityDescription = "planet earth"; ObjectID = "4JI-mu-Ycp"; */
+"4JI-mu-Ycp.ibExternalAccessibilityDescription" = "Planet Erde";
+
+/* Class = "NSTextFieldCell"; title = "STS Endpoint"; ObjectID = "4cc-mg-u67"; */
+"4cc-mg-u67.title" = "STS-Endpunkt";
+
+/* Class = "NSTextFieldCell"; placeholderString = "123ABC"; ObjectID = "7rQ-4x-HgU"; */
+"7rQ-4x-HgU.placeholderString" = "123ABC";
+
+/* Class = "NSTextFieldCell"; title = "Address"; ObjectID = "9Hk-bB-CDc"; */
+"9Hk-bB-CDc.title" = "Adresse";
+
+/* Class = "NSImageView"; ibExternalAccessibilityDescription = "archive"; ObjectID = "B7U-Y9-lCR"; */
+"B7U-Y9-lCR.ibExternalAccessibilityDescription" = "Aktenschrank";
+
+/* Class = "NSImageView"; ibExternalAccessibilityDescription = "videos"; ObjectID = "BwS-YO-am9"; */
+"BwS-YO-am9.ibExternalAccessibilityDescription" = "Videos";
+
+/* Class = "NSTextFieldCell"; placeholderString = "optional"; ObjectID = "DSz-dI-16c"; */
+"DSz-dI-16c.placeholderString" = "optional";
+
+/* Class = "NSTextFieldCell"; title = "Port"; ObjectID = "Dao-yw-YRm"; */
+"Dao-yw-YRm.title" = "Port";
+
+/* Class = "NSTextFieldCell"; title = "Profile"; ObjectID = "E1F-RD-xwZ"; */
+"E1F-RD-xwZ.title" = "Profil";
+
+/* Class = "NSTextFieldCell"; placeholderString = "arn:aws:iam::123456789012:mfa/user"; ObjectID = "EpC-sv-2L9"; */
+"EpC-sv-2L9.placeholderString" = "arn:aws:iam::123456789012:mfa/user";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "Ggu-Qi-vl1"; */
+"Ggu-Qi-vl1.title" = "Item 2";
+
+/* Class = "NSImageView"; ibExternalAccessibilityDescription = "locked"; ObjectID = "Hp3-fe-xml"; */
+"Hp3-fe-xml.ibExternalAccessibilityDescription" = "geschützt";
+
+/* Class = "NSTextFieldCell"; placeholderString = "(optional)"; ObjectID = "JIk-1l-NJj"; */
+"JIk-1l-NJj.placeholderString" = "(optional)";
+
+/* Class = "NSTextFieldCell"; title = "Protocol"; ObjectID = "Kli-lG-AE5"; */
+"Kli-lG-AE5.title" = "Protokoll";
+
+/* Class = "NSTextFieldCell"; placeholderString = "server.com"; ObjectID = "L6w-Jx-jhr"; */
+"L6w-Jx-jhr.placeholderString" = "server.com";
+
+/* Class = "NSMenuItem"; title = "Windows (cmd.exe)"; ObjectID = "M9w-h1-kYH"; */
+"M9w-h1-kYH.title" = "Windows (cmd.exe)";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "MII-g3-iFn"; */
+"MII-g3-iFn.title" = "Fenster";
+
+/* Class = "NSImageView"; ibExternalAccessibilityDescription = "files"; ObjectID = "P8H-Qw-Zqu"; */
+"P8H-Qw-Zqu.ibExternalAccessibilityDescription" = "Dateien";
+
+/* Class = "NSImageView"; ibExternalAccessibilityDescription = "windows"; ObjectID = "PBJ-Cp-vBF"; */
+"PBJ-Cp-vBF.ibExternalAccessibilityDescription" = "Windows";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Copy the password"; ObjectID = "QaD-v5-tLA"; */
+"QaD-v5-tLA.ibExternalAccessibilityDescription" = "Passwort kopieren";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Copy the password"; ObjectID = "QaD-v5-tLA"; */
+"QaD-v5-tLA.ibShadowedToolTip" = "Passwort kopieren";
+
+/* Class = "NSTextFieldCell"; title = "Username"; ObjectID = "Qgk-LZ-CZm"; */
+"Qgk-LZ-CZm.title" = "Benutzername";
+
+/* Class = "NSImageView"; ibExternalAccessibilityDescription = "computer monitor"; ObjectID = "RxO-gu-buU"; */
+"RxO-gu-buU.ibExternalAccessibilityDescription" = "Computermonitor";
+
+/* Class = "NSButtonCell"; title = "Validate"; ObjectID = "SAI-V9-KDE"; */
+"SAI-V9-KDE.title" = "Überprüfen";
+
+/* Class = "NSButtonCell"; title = "Save"; ObjectID = "SU8-Bs-MmK"; */
+"SU8-Bs-MmK.title" = "Sichern";
+
+/* Class = "NSTextFieldCell"; title = "Key Name"; ObjectID = "TzQ-xL-buB"; */
+"TzQ-xL-buB.title" = "Schlüsselname";
+
+/* Class = "NSTextFieldCell"; title = "Determines how commands are sent to the server for remote tasks. This should be set to the server's default shell interpreter."; ObjectID = "VMV-KV-fg8"; */
+"VMV-KV-fg8.title" = "Bestimmt, wie Befehle für Remoteaufgaben an den Server gesendet werden. Dies sollte auf den standardmäßigen Shell-Interpreter des Servers festgelegt werden.";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "WKc-VO-Vfl"; */
+"WKc-VO-Vfl.title" = "Abbrechen";
+
+/* Class = "NSMenuItem"; title = "Authenticate with Key:"; ObjectID = "WX0-gY-Hax"; */
+"WX0-gY-Hax.title" = "Authentifizieren mit Schlüssel:";
+
+/* Class = "NSImageView"; ibExternalAccessibilityDescription = "lightning"; ObjectID = "Wcx-n8-AYF"; */
+"Wcx-n8-AYF.ibExternalAccessibilityDescription" = "Blitz";
+
+/* Class = "NSTextFieldCell"; title = "Role"; ObjectID = "Wo8-mw-fmc"; */
+"Wo8-mw-fmc.title" = "Rolle";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "XfW-Kg-lrp"; */
+"XfW-Kg-lrp.title" = "Item 1";
+
+/* Class = "NSImageView"; ibExternalAccessibilityDescription = "half-earth"; ObjectID = "aCG-La-RLB"; */
+"aCG-La-RLB.ibExternalAccessibilityDescription" = "halb verdeckte Erde";
+
+/* Class = "NSButtonCell"; title = "Allow Agent Forwarding"; ObjectID = "abU-OE-2yJ"; */
+"abU-OE-2yJ.title" = "Agent-Weiterleitung erlauben";
+
+/* Class = "NSTextFieldCell"; title = "Remote Path"; ObjectID = "bMW-yd-tlb"; */
+"bMW-yd-tlb.title" = "Entfernter Pfad";
+
+/* Class = "NSImageView"; ibExternalAccessibilityDescription = "rainbow"; ObjectID = "bd8-20-JNa"; */
+"bd8-20-JNa.ibExternalAccessibilityDescription" = "Regenbogen";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Nickname"; ObjectID = "cMS-Mk-SaV"; */
+"cMS-Mk-SaV.placeholderString" = "Kurzname";
+
+/* Class = "NSImageView"; ibExternalAccessibilityDescription = "soccer ball"; ObjectID = "d3i-HE-lmg"; */
+"d3i-HE-lmg.ibExternalAccessibilityDescription" = "Fußball";
+
+/* Class = "NSTextFieldCell"; placeholderString = "arn:aws:iam::123456789012:role/demo"; ObjectID = "dPr-gy-8Cv"; */
+"dPr-gy-8Cv.placeholderString" = "arn:aws:iam::123456789012:role/demo";
+
+/* Class = "NSImageView"; ibShadowedToolTip = "To change the server's picture, drag in a new one or click to choose one."; ObjectID = "eEa-mv-B8A"; */
+"eEa-mv-B8A.ibShadowedToolTip" = "Um das Serverbild zu ändern, bewegen Sie ein neues hierher oder wählen Sie ein Bild durch Klicken aus.";
+
+/* Class = "NSTextFieldCell"; title = "Password"; ObjectID = "elv-Cj-1da"; */
+"elv-Cj-1da.title" = "Passwort";
+
+/* Class = "NSMenuItem"; title = "PowerShell"; ObjectID = "gAR-3A-C3Q"; */
+"gAR-3A-C3Q.title" = "PowerShell";
+
+/* Class = "NSTextFieldCell"; title = "Shell Type"; ObjectID = "gfD-qc-Eg2"; */
+"gfD-qc-Eg2.title" = "Shell-Typ";
+
+/* Class = "NSTextFieldCell"; placeholderString = "https://domain.com"; ObjectID = "hzv-IK-ZM4"; */
+"hzv-IK-ZM4.placeholderString" = "https://domain.com";
+
+/* Class = "NSImageView"; ibExternalAccessibilityDescription = "audio"; ObjectID = "irE-5N-OBJ"; */
+"irE-5N-OBJ.ibExternalAccessibilityDescription" = "Warnton";
+
+/* Class = "NSImageView"; ibExternalAccessibilityDescription = "photos"; ObjectID = "jUs-yn-OyF"; */
+"jUs-yn-OyF.ibExternalAccessibilityDescription" = "Fotos";
+
+/* Class = "NSImageView"; ibExternalAccessibilityDescription = "public"; ObjectID = "jXV-Fe-5ht"; */
+"jXV-Fe-5ht.ibExternalAccessibilityDescription" = "öffentlich";
+
+/* Class = "NSImageView"; ibExternalAccessibilityDescription = "heart"; ObjectID = "kc9-fL-zzO"; */
+"kc9-fL-zzO.ibExternalAccessibilityDescription" = "Herz";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Identities"; ObjectID = "lbF-S1-ZrA"; */
+"lbF-S1-ZrA.ibExternalAccessibilityDescription" = "Identitäten";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Identities"; ObjectID = "lbF-S1-ZrA"; */
+"lbF-S1-ZrA.ibShadowedToolTip" = "Identitäten";
+
+/* Class = "NSMenuItem"; title = "Authenticate with Password"; ObjectID = "nmx-aW-dB8"; */
+"nmx-aW-dB8.title" = "Authentifizieren mit Passwort";
+
+/* Class = "NSTextFieldCell"; placeholderString = "sts.amazonaws.com"; ObjectID = "pf7-He-gMG"; */
+"pf7-He-gMG.placeholderString" = "sts.amazonaws.com";
+
+/* Class = "NSMenuItem"; title = "Unix-like (Bash, Zsh)"; ObjectID = "q2x-iP-SwO"; */
+"q2x-iP-SwO.title" = "Wie Unix (Bash, Zsh)";
+
+/* Class = "NSTextFieldCell"; placeholderString = "me"; ObjectID = "sVw-Hc-FGT"; */
+"sVw-Hc-FGT.placeholderString" = "ich";
+
+/* Class = "NSTextFieldCell"; title = "Allows this server to use keys stored within Nova to authenticate additional remotely-established connections."; ObjectID = "tcm-Jz-QbE"; */
+"tcm-Jz-QbE.title" = "Erlaubt diesem Server die Verwendung von Schlüsseln, die in Ihrem lokalen SSH-Agent gespeichert sind, um zusätzliche entfernte Verbindungen zu authentifizieren.";
+
+/* Class = "NSTextFieldCell"; title = "MFA Device"; ObjectID = "trc-Sd-MeD"; */
+"trc-Sd-MeD.title" = "MFA-Gerät";
+
+/* Class = "NSTextFieldCell"; title = "Remote URL"; ObjectID = "v5B-OZ-dqk"; */
+"v5B-OZ-dqk.title" = "Entfernte URL";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "xDh-EB-tQf"; */
+"xDh-EB-tQf.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "External ID"; ObjectID = "zHk-VV-ZYK"; */
+"zHk-VV-ZYK.title" = "Externe ID";

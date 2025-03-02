@@ -1,0 +1,87 @@
+
+/* Class = "NSTextFieldCell"; title = "<<Count>>"; ObjectID = "2HC-2E-wSz"; */
+"2HC-2E-wSz.title" = "<<Count>>";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Insert a replace wildcard"; ObjectID = "3kh-fD-4NZ"; */
+"3kh-fD-4NZ.ibShadowedToolTip" = "置換ワイルドカードを挿入します";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "search in selection"; ObjectID = "4D3-A6-mVp"; */
+"4D3-A6-mVp.ibExternalAccessibilityDescription" = "選択を検索";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Search only in the selection"; ObjectID = "4D3-A6-mVp"; */
+"4D3-A6-mVp.ibShadowedToolTip" = "選択範囲内のみを検索します";
+
+/* Class = "NSButtonCell"; title = "Replace"; ObjectID = "4m4-PI-dIz"; */
+"4m4-PI-dIz.title" = "置換";
+
+/* Class = "NSMenuItem"; title = "Matches Word"; ObjectID = "AQ4-CU-hKN"; */
+"AQ4-CU-hKN.title" = "と一致する";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "case sensitive"; ObjectID = "B6Y-IN-Um6"; */
+"B6Y-IN-Um6.ibExternalAccessibilityDescription" = "大文字と小文字を区別";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Match text case"; ObjectID = "B6Y-IN-Um6"; */
+"B6Y-IN-Um6.ibShadowedToolTip" = "大文字と小文字の区別を指定します";
+
+/* Class = "NSButtonCell"; title = "Done"; ObjectID = "BSD-b3-RPp"; */
+"BSD-b3-RPp.title" = "完了";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "replace"; ObjectID = "CRi-0y-H9m"; */
+"CRi-0y-H9m.ibExternalAccessibilityDescription" = "置き換える";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "The text pattern with which to replace"; ObjectID = "CRi-0y-H9m"; */
+"CRi-0y-H9m.ibShadowedToolTip" = "置換したい文字列を入力します";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Replace the current match"; ObjectID = "DoN-ZT-2RO"; */
+"DoN-ZT-2RO.ibShadowedToolTip" = "現在のマッチを置換します";
+
+/* Class = "NSMenuItem"; title = "Begins With"; ObjectID = "Hqd-SG-2uQ"; */
+"Hqd-SG-2uQ.title" = "で始まる";
+
+/* Class = "NSButtonCell"; title = "All"; ObjectID = "MdX-M1-gaY"; */
+"MdX-M1-gaY.title" = "すべて";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Close the find bar"; ObjectID = "NER-4T-pXY"; */
+"NER-4T-pXY.ibShadowedToolTip" = "検索バーを閉じます";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "next match"; ObjectID = "Na5-AI-bcn"; */
+"Na5-AI-bcn.ibExternalAccessibilityDescription" = "次のマッチ";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show the next match"; ObjectID = "Na5-AI-bcn"; */
+"Na5-AI-bcn.ibShadowedToolTip" = "次のマッチを表示します";
+
+/* Class = "NSMenuItem"; title = "Contains"; ObjectID = "TT5-fV-8fJ"; */
+"TT5-fV-8fJ.title" = "を含む";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "find"; ObjectID = "WpZ-QX-p2e"; */
+"WpZ-QX-p2e.ibExternalAccessibilityDescription" = "検索";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "The text pattern to match"; ObjectID = "WpZ-QX-p2e"; */
+"WpZ-QX-p2e.ibShadowedToolTip" = "検索したい文字列を入力します";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "replace all"; ObjectID = "XlO-kf-9KA"; */
+"XlO-kf-9KA.ibExternalAccessibilityDescription" = "すべてを置換";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Replace all matches"; ObjectID = "XlO-kf-9KA"; */
+"XlO-kf-9KA.ibShadowedToolTip" = "すべてのマッチを1度に置換します";
+
+/* Class = "NSMenuItem"; title = "Ends With"; ObjectID = "cd0-hA-cJd"; */
+"cd0-hA-cJd.title" = "で終わる";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Replace"; ObjectID = "gsJ-Du-FS2"; */
+"gsJ-Du-FS2.placeholderString" = "置換";
+
+/* Class = "NSMenuItem"; title = "Regular Expression"; ObjectID = "jXz-Rp-zLf"; */
+"jXz-Rp-zLf.title" = "正規表現";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "previous match"; ObjectID = "t0m-48-tEa"; */
+"t0m-48-tEa.ibExternalAccessibilityDescription" = "前のマッチ";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show the previous match"; ObjectID = "t0m-48-tEa"; */
+"t0m-48-tEa.ibShadowedToolTip" = "前のマッチを表示します";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Find"; ObjectID = "uuv-nj-e7p"; */
+"uuv-nj-e7p.placeholderString" = "検索";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Insert a find wildcard"; ObjectID = "yzB-fU-zkf"; */
+"yzB-fU-zkf.ibShadowedToolTip" = "検索ワイルドカードを挿入します";

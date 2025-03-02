@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="tsx">
+    <meta>
+        <name>TSX</name>
+        <type>script</type>
+        <preferred-file-extension>tsx</preferred-file-extension>
+        <parent>typescript</parent>
+    </meta>
+    
+    <detectors>
+        <extension>tsx</extension>
+    </detectors>
+    
+    <indentation>
+        <increase>
+            <expression>(?x)
+                (\{[^}\"']*$)|(\[[^\]\"']*$)|(\([^)\"']*$)
+                |(&lt;(?!\?|(?:area|base|br|col|embed|hr|img|input|link|meta|param|source|track|wbr)\b)([-_\.A-Za-z0-9]+)(?=\s|&gt;)\b[^&gt;]*&gt;[^&lt;]*$)
+                |(&lt;!--\s*$)
+            </expression>
+        </increase>
+        <decrease>
+            <expression>^\s*(\s*/\*.*\*/\s*)*[\}\]\)\\]</expression>
+        </decrease>
+    </indentation>
+    
+    <comments>
+        <single>
+            <expression>//</expression>
+        </single>
+        <multiline>
+            <starts-with>
+                <expression>/*</expression>
+            </starts-with>
+            <ends-with>
+                <expression>*/</expression>
+            </ends-with>
+        </multiline>
+        
+        <conditional>
+            <match-selector>jsx.tag,jsx.text</match-selector>
+            <multiline>
+                <starts-with>
+                    <expression>{/*</expression>
+                </starts-with>
+                <ends-with>
+                    <expression>*/}</expression>
+                </ends-with>
+            </multiline>
+        </conditional>
+    </comments>
+    
+    <autoclosing-pairs>
+        <pair open="{" close="}" />
+        <pair open="[" close="]" />
+        <pair open="(" close=")" />
+        <pair open="&apos;" close="&apos;" notIn="string,regex,comment" />
+        <pair open="&quot;" close="&quot;" notIn="string,regex" />
+        <pair open="`" close="`" notIn="string,regex,comment" />
+        <pair open="“" close="”" notIn="string,regex" />
+        <pair open="‘" close="’" notIn="string,regex,comment" />
+        <pair open="/**" close=" */" notIn="string,regex,comment" />
+    </autoclosing-pairs>
+    
+    <surrounding-pairs>
+        <pair open="{" close="}" />
+        <pair open="[" close="]" />
+        <pair open="(" close=")" />
+        <pair open="&apos;" close="&apos;" />
+        <pair open="&quot;" close="&quot;" />
+        <pair open="`" close="`" />
+        <pair open="“" close="”" />
+        <pair open="‘" close="’" />
+        <pair open="&lt;" close="&gt;" />
+    </surrounding-pairs>
+    
+    <injection>
+        <expression>^(tsx|TSX|typescript-react)$</expression>
+    </injection>
+    
+    <tree-sitter>
+        <highlights path="javascript/highlights-shared.scm" />
+        <highlights path="typescript/highlights.scm" />
+        <highlights path="javascript/highlights-jsx.scm" />
+        <injections path="javascript/injections.scm" />
+        <folds path="javascript/folds.scm" />
+        <folds path="javascript/folds-jsx.scm" />
+        <symbols path="typescript/symbols.scm" />
+        <symbols path="typescript/symbols-tsx.scm" />
+    </tree-sitter>
+</syntax>

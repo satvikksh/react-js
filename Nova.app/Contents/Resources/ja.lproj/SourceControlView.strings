@@ -1,0 +1,39 @@
+
+/* Class = "NSTextFieldCell"; title = "<<x>>"; ObjectID = "0Vq-5K-lcD"; */
+"0Vq-5K-lcD.title" = "<<x>>";
+
+/* Class = "NSTextFieldCell"; title = "<<x>>"; ObjectID = "0gh-T7-K9Y"; */
+"0gh-T7-K9Y.title" = "<<x>>";
+
+/* Class = "NSTextFieldCell"; title = "<<PlaceholderTitle>>"; ObjectID = "61l-FX-tJv"; */
+"61l-FX-tJv.title" = "<<PlaceholderTitle>>";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Branch"; ObjectID = "6Wi-9K-MdB"; */
+"6Wi-9K-MdB.ibExternalAccessibilityDescription" = "ブランチ";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Set the current branch or reference"; ObjectID = "6Wi-9K-MdB"; */
+"6Wi-9K-MdB.ibShadowedToolTip" = "現在のブランチまたは参照を選択します";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Fetch"; ObjectID = "9HU-Ws-YVh"; */
+"9HU-Ws-YVh.ibShadowedToolTip" = "フェッチ";
+
+/* Class = "NSMenuItem"; title = "<<Branch>>"; ObjectID = "EfD-yr-U6d"; */
+"EfD-yr-U6d.title" = "<<Branch>>";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Push"; ObjectID = "FLP-M2-NM1"; */
+"FLP-M2-NM1.ibShadowedToolTip" = "プッシュ";
+
+/* Class = "NSMenuItem"; title = "<<Repository>>"; ObjectID = "NRe-Ew-Plu"; */
+"NRe-Ew-Plu.title" = "<<Repository>>";
+
+/* Class = "NSButtonCell"; title = "<<PlaceholderAction>>"; ObjectID = "cMb-IL-D5t"; */
+"cMb-IL-D5t.title" = "<<PlaceholderAction>>";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Branch"; ObjectID = "dCY-FK-kcu"; */
+"dCY-FK-kcu.ibExternalAccessibilityDescription" = "ブランチ";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Set the current branch or reference"; ObjectID = "dCY-FK-kcu"; */
+"dCY-FK-kcu.ibShadowedToolTip" = "現在のブランチまたは参照を選択します";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Pull"; ObjectID = "gG5-zA-Ptu"; */
+"gG5-zA-Ptu.ibShadowedToolTip" = "プル";

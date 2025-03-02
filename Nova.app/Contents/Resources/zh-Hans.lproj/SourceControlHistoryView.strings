@@ -1,0 +1,57 @@
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "2MI-lQ-8UK"; */
+"2MI-lQ-8UK.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Checkout Commit…"; ObjectID = "4lB-dp-j8N"; */
+"4lB-dp-j8N.title" = "签出提交…";
+
+/* Class = "NSSearchFieldCell"; placeholderString = "Filter"; ObjectID = "9tR-2G-InI"; */
+"9tR-2G-InI.placeholderString" = "筛选器";
+
+/* Class = "NSTextFieldCell"; title = "…"; ObjectID = "B6b-rL-RTB"; */
+"B6b-rL-RTB.title" = "…";
+
+/* Class = "NSTextFieldCell"; title = "<<Date>>"; ObjectID = "BwU-Yk-Sen"; */
+"BwU-Yk-Sen.title" = "<<Date>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "action button"; ObjectID = "GDU-dT-oop"; */
+"GDU-dT-oop.ibExternalAccessibilityDescription" = "操作按钮";
+
+/* Class = "NSTextFieldCell"; title = "<<Summary>>"; ObjectID = "Rpn-A7-AMM"; */
+"Rpn-A7-AMM.title" = "<<Summary>>";
+
+/* Class = "NSMenuItem"; title = "Copy SHA"; ObjectID = "SGv-YT-gtI"; */
+"SGv-YT-gtI.title" = "拷贝 SHA";
+
+/* Class = "NSTextFieldCell"; title = "<<Summary>>"; ObjectID = "T3t-ph-2OG"; */
+"T3t-ph-2OG.title" = "<<Summary>>";
+
+/* Class = "NSMenuItem"; title = "Create New Branch…"; ObjectID = "W9q-Cb-5Qy"; */
+"W9q-Cb-5Qy.title" = "创建新分支…";
+
+/* Class = "NSMenuItem"; title = "Copy Short SHA"; ObjectID = "dal-1b-mTX"; */
+"dal-1b-mTX.title" = "拷贝短 SHA";
+
+/* Class = "NSTextFieldCell"; title = "<<ShortSHA>>"; ObjectID = "hYY-Ph-bTB"; */
+"hYY-Ph-bTB.title" = "<<ShortSHA>>";
+
+/* Class = "NSTextFieldCell"; title = "<<ShortSHA>>"; ObjectID = "iTZ-Gr-t6z"; */
+"iTZ-Gr-t6z.title" = "<<ShortSHA>>";
+
+/* Class = "NSTextFieldCell"; title = "…"; ObjectID = "m1x-Ti-i0o"; */
+"m1x-Ti-i0o.title" = "…";
+
+/* Class = "NSMenuItem"; title = "Cherry-Pick Commit…"; ObjectID = "rEN-2i-NfG"; */
+"rEN-2i-NfG.title" = "优选提交…";
+
+/* Class = "NSMenuItem"; title = "Create New Tag…"; ObjectID = "und-o9-SmJ"; */
+"und-o9-SmJ.title" = "创建新标签…";
+
+/* Class = "NSSearchField"; ibExternalAccessibilityDescription = "Clips filter"; ObjectID = "xDE-Bj-0v3"; */
+"xDE-Bj-0v3.ibExternalAccessibilityDescription" = "剪辑过滤器";
+
+/* Class = "NSSearchField"; ibShadowedToolTip = "Show files with matching name"; ObjectID = "xDE-Bj-0v3"; */
+"xDE-Bj-0v3.ibShadowedToolTip" = "显示有匹配名称的文件";
+
+/* Class = "NSTextFieldCell"; title = "<<Date>>"; ObjectID = "yLw-dW-q3V"; */
+"yLw-dW-q3V.title" = "<<Date>>";

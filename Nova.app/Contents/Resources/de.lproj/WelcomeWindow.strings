@@ -1,0 +1,165 @@
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "01p-nB-1GO"; */
+"01p-nB-1GO.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Click the \"Add Project…\" button or drag a folder here to add your projects for quick access."; ObjectID = "1AA-e9-EWE"; */
+"1AA-e9-EWE.title" = "Klicken Sie auf die Taste „Projekt hinzufügen …“ oder ziehen Sie einen Ordner hierher, um Ihre Projekte für den Schnellzugriff hinzuzufügen.";
+
+/* Class = "NSButtonCell"; title = "Open…"; ObjectID = "1u5-tb-Pw2"; */
+"1u5-tb-Pw2.title" = "Öffnen …";
+
+/* Class = "NSTextFieldCell"; title = "<<n>>"; ObjectID = "1wy-cz-CdG"; */
+"1wy-cz-CdG.title" = "<<n>>";
+
+/* Class = "NSTextFieldCell"; title = "Source Control:"; ObjectID = "6Y8-ke-rGR"; */
+"6Y8-ke-rGR.title" = "Quellcodeverwaltung:";
+
+/* Class = "NSPopoverTouchBarItem"; collapsedRepresentationLabel = "New Project"; ObjectID = "85e-J5-kx9"; */
+"85e-J5-kx9.collapsedRepresentationLabel" = "Neues Projekt";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "List view"; ObjectID = "9mn-Mg-X1o"; */
+"9mn-Mg-X1o.ibExternalAccessibilityDescription" = "Listendarstellung";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Switch to list view"; ObjectID = "9mn-Mg-X1o"; */
+"9mn-Mg-X1o.ibShadowedToolTip" = "Zur Listendarstellung wechseln";
+
+/* Class = "NSButtonCell"; title = "New Document"; ObjectID = "9sM-mB-i0m"; */
+"9sM-mB-i0m.title" = "Neues Dokument";
+
+/* Class = "NSMenuItem"; title = "Remove from Projects"; ObjectID = "ASJ-9C-uae"; */
+"ASJ-9C-uae.title" = "Von Projekten entfernen";
+
+/* Class = "NSButtonCell"; title = "<<Back>>"; ObjectID = "ETg-9f-zOo"; */
+"ETg-9f-zOo.title" = "<<Back>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "All projects"; ObjectID = "EYH-Q2-l9p"; */
+"EYH-Q2-l9p.ibExternalAccessibilityDescription" = "Alle Projekte";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show all projects ⌘1"; ObjectID = "EYH-Q2-l9p"; */
+"EYH-Q2-l9p.ibShadowedToolTip" = "Alle Projekte anzeigen ⌘1";
+
+/* Class = "NSMenuItem"; title = "Server Settings…"; ObjectID = "EjX-Tn-RFb"; */
+"EjX-Tn-RFb.title" = "Servereinstellungen …";
+
+/* Class = "NSButtonCell"; title = "Clone…"; ObjectID = "FP1-QD-bqM"; */
+"FP1-QD-bqM.title" = "Git-Repository klonen …";
+
+/* Class = "NSButtonCell"; title = "Create Remote Project"; ObjectID = "FzC-qf-taP"; */
+"FzC-qf-taP.title" = "Entferntes Projekt erstellen";
+
+/* Class = "NSMenuItem"; title = "Server Settings…"; ObjectID = "MTB-Z5-j6H"; */
+"MTB-Z5-j6H.title" = "Servereinstellungen …";
+
+/* Class = "NSButtonCell"; title = "Initialize as a new Git repository"; ObjectID = "Myl-oV-Jm8"; */
+"Myl-oV-Jm8.title" = "Als neues Git-Repository initialisieren";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "NXc-Pr-qu4"; */
+"NXc-Pr-qu4.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "Clone Repository…"; ObjectID = "Q0J-8d-oPc"; */
+"Q0J-8d-oPc.title" = "Repository klonen …";
+
+/* Class = "NSButtonCell"; title = "Open…"; ObjectID = "QNX-ne-Z4i"; */
+"QNX-ne-Z4i.title" = "Öffnen …";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Icon view"; ObjectID = "QgA-0R-gZg"; */
+"QgA-0R-gZg.ibExternalAccessibilityDescription" = "Symboldarstellung";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Switch to icon view"; ObjectID = "QgA-0R-gZg"; */
+"QgA-0R-gZg.ibShadowedToolTip" = "Zur Symboldarstellung wechseln";
+
+/* Class = "NSSlider"; ibExternalAccessibilityDescription = "Icon size"; ObjectID = "TDN-Zb-c6z"; */
+"TDN-Zb-c6z.ibExternalAccessibilityDescription" = "Symbolgröße";
+
+/* Class = "NSSlider"; ibShadowedToolTip = "Adjust size of icons"; ObjectID = "TDN-Zb-c6z"; */
+"TDN-Zb-c6z.ibShadowedToolTip" = "Größe von Symbolen anpassen";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "Ti2-56-oXY"; */
+"Ti2-56-oXY.title" = "Abbrechen";
+
+/* Class = "NSMenu"; title = "Arrange By"; ObjectID = "Yuo-9e-U3q"; */
+"Yuo-9e-U3q.title" = "Ausrichten nach";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "New Project Group"; ObjectID = "aCd-Js-dcO"; */
+"aCd-Js-dcO.ibExternalAccessibilityDescription" = "Neue Projektgruppe";
+
+/* Class = "NSButton"; ibShadowedToolTip = "New Project Group"; ObjectID = "aCd-Js-dcO"; */
+"aCd-Js-dcO.ibShadowedToolTip" = "Neue Projektgruppe";
+
+/* Class = "NSMenuItem"; title = "Edit…"; ObjectID = "aUu-rU-Z6A"; */
+"aUu-rU-Z6A.title" = "Bearbeiten …";
+
+/* Class = "NSMenuItem"; title = "Arrange By"; ObjectID = "aXp-cW-C1a"; */
+"aXp-cW-C1a.title" = "Ausrichten nach";
+
+/* Class = "NSTextFieldCell"; title = "<<Group>>"; ObjectID = "c9V-60-ZME"; */
+"c9V-60-ZME.title" = "<<Group>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Cell>>"; ObjectID = "czK-yb-sY3"; */
+"czK-yb-sY3.title" = "Table View Cell";
+
+/* Class = "NSButtonCell"; title = "Add Project…"; ObjectID = "e2p-lT-JDH"; */
+"e2p-lT-JDH.title" = "Neues Projekt …";
+
+/* Class = "NSMenuItem"; title = "Show in Finder"; ObjectID = "eR6-OL-hJI"; */
+"eR6-OL-hJI.title" = "Im Finder anzeigen";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "f0V-Uv-Aps"; */
+"f0V-Uv-Aps.title" = "Name";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Close"; ObjectID = "gt3-Ez-OiG"; */
+"gt3-Ez-OiG.ibExternalAccessibilityDescription" = "Schließen";
+
+/* Class = "NSTableColumn"; headerCell.title = "Last Opened"; ObjectID = "hPa-0f-Jc1"; */
+"hPa-0f-Jc1.headerCell.title" = "Zuletzt geöffnet";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Local projects only"; ObjectID = "hfj-MD-9BU"; */
+"hfj-MD-9BU.ibExternalAccessibilityDescription" = "Nur lokale Projekte";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show remote projects only ⌘3"; ObjectID = "hfj-MD-9BU"; */
+"hfj-MD-9BU.ibShadowedToolTip" = "Nur entfernte Projekte anzeigen ⌘3";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "hoI-MT-cIv"; */
+"hoI-MT-cIv.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Open"; ObjectID = "kAJ-kv-FRt"; */
+"kAJ-kv-FRt.title" = "Öffnen";
+
+/* Class = "NSTextFieldCell"; title = "<<Location>>"; ObjectID = "lf2-98-en8"; */
+"lf2-98-en8.title" = "<<Location>>";
+
+/* Class = "NSTableColumn"; headerCell.title = "Name"; ObjectID = "lnP-gE-J3r"; */
+"lnP-gE-J3r.headerCell.title" = "Name";
+
+/* Class = "NSTableColumn"; headerCell.title = "Location"; ObjectID = "mbr-mz-TTH"; */
+"mbr-mz-TTH.headerCell.title" = "Ort";
+
+/* Class = "NSMenuItem"; title = "Show in Finder"; ObjectID = "n4e-R2-r4L"; */
+"n4e-R2-r4L.title" = "Im Finder anzeigen";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Remote projects only"; ObjectID = "nAA-M5-nrX"; */
+"nAA-M5-nrX.ibExternalAccessibilityDescription" = "Nur entfernte Projekte";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show local projects only ⌘2"; ObjectID = "nAA-M5-nrX"; */
+"nAA-M5-nrX.ibShadowedToolTip" = "Nur lokale Projekte anzeigen ⌘2";
+
+/* Class = "NSMenuItem"; title = "Open"; ObjectID = "nll-87-WjA"; */
+"nll-87-WjA.title" = "Öffnen";
+
+/* Class = "NSMenuItem"; title = "Last Access Time"; ObjectID = "oPk-MC-SMt"; */
+"oPk-MC-SMt.title" = "Zeit des letzten Zugriffs";
+
+/* Class = "NSMenuItem"; title = "Name"; ObjectID = "pJ3-LW-05h"; */
+"pJ3-LW-05h.title" = "Name";
+
+/* Class = "NSMenuItem"; title = "Remove from Projects"; ObjectID = "qKY-og-Rd6"; */
+"qKY-og-Rd6.title" = "Von Projekten entfernen";
+
+/* Class = "NSWindow"; title = "Launcher"; ObjectID = "uGH-q1-iCh"; */
+"uGH-q1-iCh.title" = "Fenster";
+
+/* Class = "NSButtonCell"; title = "New Folder…"; ObjectID = "vNw-GB-cN4"; */
+"vNw-GB-cN4.title" = "Neuer Ordner …";
+
+/* Class = "NSSearchField"; ibExternalAccessibilityDescription = "Search"; ObjectID = "y0m-U1-wBB"; */
+"y0m-U1-wBB.ibExternalAccessibilityDescription" = "Suchen";

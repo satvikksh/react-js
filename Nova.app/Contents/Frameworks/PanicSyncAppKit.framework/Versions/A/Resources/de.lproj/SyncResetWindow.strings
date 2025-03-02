@@ -1,0 +1,30 @@
+
+/* Class = "NSTextFieldCell"; title = "This computer is syncing with Panic Sync for the first time.\nHow would you like to handle the information this computer?"; ObjectID = "2AU-fw-HsL"; */
+"2AU-fw-HsL.title" = "Dieser Computer synchronisiert zum ersten Mal mit Panic Sync.\nWie sollen die Daten auf diesem Computer verarbeitet werden?";
+
+/* Class = "NSTextFieldCell"; title = "First Time Sync"; ObjectID = "I22-UJ-Wwb"; */
+"I22-UJ-Wwb.title" = "Erste Synchronisierung";
+
+/* Class = "NSWindow"; title = "Panic Sync"; ObjectID = "QvC-M9-y7g"; */
+"QvC-M9-y7g.title" = "Panic Sync";
+
+/* Class = "NSMenuItem"; title = "Merge Data"; ObjectID = "ZdX-PO-nMA"; */
+"ZdX-PO-nMA.title" = "Daten zusammenführen";
+
+/* Class = "NSMenuItem"; title = "Replace Data in Panic Sync"; ObjectID = "dY5-wJ-Pc6"; */
+"dY5-wJ-Pc6.title" = "Daten in Panic Sync ersetzen";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "giu-JI-CmZ"; */
+"giu-JI-CmZ.title" = "OtherViews";
+
+/* Class = "NSButtonCell"; title = "Sync"; ObjectID = "mYO-eU-wOJ"; */
+"mYO-eU-wOJ.title" = "Synchronisieren";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "oOV-oC-umr"; */
+"oOV-oC-umr.title" = "Abbrechen";
+
+/* Class = "NSTextFieldCell"; title = "For This Sync:"; ObjectID = "zbX-Or-4jC"; */
+"zbX-Or-4jC.title" = "Für diese Synchronisierung:";
+
+/* Class = "NSMenuItem"; title = "Replace Data on This Mac"; ObjectID = "zwx-Eg-QUW"; */
+"zwx-Eg-QUW.title" = "Daten auf diesem Mac ersetzen";

@@ -1,0 +1,66 @@
+
+/* Class = "NSMenu"; title = "Arrange By"; ObjectID = "1Vm-vl-zPd"; */
+"1Vm-vl-zPd.title" = "排列方式";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "edit server button"; ObjectID = "2ur-Ze-Igp"; */
+"2ur-Ze-Igp.ibExternalAccessibilityDescription" = "编辑服务器按钮";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Edit server"; ObjectID = "2ur-Ze-Igp"; */
+"2ur-Ze-Igp.ibShadowedToolTip" = "编辑服务器";
+
+/* Class = "NSMenuItem"; title = "Address"; ObjectID = "ATs-0N-Fz4"; */
+"ATs-0N-Fz4.title" = "地址";
+
+/* Class = "NSMenuItem"; title = "Name"; ObjectID = "R1W-3q-Pn2"; */
+"R1W-3q-Pn2.title" = "名称";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "new server folder button"; ObjectID = "SiT-vg-dLQ"; */
+"SiT-vg-dLQ.ibExternalAccessibilityDescription" = "新服务器文件夹按钮";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Add new folder"; ObjectID = "SiT-vg-dLQ"; */
+"SiT-vg-dLQ.ibShadowedToolTip" = "添加新文件夹";
+
+/* Class = "NSMenuItem"; title = "Duplicate"; ObjectID = "TNZ-hQ-5PP"; */
+"TNZ-hQ-5PP.title" = "复制";
+
+/* Class = "NSMenuItem"; title = "Delete…"; ObjectID = "UCS-mz-icV"; */
+"UCS-mz-icV.title" = "删除…";
+
+/* Class = "NSMenuItem"; title = "Arrange By"; ObjectID = "anD-hN-b2P"; */
+"anD-hN-b2P.title" = "排列方式";
+
+/* Class = "NSTextFieldCell"; title = "Create a Server by clicking the \"+\" button below."; ObjectID = "c7S-L0-OKc"; */
+"c7S-L0-OKc.title" = "点按下面的 “+”按钮创建一个服务器。";
+
+/* Class = "NSMenuItem"; title = "Edit…"; ObjectID = "dvC-5P-AGn"; */
+"dvC-5P-AGn.title" = "编辑…";
+
+/* Class = "NSMenuItem"; title = "Export Servers…"; ObjectID = "egD-9l-2wb"; */
+"egD-9l-2wb.title" = "导出服务器…";
+
+/* Class = "NSTextFieldCell"; title = "Group Name"; ObjectID = "exk-Yq-EiD"; */
+"exk-Yq-EiD.title" = "群组名称";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "additional server actions button"; ObjectID = "hVd-kO-vKF"; */
+"hVd-kO-vKF.ibExternalAccessibilityDescription" = "更多的服务器操作按钮";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Additional server actions"; ObjectID = "hVd-kO-vKF"; */
+"hVd-kO-vKF.ibShadowedToolTip" = "更多的服务器操作";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "new server button"; ObjectID = "ndC-Gg-ka0"; */
+"ndC-Gg-ka0.ibExternalAccessibilityDescription" = "新服务器按钮";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Add new server"; ObjectID = "ndC-Gg-ka0"; */
+"ndC-Gg-ka0.ibShadowedToolTip" = "添加新服务器";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "rfG-Xr-Wgy"; */
+"rfG-Xr-Wgy.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Host"; ObjectID = "s9b-J3-TP1"; */
+"s9b-J3-TP1.title" = "主机";
+
+/* Class = "NSMenuItem"; title = "Import Servers…"; ObjectID = "tvv-Je-VH5"; */
+"tvv-Je-VH5.title" = "导入服务器…";
+
+/* Class = "NSTextFieldCell"; title = "Name"; ObjectID = "z81-2K-sCd"; */
+"z81-2K-sCd.title" = "名称";

@@ -1,0 +1,240 @@
+
+/* Class = "NSTextFieldCell"; title = "Bright"; ObjectID = "21b-rk-Ypu"; */
+"21b-rk-Ypu.title" = "Hell";
+
+/* Class = "NSTextFieldCell"; title = "Black"; ObjectID = "3Is-cY-0Ww"; */
+"3Is-cY-0Ww.title" = "Schwarz";
+
+/* Class = "NSTextFieldCell"; title = "Text"; ObjectID = "3Ou-Xj-BWP"; */
+"3Ou-Xj-BWP.title" = "Text";
+
+/* Class = "NSButtonCell"; title = "Dimensions"; ObjectID = "4Ep-6q-1Fr"; */
+"4Ep-6q-1Fr.title" = "Abmessungen";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "5cK-1F-Ud2"; */
+"5cK-1F-Ud2.title" = "Table View Cell";
+
+/* Class = "NSMenuItem"; title = "Default Working Directory"; ObjectID = "5kE-bJ-mx5"; */
+"5kE-bJ-mx5.title" = "Standard-Arbeitsverzeichnis";
+
+/* Class = "NSButtonCell"; title = "Send Mouse Events"; ObjectID = "6Sm-sP-aYA"; */
+"6Sm-sP-aYA.title" = "Mausereignisse senden";
+
+/* Class = "NSTextFieldCell"; title = "Prompt before closing:"; ObjectID = "7dc-Kv-hEb"; */
+"7dc-Kv-hEb.title" = "Vor dem Schließen\nnachfragen:";
+
+/* Class = "NSTextFieldCell"; title = "Yellow"; ObjectID = "7iW-af-ZS9"; */
+"7iW-af-ZS9.title" = "Gelb";
+
+/* Class = "NSMenuItem"; title = "<<Style>>"; ObjectID = "7pm-HP-mfo"; */
+"7pm-HP-mfo.title" = "<<Style>>";
+
+/* Class = "NSTextFieldCell"; title = "Bold Text"; ObjectID = "9TL-2w-U4C"; */
+"9TL-2w-U4C.title" = "Fetter Text";
+
+/* Class = "NSTextFieldCell"; title = "Magenta"; ObjectID = "A0Y-Q1-Ggq"; */
+"A0Y-Q1-Ggq.title" = "Magenta";
+
+/* Class = "NSMenuItem"; title = "Same as Editor"; ObjectID = "ATP-BN-eXT"; */
+"ATP-BN-eXT.title" = "Identisch mit Editor";
+
+/* Class = "NSStepper"; ibExternalAccessibilityDescription = "Font Size"; ObjectID = "Afi-L1-obk"; */
+"Afi-L1-obk.ibExternalAccessibilityDescription" = "Textgröße";
+
+/* Class = "NSButtonCell"; title = "Shell Name"; ObjectID = "B50-n5-ppX"; */
+"B50-n5-ppX.title" = "Shell-Name";
+
+/* Class = "NSButtonCell"; title = "Only if there are processes other than:"; ObjectID = "B9A-X0-Ls6"; */
+"B9A-X0-Ls6.title" = "Nur wenn es andere Prozesse gibt als:";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "BfG-xI-MuS"; */
+"BfG-xI-MuS.title" = "Table View Cell";
+
+/* Class = "NSMenuItem"; title = "Same as Window"; ObjectID = "Cjy-a9-a3o"; */
+"Cjy-a9-a3o.title" = "Identisch mit Fenster";
+
+/* Class = "NSButtonCell"; title = "Use GPU acceleration"; ObjectID = "D8e-B8-Nm7"; */
+"D8e-B8-Nm7.title" = "GPU-Beschleunigung verwenden";
+
+/* Class = "NSTextFieldCell"; title = "Basic Colors"; ObjectID = "DWS-5w-8km"; */
+"DWS-5w-8km.title" = "Grundfarben";
+
+/* Class = "NSTextFieldCell"; title = "Cyan"; ObjectID = "DYD-iP-fXM"; */
+"DYD-iP-fXM.title" = "Zyan";
+
+/* Class = "NSButtonCell"; title = "TTY Name"; ObjectID = "ED8-wP-GD7"; */
+"ED8-wP-GD7.title" = "TTY-Name";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Font Family"; ObjectID = "F14-y8-FQV"; */
+"F14-y8-FQV.ibExternalAccessibilityDescription" = "Schriftfamilie";
+
+/* Class = "NSMenuItem"; title = "Same Working Directory"; ObjectID = "KtC-35-T33"; */
+"KtC-35-T33.title" = "Gleichem Arbeitsverzeichnis";
+
+/* Class = "NSTextFieldCell"; title = "Blue"; ObjectID = "LwY-MT-5cl"; */
+"LwY-MT-5cl.title" = "Blau";
+
+/* Class = "NSComboBoxCell"; placeholderString = "xterm-256color"; ObjectID = "MeG-BJ-V79"; */
+"MeG-BJ-V79.placeholderString" = "xterm-256color";
+
+/* Class = "NSComboBoxCell"; MeG-BJ-V79.ibShadowedObjectValues[0] = "Item 1"; ObjectID = "MeG-BJ-V79"; */
+"MeG-BJ-V79.ibShadowedObjectValues[0]" = "Item 1";
+
+/* Class = "NSComboBoxCell"; MeG-BJ-V79.ibShadowedObjectValues[1] = "Item 2"; ObjectID = "MeG-BJ-V79"; */
+"MeG-BJ-V79.ibShadowedObjectValues[1]" = "Item 2";
+
+/* Class = "NSComboBoxCell"; MeG-BJ-V79.ibShadowedObjectValues[2] = "Item 3"; ObjectID = "MeG-BJ-V79"; */
+"MeG-BJ-V79.ibShadowedObjectValues[2]" = "Item 3";
+
+/* Class = "NSButtonCell"; title = "Use Option as Meta key"; ObjectID = "NQJ-ed-d3Y"; */
+"NQJ-ed-d3Y.title" = "Wahltaste als Meta-Taste verwenden";
+
+/* Class = "NSTextFieldCell"; title = "Declare terminal as:"; ObjectID = "NgQ-qQ-cli"; */
+"NgQ-qQ-cli.title" = "Terminal angeben:";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "NzF-DB-5dH"; */
+"NzF-DB-5dH.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "Detect URLs"; ObjectID = "ODm-qf-YBg"; */
+"ODm-qf-YBg.title" = "URLs erkennen";
+
+/* Class = "NSTextFieldCell"; title = "New terminals open with:"; ObjectID = "OhV-UJ-5cy"; */
+"OhV-UJ-5cy.title" = "Neue Terminals öffnen mit:";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Font Style"; ObjectID = "PIy-Bw-9yH"; */
+"PIy-Bw-9yH.ibExternalAccessibilityDescription" = "Schriftstil";
+
+/* Class = "NSButtonCell"; title = "Always"; ObjectID = "PmF-DT-H8f"; */
+"PmF-DT-H8f.title" = "Immer";
+
+/* Class = "NSButtonCell"; title = "Show Activity Indicator"; ObjectID = "QfK-Bu-Y6X"; */
+"QfK-Bu-Y6X.title" = "Aktivitätsanzeige anzeigen";
+
+/* Class = "NSTabViewItem"; label = "Advanced"; ObjectID = "RFm-yv-Btz"; */
+"RFm-yv-Btz.label" = "Erweitert";
+
+/* Class = "NSTextFieldCell"; title = "ANSI Colors"; ObjectID = "RdK-ML-02l"; */
+"RdK-ML-02l.title" = "ANSI-Farben";
+
+/* Class = "NSMenuItem"; title = "<<Family>>"; ObjectID = "RkH-G3-5NW"; */
+"RkH-G3-5NW.title" = "<<Family>>";
+
+/* Class = "NSButtonCell"; title = "Active Process Name"; ObjectID = "S6y-9R-tEu"; */
+"S6y-9R-tEu.title" = "Aktiver Prozess – Name";
+
+/* Class = "NSButtonCell"; title = "Visual"; ObjectID = "SzA-HO-GgI"; */
+"SzA-HO-GgI.title" = "Visueller Effekt";
+
+/* Class = "NSComboBoxCell"; placeholderString = "/bin/zsh"; ObjectID = "TPb-AZ-edP"; */
+"TPb-AZ-edP.placeholderString" = "/bin/zsh";
+
+/* Class = "NSButtonCell"; title = "Arguments"; ObjectID = "Tqy-r7-PLT"; */
+"Tqy-r7-PLT.title" = "Argumente";
+
+/* Class = "NSTextFieldCell"; title = "Cursor"; ObjectID = "U2s-TP-bzz"; */
+"U2s-TP-bzz.title" = "Cursor";
+
+/* Class = "NSTextFieldCell"; title = "Font:"; ObjectID = "UkX-Ek-bOY"; */
+"UkX-Ek-bOY.title" = "Schrift:";
+
+/* Class = "NSButtonCell"; title = "Use Bold Fonts"; ObjectID = "VOi-3L-1Ir"; */
+"VOi-3L-1Ir.title" = "Fette Schriften verwenden";
+
+/* Class = "NSTextFieldCell"; title = "Normal"; ObjectID = "W7D-n5-Tck"; */
+"W7D-n5-Tck.title" = "Normal";
+
+/* Class = "NSButtonCell"; title = "Detect local files"; ObjectID = "WSU-4m-3HY"; */
+"WSU-4m-3HY.title" = "Lokale Dateien erkennen";
+
+/* Class = "NSTextFieldCell"; title = "Beep Style:"; ObjectID = "a1i-pi-WKN"; */
+"a1i-pi-WKN.title" = "Signalstil:";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "ao9-oy-Qwu"; */
+"ao9-oy-Qwu.title" = "Text Cell";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Font Size"; ObjectID = "b9i-X9-Zvc"; */
+"b9i-X9-Zvc.ibExternalAccessibilityDescription" = "Textgröße";
+
+/* Class = "NSMenuItem"; title = "Apply Theme"; ObjectID = "bIu-qE-Hrb"; */
+"bIu-qE-Hrb.title" = "Thema anwenden";
+
+/* Class = "NSTextFieldCell"; title = "White"; ObjectID = "bMe-ls-mMq"; */
+"bMe-ls-mMq.title" = "Weiß";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "c68-Yf-3A4"; */
+"c68-Yf-3A4.title" = "Table View Cell";
+
+/* Class = "NSButtonCell"; title = "Smooth terminal font"; ObjectID = "cLd-4J-eg5"; */
+"cLd-4J-eg5.title" = "Terminalschrift glätten";
+
+/* Class = "NSTableColumn"; headerCell.title = "Key"; ObjectID = "csK-JZ-YZD"; */
+"csK-JZ-YZD.headerCell.title" = "Schlüssel";
+
+/* Class = "NSTextFieldCell"; title = "Green"; ObjectID = "dCC-pt-G5q"; */
+"dCC-pt-G5q.title" = "Grün";
+
+/* Class = "NSButtonCell"; title = "Restore Defaults"; ObjectID = "gV0-Zv-QT8"; */
+"gV0-Zv-QT8.title" = "Standardeinstellungen wiederherstellen";
+
+/* Class = "NSButtonCell"; title = "Never"; ObjectID = "h8n-jo-OtK"; */
+"h8n-jo-OtK.title" = "Nie";
+
+/* Class = "NSTextFieldCell"; title = "Not all title items apply to remote terminals, which can be dependent on your server configuration."; ObjectID = "hnn-0e-Avc"; */
+"hnn-0e-Avc.title" = "Nicht alle Titelobjekte gelten für entfernte Terminals, die von der Serverkonfiguration abhängig sein können.";
+
+/* Class = "NSTabViewItem"; label = "Keyboard"; ObjectID = "iRS-OK-113"; */
+"iRS-OK-113.label" = "Tastatur";
+
+/* Class = "NSTextFieldCell"; title = "Options:"; ObjectID = "jxU-6p-zTq"; */
+"jxU-6p-zTq.title" = "Optionen:";
+
+/* Class = "NSButtonCell"; title = "Working Directory"; ObjectID = "kN9-Bi-6vz"; */
+"kN9-Bi-6vz.title" = "Arbeitsverzeichnis";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "lXv-KF-9Dc"; */
+"lXv-KF-9Dc.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Local Shell:"; ObjectID = "lvG-4b-DrE"; */
+"lvG-4b-DrE.title" = "Lokale Shell:";
+
+/* Class = "NSTabViewItem"; label = "General"; ObjectID = "m8N-Aw-10z"; */
+"m8N-Aw-10z.label" = "Allgemein";
+
+/* Class = "NSButtonCell"; title = "Auditory"; ObjectID = "nz7-OJ-i8f"; */
+"nz7-OJ-i8f.title" = "Warnton";
+
+/* Class = "NSTextFieldCell"; title = "Title:"; ObjectID = "oPV-wr-HXU"; */
+"oPV-wr-HXU.title" = "Titel:";
+
+/* Class = "NSMenuItem"; title = "Custom"; ObjectID = "p9z-jw-lge"; */
+"p9z-jw-lge.title" = "Angepasst";
+
+/* Class = "NSButtonCell"; title = "Delete sends Control-H"; ObjectID = "qhP-UK-Ot4"; */
+"qhP-UK-Ot4.title" = "Entf.-Taste sendet ctrl-H";
+
+/* Class = "NSTabViewItem"; label = "Theme"; ObjectID = "r5S-bC-n7E"; */
+"r5S-bC-n7E.label" = "Thema";
+
+/* Class = "NSTableColumn"; headerCell.title = "Action"; ObjectID = "rKc-V8-sIP"; */
+"rKc-V8-sIP.headerCell.title" = "Aktion";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "vlg-my-1Sy"; */
+"vlg-my-1Sy.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "weX-47-lub"; */
+"weX-47-lub.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "Red"; ObjectID = "yFm-5T-Zux"; */
+"yFm-5T-Zux.title" = "Rot";
+
+/* Class = "NSButtonCell"; title = "Text Glow"; ObjectID = "yH4-YS-bEc"; */
+"yH4-YS-bEc.title" = "Textglühen";
+
+/* Class = "NSTextFieldCell"; title = "Theme:"; ObjectID = "ygj-m8-tad"; */
+"ygj-m8-tad.title" = "Thema:";
+
+/* Class = "NSButtonCell"; title = "Violet"; ObjectID = "yoF-Uj-xeo"; */
+"yoF-Uj-xeo.title" = "Violett";
+
+/* Class = "NSTextFieldCell"; title = "Background"; ObjectID = "zn9-uW-fMv"; */
+"zn9-uW-fMv.title" = "Hintergrund";

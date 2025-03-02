@@ -1,0 +1,48 @@
+
+/* Class = "NSTextFieldCell"; title = "Control characters appear as a backslash followed by three octal digits. A backslash will appear as double backslashes."; ObjectID = "0sg-dg-1gY"; */
+"0sg-dg-1gY.title" = "制御文字はバックスラッシュと3桁の8進数で表示されます。バックスラッシュは2つのバックスラッシュで表示されます。";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "2Li-ac-Oyf"; */
+"2Li-ac-Oyf.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "9hq-nD-N2b"; */
+"9hq-nD-N2b.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "AJc-p9-mbR"; */
+"AJc-p9-mbR.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "Modifier:"; ObjectID = "EHJ-pR-7tx"; */
+"EHJ-pR-7tx.title" = "修飾キー:";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "OMR-uX-ebC"; */
+"OMR-uX-ebC.title" = "Item 3";
+
+/* Class = "NSButtonCell"; title = "Delete One Character"; ObjectID = "PDA-77-XLN"; */
+"PDA-77-XLN.title" = "1文字削除";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "Qzc-6P-J5f"; */
+"Qzc-6P-J5f.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "Action:"; ObjectID = "StC-tF-Z4Q"; */
+"StC-tF-Z4Q.title" = "アクション:";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "ae4-mN-WY8"; */
+"ae4-mN-WY8.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "bpv-kk-ssm"; */
+"bpv-kk-ssm.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "ixU-z3-T8t"; */
+"ixU-z3-T8t.title" = "Item 2";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "khf-Yn-d1C"; */
+ "khf-Yn-d1C.title" = "OK";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "vaw-Wp-weB"; */
+"vaw-Wp-weB.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "Key:"; ObjectID = "wjH-g7-SEi"; */
+"wjH-g7-SEi.title" = "キー:";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "wtc-Iv-MJU"; */
+"wtc-Iv-MJU.title" = "キャンセル";

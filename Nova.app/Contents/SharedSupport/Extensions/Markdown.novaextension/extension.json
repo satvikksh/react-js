@@ -1,0 +1,11 @@
+{
+    "identifier": "panic.Markdown",
+    "name": "Markdown",
+    "author": "Panic Inc.",
+    
+    "main": "main.js",
+    
+    "activationEvents": [
+        "onLanguage:markdown",
+    ]
+}

@@ -1,0 +1,9 @@
+
+/* Class = "NSTextFieldCell"; title = "Name:"; ObjectID = "YQm-Au-MmW"; */
+"YQm-Au-MmW.title" = "名称：";
+
+/* Class = "NSButtonCell"; title = "Save"; ObjectID = "i7Z-ky-u7B"; */
+"i7Z-ky-u7B.title" = "存储";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "tvc-pW-9QJ"; */
+"tvc-pW-9QJ.title" = "取消";

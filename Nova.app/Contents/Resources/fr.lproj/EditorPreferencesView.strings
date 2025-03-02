@@ -1,0 +1,630 @@
+
+/* Class = "NSTextFieldCell"; title = "Insertion Point:"; ObjectID = "0M9-Z2-Pdj"; */
+"0M9-Z2-Pdj.title" = "Point d’insertion :";
+
+/* Class = "NSMenuItem"; title = "Underline"; ObjectID = "0Ug-Gf-0jM"; */
+"0Ug-Gf-0jM.title" = "Souligné";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Font Style"; ObjectID = "1AW-Kf-G7I"; */
+"1AW-Kf-G7I.ibExternalAccessibilityDescription" = "Style de police";
+
+/* Class = "NSMenuItem"; title = "Red"; ObjectID = "1Gh-IP-xSB"; */
+"1Gh-IP-xSB.title" = "Rouge";
+
+/* Class = "NSMenuItem"; title = "Visible Always"; ObjectID = "1fe-IJ-ryV"; */
+"1fe-IJ-ryV.title" = "Toujours visible";
+
+/* Class = "NSTabViewItem"; label = "Extensions"; ObjectID = "1g9-bN-1Nw"; */
+"1g9-bN-1Nw.label" = "Extensions";
+
+/* Class = "NSButtonCell"; title = "Wrap lines to editor width"; ObjectID = "1xY-cM-I2V"; */
+"1xY-cM-I2V.title" = "Retours à la ligne adaptés à la largeur de l’éditeur";
+
+/* Class = "NSMenuItem"; title = "Protanopia"; ObjectID = "2DX-3f-U9Y"; */
+"2DX-3f-U9Y.title" = "Protanopie";
+
+/* Class = "NSMenuItem"; title = "HTML"; ObjectID = "2Fj-qE-TXP"; */
+"2Fj-qE-TXP.title" = "HTML";
+
+/* Class = "NSMenuItem"; title = "Yellow"; ObjectID = "2I6-0Z-uPE"; */
+"2I6-0Z-uPE.title" = "Jaune";
+
+/* Class = "NSTextFieldCell"; title = "Saving:"; ObjectID = "2Uc-nI-0gc"; */
+"2Uc-nI-0gc.title" = "Enregistrement :";
+
+/* Class = "NSMenuItem"; title = "Windows (CRLF)"; ObjectID = "2WZ-fZ-j2k"; */
+"2WZ-fZ-j2k.title" = "Windows (CRLF)";
+
+/* Class = "NSTabViewItem"; label = "Vim"; ObjectID = "32q-Sm-13L"; */
+"32q-Sm-13L.label" = "Vim";
+
+/* Class = "NSMenuItem"; title = "Bisexual Pride"; ObjectID = "382-y8-8LG"; */
+"382-y8-8LG.title" = "Fierté bisexuelle";
+
+/* Class = "NSMenuItem"; title = "Block"; ObjectID = "3VP-Y9-9TM"; */
+"3VP-Y9-9TM.title" = "Bloc";
+
+/* Class = "NSMenuItem"; title = "Gray"; ObjectID = "3jq-ed-bTD"; */
+"3jq-ed-bTD.title" = "Gris";
+
+/* Class = "NSTextFieldCell"; title = "Language servers may define specific characters, beyond Return and Tab, which accept the selected completion automatically."; ObjectID = "3mS-B7-nTk"; */
+"3mS-B7-nTk.title" = "Les serveurs de langages peuvent définir des caractères spécifiques (en plus de Retour et Tabulation) qui valident automatiquement la fin de mot sélectionnée.";
+
+/* Class = "NSMenuItem"; title = "ASCII"; ObjectID = "4IT-Uu-evX"; */
+"4IT-Uu-evX.title" = "ASCII";
+
+/* Class = "NSMenuItem"; title = "Large"; ObjectID = "4q1-7M-bkZ"; */
+"4q1-7M-bkZ.title" = "Grande";
+
+/* Class = "NSMenuItem"; title = "Dash-Dot-Dot"; ObjectID = "5JB-bQ-Ug5"; */
+"5JB-bQ-Ug5.title" = "Tiret-Point-Point";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Font Options"; ObjectID = "5Oy-Tp-WNy"; */
+"5Oy-Tp-WNy.ibExternalAccessibilityDescription" = "Options de police";
+
+/* Class = "NSMenuItem"; title = "Genderfluid Pride"; ObjectID = "5YD-dv-Teq"; */
+"5YD-dv-Teq.title" = "Fierté genderfluid";
+
+/* Class = "NSButtonCell"; title = "⇥ Tab"; ObjectID = "5YR-GS-xpq"; */
+"5YR-GS-xpq.title" = "⇥ Tabulation";
+
+/* Class = "NSTabViewItem"; label = "Display"; ObjectID = "5l5-bR-1I7"; */
+"5l5-bR-1I7.label" = "Afficher";
+
+/* Class = "NSMenuItem"; title = "Gray"; ObjectID = "6BV-c8-bAI"; */
+"6BV-c8-bAI.title" = "Gris";
+
+/* Class = "NSStepper"; ibExternalAccessibilityDescription = "Font Size"; ObjectID = "6Xe-ud-oiX"; */
+"6Xe-ud-oiX.ibExternalAccessibilityDescription" = "Modifier taille du texte";
+
+/* Class = "NSMenuItem"; title = "Deuteranopia"; ObjectID = "6ow-tH-DyM"; */
+"6ow-tH-DyM.title" = "Deutéranopie";
+
+/* Class = "NSButtonCell"; title = "Configure using .editorconfig files"; ObjectID = "7ig-wK-mld"; */
+"7ig-wK-mld.title" = "Configurer à l’aide de fichiers .editorconfig";
+
+/* Class = "NSMenuItem"; title = "Tritanopia"; ObjectID = "7n3-Zf-hoK"; */
+"7n3-Zf-hoK.title" = "Tritanopie";
+
+/* Class = "NSMenuItem"; title = "Vertical Bar"; ObjectID = "82S-Oh-eEw"; */
+"82S-Oh-eEw.title" = "Barre verticale";
+
+/* Class = "NSMenuItem"; title = "Transgender Pride"; ObjectID = "8ac-3t-OOq"; */
+"8ac-3t-OOq.title" = "Fierté transgenre";
+
+/* Class = "NSMenuItem"; title = "Orange"; ObjectID = "BHc-AG-TKO"; */
+"BHc-AG-TKO.title" = "Orange";
+
+/* Class = "NSButtonCell"; title = "Show an alert if opened files have inconsistent line endings"; ObjectID = "BWh-m5-1tr"; */
+"BWh-m5-1tr.title" = "Afficher une alerte si des fichiers ouverts ont des fins de ligne incohérentes";
+
+/* Class = "NSMenuItem"; title = "Agender Pride"; ObjectID = "CaG-WB-kmh"; */
+"CaG-WB-kmh.title" = "Fierté agenre";
+
+/* Class = "NSMenuItem"; title = "None"; ObjectID = "D55-MM-dJ0"; */
+"D55-MM-dJ0.title" = "Aucun";
+
+/* Class = "NSButtonCell"; title = "Suggest completions when typing"; ObjectID = "D5P-BG-Ltt"; */
+"D5P-BG-Ltt.title" = "Suggérer des fins lors de la frappe";
+
+/* Class = "NSButtonCell"; title = "Show indentation guides"; ObjectID = "DZg-Eq-hga"; */
+"DZg-Eq-hga.title" = "Afficher des guides de mise en retrait";
+
+/* Class = "NSButtonCell"; title = "Wrap selection in typed delimiters"; ObjectID = "EgT-Mt-kkd"; */
+"EgT-Mt-kkd.title" = "Insérer la sélection dans les crochets saisis";
+
+/* Class = "NSMenuItem"; title = "macOS / Unix (LF)"; ObjectID = "Euf-E8-boI"; */
+"Euf-E8-boI.title" = "macOS/Unix (LF)";
+
+/* Class = "NSMenuItem"; title = "Teal"; ObjectID = "F9s-6n-mU5"; */
+"F9s-6n-mU5.title" = "Bleu-vert";
+
+/* Class = "NSMenuItem"; title = "Hidden"; ObjectID = "FlJ-xt-V6r"; */
+"FlJ-xt-V6r.title" = "Masqué";
+
+/* Class = "NSMenuItem"; title = "Aromantic Pride"; ObjectID = "G0h-2f-9ZL"; */
+"G0h-2f-9ZL.title" = "Fierté aromantique";
+
+/* Class = "NSMenuItem"; title = "Beach Day"; ObjectID = "GQQ-aS-yBT"; */
+"GQQ-aS-yBT.title" = "Jour de plage";
+
+/* Class = "NSMenuItem"; title = "Beach Day"; ObjectID = "Ghm-8h-fG1"; */
+"Ghm-8h-fG1.title" = "Jour de plage";
+
+/* Class = "NSTextFieldCell"; title = "Bracket Palette:"; ObjectID = "Gls-Vw-tl0"; */
+"Gls-Vw-tl0.title" = "Palette de crochets/parenthèses :";
+
+/* Class = "NSMenuItem"; title = "Visible In Focused Editor"; ObjectID = "HVz-VF-ORx"; */
+"HVz-VF-ORx.title" = "Visible dans l’éditeur sous focus";
+
+/* Class = "NSButtonCell"; title = "Suggest Clips when typing"; ObjectID = "HYI-2X-Flb"; */
+"HYI-2X-Flb.title" = "Suggérer des clips lors de la frappe";
+
+/* Class = "NSButtonCell"; title = "Insert and type-over matching delimiters"; ObjectID = "Hbt-Og-fJB"; */
+"Hbt-Og-fJB.title" = "Insérer et remplacer les crochets correspondants";
+
+/* Class = "NSTextFieldCell"; placeholderString = "0.0"; ObjectID = "HgK-4Y-WId"; */
+"HgK-4Y-WId.placeholderString" = "0.0";
+
+/* Class = "NSMenuItem"; title = "Blue"; ObjectID = "IBD-qv-vaT"; */
+"IBD-qv-vaT.title" = "Bleu";
+
+/* Class = "NSTextFieldCell"; placeholderString = "4"; ObjectID = "IiE-Nw-5QH"; */
+"IiE-Nw-5QH.placeholderString" = "4";
+
+/* Class = "NSMenuItem"; title = "Cyberpunk"; ObjectID = "Isc-AB-bY9"; */
+"Isc-AB-bY9.title" = "Cyberpunk";
+
+/* Class = "NSButtonCell"; title = "Code actions indicator"; ObjectID = "Iup-Ru-7mJ"; */
+"Iup-Ru-7mJ.title" = "Indicateur d’actions de code";
+
+/* Class = "NSMenuItem"; title = "MacRoman"; ObjectID = "J9R-Qe-fZI"; */
+"J9R-Qe-fZI.title" = "MacRoman";
+
+/* Class = "NSMenuItem"; title = "Inserts a breakpoint"; ObjectID = "JUp-Fa-6QF"; */
+"JUp-Fa-6QF.title" = "Insère un point d’interruption";
+
+/* Class = "NSMenuItem"; title = "Genderfluid Pride"; ObjectID = "JmZ-5d-y0A"; */
+"JmZ-5d-y0A.title" = "Fierté genderfluid";
+
+/* Class = "NSButtonCell"; title = "Minimap"; ObjectID = "Jqf-hI-Ikw"; */
+"Jqf-hI-Ikw.title" = "Minicarte";
+
+/* Class = "NSTextFieldCell"; title = "Default Line Endings:"; ObjectID = "KC7-d2-3ST"; */
+"KC7-d2-3ST.title" = "Fins de ligne par défaut :";
+
+/* Class = "NSButtonCell"; title = "Symbol path"; ObjectID = "KRH-o4-B6G"; */
+"KRH-o4-B6G.title" = "Chemin des symboles";
+
+/* Class = "NSMenuItem"; title = "Genderqueer Pride"; ObjectID = "LEH-Lf-SaQ"; */
+"LEH-Lf-SaQ.title" = "Fierté genderqueer";
+
+/* Class = "NSMenuItem"; title = "Rainbow"; ObjectID = "Lfq-1x-hy5"; */
+"Lfq-1x-hy5.title" = "Arc-en-ciel";
+
+/* Class = "NSTextFieldCell"; title = "Font:"; ObjectID = "Lrf-55-S41"; */
+"Lrf-55-S41.title" = "Police :";
+
+/* Class = "NSMenuItem"; title = "Aromantic Pride"; ObjectID = "Lzn-a4-jYf"; */
+"Lzn-a4-jYf.title" = "Fierté aromantique";
+
+/* Class = "NSButtonCell"; title = "Automatically reload preview after typing"; ObjectID = "M0L-wv-Imh"; */
+"M0L-wv-Imh.title" = "Recharger automatiquement l’aperçu après la saisie";
+
+/* Class = "NSMenuItem"; title = "Pansexual Pride"; ObjectID = "MHc-Sq-QfS"; */
+"MHc-Sq-QfS.title" = "Fierté pansexuelle";
+
+/* Class = "NSTextFieldCell"; title = "Status View:"; ObjectID = "MSP-0O-2bT"; */
+"MSP-0O-2bT.title" = "Affichage de l’état :";
+
+/* Class = "NSButtonCell"; title = "Enable Vim mode"; ObjectID = "MX7-Ix-ILO"; */
+"MX7-Ix-ILO.title" = "Activer le mode Vim";
+
+/* Class = "NSButtonCell"; title = "Accept completions on server-defined characters"; ObjectID = "MjW-HP-IlG"; */
+"MjW-HP-IlG.title" = "Accepter les fins de mot sur les caractères définis par serveur";
+
+/* Class = "NSMenuItem"; title = "<<Family>>"; ObjectID = "MvR-18-45X"; */
+"MvR-18-45X.title" = "<<Family>>";
+
+/* Class = "NSTextFieldCell"; title = "px"; ObjectID = "MzD-Wj-lYg"; */
+"MzD-Wj-lYg.title" = "px";
+
+/* Class = "NSMenuItem"; title = "Bisexual Pride"; ObjectID = "N0n-ac-g0d"; */
+"N0n-ac-g0d.title" = "Fierté bisexuelle";
+
+/* Class = "NSButtonCell"; title = "Show In Gutter"; ObjectID = "N5i-Md-BQR"; */
+"N5i-Md-BQR.title" = "Afficher dans la bande";
+
+/* Class = "NSMenuItem"; title = "Yellow"; ObjectID = "NGU-gB-dPW"; */
+"NGU-gB-dPW.title" = "Jaune";
+
+/* Class = "NSMenuItem"; title = "CSS"; ObjectID = "Ndb-uF-e6K"; */
+"Ndb-uF-e6K.title" = "CSS";
+
+/* Class = "NSTextFieldCell"; title = "Indentation Guides:"; ObjectID = "Opd-J6-bql"; */
+"Opd-J6-bql.title" = "Guides de mise en retrait :";
+
+/* Class = "NSButtonCell"; title = "Use pasteboard for unnamed register"; ObjectID = "Ovt-v0-aKV"; */
+"Ovt-v0-aKV.title" = "Utiliser le presse-papiers pour le registre sans nom";
+
+/* Class = "NSMenuItem"; title = "Synthwave"; ObjectID = "QKv-RJ-EhV"; */
+"QKv-RJ-EhV.title" = "Synthwave";
+
+/* Class = "NSTextFieldCell"; title = "Wrapping Keys:"; ObjectID = "RUC-XS-wgH"; */
+"RUC-XS-wgH.title" = "Touches de retour à la ligne :";
+
+/* Class = "NSMenuItem"; title = "Panic Palette"; ObjectID = "RaJ-Hp-UGc"; */
+"RaJ-Hp-UGc.title" = "Palette Panic";
+
+/* Class = "NSTextFieldCell"; title = "Line height is specified as a multiple of font size."; ObjectID = "RcV-Rk-0wT"; */
+"RcV-Rk-0wT.title" = "La hauteur de ligne est spécifiée en multiples de la taille de police.";
+
+/* Class = "NSMenuItem"; title = "Pink"; ObjectID = "RjU-cV-xMW"; */
+"RjU-cV-xMW.title" = "Rose";
+
+/* Class = "NSButtonCell"; title = "Invisibles"; ObjectID = "SDu-E8-uqH"; */
+"SDu-E8-uqH.title" = "Invisibles";
+
+/* Class = "NSButtonCell"; title = "Current line highlight"; ObjectID = "Sa8-aw-V93"; */
+"Sa8-aw-V93.title" = "Surlignage de ligne actuel";
+
+/* Class = "NSMenuItem"; title = "Tabs"; ObjectID = "T3w-h1-ANs"; */
+"T3w-h1-ANs.title" = "Tabulations";
+
+/* Class = "NSMenuItem"; title = "Transgender Pride"; ObjectID = "T64-79-BXn"; */
+"T64-79-BXn.title" = "Fierté transgenre";
+
+/* Class = "NSButtonCell"; title = "Violet"; ObjectID = "Tdj-LG-HwA"; */
+"Tdj-LG-HwA.title" = "Violet";
+
+/* Class = "NSButtonCell"; title = "Automatically insert closing tags"; ObjectID = "Tnq-yo-OEv"; */
+"Tnq-yo-OEv.title" = "Ajouter automatiquement les balises fermantes";
+
+/* Class = "NSMenuItem"; title = "Intersex Pride"; ObjectID = "TtK-hF-ZPF"; */
+"TtK-hF-ZPF.title" = "Fierté intersexe";
+
+/* Class = "NSTextFieldCell"; title = "Completions:"; ObjectID = "Tts-cU-MsD"; */
+"Tts-cU-MsD.title" = "Fins de mot :";
+
+/* Class = "NSButtonCell"; title = "Show In Editor"; ObjectID = "TwK-Ym-pcV"; */
+"TwK-Ym-pcV.title" = "Afficher dans l’éditeur";
+
+/* Class = "NSTextFieldCell"; title = "Palette:"; ObjectID = "U9E-mr-OvQ"; */
+"U9E-mr-OvQ.title" = "Palette :";
+
+/* Class = "NSButtonCell"; title = "Completions"; ObjectID = "UGE-Z1-WEk"; */
+"UGE-Z1-WEk.title" = "Fins de mot";
+
+/* Class = "NSMenuItem"; title = "Green"; ObjectID = "UVS-mA-XYf"; */
+"UVS-mA-XYf.title" = "Vert";
+
+/* Class = "NSMenuItem"; title = "Pink"; ObjectID = "UdK-RA-cJ2"; */
+"UdK-RA-cJ2.title" = "Rose";
+
+/* Class = "NSButtonCell"; title = "Contextual hover information"; ObjectID = "Ups-Op-F7i"; */
+"Ups-Op-F7i.title" = "Informations affichées au survol du pointeur";
+
+/* Class = "NSButtonCell"; title = "← & →"; ObjectID = "V4h-vr-pa6"; */
+"V4h-vr-pa6.title" = "← & →";
+
+/* Class = "NSMenuItem"; title = "Purple"; ObjectID = "VFi-3s-cqw"; */
+"VFi-3s-cqw.title" = "Violet";
+
+/* Class = "NSMenuItem"; title = "Orange"; ObjectID = "VN0-Sy-HFb"; */
+"VN0-Sy-HFb.title" = "Orange";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Font Size"; ObjectID = "Vjb-Jf-8gs"; */
+"Vjb-Jf-8gs.ibExternalAccessibilityDescription" = "Modifier taille du texte";
+
+/* Class = "NSTextFieldCell"; title = "Accept completions with:"; ObjectID = "VkE-5S-Aug"; */
+"VkE-5S-Aug.title" = "Accepter les fins avec :";
+
+/* Class = "NSTextFieldCell"; title = "Default Syntax:"; ObjectID = "WDR-sR-QN7"; */
+"WDR-sR-QN7.title" = "Syntaxe par défaut :";
+
+/* Class = "NSMenuItem"; title = "None"; ObjectID = "WPK-yL-SBc"; */
+"WPK-yL-SBc.title" = "Aucun";
+
+/* Class = "NSTabViewItem"; label = "Editing"; ObjectID = "XDR-p8-i1O"; */
+"XDR-p8-i1O.label" = "Édition";
+
+/* Class = "NSMenuItem"; title = "Deuteranopia"; ObjectID = "XEe-e9-EiT"; */
+"XEe-e9-EiT.title" = "Deutéranopie";
+
+/* Class = "NSButtonCell"; title = "Auditory"; ObjectID = "XUo-Vm-Ww3"; */
+"XUo-Vm-Ww3.title" = "Avertissement sonore";
+
+/* Class = "NSMenuItem"; title = "Tritanopia"; ObjectID = "Xfs-Nm-3fr"; */
+"Xfs-Nm-3fr.title" = "Tritanopie";
+
+/* Class = "NSButtonCell"; title = "Indent wrapped lines to match leading whitespace"; ObjectID = "XiZ-96-7u1"; */
+"XiZ-96-7u1.title" = "Mettre les retours à la ligne en retrait sur l’espace initial";
+
+/* Class = "NSMenuItem"; title = "JavaScript"; ObjectID = "XvS-ET-zcs"; */
+"XvS-ET-zcs.title" = "JavaScript";
+
+/* Class = "NSMenuItem"; title = "Cyberpunk"; ObjectID = "Y9d-Fv-5ra"; */
+"Y9d-Fv-5ra.title" = "Cyberpunk";
+
+/* Class = "NSButtonCell"; title = "Code structure headers"; ObjectID = "ZHJ-pB-lnq"; */
+"ZHJ-pB-lnq.title" = "En-têtes de structure de code";
+
+/* Class = "NSButtonCell"; title = "Highlight instances of selected symbol"; ObjectID = "ZId-hh-NwN"; */
+"ZId-hh-NwN.title" = "Surligner les instances du symbole sélectionné";
+
+/* Class = "NSTextFieldCell"; title = "EditorConfig:"; ObjectID = "Zbu-nT-GCw"; */
+"Zbu-nT-GCw.title" = "EditorConfig :";
+
+/* Class = "NSButtonCell"; title = "Reformat indentation of pasted text"; ObjectID = "aUd-Wl-rNn"; */
+"aUd-Wl-rNn.title" = "Ajuster la mise en retrait du texte inséré";
+
+/* Class = "NSTextFieldCell"; title = "Clicking a line number:"; ObjectID = "agS-z7-gfu"; */
+"agS-z7-gfu.title" = "Cliquer sur un numéro de ligne :";
+
+/* Class = "NSMenuItem"; title = "Six Colors"; ObjectID = "bKs-Lf-RCJ"; */
+"bKs-Lf-RCJ.title" = "Six couleurs";
+
+/* Class = "NSMenuItem"; title = "Spaces"; ObjectID = "bOl-a3-naB"; */
+"bOl-a3-naB.title" = "Espaces";
+
+/* Class = "NSMenuItem"; title = "Demisexual Pride"; ObjectID = "bok-Rf-ild"; */
+"bok-Rf-ild.title" = "Fierté demisexuelle";
+
+/* Class = "NSMenuItem"; title = "Synthwave"; ObjectID = "bud-3n-FZD"; */
+"bud-3n-FZD.title" = "Synthwave";
+
+/* Class = "NSMenuItem"; title = "Dash"; ObjectID = "c6w-Wa-9Wa"; */
+"c6w-Wa-9Wa.title" = "Tiret";
+
+/* Class = "NSMenuItem"; title = "Rainbow"; ObjectID = "cON-cu-65v"; */
+"cON-cu-65v.title" = "Arc-en-ciel";
+
+/* Class = "NSMenuItem"; title = "Hybrid"; ObjectID = "cnj-3D-6v0"; */
+"cnj-3D-6v0.title" = "Hybrides";
+
+/* Class = "NSMenuItem"; title = "Green"; ObjectID = "cwP-UG-Flh"; */
+"cwP-UG-Flh.title" = "Vert";
+
+/* Class = "NSTextFieldCell"; title = "Line Numbers:"; ObjectID = "cy7-8E-NRK"; */
+"cy7-8E-NRK.title" = "Numéros de ligne :";
+
+/* Class = "NSButtonCell"; title = "Highlight matching brackets and tags"; ObjectID = "dJ6-EL-n89"; */
+"dJ6-EL-n89.title" = "Surligner les crochets et balises correspondants";
+
+/* Class = "NSMenuItem"; title = "Asexual Pride"; ObjectID = "dqf-3M-sHA"; */
+"dqf-3M-sHA.title" = "Fierté asexuelle";
+
+/* Class = "NSTextFieldCell"; title = "Vim:"; ObjectID = "e2B-mA-KzR"; */
+"e2B-mA-KzR.title" = "Vim :";
+
+/* Class = "NSTextFieldCell"; title = "Indent wrapped lines by"; ObjectID = "e9k-9b-WpP"; */
+"e9k-9b-WpP.title" = "Mettre retours à la ligne en retrait de";
+
+/* Class = "NSButtonCell"; title = "⌫ Delete"; ObjectID = "eBT-BH-f9N"; */
+"eBT-BH-f9N.title" = "⌫ Supprimer";
+
+/* Class = "NSMenuItem"; title = "Purple"; ObjectID = "eVE-Ob-nZj"; */
+"eVE-Ob-nZj.title" = "Violet";
+
+/* Class = "NSButtonCell"; title = "Autodetect indentation when opening existing files"; ObjectID = "ecO-bX-Phn"; */
+"ecO-bX-Phn.title" = "Autodétecter la mise en retrait à l’ouverture de fichiers existants";
+
+/* Class = "NSMenuItem"; title = "Lesbian Pride"; ObjectID = "fAQ-HB-xUc"; */
+"fAQ-HB-xUc.title" = "Fierté lesbienne";
+
+/* Class = "NSMenuItem"; title = "Protanopia"; ObjectID = "fMT-7d-fcY"; */
+"fMT-7d-fcY.title" = "Protanopie";
+
+/* Class = "NSMenuItem"; title = "Intersex Pride"; ObjectID = "frs-z0-QIw"; */
+"frs-z0-QIw.title" = "Fierté intersexe";
+
+/* Class = "NSButtonCell"; title = "Adjust indentation while typing"; ObjectID = "fwU-MQ-F0y"; */
+"fwU-MQ-F0y.title" = "Régler la mise en retrait pendant la saisie";
+
+/* Class = "NSMenuItem"; title = "Dash-Dot"; ObjectID = "fwr-yN-Xm0"; */
+"fwr-yN-Xm0.title" = "Tiret-Point";
+
+/* Class = "NSMenuItem"; title = "UTF-8"; ObjectID = "g8U-EI-zM9"; */
+"g8U-EI-zM9.title" = "UTF-8";
+
+/* Class = "NSMenuItem"; title = "Absolute"; ObjectID = "gBI-DO-b4j"; */
+"gBI-DO-b4j.title" = "Absolus";
+
+/* Class = "NSTextFieldCell"; title = "Pattern:"; ObjectID = "gky-jd-vFX"; */
+"gky-jd-vFX.title" = "Forme :";
+
+/* Class = "NSButtonCell"; title = "Manage Extensions…"; ObjectID = "h1O-DH-eFO"; */
+"h1O-DH-eFO.title" = "Gérer les extensions…";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Font Family"; ObjectID = "h7E-4O-akc"; */
+"h7E-4O-akc.ibExternalAccessibilityDescription" = "Famille de polices";
+
+/* Class = "NSMenuItem"; title = "Six Colors"; ObjectID = "hAr-f1-yqR"; */
+"hAr-f1-yqR.title" = "Six couleurs";
+
+/* Class = "NSButtonCell"; title = "Select prefix when double-clicking identifiers"; ObjectID = "i7O-St-EBW"; */
+"i7O-St-EBW.title" = "Sélectionner préfixe lors du double-clic sur variables";
+
+/* Class = "NSTabViewItem"; label = "Indentation"; ObjectID = "iOX-OW-I8A"; */
+"iOX-OW-I8A.label" = "Mise en retrait";
+
+/* Class = "NSTextFieldCell"; title = "Language Servers:"; ObjectID = "iSD-Hf-oyp"; */
+"iSD-Hf-oyp.title" = "Serveur de langages :";
+
+/* Class = "NSMenuItem"; title = "Asexual Pride"; ObjectID = "ihb-bl-BAe"; */
+"ihb-bl-BAe.title" = "Fierté asexuelle";
+
+/* Class = "NSTextFieldCell"; title = "Show:"; ObjectID = "irm-ew-a6x"; */
+"irm-ew-a6x.title" = "Afficher :";
+
+/* Class = "NSTextFieldCell"; title = "Editor Overscroll:"; ObjectID = "jEV-Y6-krX"; */
+"jEV-Y6-krX.title" = "Marge de défilement d’éditeur :";
+
+/* Class = "NSMenuItem"; title = "Small"; ObjectID = "jr4-69-Pdd"; */
+"jr4-69-Pdd.title" = "Petite";
+
+/* Class = "NSButtonCell"; title = "Options…"; ObjectID = "kh3-UB-fGc"; */
+"kh3-UB-fGc.title" = "Options…";
+
+/* Class = "NSMenuItem"; title = "Vaporwave"; ObjectID = "ku4-Fj-bXp"; */
+"ku4-Fj-bXp.title" = "Vaporwave";
+
+/* Class = "NSMenuItem"; title = "Demisexual Pride"; ObjectID = "l5w-Us-WEF"; */
+"l5w-Us-WEF.title" = "Fierté demisexuelle";
+
+/* Class = "NSTextFieldCell"; title = "Letter Spacing:"; ObjectID = "lT0-Bb-ULO"; */
+"lT0-Bb-ULO.title" = "Espacement des lettres :";
+
+/* Class = "NSButtonCell"; title = "Code folding ribbon"; ObjectID = "lVl-SZ-54R"; */
+"lVl-SZ-54R.title" = "Barre de pliage";
+
+/* Class = "NSButtonCell"; title = "Toggling comment includes a space"; ObjectID = "lZa-vE-3mY"; */
+"lZa-vE-3mY.title" = "Mise en commentaire avec ajout d’espace";
+
+/* Class = "NSTextFieldCell"; title = "Line Height:"; ObjectID = "lhu-Yv-tPK"; */
+"lhu-Yv-tPK.title" = "Hauteur de ligne :";
+
+/* Class = "NSTextFieldCell"; title = "The alternate behavior can be performed by using an Option-click."; ObjectID = "m9d-Aw-pQ7"; */
+"m9d-Aw-pQ7.title" = "Le comportement alternatif peut être exécuté via Option-clic.";
+
+/* Class = "NSTextFieldCell"; title = "Multiple wrap guides may be specified by separating with commas."; ObjectID = "mBY-d8-IBd"; */
+"mBY-d8-IBd.title" = "Il est possible de spécifier plusieurs guides de retour en les séparant par des virgules.";
+
+/* Class = "NSTextFieldCell"; title = "Typing:"; ObjectID = "mOQ-pR-cKo"; */
+"mOQ-pR-cKo.title" = "Saisie :";
+
+/* Class = "NSMenuItem"; title = "Gay Pride"; ObjectID = "mb2-2B-r7V"; */
+"mb2-2B-r7V.title" = "Marche des fiertés";
+
+/* Class = "NSMenuItem"; title = "Relative"; ObjectID = "mkf-UX-osq"; */
+"mkf-UX-osq.title" = "Relatifs";
+
+/* Class = "NSButtonCell"; title = "Automatically indent new lines"; ObjectID = "mlu-a8-e5C"; */
+"mlu-a8-e5C.title" = "Mettre automatiquement les nouvelles lignes en retrait";
+
+/* Class = "NSTextFieldCell"; title = "Options:"; ObjectID = "mr3-kb-dvJ"; */
+"mr3-kb-dvJ.title" = "Options :";
+
+/* Class = "NSButtonCell"; title = "⏎ Return"; ObjectID = "mxR-xq-I2o"; */
+"mxR-xq-I2o.title" = "⏎ Retour";
+
+/* Class = "NSMenuItem"; title = "Solid"; ObjectID = "n1r-mm-Hhu"; */
+"n1r-mm-Hhu.title" = "Continuer";
+
+/* Class = "NSButtonCell"; title = "Trim whitespace from whitespace-only lines"; ObjectID = "nFI-dQ-1pA"; */
+"nFI-dQ-1pA.title" = "Éliminer l’espace des lignes constituées uniquement d’espaces";
+
+/* Class = "NSMenuItem"; title = "Non-Binary Pride"; ObjectID = "nez-lu-kJy"; */
+"nez-lu-kJy.title" = "Fierté non binaire";
+
+/* Class = "NSTextFieldCell"; title = "Prefer Indent Using:"; ObjectID = "niT-w8-6D8"; */
+"niT-w8-6D8.title" = "Préférer la mise en retrait avec :";
+
+/* Class = "NSButtonCell"; title = "h & l"; ObjectID = "niY-8n-RFA"; */
+"niY-8n-RFA.title" = "h et l";
+
+/* Class = "NSMenuItem"; title = "Selects the line"; ObjectID = "nrY-kG-3ot"; */
+"nrY-kG-3ot.title" = "Sélectionne la ligne";
+
+/* Class = "NSMenuItem"; title = "Medium"; ObjectID = "oCf-Ew-12F"; */
+"oCf-Ew-12F.title" = "Moyenne";
+
+/* Class = "NSButtonCell"; title = "Space"; ObjectID = "oTU-yc-rha"; */
+"oTU-yc-rha.title" = "Espace";
+
+/* Class = "NSMenuItem"; title = "None"; ObjectID = "opo-ab-St2"; */
+"opo-ab-St2.title" = "Aucun";
+
+/* Class = "NSMenuItem"; title = "Red"; ObjectID = "ov5-Du-Sfv"; */
+"ov5-Du-Sfv.title" = "Rouge";
+
+/* Class = "NSButtonCell"; title = "Blink insertion point"; ObjectID = "oxm-Zl-R2A"; */
+"oxm-Zl-R2A.title" = "Point d’insertion clignotant";
+
+/* Class = "NSMenuItem"; title = "Panic Palette"; ObjectID = "p2L-Kn-5jR"; */
+"p2L-Kn-5jR.title" = "Palette Panic";
+
+/* Class = "NSButtonCell"; title = "Signature help for arguments"; ObjectID = "pJm-55-rAl"; */
+"pJm-55-rAl.title" = "Reconnaissance de la signature pour les arguments";
+
+/* Class = "NSTextFieldCell"; title = "Opacity:"; ObjectID = "pXx-FH-BSc"; */
+"pXx-FH-BSc.title" = "Opacité :";
+
+/* Class = "NSTextFieldCell"; title = "spaces"; ObjectID = "psa-7E-yIC"; */
+"psa-7E-yIC.title" = "espaces";
+
+/* Class = "NSMenuItem"; title = "Blue"; ObjectID = "r0G-Ys-VFH"; */
+"r0G-Ys-VFH.title" = "Bleu";
+
+/* Class = "NSButtonCell"; title = "Show wrap guide at column"; ObjectID = "r9G-jA-Cta"; */
+"r9G-jA-Cta.title" = "Afficher le guide de retour sur la colonne";
+
+/* Class = "NSButtonCell"; title = "Prefer commenting by line"; ObjectID = "r9m-a4-U8A"; */
+"r9m-a4-U8A.title" = "Préférer la mise en commentaire par ligne";
+
+/* Class = "NSTextFieldCell"; title = "Requires a relevant extension compatible with the Language Server Protocol."; ObjectID = "rKW-Ye-n0R"; */
+"rKW-Ye-n0R.title" = "Nécessite une extension appropriée compatible avec le protocole de serveur de langages.";
+
+/* Class = "NSButtonCell"; title = "Visual"; ObjectID = "s6x-eX-RyW"; */
+"s6x-eX-RyW.title" = "Avertissement visuel";
+
+/* Class = "NSMenuItem"; title = "Gay Pride"; ObjectID = "sYU-3O-JpY"; */
+"sYU-3O-JpY.title" = "Marche des fiertés";
+
+/* Class = "NSMenuItem"; title = "Teal"; ObjectID = "sjY-8N-RaM"; */
+"sjY-8N-RaM.title" = "Bleu-vert";
+
+/* Class = "NSTextFieldCell"; title = "Tab Width:"; ObjectID = "slD-aU-TZM"; */
+"slD-aU-TZM.title" = "Largeur de tabulation :";
+
+/* Class = "NSMenuItem"; title = "Pansexual Pride"; ObjectID = "snG-y1-3K6"; */
+"snG-y1-3K6.title" = "Fierté pansexuelle";
+
+/* Class = "NSButtonCell"; title = "Show command suggestions"; ObjectID = "u6t-8q-J3E"; */
+"u6t-8q-J3E.title" = "Afficher les suggestions de commande";
+
+/* Class = "NSButtonCell"; title = "Line numbers"; ObjectID = "uDQ-qd-vRA"; */
+"uDQ-qd-vRA.title" = "Numéros de ligne";
+
+/* Class = "NSButtonCell"; title = "File path"; ObjectID = "uFU-TH-hja"; */
+"uFU-TH-hja.title" = "Chemin du fichier";
+
+/* Class = "NSTextFieldCell"; placeholderString = "4"; ObjectID = "uSD-jw-NzF"; */
+"uSD-jw-NzF.placeholderString" = "4";
+
+/* Class = "NSTextFieldCell"; title = "spaces"; ObjectID = "ulR-P2-Vxi"; */
+"ulR-P2-Vxi.title" = "espaces";
+
+/* Class = "NSButtonCell"; title = "Type and function separators"; ObjectID = "v4o-QC-LEj"; */
+"v4o-QC-LEj.title" = "Séparateurs de types et de fonctions";
+
+/* Class = "NSMenuItem"; title = "Dot"; ObjectID = "vBr-jg-Y4f"; */
+"vBr-jg-Y4f.title" = "Point";
+
+/* Class = "NSTextFieldCell"; placeholderString = "1.0"; ObjectID = "vFk-q6-fTg"; */
+"vFk-q6-fTg.placeholderString" = "1.5";
+
+/* Class = "NSTextFieldCell"; title = "Default Text Encoding:"; ObjectID = "vTc-qt-o5I"; */
+"vTc-qt-o5I.title" = "Encodage de texte par défaut :";
+
+/* Class = "NSButtonCell"; title = "Links"; ObjectID = "vak-n5-ZJA"; */
+"vak-n5-ZJA.title" = "Liens";
+
+/* Class = "NSMenuItem"; title = "Classic Mac OS (CR)"; ObjectID = "w4a-ui-4jW"; */
+"w4a-ui-4jW.title" = "Classic Mac OS (CR)";
+
+/* Class = "NSMenuItem"; title = "Lesbian Pride"; ObjectID = "wEb-nT-K2x"; */
+"wEb-nT-K2x.title" = "Fierté lesbienne";
+
+/* Class = "NSTextFieldCell"; title = "Color Previews:"; ObjectID = "wNV-t3-j4P"; */
+"wNV-t3-j4P.title" = "Aperçus de couleur :";
+
+/* Class = "NSMenuItem"; title = "Agender Pride"; ObjectID = "wZZ-WH-RQo"; */
+"wZZ-WH-RQo.title" = "Fierté agenre";
+
+/* Class = "NSButtonCell"; title = "Ensure a trailing newline at the end of files"; ObjectID = "wwl-tE-wND"; */
+"wwl-tE-wND.title" = "Ajouter une nouvelle ligne à la fin des fichiers";
+
+/* Class = "NSMenuItem"; title = "Vaporwave"; ObjectID = "wx3-Y9-d3D"; */
+"wx3-Y9-d3D.title" = "Vaporwave";
+
+/* Class = "NSTextFieldCell"; title = "Beep Style:"; ObjectID = "xRo-gH-AmJ"; */
+"xRo-gH-AmJ.title" = "Style de bip :";
+
+/* Class = "NSMenuItem"; title = "Genderqueer Pride"; ObjectID = "xnG-40-LBJ"; */
+"xnG-40-LBJ.title" = "Fierté genderqueer";
+
+/* Class = "NSMenuItem"; title = "Non-Binary Pride"; ObjectID = "xyq-uh-WgB"; */
+"xyq-uh-WgB.title" = "Fierté non binaire";
+
+/* Class = "NSMenuItem"; title = "<<Style>>"; ObjectID = "y7P-gf-avV"; */
+"y7P-gf-avV.title" = "<<Style>>";
+
+/* Class = "NSButtonCell"; title = "~ Tilde"; ObjectID = "z1k-Ol-JTl"; */
+"z1k-Ol-JTl.title" = "~ Tilde";
+
+/* Class = "NSTextFieldCell"; title = "Automatically set indentation style, line endings, and more based on .editorconfig files in a project."; ObjectID = "zMQ-8Z-RNM"; */
+"zMQ-8Z-RNM.title" = "Définir automatiquement le style de mise en retrait, les fins de ligne, etc., à l’aide des fichiers .editorconfig dans les dossiers d’un projet.";
+
+/* Class = "NSButtonCell"; title = "Automatically trim trailing whitespace"; ObjectID = "zZI-Mg-bw3"; */
+"zZI-Mg-bw3.title" = "Éliminer automatiquement l’espace à droite";

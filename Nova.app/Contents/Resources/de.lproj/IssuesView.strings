@@ -1,0 +1,30 @@
+
+/* Class = "NSButtonCell"; title = "Find More Validators…"; ObjectID = "3BS-7l-YdH"; */
+"3BS-7l-YdH.title" = "Mehr Validierer finden …";
+
+/* Class = "NSMenuItem"; title = "Show in Finder"; ObjectID = "5I7-HD-HWM"; */
+"5I7-HD-HWM.title" = "Im Finder anzeigen";
+
+/* Class = "NSTextFieldCell"; title = "No issues found."; ObjectID = "Axx-dJ-pT0"; */
+"Axx-dJ-pT0.title" = "Keine Probleme gefunden.";
+
+/* Class = "NSTextFieldCell"; title = "<<Filename>>"; ObjectID = "BPW-0Q-0P3"; */
+"BPW-0Q-0P3.title" = "<<Filename>>";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "Di8-X5-d3s"; */
+"Di8-X5-d3s.title" = "Kopieren";
+
+/* Class = "NSTextFieldCell"; title = "<<Count>>"; ObjectID = "OQj-Ss-L0k"; */
+"OQj-Ss-L0k.title" = "<<Count>>";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "RPe-EF-JC2"; */
+"RPe-EF-JC2.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "<<IssueDescription>>"; ObjectID = "mIo-wC-zfZ"; */
+"mIo-wC-zfZ.title" = "<<IssueDescription>>";
+
+/* Class = "NSTextFieldCell"; title = "<<IssueProviderStatus>>"; ObjectID = "uUb-5k-hc1"; */
+"uUb-5k-hc1.title" = "<<IssueProviderStatus>>";
+
+/* Class = "NSMenuItem"; title = "Show in Files Sidebar"; ObjectID = "ud7-ug-NG1"; */
+"ud7-ug-NG1.title" = "In der Dateien-Seitenleiste anzeigen";

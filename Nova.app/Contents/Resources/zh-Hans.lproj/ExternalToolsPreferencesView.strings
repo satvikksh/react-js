@@ -1,0 +1,60 @@
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "2VY-T4-dBE"; */
+"2VY-T4-dBE.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Variable"; ObjectID = "CML-0V-Bx7"; */
+"CML-0V-Bx7.headerCell.title" = "变量";
+
+/* Class = "NSButtonCell"; title = "Automatically request environment from login shell"; ObjectID = "Cxs-O2-paU"; */
+"Cxs-O2-paU.title" = "从登录 shell 自动请求环境";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "DGc-gC-7hF"; */
+"DGc-gC-7hF.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Ensures that the base environment variables for running tasks, such as “$PATH”, match those available in your login shell by requesting the environment once per session."; ObjectID = "EFZ-mL-2ur"; */
+"EFZ-mL-2ur.title" = "通过每次会话请求一次环境，确保运行任务的基本环境变量（如“$PATH”）与登录 shell 中可用的环境变量匹配。";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "JJM-yH-iGQ"; */
+"JJM-yH-iGQ.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Variable"; ObjectID = "M20-NZ-j1r"; */
+"M20-NZ-j1r.headerCell.title" = "变量";
+
+/* Class = "NSTextFieldCell"; title = "The Nova command line tool can be used to open and create files and workspaces from your preferred terminal application."; ObjectID = "PSB-Kx-LtP"; */
+"PSB-Kx-LtP.title" = "Nova 命令行工具可用来从您首选的终端应用程序打开和创建文件和工作区。";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Value"; ObjectID = "ao1-Sb-EWQ"; */
+"ao1-Sb-EWQ.placeholderString" = "值";
+
+/* Class = "NSTextFieldCell"; title = "Command Line Tool"; ObjectID = "d5X-68-m6h"; */
+"d5X-68-m6h.title" = "命令行工具";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Variable"; ObjectID = "dq9-ZS-hcX"; */
+"dq9-ZS-hcX.placeholderString" = "变量";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Value"; ObjectID = "eIM-BW-a6K"; */
+"eIM-BW-a6K.placeholderString" = "值";
+
+/* Class = "NSTextFieldCell"; title = "Custom Global Environment Variables:"; ObjectID = "j2C-a6-RUZ"; */
+"j2C-a6-RUZ.title" = "自定义全局环境变量：";
+
+/* Class = "NSButtonCell"; title = "Install"; ObjectID = "lRO-tq-Hm7"; */
+"lRO-tq-Hm7.title" = "安装";
+
+/* Class = "NSTextFieldCell"; title = "Location:"; ObjectID = "pxD-i1-mGJ"; */
+"pxD-i1-mGJ.title" = "位置：";
+
+/* Class = "NSTextFieldCell"; title = "/usr/local/bin/tool"; ObjectID = "t2g-3G-YzN"; */
+"t2g-3G-YzN.title" = "/usr/local/bin/tool";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Variable"; ObjectID = "tbB-Ip-tVn"; */
+"tbB-Ip-tVn.placeholderString" = "变量";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "tl0-1E-l2d"; */
+"tl0-1E-l2d.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Value"; ObjectID = "u04-De-ZzC"; */
+"u04-De-ZzC.headerCell.title" = "值";
+
+/* Class = "NSTableColumn"; headerCell.title = "Value"; ObjectID = "vfx-qr-0QG"; */
+"vfx-qr-0QG.headerCell.title" = "值";

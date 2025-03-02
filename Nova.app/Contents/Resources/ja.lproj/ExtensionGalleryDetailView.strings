@@ -1,0 +1,96 @@
+
+/* Class = "NSButtonCell"; title = "<<Organization>>"; ObjectID = "2jz-V7-xBU"; */
+"2jz-V7-xBU.title" = "<<Organization>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Description>>"; ObjectID = "50T-FL-ydQ"; */
+"50T-FL-ydQ.title" = "<<Description>>";
+
+/* Class = "NSTextFieldCell"; title = "Send Network Requests"; ObjectID = "5Zk-3b-dS1"; */
+"5Zk-3b-dS1.title" = "ネットワーク接続";
+
+/* Class = "NSButtonCell"; title = "Release Notes"; ObjectID = "5wa-WI-ikL"; */
+"5wa-WI-ikL.title" = "リリースノート";
+
+/* Class = "NSButtonCell"; title = "INSTALL"; ObjectID = "ARC-27-Ff0"; */
+"ARC-27-Ff0.title" = "インストール";
+
+/* Class = "NSTextFieldCell"; title = "Read & Write Files"; ObjectID = "BHi-0y-0PL"; */
+"BHi-0y-0PL.title" = "ファイルの読み／書き";
+
+/* Class = "NSTextFieldCell"; title = "<<LICENSE>>"; ObjectID = "D5h-eR-Wkh"; */
+"D5h-eR-Wkh.title" = "<<LICENSE>>";
+
+/* Class = "NSTextFieldCell"; title = "This extension is allowed to:"; ObjectID = "IOH-Y8-FqB"; */
+"IOH-Y8-FqB.title" = "この機能拡張は以下を要求します:";
+
+/* Class = "NSButtonCell"; title = "Sponsor"; ObjectID = "Kp4-dA-x8Z"; */
+"Kp4-dA-x8Z.title" = "スポンサー";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "LmZ-I5-qcY"; */
+"LmZ-I5-qcY.title" = "<<Name>>";
+
+/* Class = "NSButtonCell"; title = "Report Abuse"; ObjectID = "MXB-ql-Qml"; */
+"MXB-ql-Qml.title" = "不正使用を報告";
+
+/* Class = "NSTextFieldCell"; title = "Launch Subprocesses"; ObjectID = "MeU-g5-4RI"; */
+"MeU-g5-4RI.title" = "サブプロセスの起動";
+
+/* Class = "NSTextFieldCell"; title = "<<ErrorDescription>>"; ObjectID = "Ncp-5Q-TYe"; */
+"Ncp-5Q-TYe.title" = "<<ErrorDescription>>";
+
+/* Class = "NSButtonCell"; title = "Preferences"; ObjectID = "NhU-ry-WbU"; */
+"NhU-ry-WbU.title" = "環境設定";
+
+/* Class = "NSTextFieldCell"; title = "<<ErrorTitle>>"; ObjectID = "R1J-eF-9e2"; */
+"R1J-eF-9e2.title" = "<<ErrorTitle>>";
+
+/* Class = "NSTextFieldCell"; title = "<<DownloadCount>>"; ObjectID = "RMB-XQ-LfE"; */
+"RMB-XQ-LfE.title" = "<<DownloadCount>>";
+
+/* Class = "NSButtonCell"; title = "<<CONFIGURE>>"; ObjectID = "Scj-em-1YE"; */
+"Scj-em-1YE.title" = "<<CONFIGURE>>";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "Sea-oa-0Vr"; */
+"Sea-oa-0Vr.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "<<RuntimeRequirementDescription>>"; ObjectID = "VKY-r0-KZJ"; */
+"VKY-r0-KZJ.title" = "<<RuntimeRequirementDescription>>";
+
+/* Class = "NSButtonCell"; title = "License"; ObjectID = "azM-Bd-041"; */
+"azM-Bd-041.title" = "ライセンス";
+
+/* Class = "NSButtonCell"; title = "Help"; ObjectID = "cf4-Ik-gUn"; */
+"cf4-Ik-gUn.title" = "ヘルプ";
+
+/* Class = "NSTextFieldCell"; title = "Access Clipboard"; ObjectID = "dIt-Ko-JPE"; */
+"dIt-Ko-JPE.title" = "クリップボードアクセス";
+
+/* Class = "NSTextFieldCell"; title = "<<ReleaseDate>>"; ObjectID = "djw-Fo-rYZ"; */
+"djw-Fo-rYZ.title" = "<<ReleaseDate>>";
+
+/* Class = "NSButtonCell"; title = "Details"; ObjectID = "eZ0-Lt-PG3"; */
+"eZ0-Lt-PG3.title" = "詳細";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Share"; ObjectID = "jPd-Q5-wyx"; */
+"jPd-Q5-wyx.ibExternalAccessibilityDescription" = "共有";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Share"; ObjectID = "jPd-Q5-wyx"; */
+"jPd-Q5-wyx.ibShadowedToolTip" = "共有";
+
+/* Class = "NSTextFieldCell"; title = "Read Files"; ObjectID = "jiw-ik-2oS"; */
+"jiw-ik-2oS.title" = "ファイルの読み込み";
+
+/* Class = "NSTextFieldCell"; title = "<<Version>>"; ObjectID = "lAl-5Z-Mz4"; */
+"lAl-5Z-Mz4.title" = "<<Version>>";
+
+/* Class = "NSButtonCell"; title = "Repository"; ObjectID = "vQr-Ge-JSm"; */
+"vQr-Ge-JSm.title" = "リポジトリ";
+
+/* Class = "NSButtonCell"; title = "UNINSTALL"; ObjectID = "veh-Ja-JrL"; */
+"veh-Ja-JrL.title" = "アンインストール";
+
+/* Class = "NSButtonCell"; title = "Homepage"; ObjectID = "wLE-PK-FH6"; */
+"wLE-PK-FH6.title" = "ホームページ";
+
+/* Class = "NSButtonCell"; title = "Bug Reports"; ObjectID = "ymO-AR-POp"; */
+"ymO-AR-POp.title" = "バグレポート";

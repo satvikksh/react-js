@@ -1,0 +1,27 @@
+
+/* Class = "NSTextFieldCell"; title = "Dock Icon"; ObjectID = "6rU-vI-qVs"; */
+"6rU-vI-qVs.title" = "Dockアイコン";
+
+/* Class = "NSTextFieldCell"; title = "Editor Theme"; ObjectID = "J2f-lN-fus"; */
+"J2f-lN-fus.title" = "エディタテーマ";
+
+/* Class = "NSButtonCell"; title = "Use a contrasting appearance"; ObjectID = "KOu-bw-PPI"; */
+"KOu-bw-PPI.title" = "コントラストアピアランスを使用する";
+
+/* Class = "NSSegmentedCell"; MK4-Hd-JAO.ibShadowedLabels[0] = "Light Mode"; ObjectID = "MK4-Hd-JAO"; */
+"MK4-Hd-JAO.ibShadowedLabels[0]" = "ライトモード";
+
+/* Class = "NSSegmentedCell"; MK4-Hd-JAO.ibShadowedLabels[1] = "Dark Mode"; ObjectID = "MK4-Hd-JAO"; */
+"MK4-Hd-JAO.ibShadowedLabels[1]" = "ダークモード";
+
+/* Class = "NSButtonCell"; title = "Automatically change theme based on system appearance"; ObjectID = "VbG-78-Dg0"; */
+"VbG-78-Dg0.title" = "システムの外観モードに自動で合わせる";
+
+/* Class = "NSTextFieldCell"; title = "Command Palettes:"; ObjectID = "ZOH-Gi-afl"; */
+"ZOH-Gi-afl.title" = "コマンドパレット:";
+
+/* Class = "NSTextFieldCell"; title = "Window Theme"; ObjectID = "dfh-5p-V1x"; */
+"dfh-5p-V1x.title" = "ウインドウテーマ";
+
+/* Class = "NSButtonCell"; title = "More Themes…"; ObjectID = "jyp-lJ-8Nh"; */
+"jyp-lJ-8Nh.title" = "他のテーマを探す…";

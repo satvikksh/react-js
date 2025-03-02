@@ -1,0 +1,1423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<completions>
+    <!-- "foo" -->
+    <provider name="identifier">
+        <syntax>python</syntax>
+        
+        <exclude-selector>string, comment</exclude-selector>
+        
+        <expression>(?&lt;!def\s)(?:(?&lt;!\.)\b([a-zA-Z_][a-zA-Z0-9_]*))|(?:(?&lt;![a-zA-Z0-9_\.]))</expression>
+        
+        <symbols type="class">
+            <behavior prefix="=\s*">
+                <append>($[])</append>
+            </behavior>
+        </symbols>
+        <symbols type="function">
+            <behavior>
+                <arguments prefix="(" suffix=")" separator=", " />
+            </behavior>
+        </symbols>
+        <symbols type="constant,variable,argument,package" />
+        
+        <identifiers />
+        
+        <set>python.keywords</set>
+        <set>python.values.core</set>
+        <set>python.values.special-attributes</set>
+        <set>python.functions.core</set>
+        <set>python.exceptions.core</set>
+    </provider>
+    
+    <!-- "def foo" -->
+    <provider name="method-define">
+        <syntax>python</syntax>
+        
+        <exclude-selector>string, comment</exclude-selector>
+        
+        <expression>(?&lt;=(?:def\s))\b[a-zA-Z_][a-zA-Z0-9_]*</expression>
+        
+        <symbols type="method">
+            <behavior prefix="(?&lt;=def\s)">
+                <arguments prefix="(self" suffix=")" separator=", " prepend-separator="true" />
+            </behavior>
+            <behavior>
+                <arguments prefix="(" suffix=")" separator=", " />
+            </behavior>
+        </symbols>
+        
+        <set>python.methods.core</set>
+    </provider>
+    
+    <!-- ".foo" -->
+    <provider name="method-invoke">
+        <syntax>python</syntax>
+        
+        <exclude-selector>string, comment, value.number</exclude-selector>
+        
+        <trigger>.</trigger>
+        
+        <expression>(?&lt;=\.)([a-zA-Z_][a-zA-Z0-9_]*)?</expression>
+        
+        <symbols type="method">
+            <behavior>
+                <arguments prefix="(" suffix=")" separator=", " />
+            </behavior>
+        </symbols>
+        <symbols type="property" />
+        
+        <identifiers />
+        
+        <set>python.methods.core</set>
+    </provider>
+    
+    <!-- "import foo" -->
+    <provider name="import">
+        <syntax>python</syntax>
+        
+        <exclude-selector>string, comment</exclude-selector>
+        
+        <expression>(?&lt;=\bimport\s|\bfrom\s)[a-zA-Z_][a-zA-Z0-9_]*</expression>
+        
+        <identifiers />
+        
+        <set>python.keywords.import</set>
+        <set>python.modules.core</set>
+    </provider>
+    
+    <!-- Keywords -->
+    <set name="python.keywords" symbol="statement">
+        <completion string="and">
+            <behavior>
+                <append> $[expression]</append>
+            </behavior>
+        </completion>
+        <completion string="as">
+            <behavior>
+                <append> $[name]</append>
+            </behavior>
+        </completion>
+        <completion string="assert">
+            <behavior>
+                <append> $[expression]</append>
+            </behavior>
+        </completion>
+        <completion string="break" />
+        <completion string="class">
+            <behavior>
+                <append> $[Name]($[superclass]):</append>
+            </behavior>
+        </completion>
+        <completion string="continue" />
+        <completion string="def">
+            <behavior>
+                <append> $[name]:</append>
+            </behavior>
+        </completion>
+        <completion string="del">
+            <behavior>
+                <append> $[expression]</append>
+            </behavior>
+        </completion>
+        <completion string="elif">
+            <behavior>
+                <append> $[expression]:</append>
+            </behavior>
+        </completion>
+        <completion string="else">
+            <behavior>
+                <append>:</append>
+            </behavior>
+        </completion>
+        <completion string="except">
+            <behavior>
+                <append>:</append>
+            </behavior>
+        </completion>
+        <completion string="exec">
+            <behavior>
+                <append> $[expression]</append>
+            </behavior>
+        </completion>
+        <completion string="finally">
+            <behavior>
+                <append>:</append>
+            </behavior>
+        </completion>
+        <completion string="for">
+            <behavior>
+                <append> $[item] in $[container]:</append>
+            </behavior>
+        </completion>
+        <completion string="from">
+            <behavior>
+                <append> $[module] import $[symbol]</append>
+            </behavior>
+        </completion>
+        <completion string="global">
+            <behavior>
+                <append> $[expression]</append>
+            </behavior>
+        </completion>
+        <completion string="if">
+            <behavior>
+                <append> $[expression]:</append>
+            </behavior>
+        </completion>
+        <completion string="import">
+            <behavior>
+                <append> $[module]</append>
+            </behavior>
+        </completion>
+        <completion string="in">
+            <behavior>
+                <append> $[container]</append>
+            </behavior>
+        </completion>
+        <completion string="is">
+            <behavior>
+                <append> $[expression]</append>
+            </behavior>
+        </completion>
+        <completion string="lambda">
+            <behavior>
+                <append> $[var]: $[expression]</append>
+            </behavior>
+        </completion>
+        <completion string="not">
+            <behavior>
+                <append> $[expression]</append>
+            </behavior>
+        </completion>
+        <completion string="or">
+            <behavior>
+                <append> $[expression]</append>
+            </behavior>
+        </completion>
+        <completion string="pass" />
+        <completion string="self" symbol="variable" />
+        <completion string="raise">
+            <behavior>
+                <append> $[Exception]("$[reason]")</append>
+            </behavior>
+        </completion>
+        <completion string="return">
+            <behavior>
+                <append> $[expression]</append>
+            </behavior>
+        </completion>
+        <completion string="try">
+            <behavior>
+                <append>:</append>
+            </behavior>
+        </completion>
+        <completion string="while">
+            <behavior>
+                <append> $[expression]:</append>
+            </behavior>
+        </completion>
+        <completion string="with">
+            <behavior>
+                <append> $[expression] as $[name]:</append>
+            </behavior>
+        </completion>
+        <completion string="yield">
+            <behavior>
+                <append> $[expression]</append>
+            </behavior>
+        </completion>
+    </set>
+    <set name="python.keywords.import" symbol="statement">
+        <completion string="from">
+            <behavior>
+                <append> $[module] import $[symbol]</append>
+            </behavior>
+        </completion>
+        <completion string="import">
+            <behavior>
+                <append> $[module]</append>
+            </behavior>
+        </completion>
+    </set>
+    
+    <!-- Built-in values -->
+    <set name="python.values.core" symbol="constant">
+        <completion string="True" />
+        <completion string="False" />
+        <completion string="None" />
+    </set>
+    
+    <!-- Special attributes -->
+    <set name="python.values.special-attributes" symbol="constant">
+        <completion string="__name__" />
+    </set>
+    
+    <!-- Built-in functions -->
+    <set name="python.functions.core" symbol="function">
+        <behavior>
+            <append>($[x])</append>
+        </behavior>
+        
+        <completion string="abs" />
+        <completion string="all" />
+        <completion string="any" />
+        <completion string="basestring" symbol="type">
+            <behavior symbol="function" prefix="(?&lt;!\()" suffix="(?![^a-zA-Z\(])">
+                <append>($[x])</append>
+            </behavior>
+        </completion>
+        <completion string="bin" />
+        <completion string="bool" symbol="type">
+            <behavior symbol="function" prefix="(?&lt;!\()" suffix="(?![^a-zA-Z\(])">
+                <append>($[x])</append>
+            </behavior>
+        </completion>
+        <completion string="bytearray" symbol="type">
+            <behavior symbol="function" prefix="(?&lt;!\()" suffix="(?![^a-zA-Z\(])">
+                <append>($[x])</append>
+            </behavior>
+        </completion>
+        <completion string="callable" />
+        <completion string="chr" />
+        <completion string="classmethod">
+            <behavior prefix="(?&lt;=@)">
+                <append></append>
+            </behavior>
+            <behavior>
+                <append>($[x])</append>
+            </behavior>
+        </completion>
+        <completion string="cmp">
+            <behavior>
+                <append>($[x], $[y])</append>
+            </behavior>
+        </completion>
+        <completion string="compile">
+            <behavior>
+                <append>($[source], $[filename], $[mode])</append>
+            </behavior>
+        </completion>
+        <completion string="complex" symbol="type">
+            <behavior symbol="function" prefix="(?&lt;!\()" suffix="(?![^a-zA-Z\(])">
+                <append>($[x])</append>
+            </behavior>
+        </completion>
+        <completion string="delattr">
+            <behavior>
+                <append>($[object], $[name])</append>
+            </behavior>
+        </completion>
+        <completion string="dict" symbol="type">
+            <behavior symbol="function" prefix="(?&lt;!\()" suffix="(?![^a-zA-Z\(])">
+                <append>($[x])</append>
+            </behavior>
+        </completion>
+        <completion string="dir" />
+        <completion string="divmod">
+            <behavior>
+                <append>($[a], $[b])</append>
+            </behavior>
+        </completion>
+        <completion string="enumerate" />
+        <completion string="eval" />
+        <completion string="execfile" />
+        <completion string="file" />
+        <completion string="filter">
+            <behavior>
+                <append>($[function], $[iterable])</append>
+            </behavior>
+        </completion>
+        <completion string="float" symbol="type">
+            <behavior symbol="function" prefix="(?&lt;!\()" suffix="(?![^a-zA-Z\(])">
+                <append>($[x])</append>
+            </behavior>
+        </completion>
+        <completion string="format" />
+        <completion string="frozenset" />
+        <completion string="getattr">
+            <behavior>
+                <append>($[object], $[name])</append>
+            </behavior>
+        </completion>
+        <completion string="globals">
+            <behavior>
+                <append>()</append>
+            </behavior>
+        </completion>
+        <completion string="hasattr">
+            <behavior>
+                <append>($[object], $[name])</append>
+            </behavior>
+        </completion>
+        <completion string="hash" />
+        <completion string="help" />
+        <completion string="hex" />
+        <completion string="id" />
+        <completion string="input" />
+        <completion string="int" symbol="type">
+            <behavior symbol="function" prefix="(?&lt;!\()" suffix="(?![^a-zA-Z\(])">
+                <append>($[x])</append>
+            </behavior>
+        </completion>
+        <completion string="isinstance">
+            <behavior>
+                <append>($[object], $[classinfo])</append>
+            </behavior>
+        </completion>
+        <completion string="issubclass">
+            <behavior>
+                <append>($[class], $[classinfo])</append>
+            </behavior>
+        </completion>
+        <completion string="iter" />
+        <completion string="len" />
+        <completion string="list" symbol="type">
+            <behavior symbol="function" prefix="(?&lt;!\()" suffix="(?![^a-zA-Z\(])">
+                <append>($[x])</append>
+            </behavior>
+        </completion>
+        <completion string="locals">
+            <behavior>
+                <append>()</append>
+            </behavior>
+        </completion>
+        <completion string="long" />
+        <completion string="map">
+            <behavior>
+                <append>($[function], $[iterable])</append>
+            </behavior>
+        </completion>
+        <completion string="max" />
+        <completion string="memoryview" />
+        <completion string="min" />
+        <completion string="next" />
+        <completion string="object" symbol="type">
+            <behavior symbol="function" prefix="(?&lt;!\()" suffix="(?![^a-zA-Z\(])">
+                <append>($[x])</append>
+            </behavior>
+        </completion>
+        <completion string="oct" />
+        <completion string="open" />
+        <completion string="ord" />
+        <completion string="pow">
+            <behavior>
+                <append>($[x], $[y])</append>
+            </behavior>
+        </completion>
+        <completion string="print">
+            <behavior>
+                <append>($[expression])</append>
+            </behavior>
+        </completion>
+        <completion string="property">
+            <behavior prefix="(?&lt;=@)">
+                <append></append>
+            </behavior>
+            <behavior>
+                <append>($[x])</append>
+            </behavior>
+        </completion>
+        <completion string="range" />
+        <completion string="raw_input" />
+        <completion string="reduce">
+            <behavior>
+                <append>($[function], $[iterable])</append>
+            </behavior>
+        </completion>
+        <completion string="reload" />
+        <completion string="repr" />
+        <completion string="reversed" />
+        <completion string="round" />
+        <completion string="set" symbol="type">
+            <behavior symbol="function" prefix="(?&lt;!\()" suffix="(?![^a-zA-Z\(])">
+                <append>($[x])</append>
+            </behavior>
+        </completion>
+        <completion string="setattr">
+            <behavior>
+                <append>($[object], $[name], $[value])</append>
+            </behavior>
+        </completion>
+        <completion string="slice" />
+        <completion string="sorted" />
+        <completion string="staticmethod">
+            <behavior prefix="(?&lt;=@)">
+                <append></append>
+            </behavior>
+            <behavior>
+                <append>($[x])</append>
+            </behavior>
+        </completion>
+        <completion string="str" symbol="type">
+            <behavior symbol="function" prefix="(?&lt;!\()" suffix="(?![^a-zA-Z\(])">
+                <append>($[x])</append>
+            </behavior>
+        </completion>
+        <completion string="sum" />
+        <completion string="super">
+            <behavior>
+                <append>($[Class], self).$[method]</append>
+            </behavior>
+        </completion>
+        <completion string="tuple" symbol="type">
+            <behavior symbol="function" prefix="(?&lt;!\()" suffix="(?![^a-zA-Z\(])">
+                <append>($[x])</append>
+            </behavior>
+        </completion>
+        <completion string="type" />
+        <completion string="unichr" />
+        <completion string="unicode" symbol="type">
+            <behavior symbol="function" prefix="(?&lt;!\()" suffix="(?![^a-zA-Z\(])">
+                <append>($[x])</append>
+            </behavior>
+        </completion>
+        <completion string="vars" />
+        <completion string="xrange" symbol="type">
+            <behavior symbol="function" prefix="(?&lt;!\()" suffix="(?![^a-zA-Z\(])">
+                <append>($[x])</append>
+            </behavior>
+        </completion>
+        <completion string="zip" />
+        <completion string="__import__" />
+        <completion string="apply" />
+        <completion string="buffer" />
+        <completion string="coerce">
+            <behavior>
+                <append>($[x], $[y])</append>
+            </behavior>
+        </completion>
+        <completion string="intern" />
+    </set>
+    
+    <!-- Built-in methods -->
+    <set name="python.methods.core" symbol="method">
+        <behavior prefix="(?&lt;=\.)">
+            <!-- If the method is being called, append parenthesis -->
+            <append>()</append>
+        </behavior>
+        <behavior prefix="(?&lt;=def\s)">
+            <!-- If the method is being defined, append parenthesis and the `self` keyword -->
+            <append>(self):</append>
+        </behavior>
+        
+        <completion string="__new__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>()</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(cls)</append>
+            </behavior>
+        </completion>
+        <completion string="__init__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[args])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[args]):</append>
+            </behavior>
+        </completion>
+        <completion string="__del__" />
+        <completion string="__repr__" />
+        <completion string="__str__" />
+        <completion string="__lt__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__lte__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__gt__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__gte__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__eq__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__ne__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__cmp__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__hash__" />
+        <completion string="__nonzero__" />
+        <completion string="__unicode__" />
+        <completion string="__getattr__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[name])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[name]):</append>
+            </behavior>
+        </completion>
+        <completion string="__setattr__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[name], $[value])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[name], $[value]):</append>
+            </behavior>
+        </completion>
+        <completion string="__delattr__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[name])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[name]):</append>
+            </behavior>
+        </completion>
+        <completion string="__getattribute__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[name])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[name]):</append>
+            </behavior>
+        </completion>
+        <completion string="__get__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[instance], $[owner])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[instance], $[owner]):</append>
+            </behavior>
+        </completion>
+        <completion string="__set__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[instance], $[value])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[instance], $[value]):</append>
+            </behavior>
+        </completion>
+        <completion string="__delete__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[instance])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[instance]):</append>
+            </behavior>
+        </completion>
+        <completion string="__instancecheck__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[instance])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[instance]):</append>
+            </behavior>
+        </completion>
+        <completion string="__subclasscheck__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[instance])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[instance]):</append>
+            </behavior>
+        </completion>
+        <completion string="__call__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[args])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[args]):</append>
+            </behavior>
+        </completion>
+        <completion string="__len__" />
+        <completion string="__getitem__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[key])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[key]):</append>
+            </behavior>
+        </completion>
+        <completion string="__setitem__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[key], $[value])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[key], $[value]):</append>
+            </behavior>
+        </completion>
+        <completion string="__delitem__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[key])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[key]):</append>
+            </behavior>
+        </completion>
+        <completion string="__iter__" />
+        <completion string="__reversed__" />
+        <completion string="__contains__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[item])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[item]):</append>
+            </behavior>
+        </completion>
+        <completion string="__getslice__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[i], $[j])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[i], $[j]):</append>
+            </behavior>
+        </completion>
+        <completion string="__setslice__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[i], $[j], $[sequence])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[i], $[j], $[sequence]):</append>
+            </behavior>
+        </completion>
+        <completion string="__delslice__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[i], $[j])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[i], $[j]):</append>
+            </behavior>
+        </completion>
+        <completion string="__add__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__sub__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__mul__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__floordiv__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__mod__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__divmod__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__pow__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__lshift__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__rshift__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__and__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__xor__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__or__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__div__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__truediv__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__radd__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__rsub__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__rmul__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__rdiv__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__rtruediv__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__rfloordiv__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__rmod__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__rdivmod__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__rpow__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__rlshift__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__rrshift__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__rand__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__rxor__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__ror__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__iand__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__isub__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__imul__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__idiv__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__itruediv__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__ifloordiv__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__imod__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__ipow__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__ilshift__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__irshift__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__iand__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__ixor__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__ior__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__neg__" />
+        <completion string="__pos__" />
+        <completion string="__abs__" />
+        <completion string="__invert__" />
+        <completion string="__complex__" />
+        <completion string="__int__" />
+        <completion string="__long__" />
+        <completion string="__float__" />
+        <completion string="__oct__" />
+        <completion string="__hex__" />
+        <completion string="__index__" />
+        <completion string="__coerce__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[other])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[other]):</append>
+            </behavior>
+        </completion>
+        <completion string="__enter__" />
+        <completion string="__exit__">
+            <behavior prefix="(?&lt;=\.)">
+                <append>($[exc_type], $[exc_value], $[traceback])</append>
+            </behavior>
+            <behavior prefix="(?&lt;=def\s)">
+                <append>(self, $[exc_type], $[exc_value], $[traceback]):</append>
+            </behavior>
+        </completion>
+    </set>
+    
+    <!-- Exceptions -->
+    <set name="python.exceptions.core" symbol="class">
+        <behavior prefix="(?&lt;!\()" suffix="(?![a-zA-Z0-9\(])">
+            <!-- Only append parenthesis if the name is not in a superclass definition or invocation -->
+            <append>($[args])</append>
+        </behavior>
+        
+        <completion string="BaseException" />
+        <completion string="Exception" />
+        <completion string="StandardError" />
+        <completion string="ArithmeticError" />
+        <completion string="BufferError" />
+        <completion string="LookupError" />
+        <completion string="EnvironmentError" />
+        <completion string="AssertionError" />
+        <completion string="AttributeError" />
+        <completion string="EOFError" />
+        <completion string="FloatingPointError" />
+        <completion string="GeneratorError" />
+        <completion string="IOError" />
+        <completion string="ImportError" />
+        <completion string="IndexError" />
+        <completion string="KeyError" />
+        <completion string="KeyboardInterrupt" />
+        <completion string="MemoryError" />
+        <completion string="NameError" />
+        <completion string="NotImplementedError" />
+        <completion string="OSError" />
+        <completion string="OverflowError" />
+        <completion string="ReferenceError" />
+        <completion string="RuntimeError" />
+        <completion string="StopIteration" />
+        <completion string="SyntaxError" />
+        <completion string="IndentationError" />
+        <completion string="TabError" />
+        <completion string="SystemError" />
+        <completion string="SystemExit" />
+        <completion string="TypeError" />
+        <completion string="UnboundLocalError" />
+        <completion string="UnicodeError" />
+        <completion string="UnicodeEncodeError" />
+        <completion string="UnicodeDecodeError" />
+        <completion string="UnicodeTranslateError" />
+        <completion string="ValueError" />
+        <completion string="VMSError" />
+        <completion string="WindowsError" />
+        <completion string="ZeroDivisionError" />
+        <completion string="Warning" />
+        <completion string="UserWarning" />
+        <completion string="DeprecationWarning" />
+        <completion string="PendingDeprecationWarning" />
+        <completion string="SyntaxWarning" />
+        <completion string="RuntimeWarning" />
+        <completion string="FutureWarning" />
+        <completion string="ImportWarning" />
+        <completion string="UnicodeWarning" />
+    </set>
+    
+    <!-- Modules -->
+    <set name="python.modules.core" symbol="package">
+        <completion string="string" />
+        <completion string="re" />
+        <completion string="struct" />
+        <completion string="difflib" />
+        <completion string="StringIO" />
+        <completion string="cStringIO" />
+        <completion string="textwrap" />
+        <completion string="codecs" />
+        <completion string="unicodedata" />
+        <completion string="stringprep" />
+        <completion string="fpformat" />
+        
+        <completion string="datetime" />
+        <completion string="calendar" />
+        <completion string="collections" />
+        <completion string="heapq" />
+        <completion string="bisect" />
+        <completion string="array" />
+        <completion string="sets" />
+        <completion string="sched" />
+        <completion string="mutex" />
+        <completion string="Queue" />
+        <completion string="weakref" />
+        <completion string="UserDict" />
+        <completion string="UserList" />
+        <completion string="UserString" />
+        <completion string="types" />
+        <completion string="new" />
+        <completion string="copy" />
+        <completion string="pprint" />
+        <completion string="repr" />
+        
+        <completion string="numbers" />
+        <completion string="math" />
+        <completion string="cmath" />
+        <completion string="decimal" />
+        <completion string="fractions" />
+        <completion string="random" />
+        <completion string="itertools" />
+        <completion string="functools" />
+        <completion string="operator" />
+        
+        <completion string="os.path" />
+        <completion string="fileinput" />
+        <completion string="stat" />
+        <completion string="statvfs" />
+        <completion string="filecmp" />
+        <completion string="tempfile" />
+        <completion string="glob" />
+        <completion string="fnmatch" />
+        <completion string="linecache" />
+        <completion string="shutil" />
+        <completion string="dircache" />
+        <completion string="macpath" />
+        
+        <completion string="pickle" />
+        <completion string="cPickle" />
+        <completion string="copy_reg" />
+        <completion string="shelve" />
+        <completion string="marshal" />
+        <completion string="anydbm" />
+        <completion string="whichdb" />
+        <completion string="dbm" />
+        <completion string="gdbm" />
+        <completion string="dbhash" />
+        <completion string="bsddb" />
+        <completion string="dumbdb" />
+        <completion string="sqlite3" />
+        
+        <completion string="zlib" />
+        <completion string="gzip" />
+        <completion string="bz2" />
+        <completion string="zipfile" />
+        <completion string="tarfile" />
+        
+        <completion string="csv" />
+        <completion string="ConfigParser" />
+        <completion string="robotparser" />
+        <completion string="netrc" />
+        <completion string="xdrlib" />
+        <completion string="plistlib" />
+        
+        <completion string="hashlib" />
+        <completion string="hmac" />
+        <completion string="md5" />
+        <completion string="sha" />
+        
+        <completion string="os" />
+        <completion string="io" />
+        <completion string="time" />
+        <completion string="argparse" />
+        <completion string="optparse" />
+        <completion string="getopt" />
+        <completion string="logging" />
+        <completion string="getpass" />
+        <completion string="curses" />
+        <completion string="platform" />
+        <completion string="errno" />
+        <completion string="ctypes" />
+        
+        <completion string="select" />
+        <completion string="threading" />
+        <completion string="thread" />
+        <completion string="dummy_threading" />
+        <completion string="dummy_thread" />
+        <completion string="multiprocessing" />
+        <completion string="mmap" />
+        <completion string="readline" />
+        <completion string="rlcompleter" />
+        
+        <completion string="subprocess" />
+        <completion string="socket" />
+        <completion string="ssl" />
+        <completion string="signal" />
+        <completion string="popen2" />
+        <completion string="asyncore" />
+        <completion string="aynchat" />
+        
+        <completion string="email" />
+        <completion string="json" />
+        <completion string="mailcap" />
+        <completion string="mailbox" />
+        <completion string="mhlib" />
+        <completion string="mimetools" />
+        <completion string="mimetypes" />
+        <completion string="MimeWriter" />
+        <completion string="mimify" />
+        <completion string="multifile" />
+        <completion string="rfc822" />
+        <completion string="base64" />
+        <completion string="binhex" />
+        <completion string="binascii" />
+        <completion string="quopri" />
+        <completion string="uu" />
+        
+        <completion string="HTMLParser" />
+        <completion string="sgmllib" />
+        <completion string="htmllib" />
+        <completion string="htmlentitydefs" />
+        <completion string="xml" />
+        
+        <completion string="webbrowser" />
+        <completion string="cgi" />
+        <completion string="cgitb" />
+        <completion string="wsgiref" />
+        <completion string="urllib" />
+        <completion string="urllib2" />
+        <completion string="httplib" />
+        <completion string="ftplib" />
+        <completion string="poplib" />
+        <completion string="imaplib" />
+        <completion string="nntplib" />
+        <completion string="smtplib" />
+        <completion string="smtpd" />
+        <completion string="telnetlib" />
+        <completion string="uuid" />
+        <completion string="urlparse" />
+        <completion string="SocketServer" />
+        <completion string="BaseHTTPServer" />
+        <completion string="SimpleHTTPServer" />
+        <completion string="CGIHTTPServer" />
+        <completion string="cookielib" />
+        <completion string="Cookie" />
+        <completion string="xmlrpclib" />
+        <completion string="SimpleXMLRPCServer" />
+        <completion string="DocXMLRPCServer" />
+        
+        <completion string="audioop" />
+        <completion string="imageop" />
+        <completion string="aifc" />
+        <completion string="sunau" />
+        <completion string="wave" />
+        <completion string="chunk" />
+        <completion string="colorsys" />
+        <completion string="imghdr" />
+        <completion string="sndhdr" />
+        <completion string="ossaudiodev" />
+        
+        <completion string="gettext" />
+        <completion string="locale" />
+        <completion string="cmd" />
+        <completion string="shlex" />
+        
+        <completion string="Tkinter" />
+        <completion string="ttk" />
+        <completion string="Tix" />
+        <completion string="ScrolledText" />
+        <completion string="turtle" />
+        
+        <completion string="pydoc" />
+        <completion string="doctest" />
+        <completion string="unittest" />
+        <completion string="test" />
+        
+        <completion string="bdb" />
+        <completion string="pdb" />
+        <completion string="hotshot" />
+        <completion string="timeit" />
+        <completion string="trace" />
+        
+        <completion string="sys" />
+        <completion string="sysconfig" />
+        <completion string="__builtin__" />
+        <completion string="future_builtins" />
+        <completion string="__main__" />
+        <completion string="warnings" />
+        <completion string="contextlib" />
+        <completion string="abc" />
+        <completion string="atexit" />
+        <completion string="traceback" />
+        <completion string="__future__" />
+        <completion string="gc" />
+        <completion string="inspect" />
+        <completion string="site" />
+        <completion string="user" />
+        <completion string="fpectl" />
+        <completion string="distutils" />
+        
+        <completion string="code" />
+        <completion string="codeop" />
+        
+        <completion string="rexec" />
+        <completion string="Bastion" />
+        
+        <completion string="imp" />
+        <completion string="importlib" />
+        <completion string="imputil" />
+        <completion string="zipimport" />
+        <completion string="pkgutil" />
+        <completion string="modulefinder" />
+        <completion string="runpy" />
+        
+        <completion string="parser" />
+        <completion string="ast" />
+        <completion string="symtable" />
+        <completion string="symbol" />
+        <completion string="token" />
+        <completion string="keyword" />
+        <completion string="tokenize" />
+        <completion string="tabnanny" />
+        <completion string="pyclbr" />
+        <completion string="py_compile" />
+        <completion string="compileall" />
+        <completion string="dis" />
+        <completion string="pickletools" />
+        
+        <completion string="formatter" />
+        
+        <completion string="msilib" />
+        <completion string="msvcrt" />
+        <completion string="_winreg" />
+        <completion string="winsound" />
+        
+        <completion string="posix" />
+        <completion string="pwd" />
+        <completion string="spwd" />
+        <completion string="grp" />
+        <completion string="crypt" />
+        <completion string="dl" />
+        <completion string="termios" />
+        <completion string="tty" />
+        <completion string="pty" />
+        <completion string="fcntl" />
+        <completion string="pipes" />
+        <completion string="posixfile" />
+        <completion string="resource" />
+        <completion string="nis" />
+        <completion string="syslog" />
+        <completion string="commands" />
+        
+        <completion string="ic" />
+        <completion string="MacOS" />
+        <completion string="macostools" />
+        <completion string="findertools" />
+        <completion string="EasyDialogs" />
+        <completion string="FrameWork" />
+        <completion string="autoGIL" />
+        <completion string="ColorPicker" />
+        
+        <completion string="gensuitemodule" />
+        <completion string="aetools" />
+        <completion string="aepack" />
+        <completion string="aetypes" />
+        <completion string="MiniAEFrame" />
+    </set>
+</completions>

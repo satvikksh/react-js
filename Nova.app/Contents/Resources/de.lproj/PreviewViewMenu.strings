@@ -1,0 +1,39 @@
+
+/* Class = "NSMenuItem"; title = "Show Web Inspector"; ObjectID = "FMt-F8-f1v"; */
+"FMt-F8-f1v.title" = "Webinformationen einblenden";
+
+/* Class = "NSMenu"; title = "Preview"; ObjectID = "GwO-fi-set"; */
+"GwO-fi-set.title" = "Vorschau";
+
+/* Class = "NSMenuItem"; title = "Back"; ObjectID = "Hoc-HD-w0D"; */
+"Hoc-HD-w0D.title" = "Zurück";
+
+/* Class = "NSMenuItem"; title = "Lock Focus to Custom URL"; ObjectID = "ITu-Py-joT"; */
+"ITu-Py-joT.title" = "Fokus auf benutzerdefinierte URL schützen";
+
+/* Class = "NSMenuItem"; title = "Open Location…"; ObjectID = "JKB-3L-4BB"; */
+"JKB-3L-4BB.title" = "Ort öffnen …";
+
+/* Class = "NSMenuItem"; title = "Change Focus with Current Editor"; ObjectID = "LSB-CX-Kla"; */
+"LSB-CX-Kla.title" = "Fokus mit aktuellem Editor ändern";
+
+/* Class = "NSMenuItem"; title = "Focus Current Document"; ObjectID = "Scc-d2-YI5"; */
+"Scc-d2-YI5.title" = "Fokus auf aktuelles Dokument";
+
+/* Class = "NSMenu"; title = "Preview In…"; ObjectID = "dUE-hI-Gse"; */
+"dUE-hI-Gse.title" = "Vorschau in …";
+
+/* Class = "NSMenuItem"; title = "Forward"; ObjectID = "mOM-CU-F2f"; */
+"mOM-CU-F2f.title" = "Vorwärts";
+
+/* Class = "NSMenuItem"; title = "Show JavaScript Console"; ObjectID = "mtD-N0-i3T"; */
+"mtD-N0-i3T.title" = "JavaScript-Konsole anzeigen";
+
+/* Class = "NSMenu"; title = "Lock Focus to Document"; ObjectID = "sEb-ys-zNi"; */
+"sEb-ys-zNi.title" = "Fokus auf Dokument schützen";
+
+/* Class = "NSMenuItem"; title = "Lock Focus to Document"; ObjectID = "sxg-kU-8zX"; */
+"sxg-kU-8zX.title" = "Fokus auf Dokument schützen";
+
+/* Class = "NSMenuItem"; title = "Preview In…"; ObjectID = "xnW-OH-LzM"; */
+"xnW-OH-LzM.title" = "Vorschau in …";

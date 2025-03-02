@@ -1,0 +1,108 @@
+
+/* Class = "NSMenuItem"; title = "Large"; ObjectID = "2ON-v6-v26"; */
+"2ON-v6-v26.title" = "大";
+
+/* Class = "NSTableColumn"; headerCell.title = "Syntax"; ObjectID = "3FA-ZN-U33"; */
+"3FA-ZN-U33.headerCell.title" = "语法";
+
+/* Class = "NSTextFieldCell"; title = "When a file tab is focused:"; ObjectID = "3O6-Zm-qzq"; */
+"3O6-Zm-qzq.title" = "在聚焦文件选项卡时：";
+
+/* Class = "NSTextFieldCell"; title = "Opening:"; ObjectID = "4CN-Nh-uAC"; */
+"4CN-Nh-uAC.title" = "正在打开：";
+
+/* Class = "NSMenuItem"; title = "Reveal and scroll the file into view"; ObjectID = "4ml-N4-Yxr"; */
+"4ml-N4-Yxr.title" = "在视图中显示和滚动文件";
+
+/* Class = "NSButtonCell"; title = "Show navigation controls"; ObjectID = "5Mj-2F-Xwq"; */
+"5Mj-2F-Xwq.title" = "显示导航控制";
+
+/* Class = "NSTextFieldCell"; title = "<<Syntax>>"; ObjectID = "B19-Sf-E6a"; */
+"B19-Sf-E6a.title" = "<<Syntax>>";
+
+/* Class = "NSMenuItem"; title = "Medium"; ObjectID = "BWh-KW-vER"; */
+"BWh-KW-vER.title" = "媒体";
+
+/* Class = "NSButtonCell"; title = "Ignore files excluded by Git"; ObjectID = "BXj-BK-tnI"; */
+"BXj-BK-tnI.title" = "忽略 Git 排除的文件";
+
+/* Class = "NSMenuItem"; title = "when closing"; ObjectID = "HTI-7V-uha"; */
+"HTI-7V-uha.title" = "关闭时";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "IjU-bu-aCZ"; */
+"IjU-bu-aCZ.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "A list of patterns that are matched against files and directories to be ignored by find and indexing operations."; ObjectID = "L4z-zd-Aob"; */
+"L4z-zd-Aob.title" = "与要被查找和索引操作忽略的文件和目录匹配的一系列模式。";
+
+/* Class = "NSMenuItem"; title = "Small"; ObjectID = "N2U-kz-AON"; */
+"N2U-kz-AON.title" = "小";
+
+/* Class = "NSTextFieldCell"; title = "Whether files and directories listed in a project's .gitignore file will be ignored."; ObjectID = "P1X-g3-4tw"; */
+"P1X-g3-4tw.title" = "是否将忽略项目的 .gitignore 文件中列出的文件或目录。";
+
+/* Class = "NSTextFieldCell"; title = "Files Sidebar Item Size:"; ObjectID = "T9B-a9-ZqZ"; */
+"T9B-a9-ZqZ.title" = "文件边栏项大小：";
+
+/* Class = "NSTextFieldCell"; title = "<<Filename>>"; ObjectID = "TbQ-5K-Coh"; */
+"TbQ-5K-Coh.title" = "<<Filename>>";
+
+/* Class = "NSTextFieldCell"; title = "Saving:"; ObjectID = "WSq-D1-uPf"; */
+"WSq-D1-uPf.title" = "正在保存：";
+
+/* Class = "NSTableColumn"; headerCell.title = "Extension / Filename"; ObjectID = "WkL-m8-YzF"; */
+"WkL-m8-YzF.headerCell.title" = "扩展名/文件名";
+
+/* Class = "NSButtonCell"; title = "Open documents with a single-click"; ObjectID = "X8O-rf-08y"; */
+"X8O-rf-08y.title" = "通过一次点按打开文档";
+
+/* Class = "NSTabViewItem"; label = "Ignored Files"; ObjectID = "XSS-8i-sMB"; */
+"XSS-8i-sMB.label" = "忽略的文件";
+
+/* Class = "NSMenuItem"; title = "Do nothing"; ObjectID = "bkY-cz-1gb"; */
+"bkY-cz-1gb.title" = "不执行任何操作";
+
+/* Class = "NSMenuItem"; title = "when losing focus"; ObjectID = "dJx-uE-Bvl"; */
+"dJx-uE-Bvl.title" = "失去焦点时";
+
+/* Class = "NSTextFieldCell"; title = "Files Sidebar:"; ObjectID = "daU-x7-iBY"; */
+"daU-x7-iBY.title" = "文件边栏：";
+
+/* Class = "NSTabViewItem"; label = "Documents"; ObjectID = "dpk-MU-Jla"; */
+"dpk-MU-Jla.label" = "文稿";
+
+/* Class = "NSMenuItem"; title = "Reveal the file"; ObjectID = "epK-Kp-7co"; */
+"epK-Kp-7co.title" = "显示文件";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "f0B-vf-SDg"; */
+"f0B-vf-SDg.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "Automatically save documents when invoking tasks"; ObjectID = "fCv-h0-sNg"; */
+"fCv-h0-sNg.title" = "在调用任务时自动保存文稿";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Pattern"; ObjectID = "k1E-7A-9K7"; */
+"k1E-7A-9K7.placeholderString" = "模式";
+
+/* Class = "NSButtonCell"; title = "Save documents atomically (save alongside and swap)"; ObjectID = "lDK-mh-tJj"; */
+"lDK-mh-tJj.title" = "原子保存文件（同时保存和交换）";
+
+/* Class = "NSTextFieldCell"; title = "The Files sidebar will show path, back, and forward buttons at the top, and double-clicking on a folder will navigate to it instead of expanding."; ObjectID = "ohS-En-swL"; */
+"ohS-En-swL.title" = "“文件”边栏将在顶部显示路径、后退和前进按钮，连按文件夹将导航到（而非展开）该文件夹。";
+
+/* Class = "NSButtonCell"; title = "Automatically save documents"; ObjectID = "pvB-YV-eXU"; */
+"pvB-YV-eXU.title" = "自动保存文稿";
+
+/* Class = "NSTextFieldCell"; title = "Custom File Types:"; ObjectID = "tTa-Qu-gef"; */
+"tTa-Qu-gef.title" = "自定义文件类型：";
+
+/* Class = "NSTabViewItem"; label = "Custom Types"; ObjectID = "uK7-Ra-h5E"; */
+"uK7-Ra-h5E.label" = "自定义类型";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "uR5-dK-MsW"; */
+"uR5-dK-MsW.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Ignored Files:"; ObjectID = "vur-AD-trB"; */
+"vur-AD-trB.title" = "忽略的文件：";
+
+/* Class = "NSMenuItem"; title = "Use System Behavior"; ObjectID = "xdv-cU-0GT"; */
+"xdv-cU-0GT.title" = "使用系统行为";

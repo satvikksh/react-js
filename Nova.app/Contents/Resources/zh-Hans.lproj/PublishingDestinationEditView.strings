@@ -1,0 +1,60 @@
+
+/* Class = "NSTextFieldCell"; title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."; ObjectID = "0CO-7D-xtl"; */
+"0CO-7D-xtl.title" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "1LG-2H-beJ"; */
+"1LG-2H-beJ.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "The destination path for publishing files. If empty, the server's default path will be used (may be configured in Preferences)."; ObjectID = "1ff-eb-K1n"; */
+"1ff-eb-K1n.title" = "发布文件的目标路径。如果留空，将使用服务器的默认路径（可在“首选项”中配置）。";
+
+/* Class = "NSButtonCell"; title = "Use Publishing"; ObjectID = "9nz-Le-QGv"; */
+"9nz-Le-QGv.title" = "使用发布";
+
+/* Class = "NSTextFieldCell"; title = "Files matching any of the ignored file patterns will not be automatically added to the publishing queue when modified."; ObjectID = "BcK-ey-5jh"; */
+"BcK-ey-5jh.title" = "修改后，与任何忽略的文件模式匹配的文件都不会自动添加到发布队列中。";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "Ecm-2X-dDr"; */
+"Ecm-2X-dDr.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "Modified local files will automatically be enqueued in the Publish sidebar."; ObjectID = "FBP-3S-co0"; */
+"FBP-3S-co0.title" = "修改后的本地文件将自动在“发布”边栏中排队。";
+
+/* Class = "NSButtonCell"; title = "Choose…"; ObjectID = "FGd-9b-nSw"; */
+"FGd-9b-nSw.title" = "选取…";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Value"; ObjectID = "YCj-YN-WFa"; */
+"YCj-YN-WFa.placeholderString" = "值";
+
+/* Class = "NSTextFieldCell"; title = "Local Path:"; ObjectID = "aXW-YP-rnn"; */
+"aXW-YP-rnn.title" = "本地路径：";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show and manage available servers"; ObjectID = "bMF-9e-Xpw"; */
+"bMF-9e-Xpw.ibShadowedToolTip" = "显示和管理可用的服务器";
+
+/* Class = "NSTextFieldCell"; title = "Remote Path:"; ObjectID = "dFY-IU-eZa"; */
+"dFY-IU-eZa.title" = "远程路径：";
+
+/* Class = "NSButtonCell"; title = "Choose…"; ObjectID = "eGV-mf-N4B"; */
+"eGV-mf-N4B.title" = "选取…";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "eI0-oE-FfZ"; */
+"eI0-oE-FfZ.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "gys-T5-p8k"; */
+"gys-T5-p8k.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "Server:"; ObjectID = "inE-HS-j4F"; */
+"inE-HS-j4F.title" = "服务器：";
+
+/* Class = "NSTextFieldCell"; title = "Ignored Files:"; ObjectID = "liS-f6-4fu"; */
+"liS-f6-4fu.title" = "忽略的文件：";
+
+/* Class = "NSTextFieldCell"; title = "The web URL for previewing remote files. It will be prepended to remote filenames relative to the remote path."; ObjectID = "pZY-gt-J9l"; */
+"pZY-gt-J9l.title" = "用于预览远程文件的网络 URL。它将被置于相对于远程路径的远程文件名之前。";
+
+/* Class = "NSTextFieldCell"; title = "Preview URL:"; ObjectID = "uEh-qd-ch6"; */
+"uEh-qd-ch6.title" = "预览 URL：";
+
+/* Class = "NSTextFieldCell"; title = "The source path for publishing files, relative to the project root. If empty, the project root will be used."; ObjectID = "uzp-BK-FNS"; */
+"uzp-BK-FNS.title" = "发布文件的源路径，相对于项目的根目录。如果留空，将使用项目的根目录。";

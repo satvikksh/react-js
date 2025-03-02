@@ -1,0 +1,1799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<completions>
+    <!-- "foo" -->
+    <provider name="webapi.classes">
+        <syntax>javascript</syntax>
+        <syntax>typescript</syntax>
+        <syntax>tsx</syntax>
+        
+        <exclude-selector>string, comment</exclude-selector>
+        
+        <expression>(?:(?&lt;!\.)\b([a-zA-Z_][a-zA-Z0-9_]*))|(?:(?&lt;![a-zA-Z0-9_\.]))</expression>
+        
+        <set>webapi.classes</set>
+    </provider>
+    
+    <provider name="javascript.properties.global">
+        <syntax>javascript</syntax>
+        <syntax>typescript</syntax>
+        <syntax>tsx</syntax>
+        <exclude-selector>string, comment</exclude-selector>
+        <expression>(?:(?&lt;!\.)\b([a-zA-Z_][a-zA-Z0-9_]*))|(?:(?&lt;![a-zA-Z0-9_\.]))</expression>
+        <set>webapi.methods.event-target</set>
+        <set>webapi.properties.window</set>
+        <set>webapi.methods.window</set>
+    </provider>
+    <provider name="webapi.properties.console">
+        <syntax>javascript</syntax>
+        <syntax>typescript</syntax>
+        <syntax>tsx</syntax>
+        <exclude-selector>string, comment</exclude-selector>
+        <trigger>.</trigger>
+        <expression>(?&lt;=\bconsole\.)([a-zA-Z_][a-zA-Z0-9_]*)?</expression>
+        <set>webapi.methods.console</set>
+    </provider>
+    <provider name="webapi.properties.document">
+        <syntax>javascript</syntax>
+        <syntax>typescript</syntax>
+        <syntax>tsx</syntax>
+        <exclude-selector>string, comment</exclude-selector>
+        <trigger>.</trigger>
+        <expression>(?&lt;=\bdocument\.)([a-zA-Z_][a-zA-Z0-9_]*)?</expression>
+        <set>webapi.properties.document</set>
+        <set>webapi.methods.document</set>
+        <set>webapi.methods.event-target</set>
+        <set>webapi.properties.node</set>
+        <set>webapi.methods.node</set>
+    </provider>
+    <provider name="webapi.properties.window">
+        <syntax>javascript</syntax>
+        <syntax>typescript</syntax>
+        <syntax>tsx</syntax>
+        <exclude-selector>string, comment</exclude-selector>
+        <trigger>.</trigger>
+        <expression>(?&lt;=\bwindow\.)([a-zA-Z_][a-zA-Z0-9_]*)?</expression>
+        <set>webapi.methods.event-target</set>
+        <set>webapi.properties.window</set>
+        <set>webapi.methods.window</set>
+    </provider>
+    
+    <!-- Classes -->
+    <set name="webapi.classes" symbol="class">
+        <completion string="AbsoluteOrientationSensor" />
+        <completion string="AbstractRange" />
+        <completion string="AbstractWorker" />
+        <completion string="Accelerometer" />
+        <completion string="AmbientLightSensor" />
+        <completion string="AnalyserNode" />
+        <completion string="AnimationEffect" />
+        <completion string="Attr" />
+        <completion string="AudioBuffer" />
+        <completion string="AudioBufferSourceNode" />
+        <completion string="AudioContext" />
+        <completion string="AudioContextOptions" />
+        <completion string="AudioDestinationNode" />
+        <completion string="AudioListener" />
+        <completion string="AudioNode" />
+        <completion string="AudioNodeOptions" />
+        <completion string="AudioParam" />
+        <completion string="AudioParamMap" />
+        <completion string="AudioProcessingEvent" deprecated="true" />
+        <completion string="AudioScheduledSourceNode" />
+        <completion string="AudioTrack" />
+        <completion string="AudioTrackList" />
+        <completion string="AudioWorklet" />
+        <completion string="AudioWorkletGlobalScope" />
+        <completion string="AudioWorkletNode" />
+        <completion string="AudioWorkletProcessor" />
+        <completion string="AuthenticatorAssertionResponse" />
+        <completion string="AuthenticatorAttestationResponse" />
+        <completion string="AuthenticatorResponse" />
+        <completion string="BaseAudioContext" />
+        <completion string="BasicCardRequest" />
+        <completion string="BasicCardResponse" />
+        <completion string="BatteryManager" deprecated="true" />
+        <completion string="BeforeUnloadEvent" />
+        <completion string="BiquadFilterNode" />
+        <completion string="Blob" />
+        <completion string="BlobBuilder" deprecated="true" />
+        <completion string="BlobEvent" />
+        <completion string="BluetoothAdvertisingData" deprecated="true" />
+        <completion string="Body" />
+        <completion string="BroadcastChannel" />
+        <completion string="CDATASection" />
+        <completion string="CSSConditionRule" />
+        <completion string="CSSCounterStyleRule" />
+        <completion string="CSSGroupingRule" />
+        <completion string="CSSMediaRule" />
+        <completion string="CSSNamespaceRule" />
+        <completion string="CSSPageRule" />
+        <completion string="CSSPrimitiveValue" deprecated="true" />
+        <completion string="CSSRule" />
+        <completion string="CSSRuleList" />
+        <completion string="CSSStyleDeclaration" />
+        <completion string="CSSStyleRule" />
+        <completion string="CSSStyleSheet" />
+        <completion string="CSSSupportsRule" />
+        <completion string="CSSValue" deprecated="true" />
+        <completion string="CSSValueList" deprecated="true" />
+        <completion string="CanvasGradient" />
+        <completion string="CanvasPattern" />
+        <completion string="CanvasRenderingContext2D" />
+        <completion string="ChannelMergerNode" />
+        <completion string="ChannelSplitterNode" />
+        <completion string="CharacterData" />
+        <completion string="ChildNode" />
+        <completion string="Clipboard" />
+        <completion string="CloseEvent" />
+        <completion string="Comment" />
+        <completion string="CompositionEvent" />
+        <completion string="ConstantSourceNode" />
+        <completion string="ConstrainBoolean" />
+        <completion string="ConstrainDOMString" />
+        <completion string="ConstrainDouble" />
+        <completion string="ConstrainLong" deprecated="true" />
+        <completion string="ConstrainULong" />
+        <completion string="ConvolverNode" />
+        <completion string="CredentialUserData" />
+        <completion string="Crypto" />
+        <completion string="CryptoKey" />
+        <completion string="CryptoKeyPair" />
+        <completion string="CustomEvent" />
+        <completion string="DOMConfiguration" deprecated="true" />
+        <completion string="DOMError" deprecated="true" />
+        <completion string="DOMErrorHandler" deprecated="true" />
+        <completion string="DOMException" />
+        <completion string="DOMHighResTimestamp" />
+        <completion string="DOMImplementation" />
+        <completion string="DOMImplementationList" deprecated="true" />
+        <completion string="DOMMatrix" />
+        <completion string="DOMMatrixReadOnly" />
+        <completion string="DOMParser" />
+        <completion string="DOMPointReadOnly" />
+        <completion string="DOMQuad" />
+        <completion string="DOMRect" />
+        <completion string="DOMRectReadOnly" />
+        <completion string="DOMStringList" />
+        <completion string="DOMStringMap" />
+        <completion string="DOMTokenList" />
+        <completion string="DataTransfer" />
+        <completion string="DataTransferItem" />
+        <completion string="DataTransferItemList" />
+        <completion string="DedicatedWorkerGlobalScope" />
+        <completion string="DelayNode" />
+        <completion string="DirectoryEntrySync" />
+        <completion string="DirectoryReaderSync" />
+        <!--<completion string="Document" /> Excluded to avoid annoyance with 'document' -->
+        <completion string="DocumentFragment" />
+        <completion string="DocumentType" />
+        <completion string="DoubleRange" />
+        <completion string="DragEvent" />
+        <completion string="DynamicsCompressorNode" />
+        <completion string="Element" />
+        <completion string="EntrySync" />
+        <completion string="ErrorEvent" />
+        <completion string="Event" />
+        <completion string="EventListener" />
+        <completion string="EventSource" />
+        <completion string="EventTarget" />
+        <completion string="External" deprecated="true" />
+        <completion string="File" />
+        <completion string="FileEntrySync" />
+        <completion string="FileError" deprecated="true" />
+        <completion string="FileException" deprecated="true" />
+        <completion string="FileList" />
+        <completion string="FileReader" />
+        <completion string="FileReaderSync" />
+        <completion string="FileSystem" />
+        <completion string="FileSystemDirectoryReader" deprecated="true" />
+        <completion string="FileSystemFileEntry" />
+        <completion string="FileSystemSync" />
+        <completion string="FontFace" />
+        <completion string="FormData" />
+        <completion string="FormDataEvent" />
+        <completion string="FullscreenOptions" />
+        <completion string="GainNode" />
+        <completion string="Gamepad" />
+        <completion string="GamepadButton" />
+        <completion string="GamepadEvent" />
+        <completion string="Geolocation" />
+        <completion string="GeolocationCoordinates" />
+        <completion string="GeolocationPosition" />
+        <completion string="GeolocationPositionError" />
+        <completion string="GestureEvent" />
+        <completion string="GlobalEventHandlers" />
+        <completion string="Gyroscope" />
+        <completion string="HMDVRDevice" deprecated="true" />
+        <completion string="HTMLAllCollection" />
+        <completion string="HTMLAnchorElement" />
+        <completion string="HTMLAreaElement" />
+        <completion string="HTMLAudioElement" />
+        <completion string="HTMLBRElement" />
+        <completion string="HTMLBaseElement" />
+        <completion string="HTMLBaseFontElement" deprecated="true" />
+        <completion string="HTMLBodyElement" />
+        <completion string="HTMLButtonElement" />
+        <completion string="HTMLCanvasElement" />
+        <completion string="HTMLCollection" />
+        <completion string="HTMLContentElement" deprecated="true" />
+        <completion string="HTMLDListElement" />
+        <completion string="HTMLDataElement" />
+        <completion string="HTMLDataListElement" />
+        <completion string="HTMLDetailsElement" />
+        <completion string="HTMLDivElement" />
+        <completion string="HTMLDocument" />
+        <completion string="HTMLElement" />
+        <completion string="HTMLEmbedElement" />
+        <completion string="HTMLFieldSetElement" />
+        <completion string="HTMLFontElement" deprecated="true" />
+        <completion string="HTMLFormControlsCollection" />
+        <completion string="HTMLFormElement" />
+        <completion string="HTMLFrameElement" deprecated="true" />
+        <completion string="HTMLFrameSetElement" />
+        <completion string="HTMLHRElement" />
+        <completion string="HTMLHeadElement" />
+        <completion string="HTMLHeadingElement" />
+        <completion string="HTMLHtmlElement" />
+        <completion string="HTMLHyperlinkElementUtils" />
+        <completion string="HTMLIFrameElement" />
+        <completion string="HTMLImageElement" />
+        <completion string="HTMLInputElement" />
+        <completion string="HTMLIsIndexElement" deprecated="true" />
+        <completion string="HTMLKeygenElement" deprecated="true" />
+        <completion string="HTMLLIElement" />
+        <completion string="HTMLLabelElement" />
+        <completion string="HTMLLegendElement" />
+        <completion string="HTMLLinkElement" />
+        <completion string="HTMLMapElement" />
+        <completion string="HTMLMarqueeElement" deprecated="true" />
+        <completion string="HTMLMediaElement" />
+        <completion string="HTMLMenuItemElement" deprecated="true" />
+        <completion string="HTMLMetaElement" />
+        <completion string="HTMLMeterElement" />
+        <completion string="HTMLModElement" />
+        <completion string="HTMLOListElement" />
+        <completion string="HTMLObjectElement" />
+        <completion string="HTMLOptGroupElement" />
+        <completion string="HTMLOptionElement" />
+        <completion string="HTMLOptionsCollection" />
+        <completion string="HTMLOutputElement" />
+        <completion string="HTMLParagraphElement" />
+        <completion string="HTMLParamElement" />
+        <completion string="HTMLPreElement" />
+        <completion string="HTMLProgressElement" />
+        <completion string="HTMLQuoteElement" />
+        <completion string="HTMLScriptElement" />
+        <completion string="HTMLSelectElement" />
+        <completion string="HTMLShadowElement" deprecated="true" />
+        <completion string="HTMLSourceElement" />
+        <completion string="HTMLSpanElement" />
+        <completion string="HTMLStyleElement" />
+        <completion string="HTMLTableCaptionElement" />
+        <completion string="HTMLTableCellElement" />
+        <completion string="HTMLTableColElement" />
+        <completion string="HTMLTableElement" />
+        <completion string="HTMLTableRowElement" />
+        <completion string="HTMLTableSectionElement" />
+        <completion string="HTMLTemplateElement" />
+        <completion string="HTMLTextAreaElement" />
+        <completion string="HTMLTimeElement" />
+        <completion string="HTMLTitleElement" />
+        <completion string="HTMLTrackElement" />
+        <completion string="HTMLUListElement" />
+        <completion string="HTMLUnknownElement" />
+        <completion string="HTMLVideoElement" />
+        <completion string="HashChangeEvent" />
+        <completion string="Headers" />
+        <completion string="History" />
+        <completion string="IDBCursor" />
+        <completion string="IDBCursorWithValue" />
+        <completion string="IDBDatabase" />
+        <completion string="IDBDatabaseException" deprecated="true" />
+        <completion string="IDBEnvironment" deprecated="true" />
+        <completion string="IDBFactory" />
+        <completion string="IDBIndex" />
+        <completion string="IDBKeyRange" />
+        <completion string="IDBObjectStore" />
+        <completion string="IDBOpenDBRequest" />
+        <completion string="IDBRequest" />
+        <completion string="IDBTransaction" />
+        <completion string="IDBVersionChangeEvent" />
+        <completion string="IDBVersionChangeRequest" deprecated="true" />
+        <completion string="IIRFilterNode" />
+        <completion string="IdleDeadline" />
+        <completion string="ImageBitmap" />
+        <completion string="ImageData" />
+        <completion string="InputDeviceCapabilities" />
+        <completion string="InputDeviceInfo" />
+        <completion string="KeyboardEvent" />
+        <completion string="LinearAccelerationSensor" />
+        <completion string="LocalFileSystem" />
+        <completion string="LocalFileSystemSync" />
+        <completion string="LocalMediaStream" deprecated="true" />
+        <completion string="Location" />
+        <completion string="LongRange" deprecated="true" />
+        <completion string="MIDIConnectionEvent" />
+        <completion string="MIDIPort" />
+        <completion string="MSGestureEvent" />
+        <completion string="Magnetometer" />
+        <completion string="MediaDeviceInfo" />
+        <completion string="MediaDevices" />
+        <completion string="MediaElementAudioSourceNode" />
+        <completion string="MediaEncryptedEvent" />
+        <completion string="MediaError" />
+        <completion string="MediaList" />
+        <completion string="MediaQueryListEvent" />
+        <completion string="MediaQueryListListener" />
+        <completion string="MediaRecorder" />
+        <completion string="MediaRecorderErrorEvent" />
+        <completion string="MediaStream" />
+        <completion string="MediaStreamAudioDestinationNode" />
+        <completion string="MediaStreamAudioSourceNode" />
+        <completion string="MediaStreamAudioSourceOptions" />
+        <completion string="MediaStreamConstraints" />
+        <completion string="MediaStreamEvent" deprecated="true" />
+        <completion string="MediaStreamTrack" />
+        <completion string="MediaStreamTrackAudioSourceNode" />
+        <completion string="MediaStreamTrackAudioSourceOptions" />
+        <completion string="MediaStreamTrackEvent" />
+        <completion string="MediaTrackConstraints" />
+        <completion string="MediaTrackSettings" />
+        <completion string="MediaTrackSupportedConstraints" />
+        <completion string="MerchantValidationEvent" />
+        <completion string="MessageChannel" />
+        <completion string="MessageEvent" />
+        <completion string="MessagePort" />
+        <completion string="MimeType" />
+        <completion string="MimeTypeArray" />
+        <completion string="MouseEvent" />
+        <completion string="MouseScrollEvent" deprecated="true" />
+        <completion string="MouseWheelEvent" deprecated="true" />
+        <completion string="MutationObserver" />
+        <completion string="MutationObserverInit" />
+        <completion string="MutationRecord" />
+        <completion string="NamedNodeMap" />
+        <completion string="Navigator" />
+        <completion string="NavigatorConcurrentHardware" />
+        <completion string="NavigatorID" />
+        <completion string="NavigatorLanguage" />
+        <completion string="NavigatorOnLine" />
+        <completion string="NavigatorPlugins" />
+        <completion string="NavigatorStorage" />
+        <completion string="Node" />
+        <completion string="NodeFilter" />
+        <completion string="NodeIterator" />
+        <completion string="NodeList" />
+        <completion string="NonDocumentTypeChildNode" />
+        <completion string="Notation" deprecated="true" />
+        <completion string="Notification" />
+        <completion string="OfflineAudioCompletionEvent" />
+        <completion string="OfflineAudioContext" />
+        <completion string="OrientationSensor" />
+        <completion string="OscillatorNode" />
+        <completion string="OverconstrainedErrorEvent" />
+        <completion string="PageTransitionEvent" />
+        <completion string="PaintRenderingContext2D" />
+        <completion string="PaintSize" />
+        <completion string="PaintWorkletGlobalScope" />
+        <completion string="PannerNode" />
+        <completion string="ParentNode" />
+        <completion string="PayerErrors" />
+        <completion string="PaymentAddress" />
+        <completion string="PaymentCurrencyAmount" />
+        <completion string="PaymentDetailsBase" />
+        <completion string="PaymentDetailsInit" />
+        <completion string="PaymentDetailsUpdate" />
+        <completion string="PaymentMethodChangeEvent" />
+        <completion string="PaymentRequest" />
+        <completion string="PaymentRequestUpdateEvent" />
+        <completion string="PaymentResponse" />
+        <completion string="Performance" />
+        <completion string="PerformanceEntry" />
+        <completion string="PerformanceMark" />
+        <completion string="PerformanceMeasure" />
+        <completion string="PerformanceNavigation" deprecated="true" />
+        <completion string="PerformanceObserver" />
+        <completion string="PerformanceObserverEntryList" />
+        <completion string="PerformancePaintTiming" />
+        <completion string="PerformanceResourceTiming" />
+        <completion string="PerformanceServerTiming" />
+        <completion string="PerformanceTiming" deprecated="true" />
+        <completion string="PeriodicWave" />
+        <completion string="Permissions" />
+        <completion string="Plugin" />
+        <completion string="PluginArray" />
+        <completion string="Point" deprecated="true" />
+        <completion string="PointerEvent" />
+        <completion string="PopStateEvent" />
+        <completion string="PositionOptions" />
+        <completion string="ProcessingInstruction" />
+        <completion string="ProgressEvent" />
+        <completion string="PromiseRejectionEvent" />
+        <completion string="PublicKeyCredential" />
+        <completion string="PushSubscription" />
+        <completion string="PushSubscriptionChangeEvent" />
+        <completion string="PushSubscriptionOptions" />
+        <completion string="RTCAnswerOptions" />
+        <completion string="RTCCertificate" />
+        <completion string="RTCConfiguration" />
+        <completion string="RTCDTMFSender" />
+        <completion string="RTCDTMFToneChangeEvent" />
+        <completion string="RTCDataChannelEvent" />
+        <completion string="RTCDtlsTransport" />
+        <completion string="RTCErrorEvent" />
+        <completion string="RTCIceCandidate" />
+        <completion string="RTCIceCandidateInit" />
+        <completion string="RTCIceCandidatePairStats" />
+        <completion string="RTCIceCandidateStats" />
+        <completion string="RTCIceCandidateType" />
+        <completion string="RTCIceComponent" />
+        <completion string="RTCIceCredentialType" />
+        <completion string="RTCIceServer" />
+        <completion string="RTCIceTransport" />
+        <completion string="RTCIdentityProviderGlobalScope" />
+        <completion string="RTCIdentityProviderRegistrar" />
+        <completion string="RTCOfferAnswerOptions" />
+        <completion string="RTCOfferOptions" />
+        <completion string="RTCPeerConnection" />
+        <completion string="RTCPeerConnectionIceErrorEvent" />
+        <completion string="RTCRtpContributingSource" />
+        <completion string="RTCRtpEncodingParameters" />
+        <completion string="RTCRtpReceiver" />
+        <completion string="RTCRtpSendParameters" />
+        <completion string="RTCRtpSender" />
+        <completion string="RTCRtpStreamStats" />
+        <completion string="RTCRtpSynchronizationSource" />
+        <completion string="RTCRtpTransceiver" />
+        <completion string="RTCRtpTransceiverDirection" />
+        <completion string="RTCRtpTransceiverInit" />
+        <completion string="RTCSessionDescriptionCallback" deprecated="true" />
+        <completion string="RTCStatsEvent" />
+        <completion string="RTCStatsReport" />
+        <completion string="RTCTrackEvent" />
+        <completion string="RTCTrackEventInit" />
+        <completion string="RadioNodeList" />
+        <completion string="Range" />
+        <completion string="RelativeOrientationSensor" />
+        <completion string="ResizeObserver" />
+        <completion string="ResizeObserverEntry" />
+        <completion string="Response" />
+        <completion string="SVGAElement" />
+        <completion string="SVGAltGlyphDefElement" deprecated="true" />
+        <completion string="SVGAltGlyphElement" deprecated="true" />
+        <completion string="SVGAltGlyphItemElement" deprecated="true" />
+        <completion string="SVGAngle" />
+        <completion string="SVGAnimateColorElement" deprecated="true" />
+        <completion string="SVGAnimateElement" />
+        <completion string="SVGAnimateMotionElement" />
+        <completion string="SVGAnimateTransformElement" />
+        <completion string="SVGAnimatedAngle" />
+        <completion string="SVGAnimatedBoolean" />
+        <completion string="SVGAnimatedEnumeration" />
+        <completion string="SVGAnimatedInteger" />
+        <completion string="SVGAnimatedLength" />
+        <completion string="SVGAnimatedLengthList" />
+        <completion string="SVGAnimatedNumber" />
+        <completion string="SVGAnimatedNumberList" />
+        <completion string="SVGAnimatedPoints" />
+        <completion string="SVGAnimatedPreserveAspectRatio" />
+        <completion string="SVGAnimatedRect" />
+        <completion string="SVGAnimatedString" />
+        <completion string="SVGAnimatedTransformList" />
+        <completion string="SVGAnimationElement" />
+        <completion string="SVGCircleElement" />
+        <completion string="SVGClipPathElement" />
+        <completion string="SVGColorProfileElement" deprecated="true" />
+        <completion string="SVGComponentTransferFunctionElement" />
+        <completion string="SVGCursorElement" deprecated="true" />
+        <completion string="SVGDefsElement" />
+        <completion string="SVGDescElement" />
+        <completion string="SVGElement" />
+        <completion string="SVGEllipseElement" />
+        <completion string="SVGExternalResourcesRequired" deprecated="true" />
+        <completion string="SVGFEBlendElement" />
+        <completion string="SVGFEColorMatrixElement" />
+        <completion string="SVGFEComponentTransferElement" />
+        <completion string="SVGFECompositeElement" />
+        <completion string="SVGFEConvolveMatrixElement" />
+        <completion string="SVGFEDiffuseLightingElement" />
+        <completion string="SVGFEDisplacementMapElement" />
+        <completion string="SVGFEDistantLightElement" />
+        <completion string="SVGFEDropShadowElement" />
+        <completion string="SVGFEFloodElement" />
+        <completion string="SVGFEFuncAElement" />
+        <completion string="SVGFEFuncBElement" />
+        <completion string="SVGFEFuncGElement" />
+        <completion string="SVGFEFuncRElement" />
+        <completion string="SVGFEGaussianBlurElement" />
+        <completion string="SVGFEImageElement" />
+        <completion string="SVGFEMergeElement" />
+        <completion string="SVGFEMergeNodeElement" />
+        <completion string="SVGFEMorphologyElement" />
+        <completion string="SVGFEOffsetElement" />
+        <completion string="SVGFEPointLightElement" />
+        <completion string="SVGFESpecularLightingElement" />
+        <completion string="SVGFESpotLightElement" />
+        <completion string="SVGFETileElement" />
+        <completion string="SVGFETurbulenceElement" />
+        <completion string="SVGFilterElement" />
+        <completion string="SVGFilterPrimitiveStandardAttributes" />
+        <completion string="SVGFontElement" deprecated="true" />
+        <completion string="SVGFontFaceElement" deprecated="true" />
+        <completion string="SVGFontFaceFormatElement" deprecated="true" />
+        <completion string="SVGFontFaceNameElement" deprecated="true" />
+        <completion string="SVGFontFaceSrcElement" deprecated="true" />
+        <completion string="SVGFontFaceUriElement" deprecated="true" />
+        <completion string="SVGForeignObjectElement" />
+        <completion string="SVGGElement" />
+        <completion string="SVGGeometryElement" />
+        <completion string="SVGGlyphElement" deprecated="true" />
+        <completion string="SVGGlyphRefElement" deprecated="true" />
+        <completion string="SVGGradientElement" />
+        <completion string="SVGGraphicsElement" />
+        <completion string="SVGHKernElement" deprecated="true" />
+        <completion string="SVGImageElement" />
+        <completion string="SVGLength" />
+        <completion string="SVGLengthList" />
+        <completion string="SVGLineElement" />
+        <completion string="SVGLinearGradientElement" />
+        <completion string="SVGMPathElement" />
+        <completion string="SVGMaskElement" />
+        <completion string="SVGMatrix" deprecated="true" />
+        <completion string="SVGMetadataElement" />
+        <completion string="SVGMissingGlyphElement" deprecated="true" />
+        <completion string="SVGNumber" />
+        <completion string="SVGNumberList" />
+        <completion string="SVGPathElement" />
+        <completion string="SVGPatternElement" />
+        <completion string="SVGPoint" />
+        <completion string="SVGPolygonElement" />
+        <completion string="SVGPolylineElement" />
+        <completion string="SVGPreserveAspectRatio" />
+        <completion string="SVGRadialGradientElement" />
+        <completion string="SVGRect" />
+        <completion string="SVGRectElement" />
+        <completion string="SVGRenderingIntent" deprecated="true" />
+        <completion string="SVGSVGElement" />
+        <completion string="SVGScriptElement" />
+        <completion string="SVGSetElement" />
+        <completion string="SVGStopElement" />
+        <completion string="SVGStringList" />
+        <completion string="SVGStylable" />
+        <completion string="SVGStyleElement" />
+        <completion string="SVGSwitchElement" />
+        <completion string="SVGSymbolElement" />
+        <completion string="SVGTRefElement" deprecated="true" />
+        <completion string="SVGTSpanElement" />
+        <completion string="SVGTests" />
+        <completion string="SVGTextContentElement" />
+        <completion string="SVGTextElement" />
+        <completion string="SVGTextPathElement" />
+        <completion string="SVGTextPositioningElement" />
+        <completion string="SVGTitleElement" />
+        <completion string="SVGTransform" />
+        <completion string="SVGTransformList" />
+        <completion string="SVGTransformable" />
+        <completion string="SVGURIReference" />
+        <completion string="SVGUnitTypes" />
+        <completion string="SVGUseElement" />
+        <completion string="SVGVKernElement" deprecated="true" />
+        <completion string="SVGViewElement" />
+        <completion string="SVGZoomAndPan" deprecated="true" />
+        <completion string="Screen" />
+        <completion string="ScreenOrientation" />
+        <completion string="ScriptProcessorNode" deprecated="true" />
+        <completion string="ScrollToOptions" />
+        <completion string="Sensor" />
+        <completion string="SensorErrorEvent" />
+        <completion string="ServiceWorkerGlobalScope" />
+        <completion string="ServiceWorkerMessageEvent" deprecated="true" />
+        <completion string="SharedWorker" />
+        <completion string="SharedWorkerGlobalScope" />
+        <completion string="SourceBuffer" />
+        <completion string="StaticRange" />
+        <completion string="StereoPannerNode" />
+        <completion string="Storage" />
+        <completion string="StorageEstimate" />
+        <completion string="StorageEvent" />
+        <completion string="StorageManager" />
+        <completion string="StorageQuota" deprecated="true" />
+        <completion string="StyleSheet" />
+        <completion string="StyleSheetList" />
+        <completion string="SubtleCrypto" />
+        <completion string="Text" />
+        <completion string="TextDecoder" />
+        <completion string="TextMetrics" />
+        <completion string="TextTrack" />
+        <completion string="TextTrackCue" />
+        <completion string="TextTrackList" />
+        <completion string="TimeRanges" />
+        <completion string="Touch" />
+        <completion string="TouchEvent" />
+        <completion string="TouchList" />
+        <completion string="TrackEvent" />
+        <completion string="Transferable" />
+        <completion string="TransformStream" />
+        <completion string="TransformStreamDefaultController" />
+        <completion string="TreeWalker" />
+        <completion string="UIEvent" />
+        <completion string="ULongRange" />
+        <completion string="URL" />
+        <completion string="URLSearchParams" />
+        <completion string="URLUtilsReadOnly" />
+        <completion string="UserDataHandler" deprecated="true" />
+        <completion string="VTTCue" />
+        <completion string="ValidityState" />
+        <completion string="VideoTrack" />
+        <completion string="VideoTrackList" />
+        <completion string="WaveShaperNode" />
+        <completion string="WebGL2RenderingContext" />
+        <completion string="WebGLActiveInfo" />
+        <completion string="WebGLBuffer" />
+        <completion string="WebGLContextEvent" />
+        <completion string="WebGLFramebuffer" />
+        <completion string="WebGLObject" />
+        <completion string="WebGLProgram" />
+        <completion string="WebGLQuery" />
+        <completion string="WebGLRenderbuffer" />
+        <completion string="WebGLRenderingContext" />
+        <completion string="WebGLSampler" />
+        <completion string="WebGLShader" />
+        <completion string="WebGLShaderPrecisionFormat" />
+        <completion string="WebGLSync" />
+        <completion string="WebGLTexture" />
+        <completion string="WebGLTransformFeedback" />
+        <completion string="WebGLUniformLocation" />
+        <completion string="WebGLVertexArrayObject" />
+        <completion string="WebGLVertexArrayObjectOES" />
+        <completion string="WebKitCSSMatrix" />
+        <completion string="WebSocket" />
+        <completion string="WheelEvent" />
+        <!--<completion string="Window" /> Excluded to avoid annoyance with 'window' -->
+        <completion string="WindowEventHandlers" />
+        <completion string="WindowOrWorkerGlobalScope" />
+        <completion string="Worker" />
+        <completion string="WorkerGlobalScope" />
+        <completion string="WorkerLocation" />
+        <completion string="WorkerNavigator" />
+        <completion string="XDomainRequest" deprecated="true" />
+        <completion string="XMLDocument" />
+        <completion string="XMLHttpRequest" />
+        <completion string="XMLHttpRequestEventTarget" />
+        <completion string="XMLHttpRequestUpload" />
+        <completion string="XMLSerializer" />
+        <completion string="XPathExpression" />
+        <completion string="XPathResult" />
+        <completion string="XRInputSource" />
+        <completion string="XRInputSourceArray" />
+        <completion string="XRInputSourceEvent" />
+        <completion string="XRInputSourcesChangeEvent" />
+        <completion string="XRPose" />
+        <completion string="XRReferenceSpace" />
+        <completion string="XRReferenceSpaceEvent" />
+        <completion string="XRRigidTransform" />
+        <completion string="XRSession" />
+        <completion string="XRSessionEvent" />
+        <completion string="XRSpace" />
+        <completion string="XRView" />
+        <completion string="XRViewerPose" />
+        <completion string="XRViewport" />
+        <completion string="XRWebGLLayer" />
+        <completion string="XRWebGLLayerInit" />
+    </set>
+    
+    <!-- Properties & Methods -->
+    <set name="webapi.methods.console" symbol="property">
+        <completion string="assert">
+            <behavior>
+                <append>($[assertion], $[message…])</append>
+            </behavior>
+            <description>Writes an error message to the console if the assertion is false. If the assertion is true, nothing happens.</description>
+        </completion>
+        <completion string="clear">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Clears the console if the console allows it.</description>
+        </completion>
+        <completion string="count">
+            <behavior>
+                <append>($[label])</append>
+            </behavior>
+            <description>Logs the number of times that this particular call to count() has been called.</description>
+        </completion>
+        <completion string="count">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+            <description>Logs the number of times that this particular call to count() has been called.</description>
+        </completion>
+        <completion string="countReset">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+            <description>Resets counter used with `console.count()`.</description>
+        </completion>
+        <completion string="debug">
+            <behavior>
+                <append>($[message…])</append>
+            </behavior>
+            <description>Outputs a message to the console at the "debug" log level.</description>
+        </completion>
+        <completion string="dir">
+            <behavior>
+                <append>($[object])</append>
+            </behavior>
+            <description>Displays an interactive listing of the properties of a specified JavaScript object.</description>
+        </completion>
+        <completion string="dirxml">
+            <behavior>
+                <append>($[object])</append>
+            </behavior>
+            <description>Displays an interactive tree of the descendant elements of the specified XML/HTML element.</description>
+        </completion>
+        <completion string="error">
+            <behavior>
+                <append>($[message…])</append>
+            </behavior>
+            <description>Outputs an error message to the console.</description>
+        </completion>
+        <completion string="group">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+            <description>Creates a new inline group in the console.</description>
+        </completion>
+        <completion string="groupEnd">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+            <description>Exits the current inline group in the console.</description>
+        </completion>
+        <completion string="info">
+            <behavior>
+                <append>($[message…])</append>
+            </behavior>
+            <description>Outputs an informational message to the console.</description>
+        </completion>
+        <completion string="log">
+            <behavior>
+                <append>($[message…])</append>
+            </behavior>
+            <description>Outputs a message to the console.</description>
+        </completion>
+        <completion string="profile" nonstandard="true">
+            <behavior>
+                <append>($[name])</append>
+            </behavior>
+            <description>Starts recording a performance profile.</description>
+        </completion>
+        <completion string="profileEnd" nonstandard="true">
+            <behavior>
+                <append>($[name])</append>
+            </behavior>
+            <description>Stops recording a profile previously started with `console.profile()`.</description>
+        </completion>
+        <completion string="table">
+            <behavior>
+                <append>($[data])</append>
+            </behavior>
+            <description>Displays tabular data as a table.</description>
+        </completion>
+        <completion string="time">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+            <description>Starts a timer you can use to track how long an operation takes.</description>
+        </completion>
+        <completion string="timeEnd">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+            <description>Stops a timer that was previously started by calling `console.time()`.</description>
+        </completion>
+        <completion string="timeLog">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+            <description>Logs the current value of a timer that was previously started by calling `console.time()`.</description>
+        </completion>
+        <completion string="timeStamp" nonstandard="true">
+            <behavior>
+                <append>($[])</append>
+            </behavior>
+            <description>Adds a single marker to the browser's Performance tool.</description>
+        </completion>
+        <completion string="trace">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Outputs a stack trace to the console.</description>
+        </completion>
+        <completion string="warn">
+            <behavior>
+                <append>($[message…])</append>
+            </behavior>
+            <description>Outputs a warning message to the console.</description>
+        </completion>
+    </set>
+    <set name="webapi.properties.document" symbol="property">
+        <completion string="activeElement">
+            <description>Returns the `Element` within the DOM that currently has focus.</description>
+        </completion>
+        <completion string="adoptedStyleSheets">
+            <description>Used for setting an array of constructed stylesheets to be used by the document.</description>
+        </completion>
+        <completion string="alinkColor" deprecated="true">
+            <description>Returns or sets the color of an active link in the document body.</description>
+        </completion>
+        <completion string="all" deprecated="true">
+            <description>Returns an `HTMLAllCollection` rooted at the document node.</description>
+        </completion>
+        <completion string="anchors" deprecated="true">
+            <description>Returns a list of all of the anchors in the document.</description>
+        </completion>
+        <completion string="applets" deprecated="true">
+            <description>Always returns an empty `HTMLCollection` in modern browsers.</description>
+        </completion>
+        <completion string="bgColor" deprecated="true">
+            <description>Gets or sets the background color of the current document.</description>
+        </completion>
+        <completion string="body">
+            <description>Represents the `body` or `frameset` node of the current document, or `null` if no such element exists.</description>
+        </completion>
+        <completion string="characterSet">
+            <description>Returns the character encoding with which the document is being rendered.</description>
+        </completion>
+        <completion string="childElementCount">
+            <description>Returns the number of child elements of the document.</description>
+        </completion>
+        <completion string="children">
+            <description>Returns a live `HTMLCollection` which contains all of the child elements of the document.</description>
+        </completion>
+        <completion string="compatMode">
+            <description>Indicates whether the document is rendered in Quirks mode or Standards mode.</description>
+        </completion>
+        <completion string="contentType">
+            <description>Returns the MIME type of which the document is being rendered.</description>
+        </completion>
+        <completion string="cookie">
+            <description>Lets you read and write cookies associated with the document.</description>
+        </completion>
+        <completion string="currentScript">
+            <description>Returns the `script` element whose script is currently being processed.</description>
+        </completion>
+        <completion string="defaultView">
+            <description>Returns the `window` object associated with a document, or `null` if none is available.</description>
+        </completion>
+        <completion string="designMode">
+            <description>Controls whether the entire document is editable.</description>
+        </completion>
+        <completion string="dir">
+            <description>A string representing the directionality of the text of the document, whether left-to-right (default) or right-to-left.</description>
+        </completion>
+        <completion string="doctype">
+            <description>Returns the Document Type Declaration (DTD) associated with current document.</description>
+        </completion>
+        <completion string="documentElement">
+            <description>Returns the `Element` that is the root element of the document (for example, the `html` element for HTML documents).</description>
+        </completion>
+        <completion string="documentURI">
+            <description>Returns the document location as a string.</description>
+        </completion>
+        <completion string="domain" deprecated="true">
+            <description>Gets or sets the domain portion of the origin of the current document, as used by the same-origin policy.</description>
+        </completion>
+        <completion string="embeds">
+            <description>Returns a list of the embedded `embed` elements within the current document.</description>
+        </completion>
+        <completion string="featurePolicy" experimental="true">
+            <description>Returns the `FeaturePolicy` interface which provides a simple API for inspecting the Permissions Policies applied to a specific document.</description>
+        </completion>
+        <completion string="fgColor" deprecated="true">
+            <description>Gets or sets the foreground color, or text color, of the current document.</description>
+        </completion>
+        <completion string="firstElementChild">
+            <description>Returns the document's first child `Element`, or `null` if there are no child elements.</description>
+        </completion>
+        <completion string="fonts">
+            <description>Returns the `FontFaceSet` interface of the document.</description>
+        </completion>
+        <completion string="forms">
+            <description>Returns an `HTMLCollection` listing all the `form` elements contained in the document.</description>
+        </completion>
+        <completion string="fragmentDirective" experimental="true">
+            <description>Returns the `FragmentDirective` for the current document.</description>
+        </completion>
+        <completion string="fullscreen" deprecated="true">
+            <description>Reports whether or not the document is currently displaying content in fullscreen mode.</description>
+        </completion>
+        <completion string="fullscreenElement">
+            <description>Returns the `Element` that is currently being presented in fullscreen mode, or `null` if fullscreen mode is not currently in use.</description>
+        </completion>
+        <completion string="fullscreenEnabled">
+            <description>Indicates whether or not fullscreen mode is available.</description>
+        </completion>
+        <completion string="head">
+            <description>Returns the `head` element of the current document.</description>
+        </completion>
+        <completion string="hidden">
+            <description>Returns a Boolean value indicating if the page is considered hidden or not.</description>
+        </completion>
+        <completion string="images">
+            <description>Returns a collection of the images in the current HTML document.</description>
+        </completion>
+        <completion string="implementation">
+            <description>Returns a `DOMImplementation` object associated with the current document.</description>
+        </completion>
+        <completion string="lastElementChild">
+            <description>Returns the document's last child `Element`, or `null` if there are no child elements.</description>
+        </completion>
+        <completion string="lastModified">
+            <description>Returns a string containing the date and local time on which the current document was last modified.</description>
+        </completion>
+        <completion string="linkColor" deprecated="true">
+            <description>Gets or sets the color of links within the document.</description>
+        </completion>
+        <completion string="links">
+            <description>Returns a collection of all `area` and `a` elements in a document with a value for the `href` attribute.</description>
+        </completion>
+        <completion string="location">
+            <description>Returns a `Location` object, which provides information and control over the URL of the document.</description>
+        </completion>
+        <completion string="pictureInPictureElement">
+            <description>Returns the `Element` that is currently being presented in picture-in-picture mode, or `null` if picture-in-picture mode is not currently in use.</description>
+        </completion>
+        <completion string="pictureInPictureEnabled">
+            <description>Indicates whether or not picture-in-picture mode is available.</description>
+        </completion>
+        <completion string="plugins">
+            <description>Returns an `HTMLCollection` object containing one or more `HTMLEmbedElements` representing the `embed` elements in the current document.</description>
+        </completion>
+        <completion string="pointerLockElement">
+            <description>Provides the element set as the target for mouse events while the pointer is locked. It is `null` if lock is pending, pointer is unlocked, or the target is in another document.</description>
+        </completion>
+        <completion string="prerendering" experimental="true">
+            <description>Returns `true` if the document is currently in the process of prerendering, as initiated via the Speculation Rules API.</description>
+        </completion>
+        <completion string="readState">
+            <description>Describes the loading state of the document.</description>
+        </completion>
+        <completion string="referrer">
+            <description>Returns the URI of the page that linked to this page.</description>
+        </completion>
+        <completion string="rootElement" deprecated="true">
+            <description>Returns the `Element` that is the root element of the document if it is an `svg` element, otherwise `null`.</description>
+        </completion>
+        <completion string="scripts">
+            <description>Returns an `HTMLCollection` object containing the `script` elements in the document.</description>
+        </completion>
+        <completion string="scrollingElement">
+            <description>Returns a reference to the `Element` that scrolls the document.</description>
+        </completion>
+        <completion string="styleSheets">
+            <description>Returns a `StyleSheetList` of `CSSStyleSheet` objects, for stylesheets explicitly linked into or embedded in a document.</description>
+        </completion>
+        <completion string="timeline">
+            <description>Represents the default timeline of the current document.</description>
+        </completion>
+        <completion string="title">
+            <description>Gets or sets the current title of the document.</description>
+        </completion>
+        <completion string="URL">
+            <description>Returns the document location as a string.</description>
+        </completion>
+        <completion string="visibilityState">
+            <description>Returns the visibility of the document.</description>
+        </completion>
+        <completion string="vlinkColor" deprecated="true">
+            <description>Gets or sets the color of links that the user has visited in the document.</description>
+        </completion>
+        <completion string="xmlEncoding" deprecated="true">
+            <description>Returns the encoding as determined by the XML declaration.</description>
+        </completion>
+        <completion string="xmlVersion" deprecated="true">
+            <description>Returns the version number as specified in the XML declaration.</description>
+        </completion>
+    </set>
+    <set name="webapi.methods.document" symbol="method">
+        <completion string="adoptNode">
+            <behavior>
+                <append>($[externalNode])</append>
+            </behavior>
+            <description>Transfers a node from another document into the method's document.</description>
+        </completion>
+        <completion string="append">
+            <behavior>
+                <append>($[nodes])</append>
+            </behavior>
+            <description>Inserts a set of `Node` objects or string objects after the last child of the document.</description>
+        </completion>
+        <completion string="caretPositionFromPoint">
+            <behavior>
+                <append>($[x], $[y])</append>
+            </behavior>
+            <description>Returns a `CaretPosition` object, containing the DOM node, along with the caret and caret's character offset within that node.</description>
+        </completion>
+        <completion string="caretRangeFromPoint" nonstandard="true">
+            <behavior>
+                <append>($[x], $[y])</append>
+            </behavior>
+            <description>Returns a `Range` object for the document fragment under the specified coordinates.</description>
+        </completion>
+        <completion string="clear" deprecated="true">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>This method does nothing in modern browsers, but also does not raise any error.</description>
+        </completion>
+        <completion string="close">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Finishes writing to a document, opened with `Document.open()`.</description>
+        </completion>
+        <completion string="createAttribute">
+            <behavior>
+                <append>($[name])</append>
+            </behavior>
+            <description>Creates a new attribute node, and returns it.</description>
+        </completion>
+        <completion string="createAttributeNS">
+            <behavior>
+                <append>($[namespaceURI], $[qualifiedName])</append>
+            </behavior>
+            <description>Creates a new attribute nod ewith the specified namespace URI and qualified name, and returns it.</description>
+        </completion>
+        <completion string="createCDATASection">
+            <behavior>
+                <append>($[data])</append>
+            </behavior>
+            <description>Creates a new `CDATA` section node, and returns it.</description>
+        </completion>
+        <completion string="createComment">
+            <behavior>
+                <append>($[data])</append>
+            </behavior>
+            <description>Creates a new comment node, and returns it.</description>
+        </completion>
+        <completion string="createDocumentFragment">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Creates a new empty `DocumentFragment` into which DOM nodes can be added to build an offscreen DOM tree.</description>
+        </completion>
+        <completion string="createElement">
+            <behavior>
+                <append>($[tagName])</append>
+            </behavior>
+            <description>Creates the HTML element specified by tagName, or an `HTMLUnknownElement` if `tagName` isn't recognized.</description>
+        </completion>
+        <completion string="createElementNS">
+            <behavior>
+                <append>($[namespaceURI], $[qualifiedName])</append>
+            </behavior>
+            <description>Creates an element with the specified namespace URI and qualified name.</description>
+        </completion>
+        <completion string="createEvent">
+            <behavior>
+                <append>($[type])</append>
+            </behavior>
+            <description>Creates an event of the type specified.</description>
+        </completion>
+        <completion string="createExpression">
+            <behavior>
+                <append>($[xpathText], $[namespaceURLMapper])</append>
+            </behavior>
+            <description>This method compiles an `XPathExpression` which can then be used for (repeated) evaluations.</description>
+        </completion>
+        <completion string="createNodeIterator">
+            <behavior>
+                <append>($[root])</append>
+            </behavior>
+            <description>Creates a new `NodeIterator` object.</description>
+        </completion>
+        <completion string="createNSResolver">
+            <behavior>
+                <append>($[node])</append>
+            </behavior>
+            <description>Creates an `XPathNSResolver` which resolves namespaces with respect to the definitions in scope for a specified node.</description>
+        </completion>
+        <completion string="createProcessingInstruction">
+            <behavior>
+                <append>($[target], $[data])</append>
+            </behavior>
+            <description>Generates a new processing instruction node and returns it.</description>
+        </completion>
+        <completion string="createRange">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Returns a new `Range` object.</description>
+        </completion>
+        <completion string="createTextNode">
+            <behavior>
+                <append>($[data])</append>
+            </behavior>
+            <description>Creates a new `Text` node.</description>
+        </completion>
+        <completion string="createTreeWalker">
+            <behavior>
+                <append>($[root])</append>
+            </behavior>
+            <description>Returns a newly created `TreeWalker` object.</description>
+        </completion>
+        <completion string="elementFromPoint">
+            <behavior>
+                <append>($[x], $[y])</append>
+            </behavior>
+            <description>Returns the topmost `Element` at the specified coordinates (relative to the viewport).</description>
+        </completion>
+        <completion string="elementsFromPoint">
+            <behavior>
+                <append>($[x], $[y])</append>
+            </behavior>
+            <description>Returns an array of all elements at the specified coordinates (relative to the viewport).</description>
+        </completion>
+        <completion string="evaluate">
+            <behavior>
+                <append>($[xpathExpression], $[contextNode], $[namespaceResolver], $[resultType], $[result])</append>
+            </behavior>
+            <description>Selects elements based on the XPath expression given in parameters.</description>
+        </completion>
+        <completion string="execCommand" deprecated="true">
+            <behavior>
+                <append>($[command], $[showDefaultUI], $[argument])</append>
+            </behavior>
+            <description>Implements multiple different commands for providing access to the clipboard, editing form inputs, contenteditable elements or entire documents.</description>
+        </completion>
+        <completion string="exitFullscreen">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Requests that the element on this document which is currently being presented in fullscreen mode be taken out of fullscreen mode.</description>
+        </completion>
+        <completion string="exitPictureInPicture">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Requests that a video contained in this document, which is currently floating, be taken out of picture-in-picture mode.</description>
+        </completion>
+        <completion string="exitPointerLock">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Asynchronously releases a pointer lock previously requested through `Element.requestPointerLock()`.</description>
+        </completion>
+        <completion string="getAnimations">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Returns an array of all `Animation` objects currently in effect whose target elements are descendants of the document.</description>
+        </completion>
+        <completion string="getElementById">
+            <behavior>
+                <append>($[id])</append>
+            </behavior>
+            <description>Returns an `Element` object representing the element whose `id` property matches the specified string.</description>
+        </completion>
+        <completion string="getElementsByClassName">
+            <behavior>
+                <append>($[names])</append>
+            </behavior>
+            <description>Returns an array-like object of all child elements which have all of the given class name(s).</description>
+        </completion>
+        <completion string="getElementsByName">
+            <behavior>
+                <append>($[name])</append>
+            </behavior>
+            <description>Returns a `NodeList` collection of elements with a given name attribute in the document.</description>
+        </completion>
+        <completion string="getElementsByTagName">
+            <behavior>
+                <append>($[name])</append>
+            </behavior>
+            <description>Returns an `HTMLCollection` of elements with the given tag name.</description>
+        </completion>
+        <completion string="getElementsByTagNameNS">
+            <behavior>
+                <append>($[namespace], $[name])</append>
+            </behavior>
+            <description>Returns a list of elements with the given tag name belonging to the given namespace.</description>
+        </completion>
+        <completion string="getSelection">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Returns a `Selection` object representing the range of text selected by the user, or the current position of the caret.</description>
+        </completion>
+        <completion string="hasFocus">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Returns a boolean value indicating whether the document or any element inside the document has focus.</description>
+        </completion>
+        <completion string="hasStorageAccess">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Returns a `Promise` that resolves with a boolean value indicating whether the document has access to third-party, unpartitioned cookies.</description>
+        </completion>
+        <completion string="importNode">
+            <behavior>
+                <append>($[externalNode])</append>
+            </behavior>
+            <description>Creates a copy of a `Node` or `DocumentFragment` from another document, to be inserted into the current document later.</description>
+        </completion>
+        <completion string="open">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Opens a document for writing.</description>
+        </completion>
+        <completion string="prepend">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Inserts a set of `Node` objects or string objects before the first child of the document.</description>
+        </completion>
+        <completion string="queryCommandEnabled" deprecated="true" nonstandard="true">
+            <behavior>
+                <append>($[command])</append>
+            </behavior>
+            <description>Reports whether or not the specified editor command is enabled by the browser.</description>
+        </completion>
+        <completion string="queryCommandState" deprecated="true" nonstandard="true">
+            <behavior>
+                <append>($[command])</append>
+            </behavior>
+            <description>Will tell you if the current selection has a certain `Document.execCommand()` command applied.</description>
+        </completion>
+        <completion string="queryCommandSupported" deprecated="true" nonstandard="true">
+            <behavior>
+                <append>($[command])</append>
+            </behavior>
+            <description>Reports whether or not the specified editor command is supported by the browser.</description>
+        </completion>
+        <completion string="querySelector">
+            <behavior>
+                <append>($[selectors])</append>
+            </behavior>
+            <description>Returns the first `Element` within the document that matches the specified selector, or group of selectors. If no matches are found, `null` is returned.</description>
+        </completion>
+        <completion string="querySelectorAll">
+            <behavior>
+                <append>($[selectors])</append>
+            </behavior>
+            <description>Returns a static (not live) `NodeList` representing a list of the document's elements that match the specified group of selectors.</description>
+        </completion>
+        <completion string="replaceChildren">
+            <behavior>
+                <append>($[nodes])</append>
+            </behavior>
+            <description>Replaces the existing children of a `Document` with a specified new set of children.</description>
+        </completion>
+        <completion string="requestStorageAccess">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Allows content loaded in a third-party context (i.e., embedded in an `iframe`) to request access to third-party cookies.</description>
+        </completion>
+        <completion string="requestStorageAccessFor" experimental="true">
+            <behavior>
+                <append>($[requestedOrigin])</append>
+            </behavior>
+            <description>Allows top-level sites to request third-party cookie access on behalf of embedded content originating from another site in the same related website set.</description>
+        </completion>
+        <completion string="startViewTransition" experimental="true">
+            <behavior>
+                <append>($[requestedOrigin])</append>
+            </behavior>
+            <description>Starts a new view transition and returns a `ViewTransition` object to represent it.</description>
+        </completion>
+        <completion string="write" deprecated="true">
+            <behavior>
+                <append>($[markup])</append>
+            </behavior>
+            <description>Writes a string of text to a document stream opened by `document.open()`.</description>
+        </completion>
+        <completion string="writeln" deprecated="true">
+            <behavior>
+                <append>($[line])</append>
+            </behavior>
+            <description>Writes a string of text followed by a newline character to a document.</description>
+        </completion>
+    </set>
+    <set name="webapi.methods.event-target" symbol="method">
+        <completion string="addEventListener">
+            <behavior>
+                <append>($[type], $[listener])</append>
+            </behavior>
+            <description>Sets up a function that will be called whenever the specified event is delivered to the target.</description>
+        </completion>
+        <completion string="dispatchEvent">
+            <behavior>
+                <append>($[event])</append>
+            </behavior>
+            <description>Removes an event listener previously registered with `EventTarget.addEventListener()` from the target.</description>
+        </completion>
+        <completion string="removeEventListener">
+            <behavior>
+                <append>($[type], $[listener])</append>
+            </behavior>
+            <description>Sends an `Event` to the object, (synchronously) invoking the affected event listeners in the appropriate order.</description>
+        </completion>
+    </set>
+    <set name="webapi.properties.node" symbol="property">
+        <completion string="baseURI">
+            <description>Returns the absolute base URL of the document containing the node.</description>
+        </completion>
+        <completion string="childNodes">
+            <description>Returns a live `NodeList` of child nodes of the given element where the first child node is assigned index `0`.</description>
+        </completion>
+        <completion string="firstChild">
+            <description>Returns the node's first child in the tree, or `null` if the node has no children.</description>
+        </completion>
+        <completion string="isConnected">
+            <description>Returns a boolean indicating whether the node is connected (directly or indirectly) to a `Document` object.</description>
+        </completion>
+        <completion string="lastChild">
+            <description>Returns the last child of the node, or `null` if there are no child nodes.</description>
+        </completion>
+        <completion string="nextSibling">
+            <description>Returns the node immediately following the specified one in their parent's `childNodes`, or returns `null` if the specified node is the last child in the parent element.</description>
+        </completion>
+        <completion string="nodeName">
+            <description>Returns the name of the current node as a string.</description>
+        </completion>
+        <completion string="nodeType">
+            <description>Returns an integer that identifies of what type is the node.</description>
+        </completion>
+        <completion string="nodeValue">
+            <description>Returns or sets the value of the node.</description>
+        </completion>
+        <completion string="ownerDocument">
+            <description>Returns the top-level document object of the node.</description>
+        </completion>
+        <completion string="parentElement">
+            <description>Returns the DOM node's parent `Element`, or `null` if the node either has no parent, or its parent isn't a DOM `Element`..</description>
+        </completion>
+        <completion string="parentNode">
+            <description>Returns the parent of the specified node in the DOM tree.</description>
+        </completion>
+        <completion string="previousSibling">
+            <description>Returns the node immediately preceding the specified one in its parent's `childNodes` list, or `null` if the specified node is the first in that list.</description>
+        </completion>
+        <completion string="textContent">
+            <description>Returns the text content of the node and its descendants.</description>
+        </completion>
+    </set>
+    <set name="webapi.methods.node" symbol="method">
+        <completion string="appendChild">
+            <behavior>
+                <append>($[node])</append>
+            </behavior>
+            <description>Adds a node to the end of the list of children of a specified parent node.</description>
+        </completion>
+        <completion string="cloneNode">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Returns a duplicate of the node on which this method was called.</description>
+        </completion>
+        <completion string="contains">
+            <behavior>
+                <append>($[otherNode])</append>
+            </behavior>
+            <description>Returns a boolean value indicating whether a node is a descendant of a given node.</description>
+        </completion>
+        <completion string="getRootNode">
+            <behavior>
+                <append>($[otherNode])</append>
+            </behavior>
+            <description>Returns the object's root, which optionally includes the shadow root if it is available.</description>
+        </completion>
+        <completion string="hasChildNodes">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Returns a boolean value indicating whether the given `Node` has child nodes or not.</description>
+        </completion>
+        <completion string="insertBefore">
+            <behavior>
+                <append>($[newNode], $[referenceNode])</append>
+            </behavior>
+            <description>Inserts a node before a reference node as a child of a specified parent node.</description>
+        </completion>
+        <completion string="isDefaultNamespace">
+            <behavior>
+                <append>($[namespaceURI])</append>
+            </behavior>
+            <description>Returns a boolean value that is true if the namespace is the default namespace on the given node.</description>
+        </completion>
+        <completion string="isEqualNode">
+            <behavior>
+                <append>($[otherNode])</append>
+            </behavior>
+            <description>Returns whether two nodes are equal.</description>
+        </completion>
+        <completion string="isSameNode">
+            <behavior>
+                <append>($[otherNode])</append>
+            </behavior>
+            <description>Returns whether two nodes are the same (reference the same object), equivalent to the `===` operator.</description>
+        </completion>
+        <completion string="lookupNamespaceURI">
+            <behavior>
+                <append>($[prefix])</append>
+            </behavior>
+            <description>Returns the namespace URI associated with a prefix on the given node if found (and null if not).</description>
+        </completion>
+        <completion string="lookupPrefix">
+            <behavior>
+                <append>($[namespace])</append>
+            </behavior>
+            <description>Returns the first prefix for a given namespace URI, if present, and `null` if not.</description>
+        </completion>
+        <completion string="normalize">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Puts the specified node and all of its sub-tree into a normalized form.</description>
+        </completion>
+        <completion string="removeChild">
+            <behavior>
+                <append>($[child])</append>
+            </behavior>
+            <description>Removes a child node from the DOM and returns the removed node.</description>
+        </completion>
+        <completion string="replaceChild">
+            <behavior>
+                <append>($[newChild], $[oldChild])</append>
+            </behavior>
+            <description>Replaces a child node within the given (parent) node.</description>
+        </completion>
+    </set>
+    <set name="webapi.properties.window" symbol="property">
+        <completion string="closed">
+            <description>Indicates whether the window is closed or not.</description>
+        </completion>
+        <completion string="console">
+            <description>Returns a reference to the `console` object, which provides methods for logging information to the browser's console.</description>
+        </completion>
+        <completion string="cookieStore" experimental="true">
+            <description>Returns a reference to the `CookieStore` object for the current document context.</description>
+        </completion>
+        <completion string="credentialless" experimental="true">
+            <description>Returns whether the current document was loaded inside an credentialless `iframe` with an ephemerial context.</description>
+        </completion>
+        <completion string="customElements">
+            <description>Returns a reference to the `CustomElementRegistry` object, which can be used to register and introspect custom elements.</description>
+        </completion>
+        <completion string="devicePixelRatio">
+            <description>Returns the ratio of the resolution in physical pixels to the resolution in CSS pixels for the current display device.</description>
+        </completion>
+        <completion string="document">
+            <description>Returns a reference to the document contained in the window.</description>
+        </completion>
+        <completion string="documentPictureInPicture" experimental="true">
+            <description>Returns a reference to the `DocumentPictureInPicture` object for the current document context.</description>
+        </completion>
+        <completion string="event" deprecated="true">
+            <description>Returns the `Event` which is currently being handled. Outside of an event handler, the value is always `undefined`.</description>
+        </completion>
+        <completion string="frameElement">
+            <description>Returns the element (such as `iframe` or `object`) in which the window is embedded.</description>
+        </completion>
+        <completion string="frames">
+            <description>Returns the window itself, which is an array-like object, listing the direct sub-frames of the current window.</description>
+        </completion>
+        <completion string="fullScreen">
+            <description>Indicates whether the window is displayed in full screen mode or not.</description>
+        </completion>
+        <completion string="history">
+            <description>Returns a reference to the `History` object, which provides an interface for manipulating the browser session history.</description>
+        </completion>
+        <completion string="innerHeight">
+            <description>Returns the interior height of the window in pixels, including the height of the horizontal scroll bar, if present.</description>
+        </completion>
+        <completion string="innerWidth">
+            <description>Returns the interior width of the window in pixels, including the width of the vertical scroll bar, if present.</description>
+        </completion>
+        <completion string="launchQueue">
+            <description>Provides access to the `LaunchQueue` class, which allows custom launch navigation handling in a progressive web app (PWA).</description>
+        </completion>
+        <completion string="length">
+            <description>Returns the number of frames (either `frame` or `iframe` elements) in the window.</description>
+        </completion>
+        <completion string="localStorage">
+            <description>Allows you to access a `Storage` object for the `Document`'s origin; the stored data is saved across browser sessions.</description>
+        </completion>
+        <completion string="location">
+            <description>Returns a `Location` object with information about the current location of the document.</description>
+        </completion>
+        <completion string="locationbar" deprecated="true">
+            <description>Represents whether or not the web browser's location bar is visible.</description>
+        </completion>
+        <completion string="menubar" deprecated="true">
+            <description>Represents whether or not the web browser's menu bar is visible.</description>
+        </completion>
+        <completion string="name">
+            <description>Gets or sets the name of the window's browsing context.</description>
+        </completion>
+        <completion string="navigation" experimental="true">
+            <description>Returns the window's associated `Navigation` object.</description>
+        </completion>
+        <completion string="navigator">
+            <description>Returns a reference to the `Navigator` object, which is an interface to the application running the script.</description>
+        </completion>
+        <completion string="opener">
+            <description>Returns a reference to the window that opened the window, either with `open()`, or by navigating a link with a `target` attribute.</description>
+        </completion>
+        <completion string="orientation" deprecated="true">
+            <description>Returns the orientation in degrees (in 90-degree increments) of the viewport relative to the device's natural orientation.</description>
+        </completion>
+        <completion string="originAgentCluster" experimental="true">
+            <description>Returns `true` if this window belongs to an origin-keyed agent cluster.</description>
+        </completion>
+        <completion string="outerHeight">
+            <description>Returns the height in pixels of the whole browser window.</description>
+        </completion>
+        <completion string="outerWidth">
+            <description>Returns the width in pixels of the whole browser window.</description>
+        </completion>
+        <completion string="parent">
+            <description>A reference to the parent of the current window or subframe.</description>
+        </completion>
+        <completion string="personalbar" deprecated="true">
+            <description>Represents whether or not the web browser's bookmarks bar is visible.</description>
+        </completion>
+        <completion string="screen">
+            <description>A reference to the screen object associated with the window.</description>
+        </completion>
+        <completion string="screenLeft">
+            <description>Returns the horizontal distance, in CSS pixels, from the left border of the user's browser viewport to the left side of the screen.</description>
+        </completion>
+        <completion string="screenTop">
+            <description>Returns the vertical distance, in CSS pixels, from the top border of the user's browser viewport to the top side of the screen.</description>
+        </completion>
+        <completion string="screenX">
+            <description>Returns the horizontal distance, in CSS pixels, of the left border of the user's browser viewport to the left side of the screen.</description>
+        </completion>
+        <completion string="screenY">
+            <description>Returns the vertical distance, in CSS pixels, of the top border of the user's browser viewport to the top edge of the screen.</description>
+        </completion>
+        <completion string="scrollbars" deprecated="true">
+            <description>Represents whether or not the web browser's scrollbars are visible.</description>
+        </completion>
+        <completion string="scrollMaxX" nonstandard="true">
+            <description>Returns the maximum number of pixels that the document can be scrolled horizontally.</description>
+        </completion>
+        <completion string="scrollMaxY" nonstandard="true">
+            <description>Returns the maximum number of pixels that the document can be scrolled vertically.</description>
+        </completion>
+        <completion string="scrollX">
+            <description>Returns the number of pixels that the document is currently scrolled horizontally.</description>
+        </completion>
+        <completion string="scrollY">
+            <description>Returns the number of pixels that the document is currently scrolled vertically.</description>
+        </completion>
+        <completion string="self">
+            <description>Returns the window itself, as a `WindowProxy`.</description>
+        </completion>
+        <completion string="sessionStorage">
+            <description>Accesses a session `Storage` object for the current origin, similar to `localStorage` but cleared when the session ends.</description>
+        </completion>
+        <completion string="sharedStorage" experimental="true">
+            <description>Returns the `WindowSharedStorage` object for the current origin.</description>
+        </completion>
+        <completion string="speechSynthesis">
+            <description>Returns a `SpeechSynthesis` object, which is the entry point into using Web Speech API speech synthesis functionality.</description>
+        </completion>
+        <completion string="status" deprecated="true">
+            <description>Has no effect in modern browsers.</description>
+        </completion>
+        <completion string="statusbar" deprecated="true">
+            <description>Represents whether or not the web browser's status bar is visible.</description>
+        </completion>
+        <completion string="toolbar" deprecated="true">
+            <description>Represents whether or not the web browser's toolbar is visible.</description>
+        </completion>
+        <completion string="top">
+            <description>Returns a reference to the topmost window in the window hierarchy.</description>
+        </completion>
+        <completion string="visualViewport">
+            <description>Returns a `VisualViewport` object representing the visual viewport, or `null` if the document is not fully active.</description>
+        </completion>
+        <completion string="window">
+            <description>Points to the window object itself.</description>
+        </completion>
+    </set>
+    <set name="webapi.methods.window" symbol="method">
+        <completion string="alert">
+            <behavior>
+                <append>($[message])</append>
+            </behavior>
+            <description>Instructs the browser to display a dialog with an optional message, and to wait until the user dismisses the dialog.</description>
+        </completion>
+        <completion string="blur">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Shifts focus away from the window.</description>
+        </completion>
+        <completion string="cancelAnimationFrame">
+            <behavior>
+                <append>($[requestID])</append>
+            </behavior>
+            <description>Cancels an animation frame request previously scheduled through a call to `window.requestAnimationFrame()`.</description>
+        </completion>
+        <completion string="cancelIdleCallback">
+            <behavior>
+                <append>($[handle])</append>
+            </behavior>
+            <description>Cancels a callback previously scheduled with `window.requestIdleCallback()`.</description>
+        </completion>
+        <completion string="close">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Closes the window.</description>
+        </completion>
+        <completion string="confirm">
+            <behavior>
+                <append>($[message])</append>
+            </behavior>
+            <description>Instructs the browser to display a dialog with an optional message, and to wait until the user either confirms or cancels the dialog.</description>
+        </completion>
+        <completion string="find" nonstandard="true">
+            <behavior>
+                <append>($[string])</append>
+            </behavior>
+            <description>Finds a string in a window sequentially.</description>
+        </completion>
+        <completion string="focus">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Makes a request to bring the window to the front.</description>
+        </completion>
+        <completion string="getComputedStyle">
+            <behavior>
+                <append>($[element])</append>
+            </behavior>
+            <description>Returns an object containing the values of all CSS properties of an element.</description>
+        </completion>
+        <completion string="getScreenDetails">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Returns a `Promise` that fulfills with a `ScreenDetails` object instance representing the details of all the screens available to the user's device.</description>
+        </completion>
+        <completion string="getSelection">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Returns a `Selection` object representing the range of text selected by the user or the current position of the caret.</description>
+        </completion>
+        <completion string="matchMedia">
+            <behavior>
+                <append>($[mediaQueryString])</append>
+            </behavior>
+            <description>Returns a new `MediaQueryList` object that can be used to determine if the document matches a media query string.</description>
+        </completion>
+        <completion string="moveBy">
+            <behavior>
+                <append>($[deltaX], $[deltaY])</append>
+            </behavior>
+            <description>Moves the window relative to its current position by a specified amount.</description>
+        </completion>
+        <completion string="moveTo">
+            <behavior>
+                <append>($[x], $[y])</append>
+            </behavior>
+            <description>Moves the window to the specified coordinates.</description>
+        </completion>
+        <completion string="open">
+            <behavior>
+                <append>($[url])</append>
+            </behavior>
+            <description>Loads a specified resource into a new or existing browsing context.</description>
+        </completion>
+        <completion string="postMessage">
+            <behavior>
+                <append>($[message])</append>
+            </behavior>
+            <description>Safely enables cross-origin communication between `Window` objects.</description>
+        </completion>
+        <completion string="print">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Opens the print dialog to print the current document.</description>
+        </completion>
+        <completion string="prompt">
+            <behavior>
+                <append>($[message])</append>
+            </behavior>
+            <description>Instructs the browser to display a dialog with an optional message prompting the user to input some text, and to wait until the user either submits the text or cancels the dialog.</description>
+        </completion>
+        <completion string="queryLocalFonts" experimental="true">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Returns a `Promise` that fulfills with an array of `FontData` objects representing the font faces available locally.</description>
+        </completion>
+        <completion string="releaseEvents" deprecated="true">
+            <behavior>
+                <append>($[eventType])</append>
+            </behavior>
+            <description>Releases the window from trapping events of a specific type.</description>
+        </completion>
+        <completion string="requestAnimationFrame">
+            <behavior>
+                <append>($[callback])</append>
+            </behavior>
+            <description>Requests the browser to call a user-supplied callback function before the next repaint.</description>
+        </completion>
+        <completion string="requestIdleCallback">
+            <behavior>
+                <append>($[callback])</append>
+            </behavior>
+            <description>Queues a function to be called during a browser's idle periods.</description>
+        </completion>
+        <completion string="resizeBy">
+            <behavior>
+                <append>($[xDelta], $[yDelta])</append>
+            </behavior>
+            <description>Resizes the window by a specified amount.</description>
+        </completion>
+        <completion string="resizeTo">
+            <behavior>
+                <append>($[width], $[height])</append>
+            </behavior>
+            <description>Dynamically resizes the window.</description>
+        </completion>
+        <completion string="scroll">
+            <behavior>
+                <append>($[x], $[y])</append>
+            </behavior>
+            <description>Scrolls the window to a particular place in the document.</description>
+        </completion>
+        <completion string="scrollBy">
+            <behavior>
+                <append>($[xDelta], $[yDelta])</append>
+            </behavior>
+            <description>Scrolls the document in the window by a specified amount.</description>
+        </completion>
+        <completion string="scrollTo">
+            <behavior>
+                <append>($[x], $[y])</append>
+            </behavior>
+            <description>Scrolls to a particular set of coordinates in the document.</description>
+        </completion>
+        <completion string="showDirectoryPicker">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Requests the browser display a directory picker to the user to select a directory.</description>
+        </completion>
+        <completion string="showOpenFilePicker">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Requests the browser display a file picker to the user to select one or more files.</description>
+        </completion>
+        <completion string="showSaveFilePicker">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Requests the browser display a file picker to the user to save a file.</description>
+        </completion>
+        <completion string="stop">
+            <behavior>
+                <append>()</append>
+            </behavior>
+            <description>Stops further resource loading in the current browsing context, equivalent to the stop button in the browser.</description>
+        </completion>
+    </set>
+</completions>

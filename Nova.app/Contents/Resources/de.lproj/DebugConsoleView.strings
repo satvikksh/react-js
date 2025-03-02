@@ -1,0 +1,78 @@
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "11H-Ms-R7v"; */
+"11H-Ms-R7v.title" = "<<Name>>";
+
+/* Class = "NSMenuItem"; title = "Natural Order"; ObjectID = "2Eh-Id-IEx"; */
+"2Eh-Id-IEx.title" = "Natürliche Reihenfolge";
+
+/* Class = "NSMenuItem"; title = "Sort By"; ObjectID = "7Rb-qX-Kxa"; */
+"7Rb-qX-Kxa.title" = "Sortieren nach";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Step into"; ObjectID = "ABO-rL-2dB"; */
+"ABO-rL-2dB.ibShadowedToolTip" = "Hineinspringen";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "AME-1g-g4I"; */
+"AME-1g-g4I.title" = "Kopieren";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Restart"; ObjectID = "BG7-Ey-pBQ"; */
+"BG7-Ey-pBQ.ibShadowedToolTip" = "Neu starten";
+
+/* Class = "NSMenu"; title = "Sort By"; ObjectID = "DfX-TN-AAX"; */
+"DfX-TN-AAX.title" = "Sortieren nach";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Step back"; ObjectID = "H7d-79-jRw"; */
+"H7d-79-jRw.ibShadowedToolTip" = "Schritt zurück";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Toggle the variables view"; ObjectID = "KAB-pq-YvU"; */
+"KAB-pq-YvU.ibShadowedToolTip" = "Variablendarstellung ein/aus";
+
+/* Class = "NSMenuItem"; title = "<<Item>>"; ObjectID = "Mwb-UT-JFQ"; */
+"Mwb-UT-JFQ.title" = "<<Item>>";
+
+/* Class = "NSMenuItem"; title = "Descending"; ObjectID = "RVf-o8-DJH"; */
+"RVf-o8-DJH.title" = "Absteigend";
+
+/* Class = "NSMenuItem"; title = "Print Description"; ObjectID = "Uej-tS-1y6"; */
+"Uej-tS-1y6.title" = "Beschreibung drucken";
+
+/* Class = "NSMenuItem"; title = "Name"; ObjectID = "Uqq-LU-zZ5"; */
+"Uqq-LU-zZ5.title" = "Name";
+
+/* Class = "NSTextFieldCell"; title = "<<Value>>"; ObjectID = "XvI-s0-EPI"; */
+"XvI-s0-EPI.title" = "<<Value>>";
+
+/* Class = "NSMenuItem"; title = "<<Item>>"; ObjectID = "YUA-fw-paT"; */
+"YUA-fw-paT.title" = "<<Item>>";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Toggle the console view"; ObjectID = "ac9-jT-Asz"; */
+"ac9-jT-Asz.ibShadowedToolTip" = "Konsolendarstellung ein/aus";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Step over"; ObjectID = "eeF-pp-tFF"; */
+"eeF-pp-tFF.ibShadowedToolTip" = "Überspringen";
+
+/* Class = "NSMenuItem"; title = "Edit Value…"; ObjectID = "gnC-fH-HQl"; */
+"gnC-fH-HQl.title" = "Wert bearbeiten …";
+
+/* Class = "NSTextFieldCell"; title = "Debug Console"; ObjectID = "hu7-0u-LcM"; */
+"hu7-0u-LcM.title" = "Debugger";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Step out"; ObjectID = "ozS-pr-ckp"; */
+"ozS-pr-ckp.ibShadowedToolTip" = "Herausspringen";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "pX6-EE-4nd"; */
+"pX6-EE-4nd.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "<<Item>>"; ObjectID = "t4y-zm-KbN"; */
+"t4y-zm-KbN.title" = "<<Item>>";
+
+/* Class = "NSMenuItem"; title = "Ascending"; ObjectID = "v2W-Su-n4u"; */
+"v2W-Su-n4u.title" = "Aufsteigend";
+
+/* Class = "NSSearchFieldCell"; placeholderString = "Filter"; ObjectID = "x3w-D0-Nxd"; */
+"x3w-D0-Nxd.placeholderString" = "Filtern";
+
+/* Class = "NSTextFieldCell"; title = "<<StatusDescription>>"; ObjectID = "xw1-jy-tdC"; */
+"xw1-jy-tdC.title" = "<<StatusDescription>>";
+
+/* Class = "NSSearchField"; ibShadowedToolTip = "Show files with matching name"; ObjectID = "yNC-QQ-SyI"; */
+"yNC-QQ-SyI.ibShadowedToolTip" = "Dateien mit übereinstimmendem Namen anzeigen";

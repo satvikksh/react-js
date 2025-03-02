@@ -1,0 +1,31 @@
+{
+  "menuItems" : {
+    "CopyLinesDown" : {
+      "shortcut" : "cmd-alt-down"
+    },
+    "CopyLinesUp" : {
+      "shortcut" : "cmd-alt-up"
+    },
+    "MoveLinesDown" : {
+
+    },
+    "MoveLinesUp" : {
+
+    },
+    "MoveParagraphBackwardAndModifySelection" : {
+        "shortcut": "alt-shift-up"
+    },
+    "MoveParagraphForwardAndModifySelection" : {
+        "shortcut": "alt-shift-down"
+    },
+    "SelectAbove" : {
+
+    },
+    "SelectBelow" : {
+
+    },
+    "SplitPaneBelow" : {
+      "shortcut" : "cmd-ctrl-l"
+    }
+  }
+}

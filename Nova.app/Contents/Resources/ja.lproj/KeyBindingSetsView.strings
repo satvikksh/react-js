@@ -1,0 +1,27 @@
+
+/* Class = "NSMenuItem"; title = "Export Key Bindings…"; ObjectID = "Hek-pG-WLO"; */
+"Hek-pG-WLO.title" = "キーバインドを書き出す…";
+
+/* Class = "NSTextFieldCell"; title = "No custom key binding sets have been created.\nClick the + button to create one."; ObjectID = "S2l-UO-Jen"; */
+"S2l-UO-Jen.title" = "カスタムキーバインドセットは作成されていません。作成するには + ボタンをクリックします。";
+
+/* Class = "NSSegmentedControl"; ibExternalAccessibilityDescription = "remove key binding set"; ObjectID = "X6K-YK-XMG"; */
+"X6K-YK-XMG.ibExternalAccessibilityDescription" = "キーバインドセットを削除";
+
+/* Class = "NSButtonCell"; title = "Done"; ObjectID = "ZLE-qa-hVz"; */
+"ZLE-qa-hVz.title" = "完了";
+
+/* Class = "NSSegmentedControl"; ibExternalAccessibilityDescription = "add key binding set"; ObjectID = "bHz-hE-8eT"; */
+"bHz-hE-8eT.ibExternalAccessibilityDescription" = "キーバインドセットを追加";
+
+/* Class = "NSMenuItem"; title = "Import Key Bindings…"; ObjectID = "ew5-as-UWg"; */
+"ew5-as-UWg.title" = "キーバインドを読み込む…";
+
+/* Class = "NSSegmentedControl"; ibExternalAccessibilityDescription = "add key binding set"; ObjectID = "hrT-xZ-ASS"; */
+"hrT-xZ-ASS.ibExternalAccessibilityDescription" = "キーバインドセットを追加";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "ts3-8t-CIK"; */
+"ts3-8t-CIK.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "x3U-XA-5TF"; */
+"x3U-XA-5TF.title" = "Table View Cell";

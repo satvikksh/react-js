@@ -1,0 +1,18 @@
+
+/* Class = "NSMenuItem"; title = "Name"; ObjectID = "3wW-5z-eq8"; */
+"3wW-5z-eq8.title" = "名前";
+
+/* Class = "NSMenuItem"; title = "Recently Added"; ObjectID = "7JR-Xc-70Y"; */
+"7JR-Xc-70Y.title" = "登録日";
+
+/* Class = "NSMenuItem"; title = "Recently Updated"; ObjectID = "BWJ-Ya-Uff"; */
+"BWJ-Ya-Uff.title" = "最近のアップデート";
+
+/* Class = "NSTextFieldCell"; title = "Results for “Phrase”"; ObjectID = "OxT-uf-fSm"; */
+"OxT-uf-fSm.title" = "Results for “Phrase”";
+
+/* Class = "NSMenuItem"; title = "Popular"; ObjectID = "eTX-I0-VaC"; */
+"eTX-I0-VaC.title" = "人気";
+
+/* Class = "NSTextFieldCell"; title = "Sort By:"; ObjectID = "oOS-ET-Qkj"; */
+"oOS-ET-Qkj.title" = "並び替え:";

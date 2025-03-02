@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="shell">
+    <meta>
+        <name>Shell Script</name>
+        <type>script</type>
+        <preferred-file-extension>sh</preferred-file-extension>
+        <scriptable shebang="#!/bin/sh" />
+    </meta>
+    
+    <detectors>
+        <extension>sh,bashrc,bash_profile,zshrc,zprofile</extension>
+        <match-content lines="1" priority="low">\#\!.*?\b(bash|zsh|sh|csh)</match-content>
+    </detectors>
+    
+    <identifiers>
+        <prefixes>
+            <string>$</string>
+        </prefixes>
+    </identifiers>
+    
+    <indentation>
+        <increase>
+            <expression>(\{[^}\"']*$)|(\[[^\]\"']*$)|(\([^)\"']*$)</expression>
+        </increase>
+        <decrease>
+            <expression>^\s*(\s*/\*.*\*/\s*)*[\}\]\)\\]</expression>
+        </decrease>
+    </indentation>
+    
+    <comments>
+        <single>
+            <expression>#</expression>
+        </single>
+    </comments>
+    
+    <injection>
+        <expression>^(shell|sh|bash|zsh)$</expression>
+    </injection>
+    
+    <tree-sitter language="bash">
+        <highlights />
+        <folds />
+        <symbols />
+    </tree-sitter>
+</syntax>

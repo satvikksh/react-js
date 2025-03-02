@@ -1,0 +1,48 @@
+
+/* Class = "NSMenuItem"; title = "Select Code Block"; ObjectID = "1x5-Qx-OrW"; */
+"1x5-Qx-OrW.title" = "选择代码块";
+
+/* Class = "NSSlider"; ibShadowedToolTip = "Adjust the depth of the symbols displayed"; ObjectID = "LOs-bU-2fU"; */
+"LOs-bU-2fU.ibShadowedToolTip" = "调整显示的符号深度";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Oh6-SM-j0t"; */
+"Oh6-SM-j0t.title" = "Text Cell";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "flat symbols"; ObjectID = "TCS-2u-xg9"; */
+"TCS-2u-xg9.ibExternalAccessibilityDescription" = "平面符号";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show symbols as a list"; ObjectID = "TCS-2u-xg9"; */
+"TCS-2u-xg9.ibShadowedToolTip" = "作为列表显示符号";
+
+/* Class = "NSMenuItem"; title = "Copy Symbol"; ObjectID = "UgK-uW-q1K"; */
+"UgK-uW-q1K.title" = "拷贝符号";
+
+/* Class = "NSSearchFieldCell"; placeholderString = "Filter"; ObjectID = "WPI-XR-xLW"; */
+"WPI-XR-xLW.placeholderString" = "筛选器";
+
+/* Class = "NSMenuItem"; title = "Find in Workspace"; ObjectID = "WvY-wA-gmj"; */
+"WvY-wA-gmj.title" = "在工作区中查找";
+
+/* Class = "NSTextFieldCell"; title = "No symbols found in the current document."; ObjectID = "fyC-OC-Dgs"; */
+"fyC-OC-Dgs.title" = "未在当前文稿中找到符号。";
+
+/* Class = "NSTextFieldCell"; title = "<<Symbol>>"; ObjectID = "iNn-FV-uwb"; */
+"iNn-FV-uwb.title" = "<<Symbol>>";
+
+/* Class = "NSSearchField"; ibShadowedToolTip = "Show files with matching name"; ObjectID = "mM0-GT-NCt"; */
+"mM0-GT-NCt.ibShadowedToolTip" = "显示有匹配名称的文件";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "hierarchical symbols"; ObjectID = "vUB-v4-ARf"; */
+"vUB-v4-ARf.ibExternalAccessibilityDescription" = "层次结构符号";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show symbols as a tree"; ObjectID = "vUB-v4-ARf"; */
+"vUB-v4-ARf.ibShadowedToolTip" = "作为树显示符号";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "sort alphabetically"; ObjectID = "yDm-Wb-wta"; */
+"yDm-Wb-wta.ibExternalAccessibilityDescription" = "按字母顺序排列";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Sort symbols alphabetically"; ObjectID = "yDm-Wb-wta"; */
+"yDm-Wb-wta.ibShadowedToolTip" = "按字母顺序排列符号";
+
+/* Class = "NSMenuItem"; title = "Find in Document"; ObjectID = "zb2-qe-NL1"; */
+"zb2-qe-NL1.title" = "在文稿中查找";

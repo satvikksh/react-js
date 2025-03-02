@@ -1,0 +1,21 @@
+
+/* Class = "NSButtonCell"; title = "Select All"; ObjectID = "8S0-qk-tcl"; */
+"8S0-qk-tcl.title" = "すべてを選択";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "AhT-BW-2dg"; */
+"AhT-BW-2dg.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Select the encodings you want to appear in text encoding menus."; ObjectID = "Cdx-2m-jOO"; */
+"Cdx-2m-jOO.title" = "テキストエンコードメニューに表示したいエンコードを選択します";
+
+/* Class = "NSButtonCell"; title = "Clear All"; ObjectID = "JEb-3V-MZn"; */
+"JEb-3V-MZn.title" = "すべてを消去";
+
+/* Class = "NSTextFieldCell"; title = "<<EncodingName>>"; ObjectID = "OR5-Ct-jET"; */
+"OR5-Ct-jET.title" = "<<EncodingName>>";
+
+/* Class = "NSWindow"; title = "Text Encodings"; ObjectID = "QvC-M9-y7g"; */
+"QvC-M9-y7g.title" = "テキストエンコード";
+
+/* Class = "NSButtonCell"; title = "Revert To Defaults"; ObjectID = "vfV-vo-BtQ"; */
+"vfV-vo-BtQ.title" = "デフォルトに戻す";

@@ -1,0 +1,36 @@
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "4mV-KV-iTN"; */
+"4mV-KV-iTN.title" = "Abbrechen";
+
+/* Class = "NSButtonCell"; title = "Make this the default layout"; ObjectID = "AK4-Ro-3kc"; */
+"AK4-Ro-3kc.title" = "Als Standardlayout festlegen";
+
+/* Class = "NSComboBoxCell"; GRc-JX-9wj.ibShadowedObjectValues[0] = "Item 1"; ObjectID = "GRc-JX-9wj"; */
+"GRc-JX-9wj.ibShadowedObjectValues[0]" = "Item 1";
+
+/* Class = "NSComboBoxCell"; GRc-JX-9wj.ibShadowedObjectValues[1] = "Item 2"; ObjectID = "GRc-JX-9wj"; */
+"GRc-JX-9wj.ibShadowedObjectValues[1]" = "Item 2";
+
+/* Class = "NSComboBoxCell"; GRc-JX-9wj.ibShadowedObjectValues[2] = "Item 3"; ObjectID = "GRc-JX-9wj"; */
+"GRc-JX-9wj.ibShadowedObjectValues[2]" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "Name:"; ObjectID = "Nvd-iG-tdS"; */
+"Nvd-iG-tdS.title" = "Name:";
+
+/* Class = "NSTextFieldCell"; title = "New Layout"; ObjectID = "RY7-Qa-V7b"; */
+"RY7-Qa-V7b.title" = "Neues Layout";
+
+/* Class = "NSButtonCell"; title = "Save"; ObjectID = "T0w-TN-qnf"; */
+"T0w-TN-qnf.title" = "Sichern";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "The key combination which inserts the clip"; ObjectID = "Z7N-1w-bhz"; */
+"Z7N-1w-bhz.ibShadowedToolTip" = "Mit dieser Tastenkombination wird der Clip eingefügt.";
+
+/* Class = "NSButtonCell"; title = "Apply to all open windows"; ObjectID = "jYx-Po-QHq"; */
+"jYx-Po-QHq.title" = "Auf alle geöffneten Fenster anwenden";
+
+/* Class = "NSTextFieldCell"; title = "A layout stores the order and position of sidebars so it can be applied quickly to new or existing windows."; ObjectID = "nyk-FL-LQf"; */
+"nyk-FL-LQf.title" = "Ein Layout speichert die Reihenfolge und Position von Seitenleisten, damit es schnell auf neue oder vorhandene Fenster angewendet werden kann.";
+
+/* Class = "NSTextFieldCell"; title = "Key Shortcut:"; ObjectID = "z98-lX-cUM"; */
+"z98-lX-cUM.title" = "Tastaturkurzbefehl:";

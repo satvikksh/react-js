@@ -1,0 +1,15 @@
+
+/* Class = "NSTextFieldCell"; title = "Extension Name"; ObjectID = "3qk-zp-QfP"; */
+"3qk-zp-QfP.title" = "扩展名称";
+
+/* Class = "NSTextFieldCell"; title = "INSTALLED"; ObjectID = "52P-e0-sPx"; */
+"52P-e0-sPx.title" = "已安装";
+
+/* Class = "NSTextFieldCell"; title = "Panic Inc."; ObjectID = "COC-sC-N9R"; */
+"COC-sC-N9R.title" = "Panic Inc.";
+
+/* Class = "NSButtonCell"; title = "INSTALL"; ObjectID = "ThR-eL-vBX"; */
+"ThR-eL-vBX.title" = "GET";
+
+/* Class = "NSTextFieldCell"; title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus, purus a gravida dignissim, odio justo molestie odio, eu ornare nunc lacus eu velit."; ObjectID = "eLf-rA-CY4"; */
+"eLf-rA-CY4.title" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus, purus a gravida dignissim, odio justo molestie odio, eu ornare nunc lacus eu velit.";

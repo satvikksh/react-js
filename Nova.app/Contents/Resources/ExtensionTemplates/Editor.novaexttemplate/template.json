@@ -1,0 +1,10 @@
+{
+	"name": "Editor Extension",
+	"extension": "novaextension",
+	"description": "An extension which adds one or more actions to the editor written in JavaScript.",
+	"rewritablePaths": [
+		"README.md",
+		"Scripts/main.js"
+	],
+	"showEntitlements": true
+}

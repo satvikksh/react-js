@@ -1,0 +1,174 @@
+
+/* Class = "NSButtonCell"; title = "Edit"; ObjectID = "3RK-qh-Zbt"; */
+"3RK-qh-Zbt.title" = "Modifier";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "find pattern"; ObjectID = "3S8-IF-jK0"; */
+"3S8-IF-jK0.ibExternalAccessibilityDescription" = "rechercher une forme";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "The text pattern to match"; ObjectID = "3S8-IF-jK0"; */
+"3S8-IF-jK0.ibShadowedToolTip" = "Forme de texte à rechercher";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Edit custom filters"; ObjectID = "654-ep-6AJ"; */
+"654-ep-6AJ.ibExternalAccessibilityDescription" = "Modifier les filtres personnalisés";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Edit custom filters"; ObjectID = "654-ep-6AJ"; */
+"654-ep-6AJ.ibShadowedToolTip" = "Modifier les filtres personnalisés";
+
+/* Class = "NSTextFieldCell"; title = "<<PlaceholderLabel>>"; ObjectID = "69l-4d-XiE"; */
+"69l-4d-XiE.title" = "<<PlaceholderLabel>>";
+
+/* Class = "NSButtonCell"; title = "Replace All"; ObjectID = "8qV-9e-U1a"; */
+"8qV-9e-U1a.title" = "Tout remplacer";
+
+/* Class = "NSButtonCell"; title = "Open…"; ObjectID = "95F-fy-lnZ"; */
+"95F-fy-lnZ.title" = "Ouvrir…";
+
+/* Class = "NSTextFieldCell"; title = "<<Filename>>"; ObjectID = "9X2-68-TEh"; */
+"9X2-68-TEh.title" = "<<Filename>>";
+
+/* Class = "NSMenuItem"; title = "<<Location>>"; ObjectID = "A3C-5D-nHG"; */
+"A3C-5D-nHG.title" = "<<Location>>";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "BSh-Vb-h0C"; */
+"BSh-Vb-h0C.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Contains"; ObjectID = "BgX-kB-nWm"; */
+"BgX-kB-nWm.title" = "Contient";
+
+/* Class = "NSTextFieldCell"; title = "<<Count>>"; ObjectID = "Bht-LN-XOY"; */
+"Bht-LN-XOY.title" = "<<Count>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Options"; ObjectID = "DIw-eL-fG8"; */
+"DIw-eL-fG8.ibExternalAccessibilityDescription" = "Options";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Search Options"; ObjectID = "DIw-eL-fG8"; */
+"DIw-eL-fG8.ibShadowedToolTip" = "Options de recherche";
+
+/* Class = "NSMenuItem"; title = "Show in Finder"; ObjectID = "Fjf-Bj-ZZL"; */
+"Fjf-Bj-ZZL.title" = "Afficher dans le Finder";
+
+/* Class = "NSMenuItem"; title = "Regular Expression"; ObjectID = "KBe-b4-c3O"; */
+"KBe-b4-c3O.title" = "Expression régulière";
+
+/* Class = "NSTextFieldCell"; title = "<<#>>"; ObjectID = "L4I-NL-gvR"; */
+"L4I-NL-gvR.title" = "<<#>>";
+
+/* Class = "NSMenuItem"; title = "Begins With"; ObjectID = "OG9-F9-W3i"; */
+"OG9-F9-W3i.title" = "Commence par";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "find wildcard"; ObjectID = "RBx-N4-Acq"; */
+"RBx-N4-Acq.ibExternalAccessibilityDescription" = "rechercher un caractère générique";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Insert a find wildcard"; ObjectID = "RBx-N4-Acq"; */
+"RBx-N4-Acq.ibShadowedToolTip" = "Insérer un caractère générique de recherche";
+
+/* Class = "NSTextFieldCell"; title = "<<Description>>"; ObjectID = "SUF-hI-cvg"; */
+"SUF-hI-cvg.title" = "<<Description>>";
+
+/* Class = "NSTextFieldCell"; title = "<<QueueCount>>"; ObjectID = "SrB-Bh-fVd"; */
+"SrB-Bh-fVd.title" = "<<QueueCount>>";
+
+/* Class = "NSTextFieldCell"; title = "Matching patterns:"; ObjectID = "Uf8-5f-RHs"; */
+"Uf8-5f-RHs.title" = "Formes de correspondance :";
+
+/* Class = "NSTextFieldCell"; title = "<<FiltersStatus>>"; ObjectID = "ZUV-GA-kf8"; */
+"ZUV-GA-kf8.title" = "<<FiltersStatus>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Clear filters"; ObjectID = "aNx-D1-VrO"; */
+"aNx-D1-VrO.ibExternalAccessibilityDescription" = "Effacer les filtres";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Clear filters"; ObjectID = "aNx-D1-VrO"; */
+"aNx-D1-VrO.ibShadowedToolTip" = "Effacer les filtres";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Case Sensitive"; ObjectID = "aOT-3k-1Db"; */
+"aOT-3k-1Db.ibExternalAccessibilityDescription" = "Sensible à la casse";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Case Sensitive"; ObjectID = "aOT-3k-1Db"; */
+"aOT-3k-1Db.ibShadowedToolTip" = "Sensible à la casse";
+
+/* Class = "NSButtonCell"; title = "Find"; ObjectID = "bzM-NT-RDh"; */
+"bzM-NT-RDh.title" = "Rechercher";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Expand all results"; ObjectID = "dhB-XL-YsH"; */
+"dhB-XL-YsH.ibExternalAccessibilityDescription" = "Développer tous les résultats";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Expand all results"; ObjectID = "dhB-XL-YsH"; */
+"dhB-XL-YsH.ibShadowedToolTip" = "Développer tous les résultats";
+
+/* Class = "NSTextFieldCell"; title = "<<Result>>"; ObjectID = "ePV-w4-ia0"; */
+"ePV-w4-ia0.title" = "<<Result>>";
+
+/* Class = "NSButtonCell"; title = "Search Without Filters"; ObjectID = "eko-Op-M8w"; */
+"eko-Op-M8w.title" = "Rechercher sans filtres";
+
+/* Class = "NSTextFieldCell"; title = "<<Header>>"; ObjectID = "hdf-VE-Vgl"; */
+"hdf-VE-Vgl.title" = "<<Header>>";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Search Scope"; ObjectID = "i2j-BZ-f2X"; */
+"i2j-BZ-f2X.ibExternalAccessibilityDescription" = "Étendue de recherche";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Collapse all results"; ObjectID = "ik9-BS-86B"; */
+"ik9-BS-86B.ibExternalAccessibilityDescription" = "Réduire tous les résultats";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Collapse all results"; ObjectID = "ik9-BS-86B"; */
+"ik9-BS-86B.ibShadowedToolTip" = "Réduire tous les résultats";
+
+/* Class = "NSMenuItem"; title = "Search Hidden Files"; ObjectID = "jLV-oH-Far"; */
+"jLV-oH-Far.title" = "Rechercher dans les fichiers masqués";
+
+/* Class = "NSMenuItem"; title = "Matches Word"; ObjectID = "lcR-Ih-tH0"; */
+"lcR-Ih-tH0.title" = "Correspond au mot";
+
+/* Class = "NSButtonCell"; title = "<<Filter>>"; ObjectID = "lgk-xU-41o"; */
+"lgk-xU-41o.title" = "<<Filter>>";
+
+/* Class = "NSTextFieldCell"; placeholderString = "e.g. *.js, !*.css, docs/**/*.md"; ObjectID = "nzw-0H-4Qp"; */
+"nzw-0H-4Qp.placeholderString" = "par exemple *.js, !*.css, docs/**/*.md";
+
+/* Class = "NSMenuItem"; title = "Search Ignored Files"; ObjectID = "onp-e3-oa9"; */
+"onp-e3-oa9.title" = "Rechercher dans les fichiers ignorés";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Only in Open Files"; ObjectID = "qwf-0G-bix"; */
+"qwf-0G-bix.ibExternalAccessibilityDescription" = "Uniquement dans les fichiers ouverts";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Only in Open Files"; ObjectID = "qwf-0G-bix"; */
+"qwf-0G-bix.ibShadowedToolTip" = "Uniquement dans les fichiers ouverts";
+
+/* Class = "NSMenuItem"; title = "Search within Bundles"; ObjectID = "rk5-Ck-m73"; */
+"rk5-Ck-m73.title" = "Rechercher dans les lots";
+
+/* Class = "NSMenuItem"; title = "Show in Files Sidebar"; ObjectID = "rkq-wo-u5E"; */
+"rkq-wo-u5E.title" = "Afficher dans la barre latérale Fichiers";
+
+/* Class = "NSTextFieldCell"; title = "<<EmptyPlaceholder>>"; ObjectID = "s4s-hC-NDt"; */
+"s4s-hC-NDt.title" = "<<EmptyPlaceholder>>";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "sBb-nL-mBx"; */
+"sBb-nL-mBx.title" = "Text Cell";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Filters"; ObjectID = "sgs-Rv-jOC"; */
+"sgs-Rv-jOC.ibExternalAccessibilityDescription" = "Filtres";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "replace wildcard"; ObjectID = "ucZ-zT-IJm"; */
+"ucZ-zT-IJm.ibExternalAccessibilityDescription" = "remplacer le caractère générique";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Insert a replace wildcard"; ObjectID = "ucZ-zT-IJm"; */
+"ucZ-zT-IJm.ibShadowedToolTip" = "Insérer un caractère générique de remplacement";
+
+/* Class = "NSMenuItem"; title = "Ends With"; ObjectID = "uk6-Wp-VKS"; */
+"uk6-Wp-VKS.title" = "Se termine par";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Find"; ObjectID = "vkc-kK-7UA"; */
+"vkc-kK-7UA.placeholderString" = "Rechercher";
+
+/* Class = "NSButtonCell"; title = "Filters"; ObjectID = "w7M-PD-OUK"; */
+"w7M-PD-OUK.title" = "Filtres";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "replace pattern"; ObjectID = "xXZ-VI-whn"; */
+"xXZ-VI-whn.ibExternalAccessibilityDescription" = "remplacer la forme";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "The text pattern with which to replace matches"; ObjectID = "xXZ-VI-whn"; */
+"xXZ-VI-whn.ibShadowedToolTip" = "La forme de texte à substituer correspond";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Replace"; ObjectID = "zik-1P-9t6"; */
+"zik-1P-9t6.placeholderString" = "Remplacer";

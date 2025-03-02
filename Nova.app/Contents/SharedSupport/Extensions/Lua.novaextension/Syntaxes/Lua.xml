@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="lua">
+    <meta>
+        <name>Lua</name>
+        <type>script</type>
+        <preferred-file-extension>lua</preferred-file-extension>
+        <scriptable shebang="#!/usr/bin/env lua" />
+    </meta>
+    
+    <detectors>
+        <extension>lua</extension>
+    </detectors>
+    
+    <indentation>
+        <increase>
+            <expression>(?x)
+                (\b(else|function|then|do|repeat)\b(?!.*?\b(end|until)\b).*$)
+                |(\{[^}\"']*$)|(\[[^\]\"']*$)|(\([^)\"']*$)
+            </expression>
+        </increase>
+        <decrease>
+            <expression>(?x)
+                (^\s*\b(elseif|else|end|until)\b)
+                |(?:^\s*|(?&lt;!\belse|\bfunction|\bthen|\bdo|\brepeat)\s+)((\S*)\s+(elseif|else|end|until)$)
+                |(^\s*\})
+                |(^\s*\))
+            </expression>
+        </decrease>
+    </indentation>
+    
+    <comments>
+        <single>
+            <expression>--</expression>
+        </single>
+        <multiline>
+            <starts-with>
+                <expression>--[[</expression>
+            </starts-with>
+            <ends-with>
+                <expression>--]]</expression>
+            </ends-with>
+        </multiline>
+    </comments>
+    
+    <tree-sitter>
+        <highlights />
+        <folds />
+        <symbols />
+    </tree-sitter>
+</syntax>

@@ -1,0 +1,48 @@
+
+/* Class = "NSTextFieldCell"; title = "Automatically fetch remote changes:"; ObjectID = "0MP-wT-sNw"; */
+"0MP-wT-sNw.title" = "Récupérer automatiquement les modifications distantes :";
+
+/* Class = "NSButtonCell"; title = "Ignore changes in whitespace when determining authors"; ObjectID = "6Sg-y7-MLe"; */
+"6Sg-y7-MLe.title" = "Ignorer les changements d’espace lors de la détermination des auteurs";
+
+/* Class = "NSMenuItem"; title = "Every hour"; ObjectID = "GVw-2T-noC"; */
+"GVw-2T-noC.title" = "Toutes les heures";
+
+/* Class = "NSMenuItem"; title = "Every 15 minutes"; ObjectID = "Gum-BB-kKy"; */
+"Gum-BB-kKy.title" = "Toutes les 15 minutes";
+
+/* Class = "NSButtonCell"; title = "Show avatars"; ObjectID = "LV6-ti-Pgl"; */
+"LV6-ti-Pgl.title" = "Afficher les avatars";
+
+/* Class = "NSMenuItem"; title = "Every 30 minutes"; ObjectID = "OCn-wO-cie"; */
+"OCn-wO-cie.title" = "Toutes les 30 minutes";
+
+/* Class = "NSButtonCell"; title = "Open changed files in comparison view"; ObjectID = "RGt-BC-Of9"; */
+"RGt-BC-Of9.title" = "Ouvrir les fichiers modifiés en affichage de comparaison";
+
+/* Class = "NSButtonCell"; title = "Show authors for selected lines"; ObjectID = "YmT-WT-rlU"; */
+"YmT-WT-rlU.title" = "Afficher les auteurs pour les lignes sélectionnées";
+
+/* Class = "NSMenuItem"; title = "Every 5 minutes"; ObjectID = "Zlj-bt-p0O"; */
+"Zlj-bt-p0O.title" = "Toutes les 5 minutes";
+
+/* Class = "NSButtonCell"; title = "Show placeholders for uncommitted lines"; ObjectID = "cf8-dr-kL9"; */
+"cf8-dr-kL9.title" = "Afficher des paramètres fictifs pour les lignes non validées";
+
+/* Class = "NSMenuItem"; title = "Every 10 minutes"; ObjectID = "gxy-b7-7Ie"; */
+"gxy-b7-7Ie.title" = "Toutes les 10 minutes";
+
+/* Class = "NSTextFieldCell"; title = "Changes:"; ObjectID = "ig8-04-9Td"; */
+"ig8-04-9Td.title" = "Modifications :";
+
+/* Class = "NSButtonCell"; title = "Show change markers in gutter"; ObjectID = "l5N-Hn-tHB"; */
+"l5N-Hn-tHB.title" = "Afficher les marqueurs de changement dans la bande";
+
+/* Class = "NSMenuItem"; title = "Never"; ObjectID = "lnj-TP-trr"; */
+"lnj-TP-trr.title" = "Jamais";
+
+/* Class = "NSTextFieldCell"; title = "Inline Authors:"; ObjectID = "tyO-Ln-HRF"; */
+"tyO-Ln-HRF.title" = "Auteurs en ligne :";
+
+/* Class = "NSButtonCell"; title = "Enable Git Source Control"; ObjectID = "xGg-gV-yqn"; */
+"xGg-gV-yqn.title" = "Activer le contrôle de code source Git";

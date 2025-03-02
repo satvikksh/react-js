@@ -1,0 +1,10 @@
+{
+    "name": "Theme",
+    "extension": "novaextension",
+    "description": "An extension which adds a new workspace and editor theme.",
+    "rewritablePaths": [
+		"README.md",
+        "Themes/{{ name }}.css"
+    ],
+    "showEntitlements": false
+}

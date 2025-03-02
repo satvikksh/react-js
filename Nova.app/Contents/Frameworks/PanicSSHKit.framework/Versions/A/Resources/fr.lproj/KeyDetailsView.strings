@@ -1,0 +1,51 @@
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "3RO-ib-YPk"; */
+"3RO-ib-YPk.title" = "OK";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Copy Key values"; ObjectID = "4e5-9D-Cpu"; */
+"4e5-9D-Cpu.ibShadowedToolTip" = "Copier les valeurs des clés";
+
+/* Class = "NSTextFieldCell"; title = "RSA Encrypted"; ObjectID = "53t-Db-CyR"; */
+"53t-Db-CyR.title" = "RSA chiffrée";
+
+/* Class = "NSMenuItem"; title = "Set Certificate…"; ObjectID = "6E9-dQ-JUh"; */
+"6E9-dQ-JUh.title" = "Définir le certificat…";
+
+/* Class = "NSMenuItem"; title = "Remove Certificate"; ObjectID = "Cmi-H3-1WI"; */
+"Cmi-H3-1WI.title" = "Supprimer le certificat";
+
+/* Class = "NSMenuItem"; title = "Private Key"; ObjectID = "Eu0-TT-QCS"; */
+"Eu0-TT-QCS.title" = "Clé privée";
+
+/* Class = "NSTextFieldCell"; title = "Passphrase:"; ObjectID = "Jkb-Hm-QAE"; */
+"Jkb-Hm-QAE.title" = "Phrase secrète :";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "K4l-qq-qTk"; */
+"K4l-qq-qTk.title" = "Annuler";
+
+/* Class = "NSTextFieldCell"; title = "Passphrase:"; ObjectID = "auz-CL-AD7"; */
+"auz-CL-AD7.title" = "Phrase secrète :";
+
+/* Class = "NSTextFieldCell"; title = "Name:"; ObjectID = "gJ9-HZ-9Ys"; */
+"gJ9-HZ-9Ys.title" = "Nom :";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "mkn-Wz-u4u"; */
+"mkn-Wz-u4u.title" = "Annuler";
+
+/* Class = "NSButtonCell"; title = "Save"; ObjectID = "pGB-ZW-WcN"; */
+"pGB-ZW-WcN.title" = "Enregistrer";
+
+/* Class = "NSTextFieldCell"; title = "Type:"; ObjectID = "pGg-CL-F6S"; */
+"pGg-CL-F6S.title" = "Type :";
+
+/* Class = "NSTextFieldCell"; title = "Certificate:"; ObjectID = "pVZ-Sr-tEN"; */
+"pVZ-Sr-tEN.title" = "Certificat :";
+
+/* Class = "NSMenuItem"; title = "Public Key"; ObjectID = "v0x-V4-rmP"; */
+"v0x-V4-rmP.title" = "Clé publique";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Certificate Actions"; ObjectID = "vdY-4M-xgE"; */
+"vdY-4M-xgE.ibShadowedToolTip" = "Actions de certificat";
+
+/* Class = "NSWindow"; title = "Key Passphrase"; ObjectID = "xi5-ET-YIU"; */
+"xi5-ET-YIU.title" = "Phrase secrète de clé";

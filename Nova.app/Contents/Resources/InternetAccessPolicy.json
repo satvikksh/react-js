@@ -1,0 +1,161 @@
+{
+    "DeveloperName": "Panic Inc.",
+    "ApplicationDescription": "A powerful text editor and IDE.",
+    "Website": "https://nova.app",
+    "Connections": [
+        {
+            "Host": "nova.app",
+            "NetworkProtocol": "TCP",
+            "Port": "443",
+            "Purpose": "Used when fetching release notes, submitting feedback, and linking to help documentation.",
+            "DenyConsequences": "Release notes, submitting feedback, and help documentation will be unavailable."
+        },
+        {
+            "Host": "panic.com",
+            "NetworkProtocol": "TCP",
+            "Port": "443",
+            "Purpose": "Used when requesting app update announcements.",
+            "DenyConsequences": "App update announcements will be unavailable."
+        },
+        {
+            "Host": "accounts.panic.com",
+            "NetworkProtocol": "TCP",
+            "Port": "443",
+            "Purpose": "Used when managing your app license information.",
+            "DenyConsequences": "Access to app license management will be unavailable."
+        },
+        {
+            "Host": "extensions.panic.com,extensions.panicfiles.com",
+            "NetworkProtocol": "TCP",
+            "Port": "443",
+            "Purpose": "Used when browsing, installing, or uploading extensions in the Nova Extension Library.",
+            "DenyConsequences": "Browsing, downloading, and updating extensions will be unavailable, as well as uploading extensions (for extension developers)."
+        },
+        {
+            "Host": "circle.panic.com",
+            "NetworkProtocol": "TCP",
+            "Port": "443",
+            "Purpose": "Used when checking for and downloading app updates as well as unlocking your license.",
+            "DenyConsequences": "Automatic app updates and license unlocking will be unavailable."
+        },
+        {
+            "Host": "help.panic.com,library.panic.com",
+            "NetworkProtocol": "TCP",
+            "Port": "443",
+            "Purpose": "Used when fetching help documentation.",
+            "DenyConsequences": "Help documentation will be unavailable."
+        },
+        {
+            "Host": "sync.panic.com",
+            "NetworkProtocol": "TCP",
+            "Port": "443",
+            "Purpose": "Used for the Panic Sync service, which includes syncing data between your devices.",
+            "DenyConsequences": "All features using the Panic Sync service will be unavailable."
+        },
+        {
+            "Host": "appcenter.ms,*.appcenter.ms",
+            "NetworkProtocol": "TCP",
+            "Port": "443",
+            "Purpose": "Gathering of diagnostic reports (crash reports) and analytics, if either or both of those options are opted-in in Preferences.",
+            "DenyConsequences": "Automatic submission of diagnostic reports and analytics will be unavailable."
+        },
+        {
+            "Host": "gravatar.com,*.gravatar.com",
+            "NetworkProtocol": "TCP",
+            "Port": "443",
+            "Purpose": "Used when fetching Git author avatars from Gravatars.",
+            "DenyConsequences": "Avatars provided by the Gravatar service will be unavailable."
+        },
+        {
+            "Host": "github.com,*.github.com",
+            "NetworkProtocol": "TCP",
+            "Port": "443",
+            "Purpose": "Used when connecting GitHub accounts for Git.",
+            "DenyConsequences": "Access to GitHub accounts will be unavailable."
+        },
+        {
+            "Host": "gitlab.com,*.gitlab.com",
+            "NetworkProtocol": "TCP",
+            "Port": "443",
+            "Purpose": "Used when connecting GitLab.com accounts for Git.",
+            "DenyConsequences": "Access to GitLab.com accounts will be unavailable."
+        },
+        {
+            "Host": "bitbucket.org,*.bitbucket.org",
+            "NetworkProtocol": "TCP",
+            "Port": "443",
+            "Purpose": "Used when connecting BitBucket accounts for Git.",
+            "DenyConsequences": "Access to BitBucket accounts will be unavailable."
+        },
+        {
+            "Host": "s3.amazon.com",
+            "NetworkProtocol": "TCP",
+            "Port": "80,443",
+            "Purpose": "Used when connecting Amazon S3 accounts for file browsing.",
+            "DenyConsequences": "Access to any Amazon S3 accounts will be unavailable."
+        },
+        {
+            "Host": "sts.*.amazonaws.com",
+            "NetworkProtocol": "TCP",
+            "Port": "443",
+            "Purpose": "Used when requesting Amazon S3 STS region data for file browsing.",
+            "DenyConsequences": "Access to any Amazon S3 STS regions will be unavailable."
+        },
+        {
+            "Host": "commondatastorage.googleapis.com",
+            "NetworkProtocol": "TCP",
+            "Port": "80,443",
+            "Purpose": "Used when connecting Google Cloud Storage accounts for file browsing.",
+            "DenyConsequences": "Access to any Google Cloud Storage accounts will be unavailable."
+        },
+        {
+            "Host": "api.dropbox.com,api-content.dropbox.com,api-notify.dropbox.com,dropboxapi.com,*.dropboxapi.com",
+            "NetworkProtocol": "TCP",
+            "Port": "443",
+            "Purpose": "Used when connecting Dropbox accounts for file browsing.",
+            "DenyConsequences": "Access to any Dropbox accounts will be unavailable."
+        },
+        {
+            "Host": "box.com,*.box.com",
+            "NetworkProtocol": "TCP",
+            "Port": "443",
+            "Purpose": "Used when connecting Box accounts for file browsing.",
+            "DenyConsequences": "Access to any Box accounts will be unavailable."
+        },
+        {
+            "Host": "drive.google.com",
+            "NetworkProtocol": "TCP",
+            "Port": "443",
+            "Purpose": "Used when connecting Google Drive accounts for file browsing.",
+            "DenyConsequences": "Access to any Google Drive accounts will be unavailable."
+        },
+        {
+            "Host": "backblazeb2.com,*.backblazeb2.com",
+            "NetworkProtocol": "TCP",
+            "Port": "443",
+            "Purpose": "Used when connecting Backblaze B2 accounts for file browsing.",
+            "DenyConsequences": "Access to any Backblaze B2 accounts will be unavailable."
+        },
+        {
+            "Host": "api.onedrive.com",
+            "NetworkProtocol": "TCP",
+            "Port": "443",
+            "Purpose": "Used when connecting Microsoft OneDrive accounts for file browsing.",
+            "DenyConsequences": "Access to any Microsoft OneDrive accounts will be unavailable."
+        },
+        {
+            "Host": "file.core.windows.net,*.file.core.windows.net",
+            "NetworkProtocol": "TCP",
+            "Port": "443",
+            "Purpose": "Used when connecting Microsoft Azure accounts for file browsing.",
+            "DenyConsequences": "Access to any Microsoft Azure accounts will be unavailable."
+        }
+    ],
+    "Services": [
+        {
+            "Identifier": "com.apple.CoreLocation",
+            "Name": "Core Location",
+            "Purpose": "Used if you request the nearest Amazon S3 or S3 STS region for file browsing."
+        }
+    ]
+}

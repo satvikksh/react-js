@@ -1,0 +1,9 @@
+{
+    "name": "Clips",
+    "extension": "novaextension",
+    "description": "An extension which adds a set of clips.",
+    "rewritablePaths": [
+        "README.md"
+    ],
+    "showEntitlements": false
+}

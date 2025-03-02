@@ -1,0 +1,174 @@
+
+/* Class = "NSButtonCell"; title = "Edit"; ObjectID = "3RK-qh-Zbt"; */
+"3RK-qh-Zbt.title" = "编辑";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "find pattern"; ObjectID = "3S8-IF-jK0"; */
+"3S8-IF-jK0.ibExternalAccessibilityDescription" = "查找模式";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "The text pattern to match"; ObjectID = "3S8-IF-jK0"; */
+"3S8-IF-jK0.ibShadowedToolTip" = "匹配的文本模式";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Edit custom filters"; ObjectID = "654-ep-6AJ"; */
+"654-ep-6AJ.ibExternalAccessibilityDescription" = "编辑自定义筛选器";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Edit custom filters"; ObjectID = "654-ep-6AJ"; */
+"654-ep-6AJ.ibShadowedToolTip" = "编辑自定义筛选器";
+
+/* Class = "NSTextFieldCell"; title = "<<PlaceholderLabel>>"; ObjectID = "69l-4d-XiE"; */
+"69l-4d-XiE.title" = "<<PlaceholderLabel>>";
+
+/* Class = "NSButtonCell"; title = "Replace All"; ObjectID = "8qV-9e-U1a"; */
+"8qV-9e-U1a.title" = "替换全部";
+
+/* Class = "NSButtonCell"; title = "Open…"; ObjectID = "95F-fy-lnZ"; */
+"95F-fy-lnZ.title" = "打开…";
+
+/* Class = "NSTextFieldCell"; title = "<<Filename>>"; ObjectID = "9X2-68-TEh"; */
+"9X2-68-TEh.title" = "<<Filename>>";
+
+/* Class = "NSMenuItem"; title = "<<Location>>"; ObjectID = "A3C-5D-nHG"; */
+"A3C-5D-nHG.title" = "<<Location>>";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "BSh-Vb-h0C"; */
+"BSh-Vb-h0C.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Contains"; ObjectID = "BgX-kB-nWm"; */
+"BgX-kB-nWm.title" = "包含";
+
+/* Class = "NSTextFieldCell"; title = "<<Count>>"; ObjectID = "Bht-LN-XOY"; */
+"Bht-LN-XOY.title" = "<<Count>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Options"; ObjectID = "DIw-eL-fG8"; */
+"DIw-eL-fG8.ibExternalAccessibilityDescription" = "选项";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Search Options"; ObjectID = "DIw-eL-fG8"; */
+"DIw-eL-fG8.ibShadowedToolTip" = "搜索选项";
+
+/* Class = "NSMenuItem"; title = "Show in Finder"; ObjectID = "Fjf-Bj-ZZL"; */
+"Fjf-Bj-ZZL.title" = "在 Finder 中显示";
+
+/* Class = "NSMenuItem"; title = "Regular Expression"; ObjectID = "KBe-b4-c3O"; */
+"KBe-b4-c3O.title" = "常规表达式";
+
+/* Class = "NSTextFieldCell"; title = "<<#>>"; ObjectID = "L4I-NL-gvR"; */
+"L4I-NL-gvR.title" = "<<#>>";
+
+/* Class = "NSMenuItem"; title = "Begins With"; ObjectID = "OG9-F9-W3i"; */
+"OG9-F9-W3i.title" = "开头是";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "find wildcard"; ObjectID = "RBx-N4-Acq"; */
+"RBx-N4-Acq.ibExternalAccessibilityDescription" = "查找通配符";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Insert a find wildcard"; ObjectID = "RBx-N4-Acq"; */
+"RBx-N4-Acq.ibShadowedToolTip" = "插入查找通配符";
+
+/* Class = "NSTextFieldCell"; title = "<<Description>>"; ObjectID = "SUF-hI-cvg"; */
+"SUF-hI-cvg.title" = "<<Description>>";
+
+/* Class = "NSTextFieldCell"; title = "<<QueueCount>>"; ObjectID = "SrB-Bh-fVd"; */
+"SrB-Bh-fVd.title" = "<<QueueCount>>";
+
+/* Class = "NSTextFieldCell"; title = "Matching patterns:"; ObjectID = "Uf8-5f-RHs"; */
+"Uf8-5f-RHs.title" = "匹配模式：";
+
+/* Class = "NSTextFieldCell"; title = "<<FiltersStatus>>"; ObjectID = "ZUV-GA-kf8"; */
+"ZUV-GA-kf8.title" = "<<FiltersStatus>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Clear filters"; ObjectID = "aNx-D1-VrO"; */
+"aNx-D1-VrO.ibExternalAccessibilityDescription" = "清除筛选器";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Clear filters"; ObjectID = "aNx-D1-VrO"; */
+"aNx-D1-VrO.ibShadowedToolTip" = "清除筛选器";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Case Sensitive"; ObjectID = "aOT-3k-1Db"; */
+"aOT-3k-1Db.ibExternalAccessibilityDescription" = "区分大小写";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Case Sensitive"; ObjectID = "aOT-3k-1Db"; */
+"aOT-3k-1Db.ibShadowedToolTip" = "区分大小写";
+
+/* Class = "NSButtonCell"; title = "Find"; ObjectID = "bzM-NT-RDh"; */
+"bzM-NT-RDh.title" = "查找";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Expand all results"; ObjectID = "dhB-XL-YsH"; */
+"dhB-XL-YsH.ibExternalAccessibilityDescription" = "展开所有结果";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Expand all results"; ObjectID = "dhB-XL-YsH"; */
+"dhB-XL-YsH.ibShadowedToolTip" = "展开所有结果";
+
+/* Class = "NSTextFieldCell"; title = "<<Result>>"; ObjectID = "ePV-w4-ia0"; */
+"ePV-w4-ia0.title" = "<<Result>>";
+
+/* Class = "NSButtonCell"; title = "Search Without Filters"; ObjectID = "eko-Op-M8w"; */
+"eko-Op-M8w.title" = "无筛选器搜索";
+
+/* Class = "NSTextFieldCell"; title = "<<Header>>"; ObjectID = "hdf-VE-Vgl"; */
+"hdf-VE-Vgl.title" = "<<Header>>";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Search Scope"; ObjectID = "i2j-BZ-f2X"; */
+"i2j-BZ-f2X.ibExternalAccessibilityDescription" = "搜索范围";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Collapse all results"; ObjectID = "ik9-BS-86B"; */
+"ik9-BS-86B.ibExternalAccessibilityDescription" = "折叠所有结果";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Collapse all results"; ObjectID = "ik9-BS-86B"; */
+"ik9-BS-86B.ibShadowedToolTip" = "折叠所有结果";
+
+/* Class = "NSMenuItem"; title = "Search Hidden Files"; ObjectID = "jLV-oH-Far"; */
+"jLV-oH-Far.title" = "搜索隐藏的文件";
+
+/* Class = "NSMenuItem"; title = "Matches Word"; ObjectID = "lcR-Ih-tH0"; */
+"lcR-Ih-tH0.title" = "匹配单词";
+
+/* Class = "NSButtonCell"; title = "<<Filter>>"; ObjectID = "lgk-xU-41o"; */
+"lgk-xU-41o.title" = "<<Filter>>";
+
+/* Class = "NSTextFieldCell"; placeholderString = "e.g. *.js, !*.css, docs/**/*.md"; ObjectID = "nzw-0H-4Qp"; */
+"nzw-0H-4Qp.placeholderString" = "例如 *.js、!*.css、docs/**/*.md";
+
+/* Class = "NSMenuItem"; title = "Search Ignored Files"; ObjectID = "onp-e3-oa9"; */
+"onp-e3-oa9.title" = "搜索忽略的文件";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Only in Open Files"; ObjectID = "qwf-0G-bix"; */
+"qwf-0G-bix.ibExternalAccessibilityDescription" = "仅在打开的文件中";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Only in Open Files"; ObjectID = "qwf-0G-bix"; */
+"qwf-0G-bix.ibShadowedToolTip" = "仅在打开的文件中";
+
+/* Class = "NSMenuItem"; title = "Search within Bundles"; ObjectID = "rk5-Ck-m73"; */
+"rk5-Ck-m73.title" = "在捆绑包内搜索";
+
+/* Class = "NSMenuItem"; title = "Show in Files Sidebar"; ObjectID = "rkq-wo-u5E"; */
+"rkq-wo-u5E.title" = "在文件边栏中显示";
+
+/* Class = "NSTextFieldCell"; title = "<<EmptyPlaceholder>>"; ObjectID = "s4s-hC-NDt"; */
+"s4s-hC-NDt.title" = "<<EmptyPlaceholder>>";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "sBb-nL-mBx"; */
+"sBb-nL-mBx.title" = "Text Cell";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Filters"; ObjectID = "sgs-Rv-jOC"; */
+"sgs-Rv-jOC.ibExternalAccessibilityDescription" = "筛选器";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "replace wildcard"; ObjectID = "ucZ-zT-IJm"; */
+"ucZ-zT-IJm.ibExternalAccessibilityDescription" = "替换通配符";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Insert a replace wildcard"; ObjectID = "ucZ-zT-IJm"; */
+"ucZ-zT-IJm.ibShadowedToolTip" = "插入替换通配符";
+
+/* Class = "NSMenuItem"; title = "Ends With"; ObjectID = "uk6-Wp-VKS"; */
+"uk6-Wp-VKS.title" = "结尾是";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Find"; ObjectID = "vkc-kK-7UA"; */
+"vkc-kK-7UA.placeholderString" = "查找";
+
+/* Class = "NSButtonCell"; title = "Filters"; ObjectID = "w7M-PD-OUK"; */
+"w7M-PD-OUK.title" = "筛选器";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "replace pattern"; ObjectID = "xXZ-VI-whn"; */
+"xXZ-VI-whn.ibExternalAccessibilityDescription" = "替换模式";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "The text pattern with which to replace matches"; ObjectID = "xXZ-VI-whn"; */
+"xXZ-VI-whn.ibShadowedToolTip" = "用于替换匹配项的文本模式";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Replace"; ObjectID = "zik-1P-9t6"; */
+"zik-1P-9t6.placeholderString" = "替换";

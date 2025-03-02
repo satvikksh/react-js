@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    These completions are up to date as of:
+    mdn/data commit `af8a84a` on Jan 23, 2024.
+-->
+<completions>
+    <provider name="properties.empty">
+        <!-- Without any existing property name characters -->
+        <syntax>css</syntax>
+        
+        <query>
+            (rule_set
+              (block
+                "{" @provider.start
+                "}" @provider.end))
+        </query>
+        
+        <exclude-selector>style.attribute</exclude-selector>
+        
+        <expression>(?&lt;![@$#.:,\[\]\}\(\)\w]|:\s|:\s\s)</expression>
+        
+        <set>css.properties</set>
+    </provider>
+    <provider name="properties">
+        <!-- With existing property name characters -->
+        <syntax>css</syntax>
+        
+        <query>
+            (rule_set
+              (block
+                (declaration
+                  (property_name) @provider.subtree)))
+                  
+            (rule_set
+              (block
+                (attribute_name) @provider.subtree))
+        </query>
+        
+        <expression>(?&lt;![@$#.:,\[\]\}\(\)]|:\s|:\s\s)(\b[a-zA-Z0-9-]+|-+[a-zA-Z0-9-]*)</expression>
+        
+        <exclude-selector>style.value</exclude-selector>
+        
+        <set>css.properties</set>
+    </provider>
+    
+    <set name="css.properties" symbol="property">
+        <behavior complete-on-confirm="true">
+            <append>: $[]</append>
+        </behavior>
+        <completion string="-moz-appearance" nonstandard="true" priority="-1" />
+        <completion string="-moz-binding" nonstandard="true" priority="-1" />
+        <completion string="-moz-border-bottom-colors" nonstandard="true" priority="-1" />
+        <completion string="-moz-border-left-colors" nonstandard="true" priority="-1" />
+        <completion string="-moz-border-right-colors" nonstandard="true" priority="-1" />
+        <completion string="-moz-border-top-colors" nonstandard="true" priority="-1" />
+        <completion string="-moz-context-properties" nonstandard="true" priority="-1" />
+        <completion string="-moz-float-edge" nonstandard="true" priority="-1" />
+        <completion string="-moz-force-broken-image-icon" nonstandard="true" priority="-1" />
+        <completion string="-moz-image-region" nonstandard="true" priority="-1" />
+        <completion string="-moz-orient" nonstandard="true" priority="-1" />
+        <completion string="-moz-outline-radius" nonstandard="true" priority="-1" />
+        <completion string="-moz-outline-radius-bottomleft" nonstandard="true" priority="-1" />
+        <completion string="-moz-outline-radius-bottomright" nonstandard="true" priority="-1" />
+        <completion string="-moz-outline-radius-topleft" nonstandard="true" priority="-1" />
+        <completion string="-moz-outline-radius-topright" nonstandard="true" priority="-1" />
+        <completion string="-moz-stack-sizing" nonstandard="true" priority="-1" />
+        <completion string="-moz-text-blink" nonstandard="true" priority="-1" />
+        <completion string="-moz-user-focus" nonstandard="true" priority="-1" />
+        <completion string="-moz-user-input" nonstandard="true" priority="-1" />
+        <completion string="-moz-user-modify" nonstandard="true" priority="-1" />
+        <completion string="-moz-window-dragging" nonstandard="true" priority="-1" />
+        <completion string="-moz-window-shadow" nonstandard="true" priority="-1" />
+        <completion string="-webkit-appearance" nonstandard="true" priority="-1" />
+        <completion string="-webkit-border-before" nonstandard="true" priority="-1" />
+        <completion string="-webkit-border-before-color" nonstandard="true" priority="-1" />
+        <completion string="-webkit-border-before-style" nonstandard="true" priority="-1" />
+        <completion string="-webkit-border-before-width" nonstandard="true" priority="-1" />
+        <completion string="-webkit-box-reflect" nonstandard="true" priority="-1" />
+        <completion string="-webkit-line-clamp" nonstandard="true" priority="-1" />
+        <completion string="-webkit-mask" nonstandard="true" priority="-1" />
+        <completion string="-webkit-mask-attachment" nonstandard="true" priority="-1" />
+        <completion string="-webkit-mask-clip" nonstandard="true" priority="-1" />
+        <completion string="-webkit-mask-composite" nonstandard="true" priority="-1" />
+        <completion string="-webkit-mask-image" nonstandard="true" priority="-1" />
+        <completion string="-webkit-mask-origin" nonstandard="true" priority="-1" />
+        <completion string="-webkit-mask-position" nonstandard="true" priority="-1" />
+        <completion string="-webkit-mask-position-x" nonstandard="true" priority="-1" />
+        <completion string="-webkit-mask-position-y" nonstandard="true" priority="-1" />
+        <completion string="-webkit-mask-repeat" nonstandard="true" priority="-1" />
+        <completion string="-webkit-mask-repeat-x" nonstandard="true" priority="-1" />
+        <completion string="-webkit-mask-repeat-y" nonstandard="true" priority="-1" />
+        <completion string="-webkit-mask-size" nonstandard="true" priority="-1" />
+        <completion string="-webkit-overflow-scrolling" nonstandard="true" priority="-1" />
+        <completion string="-webkit-tap-highlight-color" nonstandard="true" priority="-1" />
+        <completion string="-webkit-text-fill-color" nonstandard="true" priority="-1" />
+        <completion string="-webkit-text-stroke" nonstandard="true" priority="-1" />
+        <completion string="-webkit-text-stroke-color" nonstandard="true" priority="-1" />
+        <completion string="-webkit-text-stroke-width" nonstandard="true" priority="-1" />
+        <completion string="-webkit-touch-callout" nonstandard="true" priority="-1" />
+        <completion string="-webkit-user-modify" nonstandard="true" priority="-1" />
+        <completion string="accent-color" />
+        <completion string="align-content" />
+        <completion string="align-items" />
+        <completion string="align-self" />
+        <completion string="align-tracks" experimental="true" />
+        <completion string="all" />
+        <completion string="animation" />
+        <completion string="animation-composition" experimental="true" />
+        <completion string="animation-delay" />
+        <completion string="animation-direction" />
+        <completion string="animation-duration" />
+        <completion string="animation-fill-mode" />
+        <completion string="animation-iteration-count" />
+        <completion string="animation-name" />
+        <completion string="animation-play-state" />
+        <completion string="animation-range" experimental="true" />
+        <completion string="animation-range-end" experimental="true" />
+        <completion string="animation-range-start" experimental="true" />
+        <completion string="animation-timing-function" />
+        <completion string="animation-timeline" experimental="true" />
+        <completion string="appearance" experimental="true" />
+        <completion string="aspect-ratio" experimental="true" />
+        <completion string="azimuth" deprecated="true" />
+        <completion string="backdrop-filter" />
+        <completion string="backface-visibility" />
+        <completion string="background" />
+        <completion string="background-attachment" />
+        <completion string="background-blend-mode" />
+        <completion string="background-clip" />
+        <completion string="background-color" />
+        <completion string="background-image" />
+        <completion string="background-origin" />
+        <completion string="background-position" />
+        <completion string="background-position-x" experimental="true" />
+        <completion string="background-position-y" experimental="true" />
+        <completion string="background-repeat" />
+        <completion string="background-size" />
+        <completion string="block-size" />
+        <completion string="border" />
+        <completion string="border-block" />
+        <completion string="border-block-color" />
+        <completion string="border-block-style" />
+        <completion string="border-block-width" />
+        <completion string="border-block-end" />
+        <completion string="border-block-end-color" />
+        <completion string="border-block-end-style" />
+        <completion string="border-block-end-width" />
+        <completion string="border-block-start" />
+        <completion string="border-block-start-color" />
+        <completion string="border-block-start-style" />
+        <completion string="border-block-start-width" />
+        <completion string="border-bottom" />
+        <completion string="border-bottom-color" />
+        <completion string="border-bottom-left-radius" />
+        <completion string="border-bottom-right-radius" />
+        <completion string="border-bottom-style" />
+        <completion string="border-bottom-width" />
+        <completion string="border-collapse" />
+        <completion string="border-color" />
+        <completion string="border-end-end-radius" />
+        <completion string="border-end-start-radius" />
+        <completion string="border-image" />
+        <completion string="border-image-outset" />
+        <completion string="border-image-repeat" />
+        <completion string="border-image-slice" />
+        <completion string="border-image-source" />
+        <completion string="border-image-width" />
+        <completion string="border-inline" />
+        <completion string="border-inline-end" />
+        <completion string="border-inline-color" />
+        <completion string="border-inline-style" />
+        <completion string="border-inline-width" />
+        <completion string="border-inline-end-color" />
+        <completion string="border-inline-end-style" />
+        <completion string="border-inline-end-width" />
+        <completion string="border-inline-start" />
+        <completion string="border-inline-start-color" />
+        <completion string="border-inline-start-style" />
+        <completion string="border-inline-start-width" />
+        <completion string="border-left" />
+        <completion string="border-left-color" />
+        <completion string="border-left-style" />
+        <completion string="border-left-width" />
+        <completion string="border-radius" />
+        <completion string="border-right" />
+        <completion string="border-right-color" />
+        <completion string="border-right-style" />
+        <completion string="border-right-width" />
+        <completion string="border-spacing" />
+        <completion string="border-start-end-radius" />
+        <completion string="border-start-start-radius" />
+        <completion string="border-style" />
+        <completion string="border-top" />
+        <completion string="border-top-color" />
+        <completion string="border-top-left-radius" />
+        <completion string="border-top-right-radius" />
+        <completion string="border-top-style" />
+        <completion string="border-top-width" />
+        <completion string="border-width" />
+        <completion string="bottom" />
+        <completion string="box-align" nonstandard="true" />
+        <completion string="box-decoration-break" />
+        <completion string="box-direction" nonstandard="true" />
+        <completion string="box-flex" nonstandard="true" />
+        <completion string="box-flex-group" nonstandard="true" />
+        <completion string="box-lines" nonstandard="true" />
+        <completion string="box-ordinal-group" nonstandard="true" />
+        <completion string="box-orient" nonstandard="true" />
+        <completion string="box-pack" nonstandard="true" />
+        <completion string="box-shadow" />
+        <completion string="box-sizing" />
+        <completion string="break-after" />
+        <completion string="break-before" />
+        <completion string="break-inside" />
+        <completion string="caption-side" />
+        <completion string="caret" />
+        <completion string="caret-color" />
+        <completion string="caret-shape" />
+        <completion string="clear" />
+        <completion string="clip" />
+        <completion string="clip-path" />
+        <completion string="color" />
+        <completion string="color-scheme" />
+        <completion string="column-count" />
+        <completion string="column-fill" />
+        <completion string="column-gap" />
+        <completion string="column-rule" />
+        <completion string="column-rule-color" />
+        <completion string="column-rule-style" />
+        <completion string="column-rule-width" />
+        <completion string="column-span" />
+        <completion string="column-width" />
+        <completion string="columns" />
+        <completion string="contain" />
+        <completion string="contain-intrinsic-size" />
+        <completion string="contain-intrinsic-block-size" />
+        <completion string="contain-intrinsic-height" />
+        <completion string="contain-intrinsic-inline-size" />
+        <completion string="contain-intrinsic-width" />
+        <completion string="container" />
+        <completion string="container-name" />
+        <completion string="container-type" />
+        <completion string="content" />
+        <completion string="content-visibility" />
+        <completion string="counter-increment" />
+        <completion string="counter-reset" />
+        <completion string="counter-set" />
+        <completion string="cursor" />
+        <completion string="direction" />
+        <completion string="display" />
+        <completion string="empty-cells" />
+        <completion string="filter" />
+        <completion string="flex" />
+        <completion string="flex-basis" />
+        <completion string="flex-direction" />
+        <completion string="flex-flow" />
+        <completion string="flex-grow" />
+        <completion string="flex-shrink" />
+        <completion string="flex-wrap" />
+        <completion string="float" />
+        <completion string="font" />
+        <completion string="font-family" />
+        <completion string="font-feature-settings" />
+        <completion string="font-kerning" />
+        <completion string="font-language-override" />
+        <completion string="font-optical-sizing" />
+        <completion string="font-palette" />
+        <completion string="font-variation-settings" />
+        <completion string="font-size" />
+        <completion string="font-size-adjust" />
+        <completion string="font-smooth" nonstandard="true" />
+        <completion string="font-stretch" />
+        <completion string="font-style" />
+        <completion string="font-synthesis" />
+        <completion string="font-synthesis-position" experimental="true" />
+        <completion string="font-synthesis-small-caps" />
+        <completion string="font-synthesis-style" />
+        <completion string="font-synthesis-weight" />
+        <completion string="font-variant" />
+        <completion string="font-variant-alternates" />
+        <completion string="font-variant-caps" />
+        <completion string="font-variant-east-asian" />
+        <completion string="font-variant-emoji" />
+        <completion string="font-variant-ligatures" />
+        <completion string="font-variant-numeric" />
+        <completion string="font-variant-position" />
+        <completion string="font-weight" />
+        <completion string="forced-color-adjust" experimental="true" />
+        <completion string="gap" />
+        <completion string="grid" />
+        <completion string="grid-area" />
+        <completion string="grid-auto-columns" />
+        <completion string="grid-auto-flow" />
+        <completion string="grid-auto-rows" />
+        <completion string="grid-column" />
+        <completion string="grid-column-end" />
+        <completion string="grid-column-start" />
+        <completion string="grid-row" />
+        <completion string="grid-row-end" />
+        <completion string="grid-row-start" />
+        <completion string="grid-template" />
+        <completion string="grid-template-areas" />
+        <completion string="grid-template-columns" />
+        <completion string="grid-template-rows" />
+        <completion string="hanging-punctuation" />
+        <completion string="height" />
+        <completion string="hyphenate-character" />
+        <completion string="hyphenate-limit-chars" />
+        <completion string="hyphens" />
+        <completion string="image-orientation" />
+        <completion string="image-rendering" />
+        <completion string="image-resolution" experimental="true" />
+        <completion string="initial-letter" experimental="true" />
+        <completion string="initial-letter-align" experimental="true" />
+        <completion string="inline-size" />
+        <completion string="input-security" />
+        <completion string="inset" />
+        <completion string="inset-block" />
+        <completion string="inset-block-end" />
+        <completion string="inset-block-start" />
+        <completion string="inset-inline" />
+        <completion string="inset-inline-end" />
+        <completion string="inset-inline-start" />
+        <completion string="isolation" />
+        <completion string="justify-content" />
+        <completion string="justify-items" />
+        <completion string="justify-self" />
+        <completion string="justify-tracks" experimental="true" />
+        <completion string="left" />
+        <completion string="letter-spacing" />
+        <completion string="line-break" />
+        <completion string="line-clamp" experimental="true" />
+        <completion string="line-height" />
+        <completion string="line-height-step" experimental="true" />
+        <completion string="list-style" />
+        <completion string="list-style-image" />
+        <completion string="list-style-position" />
+        <completion string="list-style-type" />
+        <completion string="margin" />
+        <completion string="margin-block" />
+        <completion string="margin-block-end" />
+        <completion string="margin-block-start" />
+        <completion string="margin-bottom" />
+        <completion string="margin-inline" />
+        <completion string="margin-inline-end" />
+        <completion string="margin-inline-start" />
+        <completion string="margin-left" />
+        <completion string="margin-right" />
+        <completion string="margin-top" />
+        <completion string="margin-trim" experimental="true" />
+        <completion string="mask" />
+        <completion string="mask-border" />
+        <completion string="mask-border-mode" />
+        <completion string="mask-border-outset" />
+        <completion string="mask-border-repeat" />
+        <completion string="mask-border-slice" />
+        <completion string="mask-border-source" />
+        <completion string="mask-border-width" />
+        <completion string="mask-clip" />
+        <completion string="mask-composite" />
+        <completion string="mask-image" />
+        <completion string="mask-mode" />
+        <completion string="mask-origin" />
+        <completion string="mask-position" />
+        <completion string="mask-repeat" />
+        <completion string="mask-size" />
+        <completion string="mask-type" />
+        <completion string="masonry-auto-flow" experimental="true" />
+        <completion string="math-depth" />
+        <completion string="math-shift" />
+        <completion string="math-style" />
+        <completion string="max-block-size" />
+        <completion string="max-height" />
+        <completion string="max-inline-size" />
+        <completion string="max-lines" experimental="true" />
+        <completion string="max-width" />
+        <completion string="min-block-size" />
+        <completion string="min-height" />
+        <completion string="min-inline-size" />
+        <completion string="min-width" />
+        <completion string="mix-blend-mode" />
+        <completion string="object-fit" />
+        <completion string="object-position" />
+        <completion string="offset" />
+        <completion string="offset-anchor" />
+        <completion string="offset-distance" />
+        <completion string="offset-path" />
+        <completion string="offset-position" experimental="true" />
+        <completion string="offset-rotate" />
+        <completion string="opacity" />
+        <completion string="order" />
+        <completion string="orphans" />
+        <completion string="outline" />
+        <completion string="outline-color" />
+        <completion string="outline-offset" />
+        <completion string="outline-style" />
+        <completion string="outline-width" />
+        <completion string="overflow" />
+        <completion string="overflow-anchor" />
+        <completion string="overflow-block" />
+        <completion string="overflow-clip-box" nonstandard="true" />
+        <completion string="overflow-clip-margin" />
+        <completion string="overflow-inline" />
+        <completion string="overflow-wrap" />
+        <completion string="overflow-x" />
+        <completion string="overflow-y" />
+        <completion string="overlay" experimental="true" />
+        <completion string="overscroll-behavior" />
+        <completion string="overscroll-behavior-block" />
+        <completion string="overscroll-behavior-inline" />
+        <completion string="overscroll-behavior-x" />
+        <completion string="overscroll-behavior-y" />
+        <completion string="padding" />
+        <completion string="padding-block" />
+        <completion string="padding-block-end" />
+        <completion string="padding-block-start" />
+        <completion string="padding-bottom" />
+        <completion string="padding-inline" />
+        <completion string="padding-inline-end" />
+        <completion string="padding-inline-start" />
+        <completion string="padding-left" />
+        <completion string="padding-right" />
+        <completion string="padding-top" />
+        <completion string="page" />
+        <completion string="page-break-after" />
+        <completion string="page-break-before" />
+        <completion string="page-break-inside" />
+        <completion string="paint-order" />
+        <completion string="perspective" />
+        <completion string="perspective-origin" />
+        <completion string="place-content" />
+        <completion string="place-items" />
+        <completion string="place-self" />
+        <completion string="pointer-events" />
+        <completion string="position" />
+        <completion string="print-color-adjust" />
+        <completion string="quotes" />
+        <completion string="resize" />
+        <completion string="right" />
+        <completion string="rotate" />
+        <completion string="row-gap" />
+        <completion string="ruby-align" experimental="true" />
+        <completion string="ruby-merge" experimental="true" />
+        <completion string="ruby-position" experimental="true" />
+        <completion string="scale" />
+        <completion string="scrollbar-color" />
+        <completion string="scrollbar-gutter" />
+        <completion string="scrollbar-width" />
+        <completion string="scroll-behavior" />
+        <completion string="scroll-margin" />
+        <completion string="scroll-margin-block" />
+        <completion string="scroll-margin-block-start" />
+        <completion string="scroll-margin-block-end" />
+        <completion string="scroll-margin-bottom" />
+        <completion string="scroll-margin-inline" />
+        <completion string="scroll-margin-inline-start" />
+        <completion string="scroll-margin-inline-end" />
+        <completion string="scroll-margin-left" />
+        <completion string="scroll-margin-right" />
+        <completion string="scroll-margin-top" />
+        <completion string="scroll-padding" />
+        <completion string="scroll-padding-block" />
+        <completion string="scroll-padding-block-start" />
+        <completion string="scroll-padding-block-end" />
+        <completion string="scroll-padding-bottom" />
+        <completion string="scroll-padding-inline" />
+        <completion string="scroll-padding-inline-start" />
+        <completion string="scroll-padding-inline-end" />
+        <completion string="scroll-padding-left" />
+        <completion string="scroll-padding-right" />
+        <completion string="scroll-padding-top" />
+        <completion string="scroll-snap-align" />
+        <completion string="scroll-snap-stop" />
+        <completion string="scroll-snap-type" />
+        <completion string="scroll-timeline" experimental="true" />
+        <completion string="scroll-timeline-axis" experimental="true" />
+        <completion string="scroll-timeline-name" experimental="true" />
+        <completion string="shape-image-threshold" />
+        <completion string="shape-margin" />
+        <completion string="shape-outside" />
+        <completion string="tab-size" />
+        <completion string="table-layout" />
+        <completion string="text-align" />
+        <completion string="text-align-last" />
+        <completion string="text-combine-upright" />
+        <completion string="text-decoration" />
+        <completion string="text-decoration-color" />
+        <completion string="text-decoration-line" />
+        <completion string="text-decoration-skip" experimental="true" />
+        <completion string="text-decoration-skip-ink" />
+        <completion string="text-decoration-style" />
+        <completion string="text-decoration-thickness" />
+        <completion string="text-emphasis" />
+        <completion string="text-emphasis-color" />
+        <completion string="text-emphasis-position" />
+        <completion string="text-emphasis-style" />
+        <completion string="text-indent" />
+        <completion string="text-justify" />
+        <completion string="text-orientation" />
+        <completion string="text-overflow" />
+        <completion string="text-rendering" />
+        <completion string="text-shadow" />
+        <completion string="text-size-adjust" experimental="true" />
+        <completion string="text-transform" />
+        <completion string="text-underline-offset" />
+        <completion string="text-underline-position" />
+        <completion string="text-wrap" experimental="true" />
+        <completion string="timeline-scope" experimental="true" />
+        <completion string="top" />
+        <completion string="touch-action" />
+        <completion string="transform" />
+        <completion string="transform-box" />
+        <completion string="transform-origin" />
+        <completion string="transform-style" />
+        <completion string="transition" />
+        <completion string="transition-behavior" experimental="true" />
+        <completion string="transition-delay" />
+        <completion string="transition-duration" />
+        <completion string="transition-property" />
+        <completion string="transition-timing-function" />
+        <completion string="translate" />
+        <completion string="unicode-bidi" />
+        <completion string="user-select" />
+        <completion string="vertical-align" />
+        <completion string="view-timeline" experimental="true" />
+        <completion string="view-timeline-axis" experimental="true" />
+        <completion string="view-timeline-inset" experimental="true" />
+        <completion string="view-timeline-name" experimental="true" />
+        <completion string="view-transition-name" experimental="true" />
+        <completion string="visibility" />
+        <completion string="white-space" />
+        <completion string="white-space-collapse" />
+        <completion string="widows" />
+        <completion string="width" />
+        <completion string="will-change" />
+        <completion string="word-break" />
+        <completion string="word-spacing" />
+        <completion string="word-wrap" />
+        <completion string="writing-mode" />
+        <completion string="z-index" />
+        <completion string="zoom" nonstandard="true" />
+    </set>
+</completions>

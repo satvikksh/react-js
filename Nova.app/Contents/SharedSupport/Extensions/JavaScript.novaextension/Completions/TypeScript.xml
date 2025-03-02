@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<completions>
+    <!-- "@foo" -->
+    <provider name="typescript.decorators">
+        <syntax>typescript</syntax>
+        <syntax>tsx</syntax>
+        
+        <exclude-selector>string, comment</exclude-selector>
+        
+        <expression>(?&lt;=@)([a-zA-Z_][a-zA-Z0-9_]*)?</expression>
+        
+        <symbols type="function" syntax="javascript">
+            <behavior>
+                <arguments prefix="(" suffix=")" separator=", " append-empty="false" />
+            </behavior>
+        </symbols>
+        <symbols type="function" syntax="typescript">
+            <behavior>
+                <arguments prefix="(" suffix=")" separator=", " append-empty="false" />
+            </behavior>
+        </symbols>
+        <symbols type="function" syntax="tsx">
+            <behavior>
+                <arguments prefix="(" suffix=")" separator=", " append-empty="false" />
+            </behavior>
+        </symbols>
+    </provider>
+</completions>

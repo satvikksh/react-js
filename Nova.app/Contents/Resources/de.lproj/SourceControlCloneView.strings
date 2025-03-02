@@ -1,0 +1,36 @@
+
+/* Class = "NSTextFieldCell"; title = "<<PathPrefix>>"; ObjectID = "9kg-Lr-YyF"; */
+"9kg-Lr-YyF.title" = "<<PathPrefix>>";
+
+/* Class = "NSTextFieldCell"; title = "Branch:"; ObjectID = "Cv2-GT-ji6"; */
+"Cv2-GT-ji6.title" = "Zweig:";
+
+/* Class = "NSButtonCell"; title = "Add to projects in the Launcher"; ObjectID = "F0C-qu-v2h"; */
+"F0C-qu-v2h.title" = "Zu Projekten im Startprogramm hinzufügen";
+
+/* Class = "NSButtonCell"; title = "Initialize submodules"; ObjectID = "G1o-Wm-YRE"; */
+"G1o-Wm-YRE.title" = "Submodule initialisieren";
+
+/* Class = "NSTextFieldCell"; title = "Full Path:"; ObjectID = "Jah-LD-usd"; */
+"Jah-LD-usd.title" = "Vollständiger Pfad:";
+
+/* Class = "NSTextFieldCell"; title = "<<RepositoryURL>>"; ObjectID = "Wnk-Og-Gf6"; */
+"Wnk-Og-Gf6.title" = "<<RepositoryURL>>";
+
+/* Class = "NSTextFieldCell"; title = "Repository URL:"; ObjectID = "ea7-f3-3K7"; */
+"ea7-f3-3K7.title" = "Repository-URL:";
+
+/* Class = "NSButtonCell"; title = "Clone"; ObjectID = "fNR-xa-Bxs"; */
+"fNR-xa-Bxs.title" = "Klonen";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "fQa-rV-Nz2"; */
+"fQa-rV-Nz2.title" = "Abbrechen";
+
+/* Class = "NSMenuItem"; title = "Select Destination…"; ObjectID = "gcD-lK-bYF"; */
+"gcD-lK-bYF.title" = "Ziel auswählen …";
+
+/* Class = "NSTextFieldCell"; title = "Clone Into:"; ObjectID = "h6v-Dg-YYT"; */
+"h6v-Dg-YYT.title" = "Klonen in:";
+
+/* Class = "NSMenuItem"; title = "<<Item>>"; ObjectID = "lxC-oq-j9r"; */
+"lxC-oq-j9r.title" = "<<Item>>";

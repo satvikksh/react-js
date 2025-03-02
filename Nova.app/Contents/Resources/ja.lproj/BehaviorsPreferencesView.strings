@@ -1,0 +1,117 @@
+
+/* Class = "NSMenuItem"; title = "Show"; ObjectID = "1IL-eR-hdk"; */
+"1IL-eR-hdk.title" = "以下を表示";
+
+/* Class = "NSMenuItem"; title = "Extension Console"; ObjectID = "2N4-sA-fAQ"; */
+"2N4-sA-fAQ.title" = "機能拡張コンソール";
+
+/* Class = "NSTextFieldCell"; title = "sidebar"; ObjectID = "5hJ-xi-kjL"; */
+"5hJ-xi-kjL.title" = "サイドバー:";
+
+/* Class = "NSTextFieldCell"; title = "<<Item>>"; ObjectID = "5zP-C4-pVF"; */
+"5zP-C4-pVF.title" = "<<Item>>";
+
+/* Class = "NSMenuItem"; title = "Debug"; ObjectID = "6Jr-ve-CnD"; */
+"6Jr-ve-CnD.title" = "デバッグ";
+
+/* Class = "NSButtonCell"; title = "Play sound"; ObjectID = "7r5-Um-kN4"; */
+"7r5-Um-kN4.title" = "サウンドを再生する:";
+
+/* Class = "NSButtonCell"; title = "Run"; ObjectID = "Av2-6u-JC1"; */
+"Av2-6u-JC1.title" = "実行する:";
+
+/* Class = "NSMenuItem"; title = "Transcript"; ObjectID = "Chk-kJ-wKw"; */
+"Chk-kJ-wKw.title" = "トランスクリプト";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Ckv-a2-kYS"; */
+"Ckv-a2-kYS.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "DTo-6W-6Qw"; */
+"DTo-6W-6Qw.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "Ja4-vh-iqb"; */
+"Ja4-vh-iqb.title" = "Item 3";
+
+/* Class = "NSButtonCell"; title = "Speak announcement using"; ObjectID = "JvY-iD-uMW"; */
+"JvY-iD-uMW.title" = "アナウンスする:";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "Jw1-2t-3po"; */
+"Jw1-2t-3po.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Current"; ObjectID = "KPs-Fu-Olz"; */
+"KPs-Fu-Olz.title" = "いずれか";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "KT8-P1-rP3"; */
+"KT8-P1-rP3.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Remote"; ObjectID = "L77-5I-tAH"; */
+"L77-5I-tAH.title" = "リモート";
+
+/* Class = "NSMenuItem"; title = "Hide"; ObjectID = "M57-6l-OtC"; */
+"M57-6l-OtC.title" = "以下を隠す";
+
+/* Class = "NSButtonCell"; title = "Notify using bezel or system notification"; ObjectID = "NLw-1G-7Ri"; */
+"NLw-1G-7Ri.title" = "Bezelまたは通知センターで通知する";
+
+/* Class = "NSMenuItem"; title = "Find"; ObjectID = "Ntg-ZG-Szx"; */
+"Ntg-ZG-Szx.title" = "検索";
+
+/* Class = "NSButtonCell"; title = "Bounce icon in Dock if application inactive"; ObjectID = "OQP-A1-Y8U"; */
+"OQP-A1-Y8U.title" = "アプリが非アクティブな場合はDockでアイコンをバウンスさせる";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "PTP-m3-F5W"; */
+"PTP-m3-F5W.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Debug Console"; ObjectID = "PnE-FN-awf"; */
+"PnE-FN-awf.title" = "デバッガ";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "Xtk-uU-cN3"; */
+"Xtk-uU-cN3.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Git"; ObjectID = "f6I-7k-49c"; */
+"f6I-7k-49c.title" = "Git";
+
+/* Class = "NSMenuItem"; title = "Hide"; ObjectID = "gGG-0S-cMS"; */
+"gGG-0S-cMS.title" = "以下を隠す";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "gMv-w6-4gf"; */
+"gMv-w6-4gf.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "<<Item>>"; ObjectID = "hXe-Ca-j7a"; */
+"hXe-Ca-j7a.title" = "<<Item>>";
+
+/* Class = "NSMenuItem"; title = "Publish"; ObjectID = "hbW-Go-oUO"; */
+"hbW-Go-oUO.title" = "公開";
+
+/* Class = "NSMenuItem"; title = "Clips"; ObjectID = "jqm-tk-00e"; */
+"jqm-tk-00e.title" = "クリップ";
+
+/* Class = "NSMenuItem"; title = "Current"; ObjectID = "nOS-es-8EF"; */
+"nOS-es-8EF.title" = "いずれか";
+
+/* Class = "NSMenuItem"; title = "Files"; ObjectID = "pFJ-bq-usX"; */
+"pFJ-bq-usX.title" = "ファイル";
+
+/* Class = "NSMenuItem"; title = "Reports"; ObjectID = "q6c-Ib-ul0"; */
+"q6c-Ib-ul0.title" = "レポート";
+
+/* Class = "NSTextFieldCell"; title = "debug pane"; ObjectID = "q7i-Ex-pfF"; */
+"q7i-Ex-pfF.title" = "デバッグペイン:";
+
+/* Class = "NSTextFieldCell"; title = "<<Header>>"; ObjectID = "qBb-Kd-KkO"; */
+"qBb-Kd-KkO.title" = "<<Header>>";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "qdf-T6-Riy"; */
+"qdf-T6-Riy.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Issues"; ObjectID = "rLb-PN-DVU"; */
+"rLb-PN-DVU.title" = "バリデーション";
+
+/* Class = "NSMenuItem"; title = "Show"; ObjectID = "sMV-cw-y0c"; */
+"sMV-cw-y0c.title" = "以下を表示";
+
+/* Class = "NSMenuItem"; title = "Symbols"; ObjectID = "sdk-YC-GZy"; */
+"sdk-YC-GZy.title" = "シンボル";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "xPj-oN-wTC"; */
+"xPj-oN-wTC.title" = "Item 2";

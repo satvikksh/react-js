@@ -1,0 +1,27 @@
+
+/* Class = "NSMenuItem"; title = "On Run"; ObjectID = "3NM-iM-ZtQ"; */
+"3NM-iM-ZtQ.title" = "実行時";
+
+/* Class = "NSTextFieldCell"; title = "<<DeprecationMessage>>"; ObjectID = "DD9-sy-hE0"; */
+"DD9-sy-hE0.title" = "<<DeprecationMessage>>";
+
+/* Class = "NSMenuItem"; title = "On Finish"; ObjectID = "X5k-dB-oh1"; */
+"X5k-dB-oh1.title" = "完了時";
+
+/* Class = "NSMenuItem"; title = "Never"; ObjectID = "cce-Ki-iRA"; */
+"cce-Ki-iRA.title" = "しない";
+
+/* Class = "NSMenuItem"; title = "On Failure"; ObjectID = "i5h-Sz-eNH"; */
+"i5h-Sz-eNH.title" = "失敗時";
+
+/* Class = "NSTextFieldCell"; title = "<<Description>>"; ObjectID = "k5L-w6-JbA"; */
+"k5L-w6-JbA.title" = "<<Description>>";
+
+/* Class = "NSMenuItem"; title = "On Success"; ObjectID = "pLg-uK-Z43"; */
+"pLg-uK-Z43.title" = "成功時";
+
+/* Class = "NSTextFieldCell"; title = "Open report:"; ObjectID = "yg6-92-ay0"; */
+"yg6-92-ay0.title" = "レポートを開く:";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "zUW-ek-dLN"; */
+"zUW-ek-dLN.title" = "<<Name>>";

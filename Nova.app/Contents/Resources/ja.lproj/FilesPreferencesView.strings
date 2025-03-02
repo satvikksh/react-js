@@ -1,0 +1,108 @@
+
+/* Class = "NSMenuItem"; title = "Large"; ObjectID = "2ON-v6-v26"; */
+"2ON-v6-v26.title" = "大きい";
+
+/* Class = "NSTableColumn"; headerCell.title = "Syntax"; ObjectID = "3FA-ZN-U33"; */
+"3FA-ZN-U33.headerCell.title" = "言語モード";
+
+/* Class = "NSTextFieldCell"; title = "When a file tab is focused:"; ObjectID = "3O6-Zm-qzq"; */
+"3O6-Zm-qzq.title" = "ファイルタブのフォーカス時:";
+
+/* Class = "NSTextFieldCell"; title = "Opening:"; ObjectID = "4CN-Nh-uAC"; */
+"4CN-Nh-uAC.title" = "ファイルを開く:";
+
+/* Class = "NSMenuItem"; title = "Reveal and scroll the file into view"; ObjectID = "4ml-N4-Yxr"; */
+"4ml-N4-Yxr.title" = "ファイルをスクロール表示する";
+
+/* Class = "NSButtonCell"; title = "Show navigation controls"; ObjectID = "5Mj-2F-Xwq"; */
+"5Mj-2F-Xwq.title" = "ナビゲーションコントロールを表示する";
+
+/* Class = "NSTextFieldCell"; title = "<<Syntax>>"; ObjectID = "B19-Sf-E6a"; */
+"B19-Sf-E6a.title" = "<<Syntax>>";
+
+/* Class = "NSMenuItem"; title = "Medium"; ObjectID = "BWh-KW-vER"; */
+"BWh-KW-vER.title" = "標準";
+
+/* Class = "NSButtonCell"; title = "Ignore files excluded by Git"; ObjectID = "BXj-BK-tnI"; */
+"BXj-BK-tnI.title" = "Gitによって除外された項目も除外する";
+
+/* Class = "NSMenuItem"; title = "when closing"; ObjectID = "HTI-7V-uha"; */
+"HTI-7V-uha.title" = "書類を閉じる時";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "IjU-bu-aCZ"; */
+"IjU-bu-aCZ.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "A list of patterns that are matched against files and directories to be ignored by find and indexing operations."; ObjectID = "L4z-zd-Aob"; */
+"L4z-zd-Aob.title" = "検索およびインデックス化の作業から除外されるファイルおよびフォルダのパターンを指定します。";
+
+/* Class = "NSMenuItem"; title = "Small"; ObjectID = "N2U-kz-AON"; */
+"N2U-kz-AON.title" = "小さい";
+
+/* Class = "NSTextFieldCell"; title = "Whether files and directories listed in a project's .gitignore file will be ignored."; ObjectID = "P1X-g3-4tw"; */
+"P1X-g3-4tw.title" = "プロジェクトの.gitignoreファイルで定義された項目を除外するかどうかを設定します。";
+
+/* Class = "NSTextFieldCell"; title = "Files Sidebar Item Size:"; ObjectID = "T9B-a9-ZqZ"; */
+"T9B-a9-ZqZ.title" = "サイドバー項目のサイズ:";
+
+/* Class = "NSTextFieldCell"; title = "<<Filename>>"; ObjectID = "TbQ-5K-Coh"; */
+"TbQ-5K-Coh.title" = "<<Filename>>";
+
+/* Class = "NSTextFieldCell"; title = "Saving:"; ObjectID = "WSq-D1-uPf"; */
+"WSq-D1-uPf.title" = "自動保存:";
+
+/* Class = "NSTableColumn"; headerCell.title = "Extension / Filename"; ObjectID = "WkL-m8-YzF"; */
+"WkL-m8-YzF.headerCell.title" = "ファイル名 / 拡張子";
+
+/* Class = "NSButtonCell"; title = "Open documents with a single-click"; ObjectID = "X8O-rf-08y"; */
+"X8O-rf-08y.title" = "シングルクリックで開く";
+
+/* Class = "NSTabViewItem"; label = "Ignored Files"; ObjectID = "XSS-8i-sMB"; */
+"XSS-8i-sMB.label" = "除外ファイル";
+
+/* Class = "NSMenuItem"; title = "Do nothing"; ObjectID = "bkY-cz-1gb"; */
+"bkY-cz-1gb.title" = "何もしない";
+
+/* Class = "NSMenuItem"; title = "when losing focus"; ObjectID = "dJx-uE-Bvl"; */
+"dJx-uE-Bvl.title" = "フォーカスが外れた時";
+
+/* Class = "NSTextFieldCell"; title = "Files Sidebar:"; ObjectID = "daU-x7-iBY"; */
+"daU-x7-iBY.title" = "ファイルサイドバー:";
+
+/* Class = "NSTabViewItem"; label = "Documents"; ObjectID = "dpk-MU-Jla"; */
+"dpk-MU-Jla.label" = "書類";
+
+/* Class = "NSMenuItem"; title = "Reveal the file"; ObjectID = "epK-Kp-7co"; */
+"epK-Kp-7co.title" = "ファイルを選択表示する";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "f0B-vf-SDg"; */
+"f0B-vf-SDg.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "Automatically save documents when invoking tasks"; ObjectID = "fCv-h0-sNg"; */
+"fCv-h0-sNg.title" = "タスクを呼び出すタイミングで常に自動保存する";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Pattern"; ObjectID = "k1E-7A-9K7"; */
+"k1E-7A-9K7.placeholderString" = "Pattern";
+
+/* Class = "NSButtonCell"; title = "Save documents atomically (save alongside and swap)"; ObjectID = "lDK-mh-tJj"; */
+"lDK-mh-tJj.title" = "ファイルをアトミック保存（並列に保存しスワップ）する";
+
+/* Class = "NSTextFieldCell"; title = "The Files sidebar will show path, back, and forward buttons at the top, and double-clicking on a folder will navigate to it instead of expanding."; ObjectID = "ohS-En-swL"; */
+"ohS-En-swL.title" = "オンにするとファイルサイドバーの上部にパス、進む、戻るボタンが追加され、フォルダのダブルクリックでフォルダに移動するようになります。";
+
+/* Class = "NSButtonCell"; title = "Automatically save documents"; ObjectID = "pvB-YV-eXU"; */
+"pvB-YV-eXU.title" = "以下のタイミングで自動保存する:";
+
+/* Class = "NSTextFieldCell"; title = "Custom File Types:"; ObjectID = "tTa-Qu-gef"; */
+"tTa-Qu-gef.title" = "カスタム言語モード:";
+
+/* Class = "NSTabViewItem"; label = "Custom Types"; ObjectID = "uK7-Ra-h5E"; */
+"uK7-Ra-h5E.label" = "カスタマイズ";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "uR5-dK-MsW"; */
+"uR5-dK-MsW.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Ignored Files:"; ObjectID = "vur-AD-trB"; */
+"vur-AD-trB.title" = "除外ファイル:";
+
+/* Class = "NSMenuItem"; title = "Use System Behavior"; ObjectID = "xdv-cU-0GT"; */
+"xdv-cU-0GT.title" = "システム設定";

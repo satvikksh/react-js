@@ -1,0 +1,24 @@
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Add action"; ObjectID = "7sb-0S-2Dn"; */
+"7sb-0S-2Dn.ibExternalAccessibilityDescription" = "添加操作";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Add a new action"; ObjectID = "7sb-0S-2Dn"; */
+"7sb-0S-2Dn.ibShadowedToolTip" = "添加新操作";
+
+/* Class = "NSTextFieldCell"; title = "<<Action>>"; ObjectID = "Dqq-IP-8UE"; */
+"Dqq-IP-8UE.title" = "<<Action>>";
+
+/* Class = "NSTextFieldCell"; title = "<<DeprecationMessage>>"; ObjectID = "Ebx-aU-7x9"; */
+"Ebx-aU-7x9.title" = "<<DeprecationMessage>>";
+
+/* Class = "NSButtonCell"; title = "Build before running"; ObjectID = "Kga-Uj-DqV"; */
+"Kga-Uj-DqV.title" = "运行前编译";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "OJN-k6-Ifa"; */
+"OJN-k6-Ifa.title" = "<<Name>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Description>>"; ObjectID = "lUs-vm-ewd"; */
+"lUs-vm-ewd.title" = "<<Description>>";
+
+/* Class = "NSTextFieldCell"; title = "Add and reorder steps to customize the pipeline."; ObjectID = "usV-Al-YXC"; */
+"usV-Al-YXC.title" = "添加并重新排序步骤以自定义管道。";

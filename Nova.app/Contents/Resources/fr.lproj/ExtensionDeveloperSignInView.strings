@@ -1,0 +1,27 @@
+
+/* Class = "NSButtonCell"; title = "Forgot?"; ObjectID = "49J-zJ-TqO"; */
+"49J-zJ-TqO.title" = "Oublié ?";
+
+/* Class = "NSTextFieldCell"; title = "Nova"; ObjectID = "6KD-nb-DKc"; */
+"6KD-nb-DKc.title" = "Nova";
+
+/* Class = "NSButtonCell"; title = "Don't Have A Developer Account?"; ObjectID = "9TF-ro-mz3"; */
+"9TF-ro-mz3.title" = "Vous n’avez pas de compte de développeur ?";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "MuN-Gc-Y57"; */
+"MuN-Gc-Y57.title" = "Annuler";
+
+/* Class = "NSTextFieldCell"; title = "Developer"; ObjectID = "MwH-7b-bD7"; */
+"MwH-7b-bD7.title" = "Développeur";
+
+/* Class = "NSButtonCell"; title = "Sign In"; ObjectID = "POp-Qn-0zk"; */
+"POp-Qn-0zk.title" = "Connexion";
+
+/* Class = "NSTextFieldCell"; title = "Email:"; ObjectID = "V1E-Ag-CdV"; */
+"V1E-Ag-CdV.title" = "E-mail :";
+
+/* Class = "NSTextFieldCell"; title = "<<DescriptiveText>>"; ObjectID = "Y9L-QW-2lM"; */
+"Y9L-QW-2lM.title" = "<<DescriptiveText>>";
+
+/* Class = "NSTextFieldCell"; title = "Password:"; ObjectID = "c2v-ZW-F60"; */
+"c2v-ZW-F60.title" = "Mot de passe :";

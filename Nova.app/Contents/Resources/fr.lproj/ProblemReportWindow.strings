@@ -1,0 +1,27 @@
+
+/* Class = "NSTextFieldCell"; title = "This provides better context for our support team to help you and will include: app and system versions, your license info, and a list of installed extensions."; ObjectID = "23O-GP-GoY"; */
+"23O-GP-GoY.title" = "Cela fournira à notre équipe d’assistance un meilleur contexte pour vous aider et comprendra les éléments suivants : les versions de l’application et du système, vos données de licence et la liste des extensions installées.";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "L8k-5u-NBX"; */
+"L8k-5u-NBX.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "<<DescriptiveText>>"; ObjectID = "PLN-zQ-K8w"; */
+"PLN-zQ-K8w.title" = "<<DescriptiveText>>";
+
+/* Class = "NSWindow"; title = "Provide Feedback"; ObjectID = "QvC-M9-y7g"; */
+"QvC-M9-y7g.title" = "Donner un avis";
+
+/* Class = "NSButtonCell"; title = "Include diagnostic information"; ObjectID = "Ypg-Xd-iXO"; */
+"Ypg-Xd-iXO.title" = "Inclure les informations de diagnostic";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "cLW-cS-1rQ"; */
+"cLW-cS-1rQ.title" = "Annuler";
+
+/* Class = "NSButtonCell"; title = "Continue"; ObjectID = "hom-1R-rMW"; */
+"hom-1R-rMW.title" = "Continuer";
+
+/* Class = "NSTextFieldCell"; title = "What kind of feedback would you like to provide?"; ObjectID = "pvS-uD-Y3b"; */
+"pvS-uD-Y3b.title" = "Quel type d’avis voulez-vous donner ?";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "sxT-UH-q6h"; */
+"sxT-UH-q6h.title" = "<<Name>>";

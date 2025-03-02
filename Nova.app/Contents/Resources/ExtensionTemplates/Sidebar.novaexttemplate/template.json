@@ -1,0 +1,10 @@
+{
+    "name": "Sidebar",
+    "extension": "novaextension",
+    "description": "An extension which adds a custom sidebar using the TreeView API.",
+    "rewritablePaths": [
+		"README.md",
+        "Scripts/main.js"
+    ],
+    "showEntitlements": true
+}

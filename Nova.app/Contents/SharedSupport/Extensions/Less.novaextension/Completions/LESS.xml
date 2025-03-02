@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<completions>
+    <!-- At-Rules -->
+    <provider name="at-rules">
+        <syntax>less</syntax>
+        <selector>*:not(style.value)</selector>
+        <expression>@[a-zA-Z0-9-]*</expression>
+        
+        <set>css.at-rules</set>
+    </provider>
+    
+    <!-- Attributes -->
+    <provider name="attributes-empty">
+        <!-- Without any existing attribute name characters -->
+        <syntax>less</syntax>
+        <selector>style.attribute-list</selector>
+        <expression>(?&lt;![@$#.:,\[\]\{\}\(\)\w])</expression>
+        
+        <set>css.properties</set>
+    </provider>
+    <provider name="attributes">
+        <!-- With existing attribute name characters -->
+        <syntax>less</syntax>
+        <selector>style.selector, style.attribute.name</selector>
+        <expression>(?&lt;![@$#.:,\[\]\{\}\(\)])(\b[a-zA-Z0-9-]+|-+[a-zA-Z0-9-]*)</expression>
+        
+        <set>css.properties</set>
+    </provider>
+    
+    <!-- Property-specific Attribute -->
+    <provider name="values">
+        <syntax>less</syntax>
+        <selector>style.attribute:has-child(style.attribute.name:capture(property)) style.value</selector>
+        <expression>(?:\![a-zA-Z0-9-]*)|(?&lt;!\!)(\b|-)[a-zA-Z0-9-]*</expression>
+        
+        <set>css.values.all</set>
+        <set>css.values.${property}</set>
+    </provider>
+    <provider name="values.empty">
+        <syntax>less</syntax>
+        <selector>style.attribute:has-child(style.attribute.name:capture(property)) style.value</selector>
+        <expression capture="1">(?&lt;=:)\s*($)</expression>
+        
+        <set>css.values.all</set>
+        <set>css.values.${property}</set>
+    </provider>
+    
+    <!-- Custom Properties -->
+    <provider name="values.custom-properties">
+        <syntax>less</syntax>
+        <selector>style.value.function.var.property</selector>
+        <expression>(?&lt;=\()([A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]+)</expression>
+        
+        <symbols type="property" />
+    </provider>
+    <provider name="values.custom-properties.empty">
+        <syntax>less</syntax>
+        <selector>style.value.function.var</selector>
+        <expression>(?&lt;=\()</expression>
+        
+        <symbols type="property" />
+    </provider>
+    
+    <!-- Variables -->
+    <provider name="variables">
+        <syntax>less</syntax>
+        <expression>(\$[a-zA-Z_][a-zA-Z0-9_\-]*)|(\b[a-zA-Z_][a-zA-Z0-9_\-]*)</expression>
+        
+        <symbols type="variable,constant,argument" syntax="less" />
+    </provider>
+</completions>

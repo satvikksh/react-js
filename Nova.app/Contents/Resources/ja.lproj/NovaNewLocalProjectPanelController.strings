@@ -1,0 +1,18 @@
+
+/* Class = "NSTextFieldCell"; title = "Source Control:"; ObjectID = "5NE-X1-X3s"; */
+"5NE-X1-X3s.title" = "ソース管理:";
+
+/* Class = "NSTextFieldCell"; title = "Launcher:"; ObjectID = "74J-5O-dP8"; */
+"74J-5O-dP8.title" = "ランチャー:";
+
+/* Class = "NSButtonCell"; title = "Initialize as a new Git repository"; ObjectID = "EmR-cG-Ate"; */
+"EmR-cG-Ate.title" = "新規Gitリポジトリを初期化する";
+
+/* Class = "NSTextFieldCell"; title = "Artwork:"; ObjectID = "FlV-Ci-7kK"; */
+"FlV-Ci-7kK.title" = "アートワーク:";
+
+/* Class = "NSTextFieldCell"; title = "Project Name:"; ObjectID = "Ulq-9K-Ejy"; */
+"Ulq-9K-Ejy.title" = "プロジェクト名:";
+
+/* Class = "NSButtonCell"; title = "Add to projects in the Launcher"; ObjectID = "n3t-dz-34a"; */
+"n3t-dz-34a.title" = "ランチャーにプロジェクトを追加";

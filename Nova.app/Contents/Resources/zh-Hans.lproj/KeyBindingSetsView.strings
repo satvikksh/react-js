@@ -1,0 +1,27 @@
+
+/* Class = "NSMenuItem"; title = "Export Key Bindings…"; ObjectID = "Hek-pG-WLO"; */
+"Hek-pG-WLO.title" = "导出按键绑定…";
+
+/* Class = "NSTextFieldCell"; title = "No custom key binding sets have been created.\nClick the + button to create one."; ObjectID = "S2l-UO-Jen"; */
+"S2l-UO-Jen.title" = "未创建自定义按键绑定集。\n点按 + 按钮创建一个。";
+
+/* Class = "NSSegmentedControl"; ibExternalAccessibilityDescription = "remove key binding set"; ObjectID = "X6K-YK-XMG"; */
+"X6K-YK-XMG.ibExternalAccessibilityDescription" = "移除按键绑定集";
+
+/* Class = "NSButtonCell"; title = "Done"; ObjectID = "ZLE-qa-hVz"; */
+"ZLE-qa-hVz.title" = "完成";
+
+/* Class = "NSSegmentedControl"; ibExternalAccessibilityDescription = "add key binding set"; ObjectID = "bHz-hE-8eT"; */
+"bHz-hE-8eT.ibExternalAccessibilityDescription" = "添加按键绑定集";
+
+/* Class = "NSMenuItem"; title = "Import Key Bindings…"; ObjectID = "ew5-as-UWg"; */
+"ew5-as-UWg.title" = "导入按键绑定…";
+
+/* Class = "NSSegmentedControl"; ibExternalAccessibilityDescription = "add key binding set"; ObjectID = "hrT-xZ-ASS"; */
+"hrT-xZ-ASS.ibExternalAccessibilityDescription" = "添加按键绑定集";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "ts3-8t-CIK"; */
+"ts3-8t-CIK.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "x3U-XA-5TF"; */
+"x3U-XA-5TF.title" = "表格视图单元格";

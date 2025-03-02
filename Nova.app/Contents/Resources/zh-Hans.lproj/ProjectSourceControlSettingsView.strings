@@ -1,0 +1,39 @@
+
+/* Class = "NSButtonCell"; title = "GitHub.com"; ObjectID = "3Ae-NW-MhV"; */
+"3Ae-NW-MhV.title" = "GitHub.com";
+
+/* Class = "NSTextFieldCell"; title = "<<RemoteName>>"; ObjectID = "9Xi-ey-V9n"; */
+"9Xi-ey-V9n.title" = "<<RemoteName>>";
+
+/* Class = "NSButtonCell"; title = "<<PlaceholderAction>>"; ObjectID = "Ea6-pN-j0n"; */
+"Ea6-pN-j0n.title" = "<<PlaceholderAction>>";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Email"; ObjectID = "GbE-do-D6I"; */
+"GbE-do-D6I.placeholderString" = "电子邮件";
+
+/* Class = "NSTextFieldCell"; title = "Change your avatar at"; ObjectID = "Gei-6H-fgg"; */
+"Gei-6H-fgg.title" = "更改您的头像：";
+
+/* Class = "NSTextFieldCell"; title = "<<PlaceholderTitle>>"; ObjectID = "ImL-Ho-wwv"; */
+"ImL-Ho-wwv.title" = "<<PlaceholderTitle>>";
+
+/* Class = "NSTextFieldCell"; title = "Remotes:"; ObjectID = "cFO-Fa-dyL"; */
+"cFO-Fa-dyL.title" = "远程：";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Name"; ObjectID = "fy8-4l-xzc"; */
+"fy8-4l-xzc.placeholderString" = "名称";
+
+/* Class = "NSButtonCell"; title = "Use global Git credentials"; ObjectID = "gwy-D9-Die"; */
+"gwy-D9-Die.title" = "使用全局 Git 凭据";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "hPQ-cs-8oc"; */
+"hPQ-cs-8oc.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "<<RemoteURL>>"; ObjectID = "qEt-Ca-IUx"; */
+"qEt-Ca-IUx.title" = "<<RemoteURL>>";
+
+/* Class = "NSTextFieldCell"; title = "Repository Path:"; ObjectID = "rUb-Td-KhW"; */
+"rUb-Td-KhW.title" = "仓库路径：";
+
+/* Class = "NSTextFieldCell"; title = "<<Path>>"; ObjectID = "s1S-E2-Ot7"; */
+"s1S-E2-Ot7.title" = "<<Path>>";

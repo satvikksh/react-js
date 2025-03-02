@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="less">
+    <meta>
+        <name>Less</name>
+        <type>stylesheet</type>
+        <preferred-file-extension>less</preferred-file-extension>
+    </meta>
+    
+    <detectors>
+        <extension>less</extension>
+    </detectors>
+    
+    <indentation>
+        <increase>
+            <expression>(\{[^}\"']*$)|(\[[^\]\"']*$)|(\([^)\"']*$)</expression>
+        </increase>
+        <decrease>
+            <expression>^\s*(\s*/\*.*\*/\s*)*[\}\]\)\\]</expression>
+        </decrease>
+    </indentation>
+    
+    <comments>
+        <multiline>
+            <starts-with>
+                <expression>/*</expression>
+            </starts-with>
+            <ends-with>
+                <expression>*/</expression>
+            </ends-with>
+        </multiline>
+        <single>
+            <expression>//</expression>
+        </single>
+    </comments>
+    
+    <scopes>
+        <include syntax="self" collection="variables" />
+        <include syntax="self" collection="at-rules" />
+        <include syntax="self" collection="rules" />
+        <include syntax="self" collection="values" />
+        
+        <include syntax="css" collection="*" />
+    </scopes>
+    
+    <collections>
+        <!-- At-Rules -->
+        <collection name="at-rules" override="true">
+            <!-- @import -->
+            <scope name="less.style.import">
+                <expression>(@import)\s+((?:&apos;[a-zA-ZÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_./@{}]*(?:&apos;|$))|(?:&quot;[a-zA-ZÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_./@{}]*(?:&quot;|$)))?</expression>
+                <capture number="1" name="less.style.import.at" />
+                <capture number="2" name="less.style.import.string.name" />
+            </scope>
+            
+            <!-- @plugin -->
+            <scope name="less.style.plugin">
+                <expression>(@plugin)\s+((?:&apos;[a-zA-Z_-][a-zA-ZÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]*(?:&apos;|$))|(?:&quot;[a-zA-Z_-][a-zA-ZÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]*(?:&quot;|$)))?</expression>
+                <capture number="1" name="less.style.plugin.at" />
+                <capture number="2" name="less.style.plugin.string.name" />
+            </scope>
+            
+            <!-- CSS At-Rules -->
+            <include syntax="css" collection="at-rules" />
+        </collection>
+        
+        <!-- Rules -->
+        <collection name="rules" override="true">
+            <scope name="less.style.rule.mixin">
+                <starts-with>
+                    <!-- Mixin selectors begin with either an id or class selector and contain any number of these, with ids always before classes -->
+                    <expression>
+                        (?:
+                            (\#)([a-zA-Z_-][A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]*)
+                            |(\.)([a-zA-Z_-][A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]*)
+                        )\s*(?=\()
+                    </expression>
+                    <capture number="1" name="less.style.selector.simple.id.operator" />
+                    <capture number="2" name="less.style.selector.simple.id.identifier.name" />
+                    <capture number="3" name="less.style.selector.simple.class.operator" />
+                    <capture number="4" name="less.style.selector.simple.class.identifier.name" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="css" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="mixin-arguments" />
+                    <include syntax="css" collection="comments" optional="true" repeat="true" />
+                    <include syntax="css" collection="attribute-lists" />
+                </subscopes>
+            </scope>
+            
+            <scope name="less.style.rule">
+                <symbol type="style-ruleset" name-selector="style.selector">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>(?=[&amp;+&gt;~:.*\#a-zA-Z\\\[])(?![a-zA-Z-][a-zA-Z0-9-]*:(?:[^\s\w]|[a-zA-Z0-9-_]+(?:;|\()))</expression>
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="selectors" />
+                    <include syntax="css" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="attribute-lists" />
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Mixin Arguments -->
+        <collection name="mixin-arguments">
+            <scope name="less.mixin.arguments">
+                <starts-with>
+                    <expression>\(</expression>
+                    <capture number="0" name="less.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\)</expression>
+                    <capture number="0" name="less.bracket" />
+                </ends-with>
+                <subscopes>
+                    <cut-off>
+                        <expression>(?=[\{\}\[\]])</expression>
+                    </cut-off>
+                    <include syntax="css" collection="comments" />
+                    <include syntax="self" collection="values" />
+                    <scope name="less.comma">
+                        <expression>,</expression>
+                    </scope>
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Selectors -->
+        <collection name="selectors" override="true">
+            <scope name="less.style.selector">
+                <starts-with>
+                    <expression>(?![a-zA-Z_-][a-zA-Z0-9_-]*:\s)(?=[&amp;+&gt;~:.*\#a-zA-Z\\\[])</expression>
+                </starts-with>
+                <ends-with>
+                    <expression>(?=\{)</expression>
+                </ends-with>
+                <subscopes>
+                    <cut-off>
+                        <expression>(?=;|\}|\))</expression>
+                    </cut-off>
+                    <include syntax="css" collection="comments" />
+                    <include syntax="css" collection="pseudoelements" />
+                    <include syntax="css" collection="simple-selectors" />
+                    <scope name="less.style.selector.operator">
+                        <expression>&amp;|\+|&gt;|~</expression>
+                    </scope>
+                    <scope name="less.style.selector.separator">
+                        <expression>,</expression>
+                    </scope>
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Values -->
+        <collection name="values" override="true">
+            <scope name="less.style.string.interpolated">
+                <expression>~&quot;(?:[^&quot;\\]|\\.)*(?:&quot;|$)</expression>
+            </scope>
+            <scope name="less.style.identifier.variable">
+                <expression>@[a-zA-Z_-][a-zA-ZÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]*</expression>
+            </scope>
+            <include syntax="css" collection="values" />
+            <scope name="less.style.value.function">
+                <starts-with>
+                    <expression>\b([\.\#a-zA-Z-][\.\#a-zA-ZÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]*)(\()</expression>
+                    <capture number="1" name="less.style.value.function.name" />
+                    <capture number="2" name="less.style.value.function.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>(\))</expression>
+                    <capture number="1" name="less.style.value.function.bracket" />
+                </ends-with>
+                <subscopes>
+                    <include syntax="self" collection="values" />
+                </subscopes>
+            </scope>
+            <scope name="less.style.operator">
+                <expression>(-|\+|\*|\\|%)</expression>
+            </scope>
+            
+            <!-- CSS Values -->
+            <include syntax="css" collection="values" />
+        </collection>
+        
+        <!-- Variables -->
+        <collection name="variables">
+            <scope name="less.style.variable-definition">
+                <starts-with>
+                    <expression>(@[a-zA-Z_-][a-zA-ZÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]*)\s*(:)</expression>
+                    <capture number="1" name="less.style.variable-definition.identifier.variable.name" />
+                    <capture number="2" name="less.style.variable-definition.separator" />
+                </starts-with>
+                <ends-with>
+                    <expression>;|(?=\})</expression>
+                </ends-with>
+                <subscopes>
+                    <include syntax="css" collection="comments" />
+                    <scope name="less.style.variable-definition.value">
+                        <starts-with>
+                            <expression>(?&lt;=:)</expression>
+                        </starts-with>
+                        <ends-with>
+                            <expression>(?=;|(?=\}))</expression>
+                        </ends-with>
+                        <subscopes>
+                            <include syntax="self" collection="attribute-lists" />
+                            <include syntax="self" collection="values" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Attribute Lists -->
+        <collection name="attribute-lists" override="true">
+            <scope name="less.style.attribute-list">
+                <symbol type="block">
+                    <context behavior="subtree" />
+                </symbol>
+                <starts-with>
+                    <expression>\{</expression>
+                    <capture number="0" name="less.style.attribute-list.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\}</expression>
+                    <capture number="0" name="less.style.attribute-list.bracket" />
+                </ends-with>
+                <subscopes>
+                    <include syntax="css" collection="comments" />
+                    <include syntax="self" collection="variables" />
+                    <include syntax="self" collection="attributes" />
+                    <include syntax="self" collection="at-rules" />
+                    <include syntax="self" collection="rules" />
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Attributes -->
+        <collection name="attributes" override="true">
+            <scope name="less.style.attribute">
+                <starts-with>
+                    <expression>(?&lt;!\@)([a-zA-Z-_][a-zA-ZÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]*)\s*(:)</expression>
+                    <capture number="1" name="less.style.attribute.name" />
+                    <capture number="2" name="less.style.attribute.separator" />
+                </starts-with>
+                <ends-with>
+                    <expression>;|(?=\})</expression>
+                </ends-with>
+                <subscopes>
+                    <include syntax="css" collection="comments" />
+                    <scope name="less.style.attribute.value">
+                        <starts-with>
+                            <expression>(?&lt;=:)</expression>
+                        </starts-with>
+                        <ends-with>
+                            <expression>(?=;|(?=\}))</expression>
+                        </ends-with>
+                        <subscopes>
+                            <include syntax="self" collection="attribute-lists" />
+                            <include syntax="self" collection="values" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+        </collection>
+    </collections>
+</syntax>

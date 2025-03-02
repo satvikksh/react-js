@@ -1,0 +1,54 @@
+
+/* Class = "NSTextFieldCell"; title = "Syntax"; ObjectID = "3ZI-tN-ih4"; */
+"3ZI-tN-ih4.title" = "Syntaxe";
+
+/* Class = "NSTextFieldCell"; title = "Background"; ObjectID = "6W8-4Q-5vk"; */
+"6W8-4Q-5vk.title" = "Arrière-plan";
+
+/* Class = "NSTextFieldCell"; title = "<<StyleNames>>"; ObjectID = "Dah-vm-Bie"; */
+"Dah-vm-Bie.title" = "<<StyleNames>>";
+
+/* Class = "NSTextFieldCell"; title = "Theme Styles"; ObjectID = "Dgb-FB-5gn"; */
+"Dgb-FB-5gn.title" = "Styles de thèmes";
+
+/* Class = "NSTextFieldCell"; title = "<<SelectorNames>>"; ObjectID = "Dol-5r-Kv6"; */
+"Dol-5r-Kv6.title" = "<<SelectorNames>>";
+
+/* Class = "NSTextFieldCell"; title = "Contrast Ratio"; ObjectID = "HCk-62-KlK"; */
+"HCk-62-KlK.title" = "Ratio de contraste";
+
+/* Class = "NSTextFieldCell"; title = "<<LexicalClass>>"; ObjectID = "Ikw-ir-Tu3"; */
+"Ikw-ir-Tu3.title" = "<<LexicalClass>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Rating>>"; ObjectID = "LJH-A3-s9W"; */
+"LJH-A3-s9W.title" = "<<Rating>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Foreground>>"; ObjectID = "OUD-IR-UTh"; */
+"OUD-IR-UTh.title" = "<<Foreground>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Syntax>>"; ObjectID = "Qte-zW-7q2"; */
+"Qte-zW-7q2.title" = "<<Syntax>>";
+
+/* Class = "NSTextFieldCell"; title = "<<NodeNames>>"; ObjectID = "SiE-zv-JRG"; */
+"SiE-zv-JRG.title" = "<<NodeNames>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Background>>"; ObjectID = "fbW-rx-uii"; */
+"fbW-rx-uii.title" = "<<Background>>";
+
+/* Class = "NSTextFieldCell"; title = "<<EffectiveBackground>>"; ObjectID = "h8w-wg-bsp"; */
+"h8w-wg-bsp.title" = "<<EffectiveBackground>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Ratio>>"; ObjectID = "iPl-es-xmg"; */
+"iPl-es-xmg.title" = "<<Ratio>>";
+
+/* Class = "NSTextFieldCell"; title = "Highlighting Selectors"; ObjectID = "lEM-x3-NeH"; */
+"lEM-x3-NeH.title" = "Sélecteurs de surlignage";
+
+/* Class = "NSTextFieldCell"; title = "Effective Background"; ObjectID = "lgI-Jt-iPb"; */
+"lgI-Jt-iPb.title" = "Arrière-plan effectif";
+
+/* Class = "NSTextFieldCell"; title = "Foreground"; ObjectID = "xBQ-6a-LSv"; */
+"xBQ-6a-LSv.title" = "Premier plan";
+
+/* Class = "NSTextFieldCell"; title = "Lexical Class"; ObjectID = "yoO-1b-ZsS"; */
+"yoO-1b-ZsS.title" = "Classe lexicale";

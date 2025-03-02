@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="ruby">
+    <meta>
+        <name>Ruby</name>
+        <type>script</type>
+        <preferred-file-extension>rb</preferred-file-extension>
+        <scriptable shebang="#!/usr/bin/env ruby" />
+    </meta>
+    
+    <detectors>
+        <extension>rb,rbi,rbw,rbx,rake,rbuild,ru,ruby,gemspec,pluginspec,podspec,spec,thor</extension>
+        <filename>Brewfile,Capfile,Dangerfile,Deliverfile,Fastfile,Gemfile,Guardfile,Puppetfile,Podfile,Puppetfile,Rakefile,Thorfile,Vagrantfile</filename>
+        <match-content lines="2" priority="low">\#\s*\-\*\-\s*mode:\s*ruby\b</match-content>
+        <match-content lines="5" priority="low">^#\s*vi:\s*(syntax|ft)=(ruby)\b</match-content>
+        <match-content lines="2" priority="low">\#\!.*?\b(ruby|rake)\b</match-content>
+    </detectors>
+    
+    <identifiers>
+        <characters>
+            <alphanumeric />
+            <string>_?!</string>
+        </characters>
+    </identifiers>
+    
+    <indentation>
+        <increase>
+            <expression>
+                (^\s*(class|elsif|else|rescue|ensure|for|if|begin|with)\b.*$) #keywords
+                |(^\s*(def)\s*([a-zA-Z_][A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*(\?|!)?)\s*(\([^\)]*\))?\s*$) #non-endless methods
+                |(\b(do)$) #do
+                |(\{[^}\"']*$) #blocks
+                |(\[[^\]\"']*$) #arrays
+                |(\([^)\"']*$) #tuples
+                |(\|[a-zA-Z0-9_,\s]+\|$) #closures
+            </expression>
+        </increase>
+        <decrease>
+            <expression>(^\s*(elsif|else|rescue|ensure|end)\b)|(^\s*(\s*/\*.*\*/\s*)*[\}\]\)\\])</expression>
+        </decrease>
+    </indentation>
+    
+    <comments>
+        <single>
+            <expression>#</expression>
+        </single>
+    </comments>
+    
+    <tree-sitter>
+        <highlights path="ruby/highlights.scm" />
+        <injections path="ruby/injections.scm" />
+        <folds path="ruby/folds.scm" />
+        <symbols path="ruby/symbols.scm" />
+    </tree-sitter>
+</syntax>

@@ -1,0 +1,15 @@
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Source"; ObjectID = "HG1-kY-PMY"; */
+"HG1-kY-PMY.ibExternalAccessibilityDescription" = "ソース管理";
+
+/* Class = "NSButtonCell"; title = "Save to File…"; ObjectID = "MKM-ln-AHe"; */
+"MKM-ln-AHe.title" = "ファイルに保存…";
+
+/* Class = "NSMenuItem"; title = "<<Item>>"; ObjectID = "W1k-3J-WUi"; */
+"W1k-3J-WUi.title" = "<<Item>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Scroll to bottom"; ObjectID = "yXU-4U-kVS"; */
+"yXU-4U-kVS.ibExternalAccessibilityDescription" = "下にスクロール";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Scroll to bottom"; ObjectID = "yXU-4U-kVS"; */
+"yXU-4U-kVS.ibShadowedToolTip" = "下にスクロールします";

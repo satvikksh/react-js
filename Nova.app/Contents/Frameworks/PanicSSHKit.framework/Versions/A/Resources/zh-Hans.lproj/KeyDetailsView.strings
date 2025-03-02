@@ -1,0 +1,51 @@
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "3RO-ib-YPk"; */
+"3RO-ib-YPk.title" = "好";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Copy Key values"; ObjectID = "4e5-9D-Cpu"; */
+"4e5-9D-Cpu.ibShadowedToolTip" = "复制密钥值";
+
+/* Class = "NSTextFieldCell"; title = "RSA Encrypted"; ObjectID = "53t-Db-CyR"; */
+"53t-Db-CyR.title" = "RSA 加密";
+
+/* Class = "NSMenuItem"; title = "Set Certificate…"; ObjectID = "6E9-dQ-JUh"; */
+"6E9-dQ-JUh.title" = "设置证书…";
+
+/* Class = "NSMenuItem"; title = "Remove Certificate"; ObjectID = "Cmi-H3-1WI"; */
+"Cmi-H3-1WI.title" = "移除凭证";
+
+/* Class = "NSMenuItem"; title = "Private Key"; ObjectID = "Eu0-TT-QCS"; */
+"Eu0-TT-QCS.title" = "私钥";
+
+/* Class = "NSTextFieldCell"; title = "Passphrase:"; ObjectID = "Jkb-Hm-QAE"; */
+"Jkb-Hm-QAE.title" = "密码：";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "K4l-qq-qTk"; */
+"K4l-qq-qTk.title" = "取消";
+
+/* Class = "NSTextFieldCell"; title = "Passphrase:"; ObjectID = "auz-CL-AD7"; */
+"auz-CL-AD7.title" = "密码：";
+
+/* Class = "NSTextFieldCell"; title = "Name:"; ObjectID = "gJ9-HZ-9Ys"; */
+"gJ9-HZ-9Ys.title" = "名称：";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "mkn-Wz-u4u"; */
+"mkn-Wz-u4u.title" = "取消";
+
+/* Class = "NSButtonCell"; title = "Save"; ObjectID = "pGB-ZW-WcN"; */
+"pGB-ZW-WcN.title" = "保存";
+
+/* Class = "NSTextFieldCell"; title = "Type:"; ObjectID = "pGg-CL-F6S"; */
+"pGg-CL-F6S.title" = "类型：";
+
+/* Class = "NSTextFieldCell"; title = "Certificate:"; ObjectID = "pVZ-Sr-tEN"; */
+"pVZ-Sr-tEN.title" = "证书：";
+
+/* Class = "NSMenuItem"; title = "Public Key"; ObjectID = "v0x-V4-rmP"; */
+"v0x-V4-rmP.title" = "公钥";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Certificate Actions"; ObjectID = "vdY-4M-xgE"; */
+"vdY-4M-xgE.ibShadowedToolTip" = "证书操作";
+
+/* Class = "NSWindow"; title = "Key Passphrase"; ObjectID = "xi5-ET-YIU"; */
+"xi5-ET-YIU.title" = "密钥密码";

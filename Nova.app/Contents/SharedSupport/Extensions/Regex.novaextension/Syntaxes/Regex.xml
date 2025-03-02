@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="regex">
+    <meta>
+        <name>Regex</name>
+        <type>structured</type>
+    </meta>
+    
+    <detectors />
+    
+    <indentation>
+        <increase>
+            <expression>(\{[^}\"']*$)|(\[[^\]\"']*$)|(\([^)\"']*$)</expression>
+        </increase>
+        <decrease>
+            <expression>^\s*(\s*/\*.*\*/\s*)*[\}\]\)\\]</expression>
+        </decrease>
+    </indentation>
+    
+    <comments>
+        <single>
+            <expression>#</expression>
+        </single>
+    </comments>
+    
+    <injection>
+        <expression>^(re|regex|regexp)$</expression>
+    </injection>
+    
+    <tree-sitter>
+        <highlights />
+    </tree-sitter>
+</syntax>

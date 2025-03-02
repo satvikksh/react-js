@@ -1,0 +1,51 @@
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "2XA-wa-ee5"; */
+"2XA-wa-ee5.title" = "Text Cell";
+
+/* Class = "NSSearchField"; ibExternalAccessibilityDescription = "File filter"; ObjectID = "5kH-Tf-vRW"; */
+"5kH-Tf-vRW.ibExternalAccessibilityDescription" = "Filtre de fichiers";
+
+/* Class = "NSSearchField"; ibShadowedToolTip = "Show files with matching name"; ObjectID = "5kH-Tf-vRW"; */
+"5kH-Tf-vRW.ibShadowedToolTip" = "Afficher les fichiers dont le nom correspond";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "forward"; ObjectID = "7Bs-Bl-ZjD"; */
+"7Bs-Bl-ZjD.ibExternalAccessibilityDescription" = "suivant";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Go to the next folder"; ObjectID = "7Bs-Bl-ZjD"; */
+"7Bs-Bl-ZjD.ibShadowedToolTip" = "Aller au dossier suivant";
+
+/* Class = "NSMenuItem"; title = "<<Item>>"; ObjectID = "B2M-gD-rHL"; */
+"B2M-gD-rHL.title" = "<<Item>>";
+
+/* Class = "NSButtonCell"; title = "Show Transcript"; ObjectID = "Bus-b7-F36"; */
+"Bus-b7-F36.title" = "Afficher la transcription";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "back"; ObjectID = "HHj-wP-pH2"; */
+"HHj-wP-pH2.ibExternalAccessibilityDescription" = "retour";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Go to the previous folder"; ObjectID = "HHj-wP-pH2"; */
+"HHj-wP-pH2.ibShadowedToolTip" = "Aller au dossier précédent";
+
+/* Class = "NSButtonCell"; title = "<<ActionButtonTitle>>"; ObjectID = "Rj6-iA-ccs"; */
+"Rj6-iA-ccs.title" = "<<ActionButtonTitle>>";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Root"; ObjectID = "Wgt-aL-6TT"; */
+"Wgt-aL-6TT.ibExternalAccessibilityDescription" = "Racine";
+
+/* Class = "NSButtonCell"; title = "Edit Server…"; ObjectID = "dfr-ZF-VV2"; */
+"dfr-ZF-VV2.title" = "Modifier le serveur…";
+
+/* Class = "NSSearchFieldCell"; placeholderString = "Filter"; ObjectID = "dui-71-rrJ"; */
+"dui-71-rrJ.placeholderString" = "Filtrer";
+
+/* Class = "NSTextFieldCell"; title = "<<Filename>>"; ObjectID = "l20-JP-Wkh"; */
+"l20-JP-Wkh.title" = "<<Filename>>";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Path"; ObjectID = "lXh-pf-xLc"; */
+"lXh-pf-xLc.ibExternalAccessibilityDescription" = "Chemin";
+
+/* Class = "NSTextFieldCell"; title = "<<PlaceholderText>>"; ObjectID = "wgv-BJ-tUV"; */
+"wgv-BJ-tUV.title" = "<<PlaceholderText>>";
+
+/* Class = "NSMenuItem"; title = "<<Item>>"; ObjectID = "zgH-DR-ab1"; */
+"zgH-DR-ab1.title" = "<<Item>>";

@@ -1,0 +1,9 @@
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "83J-bL-XDD"; */
+"83J-bL-XDD.title" = "キャンセル";
+
+/* Class = "NSButtonCell"; title = "Previous"; ObjectID = "lai-d8-nLb"; */
+"lai-d8-nLb.title" = "前へ";
+
+/* Class = "NSButtonCell"; title = "Next"; ObjectID = "m4A-ik-qVq"; */
+"m4A-ik-qVq.title" = "次へ";

@@ -1,0 +1,69 @@
+
+/* Class = "NSTextFieldCell"; title = "Address"; ObjectID = "9Hk-bB-CDc"; */
+"9Hk-bB-CDc.title" = "アドレス";
+
+/* Class = "NSMenuItem"; title = "Servers"; ObjectID = "Bud-wQ-WNd"; */
+"Bud-wQ-WNd.title" = "サーバリスト";
+
+/* Class = "NSTextFieldCell"; title = "Port"; ObjectID = "Dao-yw-YRm"; */
+"Dao-yw-YRm.title" = "ポート";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "FIy-IR-3IF"; */
+"FIy-IR-3IF.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "Ggu-Qi-vl1"; */
+"Ggu-Qi-vl1.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "Type"; ObjectID = "Kli-lG-AE5"; */
+"Kli-lG-AE5.title" = "認証鍵の形式";
+
+/* Class = "NSTextFieldCell"; placeholderString = "server.com"; ObjectID = "L6w-Jx-jhr"; */
+"L6w-Jx-jhr.placeholderString" = "入力例: server.com";
+
+/* Class = "NSTextFieldCell"; title = "Username"; ObjectID = "Qgk-LZ-CZm"; */
+"Qgk-LZ-CZm.title" = "ユーザ名";
+
+/* Class = "NSButtonCell"; title = "Add to Servers"; ObjectID = "SAI-V9-KDE"; */
+"SAI-V9-KDE.title" = "サーバリストに追加";
+
+/* Class = "NSButtonCell"; title = "Connect"; ObjectID = "SU8-Bs-MmK"; */
+"SU8-Bs-MmK.title" = "接続";
+
+/* Class = "NSTextFieldCell"; title = "Key Name"; ObjectID = "TzQ-xL-buB"; */
+"TzQ-xL-buB.title" = "認証鍵名";
+
+/* Class = "NSMenuItem"; title = "Authenticate with Key:"; ObjectID = "WX0-gY-Hax"; */
+"WX0-gY-Hax.title" = "認証鍵方式:";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "XHZ-9J-WTV"; */
+"XHZ-9J-WTV.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "XfW-Kg-lrp"; */
+"XfW-Kg-lrp.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "Protocol"; ObjectID = "cMS-Mk-SaV"; */
+"cMS-Mk-SaV.title" = "プロトコル";
+
+/* Class = "NSImageView"; ibShadowedToolTip = "To change the server's picture, drag in a new one or click to choose one."; ObjectID = "eEa-mv-B8A"; */
+"eEa-mv-B8A.ibShadowedToolTip" = "サーバーピクチャを変更するには、クリックして選択するかここに直接ドラッグします。";
+
+/* Class = "NSTextFieldCell"; title = "Password"; ObjectID = "elv-Cj-1da"; */
+"elv-Cj-1da.title" = "パスワード";
+
+/* Class = "NSTextFieldCell"; title = "Initial Path"; ObjectID = "fMd-1w-7mA"; */
+"fMd-1w-7mA.title" = "初期のパス";
+
+/* Class = "NSTextFieldCell"; placeholderString = "22"; ObjectID = "nfs-gW-eOF"; */
+"nfs-gW-eOF.placeholderString" = "22";
+
+/* Class = "NSMenuItem"; title = "Authenticate with Password"; ObjectID = "nmx-aW-dB8"; */
+"nmx-aW-dB8.title" = "パスワード認証方式";
+
+/* Class = "NSTextFieldCell"; placeholderString = "(optional)"; ObjectID = "rFH-cs-IPb"; */
+"rFH-cs-IPb.placeholderString" = "（オプションです）";
+
+/* Class = "NSTextFieldCell"; placeholderString = "me"; ObjectID = "sVw-Hc-FGT"; */
+"sVw-Hc-FGT.placeholderString" = "ユーザ名を入力します";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "xDh-EB-tQf"; */
+"xDh-EB-tQf.title" = "Item 3";

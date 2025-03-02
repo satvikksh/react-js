@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<completions>
+    <!-- At-Rules -->
+    <provider name="at-rules">
+        <syntax>sass</syntax>
+        <selector>*:not(comment, style.value)</selector>
+        <expression>@[a-zA-Z0-9-]*</expression>
+        
+        <set>css.at-rules</set>
+        <set>sass.at-rules</set>
+    </provider>
+    
+    <!-- Attributes -->
+    <provider name="attributes">
+        <syntax>sass</syntax>
+        <selector>*:not(comment, style.value)</selector>
+        <expression>(?&lt;![@$.:,\[\]\(\)\{\}])[a-zA-Z0-9-]*</expression>
+        
+        <set>css.properties</set>
+    </provider>
+    
+    <!-- Property-specific Attribute -->
+    <provider name="values">
+        <syntax>sass</syntax>
+        <selector>style.attribute:has-child(style.attribute.name:capture(property)) style.value</selector>
+        <expression>(?&lt;!\!)(\b|-|\!)[a-zA-Z0-9-]*</expression>
+        
+        <set>css.values.all</set>
+        <set>css.values.${property}</set>
+    </provider>
+    <provider name="values.empty">
+        <syntax>sass</syntax>
+        <selector>style.attribute:has-child(style.attribute.name:capture(property)) style.value</selector>
+        <expression capture="1">(?&lt;=:)\s*($)</expression>
+        
+        <set>css.values.all</set>
+        <set>css.values.${property}</set>
+    </provider>
+    
+    <!-- Variables -->
+    <provider name="variables">
+        <syntax>sass</syntax>
+        <selector>style.value:not(string, comment)</selector>
+        <expression>(\$[a-zA-Z_][a-zA-Z0-9_\-]*)|(\b[a-zA-Z_][a-zA-Z0-9_\-]*)</expression>
+        
+        <symbols type="variable,constant,argument" syntax="sass" />
+        <symbols type="variable,constant,argument" syntax="scss" />
+    </provider>
+    
+    <!-- At Rules -->
+    <set name="sass.at-rules" symbol="statement">
+        <completion string="@use" />
+        <completion string="@forward" />
+        <completion string="@function" />
+        <completion string="@extend" />
+        <completion string="@mixin" />
+        <completion string="@include" />
+        <completion string="@content" />
+        <completion string="@error" />
+        <completion string="@warn" />
+        <completion string="@debug" />
+        <completion string="@at-root" />
+        <completion string="@if" />
+        <completion string="@else" />
+        <completion string="@each" />
+        <completion string="@for" />
+        <completion string="@while" />
+    </set>
+</completions>

@@ -1,0 +1,66 @@
+
+/* Class = "NSMenu"; title = "Arrange By"; ObjectID = "1Vm-vl-zPd"; */
+"1Vm-vl-zPd.title" = "Ausrichten nach";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "edit server button"; ObjectID = "2ur-Ze-Igp"; */
+"2ur-Ze-Igp.ibExternalAccessibilityDescription" = "Taste zum Bearbeiten des Servers";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Edit server"; ObjectID = "2ur-Ze-Igp"; */
+"2ur-Ze-Igp.ibShadowedToolTip" = "Server bearbeiten";
+
+/* Class = "NSMenuItem"; title = "Address"; ObjectID = "ATs-0N-Fz4"; */
+"ATs-0N-Fz4.title" = "Adresse";
+
+/* Class = "NSMenuItem"; title = "Name"; ObjectID = "R1W-3q-Pn2"; */
+"R1W-3q-Pn2.title" = "Name";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "new server folder button"; ObjectID = "SiT-vg-dLQ"; */
+"SiT-vg-dLQ.ibExternalAccessibilityDescription" = "Taste für neuen Ordner für Server";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Add new folder"; ObjectID = "SiT-vg-dLQ"; */
+"SiT-vg-dLQ.ibShadowedToolTip" = "Neuen Ordner hinzufügen";
+
+/* Class = "NSMenuItem"; title = "Duplicate"; ObjectID = "TNZ-hQ-5PP"; */
+"TNZ-hQ-5PP.title" = "Duplizieren";
+
+/* Class = "NSMenuItem"; title = "Delete…"; ObjectID = "UCS-mz-icV"; */
+"UCS-mz-icV.title" = "Löschen …";
+
+/* Class = "NSMenuItem"; title = "Arrange By"; ObjectID = "anD-hN-b2P"; */
+"anD-hN-b2P.title" = "Ausrichten nach";
+
+/* Class = "NSTextFieldCell"; title = "Create a Server by clicking the \"+\" button below."; ObjectID = "c7S-L0-OKc"; */
+"c7S-L0-OKc.title" = "Erstellen Sie einen Server, indem Sie unten auf die +-Taste klicken.";
+
+/* Class = "NSMenuItem"; title = "Edit…"; ObjectID = "dvC-5P-AGn"; */
+"dvC-5P-AGn.title" = "Bearbeiten …";
+
+/* Class = "NSMenuItem"; title = "Export Servers…"; ObjectID = "egD-9l-2wb"; */
+"egD-9l-2wb.title" = "Server exportieren …";
+
+/* Class = "NSTextFieldCell"; title = "Group Name"; ObjectID = "exk-Yq-EiD"; */
+"exk-Yq-EiD.title" = "Gruppenname";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "additional server actions button"; ObjectID = "hVd-kO-vKF"; */
+"hVd-kO-vKF.ibExternalAccessibilityDescription" = "Taste für zusätzliche Serveraktionen";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Additional server actions"; ObjectID = "hVd-kO-vKF"; */
+"hVd-kO-vKF.ibShadowedToolTip" = "Zusätzliche Serveraktionen";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "new server button"; ObjectID = "ndC-Gg-ka0"; */
+"ndC-Gg-ka0.ibExternalAccessibilityDescription" = "Taste für neuen Server";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Add new server"; ObjectID = "ndC-Gg-ka0"; */
+"ndC-Gg-ka0.ibShadowedToolTip" = "Neuen Server hinzufügen";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "rfG-Xr-Wgy"; */
+"rfG-Xr-Wgy.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Host"; ObjectID = "s9b-J3-TP1"; */
+"s9b-J3-TP1.title" = "Host";
+
+/* Class = "NSMenuItem"; title = "Import Servers…"; ObjectID = "tvv-Je-VH5"; */
+"tvv-Je-VH5.title" = "Server importieren …";
+
+/* Class = "NSTextFieldCell"; title = "Name"; ObjectID = "z81-2K-sCd"; */
+"z81-2K-sCd.title" = "Name";

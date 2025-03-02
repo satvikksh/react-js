@@ -1,0 +1,87 @@
+
+/* Class = "NSTextFieldCell"; title = "<<Count>>"; ObjectID = "2HC-2E-wSz"; */
+"2HC-2E-wSz.title" = "<<Count>>";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Insert a replace wildcard"; ObjectID = "3kh-fD-4NZ"; */
+"3kh-fD-4NZ.ibShadowedToolTip" = "Einen Platzhalter zum Ersetzen einfügen";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "search in selection"; ObjectID = "4D3-A6-mVp"; */
+"4D3-A6-mVp.ibExternalAccessibilityDescription" = "in Auswahl suchen";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Search only in the selection"; ObjectID = "4D3-A6-mVp"; */
+"4D3-A6-mVp.ibShadowedToolTip" = "Nur in der Auswahl suchen";
+
+/* Class = "NSButtonCell"; title = "Replace"; ObjectID = "4m4-PI-dIz"; */
+"4m4-PI-dIz.title" = "Ersetzen";
+
+/* Class = "NSMenuItem"; title = "Matches Word"; ObjectID = "AQ4-CU-hKN"; */
+"AQ4-CU-hKN.title" = "Stimmt mit Wort überein";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "case sensitive"; ObjectID = "B6Y-IN-Um6"; */
+"B6Y-IN-Um6.ibExternalAccessibilityDescription" = "Groß-/Kleinschreibung beachten";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Match text case"; ObjectID = "B6Y-IN-Um6"; */
+"B6Y-IN-Um6.ibShadowedToolTip" = "Groß-/Kleinschreibung beim Text beachten";
+
+/* Class = "NSButtonCell"; title = "Done"; ObjectID = "BSD-b3-RPp"; */
+"BSD-b3-RPp.title" = "Fertig";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "replace"; ObjectID = "CRi-0y-H9m"; */
+"CRi-0y-H9m.ibExternalAccessibilityDescription" = "ersetzen";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "The text pattern with which to replace"; ObjectID = "CRi-0y-H9m"; */
+"CRi-0y-H9m.ibShadowedToolTip" = "Das Textmuster, mit dem ersetzt werden soll";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Replace the current match"; ObjectID = "DoN-ZT-2RO"; */
+"DoN-ZT-2RO.ibShadowedToolTip" = "Aktuelle Übereinstimmung ersetzen";
+
+/* Class = "NSMenuItem"; title = "Begins With"; ObjectID = "Hqd-SG-2uQ"; */
+"Hqd-SG-2uQ.title" = "Beginnt mit";
+
+/* Class = "NSButtonCell"; title = "All"; ObjectID = "MdX-M1-gaY"; */
+"MdX-M1-gaY.title" = "Alle";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Close the find bar"; ObjectID = "NER-4T-pXY"; */
+"NER-4T-pXY.ibShadowedToolTip" = "Suchleiste schließen";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "next match"; ObjectID = "Na5-AI-bcn"; */
+"Na5-AI-bcn.ibExternalAccessibilityDescription" = "nächste Übereinstimmung";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show the next match"; ObjectID = "Na5-AI-bcn"; */
+"Na5-AI-bcn.ibShadowedToolTip" = "Nächste Übereinstimmung anzeigen";
+
+/* Class = "NSMenuItem"; title = "Contains"; ObjectID = "TT5-fV-8fJ"; */
+"TT5-fV-8fJ.title" = "Enthält";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "find"; ObjectID = "WpZ-QX-p2e"; */
+"WpZ-QX-p2e.ibExternalAccessibilityDescription" = "suchen";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "The text pattern to match"; ObjectID = "WpZ-QX-p2e"; */
+"WpZ-QX-p2e.ibShadowedToolTip" = "Das zu übereinstimmende Textmuster";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "replace all"; ObjectID = "XlO-kf-9KA"; */
+"XlO-kf-9KA.ibExternalAccessibilityDescription" = "alle ersetzen";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Replace all matches"; ObjectID = "XlO-kf-9KA"; */
+"XlO-kf-9KA.ibShadowedToolTip" = "Alle Übereinstimmungen ersetzen";
+
+/* Class = "NSMenuItem"; title = "Ends With"; ObjectID = "cd0-hA-cJd"; */
+"cd0-hA-cJd.title" = "Endet mit";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Replace"; ObjectID = "gsJ-Du-FS2"; */
+"gsJ-Du-FS2.placeholderString" = "Ersetzen";
+
+/* Class = "NSMenuItem"; title = "Regular Expression"; ObjectID = "jXz-Rp-zLf"; */
+"jXz-Rp-zLf.title" = "Regulärer Ausdruck";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "previous match"; ObjectID = "t0m-48-tEa"; */
+"t0m-48-tEa.ibExternalAccessibilityDescription" = "vorherige Übereinstimmung";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show the previous match"; ObjectID = "t0m-48-tEa"; */
+"t0m-48-tEa.ibShadowedToolTip" = "Vorherige Übereinstimmung anzeigen";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Find"; ObjectID = "uuv-nj-e7p"; */
+"uuv-nj-e7p.placeholderString" = "Suchen";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Insert a find wildcard"; ObjectID = "yzB-fU-zkf"; */
+"yzB-fU-zkf.ibShadowedToolTip" = "Einen Platzhalter für die Suche einfügen";

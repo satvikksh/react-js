@@ -1,0 +1,66 @@
+
+/* Class = "NSMenu"; title = "Arrange By"; ObjectID = "1Vm-vl-zPd"; */
+"1Vm-vl-zPd.title" = "表示順序";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "edit server button"; ObjectID = "2ur-Ze-Igp"; */
+"2ur-Ze-Igp.ibExternalAccessibilityDescription" = "サーバ設定編集ボタンです";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Edit server"; ObjectID = "2ur-Ze-Igp"; */
+"2ur-Ze-Igp.ibShadowedToolTip" = "サーバ設定を編集します";
+
+/* Class = "NSMenuItem"; title = "Address"; ObjectID = "ATs-0N-Fz4"; */
+"ATs-0N-Fz4.title" = "アドレス";
+
+/* Class = "NSMenuItem"; title = "Name"; ObjectID = "R1W-3q-Pn2"; */
+"R1W-3q-Pn2.title" = "名前";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "new server folder button"; ObjectID = "SiT-vg-dLQ"; */
+"SiT-vg-dLQ.ibExternalAccessibilityDescription" = "新規サーバフォルダボタンです";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Add new folder"; ObjectID = "SiT-vg-dLQ"; */
+"SiT-vg-dLQ.ibShadowedToolTip" = "新規フォルダを追加します";
+
+/* Class = "NSMenuItem"; title = "Duplicate"; ObjectID = "TNZ-hQ-5PP"; */
+"TNZ-hQ-5PP.title" = "複製";
+
+/* Class = "NSMenuItem"; title = "Delete…"; ObjectID = "UCS-mz-icV"; */
+"UCS-mz-icV.title" = "削除…";
+
+/* Class = "NSMenuItem"; title = "Arrange By"; ObjectID = "anD-hN-b2P"; */
+"anD-hN-b2P.title" = "表示順序";
+
+/* Class = "NSTextFieldCell"; title = "Create a Server by clicking the \"+\" button below."; ObjectID = "c7S-L0-OKc"; */
+"c7S-L0-OKc.title" = "サーバ設定を追加するには \"+\" ボタンをクリックします。";
+
+/* Class = "NSMenuItem"; title = "Edit…"; ObjectID = "dvC-5P-AGn"; */
+"dvC-5P-AGn.title" = "サイト設定を編集…";
+
+/* Class = "NSMenuItem"; title = "Export Servers…"; ObjectID = "egD-9l-2wb"; */
+"egD-9l-2wb.title" = "サーバ設定を書き出す…";
+
+/* Class = "NSTextFieldCell"; title = "Group Name"; ObjectID = "exk-Yq-EiD"; */
+"exk-Yq-EiD.title" = "グループ名";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "additional server actions button"; ObjectID = "hVd-kO-vKF"; */
+"hVd-kO-vKF.ibExternalAccessibilityDescription" = "サーバ設定を追加ボタン";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Additional server actions"; ObjectID = "hVd-kO-vKF"; */
+"hVd-kO-vKF.ibShadowedToolTip" = "サーバ設定を追加します";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "new server button"; ObjectID = "ndC-Gg-ka0"; */
+"ndC-Gg-ka0.ibExternalAccessibilityDescription" = "新規サーバ設定追加ボタンです";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Add new server"; ObjectID = "ndC-Gg-ka0"; */
+"ndC-Gg-ka0.ibShadowedToolTip" = "新規サーバ設定を追加します";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "rfG-Xr-Wgy"; */
+"rfG-Xr-Wgy.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Host"; ObjectID = "s9b-J3-TP1"; */
+"s9b-J3-TP1.title" = "ホスト";
+
+/* Class = "NSMenuItem"; title = "Import Servers…"; ObjectID = "tvv-Je-VH5"; */
+"tvv-Je-VH5.title" = "サーバ設定を読み込む…";
+
+/* Class = "NSTextFieldCell"; title = "Name"; ObjectID = "z81-2K-sCd"; */
+"z81-2K-sCd.title" = "名前";

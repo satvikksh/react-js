@@ -1,0 +1,27 @@
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "6qu-BG-vqc"; */
+"6qu-BG-vqc.title" = "表格视图单元格";
+
+/* Class = "NSTextFieldCell"; title = "SSH and SFTP connections will also use the default keys stored in ~/.ssh and ~/.ssh/config. Those keys will not be synced with Panic Sync."; ObjectID = "E5M-bP-rSI"; */
+"E5M-bP-rSI.title" = "SSH 和 SFTP 连接也将在 ~/.ssh/ 和 ~/.ssh/config 中使用默认密钥。这些密钥不会与 Panic Sync 同步。";
+
+/* Class = "NSMenuItem"; title = "Generate Key…"; ObjectID = "EYB-5u-qiV"; */
+"EYB-5u-qiV.title" = "生成密钥…";
+
+/* Class = "NSMenuItem"; title = "Import Keys…"; ObjectID = "KZp-Cf-YHY"; */
+"KZp-Cf-YHY.title" = "导入密钥…";
+
+/* Class = "NSButtonCell"; title = "Learn More."; ObjectID = "aW3-aC-pDm"; */
+"aW3-aC-pDm.title" = "了解更多。";
+
+/* Class = "NSTextFieldCell"; title = "Syncable SSH Keys:"; ObjectID = "du1-hz-bJw"; */
+"du1-hz-bJw.title" = "可同步的 SSH 密钥：";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "qe6-2N-6Cw"; */
+"qe6-2N-6Cw.title" = "Label";
+
+/* Class = "NSButtonCell"; title = "Options…"; ObjectID = "sF6-SP-Tap"; */
+"sF6-SP-Tap.title" = "选项…";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "yFG-E1-hj6"; */
+"yFG-E1-hj6.title" = "Text Cell";

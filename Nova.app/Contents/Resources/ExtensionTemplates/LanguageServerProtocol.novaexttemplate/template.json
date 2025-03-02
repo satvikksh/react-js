@@ -1,0 +1,9 @@
+{
+	"name": "Language Server Extension",
+	"extension": "novaextension",
+	"description": "An extension which adds support for a service conforming to the Language Server Protocol.",
+	"rewritablePaths": [
+		"README.md",
+		"Scripts/main.js"
+	]
+}

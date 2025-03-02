@@ -1,0 +1,153 @@
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "0Sm-gN-I0h"; */
+"0Sm-gN-I0h.title" = "<<Name>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Description>>"; ObjectID = "0Uy-3k-LxF"; */
+"0Uy-3k-LxF.title" = "<<Description>>";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "1j9-UN-NxL"; */
+"1j9-UN-NxL.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "<<Description>>"; ObjectID = "2fG-d0-zu3"; */
+"2fG-d0-zu3.title" = "<<Description>>";
+
+/* Class = "NSButtonCell"; title = "Choose…"; ObjectID = "6w4-0q-GtR"; */
+"6w4-0q-GtR.title" = "選択…";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "8e3-4Q-vQB"; */
+"8e3-4Q-vQB.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "9TV-HO-z2J"; */
+"9TV-HO-z2J.title" = "Text Cell";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedDisplayPattern = "%{value1}@:"; ObjectID = "9ki-4J-YNY"; */
+"9ki-4J-YNY.ibShadowedDisplayPattern" = "%{value1}@:";
+
+/* Class = "NSTextFieldCell"; title = "<<Description>>"; ObjectID = "A3X-Hm-ksU"; */
+"A3X-Hm-ksU.title" = "<<Description>>";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedDisplayPattern = "%{value1}@:"; ObjectID = "AXR-4N-bhH"; */
+"AXR-4N-bhH.ibShadowedDisplayPattern" = "%{value1}@:";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "BHV-Li-v19"; */
+"BHV-Li-v19.title" = "<<Name>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Value>>"; ObjectID = "DyK-Xq-mcu"; */
+"DyK-Xq-mcu.title" = "<<Value>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "EVl-Lb-ZXE"; */
+"EVl-Lb-ZXE.title" = "<<Name>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Value>>"; ObjectID = "F4b-DI-c2G"; */
+"F4b-DI-c2G.title" = "<<Value>>";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "No Value"; ObjectID = "GxX-hv-bXx"; */
+"GxX-hv-bXx.ibShadowedIsNilPlaceholder" = "値なし";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "HU3-0c-kuF"; */
+"HU3-0c-kuF.title" = "<<Name>>";
+
+/* Class = "NSButtonCell"; title = "<<Choice>>"; ObjectID = "IYR-fK-eTd"; */
+"IYR-fK-eTd.title" = "<<Choice>>";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedDisplayPattern = "%{value1}@:"; ObjectID = "J26-NZ-JwK"; */
+"J26-NZ-JwK.ibShadowedDisplayPattern" = "%{value1}@:";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedDisplayPattern = "%{value1}@:"; ObjectID = "Ogp-M3-mn7"; */
+"Ogp-M3-mn7.ibShadowedDisplayPattern" = "%{value1}@:";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "Oh7-bd-BkM"; */
+"Oh7-bd-BkM.title" = "<<Name>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Description>>"; ObjectID = "S7S-JD-xYq"; */
+"S7S-JD-xYq.title" = "<<Description>>";
+
+/* Class = "NSButtonCell"; title = "Choose…"; ObjectID = "T2r-sF-znc"; */
+"T2r-sF-znc.title" = "選択…";
+
+/* Class = "NSTextFieldCell"; title = "<<Description>>"; ObjectID = "TH2-Bo-Vv1"; */
+"TH2-Bo-Vv1.title" = "<<Description>>";
+
+/* Class = "NSSegmentedCell"; U9h-XC-li3.ibShadowedToolTips[0] = "Add a new item"; ObjectID = "U9h-XC-li3"; */
+"U9h-XC-li3.ibShadowedToolTips[0]" = "新規項目を追加します";
+
+/* Class = "NSSegmentedCell"; U9h-XC-li3.ibShadowedToolTips[1] = "Remove the selected items"; ObjectID = "U9h-XC-li3"; */
+"U9h-XC-li3.ibShadowedToolTips[1]" = "選択された項目を削除します";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedDisplayPattern = "%{value1}@:"; ObjectID = "Vvp-s6-gwk"; */
+"Vvp-s6-gwk.ibShadowedDisplayPattern" = "%{value1}@:";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "XBr-yi-AgK"; */
+"XBr-yi-AgK.title" = "<<Name>>";
+
+/* Class = "NSButtonCell"; title = "<<Button>>"; ObjectID = "YqD-VF-JxQ"; */
+"YqD-VF-JxQ.title" = "<<Button>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "acb-9t-rwT"; */
+"acb-9t-rwT.title" = "<<Name>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Description>>"; ObjectID = "alF-l6-E6z"; */
+"alF-l6-E6z.title" = "<<Description>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Description>>"; ObjectID = "ata-3P-8na"; */
+"ata-3P-8na.title" = "<<Description>>";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedDisplayPattern = "%{value1}@:"; ObjectID = "baM-G8-JVu"; */
+"baM-G8-JVu.ibShadowedDisplayPattern" = "%{value1}@:";
+
+/* Class = "NSMenuItem"; title = "<<Choice>>"; ObjectID = "cBE-dB-PuA"; */
+"cBE-dB-PuA.title" = "<<Choice>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Description>>"; ObjectID = "dQQ-ee-QBJ"; */
+"dQQ-ee-QBJ.title" = "<<Description>>";
+
+/* Class = "NSTableColumn"; headerCell.title = "<<Column>>"; ObjectID = "eAi-t9-3vM"; */
+"eAi-t9-3vM.headerCell.title" = "<<Column>>";
+
+/* Class = "NSSegmentedCell"; fMg-eI-ddd.ibShadowedToolTips[0] = "Add a new item"; ObjectID = "fMg-eI-ddd"; */
+"fMg-eI-ddd.ibShadowedToolTips[0]" = "新規項目を追加します";
+
+/* Class = "NSSegmentedCell"; fMg-eI-ddd.ibShadowedToolTips[1] = "Remove the selected items"; ObjectID = "fMg-eI-ddd"; */
+"fMg-eI-ddd.ibShadowedToolTips[1]" = "選択された項目を削除します";
+
+/* Class = "NSTextFieldCell"; title = "<<Description>>"; ObjectID = "ghx-Sv-1sT"; */
+"ghx-Sv-1sT.title" = "<<Description>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Description>>"; ObjectID = "h03-iw-umu"; */
+"h03-iw-umu.title" = "<<Description>>";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedDisplayPattern = "%{value1}@:"; ObjectID = "huF-HY-ysh"; */
+"huF-HY-ysh.ibShadowedDisplayPattern" = "%{value1}@:";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedDisplayPattern = "%{value1}@:"; ObjectID = "iH7-Fq-3RB"; */
+"iH7-Fq-3RB.ibShadowedDisplayPattern" = "%{value1}@:";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedDisplayPattern = "%{value1}@:"; ObjectID = "jgP-qg-d1y"; */
+"jgP-qg-d1y.ibShadowedDisplayPattern" = "%{value1}@:";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "o4n-Lq-tiO"; */
+"o4n-Lq-tiO.title" = "<<Name>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Value>>"; ObjectID = "rqJ-qz-b0u"; */
+"rqJ-qz-b0u.title" = "<<Value>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Value>>"; ObjectID = "sTW-il-dfR"; */
+"sTW-il-dfR.title" = "<<Value>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Description>>"; ObjectID = "wQD-xn-Qzs"; */
+"wQD-xn-Qzs.title" = "<<Description>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Description>>"; ObjectID = "wef-3E-sVd"; */
+"wef-3E-sVd.title" = "<<Description>>";
+
+/* Class = "NSButtonCell"; title = "<<Name>>"; ObjectID = "yc2-6U-l7i"; */
+"yc2-6U-l7i.title" = "<<Name>>";
+
+/* Class = "NSMenuItem"; title = "<<Choice>>"; ObjectID = "za8-jG-DcX"; */
+"za8-jG-DcX.title" = "<<Choice>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "zcu-Zf-jge"; */
+"zcu-Zf-jge.title" = "<<Name>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "zmi-Ux-vBZ"; */
+"zmi-Ux-vBZ.title" = "<<Name>>";

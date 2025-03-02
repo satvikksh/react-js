@@ -1,0 +1,51 @@
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "3RO-ib-YPk"; */
+"3RO-ib-YPk.title" = "OK";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Copy Key values"; ObjectID = "4e5-9D-Cpu"; */
+"4e5-9D-Cpu.ibShadowedToolTip" = "Schlüsselwerte kopieren";
+
+/* Class = "NSTextFieldCell"; title = "RSA Encrypted"; ObjectID = "53t-Db-CyR"; */
+"53t-Db-CyR.title" = "RSA-verschlüsselt";
+
+/* Class = "NSMenuItem"; title = "Set Certificate…"; ObjectID = "6E9-dQ-JUh"; */
+"6E9-dQ-JUh.title" = "Zertifikat festlegen …";
+
+/* Class = "NSMenuItem"; title = "Remove Certificate"; ObjectID = "Cmi-H3-1WI"; */
+"Cmi-H3-1WI.title" = "Zertifikat entfernen";
+
+/* Class = "NSMenuItem"; title = "Private Key"; ObjectID = "Eu0-TT-QCS"; */
+"Eu0-TT-QCS.title" = "Privater Schlüssel";
+
+/* Class = "NSTextFieldCell"; title = "Passphrase:"; ObjectID = "Jkb-Hm-QAE"; */
+"Jkb-Hm-QAE.title" = "Passphrase:";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "K4l-qq-qTk"; */
+"K4l-qq-qTk.title" = "Abbrechen";
+
+/* Class = "NSTextFieldCell"; title = "Passphrase:"; ObjectID = "auz-CL-AD7"; */
+"auz-CL-AD7.title" = "Passphrase:";
+
+/* Class = "NSTextFieldCell"; title = "Name:"; ObjectID = "gJ9-HZ-9Ys"; */
+"gJ9-HZ-9Ys.title" = "Name:";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "mkn-Wz-u4u"; */
+"mkn-Wz-u4u.title" = "Abbrechen";
+
+/* Class = "NSButtonCell"; title = "Save"; ObjectID = "pGB-ZW-WcN"; */
+"pGB-ZW-WcN.title" = "Sichern";
+
+/* Class = "NSTextFieldCell"; title = "Type:"; ObjectID = "pGg-CL-F6S"; */
+"pGg-CL-F6S.title" = "Typ:";
+
+/* Class = "NSTextFieldCell"; title = "Certificate:"; ObjectID = "pVZ-Sr-tEN"; */
+"pVZ-Sr-tEN.title" = "Zertifikat:";
+
+/* Class = "NSMenuItem"; title = "Public Key"; ObjectID = "v0x-V4-rmP"; */
+"v0x-V4-rmP.title" = "Öffentlicher Schlüssel";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Certificate Actions"; ObjectID = "vdY-4M-xgE"; */
+"vdY-4M-xgE.ibShadowedToolTip" = "Zertifikataktionen";
+
+/* Class = "NSWindow"; title = "Key Passphrase"; ObjectID = "xi5-ET-YIU"; */
+"xi5-ET-YIU.title" = "Schlüssel-Passphrase";

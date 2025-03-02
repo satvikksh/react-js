@@ -1,0 +1,75 @@
+
+/* Class = "NSMenu"; title = "Lock Focus to Document"; ObjectID = "4ZY-kr-UGW"; */
+"4ZY-kr-UGW.title" = "選択を書類に固定";
+
+/* Class = "NSMenuItem"; title = "Lock Focus to Document"; ObjectID = "6MA-oj-rVf"; */
+"6MA-oj-rVf.title" = "選択を書類に固定";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "go back"; ObjectID = "6lT-Mk-uA0"; */
+"6lT-Mk-uA0.ibExternalAccessibilityDescription" = "戻る";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show the previous page"; ObjectID = "6lT-Mk-uA0"; */
+"6lT-Mk-uA0.ibShadowedToolTip" = "前のページを表示します";
+
+/* Class = "NSTextFieldCell"; title = "<<ErrorDescription>>"; ObjectID = "BW4-8k-miW"; */
+"BW4-8k-miW.title" = "<<ErrorDescription>>";
+
+/* Class = "NSTextFieldCell"; title = "<<ErrorTitle>"; ObjectID = "M8v-hg-icE"; */
+"M8v-hg-icE.title" = "<<ErrorTitle>";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "address"; ObjectID = "OSw-KX-dHR"; */
+"OSw-KX-dHR.ibExternalAccessibilityDescription" = "アドレス";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "go forward"; ObjectID = "QSe-u5-6MO"; */
+"QSe-u5-6MO.ibExternalAccessibilityDescription" = "進む";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show the next page"; ObjectID = "QSe-u5-6MO"; */
+"QSe-u5-6MO.ibShadowedToolTip" = "次のページを表示します";
+
+/* Class = "NSTextFieldCell"; title = "<<Size>>"; ObjectID = "RW6-uI-zMC"; */
+"RW6-uI-zMC.title" = "<<Size>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "lock focus"; ObjectID = "VMC-i5-dCT"; */
+"VMC-i5-dCT.ibExternalAccessibilityDescription" = "フォーカスロック";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Lock focus to a specific document"; ObjectID = "VMC-i5-dCT"; */
+"VMC-i5-dCT.ibShadowedToolTip" = "選択を特定の書類に固定します";
+
+/* Class = "NSMenuItem"; title = "Switch Focus with Current Document"; ObjectID = "YIz-01-Ep1"; */
+"YIz-01-Ep1.title" = "選択を現在の書類に変更";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "linked files"; ObjectID = "Z3z-rt-OqM"; */
+"Z3z-rt-OqM.ibExternalAccessibilityDescription" = "リンクされたファイル";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Open linked files"; ObjectID = "Z3z-rt-OqM"; */
+"Z3z-rt-OqM.ibShadowedToolTip" = "リンクされたファイルを開きます";
+
+/* Class = "NSMenuItem"; title = "Lock Focus to Custom URL"; ObjectID = "agC-Xv-fbr"; */
+"agC-Xv-fbr.title" = "選択をカスタムURLに固定";
+
+/* Class = "NSTextFieldCell"; title = "<<Link>>"; ObjectID = "cDn-ze-tla"; */
+"cDn-ze-tla.title" = "<<Link>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "web inspector"; ObjectID = "eGU-5Y-A8l"; */
+"eGU-5Y-A8l.ibExternalAccessibilityDescription" = "ウェブインスペクタ";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Toggle the web inspector"; ObjectID = "eGU-5Y-A8l"; */
+"eGU-5Y-A8l.ibShadowedToolTip" = "ウェブインスペクタを表示／隠します";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "view options"; ObjectID = "he5-Jk-nrm"; */
+"he5-Jk-nrm.ibExternalAccessibilityDescription" = "表示オプション";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show view options"; ObjectID = "he5-Jk-nrm"; */
+"he5-Jk-nrm.ibShadowedToolTip" = "表示オプションを表示します";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "reload"; ObjectID = "huz-Zf-zG3"; */
+"huz-Zf-zG3.ibExternalAccessibilityDescription" = "再読み込み";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Reload the current page"; ObjectID = "huz-Zf-zG3"; */
+"huz-Zf-zG3.ibShadowedToolTip" = "現在のページを再読み込みします";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "certificate"; ObjectID = "v06-tF-7Ff"; */
+"v06-tF-7Ff.ibExternalAccessibilityDescription" = "証明書";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show certificate"; ObjectID = "v06-tF-7Ff"; */
+"v06-tF-7Ff.ibShadowedToolTip" = "証明書を表示します";

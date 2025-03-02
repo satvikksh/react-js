@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="perl">
+    <meta>
+        <name>Perl</name>
+        <type>script</type>
+        <preferred-file-extension>pl</preferred-file-extension>
+        <scriptable shebang="#!/usr/bin/env perl" />
+    </meta>
+    
+    <detectors>
+        <extension>pl,pm,t,pod,cgi</extension>
+        <match-content lines="2" priority="low">\#\s*\-\*\-\s*mode:\s*perl</match-content>
+        <match-content lines="5" priority="low">^#\s*vi:\s*(syntax|ft)=(perl)\b</match-content>
+        <match-content lines="2" priority="low">\#\!.*?\bperl</match-content>
+    </detectors>
+    
+    <identifiers>
+        <prefixes>
+            <string>$</string>
+            <string>@</string>
+            <string>%</string>
+        </prefixes>
+    </identifiers>
+    
+    <indentation>
+        <increase>
+            <expression>(\{[^}\"']*$)|(\[[^\]\"']*$)|(\([^)\"']*$)</expression>
+        </increase>
+        <decrease>
+            <expression>^\s*(\s*/\*.*\*/\s*)*[\}\]\)\\]</expression>
+        </decrease>
+    </indentation>
+    
+    <comments>
+        <single>
+            <expression>#</expression>
+        </single>
+    </comments>
+    
+    <tree-sitter>
+        <highlights path="perl/highlights.scm" />
+        <injections path="perl/injections.scm" />
+        <folds path="perl/folds.scm" />
+        <symbols path="perl/symbols.scm" />
+    </tree-sitter>
+</syntax>

@@ -1,0 +1,30 @@
+
+/* Class = "NSButtonCell"; title = "Add Action"; ObjectID = "FzN-pd-CYh"; */
+"FzN-pd-CYh.title" = "Ajouter une action";
+
+/* Class = "NSTextFieldCell"; title = "Actions"; ObjectID = "KgT-Io-mq5"; */
+"KgT-Io-mq5.title" = "Actions";
+
+/* Class = "NSTextFieldCell"; title = "<<WarningText>>"; ObjectID = "RD1-1g-zJ5"; */
+"RD1-1g-zJ5.title" = "<<WarningText>>";
+
+/* Class = "NSTextFieldCell"; title = "times before stopping"; ObjectID = "VDY-53-G5q"; */
+"VDY-53-G5q.title" = "fois avant de s’arrêter";
+
+/* Class = "NSTextFieldCell"; title = "<<WarningText>>"; ObjectID = "b2q-EF-dOw"; */
+"b2q-EF-dOw.title" = "<<WarningText>>";
+
+/* Class = "NSButtonCell"; title = "Automatically continue after evaluating actions"; ObjectID = "hDs-f0-uUh"; */
+"hDs-f0-uUh.title" = "Continuer automatiquement après l’évaluation des actions";
+
+/* Class = "NSTextFieldCell"; title = "Ignore"; ObjectID = "nFU-Ei-ZVe"; */
+"nFU-Ei-ZVe.title" = "Ignorer";
+
+/* Class = "NSTextFieldCell"; title = "Function"; ObjectID = "qfZ-Rs-r2A"; */
+"qfZ-Rs-r2A.title" = "Fonction";
+
+/* Class = "NSTextFieldCell"; title = "Condition"; ObjectID = "rnC-Kr-Yao"; */
+"rnC-Kr-Yao.title" = "Condition";
+
+/* Class = "NSButtonCell"; title = "Breakpoint"; ObjectID = "wFo-H1-f0X"; */
+"wFo-H1-f0X.title" = "Point d’interruption";

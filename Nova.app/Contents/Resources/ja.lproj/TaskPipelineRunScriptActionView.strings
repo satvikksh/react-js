@@ -1,0 +1,27 @@
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "script language"; ObjectID = "948-JJ-Dxu"; */
+"948-JJ-Dxu.ibExternalAccessibilityDescription" = "スクリプト言語";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Set the script language"; ObjectID = "948-JJ-Dxu"; */
+"948-JJ-Dxu.ibShadowedToolTip" = "スクリプト言語を設定します";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "CCi-jv-Tx4"; */
+"CCi-jv-Tx4.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "Interpreter:"; ObjectID = "bPS-XT-agG"; */
+"bPS-XT-agG.title" = "インタプリタ:";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "fMz-zd-4Ri"; */
+"fMz-zd-4Ri.title" = "Item 3";
+
+/* Class = "NSButtonCell"; title = "#!"; ObjectID = "fap-Ne-MPz"; */
+"fap-Ne-MPz.title" = "#!";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "hVy-Tv-m2W"; */
+"hVy-Tv-m2W.title" = "Item 1";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "insert shebang"; ObjectID = "vxx-UR-DdL"; */
+"vxx-UR-DdL.ibExternalAccessibilityDescription" = "シバン宣言を挿入";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Insert a shebang for the script language"; ObjectID = "vxx-UR-DdL"; */
+"vxx-UR-DdL.ibShadowedToolTip" = "スクリプト言語にシバン宣言を挿入します";

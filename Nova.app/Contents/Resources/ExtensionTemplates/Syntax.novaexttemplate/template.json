@@ -1,0 +1,10 @@
+{
+    "name": "Language Definition",
+    "extension": "novaextension",
+    "description": "An extension which adds one or more new language definitions.",
+    "rewritablePaths": [
+		"README.md",
+        "Syntaxes/{{ name }}.xml"
+    ],
+    "showEntitlements": false
+}

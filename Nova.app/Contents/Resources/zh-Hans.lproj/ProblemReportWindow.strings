@@ -1,0 +1,27 @@
+
+/* Class = "NSTextFieldCell"; title = "This provides better context for our support team to help you and will include: app and system versions, your license info, and a list of installed extensions."; ObjectID = "23O-GP-GoY"; */
+"23O-GP-GoY.title" = "这为我们的支持团队提供了更好的背景信息，以为您提供帮助，这包括：应用程序和系统版本、许可证信息和已安装的扩展列表。";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "L8k-5u-NBX"; */
+"L8k-5u-NBX.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "<<DescriptiveText>>"; ObjectID = "PLN-zQ-K8w"; */
+"PLN-zQ-K8w.title" = "<<DescriptiveText>>";
+
+/* Class = "NSWindow"; title = "Provide Feedback"; ObjectID = "QvC-M9-y7g"; */
+"QvC-M9-y7g.title" = "提供反馈";
+
+/* Class = "NSButtonCell"; title = "Include diagnostic information"; ObjectID = "Ypg-Xd-iXO"; */
+"Ypg-Xd-iXO.title" = "包括诊断信息";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "cLW-cS-1rQ"; */
+"cLW-cS-1rQ.title" = "取消";
+
+/* Class = "NSButtonCell"; title = "Continue"; ObjectID = "hom-1R-rMW"; */
+"hom-1R-rMW.title" = "继续";
+
+/* Class = "NSTextFieldCell"; title = "What kind of feedback would you like to provide?"; ObjectID = "pvS-uD-Y3b"; */
+"pvS-uD-Y3b.title" = "您希望提供哪类反馈？";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "sxT-UH-q6h"; */
+"sxT-UH-q6h.title" = "<<Name>>";

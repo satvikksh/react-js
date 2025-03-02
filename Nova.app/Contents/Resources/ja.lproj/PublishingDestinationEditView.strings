@@ -1,0 +1,60 @@
+
+/* Class = "NSTextFieldCell"; title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."; ObjectID = "0CO-7D-xtl"; */
+"0CO-7D-xtl.title" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "1LG-2H-beJ"; */
+"1LG-2H-beJ.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "The destination path for publishing files. If empty, the server's default path will be used (may be configured in Preferences)."; ObjectID = "1ff-eb-K1n"; */
+"1ff-eb-K1n.title" = "ファイルの公開先を設定します。空の場合、サーバ設定のデフォルトのパス（環境設定から設定が可能です）が使用されます。";
+
+/* Class = "NSButtonCell"; title = "Use Publishing"; ObjectID = "9nz-Le-QGv"; */
+"9nz-Le-QGv.title" = "公開機能を使用する";
+
+/* Class = "NSTextFieldCell"; title = "Files matching any of the ignored file patterns will not be automatically added to the publishing queue when modified."; ObjectID = "BcK-ey-5jh"; */
+"BcK-ey-5jh.title" = "除外ファイルのパターンにマッチした項目は、ファイル変更しても公開キューに追加されなくなります。";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "Ecm-2X-dDr"; */
+"Ecm-2X-dDr.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "Modified local files will automatically be enqueued in the Publish sidebar."; ObjectID = "FBP-3S-co0"; */
+"FBP-3S-co0.title" = "変更されたローカル項目は自動的にマークされ、公開サイドバーにリストされます。";
+
+/* Class = "NSButtonCell"; title = "Choose…"; ObjectID = "FGd-9b-nSw"; */
+"FGd-9b-nSw.title" = "選択…";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Value"; ObjectID = "YCj-YN-WFa"; */
+"YCj-YN-WFa.placeholderString" = "値";
+
+/* Class = "NSTextFieldCell"; title = "Local Path:"; ObjectID = "aXW-YP-rnn"; */
+"aXW-YP-rnn.title" = "ローカルパス:";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show and manage available servers"; ObjectID = "bMF-9e-Xpw"; */
+"bMF-9e-Xpw.ibShadowedToolTip" = "利用可能なサーバの表示と管理を行います";
+
+/* Class = "NSTextFieldCell"; title = "Remote Path:"; ObjectID = "dFY-IU-eZa"; */
+"dFY-IU-eZa.title" = "リモートパス:";
+
+/* Class = "NSButtonCell"; title = "Choose…"; ObjectID = "eGV-mf-N4B"; */
+"eGV-mf-N4B.title" = "選択…";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "eI0-oE-FfZ"; */
+"eI0-oE-FfZ.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "gys-T5-p8k"; */
+"gys-T5-p8k.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "Server:"; ObjectID = "inE-HS-j4F"; */
+"inE-HS-j4F.title" = "サーバ設定:";
+
+/* Class = "NSTextFieldCell"; title = "Ignored Files:"; ObjectID = "liS-f6-4fu"; */
+"liS-f6-4fu.title" = "除外ファイル:";
+
+/* Class = "NSTextFieldCell"; title = "The web URL for previewing remote files. It will be prepended to remote filenames relative to the remote path."; ObjectID = "pZY-gt-J9l"; */
+"pZY-gt-J9l.title" = "リモートファイルをプレビューするためのウェブURLです。相対するリモートパスがリモートファイル名の前に追加されます。";
+
+/* Class = "NSTextFieldCell"; title = "Preview URL:"; ObjectID = "uEh-qd-ch6"; */
+"uEh-qd-ch6.title" = "プレビューURL:";
+
+/* Class = "NSTextFieldCell"; title = "The source path for publishing files, relative to the project root. If empty, the project root will be used."; ObjectID = "uzp-BK-FNS"; */
+"uzp-BK-FNS.title" = "プロジェクトのルートを起点とした公開項目のソースパスです。空の場合、プロジェクトのルートが使用されます。";

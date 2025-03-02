@@ -1,0 +1,48 @@
+
+/* Class = "NSTextFieldCell"; title = "Automatically fetch remote changes:"; ObjectID = "0MP-wT-sNw"; */
+"0MP-wT-sNw.title" = "リモートの変更を自動取得:";
+
+/* Class = "NSButtonCell"; title = "Ignore changes in whitespace when determining authors"; ObjectID = "6Sg-y7-MLe"; */
+"6Sg-y7-MLe.title" = "作成者決定の際、空白の変更を無視する";
+
+/* Class = "NSMenuItem"; title = "Every hour"; ObjectID = "GVw-2T-noC"; */
+"GVw-2T-noC.title" = "1時間毎";
+
+/* Class = "NSMenuItem"; title = "Every 15 minutes"; ObjectID = "Gum-BB-kKy"; */
+"Gum-BB-kKy.title" = "15分毎";
+
+/* Class = "NSButtonCell"; title = "Show avatars"; ObjectID = "LV6-ti-Pgl"; */
+"LV6-ti-Pgl.title" = "アバターを表示";
+
+/* Class = "NSMenuItem"; title = "Every 30 minutes"; ObjectID = "OCn-wO-cie"; */
+"OCn-wO-cie.title" = "30分毎";
+
+/* Class = "NSButtonCell"; title = "Open changed files in comparison view"; ObjectID = "RGt-BC-Of9"; */
+"RGt-BC-Of9.title" = "変更されたファイルを比較ビューで開く";
+
+/* Class = "NSButtonCell"; title = "Show authors for selected lines"; ObjectID = "YmT-WT-rlU"; */
+"YmT-WT-rlU.title" = "選択行の作成者を表示する";
+
+/* Class = "NSMenuItem"; title = "Every 5 minutes"; ObjectID = "Zlj-bt-p0O"; */
+"Zlj-bt-p0O.title" = "5分毎";
+
+/* Class = "NSButtonCell"; title = "Show placeholders for uncommitted lines"; ObjectID = "cf8-dr-kL9"; */
+"cf8-dr-kL9.title" = "未コミット行のプレイスホルダーを表示する";
+
+/* Class = "NSMenuItem"; title = "Every 10 minutes"; ObjectID = "gxy-b7-7Ie"; */
+"gxy-b7-7Ie.title" = "10分毎";
+
+/* Class = "NSTextFieldCell"; title = "Changes:"; ObjectID = "ig8-04-9Td"; */
+"ig8-04-9Td.title" = "変更:";
+
+/* Class = "NSButtonCell"; title = "Show change markers in gutter"; ObjectID = "l5N-Hn-tHB"; */
+"l5N-Hn-tHB.title" = "ガターに変更マークを表示する";
+
+/* Class = "NSMenuItem"; title = "Never"; ObjectID = "lnj-TP-trr"; */
+"lnj-TP-trr.title" = "何もしない";
+
+/* Class = "NSTextFieldCell"; title = "Inline Authors:"; ObjectID = "tyO-Ln-HRF"; */
+"tyO-Ln-HRF.title" = "作成者のインライン表示:";
+
+/* Class = "NSButtonCell"; title = "Enable Git Source Control"; ObjectID = "xGg-gV-yqn"; */
+"xGg-gV-yqn.title" = "Gitソース管理を有効にする";

@@ -1,0 +1,231 @@
+
+/* Class = "NSTextFieldCell"; title = "Your purchase of Nova gives us the resources necessary to make it the best native editor we can. It means a lot to us. From all of us at Panic, thank you."; ObjectID = "20U-rl-ITh"; */
+"20U-rl-ITh.title" = "您对 Nova 的购买，让我们有必要资源使其成为我们最棒的本机编辑器。这对我们意义重大。Panic 的全体工作人员感谢您。";
+
+/* Class = "NSButtonCell"; title = "I Forgot My License Number"; ObjectID = "4uF-Fo-gsf"; */
+"4uF-Fo-gsf.title" = "我忘记了许可证编号";
+
+/* Class = "NSButtonCell"; title = "Unlock"; ObjectID = "5Im-lV-ZQa"; */
+"5Im-lV-ZQa.title" = "解锁";
+
+/* Class = "NSTextFieldCell"; title = "<<TrialDescriptiveText>>"; ObjectID = "5cy-Yz-lSA"; */
+"5cy-Yz-lSA.title" = "<<TrialDescriptiveText>>";
+
+/* Class = "NSTextFieldCell"; title = "Unlock Nova"; ObjectID = "6KH-HO-kyP"; */
+"6KH-HO-kyP.title" = "解锁 Nova";
+
+/* Class = "NSTextFieldCell"; title = "Documentation Library"; ObjectID = "8IO-Pk-9DO"; */
+"8IO-Pk-9DO.title" = "文稿库";
+
+/* Class = "NSTextFieldCell"; title = "To get you started, we'd like to walk you through a few quick steps."; ObjectID = "9Oa-2y-ebk"; */
+"9Oa-2y-ebk.title" = "为了您能开始使用，我们想引导您完成几个快速步骤。";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "9o0-a1-Ur1"; */
+"9o0-a1-Ur1.title" = "取消";
+
+/* Class = "NSTextFieldCell"; title = "If you don't want to do it now, you can sign in or create an account at any time from the Sync preference pane."; ObjectID = "Ayj-BM-n9W"; */
+"Ayj-BM-n9W.title" = "如果现在不想这样做，可以随时从“同步首选项”窗格登录或创建帐户。";
+
+/* Class = "NSButtonCell"; title = "Send crash reports to Panic"; ObjectID = "Bc8-Ib-Kz4"; */
+"Bc8-Ib-Kz4.title" = "发送崩溃报告到 Panic";
+
+/* Class = "NSTextFieldCell"; title = "Already Purchased?"; ObjectID = "CNr-Lo-Gh3"; */
+"CNr-Lo-Gh3.title" = "已经购买？";
+
+/* Class = "NSTextFieldCell"; title = "Help Panic improve Nova by sending anonymous analytics."; ObjectID = "D9O-c3-Jkw"; */
+"D9O-c3-Jkw.title" = "通过发送匿名分析信息，帮助 Panic 改进 Nova。";
+
+/* Class = "NSButtonCell"; title = "Sign in"; ObjectID = "DgT-kP-79U"; */
+"DgT-kP-79U.title" = "登录";
+
+/* Class = "NSTextFieldCell"; title = "Diagnostics & Usage"; ObjectID = "Etg-L9-ck3"; */
+"Etg-L9-ck3.title" = "诊断和使用";
+
+/* Class = "NSButtonCell"; title = "Next"; ObjectID = "Fbq-jb-mbB"; */
+"Fbq-jb-mbB.title" = "下一步";
+
+/* Class = "NSTextFieldCell"; title = "Panic Sync"; ObjectID = "Fja-Jp-SXv"; */
+"Fja-Jp-SXv.title" = "Panic Sync";
+
+/* Class = "NSTextFieldCell"; title = "Password:"; ObjectID = "Gky-2I-gK2"; */
+"Gky-2I-gK2.title" = "密码：";
+
+/* Class = "NSButtonCell"; title = "Get Started"; ObjectID = "I6c-wA-QaL"; */
+"I6c-wA-QaL.title" = "开始使用";
+
+/* Class = "NSTextFieldCell"; title = "Add even more great features to Nova to support your favorite languages, frameworks, and tools. Find it in the Extensions menu."; ObjectID = "ICe-fa-Q1V"; */
+"ICe-fa-Q1V.title" = "甚至向 Nova 添加更多优秀特性，以支持您的最爱语言、框架和工具。在“扩展”菜单中找到它。";
+
+/* Class = "NSTextFieldCell"; title = "We'll also offer to import your projects and settings from Coda 2."; ObjectID = "ID2-WE-2EQ"; */
+"ID2-WE-2EQ.title" = "我们还将为您提供从 Coda 2 导入项目和设置。";
+
+/* Class = "NSButtonCell"; title = "Forgot?"; ObjectID = "IO4-JV-QgC"; */
+"IO4-JV-QgC.title" = "忘记了？";
+
+/* Class = "NSTextFieldCell"; title = "Your global and syntax-specific clips will be imported."; ObjectID = "KzW-r1-KbQ"; */
+"KzW-r1-KbQ.title" = "您的全局和语法特定剪辑将被导入。";
+
+/* Class = "NSTextFieldCell"; title = "Sign Up for Panic News:"; ObjectID = "MYq-Ru-kMC"; */
+"MYq-Ru-kMC.title" = "注册 Panic News：";
+
+/* Class = "NSTextFieldCell"; title = "All of your Coda 2 data will remain intact afterwards.\nIf you don't want to do it now, you can find this import at any time in the Help menu."; ObjectID = "NKF-ah-cDs"; */
+"NKF-ah-cDs.title" = "其后，全部 Coda 2 数据均将保持不变。\n如果现在不想这样做，您可以随时在“帮助”菜单中找到此导入。";
+
+/* Class = "NSTextFieldCell"; title = "• A Project will be added for each site with a local folder\n• A Server will be added for each site's remote credentials\n• The project will be linked to the server using a Remote Destination"; ObjectID = "Nbh-ov-eKc"; */
+"Nbh-ov-eKc.title" = "• 将为每个具有本地文件夹的站点添加项目\n• 将为每个站点的远程凭据添加服务器\n• 将使用远程目标将项目连接到服务器";
+
+/* Class = "NSButtonCell"; title = "Buy Now"; ObjectID = "PeO-On-e53"; */
+"PeO-On-e53.title" = "立即购买";
+
+/* Class = "NSTextFieldCell"; title = "Automatically submit crash reports to help Panic diagnose and fix issues in Nova."; ObjectID = "QQq-2o-7yX"; */
+"QQq-2o-7yX.title" = "自动提交崩溃报告，以帮助 Panic 诊断和解决 Nova 的问题。";
+
+/* Class = "NSButtonCell"; title = "Continue Trial"; ObjectID = "SA2-9j-Kg6"; */
+"SA2-9j-Kg6.title" = "继续试用";
+
+/* Class = "NSTextFieldCell"; title = "Verifying License…"; ObjectID = "TNJ-QB-wNn"; */
+"TNJ-QB-wNn.title" = "正在验证许可证…";
+
+/* Class = "NSButtonCell"; title = "Automatically change theme based on system appearance"; ObjectID = "Tk6-HO-Sgi"; */
+"Tk6-HO-Sgi.title" = "根据系统外观自动改变主题";
+
+/* Class = "NSButtonCell"; title = "Learn More About Diagnostics and Privacy… "; ObjectID = "Twt-mx-d9u"; */
+"Twt-mx-d9u.title" = "进一步了解诊断和隐私… ";
+
+/* Class = "NSButtonCell"; title = "Sidebar Layout"; ObjectID = "V3a-39-W7m"; */
+"V3a-39-W7m.title" = "边栏布局";
+
+/* Class = "NSTextFieldCell"; title = "Enter your license number to unlock Nova."; ObjectID = "VT2-lr-1uU"; */
+"VT2-lr-1uU.title" = "输入您的许可证编号以解锁 Nova。";
+
+/* Class = "NSTextFieldCell"; title = "<<count>>"; ObjectID = "VWE-qb-iiN"; */
+"VWE-qb-iiN.title" = "<<count>>";
+
+/* Class = "NSTextFieldCell"; title = "The position and order of your sidebars will be set up to match."; ObjectID = "Vxm-eo-EU8"; */
+"Vxm-eo-EU8.title" = "边栏位置和顺序将被设置为匹配状态。";
+
+/* Class = "NSTextFieldCell"; title = "Welcome to Nova"; ObjectID = "W5d-Mq-TYb"; */
+"W5d-Mq-TYb.title" = "欢迎使用 Nova";
+
+/* Class = "NSTextFieldCell"; title = "Already have a Panic Sync account?\nSign in and your servers will automatically sync with Nova."; ObjectID = "Wmx-jV-Yql"; */
+"Wmx-jV-Yql.title" = "已经有 Panic Sync 帐户？\n登录后，您的服务器将自动与 Nova 同步。";
+
+/* Class = "NSSegmentedCell"; XEV-Ev-YA1.ibShadowedLabels[0] = "Light Mode"; ObjectID = "XEV-Ev-YA1"; */
+"XEV-Ev-YA1.ibShadowedLabels[0]" = "浅色模式";
+
+/* Class = "NSSegmentedCell"; XEV-Ev-YA1.ibShadowedLabels[1] = "Dark Mode"; ObjectID = "XEV-Ev-YA1"; */
+"XEV-Ev-YA1.ibShadowedLabels[1]" = "暗黑模式";
+
+/* Class = "NSTextFieldCell"; title = "You can change this later in the Theme preference pane,\nand find additional themes in the Extension Library."; ObjectID = "XyN-Po-RaY"; */
+"XyN-Po-RaY.title" = "您可以稍后在主题首选项窗格中更改，\n并在扩展库中查找更多主题。";
+
+/* Class = "NSTextFieldCell"; title = "Email:"; ObjectID = "Xzz-JT-70R"; */
+"Xzz-JT-70R.title" = "电子邮件：";
+
+/* Class = "NSButtonCell"; title = "Skip"; ObjectID = "a6V-oL-XKS"; */
+"a6V-oL-XKS.title" = "跳过";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "aNr-Ih-eFU"; */
+"aNr-Ih-eFU.title" = "窗口";
+
+/* Class = "NSButtonCell"; title = "Send anonymous usage data to Panic"; ObjectID = "bfA-lx-k9s"; */
+"bfA-lx-k9s.title" = "将匿名使用数据发送到 Panic";
+
+/* Class = "NSTextFieldCell"; placeholderString = "NOVA-XXXX-XXXX-XXXX-XXXX-XXXX-X"; ObjectID = "bhS-nz-GDI"; */
+"bhS-nz-GDI.placeholderString" = "NOVA-XXXX-XXXX-XXXX-XXXX-XXXX-X";
+
+/* Class = "NSButtonCell"; title = "Import All"; ObjectID = "cF7-0Y-n2Z"; */
+"cF7-0Y-n2Z.title" = "导入全部";
+
+/* Class = "NSTextFieldCell"; title = "Your settings for Key Bindings, the Editor, Terminal, and Files will be applied."; ObjectID = "chI-My-Vgi"; */
+"chI-My-Vgi.title" = "您的按键绑定、编辑器、终端和文件设置将得到应用。";
+
+/* Class = "NSButtonCell"; title = "Buy Now…"; ObjectID = "eoI-ec-Bnj"; */
+"eoI-ec-Bnj.title" = "现在购买…";
+
+/* Class = "NSButtonCell"; title = "Continue"; ObjectID = "f7D-fk-bRl"; */
+"f7D-fk-bRl.title" = "继续";
+
+/* Class = "NSButtonCell"; title = "Skip Setup"; ObjectID = "fKa-mg-2tY"; */
+"fKa-mg-2tY.title" = "跳过设置";
+
+/* Class = "NSTextFieldCell"; title = "Need To Purchase?"; ObjectID = "fQE-P6-h8O"; */
+"fQE-P6-h8O.title" = "需要购买？";
+
+/* Class = "NSButtonCell"; title = "Skip"; ObjectID = "fbF-Zx-8if"; */
+"fbF-Zx-8if.title" = "跳过";
+
+/* Class = "NSButtonCell"; title = "Let's Go!"; ObjectID = "gb5-0I-EKa"; */
+"gb5-0I-EKa.title" = "我们开始吧！";
+
+/* Class = "NSTextFieldCell"; title = "Want to find out more about how to use Nova? Check out the articles in our documentation library."; ObjectID = "hSp-j2-zMC"; */
+"hSp-j2-zMC.title" = "想进一步了解如何使用 Nova？请阅读我们文稿库中的文章。";
+
+/* Class = "NSTextFieldCell"; title = "<<error description>>"; ObjectID = "iJ7-7E-ZOk"; */
+"iJ7-7E-ZOk.title" = "<<error description>>";
+
+/* Class = "NSButtonCell"; title = "Preferences"; ObjectID = "kZd-Iv-1jZ"; */
+"kZd-Iv-1jZ.title" = "首选项";
+
+/* Class = "NSButtonCell"; title = "Download"; ObjectID = "lnv-QH-qj4"; */
+"lnv-QH-qj4.title" = "下载";
+
+/* Class = "NSButtonCell"; title = "Sites"; ObjectID = "mdA-22-yPp"; */
+"mdA-22-yPp.title" = "站点";
+
+/* Class = "NSTextFieldCell"; title = "Choose Your Theme"; ObjectID = "mvL-L0-g5g"; */
+"mvL-L0-g5g.title" = "选择主题";
+
+/* Class = "NSButtonCell"; title = "Import"; ObjectID = "nE8-6C-eSo"; */
+"nE8-6C-eSo.title" = "导入";
+
+/* Class = "NSTextFieldCell"; title = "Learn More."; ObjectID = "ndy-9K-xcA"; */
+"ndy-9K-xcA.title" = "了解更多。";
+
+/* Class = "NSTextFieldCell"; title = "Finish Up"; ObjectID = "oAB-98-Fo7"; */
+"oAB-98-Fo7.title" = "结束";
+
+/* Class = "NSButtonCell"; title = "Next"; ObjectID = "pUm-RP-fXP"; */
+"pUm-RP-fXP.title" = "下一步";
+
+/* Class = "NSTextFieldCell"; title = "<<TrialTitle>>"; ObjectID = "qQF-oJ-aoL"; */
+"qQF-oJ-aoL.title" = "<<TrialTitle>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "back"; ObjectID = "qdY-uA-T6m"; */
+"qdY-uA-T6m.ibExternalAccessibilityDescription" = "上一步";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Go back to the previous pane"; ObjectID = "qdY-uA-T6m"; */
+"qdY-uA-T6m.ibShadowedToolTip" = "返回上一个窗格";
+
+/* Class = "NSButtonCell"; title = "Open"; ObjectID = "r7v-N7-wlR"; */
+"r7v-N7-wlR.title" = "打开";
+
+/* Class = "NSTextFieldCell"; title = "Import from Coda 2"; ObjectID = "rzO-Rs-Y4H"; */
+"rzO-Rs-Y4H.title" = "从 Coda 2 导入";
+
+/* Class = "NSButtonCell"; title = "Clips"; ObjectID = "s1W-08-RRz"; */
+"s1W-08-RRz.title" = "剪辑";
+
+/* Class = "NSTextFieldCell"; title = "Extension Library"; ObjectID = "sdm-zG-dmw"; */
+"sdm-zG-dmw.title" = "扩展库";
+
+/* Class = "NSTextFieldCell"; placeholderString = "your.optional@email.com"; ObjectID = "twv-gn-RXx"; */
+"twv-gn-RXx.placeholderString" = "your.optional@email.com";
+
+/* Class = "NSButtonCell"; title = "Enter Your License Number…"; ObjectID = "ubF-PO-9zs"; */
+"ubF-PO-9zs.title" = "输入您的许可证编号…";
+
+/* Class = "NSButtonCell"; title = "Quit"; ObjectID = "vKa-KP-VnS"; */
+"vKa-KP-VnS.title" = "退出";
+
+/* Class = "NSTextFieldCell"; title = "If something is preventing you from buying,"; ObjectID = "vXX-hk-nLf"; */
+"vXX-hk-nLf.title" = "如果有妨碍您购买的原因，";
+
+/* Class = "NSTextFieldCell"; title = "You're good to go!\nWant to learn more about what you can do in Nova?"; ObjectID = "w0V-fp-QYC"; */
+"w0V-fp-QYC.title" = "您可以使用了！\n要进一步了解可以在 Nova 中做什么？";
+
+/* Class = "NSButtonCell"; title = "please let us know!"; ObjectID = "x6l-VL-aTl"; */
+"x6l-VL-aTl.title" = "请告诉我们！";
+
+/* Class = "NSTextFieldCell"; title = "<<count>>"; ObjectID = "yaN-uI-B90"; */
+"yaN-uI-B90.title" = "<<count>>";

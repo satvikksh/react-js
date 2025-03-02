@@ -1,0 +1,54 @@
+
+/* Class = "NSButtonCell"; title = "Extensions"; ObjectID = "7Jo-9D-rgf"; */
+"7Jo-9D-rgf.title" = "Extensions";
+
+/* Class = "NSTextFieldCell"; title = "<<Item>>"; ObjectID = "8Jt-ib-cIK"; */
+"8Jt-ib-cIK.title" = "<<Item>>";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "ByN-lK-JHY"; */
+"ByN-lK-JHY.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Dp4-x6-MGc"; */
+"Dp4-x6-MGc.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "<<Conflict Link>>"; ObjectID = "Kfe-ZX-veV"; */
+"Kfe-ZX-veV.title" = "<<Conflict Link>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Item>>"; ObjectID = "LdK-ZF-en7"; */
+"LdK-ZF-en7.title" = "<<Item>>";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "O4j-4b-QLG"; */
+"O4j-4b-QLG.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "<<Item>>"; ObjectID = "PQk-qs-moo"; */
+"PQk-qs-moo.title" = "<<Item>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Item>>"; ObjectID = "STG-QK-mge"; */
+"STG-QK-mge.title" = "<<Item>>";
+
+/* Class = "NSSearchFieldCell"; placeholderString = "Filter"; ObjectID = "V8P-Qe-oCN"; */
+"V8P-Qe-oCN.placeholderString" = "Filtrer";
+
+/* Class = "NSButtonCell"; title = "Conflicts"; ObjectID = "W4Z-pW-I3o"; */
+"W4Z-pW-I3o.title" = "Conflits";
+
+/* Class = "NSButtonCell"; title = "Text"; ObjectID = "buW-iw-84x"; */
+"buW-iw-84x.title" = "Texte";
+
+/* Class = "NSTextFieldCell"; title = "<<Default Shortcut: None>>"; ObjectID = "cQa-4C-Sa4"; */
+"cQa-4C-Sa4.title" = "<<Default Shortcut: None>>";
+
+/* Class = "NSButtonCell"; title = "Customized"; ObjectID = "clS-Vw-8H2"; */
+"clS-Vw-8H2.title" = "Personnalisé";
+
+/* Class = "NSButtonCell"; title = "All"; ObjectID = "k8a-Qt-hMC"; */
+"k8a-Qt-hMC.title" = "Tout";
+
+/* Class = "NSImageView"; ibShadowedToolTip = "Shortcut conflicts with one or more other items."; ObjectID = "pEz-tg-UZF"; */
+"pEz-tg-UZF.ibShadowedToolTip" = "Le raccourci est en conflit avec un ou plusieurs éléments.";
+
+/* Class = "NSTextFieldCell"; title = "Key Bindings Set:"; ObjectID = "uFM-zZ-rWc"; */
+"uFM-zZ-rWc.title" = "Jeu de raccourcis clavier :";
+
+/* Class = "NSButtonCell"; title = "Menu"; ObjectID = "wjX-Zg-nEr"; */
+"wjX-Zg-nEr.title" = "Menu";

@@ -1,0 +1,48 @@
+
+/* Class = "NSTextFieldCell"; title = "Automatically fetch remote changes:"; ObjectID = "0MP-wT-sNw"; */
+"0MP-wT-sNw.title" = "自动提取远程更改：";
+
+/* Class = "NSButtonCell"; title = "Ignore changes in whitespace when determining authors"; ObjectID = "6Sg-y7-MLe"; */
+"6Sg-y7-MLe.title" = "确定作者时忽略空白的更改";
+
+/* Class = "NSMenuItem"; title = "Every hour"; ObjectID = "GVw-2T-noC"; */
+"GVw-2T-noC.title" = "每小时";
+
+/* Class = "NSMenuItem"; title = "Every 15 minutes"; ObjectID = "Gum-BB-kKy"; */
+"Gum-BB-kKy.title" = "每 15 分钟";
+
+/* Class = "NSButtonCell"; title = "Show avatars"; ObjectID = "LV6-ti-Pgl"; */
+"LV6-ti-Pgl.title" = "显示头像";
+
+/* Class = "NSMenuItem"; title = "Every 30 minutes"; ObjectID = "OCn-wO-cie"; */
+"OCn-wO-cie.title" = "每隔 30 分钟";
+
+/* Class = "NSButtonCell"; title = "Open changed files in comparison view"; ObjectID = "RGt-BC-Of9"; */
+"RGt-BC-Of9.title" = "在比较视图中打开更改的文件";
+
+/* Class = "NSButtonCell"; title = "Show authors for selected lines"; ObjectID = "YmT-WT-rlU"; */
+"YmT-WT-rlU.title" = "显示所选行的作者";
+
+/* Class = "NSMenuItem"; title = "Every 5 minutes"; ObjectID = "Zlj-bt-p0O"; */
+"Zlj-bt-p0O.title" = "每隔 5 分钟";
+
+/* Class = "NSButtonCell"; title = "Show placeholders for uncommitted lines"; ObjectID = "cf8-dr-kL9"; */
+"cf8-dr-kL9.title" = "显示未提交行的占位符";
+
+/* Class = "NSMenuItem"; title = "Every 10 minutes"; ObjectID = "gxy-b7-7Ie"; */
+"gxy-b7-7Ie.title" = "每 10 分钟";
+
+/* Class = "NSTextFieldCell"; title = "Changes:"; ObjectID = "ig8-04-9Td"; */
+"ig8-04-9Td.title" = "更改：";
+
+/* Class = "NSButtonCell"; title = "Show change markers in gutter"; ObjectID = "l5N-Hn-tHB"; */
+"l5N-Hn-tHB.title" = "在装订区域中显示更改标记";
+
+/* Class = "NSMenuItem"; title = "Never"; ObjectID = "lnj-TP-trr"; */
+"lnj-TP-trr.title" = "永不";
+
+/* Class = "NSTextFieldCell"; title = "Inline Authors:"; ObjectID = "tyO-Ln-HRF"; */
+"tyO-Ln-HRF.title" = "内嵌作者：";
+
+/* Class = "NSButtonCell"; title = "Enable Git Source Control"; ObjectID = "xGg-gV-yqn"; */
+"xGg-gV-yqn.title" = "启用 Git 源控制";

@@ -1,0 +1,69 @@
+
+/* Class = "NSTextFieldCell"; title = "<<Source>>"; ObjectID = "0UG-xc-gth"; */
+"0UG-xc-gth.title" = "<<Source>>";
+
+/* Class = "NSTextFieldCell"; title = "<<ThreadDesc>>"; ObjectID = "1bh-QE-3ug"; */
+"1bh-QE-3ug.title" = "<<ThreadDesc>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Header>>"; ObjectID = "34F-I6-iAB"; */
+"34F-I6-iAB.title" = "<<Header>>";
+
+/* Class = "NSTextFieldCell"; title = "Breakpoints"; ObjectID = "4ea-Es-3ly"; */
+"4ea-Es-3ly.title" = "ブレークポイント";
+
+/* Class = "NSTextFieldCell"; title = "<<SessionName>>"; ObjectID = "5Xq-5r-LgL"; */
+"5Xq-5r-LgL.title" = "<<SessionName>>";
+
+/* Class = "NSTextFieldCell"; title = "<<PID>>"; ObjectID = "6Pf-Jo-JWz"; */
+"6Pf-Jo-JWz.title" = "<<PID>>";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "7uq-20-k3J"; */
+"7uq-20-k3J.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "<<StackFrame>>"; ObjectID = "7y8-Db-Fq1"; */
+"7y8-Db-Fq1.title" = "<<StackFrame>>";
+
+/* Class = "NSMenuItem"; title = "Delete Breakpoint"; ObjectID = "A9u-RK-Dzi"; */
+"A9u-RK-Dzi.title" = "ブレークポイントを削除";
+
+/* Class = "NSTextFieldCell"; title = "<<Value>>"; ObjectID = "AYj-Nt-bRN"; */
+"AYj-Nt-bRN.title" = "<<Value>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Add Function Breakpoint"; ObjectID = "Aqn-Bd-99P"; */
+"Aqn-Bd-99P.ibExternalAccessibilityDescription" = "add breakpoint";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Add a new function breakpoint"; ObjectID = "Aqn-Bd-99P"; */
+"Aqn-Bd-99P.ibShadowedToolTip" = "新規ブレークポイントを追加します";
+
+/* Class = "NSTextFieldCell"; title = "<<ExceptionFilterSet>>"; ObjectID = "C27-FV-e4t"; */
+"C27-FV-e4t.title" = "<<ExceptionFilterSet>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Filename>>"; ObjectID = "EqN-1W-3UG"; */
+"EqN-1W-3UG.title" = "<<Filename>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Function>>"; ObjectID = "Hhc-8I-Khy"; */
+"Hhc-8I-Khy.title" = "<<Function>>";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "PbH-Mf-CfD"; */
+"PbH-Mf-CfD.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "<<GaugeName>>"; ObjectID = "R2U-ik-YUa"; */
+"R2U-ik-YUa.title" = "<<GaugeName>>";
+
+/* Class = "NSMenuItem"; title = "Enable Breakpoint"; ObjectID = "RMn-OM-5Dk"; */
+"RMn-OM-5Dk.title" = "ブレークポイントを有効化";
+
+/* Class = "NSMenuItem"; title = "Edit Breakpoint…"; ObjectID = "Vxd-Xw-9EY"; */
+"Vxd-Xw-9EY.title" = "ブレークポイントを編集…";
+
+/* Class = "NSTextFieldCell"; title = "Debugger"; ObjectID = "lnJ-LT-09X"; */
+"lnJ-LT-09X.title" = "デバッガ";
+
+/* Class = "NSTextFieldCell"; title = "Click the + button to add breakpoints."; ObjectID = "smb-qO-I60"; */
+"smb-qO-I60.title" = "ブレークポイントを追加するには+ボタンをクリック。";
+
+/* Class = "NSTextFieldCell"; title = "<<ThreadName>>"; ObjectID = "vtL-Q5-WI6"; */
+"vtL-Q5-WI6.title" = "<<ThreadName>>";
+
+/* Class = "NSTextFieldCell"; title = "<<ExceptionFilter>>"; ObjectID = "wP7-E4-nGe"; */
+"wP7-E4-nGe.title" = "<<ExceptionFilter>>";

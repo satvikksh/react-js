@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<completions>
+    <!-- At-Rules -->
+    <provider name="at-rules">
+        <syntax>scss</syntax>
+        <selector>*:not(comment, style.value)</selector>
+        <expression>@[a-zA-Z0-9-]*</expression>
+        
+        <set>scss.at-rules</set>
+    </provider>
+    
+    <!-- Attributes -->
+    <provider name="attributes-empty">
+        <!-- Without any existing attribute name characters -->
+        <syntax>scss</syntax>
+        <selector>style.attribute-list</selector>
+        <expression>(?&lt;![@$#.:,\[\]\{\}\(\)\w])</expression>
+        
+        <set>css.properties</set>
+    </provider>
+    <provider name="attributes">
+        <!-- With existing attribute name characters -->
+        <syntax>scss</syntax>
+        <selector>style.selector, style.attribute.name</selector>
+        <expression>(?&lt;![@$#.:,\[\]\{\}\(\)])(\b[a-zA-Z0-9-]+|-+[a-zA-Z0-9-]*)</expression>
+        
+        <set>css.properties</set>
+    </provider>
+    
+    <!-- Property values -->
+    <provider name="values">
+        <syntax>scss</syntax>
+        <selector>style.attribute:has-child(style.attribute.name:capture(property)) style.value</selector>
+        <expression>(?&lt;!;)(?:(?:\![a-zA-Z0-9-]*)|(?&lt;!\!)[a-zA-Z0-9-]*)</expression>
+        
+        <trigger> </trigger>
+        
+        <set>css.values.all</set>
+        <set>css.values.${property}</set>
+    </provider>
+    
+    <!-- Variables -->
+    <provider name="variables">
+        <syntax>scss</syntax>
+        <selector>style.value:not(string, comment)</selector>
+        <expression>(?&lt;!\-\-)(\$([a-zA-Z_][a-zA-Z0-9_\-]*)?)</expression>
+        
+        <trigger>$</trigger>
+        
+        <symbols type="variable,constant,argument" syntax="sass" />
+        <symbols type="variable,constant,argument" syntax="scss" />
+    </provider>
+    
+    <!-- Custom Properties -->
+    <provider name="custom-properties">
+        <syntax>scss</syntax>
+        <selector>css.style.value.function.var, css.style.value.property.identifier</selector>
+        <expression>(?&lt;=\()(-(-[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]*)?)?</expression>
+        
+        <trigger>-(</trigger>
+        
+        <symbols type="property" syntax="css" />
+        <symbols type="property" syntax="sass" />
+        <symbols type="property" syntax="scss" />
+    </provider>
+    
+    <!-- Mixins -->
+    <provider name="mixins">
+        <syntax>scss</syntax>
+        <selector>style.at-rule.include.identifier.name</selector>
+        <expression>([a-zA-Z_][a-zA-Z0-9_\-]*)</expression>
+        
+        <symbols type="function" syntax="sass">
+            <behavior>
+                <arguments prefix="(" suffix=")" separator=", " />
+            </behavior>
+        </symbols>
+        <symbols type="function" syntax="scss">
+            <behavior>
+                <arguments prefix="(" suffix=")" separator=", " />
+            </behavior>
+        </symbols>
+    </provider>
+    
+    <!-- At Rules -->
+    <set name="scss.at-rules" symbol="statement">
+        <completion string="@use" />
+        <completion string="@forward" />
+        <completion string="@function" />
+        <completion string="@extend" />
+        <completion string="@mixin" />
+        <completion string="@include" />
+        <completion string="@content" />
+        <completion string="@error" />
+        <completion string="@warn" />
+        <completion string="@debug" />
+        <completion string="@at-root" />
+        <completion string="@if" />
+        <completion string="@else" />
+        <completion string="@each" />
+        <completion string="@for" />
+        <completion string="@while" />
+    </set>
+</completions>

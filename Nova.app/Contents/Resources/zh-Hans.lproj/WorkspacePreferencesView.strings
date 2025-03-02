@@ -1,0 +1,150 @@
+
+/* Class = "NSMenuItem"; title = "Up To Two Lines"; ObjectID = "14G-1a-yWc"; */
+"14G-1a-yWc.title" = "最多两行";
+
+/* Class = "NSMenuItem"; title = "Apply To All Open Workspaces"; ObjectID = "1Fx-Kx-VXP"; */
+"1Fx-Kx-VXP.title" = "应用到打开的全部工作区";
+
+/* Class = "NSMenuItem"; title = "Use System Behavior"; ObjectID = "231-XL-1LC"; */
+"231-XL-1LC.title" = "使用系统行为";
+
+/* Class = "NSMenuItem"; title = "Up To Ten Lines"; ObjectID = "2Qz-tb-Veb"; */
+"2Qz-tb-Veb.title" = "最多十行";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "5nk-5F-2Dw"; */
+"5nk-5F-2Dw.title" = "表格视图单元格";
+
+/* Class = "NSMenuItem"; title = "Remove"; ObjectID = "5od-mt-eaK"; */
+"5od-mt-eaK.title" = "移除";
+
+/* Class = "NSTextFieldCell"; title = "Panes:"; ObjectID = "8Co-es-3qW"; */
+"8Co-es-3qW.title" = "窗格：";
+
+/* Class = "NSMenuItem"; title = "Edit…"; ObjectID = "97A-VT-6fD"; */
+"97A-VT-6fD.title" = "编辑…";
+
+/* Class = "NSTextFieldCell"; title = "Default Split Direction:"; ObjectID = "AHx-v5-wJ9"; */
+"AHx-v5-wJ9.title" = "默认分离方向：";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "AIM-eY-88Q"; */
+"AIM-eY-88Q.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "Find & Replace:"; ObjectID = "AlH-F3-VcW"; */
+"AlH-F3-VcW.title" = "查找和替换：";
+
+/* Class = "NSMenuItem"; title = "Apply To All Open Workspaces"; ObjectID = "AnL-2d-61i"; */
+"AnL-2d-61i.title" = "应用到打开的全部工作区";
+
+/* Class = "NSTextFieldCell"; title = "• Drag layouts to reorder.\n• The first layout is the default for new windows.\n• Create new layouts from the View menu."; ObjectID = "BVN-eZ-chU"; */
+"BVN-eZ-chU.title" = "• 拖动布局以重新排序。\n• 第一个布局是新窗口的默认布局。\n• 从“显示”菜单创建新布局。";
+
+/* Class = "NSButtonCell"; title = "Close empty splits after their last tab is closed"; ObjectID = "BWq-R4-UW5"; */
+"BWq-R4-UW5.title" = "关闭最后一个标签页后关闭空的分离";
+
+/* Class = "NSMenuItem"; title = "Below"; ObjectID = "CNz-lE-fJR"; */
+"CNz-lE-fJR.title" = "垂直";
+
+/* Class = "NSTextFieldCell"; title = "Sidebar Dock Icon Size:"; ObjectID = "E3R-I7-hv7"; */
+"E3R-I7-hv7.title" = "边栏程序坞图标大小：";
+
+/* Class = "NSMenuItem"; title = "Make Default"; ObjectID = "EXB-10-XVQ"; */
+"EXB-10-XVQ.title" = "设为默认";
+
+/* Class = "NSButtonCell"; title = "Use Find Pasteboard"; ObjectID = "F6d-Og-Pey"; */
+"F6d-Og-Pey.title" = "使用查找粘贴板";
+
+/* Class = "NSMenuItem"; title = "Up To Thirty Lines"; ObjectID = "Gg4-r9-0jF"; */
+"Gg4-r9-0jF.title" = "最多三十行";
+
+/* Class = "NSMenuItem"; title = "Edit…"; ObjectID = "HIe-jN-dg0"; */
+"HIe-jN-dg0.title" = "编辑…";
+
+/* Class = "NSTextFieldCell"; title = "Find Sidebar Detail:"; ObjectID = "Jk5-bS-eim"; */
+"Jk5-bS-eim.title" = "寻找边栏信息：";
+
+/* Class = "NSMenuItem"; title = "Horizontal"; ObjectID = "L9I-vq-6TU"; */
+"L9I-vq-6TU.title" = "水平";
+
+/* Class = "NSTextFieldCell"; title = "Dragging file references"; ObjectID = "LzT-17-gvG"; */
+"LzT-17-gvG.title" = "拖动文件引用";
+
+/* Class = "NSMenuItem"; title = "Up To Five Lines"; ObjectID = "MXW-0t-KSu"; */
+"MXW-0t-KSu.title" = "最多五行";
+
+/* Class = "NSTextFieldCell"; title = "Sidebar Layouts:"; ObjectID = "Mi8-hZ-5J9"; */
+"Mi8-hZ-5J9.title" = "边栏布局：";
+
+/* Class = "NSMenuItem"; title = "Never"; ObjectID = "Nby-Lc-bZe"; */
+"Nby-Lc-bZe.title" = "永不";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "OFZ-ht-NRi"; */
+"OFZ-ht-NRi.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Up To Four Lines"; ObjectID = "Ovo-PA-0sr"; */
+"Ovo-PA-0sr.title" = "最多四行";
+
+/* Class = "NSMenuItem"; title = "Large"; ObjectID = "PKw-wm-toQ"; */
+"PKw-wm-toQ.title" = "大";
+
+/* Class = "NSMenuItem"; title = "To The Right"; ObjectID = "Tmc-5D-0J1"; */
+"Tmc-5D-0J1.title" = "水平";
+
+/* Class = "NSTextFieldCell"; title = "Sidebar Dock Orientation:"; ObjectID = "Wtt-aJ-9qD"; */
+"Wtt-aJ-9qD.title" = "边栏程序坞方向：";
+
+/* Class = "NSMenuItem"; title = "Vertical"; ObjectID = "YXX-Hq-Nqp"; */
+"YXX-Hq-Nqp.title" = "垂直";
+
+/* Class = "NSMenuItem"; title = "inserts the file path"; ObjectID = "Z6H-9K-3nR"; */
+"Z6H-9K-3nR.title" = "插入文件路径";
+
+/* Class = "NSMenuItem"; title = "Make Default"; ObjectID = "ZbS-ql-pqx"; */
+"ZbS-ql-pqx.title" = "设为默认";
+
+/* Class = "NSMenuItem"; title = "One Line"; ObjectID = "aGX-FO-ROz"; */
+"aGX-FO-ROz.title" = "一行";
+
+/* Class = "NSMenuItem"; title = "Medium"; ObjectID = "bcz-yP-S60"; */
+"bcz-yP-S60.title" = "媒体";
+
+/* Class = "NSMenuItem"; title = "Always"; ObjectID = "bpH-zO-P4O"; */
+"bpH-zO-P4O.title" = "始终";
+
+/* Class = "NSMenuItem"; title = "Up To Three Lines"; ObjectID = "cJi-Jl-3oZ"; */
+"cJi-Jl-3oZ.title" = "最多三行";
+
+/* Class = "NSButtonCell"; title = "Open an empty editor for new windows"; ObjectID = "fTV-gX-aF1"; */
+"fTV-gX-aF1.title" = "为新窗口打开空白编辑器";
+
+/* Class = "NSTextFieldCell"; title = "Drag & Drop:"; ObjectID = "hYr-i4-G1y"; */
+"hYr-i4-G1y.title" = "拖放：";
+
+/* Class = "NSTextFieldCell"; title = "Hold the Option key while dragging to perform the opposite action."; ObjectID = "i7b-0C-ryt"; */
+"i7b-0C-ryt.title" = "拖动时按住 Option 键以执行相反的操作。";
+
+/* Class = "NSTextFieldCell"; title = "Open Projects as Tabs:"; ObjectID = "ipa-84-geo"; */
+"ipa-84-geo.title" = "在标签页中打开项目：";
+
+/* Class = "NSTextFieldCell"; title = "Markdown Stylesheet:"; ObjectID = "j3j-CL-bvT"; */
+"j3j-CL-bvT.title" = "标记样式表：";
+
+/* Class = "NSMenuItem"; title = "Remove"; ObjectID = "m5u-oW-FWf"; */
+"m5u-oW-FWf.title" = "移除";
+
+/* Class = "NSMenuItem"; title = "opens a tab or split"; ObjectID = "pLV-c0-zXV"; */
+"pLV-c0-zXV.title" = "打开标签页或分离";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "rbx-hO-i0T"; */
+"rbx-hO-i0T.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Small"; ObjectID = "rph-rk-aGM"; */
+"rph-rk-aGM.title" = "小";
+
+/* Class = "NSMenuItem"; title = "Restore Defaults"; ObjectID = "syu-pg-OIS"; */
+"syu-pg-OIS.title" = "恢复默认值";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "tCx-2p-4Z8"; */
+"tCx-2p-4Z8.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Restore Defaults"; ObjectID = "wvc-sa-Trr"; */
+"wvc-sa-Trr.title" = "恢复默认值";

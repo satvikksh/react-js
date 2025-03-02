@@ -1,0 +1,2065 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- The PHP-Base regular expression grammar is deprecated.
+     It remains for backwards compatibility with third-party extensions.
+     Do not rely on it for new grammars.
+     It will be removed in a future release. -->
+     
+<syntax name="php-base" subsyntax="true">
+    <meta>
+        <name>PHP</name>
+        <type>script</type>
+    </meta>
+    
+    <identifiers>
+        <prefixes>
+            <string>$</string>
+        </prefixes>
+    </identifiers>
+    
+    <indentation>
+        <increase>
+            <expression>(\{[^}\"']*$)|(\[[^\]\"']*$)|(\([^)\"']*$)|(\:[^}\"']*$)</expression>
+        </increase>
+        <decrease>
+            <expression>^\s*(\s*/\*.*\*/\s*)*[\}\]\)\\]</expression>
+        </decrease>
+    </indentation>
+    
+    <comments>
+        <single>
+            <expression>//</expression>
+        </single>
+        <multiline>
+            <starts-with>
+                <expression>/*</expression>
+            </starts-with>
+            <ends-with>
+                <expression>*/</expression>
+            </ends-with>
+        </multiline>
+    </comments>
+    
+    <scopes>
+        <include syntax="self" collection="comments" />
+        <include syntax="self" collection="namespaces" />
+        <include syntax="self" collection="definitions" />
+        <include syntax="self" collection="keywords" />
+        <include syntax="self" collection="values" />
+        <include syntax="self" collection="identifiers" />
+        <include syntax="self" collection="blocks" />
+        <include syntax="self" collection="syntax" />
+    </scopes>
+    
+    <collections>
+        <!-- Comments -->
+        <collection name="comments">
+            <scope name="php.comment.single" spell-check="true">
+                <expression>(?:(?:\/\/)|\#)(.*?)(?:(?=\?&gt;)|$)</expression>
+                <capture number="1" name="php.comment.content" />
+            </scope>
+            <scope name="php.comment.block" spell-check="true">
+                <starts-with>
+                    <expression>\/\*</expression>
+                </starts-with>
+                <ends-with>
+                    <expression>\*\/</expression>
+                </ends-with>
+            </scope>
+        </collection>
+        
+        <!-- Namespaces -->
+        <collection name="namespaces">
+            <scope name="php.definition.namespace">
+                <symbol type="type">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>\b(namespace)\b</expression>
+                    <capture number="1" name="php.keyword.construct" />
+                </starts-with>
+                <ends-with>
+                    <expression>;|$</expression>
+                </ends-with>
+                <subscopes anchored="true">
+                    <scope name="php.definition.namespace.type.identifier.name">
+                        <expression>[a-zA-Z_\\][a-zA-Z0-9_\\]*</expression>
+                    </scope>
+                    <scope name="php.block" optional="true">
+                        <symbol type="block">
+                            <context behavior="subtree" fold-type="type" />
+                        </symbol>
+                        <starts-with>
+                            <expression>\{</expression>
+                            <capture number="0" name="php.bracket" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>\}</expression>
+                            <capture number="0" name="php.bracket" />
+                        </ends-with>
+                        <subscopes>
+                            <include syntax="self" collection="comments" />
+                            <include syntax="self" collection="definitions" />
+                            <include syntax="self" collection="values" />
+                            <include syntax="self" collection="identifiers" />
+                            <include syntax="self" collection="blocks" />
+                            <include syntax="self" collection="syntax" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+            
+            <include syntax="self" collection="namespace-traits" />
+        </collection>
+        
+        <!-- Namespace Traits -->
+        <collection name="namespace-traits">
+            <scope name="php.namespace-traits">
+                <starts-with>
+                    <expression>\b(use)\b</expression>
+                    <capture number="1" name="php.keyword.condition" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <scope name="php.namespace-traits.type-expression" repeat="true">
+                        <starts-with>
+                            <expression>([a-zA-Z_\\][a-zA-Z0-9_\\]*)</expression>
+                            <capture number="1" name="php.type.identifier.name" />
+                        </starts-with>
+                        <ends-with />
+                        <subscopes anchored="true">
+                            <scope name="php.keyword.modifier" optional="true">
+                                <expression>\b(as)\b</expression>
+                            </scope>
+                            <include syntax="self" collection="types" optional="true" />
+                            <scope name="php.separator">
+                                <expression>,</expression>
+                                <capture number="0" name="php.separator" />
+                            </scope>
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Definitions -->
+        <collection name="definitions">
+            <!-- Interfaces -->
+            <scope name="php.definition.interface">
+                <symbol type="interface">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>\b(interface)\s+([a-zA-Z_][a-zA-Z0-9_]*)</expression>
+                    <capture number="1" name="php.keyword.construct" />
+                    <capture number="2" name="php.identifier.type.interface.name" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="php.interface.extends" optional="true">
+                        <starts-with>
+                            <expression>\b(extends)\b</expression>
+                            <capture number="1" name="php.keyword.modifier" />
+                        </starts-with>
+                        <ends-with />
+                        <subscopes anchored="true">
+                            <include syntax="self" collection="types" />
+                        </subscopes>
+                    </scope>
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="php.block">
+                        <symbol type="block">
+                            <context behavior="subtree" fold-type="interface" />
+                        </symbol>
+                        <starts-with>
+                            <expression>\{</expression>
+                            <capture number="0" name="php.bracket" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>\}</expression>
+                            <capture number="0" name="php.bracket" />
+                        </ends-with>
+                        <subscopes>
+                            <cut-off>
+                                <expression>(?=\b(?:interface|class|namespace)\b)</expression>
+                            </cut-off>
+                            <include syntax="self" collection="comments" />
+                            <include syntax="self" collection="class-definitions" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+            
+            <!-- Traits -->
+            <scope name="php.definition.trait">
+                <symbol type="type">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>\b(trait)\s+([a-zA-Z_][a-zA-Z0-9_]*)</expression>
+                    <capture number="1" name="php.keyword.construct" />
+                    <capture number="2" name="php.identifier.type.trait.name" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="php.block">
+                        <symbol type="block">
+                            <context behavior="subtree" fold-type="type" />
+                        </symbol>
+                        <starts-with>
+                            <expression>\{</expression>
+                            <capture number="0" name="php.bracket" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>\}</expression>
+                            <capture number="0" name="php.bracket" />
+                        </ends-with>
+                        <subscopes>
+                            <cut-off>
+                                <expression>(?=\b(?:interface|namespace)\b)</expression>
+                            </cut-off>
+                            <include syntax="self" collection="comments" />
+                            <include syntax="self" collection="class-traits" />
+                            <include syntax="self" collection="class-definitions" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+            
+            <!-- Classes -->
+            <scope name="php.definition.class">
+                <symbol type="class">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>(?:\b(abstract)\s+)?\b(class)\s+([a-zA-Z_][a-zA-Z0-9_]*)</expression>
+                    <capture number="1" name="php.keyword.modifier" />
+                    <capture number="2" name="php.keyword.construct" />
+                    <capture number="3" name="php.identifier.type.class.name" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    
+                    <scope name="php.class.extends" optional="true">
+                        <starts-with>
+                            <expression>\b(extends)\b</expression>
+                            <capture number="1" name="php.keyword.modifier" />
+                        </starts-with>
+                        <ends-with />
+                        <subscopes anchored="true">
+                            <include syntax="self" collection="types" />
+                        </subscopes>
+                    </scope>
+                    
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    
+                    <scope name="php.class.implements" optional="true">
+                        <starts-with>
+                            <expression>\b(implements)\b</expression>
+                            <capture number="0" name="php.keyword.modifier" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>(?=\{|;)</expression>
+                        </ends-with>
+                        <subscopes>
+                            <cut-off>
+                                <expression>(?=\b(?:function|interface|namespace|static|public|private|protected)\b)</expression>
+                            </cut-off>
+                            
+                            <include syntax="self" collection="comments" />
+                            
+                            <include syntax="self" collection="types" />
+                            
+                            <scope name="php.separator">
+                                <expression>,</expression>
+                            </scope>
+                        </subscopes>
+                    </scope>
+                    
+                    <scope name="php.block">
+                        <symbol type="block">
+                            <context behavior="subtree" fold-type="class" />
+                        </symbol>
+                        <starts-with>
+                            <expression>\{</expression>
+                            <capture number="0" name="php.bracket" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>\}</expression>
+                            <capture number="0" name="php.bracket" />
+                        </ends-with>
+                        <subscopes>
+                            <cut-off>
+                                <expression>(?=\b(?:interface)\b)</expression>
+                            </cut-off>
+                            <include syntax="self" collection="comments" />
+                            <include syntax="self" collection="class-traits" />
+                            <include syntax="self" collection="class-definitions" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+            
+            <!-- Named Functions -->
+            <scope name="php.definition.function">
+                <symbol type="function">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>\b(function)\s+(&amp;)?([a-zA-Z_][a-zA-Z0-9_]*)</expression>
+                    <capture number="1" name="php.keyword.construct" />
+                    <capture number="2" name="php.operator" />
+                    <capture number="3" name="php.definition.identifier.function.name" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="php.definition.function.return-type" optional="true">
+                        <starts-with>
+                            <expression>(:)</expression>
+                            <capture number="1" name="php.operator" />
+                        </starts-with>
+                        <ends-with />
+                        <subscopes anchored="true">
+                            <include syntax="self" collection="type-expressions" repeat="true" />
+                        </subscopes>
+                    </scope>
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="php.block">
+                        <symbol type="block">
+                            <context behavior="subtree" fold-type="function" />
+                        </symbol>
+                        <starts-with>
+                            <expression>\{</expression>
+                            <capture number="0" name="php.bracket" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>\}</expression>
+                            <capture number="0" name="php.bracket" />
+                        </ends-with>
+                        <subscopes>
+                            <cut-off>
+                                <expression>(?=\b(?:public|private|protected|namespace)\b)</expression>
+                            </cut-off>
+                            
+                            <include syntax="self" collection="comments" />
+                            <include syntax="self" collection="definitions" />
+                            <include syntax="self" collection="keywords" />
+                            <include syntax="self" collection="values" />
+                            <include syntax="self" collection="identifiers" />
+                            <include syntax="self" collection="blocks" />
+                            <include syntax="self" collection="syntax" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+            
+            <!-- Anonymous Functions -->
+            <scope name="php.definition.function.anonymous">
+                <symbol type="block" anonymous="true">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>\b(function)\b</expression>
+                    <capture number="1" name="php.keyword.construct" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="php.definition.function.return-type" optional="true">
+                        <starts-with>
+                            <expression>(:)</expression>
+                            <capture number="1" name="php.operator" />
+                        </starts-with>
+                        <ends-with />
+                        <subscopes anchored="true">
+                            <include syntax="self" collection="type-expressions" repeat="true" />
+                        </subscopes>
+                    </scope>
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="php.block">
+                        <symbol type="block">
+                            <context behavior="subtree" fold-type="function" />
+                        </symbol>
+                        <starts-with>
+                            <expression>\{</expression>
+                            <capture number="0" name="php.bracket" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>\}</expression>
+                            <capture number="0" name="php.bracket" />
+                        </ends-with>
+                        <subscopes>
+                            <cut-off>
+                                <expression>(?=\b(?:public|private|protected|namespace)\b)</expression>
+                            </cut-off>
+                            
+                            <include syntax="self" collection="comments" />
+                            <include syntax="self" collection="definitions" />
+                            <include syntax="self" collection="keywords" />
+                            <include syntax="self" collection="values" />
+                            <include syntax="self" collection="identifiers" />
+                            <include syntax="self" collection="blocks" />
+                            <include syntax="self" collection="syntax" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Interface Definitions -->
+        <collection name="interface-definitions">
+            <scope name="php.definition.interface-constant">
+                <symbol type="static-property" />
+                <starts-with>
+                    <expression>\b(?:(public|private)\s+)?(const)\b</expression>
+                    <capture number="1" name="php.keyword.modifier" />
+                    <capture number="2" name="php.keyword.modifier" />
+                </starts-with>
+                <ends-with>
+                    <expression>;</expression>
+                </ends-with>
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" />
+                    <scope name="php.definition.identifier.constant">
+                        <expression>[a-zA-Z_][a-zA-Z0-9_]*</expression>
+                    </scope>
+                    <include syntax="self" collection="comments" optional="true" />
+                    <scope name="php.operator.equals">
+                        <expression>=</expression>
+                    </scope>
+                    <include syntax="self" collection="expressions" repeat="true" />
+                </subscopes>
+            </scope>
+            
+            <scope name="php.definition.method.static">
+                <symbol type="static-method" />
+                <starts-with>
+                    <expression>(\b(?:public|private|protected)\s+)?\b(static)\s+\b(function)\s+(&amp;)?([a-zA-Z_][a-zA-Z0-9_]*)</expression>
+                    <capture number="1" name="php.keyword.modifier" />
+                    <capture number="2" name="php.keyword.modifier" />
+                    <capture number="3" name="php.keyword.construct" />
+                    <capture number="4" name="php.operator" />
+                    <capture number="5" name="php.definition.identifier.method.name" />
+                </starts-with>
+                <ends-with>
+                    <expression>;</expression>
+                </ends-with>
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="php.definition.method.return-type" optional="true">
+                        <starts-with>
+                            <expression>(:)</expression>
+                            <capture number="1" name="php.operator" />
+                        </starts-with>
+                        <ends-with />
+                        <subscopes anchored="true">
+                            <include syntax="self" collection="type-expressions" repeat="true" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+            
+            <scope name="php.definition.method">
+                <symbol type="method" />
+                <starts-with>
+                    <expression>(\b(?:public|private|protected)\s+)?\b(function)\s+(&amp;)?([a-zA-Z_][a-zA-Z0-9_]*)</expression>
+                    <capture number="1" name="php.keyword.modifier" />
+                    <capture number="2" name="php.keyword.construct" />
+                    <capture number="3" name="php.operator" />
+                    <capture number="4" name="php.definition.identifier.method.name" />
+                </starts-with>
+                <ends-with>
+                    <expression>;</expression>
+                </ends-with>
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="php.definition.method.return-type" optional="true">
+                        <starts-with>
+                            <expression>(:)</expression>
+                            <capture number="1" name="php.operator" />
+                        </starts-with>
+                        <ends-with />
+                        <subscopes anchored="true">
+                            <include syntax="self" collection="type-expressions" repeat="true" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Class Definitions -->
+        <collection name="class-definitions">
+            <scope name="php.definition.class-constant">
+                <symbol type="static-property" />
+                <starts-with>
+                    <expression>\b(?:(public|private)\s+)?(const)\b</expression>
+                    <capture number="1" name="php.keyword.modifier" />
+                    <capture number="2" name="php.keyword.modifier" />
+                </starts-with>
+                <ends-with>
+                    <expression>;</expression>
+                </ends-with>
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" />
+                    <scope name="php.definition.identifier.constant">
+                        <expression>[a-zA-Z_][a-zA-Z0-9_]*</expression>
+                    </scope>
+                    <include syntax="self" collection="comments" optional="true" />
+                    <scope name="php.operator.equals">
+                        <expression>=</expression>
+                    </scope>
+                    <include syntax="self" collection="expressions" optional="true" />
+                </subscopes>
+            </scope>
+            
+            <scope name="php.definition.method.abstract.static">
+                <symbol type="static-method">
+                    <context behavior="subtree" />
+                </symbol>
+                <starts-with>
+                    <expression>\b(abstract)\s+(?:\b(public|private|protected)\s+)?\b(static)\s+\b(function)\s+(&amp;)?([a-zA-Z_][a-zA-Z0-9_]*)</expression>
+                    <capture number="1" name="php.keyword.modifier" />
+                    <capture number="2" name="php.keyword.modifier" />
+                    <capture number="3" name="php.keyword.modifier" />
+                    <capture number="4" name="php.keyword.construct" />
+                    <capture number="5" name="php.operator" />
+                    <capture number="6" name="php.definition.identifier.method.name" />
+                </starts-with>
+                <ends-with>
+                    <expression>;</expression>
+                </ends-with>
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="php.definition.method.return-type" optional="true">
+                        <starts-with>
+                            <expression>(:)</expression>
+                            <capture number="1" name="php.operator" />
+                        </starts-with>
+                        <ends-with />
+                        <subscopes anchored="true">
+                            <include syntax="self" collection="type-expressions" repeat="true" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+            
+            <scope name="php.definition.method.abstract">
+                <symbol type="method">
+                    <context behavior="subtree" />
+                </symbol>
+                <starts-with>
+                    <expression>\b(abstract)\s+(?:\b(public|private|protected)\s+)?\b(function)\s+(&amp;)?([a-zA-Z_][a-zA-Z0-9_]*)</expression>
+                    <capture number="1" name="php.keyword.modifier" />
+                    <capture number="2" name="php.keyword.modifier" />
+                    <capture number="3" name="php.keyword.construct" />
+                    <capture number="4" name="php.operator" />
+                    <capture number="5" name="php.definition.identifier.method.name" />
+                </starts-with>
+                <ends-with>
+                    <expression>;</expression>
+                </ends-with>
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="php.definition.method.return-type" optional="true">
+                        <starts-with>
+                            <expression>(:)</expression>
+                            <capture number="1" name="php.operator" />
+                        </starts-with>
+                        <ends-with />
+                        <subscopes anchored="true">
+                            <include syntax="self" collection="type-expressions" repeat="true" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+            
+            <scope name="php.definition.method.static">
+                <symbol type="static-method">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>(?:\b(public|private|protected)\s+)?\b(static)\s+\b(function)\s+(&amp;)?([a-zA-Z_][a-zA-Z0-9_]*)</expression>
+                    <capture number="1" name="php.keyword.modifier" />
+                    <capture number="2" name="php.keyword.modifier" />
+                    <capture number="3" name="php.keyword.construct" />
+                    <capture number="4" name="php.operator" />
+                    <capture number="5" name="php.definition.identifier.method.name" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="php.definition.method.return-type" optional="true">
+                        <starts-with>
+                            <expression>(:)</expression>
+                            <capture number="1" name="php.operator" />
+                        </starts-with>
+                        <ends-with />
+                        <subscopes anchored="true">
+                            <include syntax="self" collection="type-expressions" repeat="true" />
+                        </subscopes>
+                    </scope>
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="php.block">
+                        <symbol type="block">
+                            <context behavior="subtree" fold-type="method" />
+                        </symbol>
+                        <starts-with>
+                            <expression>\{</expression>
+                            <capture number="0" name="php.bracket" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>\}</expression>
+                            <capture number="0" name="php.bracket" />
+                        </ends-with>
+                        <subscopes>
+                            <cut-off>
+                                <expression>(?=\b(?:public|private|protected|namespace)\b)</expression>
+                            </cut-off>
+                            
+                            <include syntax="self" collection="comments" />
+                            <include syntax="self" collection="definitions" />
+                            <include syntax="self" collection="keywords" />
+                            <include syntax="self" collection="values" />
+                            <include syntax="self" collection="identifiers" />
+                            <include syntax="self" collection="blocks" />
+                            <include syntax="self" collection="syntax" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+            
+            <scope name="php.definition.method">
+                <symbol type="method">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>(?:\b(public|private|protected)\s+)?\b(function)\s+(&amp;)?([a-zA-Z_][a-zA-Z0-9_]*)</expression>
+                    <capture number="1" name="php.keyword.modifier" />
+                    <capture number="2" name="php.keyword.construct" />
+                    <capture number="3" name="php.operator" />
+                    <capture number="4" name="php.definition.identifier.method.name" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="php.definition.method.return-type" optional="true">
+                        <starts-with>
+                            <expression>(:)</expression>
+                            <capture number="1" name="php.operator" />
+                        </starts-with>
+                        <ends-with />
+                        <subscopes anchored="true">
+                            <include syntax="self" collection="type-expressions" repeat="true" />
+                        </subscopes>
+                    </scope>
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="php.block">
+                        <symbol type="block">
+                            <context behavior="subtree" fold-type="method" />
+                        </symbol>
+                        <starts-with>
+                            <expression>\{</expression>
+                            <capture number="0" name="php.bracket" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>\}</expression>
+                            <capture number="0" name="php.bracket" />
+                        </ends-with>
+                        <subscopes>
+                            <cut-off>
+                                <expression>(?=\b(?:public|private|protected|namespace)\b)</expression>
+                            </cut-off>
+                            
+                            <include syntax="self" collection="comments" />
+                            <include syntax="self" collection="definitions" />
+                            <include syntax="self" collection="keywords" />
+                            <include syntax="self" collection="values" />
+                            <include syntax="self" collection="identifiers" />
+                            <include syntax="self" collection="blocks" />
+                            <include syntax="self" collection="syntax" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+            
+            <scope name="php.definition.property.static">
+                <symbol type="static-property" name-selector="property.name" />
+                <starts-with>
+                    <expression>\b(public|private|protected|var)\s+(static)</expression>
+                    <capture number="1" name="php.keyword.modifier" />
+                    <capture number="2" name="php.keyword.modifier" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="type-expressions" optional="true" repeat="true" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="php.definition.property.identifier">
+                        <expression>(\$)([a-zA-Z_][a-zA-Z0-9_]*)</expression>
+                        <capture number="1" name="php.definition.property.identifier.prefix" />
+                        <capture number="2" name="php.definition.property.identifier.name" />
+                    </scope>
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="php.definition.property.value">
+                        <starts-with>
+                            <expression>=</expression>
+                            <capture number="0" name="php.definition.property.operator.equals" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>;</expression>
+                            <capture number="0" name="php.definition.property.semicolon" />
+                        </ends-with>
+                        <subscopes>
+                            <include syntax="self" collection="comments" />
+                            <include syntax="self" collection="values" />
+                            <include syntax="self" collection="identifiers" />
+                            <include syntax="self" collection="syntax" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+            
+            <scope name="php.definition.property">
+                <symbol type="property" name-selector="property.name" />
+                <starts-with>
+                    <expression>\b(?:(public|private|protected)|(var))\b</expression>
+                    <capture number="1" name="php.keyword.modifier" />
+                    <capture number="2" name="php.keyword" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="type-expressions" optional="true" repeat="true" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="php.definition.property.identifier">
+                        <expression>(\$)([a-zA-Z_][a-zA-Z0-9_]*)</expression>
+                        <capture number="1" name="php.definition.property.identifier.prefix" />
+                        <capture number="2" name="php.definition.property.identifier.name" />
+                    </scope>
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="php.definition.property.value">
+                        <starts-with>
+                            <expression>=</expression>
+                            <capture number="0" name="php.definition.property.operator.equals" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>;</expression>
+                            <capture number="0" name="php.definition.property.semicolon" />
+                        </ends-with>
+                        <subscopes>
+                            <include syntax="self" collection="comments" />
+                            <include syntax="self" collection="values" />
+                            <include syntax="self" collection="identifiers" />
+                            <include syntax="self" collection="syntax" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Arguments -->
+        <collection name="arguments">
+            <scope name="php.arguments">
+                <starts-with>
+                    <expression>\(</expression>
+                    <capture number="0" name="php.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\)</expression>
+                    <capture number="0" name="php.bracket" />
+                </ends-with>
+                <subscopes>
+                    <cut-off>
+                        <expression>(?=\b(?:function|interface|namespace|static|public|private|protected|if|else|while|for)\b)</expression>
+                    </cut-off>
+                    
+                    <include syntax="self" collection="comments" />
+                    
+                    <scope name="php.argument-expression.typed">
+                        <starts-with>
+                            <expression>(?=(?&lt;!\$)(\b|\??)([a-zA-Z_\\][a-zA-Z0-9_\\]*)\b)</expression>
+                        </starts-with>
+                        <ends-with>
+                            <expression>(?=,|\)|\{)</expression>
+                        </ends-with>
+                        <subscopes anchored="true">
+                            <include syntax="self" collection="type-expressions" repeat="true" />
+                            <scope name="php.argument">
+                                <symbol type="argument" />
+                                <expression>(\.\.\.)?((\$)[a-zA-Z_][A-Za-z0-9_]*)\b</expression>
+                                <capture number="1" name="php.operator.rest" />
+                                <capture number="2" name="php.identifier.argument.name" />
+                                <capture number="3" name="php.identifier.argument.prefix" />
+                            </scope>
+                            <scope name="php.operator.equals">
+                                <expression>=</expression>
+                            </scope>
+                            <include syntax="self" collection="expressions" repeat="true" />
+                        </subscopes>
+                    </scope>
+                    
+                    <scope name="php.argument-expression.untyped">
+                        <starts-with>
+                            <expression>(?=(\.\.\.|\$))</expression>
+                        </starts-with>
+                        <ends-with>
+                            <expression>(?=,|\)|\{)</expression>
+                        </ends-with>
+                        <subscopes anchored="true">
+                            <scope name="php.argument">
+                                <symbol type="argument" />
+                                <expression>(\.\.\.)?((\$)[a-zA-Z_][A-Za-z0-9_]*)\b</expression>
+                                <capture number="1" name="php.operator.rest" />
+                                <capture number="2" name="php.identifier.argument.name" />
+                                <capture number="3" name="php.identifier.argument.prefix" />
+                            </scope>
+                            <scope name="php.operator.equals">
+                                <expression>=</expression>
+                            </scope>
+                            <include syntax="self" collection="expressions" repeat="true" />
+                        </subscopes>
+                    </scope>
+                    
+                    <scope name="php.separator">
+                        <expression>,</expression>
+                    </scope>
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Class Traits -->
+        <collection name="class-traits">
+            <scope name="php.class-traits">
+                <starts-with>
+                    <expression>\b(use)\b</expression>
+                    <capture number="1" name="php.keyword.condition" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <scope name="php.class-traits.type" repeat="true">
+                        <expression>([a-zA-Z_\\][a-zA-Z0-9_\\]*)(,)?</expression>
+                        <capture number="1" name="php.class-traits.type.identifier.name" />
+                        <capture number="2" name="php.separator" />
+                    </scope>
+                    <scope name="php.class-traits.conflict-resolution.block" optional="true">
+                        <symbol type="block">
+                            <context behavior="subtree" />
+                        </symbol>
+                        <starts-with>
+                            <expression>\{</expression>
+                            <capture number="0" name="php.bracket" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>\}</expression>
+                            <capture number="0" name="php.bracket" />
+                        </ends-with>
+                        <subscopes>
+                            <include syntax="self" collection="comments" />
+                            <scope name="php.class-traits.insteadof">
+                                <starts-with>
+                                    <expression>([a-zA-Z_][a-zA-Z0-9_]*)(::)([a-zA-Z_][a-zA-Z0-9_]*)(?=\s+insteadof)</expression>
+                                    <capture number="1" name="php.insteadof.type.identifier.name" />
+                                    <capture number="2" name="php.insteadof.operator.static" />
+                                    <capture number="3" name="php.insteadof.method.identifier.name" />
+                                </starts-with>
+                                <ends-with>
+                                    <expression>;</expression>
+                                    <capture number="0" name="php.semicolon" />
+                                </ends-with>
+                                <subscopes anchored="true">
+                                    <scope name="php.keyword.modifier">
+                                        <expression>\b(insteadof)\b</expression>
+                                    </scope>
+                                    <scope name="php.insteadof.type.identifier.name">
+                                        <expression>\b([a-zA-Z_][a-zA-Z0-9_]*)\b</expression>
+                                    </scope>
+                                </subscopes>
+                            </scope>
+                            <scope name="php.class-traits.as">
+                                <starts-with>
+                                    <expression>([a-zA-Z_][a-zA-Z0-9_]*)(::)([a-zA-Z_][a-zA-Z0-9_]*)</expression>
+                                    <capture number="1" name="php.as.type.identifier.name" />
+                                    <capture number="2" name="php.as.operator.static" />
+                                    <capture number="3" name="php.as.method.identifier.name" />
+                                </starts-with>
+                                <ends-with>
+                                    <expression>;</expression>
+                                    <capture number="0" name="php.semicolon" />
+                                </ends-with>
+                                <subscopes anchored="true">
+                                    <scope name="php.keyword.modifier">
+                                        <expression>\b(as)\b</expression>
+                                    </scope>
+                                    <scope name="php.as.keyword.visibility" optional="true">
+                                        <expression>\b(public|private|protected)\b</expression>
+                                    </scope>
+                                    <scope name="php.as.method.identifier.name" optional="true">
+                                        <expression>\b([a-zA-Z_][a-zA-Z0-9_]*)\b</expression>
+                                    </scope>
+                                </subscopes>
+                            </scope>
+                            <scope name="php.class-traits.as">
+                                <starts-with>
+                                    <expression>([a-zA-Z_][a-zA-Z0-9_]*)(::)([a-zA-Z_][a-zA-Z0-9_]*)</expression>
+                                    <capture number="1" name="php.as.type.identifier.name" />
+                                    <capture number="2" name="php.as.operator.static" />
+                                    <capture number="3" name="php.as.method.identifier.name" />
+                                </starts-with>
+                                <ends-with>
+                                    <expression>;</expression>
+                                    <capture number="0" name="php.semicolon" />
+                                </ends-with>
+                                <subscopes anchored="true">
+                                    <scope name="php.keyword.modifier">
+                                        <expression>\b(as)\b</expression>
+                                    </scope>
+                                    <scope name="php.as.method.identifier.name">
+                                        <expression>\b([a-zA-Z_][a-zA-Z0-9_]*)\b</expression>
+                                    </scope>
+                                </subscopes>
+                            </scope>
+                            <scope name="php.class-traits.as">
+                                <starts-with>
+                                    <expression>([a-zA-Z_][a-zA-Z0-9_]*)</expression>
+                                    <capture number="1" name="php.as.method.identifier.name" />
+                                </starts-with>
+                                <ends-with>
+                                    <expression>;</expression>
+                                    <capture number="0" name="php.semicolon" />
+                                </ends-with>
+                                <subscopes anchored="true">
+                                    <scope name="php.keyword.modifier">
+                                        <expression>\b(as)\b</expression>
+                                    </scope>
+                                    <scope name="php.as.keyword.modifier" optional="true">
+                                        <expression>\b(public|private|protected)\b</expression>
+                                    </scope>
+                                    <scope name="php.as.method.identifier.name" optional="true">
+                                        <expression>\b([a-zA-Z_][a-zA-Z0-9_]*)\b</expression>
+                                    </scope>
+                                </subscopes>
+                            </scope>
+                        </subscopes>
+                    </scope>
+                    <scope name="php.semicolon" optional="true">
+                        <expression>;</expression>
+                    </scope>
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Expressions -->
+        <collection name="expressions">
+            <include syntax="self" collection="comments" />
+            <include syntax="self" collection="keywords" />
+            <include syntax="self" collection="values" />
+            <include syntax="self" collection="identifiers" />
+            <scope name="php.group">
+                <starts-with>
+                    <expression>\(</expression>
+                    <capture number="0" name="php.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\)</expression>
+                    <capture number="0" name="php.bracket" />
+                </ends-with>
+                <subscopes>
+                    <include syntax="self" collection="expressions" />
+                </subscopes>
+            </scope>
+            <include syntax="self" collection="syntax" />
+        </collection>
+        
+        <!-- Keywords -->
+        <collection name="keywords">
+            <scope name="php.keyword.construct">
+                <strings>
+                    <string>array</string>
+                    <string>class</string>
+                    <string>const</string>
+                    <string>declare</string>
+                    <string>function</string>
+                    <string>global</string>
+                    <string>interface</string>
+                    <string>namespace</string>
+                    <string>new</string>
+                    <string>static</string>
+                    <string>trait</string>
+                    <string>var</string>
+                </strings>
+            </scope>
+            <scope name="php.keyword.modifier">
+                <strings>
+                    <string>abstract</string>
+                    <string>cfunction</string>
+                    <string>extends</string>
+                    <string>final</string>
+                    <string>implements</string>
+                    <string>insteadof</string>
+                    <string>private</string>
+                    <string>protected</string>
+                    <string>public</string>
+                    <string>instanceof</string>
+                </strings>
+            </scope>
+            <scope name="php.keyword.condition">
+                <strings>
+                    <string>case</string>
+                    <string>catch</string>
+                    <string>default</string>
+                    <string>do</string>
+                    <string>else</string>
+                    <string>elseif</string>
+                    <string>enddeclare</string>
+                    <string>endfor</string>
+                    <string>endforeach</string>
+                    <string>endif</string>
+                    <string>endswitch</string>
+                    <string>endwhile</string>
+                    <string>finally</string>
+                    <string>for</string>
+                    <string>foreach</string>
+                    <string>if</string>
+                    <string>switch</string>
+                    <string>try</string>
+                    <string>while</string>
+                </strings>
+            </scope>
+            <scope name="php.keyword.statement">
+                <strings>
+                    <string>break</string>
+                    <string>clone</string>
+                    <string>continue</string>
+                    <string>die</string>
+                    <string>echo</string>
+                    <string>eval</string>
+                    <string>exit</string>
+                    <string>goto</string>
+                    <string>include</string>
+                    <string>include_once</string>
+                    <string>print</string>
+                    <string>require</string>
+                    <string>require_once</string>
+                    <string>return</string>
+                    <string>throw</string>
+                    <string>unset</string>
+                    <string>use</string>
+                    <string>yield</string>
+                    <string>yield\sfrom</string>
+                </strings>
+            </scope>
+            <scope name="php.keyword.operator">
+                <strings>
+                    <string>AND</string>
+                    <string>OR</string>
+                    <string>XOR</string>
+                    <string>AS</string>
+                    <string>and</string>
+                    <string>or</string>
+                    <string>xor</string>
+                    <string>as</string>
+                </strings>
+            </scope>
+        </collection>
+        
+        <!-- Type Expressions -->
+        <collection name="type-expressions">
+            <include syntax="self" collection="types" />
+            
+            <scope name="php.operator.union">
+                <expression>\|</expression>
+            </scope>
+            <scope name="php.type.identifier.name">
+                <!--
+                    The false and null types are only allowed within union expressions.
+                    The static and void types are only allowed within return types.
+                -->
+                <strings>
+                    <string>false</string>
+                    <string>null</string>
+                    <string>static</string>
+                    <string>void</string>
+                </strings>
+            </scope>
+        </collection>
+        
+        <!-- Types -->
+        <collection name="types">
+            <scope name="php.type.identifier.name">
+                <strings prefix="(?:\??)">
+                    <string>bool</string>
+                    <string>int</string>
+                    <string>float</string>
+                    <string>string</string>
+                    <string>array</string>
+                    <string>object</string>
+                    <string>iterable</string>
+                    <string>callable</string>
+                    <string>mixed</string>
+                </strings>
+            </scope>
+            
+            <scope name="php.type.identifier.name">
+                <expression>(\b|\??)([a-zA-Z_\\][a-zA-Z0-9_\\]*)\b</expression>
+            </scope>
+        </collection>
+        
+        <!-- Strings -->
+        <collection name="strings">
+            <!-- Nowdoc -->
+            <scope name="php.string.nowdoc">
+                <starts-with>
+                    <expression>(&lt;&lt;&lt;)&apos;([a-zA-Z0-9_]+)&apos;</expression>
+                    <capture number="1" name="php.string.nowdoc.delimiter" />
+                    <capture number="2" name="php.string.nowdoc.identifier" />
+                </starts-with>
+                <ends-with>
+                    <template>^\s*($2)(;)?</template>
+                    <capture number="1" name="php.string.nowdoc.identifier" />
+                    <capture number="2" name="php.string.nowdoc.delimiter" />
+                </ends-with>
+                <subscopes />
+            </scope>
+            
+            <!-- Heredoc -->
+            <scope name="php.string.heredoc">
+                <starts-with>
+                    <expression>(&lt;&lt;&lt;)([a-zA-Z0-9_\x7f-\xff]+)</expression>
+                    <capture number="1" name="php.string.heredoc.delimiter" />
+                    <capture number="2" name="php.string.heredoc.identifier" />
+                </starts-with>
+                <ends-with>
+                    <template>^\s*($2)(;)?</template>
+                    <capture number="1" name="php.string.heredoc.identifier" />
+                    <capture number="2" name="php.string.heredoc.delimiter" />
+                </ends-with>
+                <subscopes>
+                    <include syntax="self" collection="escape-sequences" />
+                    <include syntax="self" collection="curl" />
+                    <include syntax="self" collection="sql" />
+                    <include syntax="self" collection="variable-substitutions" />
+                </subscopes>
+            </scope>
+            
+            <!-- Double-quoted -->
+            <scope name="php.string.double-quoted">
+                <starts-with>
+                    <expression>&quot;</expression>
+                    <capture number="0" name="php.string.double-quoted.delimiter" />
+                </starts-with>
+                <ends-with>
+                    <expression>&quot;|(?:(?&lt;!\\)&quot;)</expression>
+                    <capture number="0" name="php.string.double-quoted.delimiter" />
+                </ends-with>
+                <subscopes>
+                    <include syntax="self" collection="escape-sequences" />
+                    <include syntax="self" collection="curl" />
+                    <include syntax="self" collection="sql" />
+                    <include syntax="self" collection="variable-substitutions" />
+                </subscopes>
+            </scope>
+            
+            <!-- Single-quoted -->
+            <scope name="php.string.single-quoted">
+                <starts-with>
+                    <expression>&apos;</expression>
+                    <capture number="0" name="php.string.single-quoted.delimiter" />
+                </starts-with>
+                <ends-with>
+                    <expression>&apos;|(?:(?&lt;!\\)&apos;)</expression>
+                    <capture number="0" name="php.string.single-quoted.delimiter" />
+                </ends-with>
+                <subscopes>
+                    <include syntax="self" collection="escape-sequences" />
+                    <include syntax="self" collection="curl" />
+                    <include syntax="self" collection="sql" />
+                </subscopes>
+            </scope>
+            
+            <!-- Backtick-quoted -->
+            <scope name="php.string.backtick-quoted">
+                <starts-with>
+                    <expression>`</expression>
+                    <capture number="0" name="php.string.backtick.delimiter" />
+                </starts-with>
+                <ends-with>
+                    <expression>`|(?:(?&lt;!\\)`)</expression>
+                    <capture number="0" name="php.string.backtick.delimiter" />
+                </ends-with>
+                <subscopes>
+                    <scope name="php.string.backtick.escape">
+                        <expression>\\(?:\\|&apos;|&quot;|`|n|r|t|b|f)</expression>
+                    </scope>
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Escape Sequences -->
+        <collection name="escape-sequences">
+            <scope name="php.string.escape">
+                <expression>\\(?:\\|\$|&apos;|&quot;|n|r|t|b|f)</expression>
+            </scope>
+        </collection>
+        
+        <!-- Variable Substitutions -->
+        <collection name="variable-substitutions">
+            <scope name="php.string-template.variable-substitution">
+                <expression>(?:((\$)this\b)|((\$)[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*))</expression>
+                <capture number="1" name="php.keyword.self" />
+                <capture number="2" name="php.keyword.self.prefix" />
+                <capture number="3" name="php.identifier.variable.name" />
+                <capture number="4" name="php.identifier.variable.prefix" />
+            </scope>
+            
+            <scope name="php.complex-variable-substitution">
+                <starts-with>
+                    <expression>\{(?=\$)</expression>
+                    <capture number="0" name="php.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\}</expression>
+                    <capture number="0" name="php.bracket" />
+                </ends-with>
+                <subscopes>
+                    <include syntax="self" collection="values" />
+                    <include syntax="self" collection="identifiers" />
+                    <include syntax="self" collection="syntax" />
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Values -->
+        <collection name="values">
+            <include syntax="self" collection="strings" />
+            
+            <scope name="php.value.null">
+                <strings>
+                    <string>null</string>
+                    <string>NULL</string>
+                </strings>
+            </scope>
+            
+            <scope name="php.value.boolean">
+                <strings>
+                    <string>true</string>
+                    <string>false</string>
+                    <string>TRUE</string>
+                    <string>FALSE</string>
+                </strings>
+            </scope>
+            
+            <scope name="php.value.number.binary">
+                <expression>\b(0[bB])([01]+(_[01]+)*)\b</expression>
+                <capture number="1" name="php.value.number.binary.prefix" />
+            </scope>
+            <scope name="php.value.number.octal">
+                <expression>\b(0[oO]?)([0-7]+(_[0-7]+)*)\b</expression>
+                <capture number="1" name="php.value.number.octal.prefix" />
+            </scope>
+            <scope name="php.value.number.hexadecimal">
+                <expression>\b(0[xX])([0-9a-fA-F]+(_[0-9a-fA-F]+)*)\b</expression>
+                <capture number="1" name="php.value.number.hexadecimal.prefix" />
+            </scope>
+            <scope name="php.value.number.decimal">
+                <expression>
+                    (-)? # sign
+                    (
+                        \b(\d+_)*\d+(\.\d*)? # 0, 0., 0.0, 000_000
+                        | \.\d+ # .0
+                    )
+                    \b
+                </expression>
+                <capture number="1" name="php.operator" />
+            </scope>
+            
+            <scope name="php.value.array">
+                <symbol type="expression">
+                    <context behavior="subtree" />
+                </symbol>
+                <starts-with>
+                    <expression>\[</expression>
+                    <capture number="0" name="php.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\]</expression>
+                    <capture number="0" name="php.bracket" />
+                </ends-with>
+                <subscopes>
+                    <include syntax="self" collection="comments" />
+                    <include syntax="self" collection="values" />
+                    <include syntax="self" collection="identifiers" />
+                    <include syntax="self" collection="blocks" />
+                    <include syntax="self" collection="syntax" />
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Identifiers -->
+        <collection name="identifiers">
+            <scope name="php.identifier.variable">
+                <strings word-boundary="false" prefix="(\$)" suffix="\b">
+                    <string>_COOKIE</string>
+                    <string>_ENV</string>
+                    <string>_FILES</string>
+                    <string>_GET</string>
+                    <string>_POST</string>
+                    <string>_REQUEST</string>
+                    <string>_SERVER</string>
+                    <string>_SESSION</string>
+                    <string>argc</string>
+                    <string>argv</string>
+                    <string>GLOBALS</string>
+                    <string>HTTP_RAW_POST_DATA</string>
+                    <string>http_response_header</string>
+                    <string>php_errormsg</string>
+                </strings>
+                <capture number="1" name="php.identifier.variable.prefix" />
+            </scope>
+            
+            <scope name="php.identifier.constant">
+                <strings>
+                    <string>__CLASS__</string>
+                    <string>__DIR__</string>
+                    <string>__FILE__</string>
+                    <string>__LINE__</string>
+                    <string>__FUNCTION__</string>
+                    <string>__METHOD__</string>
+                    <string>__NAMESPACE__</string>
+                    <string>__TRAIT__</string>
+                    <string>E_ALL</string>
+                    <string>E_COMPILE_ERROR</string>
+                    <string>E_COMPILE_WARNING</string>
+                    <string>E_CORE_ERROR</string>
+                    <string>E_CORE_WARNING</string>
+                    <string>E_DEPRECATED</string>
+                    <string>E_ERROR</string>
+                    <string>E_NOTICE</string>
+                    <string>E_PARSE</string>
+                    <string>E_RECOVERABLE_ERROR</string>
+                    <string>E_STRICT</string>
+                    <string>E_USER_DEPRECATED</string>
+                    <string>E_USER_ERROR</string>
+                    <string>E_USER_NOTICE</string>
+                    <string>E_USER_WARNING</string>
+                    <string>E_WARNING</string>
+                </strings>
+            </scope>
+            
+            <scope name="php.identifier.variable">
+                <symbol type="variable" scope="local" />
+                <expression>(?:((\$)this\b)|((\$)[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*))</expression>
+                <capture number="1" name="php.keyword.self" />
+                <capture number="2" name="php.keyword.self.prefix" />
+                <capture number="3" name="php.identifier.variable.name" />
+                <capture number="4" name="php.identifier.variable.prefix" />
+            </scope>
+            
+            <scope name="php.identifier.method.static">
+                <expression>\b(?&lt;=::)([a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)\s*(?=\()</expression>
+            </scope>
+            <scope name="php.identifier.property">
+                <expression>\b(?&lt;=-&gt;)([a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)\s*(?!\()\b</expression>
+            </scope>
+            <scope name="php.identifier.method">
+                <expression>\b(?&lt;=-&gt;)([a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)\s*(?=\()</expression>
+            </scope>
+            <scope name="php.identifier.function">
+                <expression>(?&lt;!-&gt;)@*([a-zA-Z_\x7f-\xff][a-zA-Z0-9_\\\x7f-\xff]*)\s*(?=\()</expression>
+            </scope>
+            <scope name="php.identifier">
+                <expression>\b[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*\b</expression>
+            </scope>
+        </collection>
+        
+        <!-- cURL -->
+        <collection name="curl">
+            <scope name="php.curl.string-keyword">
+                <strings>
+                    <string>CURLOPT_ABSTRACT_UNIX_SOCKET</string>
+                    <string>CURLOPT_ACCEPT_ENCODING</string>
+                    <string>CURLOPT_ACCEPTTIMEOUT_MS</string>
+                    <string>CURLOPT_ADDRESS_SCOPE</string>
+                    <string>CURLOPT_ALTSVC</string>
+                    <string>CURLOPT_ALTSVC_CTRL</string>
+                    <string>CURLOPT_APPEND</string>
+                    <string>CURLOPT_AUTOREFERER</string>
+                    <string>CURLOPT_AWS_SIGV4</string>
+                    <string>CURLOPT_BUFFERSIZE</string>
+                    <string>CURLOPT_CAINFO</string>
+                    <string>CURLOPT_CAINFO_BLOB</string>
+                    <string>CURLOPT_CAPATH</string>
+                    <string>CURLOPT_CERTINFO</string>
+                    <string>CURLOPT_CHUNK_BGN_FUNCTION</string>
+                    <string>CURLOPT_CHUNK_DATA</string>
+                    <string>CURLOPT_CHUNK_END_FUNCTION</string>
+                    <string>CURLOPT_CLOSESOCKETDATA</string>
+                    <string>CURLOPT_CLOSESOCKETFUNCTION</string>
+                    <string>CURLOPT_CONNECT_ONLY</string>
+                    <string>CURLOPT_CONNECT_TO</string>
+                    <string>CURLOPT_CONNECTTIMEOUT</string>
+                    <string>CURLOPT_CONNECTTIMEOUT_MS</string>
+                    <string>CURLOPT_CONV_FROM_NETWORK_FUNCTION</string>
+                    <string>CURLOPT_CONV_FROM_UTF8_FUNCTION</string>
+                    <string>CURLOPT_CONV_TO_NETWORK_FUNCTION</string>
+                    <string>CURLOPT_COOKIE</string>
+                    <string>CURLOPT_COOKIEFILE</string>
+                    <string>CURLOPT_COOKIEJAR</string>
+                    <string>CURLOPT_COOKIELIST</string>
+                    <string>CURLOPT_COOKIESESSION</string>
+                    <string>CURLOPT_COPYPOSTFIELDS</string>
+                    <string>CURLOPT_CRLF</string>
+                    <string>CURLOPT_CRLFILE</string>
+                    <string>CURLOPT_CURLU</string>
+                    <string>CURLOPT_CUSTOMREQUEST</string>
+                    <string>CURLOPT_DEBUGDATA</string>
+                    <string>CURLOPT_DEBUGFUNCTION</string>
+                    <string>CURLOPT_DEFAULT_PROTOCOL</string>
+                    <string>CURLOPT_DIRLISTONLY</string>
+                    <string>CURLOPT_DISALLOW_USERNAME_IN_URL</string>
+                    <string>CURLOPT_DNS_CACHE_TIMEOUT</string>
+                    <string>CURLOPT_DNS_INTERFACE</string>
+                    <string>CURLOPT_DNS_LOCAL_IP4</string>
+                    <string>CURLOPT_DNS_LOCAL_IP6</string>
+                    <string>CURLOPT_DNS_SERVERS</string>
+                    <string>CURLOPT_DNS_SHUFFLE_ADDRESSES</string>
+                    <string>CURLOPT_DNS_USE_GLOBAL_CACHE</string>
+                    <string>CURLOPT_DOH_SSL_VERIFYHOST</string>
+                    <string>CURLOPT_DOH_SSL_VERIFYPEER</string>
+                    <string>CURLOPT_DOH_SSL_VERIFYSTATUS</string>
+                    <string>CURLOPT_DOH_URL</string>
+                    <string>CURLOPT_EGDSOCKET</string>
+                    <string>CURLOPT_ERRORBUFFER</string>
+                    <string>CURLOPT_EXPECT_100_TIMEOUT_MS</string>
+                    <string>CURLOPT_FAILONERROR</string>
+                    <string>CURLOPT_FILETIME</string>
+                    <string>CURLOPT_FNMATCH_DATA</string>
+                    <string>CURLOPT_FNMATCH_FUNCTION</string>
+                    <string>CURLOPT_FOLLOWLOCATION</string>
+                    <string>CURLOPT_FORBID_REUSE</string>
+                    <string>CURLOPT_FRESH_CONNECT</string>
+                    <string>CURLOPT_FTP_ACCOUNT</string>
+                    <string>CURLOPT_FTP_ALTERNATIVE_TO_USER</string>
+                    <string>CURLOPT_FTP_CREATE_MISSING_DIRS</string>
+                    <string>CURLOPT_FTP_FILEMETHOD</string>
+                    <string>CURLOPT_FTP_RESPONSE_TIMEOUT</string>
+                    <string>CURLOPT_FTP_SKIP_PASV_IP</string>
+                    <string>CURLOPT_FTP_SSL_CCC</string>
+                    <string>CURLOPT_FTP_USE_EPRT</string>
+                    <string>CURLOPT_FTP_USE_EPSV</string>
+                    <string>CURLOPT_FTP_USE_PRET</string>
+                    <string>CURLOPT_FTPPORT</string>
+                    <string>CURLOPT_FTPSSLAUTH</string>
+                    <string>CURLOPT_GSSAPI_DELEGATION</string>
+                    <string>CURLOPT_HAPPY_EYEBALLS_TIMEOUT_MS</string>
+                    <string>CURLOPT_HAPROXYPROTOCOL</string>
+                    <string>CURLOPT_HEADER</string>
+                    <string>CURLOPT_HEADERDATA</string>
+                    <string>CURLOPT_HEADERFUNCTION</string>
+                    <string>CURLOPT_HEADEROPT</string>
+                    <string>CURLOPT_HSTS</string>
+                    <string>CURLOPT_HSTS_CTRL</string>
+                    <string>CURLOPT_HSTSREADDATA</string>
+                    <string>CURLOPT_HSTSREADFUNCTION</string>
+                    <string>CURLOPT_HSTSWRITEDATA</string>
+                    <string>CURLOPT_HSTSWRITEFUNCTION</string>
+                    <string>CURLOPT_HTTP_CONTENT_DECODING</string>
+                    <string>CURLOPT_HTTP_TRANSFER_DECODING</string>
+                    <string>CURLOPT_HTTP_VERSION</string>
+                    <string>CURLOPT_HTTP09_ALLOWED</string>
+                    <string>CURLOPT_HTTP200ALIASES</string>
+                    <string>CURLOPT_HTTPAUTH</string>
+                    <string>CURLOPT_HTTPGET</string>
+                    <string>CURLOPT_HTTPHEADER</string>
+                    <string>CURLOPT_HTTPPOST</string>
+                    <string>CURLOPT_HTTPPROXYTUNNEL</string>
+                    <string>CURLOPT_IGNORE_CONTENT_LENGTH</string>
+                    <string>CURLOPT_INFILESIZE</string>
+                    <string>CURLOPT_INFILESIZE_LARGE</string>
+                    <string>CURLOPT_INTERFACE</string>
+                    <string>CURLOPT_INTERLEAVEDATA</string>
+                    <string>CURLOPT_INTERLEAVEFUNCTION</string>
+                    <string>CURLOPT_IOCTLDATA</string>
+                    <string>CURLOPT_IOCTLFUNCTION</string>
+                    <string>CURLOPT_IPRESOLVE</string>
+                    <string>CURLOPT_ISSUERCERT</string>
+                    <string>CURLOPT_ISSUERCERT_BLOB</string>
+                    <string>CURLOPT_KEEP_SENDING_ON_ERROR</string>
+                    <string>CURLOPT_KEYPASSWD</string>
+                    <string>CURLOPT_KRBLEVEL</string>
+                    <string>CURLOPT_LOCALPORT</string>
+                    <string>CURLOPT_LOCALPORTRANGE</string>
+                    <string>CURLOPT_LOGIN_OPTIONS</string>
+                    <string>CURLOPT_LOW_SPEED_LIMIT</string>
+                    <string>CURLOPT_LOW_SPEED_TIME</string>
+                    <string>CURLOPT_MAIL_AUTH</string>
+                    <string>CURLOPT_MAIL_FROM</string>
+                    <string>CURLOPT_MAIL_RCPT</string>
+                    <string>CURLOPT_MAIL_RCPT_ALLLOWFAILS</string>
+                    <string>CURLOPT_MAX_RECV_SPEED_LARGE</string>
+                    <string>CURLOPT_MAX_SEND_SPEED_LARGE</string>
+                    <string>CURLOPT_MAXAGE_CONN</string>
+                    <string>CURLOPT_MAXCONNECTS</string>
+                    <string>CURLOPT_MAXFILESIZE</string>
+                    <string>CURLOPT_MAXFILESIZE_LARGE</string>
+                    <string>CURLOPT_MAXREDIRS</string>
+                    <string>CURLOPT_MIMEPOST</string>
+                    <string>CURLOPT_NETRC</string>
+                    <string>CURLOPT_NETRC_FILE</string>
+                    <string>CURLOPT_NEW_DIRECTORY_PERMS</string>
+                    <string>CURLOPT_NEW_FILE_PERMS</string>
+                    <string>CURLOPT_NOBODY</string>
+                    <string>CURLOPT_NOPROGRESS</string>
+                    <string>CURLOPT_NOPROXY</string>
+                    <string>CURLOPT_NOSIGNAL</string>
+                    <string>CURLOPT_OPENSOCKETDATA</string>
+                    <string>CURLOPT_OPENSOCKETFUNCTION</string>
+                    <string>CURLOPT_PASSWORD</string>
+                    <string>CURLOPT_PATH_AS_IS</string>
+                    <string>CURLOPT_PINNEDPUBLICKEY</string>
+                    <string>CURLOPT_PIPEWAIT</string>
+                    <string>CURLOPT_PORT</string>
+                    <string>CURLOPT_POST</string>
+                    <string>CURLOPT_POSTFIELDS</string>
+                    <string>CURLOPT_POSTFIELDSIZE</string>
+                    <string>CURLOPT_POSTFIELDSIZE_LARGE</string>
+                    <string>CURLOPT_POSTQUOTE</string>
+                    <string>CURLOPT_POSTREDIR</string>
+                    <string>CURLOPT_PRE_PROXY</string>
+                    <string>CURLOPT_PREQUOTE</string>
+                    <string>CURLOPT_PRIVATE</string>
+                    <string>CURLOPT_PROGRESSDATA</string>
+                    <string>CURLOPT_PROGRESSFUNCTION</string>
+                    <string>CURLOPT_PROTOCOLS</string>
+                    <string>CURLOPT_PROXY</string>
+                    <string>CURLOPT_PROXY_CAINFO</string>
+                    <string>CURLOPT_PROXY_CAINFO_BLOB</string>
+                    <string>CURLOPT_PROXY_CAPATH</string>
+                    <string>CURLOPT_PROXY_CRLFILE</string>
+                    <string>CURLOPT_PROXY_ISSUERCERT</string>
+                    <string>CURLOPT_PROXY_ISSUERCERT_BLOB</string>
+                    <string>CURLOPT_PROXY_KEYPASSWD</string>
+                    <string>CURLOPT_PROXY_PINNEDPUBLICKEY</string>
+                    <string>CURLOPT_PROXY_SERVICE_NAME</string>
+                    <string>CURLOPT_PROXY_SSL_CIPHER_LIST</string>
+                    <string>CURLOPT_PROXY_SSL_OPTIONS</string>
+                    <string>CURLOPT_PROXY_SSL_VERIFYHOST</string>
+                    <string>CURLOPT_PROXY_SSL_VERIFYPEER</string>
+                    <string>CURLOPT_PROXY_SSLCERT</string>
+                    <string>CURLOPT_PROXY_SSLCERT_BLOB</string>
+                    <string>CURLOPT_PROXY_SSLCERTTYPE</string>
+                    <string>CURLOPT_PROXY_SSLKEY</string>
+                    <string>CURLOPT_PROXY_SSLKEY_BLOB</string>
+                    <string>CURLOPT_PROXY_SSLKEYTYPE</string>
+                    <string>CURLOPT_PROXY_SSLVERSION</string>
+                    <string>CURLOPT_PROXY_TLS13_CIPHERS</string>
+                    <string>CURLOPT_PROXY_TLSAUTH_PASSWORD</string>
+                    <string>CURLOPT_PROXY_TLSAUTH_TYPE</string>
+                    <string>CURLOPT_PROXY_TLSAUTH_USERNAME</string>
+                    <string>CURLOPT_PROXY_TRANSFER_MODE</string>
+                    <string>CURLOPT_PROXYAUTH</string>
+                    <string>CURLOPT_PROXYHEADER</string>
+                    <string>CURLOPT_PROXYPASSWORD</string>
+                    <string>CURLOPT_PROXYPORT</string>
+                    <string>CURLOPT_PROXYTYPE</string>
+                    <string>CURLOPT_PROXYUSERNAME</string>
+                    <string>CURLOPT_PROXYUSERPWD</string>
+                    <string>CURLOPT_PUT</string>
+                    <string>CURLOPT_QUOTE</string>
+                    <string>CURLOPT_RANDOM_FILE</string>
+                    <string>CURLOPT_RANGE</string>
+                    <string>CURLOPT_READDATA</string>
+                    <string>CURLOPT_READFUNCTION</string>
+                    <string>CURLOPT_REDIR_PROTOCOLS</string>
+                    <string>CURLOPT_REFERER</string>
+                    <string>CURLOPT_REQUEST_TARGET</string>
+                    <string>CURLOPT_RESOLVE</string>
+                    <string>CURLOPT_RESOLVER_START_DATA</string>
+                    <string>CURLOPT_RESOLVER_START_FUNCTION</string>
+                    <string>CURLOPT_RESUME_FROM</string>
+                    <string>CURLOPT_RESUME_FROM_LARGE</string>
+                    <string>CURLOPT_RETURNTRANSFER</string>
+                    <string>CURLOPT_RTSP_CLIENT_CSEQ</string>
+                    <string>CURLOPT_RTSP_REQUEST</string>
+                    <string>CURLOPT_RTSP_SERVER_CSEQ</string>
+                    <string>CURLOPT_RTSP_SESSION_ID</string>
+                    <string>CURLOPT_RTSP_STREAM_URI</string>
+                    <string>CURLOPT_RTSP_TRANSPORT</string>
+                    <string>CURLOPT_SASL_AUTHZID</string>
+                    <string>CURLOPT_SASL_IR</string>
+                    <string>CURLOPT_SEEKDATA</string>
+                    <string>CURLOPT_SEEKFUNCTION</string>
+                    <string>CURLOPT_SERVICE_NAME</string>
+                    <string>CURLOPT_SHARE</string>
+                    <string>CURLOPT_SOCKOPTDATA</string>
+                    <string>CURLOPT_SOCKOPTFUNCTION</string>
+                    <string>CURLOPT_SOCKS5_AUTH</string>
+                    <string>CURLOPT_SOCKS5_GSSAPI_NEC</string>
+                    <string>CURLOPT_SOCKS5_GSSAPI_SERVICE</string>
+                    <string>CURLOPT_SSH_AUTH_TYPES</string>
+                    <string>CURLOPT_SSH_COMPRESSION</string>
+                    <string>CURLOPT_SSH_HOST_PUBLIC_KEY_MD5</string>
+                    <string>CURLOPT_SSH_KEYDATA</string>
+                    <string>CURLOPT_SSH_KEYFUNCTION</string>
+                    <string>CURLOPT_SSH_KNOWNHOSTS</string>
+                    <string>CURLOPT_SSH_PRIVATE_KEYFILE</string>
+                    <string>CURLOPT_SSH_PUBLIC_KEYFILE</string>
+                    <string>CURLOPT_SSL_CIPHER_LIST</string>
+                    <string>CURLOPT_SSL_CTX_DATA</string>
+                    <string>CURLOPT_SSL_CTX_FUNCTION</string>
+                    <string>CURLOPT_SSL_EC_CURVES</string>
+                    <string>CURLOPT_SSL_ENABLE_ALPN</string>
+                    <string>CURLOPT_SSL_ENABLE_NPN</string>
+                    <string>CURLOPT_SSL_FALSESTART</string>
+                    <string>CURLOPT_SSL_OPTIONS</string>
+                    <string>CURLOPT_SSL_SESSIONID_CACHE</string>
+                    <string>CURLOPT_SSL_VERIFYHOST</string>
+                    <string>CURLOPT_SSL_VERIFYPEER</string>
+                    <string>CURLOPT_SSL_VERIFYSTATUS</string>
+                    <string>CURLOPT_SSLCERT</string>
+                    <string>CURLOPT_SSLCERT_BLOB</string>
+                    <string>CURLOPT_SSLCERTTYPE</string>
+                    <string>CURLOPT_SSLENGINE</string>
+                    <string>CURLOPT_SSLENGINE_DEFAULT</string>
+                    <string>CURLOPT_SSLKEY</string>
+                    <string>CURLOPT_SSLKEY_BLOB</string>
+                    <string>CURLOPT_SSLKEYTYPE</string>
+                    <string>CURLOPT_SSLVERSION</string>
+                    <string>CURLOPT_STDERR</string>
+                    <string>CURLOPT_STREAM_DEPENDS</string>
+                    <string>CURLOPT_STREAM_DEPENDS_E</string>
+                    <string>CURLOPT_STREAM_WEIGHT</string>
+                    <string>CURLOPT_SUPPRESS_CONNECT_HEADERS</string>
+                    <string>CURLOPT_TCP_FASTOPEN</string>
+                    <string>CURLOPT_TCP_KEEPALIVE</string>
+                    <string>CURLOPT_TCP_KEEPIDLE</string>
+                    <string>CURLOPT_TCP_KEEPINTVL</string>
+                    <string>CURLOPT_TCP_NODELAY</string>
+                    <string>CURLOPT_TELNETOPTIONS</string>
+                    <string>CURLOPT_TFTP_BLKSIZE</string>
+                    <string>CURLOPT_TFTP_NO_OPTIONS</string>
+                    <string>CURLOPT_TIMECONDITION</string>
+                    <string>CURLOPT_TIMEOUT</string>
+                    <string>CURLOPT_TIMEOUT_MS</string>
+                    <string>CURLOPT_TIMEVALUE</string>
+                    <string>CURLOPT_TIMEVALUE_LARGE</string>
+                    <string>CURLOPT_TLS13_CIPHERS</string>
+                    <string>CURLOPT_TLSAUTH_PASSWORD</string>
+                    <string>CURLOPT_TLSAUTH_TYPE</string>
+                    <string>CURLOPT_TLSAUTH_USERNAME</string>
+                    <string>CURLOPT_TRAILERDATA</string>
+                    <string>CURLOPT_TRAILERFUNCTION</string>
+                    <string>CURLOPT_TRANSFER_ENCODING</string>
+                    <string>CURLOPT_TRANSFERTEXT</string>
+                    <string>CURLOPT_UNIX_SOCKET_PATH</string>
+                    <string>CURLOPT_UNRESTRICTED_AUTH</string>
+                    <string>CURLOPT_UPKEEP_INTERVAL_MS</string>
+                    <string>CURLOPT_UPLOAD</string>
+                    <string>CURLOPT_UPLOAD_BUFFERSIZE</string>
+                    <string>CURLOPT_URL</string>
+                    <string>CURLOPT_USE_SSL</string>
+                    <string>CURLOPT_USERAGENT</string>
+                    <string>CURLOPT_USERNAME</string>
+                    <string>CURLOPT_USERPWD</string>
+                    <string>CURLOPT_VERBOSE</string>
+                    <string>CURLOPT_WILDCARDMATCH</string>
+                    <string>CURLOPT_WRITEDATA</string>
+                    <string>CURLOPT_WRITEFUNCTION</string>
+                    <string>CURLOPT_XFERINFODATA</string>
+                    <string>CURLOPT_XFERINFOFUNCTION</string>
+                    <string>CURLOPT_XOAUTH2_BEARER</string>
+                </strings>
+            </scope>
+        </collection>
+        
+        <!-- SQL -->
+        <collection name="sql">
+            <scope name="php.sql.string-keyword">
+                <!-- SQL Keywords -->
+                <strings>
+                    <string>ABSOLUTE</string>
+                    <string>ACTION</string>
+                    <string>ADA</string>
+                    <string>ADD</string>
+                    <string>ALL</string>
+                    <string>ALLOCATE</string>
+                    <string>ALTER</string>
+                    <string>AND</string>
+                    <string>ANY</string>
+                    <string>ARE</string>
+                    <string>AS</string>
+                    <string>ASC</string>
+                    <string>ASSERTION</string>
+                    <string>AT</string>
+                    <string>AUTHORIZATION</string>
+                    <string>AVG</string>
+                    <string>BEGIN</string>
+                    <string>BETWEEN</string>
+                    <string>BIT</string>
+                    <string>BIT_LENGTH</string>
+                    <string>BOTH</string>
+                    <string>BTREE</string>
+                    <string>BY</string>
+                    <string>CASCADE</string>
+                    <string>CASCADED</string>
+                    <string>CASE</string>
+                    <string>CAST</string>
+                    <string>CATALOG</string>
+                    <string>CHAR</string>
+                    <string>CHARACTER</string>
+                    <string>CHARACTER_LENGTH</string>
+                    <string>CHAR_LENGTH</string>
+                    <string>CHARSET</string>
+                    <string>CHECK</string>
+                    <string>CLOSE</string>
+                    <string>COALESCE</string>
+                    <string>COLLATE</string>
+                    <string>COLLATION</string>
+                    <string>COLUMN</string>
+                    <string>COMMIT</string>
+                    <string>CONNECT</string>
+                    <string>CONNECTION</string>
+                    <string>CONSTRAINT</string>
+                    <string>CONSTRAINTS</string>
+                    <string>CONTINUE</string>
+                    <string>CONVERT</string>
+                    <string>CORRESPONDING</string>
+                    <string>COUNT</string>
+                    <string>CREATE</string>
+                    <string>CROSS</string>
+                    <string>CURRENT</string>
+                    <string>CURRENT_DATE</string>
+                    <string>CURRENT_TIME</string>
+                    <string>CURRENT_TIMESTAMP</string>
+                    <string>CURRENT_USER</string>
+                    <string>CURSOR</string>
+                    <string>DATE</string>
+                    <string>DATETIME</string>
+                    <string>DAY</string>
+                    <string>DEALLOCATE</string>
+                    <string>DEC</string>
+                    <string>DECIMAL</string>
+                    <string>DECLARE</string>
+                    <string>DEFAULT</string>
+                    <string>DEFERRABLE</string>
+                    <string>DEFERRED</string>
+                    <string>DELETE</string>
+                    <string>DESC</string>
+                    <string>DESCRIBE</string>
+                    <string>DESCRIPTOR</string>
+                    <string>DIAGNOSTICS</string>
+                    <string>DISCONNECT</string>
+                    <string>DISTINCT</string>
+                    <string>DOMAIN</string>
+                    <string>DOUBLE</string>
+                    <string>DROP</string>
+                    <string>ELSE</string>
+                    <string>END</string>
+                    <string>END-EXEC</string>
+                    <string>ENGINE</string>
+                    <string>ESCAPE</string>
+                    <string>EXCEPT</string>
+                    <string>EXCEPTION</string>
+                    <string>EXEC</string>
+                    <string>EXECUTE</string>
+                    <string>EXISTS</string>
+                    <string>EXTERNAL</string>
+                    <string>EXTRACT</string>
+                    <string>FETCH</string>
+                    <string>FIRST</string>
+                    <string>FLOAT</string>
+                    <string>FOR</string>
+                    <string>FOREIGN</string>
+                    <string>FORTRAN</string>
+                    <string>FOUND</string>
+                    <string>FROM</string>
+                    <string>FULL</string>
+                    <string>GET</string>
+                    <string>GLOBAL</string>
+                    <string>GO</string>
+                    <string>GOTO</string>
+                    <string>GRANT</string>
+                    <string>GROUP</string>
+                    <string>HAVING</string>
+                    <string>HOUR</string>
+                    <string>IDENTITY</string>
+                    <string>IF</string>
+                    <string>IMMEDIATE</string>
+                    <string>IN</string>
+                    <string>INCLUDE</string>
+                    <string>INDEX</string>
+                    <string>INDICATOR</string>
+                    <string>INITIALLY</string>
+                    <string>INNER</string>
+                    <string>INPUT</string>
+                    <string>INSENSITIVE</string>
+                    <string>INSERT</string>
+                    <string>INT</string>
+                    <string>INTEGER</string>
+                    <string>INTERSECT</string>
+                    <string>INTERVAL</string>
+                    <string>INTO</string>
+                    <string>IS</string>
+                    <string>ISOLATION</string>
+                    <string>JOIN</string>
+                    <string>KEY</string>
+                    <string>LANGUAGE</string>
+                    <string>LAST</string>
+                    <string>LEADING</string>
+                    <string>LEFT</string>
+                    <string>LEVEL</string>
+                    <string>LIKE</string>
+                    <string>LIMIT</string>
+                    <string>LOCAL</string>
+                    <string>LOCK</string>
+                    <string>LOWER</string>
+                    <string>MATCH</string>
+                    <string>MAX</string>
+                    <string>MIN</string>
+                    <string>MINUTE</string>
+                    <string>MODULE</string>
+                    <string>MONTH</string>
+                    <string>NAMES</string>
+                    <string>NATIONAL</string>
+                    <string>NATURAL</string>
+                    <string>NCHAR</string>
+                    <string>NEXT</string>
+                    <string>NO</string>
+                    <string>NONE</string>
+                    <string>NOT</string>
+                    <string>NULLIF</string>
+                    <string>NUMERIC</string>
+                    <string>OCTET_LENGTH</string>
+                    <string>OF</string>
+                    <string>ON</string>
+                    <string>ONLY</string>
+                    <string>OPEN</string>
+                    <string>OPTION</string>
+                    <string>OR</string>
+                    <string>ORDER</string>
+                    <string>OUTER</string>
+                    <string>OUTPUT</string>
+                    <string>OVERLAPS</string>
+                    <string>PAD</string>
+                    <string>PARTIAL</string>
+                    <string>PASCAL</string>
+                    <string>POSITION</string>
+                    <string>PRECISION</string>
+                    <string>PREPARE</string>
+                    <string>PRESERVE</string>
+                    <string>PRIMARY</string>
+                    <string>PRIOR</string>
+                    <string>PRIVILEGES</string>
+                    <string>PROCEDURE</string>
+                    <string>PUBLIC</string>
+                    <string>READ</string>
+                    <string>REAL</string>
+                    <string>REFERENCES</string>
+                    <string>RELATIVE</string>
+                    <string>RESTRICT</string>
+                    <string>REVOKE</string>
+                    <string>RIGHT</string>
+                    <string>ROLLBACK</string>
+                    <string>ROWS</string>
+                    <string>SCHEMA</string>
+                    <string>SCROLL</string>
+                    <string>SECOND</string>
+                    <string>SECTION</string>
+                    <string>SELECT</string>
+                    <string>SESSION</string>
+                    <string>SESSION_USER</string>
+                    <string>SET</string>
+                    <string>SIZE</string>
+                    <string>SMALLINT</string>
+                    <string>SOME</string>
+                    <string>SPACE</string>
+                    <string>SQL</string>
+                    <string>SQLCA</string>
+                    <string>SQLCODE</string>
+                    <string>SQLERROR</string>
+                    <string>SQLSTATE</string>
+                    <string>SQLWARNING</string>
+                    <string>SUBSTRING</string>
+                    <string>SUM</string>
+                    <string>SYSTEM_USER</string>
+                    <string>TABLE</string>
+                    <string>TABLES</string>
+                    <string>TEMPORARY</string>
+                    <string>THEN</string>
+                    <string>TIME</string>
+                    <string>TIMESTAMP</string>
+                    <string>TIMEZONE_HOUR</string>
+                    <string>TIMEZONE_MINUTE</string>
+                    <string>TO</string>
+                    <string>TRAILING</string>
+                    <string>TRANSACTION</string>
+                    <string>TRANSLATE</string>
+                    <string>TRANSLATION</string>
+                    <string>TRIM</string>
+                    <string>UNION</string>
+                    <string>UNIQUE</string>
+                    <string>UNKNOWN</string>
+                    <string>UNLOCK</string>
+                    <string>UPDATE</string>
+                    <string>UPPER</string>
+                    <string>USAGE</string>
+                    <string>USER</string>
+                    <string>USING</string>
+                    <string>VALUE</string>
+                    <string>VALUES</string>
+                    <string>VARCHAR</string>
+                    <string>VARYING</string>
+                    <string>VIEW</string>
+                    <string>WHEN</string>
+                    <string>WHENEVER</string>
+                    <string>WHERE</string>
+                    <string>WITH</string>
+                    <string>WORK</string>
+                    <string>WRITE</string>
+                    <string>YEAR</string>
+                    <string>ZONE</string>
+                </strings>
+            </scope>
+        </collection>
+        
+        <!-- Blocks -->
+        <collection name="blocks">
+            <scope name="php.block">
+                <symbol type="block">
+                    <context behavior="subtree" />
+                </symbol>
+                <starts-with>
+                    <expression>\{</expression>
+                    <capture number="0" name="php.block.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\}</expression>
+                    <capture number="0" name="php.block.bracket" />
+                </ends-with>
+                <subscopes>
+                    <cut-off>
+                        <expression>(?=\?&gt;)</expression>
+                    </cut-off>
+                    <include syntax="self" />
+                </subscopes>
+            </scope>
+            
+            <scope name="php.block.square">
+                <symbol type="block">
+                    <context behavior="subtree" />
+                </symbol>
+                <starts-with>
+                    <expression>\[</expression>
+                    <capture number="0" name="php.block.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\]</expression>
+                    <capture number="0" name="php.block.bracket" />
+                </ends-with>
+                <subscopes>
+                    <cut-off>
+                        <expression>(?=\?&gt;)</expression>
+                    </cut-off>
+                    <include syntax="self" />
+                </subscopes>
+            </scope>
+            
+            <scope name="php.block.parenthesis">
+                <symbol type="block">
+                    <context behavior="subtree" />
+                </symbol>
+                <starts-with>
+                    <expression>\(</expression>
+                    <capture number="0" name="php.block.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\)</expression>
+                    <capture number="0" name="php.block.bracket" />
+                </ends-with>
+                <subscopes>
+                    <cut-off>
+                        <expression>(?=\?&gt;)</expression>
+                    </cut-off>
+                    <include syntax="self" />
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Syntax -->
+        <collection name="syntax">
+            <scope name="php.bracket">
+                <expression>[\(\[\{\)\]\}]</expression>
+            </scope>
+            
+            <scope name="php.operator">
+                <expression>(
+                ::
+                |:
+                |\+\=
+                |\+\+
+                |\+
+                |-&gt;
+                |\-\=
+                |\-\-
+                |\-
+                |\*\=
+                |\*
+                |/\=
+                |/
+                |%\=
+                |%
+                |\=\=\=
+                |\=\=
+                |\=
+                |!\=\=
+                |!\=
+                |!
+                |\.=
+                |\.
+                |\&lt;\=\&gt;
+                |&lt;&gt;
+                |\&lt;\&lt;
+                |\&lt;\=
+                |\&lt;
+                |\&gt;\&gt;
+                |\&gt;=
+                |\&gt;
+                |&amp;&amp;
+                |&amp;
+                |\|\|
+                |\|
+                |\^
+                |\?\?
+                |\?
+                )</expression>
+            </scope>
+            
+            <scope name="php.delimiter">
+                <expression>,</expression>
+            </scope>
+            
+            <scope name="php.semicolon">
+                <expression>;</expression>
+            </scope>
+        </collection>
+    </collections>
+</syntax>

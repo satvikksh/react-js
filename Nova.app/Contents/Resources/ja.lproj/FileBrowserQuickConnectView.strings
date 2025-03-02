@@ -1,0 +1,90 @@
+
+/* Class = "NSButtonCell"; title = "Use Passive Mode"; ObjectID = "1GV-Wz-WSb"; */
+"1GV-Wz-WSb.title" = "パッシブモード";
+
+/* Class = "NSTextFieldCell"; title = "Address"; ObjectID = "9Hk-bB-CDc"; */
+"9Hk-bB-CDc.title" = "サーバアドレス";
+
+/* Class = "NSTextFieldCell"; title = "Port"; ObjectID = "Dao-yw-YRm"; */
+"Dao-yw-YRm.title" = "ポート";
+
+/* Class = "NSTextFieldCell"; placeholderString = "arn:aws:iam::123456789012:mfa/user"; ObjectID = "FTg-yt-0Zc"; */
+"FTg-yt-0Zc.placeholderString" = "入力例: arn:aws:iam::123456789012:mfa/user";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "Ggu-Qi-vl1"; */
+"Ggu-Qi-vl1.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; placeholderString = "(optional)"; ObjectID = "JIk-1l-NJj"; */
+"JIk-1l-NJj.placeholderString" = "（オプションです）";
+
+/* Class = "NSTextFieldCell"; title = "Protocol"; ObjectID = "Kli-lG-AE5"; */
+"Kli-lG-AE5.title" = "プロトコル";
+
+/* Class = "NSTextFieldCell"; placeholderString = "server.com"; ObjectID = "L6w-Jx-jhr"; */
+"L6w-Jx-jhr.placeholderString" = "入力例: server.com";
+
+/* Class = "NSTextFieldCell"; title = "External ID"; ObjectID = "LW8-fV-3O6"; */
+"LW8-fV-3O6.title" = "外部ID";
+
+/* Class = "NSTextFieldCell"; placeholderString = "optional"; ObjectID = "Mdp-Va-PN1"; */
+"Mdp-Va-PN1.placeholderString" = "オプションです";
+
+/* Class = "NSTextFieldCell"; title = "Username"; ObjectID = "Qgk-LZ-CZm"; */
+"Qgk-LZ-CZm.title" = "ユーザ名";
+
+/* Class = "NSButtonCell"; title = "Add to Servers"; ObjectID = "SAI-V9-KDE"; */
+"SAI-V9-KDE.title" = "サーバリストに追加";
+
+/* Class = "NSButtonCell"; title = "Connect"; ObjectID = "SU8-Bs-MmK"; */
+"SU8-Bs-MmK.title" = "接続";
+
+/* Class = "NSTextFieldCell"; title = "Key Name"; ObjectID = "TzQ-xL-buB"; */
+"TzQ-xL-buB.title" = "認証鍵名";
+
+/* Class = "NSMenuItem"; title = "Authenticate with Key:"; ObjectID = "WX0-gY-Hax"; */
+"WX0-gY-Hax.title" = "認証鍵方式:";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "XfW-Kg-lrp"; */
+"XfW-Kg-lrp.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; placeholderString = "sts.amazonaws.com"; ObjectID = "Z3T-nh-XM0"; */
+"Z3T-nh-XM0.placeholderString" = "入力例: sts.amazonaws.com";
+
+/* Class = "NSTextFieldCell"; title = "Remote Path"; ObjectID = "bMW-yd-tlb"; */
+"bMW-yd-tlb.title" = "リモートパス";
+
+/* Class = "NSTextFieldCell"; title = "Protocol"; ObjectID = "cMS-Mk-SaV"; */
+"cMS-Mk-SaV.title" = "プロトコル";
+
+/* Class = "NSImageView"; ibShadowedToolTip = "To change the server's picture, drag in a new one or click to choose one."; ObjectID = "eEa-mv-B8A"; */
+"eEa-mv-B8A.ibShadowedToolTip" = "サーバーピクチャを変更するには、クリックして選択するかここに直接ドラッグします。";
+
+/* Class = "NSTextFieldCell"; title = "Password"; ObjectID = "elv-Cj-1da"; */
+"elv-Cj-1da.title" = "パスワード";
+
+/* Class = "NSTextFieldCell"; placeholderString = "123ABC"; ObjectID = "ht9-dr-hJi"; */
+"ht9-dr-hJi.placeholderString" = "123ABC";
+
+/* Class = "NSTextFieldCell"; placeholderString = "arn:aws:iam::123456789012:role/demo"; ObjectID = "jAf-KF-ivH"; */
+"jAf-KF-ivH.placeholderString" = "入力例: arn:aws:iam::123456789012:role/demo";
+
+/* Class = "NSMenuItem"; title = "Authenticate with Password"; ObjectID = "nmx-aW-dB8"; */
+"nmx-aW-dB8.title" = "パスワード認証方式";
+
+/* Class = "NSTextFieldCell"; title = "STS Endpoint"; ObjectID = "sL3-JS-78T"; */
+"sL3-JS-78T.title" = "STSエンドポイント";
+
+/* Class = "NSTextFieldCell"; placeholderString = "me"; ObjectID = "sVw-Hc-FGT"; */
+"sVw-Hc-FGT.placeholderString" = "ユーザ名";
+
+/* Class = "NSTextFieldCell"; title = "Profile"; ObjectID = "ufm-5s-xsT"; */
+"ufm-5s-xsT.title" = "プロファイル";
+
+/* Class = "NSTextFieldCell"; title = "Role"; ObjectID = "v6T-ix-6nv"; */
+"v6T-ix-6nv.title" = "ロール";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "xDh-EB-tQf"; */
+"xDh-EB-tQf.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "MFA Device"; ObjectID = "yk5-Zf-yD9"; */
+"yk5-Zf-yD9.title" = "MFAデバイス";

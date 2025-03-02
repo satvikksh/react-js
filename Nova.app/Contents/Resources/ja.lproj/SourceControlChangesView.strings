@@ -1,0 +1,72 @@
+
+/* Class = "NSTextFieldCell"; title = "<<Count>>"; ObjectID = "1ZK-ve-AyK"; */
+"1ZK-ve-AyK.title" = "<<Count>>";
+
+/* Class = "NSTextFieldCell"; title = "<<StateTitle>>"; ObjectID = "2ra-L3-7JJ"; */
+"2ra-L3-7JJ.title" = "<<StateTitle>>";
+
+/* Class = "NSButtonCell"; title = "Stage"; ObjectID = "3f8-Ga-D8u"; */
+"3f8-Ga-D8u.title" = "ステージ";
+
+/* Class = "NSMenuItem"; title = "View as Tree"; ObjectID = "6GY-wy-rM5"; */
+"6GY-wy-rM5.title" = "ツリー表示";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Refresh status"; ObjectID = "DOo-LN-Bbu"; */
+"DOo-LN-Bbu.ibExternalAccessibilityDescription" = "再読み込み";
+
+/* Class = "NSTextView"; ibExternalAccessibilityDescription = "Commit message"; ObjectID = "Des-zS-GjC"; */
+"Des-zS-GjC.ibExternalAccessibilityDescription" = "コミットメッセージ";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Commit summaries (first line) are commonly recommended to be 50 characters or fewer."; ObjectID = "GoJ-A3-zew"; */
+"GoJ-A3-zew.ibShadowedToolTip" = "コミットのサマリー（1行目）は通常、50文字以下が推奨されます。";
+
+/* Class = "NSTextFieldCell"; title = "Changes"; ObjectID = "RkN-gA-Uwf"; */
+"RkN-gA-Uwf.title" = "変更";
+
+/* Class = "NSTextFieldCell"; title = "<<Count>>"; ObjectID = "SDU-bX-A7z"; */
+"SDU-bX-A7z.title" = "<<Count>>";
+
+/* Class = "NSMenuItem"; title = "Expand All"; ObjectID = "WlG-E5-VYS"; */
+"WlG-E5-VYS.title" = "すべてを展開";
+
+/* Class = "NSMenuItem"; title = "Show Ignored Items"; ObjectID = "Xr9-sN-Wpc"; */
+"Xr9-sN-Wpc.title" = "無視項目を表示";
+
+/* Class = "NSButtonCell"; title = "Amend"; ObjectID = "aDV-zV-hF7"; */
+"aDV-zV-hF7.title" = "修正";
+
+/* Class = "NSMenuItem"; title = "Collapse All"; ObjectID = "an4-4W-eua"; */
+"an4-4W-eua.title" = "すべて折りたたむ";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Replaces the latest commit with an updated one."; ObjectID = "dzL-Sl-iae"; */
+"dzL-Sl-iae.ibShadowedToolTip" = "最新のコミットを更新されたコミットに置き換えます。";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "gUF-xd-opo"; */
+"gUF-xd-opo.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "<<StateDescriptiveText>>"; ObjectID = "gYr-YF-2Ly"; */
+"gYr-YF-2Ly.title" = "<<StateDescriptiveText>>";
+
+/* Class = "NSButtonCell"; title = "Show only conflicts"; ObjectID = "if5-Fd-rNU"; */
+"if5-Fd-rNU.title" = "コンフリクトのみを表示";
+
+/* Class = "NSMenuItem"; title = "Reload Status"; ObjectID = "kqv-CX-eFF"; */
+"kqv-CX-eFF.title" = "ステータスを再読み込み";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "lsy-eA-DTs"; */
+"lsy-eA-DTs.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "<<Filename>>"; ObjectID = "m0O-Dh-u5F"; */
+"m0O-Dh-u5F.title" = "<<Filename>>";
+
+/* Class = "NSButtonCell"; title = "Abort"; ObjectID = "mO9-BT-Pin"; */
+"mO9-BT-Pin.title" = "中止";
+
+/* Class = "NSMenuItem"; title = "View as List"; ObjectID = "nz7-uQ-TVU"; */
+"nz7-uQ-TVU.title" = "リスト表示";
+
+/* Class = "NSButtonCell"; title = "Commit"; ObjectID = "tNn-Al-nyC"; */
+"tNn-Al-nyC.title" = "コミット";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Stage all changes in the working directory"; ObjectID = "w8o-oN-UQ5"; */
+"w8o-oN-UQ5.ibShadowedToolTip" = "作業ディレクトリの全ての変更をステージングします";

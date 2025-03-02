@@ -1,0 +1,33 @@
+
+/* Class = "NSTextFieldCell"; title = "<<InformativeText>>"; ObjectID = "GdQ-Yh-kCv"; */
+"GdQ-Yh-kCv.title" = "<<InformativeText>>";
+
+/* Class = "NSTextFieldCell"; title = "<<MessageText>>"; ObjectID = "Ggg-k8-xPC"; */
+"Ggg-k8-xPC.title" = "<<MessageText>>";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "RvV-zb-b9I"; */
+"RvV-zb-b9I.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "Uc3-Oq-ZAG"; */
+"Uc3-Oq-ZAG.title" = "<<Name>>";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Commands"; ObjectID = "YCB-4R-kdB"; */
+"YCB-4R-kdB.placeholderString" = "コマンド";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "az6-Cz-r0q"; */
+"az6-Cz-r0q.title" = "<<Name>>";
+
+/* Class = "NSButtonCell"; title = "<<Category>>"; ObjectID = "bcY-ZB-2Dr"; */
+"bcY-ZB-2Dr.title" = "<<Category>>";
+
+/* Class = "NSTextFieldCell"; title = "<<DescriptiveText>>"; ObjectID = "fAz-Pg-t04"; */
+"fAz-Pg-t04.title" = "<<DescriptiveText>>";
+
+/* Class = "NSTextFieldCell"; title = "⌘P"; ObjectID = "is4-fN-qcC"; */
+"is4-fN-qcC.title" = "⌘P";
+
+/* Class = "NSTextFieldCell"; title = "⌘P"; ObjectID = "qhJ-DR-hDj"; */
+"qhJ-DR-hDj.title" = "⌘P";
+
+/* Class = "NSTextFieldCell"; title = "<<DescriptiveText>>"; ObjectID = "uiA-AD-g0t"; */
+"uiA-AD-g0t.title" = "<<DescriptiveText>>";

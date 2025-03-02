@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<completions>
+    <!-- "foo" -->
+    <provider name="javascript.values">
+        <syntax>javascript</syntax>
+        <syntax>typescript</syntax>
+        <syntax>tsx</syntax>
+        
+        <exclude-selector>string, comment</exclude-selector>
+        
+        <expression>(?:(?&lt;!\.)\b([a-zA-Z_][a-zA-Z0-9_]*))|(?:(?&lt;![a-zA-Z0-9_\.]))</expression>
+        
+        <symbols type="function,method" syntax="javascript">
+            <behavior>
+                <arguments prefix="(" suffix=")" separator=", " />
+            </behavior>
+        </symbols>
+        <symbols type="class,interface,type" syntax="javascript" />
+        <symbols type="variable,constant,argument" syntax="javascript" />
+        
+        <symbols type="function" syntax="typescript">
+            <behavior>
+                <arguments prefix="(" suffix=")" separator=", " />
+            </behavior>
+        </symbols>
+        <symbols type="class,interface,type" syntax="typescript" />
+        <symbols type="variable,constant,argument" syntax="typescript" />
+        
+        <symbols type="function" syntax="tsx">
+            <behavior>
+                <arguments prefix="(" suffix=")" separator=", " />
+            </behavior>
+        </symbols>
+        <symbols type="class,interface,type" syntax="tsx" />
+        <symbols type="variable,constant,argument" syntax="tsx" />
+        
+        <identifiers />
+        
+        <set>javascript.statements</set>
+        <set>javascript.globals</set>
+        <set>javascript.classes</set>
+        <set>javascript.functions</set>
+    </provider>
+    
+    <!-- ".foo" -->
+    <provider name="javascript.properties">
+        <syntax>javascript</syntax>
+        <syntax>typescript</syntax>
+        <syntax>tsx</syntax>
+        
+        <exclude-selector>string, comment, value.number</exclude-selector>
+        
+        <trigger>.</trigger>
+        
+        <expression>(?&lt;=\.)([a-zA-Z_][a-zA-Z0-9_]*)?</expression>
+        
+        <symbols type="method" syntax="javascript">
+            <behavior>
+                <arguments prefix="(" suffix=")" separator=", " />
+            </behavior>
+        </symbols>
+        <symbols type="property,getter,setter" syntax="javascript" />
+        
+        <symbols type="method" syntax="typescript">
+            <behavior>
+                <arguments prefix="(" suffix=")" separator=", " />
+            </behavior>
+        </symbols>
+        <symbols type="property,getter,setter" syntax="typescript" />
+        
+        <symbols type="method" syntax="tsx">
+            <behavior>
+                <arguments prefix="(" suffix=")" separator=", " />
+            </behavior>
+        </symbols>
+        <symbols type="property,getter,setter" syntax="tsx" />
+        
+        <identifiers />
+    </provider>
+    
+    <!-- Static Built-in Properties -->
+    <provider name="javascript.properties.date">
+        <syntax>javascript</syntax>
+        <syntax>typescript</syntax>
+        <syntax>tsx</syntax>
+        <exclude-selector>string, comment</exclude-selector>
+        <trigger>.</trigger>
+        <expression>(?&lt;=\bDate\.)([a-zA-Z_][a-zA-Z0-9_]*)?</expression>
+        <set>javascript.properties.date</set>
+    </provider>
+    <provider name="javascript.properties.intl">
+        <syntax>javascript</syntax>
+        <syntax>typescript</syntax>
+        <syntax>tsx</syntax>
+        <exclude-selector>string, comment</exclude-selector>
+        <trigger>.</trigger>
+        <expression>(?&lt;=\bIntl\.)([a-zA-Z_][a-zA-Z0-9_]*)?</expression>
+        <set>javascript.properties.intl</set>
+    </provider>
+    <provider name="javascript.properties.math">
+        <syntax>javascript</syntax>
+        <syntax>typescript</syntax>
+        <syntax>tsx</syntax>
+        <exclude-selector>string, comment</exclude-selector>
+        <trigger>.</trigger>
+        <expression>(?&lt;=\bMath\.)([a-zA-Z_][a-zA-Z0-9_]*)?</expression>
+        <set>javascript.properties.math</set>
+        <set>javascript.methods.math</set>
+    </provider>
+    <provider name="javascript.properties.number">
+        <syntax>javascript</syntax>
+        <syntax>typescript</syntax>
+        <syntax>tsx</syntax>
+        <exclude-selector>string, comment</exclude-selector>
+        <trigger>.</trigger>
+        <expression>(?&lt;=\bNumber\.)([a-zA-Z_][a-zA-Z0-9_]*)?</expression>
+        <set>javascript.properties.number</set>
+    </provider>
+    <provider name="javascript.properties.typedarray">
+        <syntax>javascript</syntax>
+        <syntax>typescript</syntax>
+        <syntax>tsx</syntax>
+        <exclude-selector>string, comment</exclude-selector>
+        <trigger>.</trigger>
+        <expression>(?&lt;=\b(Int8Array|Uint8Array|Uint8ClampedArray|Int16Array|Uint16Array|Int32Array|Uint32Array|Float32Array|Float64Array|BigInt64Array|BigUint64Array)\.)([a-zA-Z_][a-zA-Z0-9_]*)?</expression>
+        <set>javascript.properties.typedarray</set>
+    </provider>
+    <provider name="javascript.properties.webassembly">
+        <syntax>javascript</syntax>
+        <syntax>typescript</syntax>
+        <syntax>tsx</syntax>
+        <exclude-selector>string, comment</exclude-selector>
+        <trigger>.</trigger>
+        <expression>(?&lt;=\bWebAssembly\.)([a-zA-Z_][a-zA-Z0-9_]*)?</expression>
+        <set>javascript.properties.webassembly</set>
+    </provider>
+    
+    <!-- "template string ${foo} subsitution" -->
+    <provider name="javascript.template-substitution.values">
+        <syntax>javascript</syntax>
+        <syntax>typescript</syntax>
+        <syntax>tsx</syntax>
+        
+        <query>
+            (template_substitution
+              "${" @provider.start
+              "}" @provider.end)
+        </query>
+        
+        <exclude-selector>comment</exclude-selector>
+        
+        <expression>(?&lt;=$\{)\b[a-zA-Z_][a-zA-Z0-9_]*</expression>
+        
+        <symbols type="variable,constant" />
+        
+        <identifiers />
+    </provider>
+    
+    <!-- Statements -->
+    <set name="javascript.statements" symbol="statement">
+        <completion string="class">
+            <behavior>
+                <append><![CDATA[ $[Name] {
+    constructor($[argument, ...]) {
+        $[statements]
+    }
+}]]></append>
+            </behavior>
+        </completion>
+        <completion string="do">
+            <behavior>
+                <append><![CDATA[ {
+    $[statements]
+} while ($[condition]);]]></append>
+            </behavior>
+        </completion>
+        <completion string="else">
+            <behavior>
+                <append><![CDATA[ {
+    $[statements]
+}]]></append>
+            </behavior>
+        </completion>
+        <completion string="else if">
+            <behavior>
+                <append><![CDATA[ ($[condition]) {
+    $[statements]
+}]]></append>
+            </behavior>
+        </completion>
+        <completion string="extends">
+            <behavior>
+                <append> $[superclass]</append>
+            </behavior>
+        </completion>
+        <completion string="for">
+            <behavior>
+                <append><![CDATA[ ($[variable] of $[object]) {
+    $[statements]
+}]]></append>
+            </behavior>
+            <description>Creates a loop iterating over the elements of an iterable object, such as an array.</description>
+        </completion>
+        <completion string="for">
+            <behavior>
+                <append><![CDATA[ ($[start]; $[cond]; $[iter]) {
+    $[statements]
+}]]></append>
+            </behavior>
+            <description>Creates a loop iterating over a conditional range.</description>
+        </completion>
+        <completion string="for">
+            <behavior>
+                <append><![CDATA[ ($[variable] in $[object]) {
+    $[statements]
+}]]></append>
+            </behavior>
+            <description>Creates a loop iterating over the enumerable properties of an object.</description>
+        </completion>
+        <completion string="function">
+            <behavior>
+                <append><![CDATA[ $[name]($[arg, ...]) {
+    $[statements]
+}]]></append>
+            </behavior>
+        </completion>
+        <completion string="if">
+            <behavior>
+                <append><![CDATA[ ($[condition]) {
+    $[statements]
+}]]></append>
+            </behavior>
+        </completion>
+        <completion string="switch">
+            <behavior>
+                <append><![CDATA[ ($[expression]) {
+    $[statements]
+}]]></append>
+            </behavior>
+        </completion>
+        <completion string="throw">
+            <behavior>
+                <append><![CDATA[ $[expression]]]></append>
+            </behavior>
+        </completion>
+        <completion string="with">
+            <behavior>
+                <append><![CDATA[ ($[object]) {
+    $[statements]
+}]]></append>
+            </behavior>
+        </completion>
+        <completion string="while">
+            <behavior>
+                <append><![CDATA[ ($[condition]) {
+    $[statements]
+}]]></append>
+            </behavior>
+        </completion>
+    </set>
+    
+    <!-- Globals -->
+    <set name="javascript.globals">
+        <completion string="false" />
+        <completion string="true" />
+        <completion string="undefined"/>
+        <completion string="null" />
+        
+        <completion string="globalThis" symbol="constant">
+            <description>Contains the global `this` value, which is akin to the global object.</description>
+        </completion>
+        <completion string="Infinity" symbol="constant" result="Number">
+            <description>A numeric value representing infinity.</description>
+        </completion>
+        <completion string="NaN" symbol="constant" result="Number">
+            <description>A value representing Not-A-Number.</description>
+        </completion>
+        
+        <completion string="decodeURI" symbol="function" result="String">
+            <description>Decodes a Uniform Resource Identifier (URI).</description>
+            <behavior>
+                <append>($[uri])</append>
+            </behavior>
+        </completion>
+        <completion string="decodeURIComponent" symbol="function" result="String">
+            <description>Decodes a Uniform Resource Identifier (URI) component.</description>
+            <behavior>
+                <append>($[uri])</append>
+            </behavior>
+        </completion>
+        <completion string="encodeURI" symbol="function" result="String">
+            <description>Encodes a Uniform Resource Identifier (URI).</description>
+            <behavior>
+                <append>($[uri])</append>
+            </behavior>
+        </completion>
+        <completion string="encodeURIComponent" symbol="function" result="String">
+            <description>Encodes a Uniform Resource Identifier (URI) component.</description>
+            <behavior>
+                <append>($[uri])</append>
+            </behavior>
+        </completion>
+        <completion string="escape" symbol="function" result="String" deprecated="true">
+            <behavior>
+                <append>($[string])</append>
+            </behavior>
+        </completion>
+        <completion string="eval" symbol="function">
+            <description>Evaluates JavaScript code represented as a string.</description>
+            <behavior>
+                <append>($[string])</append>
+            </behavior>
+        </completion>
+        <completion string="isFinite" symbol="function" result="Boolean">
+            <description>Evaluates an argument to determine whether it is a finite number.</description>
+            <behavior>
+                <append>($[value])</append>
+            </behavior>
+        </completion>
+        <completion string="isNaN" symbol="function" result="Boolean">
+            <description>Determines whether a value is NaN or not.</description>
+            <behavior>
+                <append>($[value])</append>
+            </behavior>
+        </completion>
+        <completion string="parseFloat" symbol="function" result="Number">
+            <description>Parses a string argument and returns a floating point number.</description>
+            <behavior>
+                <append>($[string])</append>
+            </behavior>
+        </completion>
+        <completion string="parseInt" symbol="function" result="Number">
+            <description>Parses a string argument and returns an integer of the specified radix or base.</description>
+            <behavior>
+                <append>($[string], $[radix])</append>
+            </behavior>
+        </completion>
+        <completion string="unescape" symbol="function" result="String" deprecated="true">
+            <behavior>
+                <append>($[string])</append>
+            </behavior>
+        </completion>
+        <completion string="uneval" symbol="function" result="String" deprecated="true">
+            <description>Creates an string representation of the source code of an Object.</description>
+            <behavior>
+                <append>($[object])</append>
+            </behavior>
+        </completion>
+        
+        <completion string="arguments" symbol="variable">
+            <description>An Array-like object corresponding to the arguments passed to a function.</description>
+        </completion>
+    </set>
+    
+    <!-- Classes & Modules -->
+    <set name="javascript.classes" symbol="class">
+        <completion string="Array">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[elements])</append>
+            </behavior>
+        </completion>
+        <completion string="Boolean">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[value])</append>
+            </behavior>
+        </completion>
+        <completion string="Date">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>()</append>
+            </behavior>
+        </completion>
+        <completion string="Map">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>()</append>
+            </behavior>
+        </completion>
+        <completion string="Number">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[value])</append>
+            </behavior>
+        </completion>
+        <completion string="Object">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>()</append>
+            </behavior>
+        </completion>
+        <completion string="Promise">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[executor])</append>
+            </behavior>
+        </completion>
+        <completion string="Proxy">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[target], $[handler])</append>
+            </behavior>
+        </completion>
+        <completion string="RegExp">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[pattern])</append>
+            </behavior>
+        </completion>
+        <completion string="Set">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[elements])</append>
+            </behavior>
+        </completion>
+        <completion string="String">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[value])</append>
+            </behavior>
+        </completion>
+        <completion string="Symbol">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[value])</append>
+            </behavior>
+        </completion>
+        <completion string="WeakMap">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>()</append>
+            </behavior>
+        </completion>
+        <completion string="WeakSet">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[elements])</append>
+            </behavior>
+        </completion>
+        
+        <!-- Errors -->
+        <completion string="Error">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[message])</append>
+            </behavior>
+        </completion>
+        <completion string="EvalError" />
+        <completion string="InternalError" />
+        <completion string="RangeError" />
+        <completion string="ReferenceError" />
+        <completion string="SyntaxError" />
+        <completion string="TypeError" />
+        <completion string="URIError" />
+        
+        <!-- Namespaces -->
+        <completion string="Atomics" />
+        <!-- <completion string="Console" /> Excluded to avoid annoyance with 'console'. -->
+        <completion string="Intl" />
+        <completion string="JSON" />
+        <completion string="Math" />
+        <completion string="Reflect" />
+        <completion string="WebAssembly" />
+        
+        <!-- Typed Arrays -->
+        <!-- <completion string="TypedArray" /> The TypedArray constructor is hidden. -->
+        <completion string="ArrayBuffer">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[length])</append>
+            </behavior>
+        </completion>
+        <completion string="SharedArrayBuffer">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[length])</append>
+            </behavior>
+        </completion>
+        <completion string="DataView">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[buffer])</append>
+            </behavior>
+        </completion>
+        <completion string="BigInt">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[value])</append>
+            </behavior>
+        </completion>
+        <completion string="BigInt64Array">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[value])</append>
+            </behavior>
+        </completion>
+        <completion string="BigUint64Array">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[value])</append>
+            </behavior>
+        </completion>
+        <completion string="Float32Array">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[value])</append>
+            </behavior>
+        </completion>
+        <completion string="Float64Array">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[value])</append>
+            </behavior>
+        </completion>
+        <completion string="Int16Array">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[value])</append>
+            </behavior>
+        </completion>
+        <completion string="Int32Array">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[value])</append>
+            </behavior>
+        </completion>
+        <completion string="Int8Array">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[value])</append>
+            </behavior>
+        </completion>
+        <completion string="Uint16Array">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[value])</append>
+            </behavior>
+        </completion>
+        <completion string="Uint32Array">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[value])</append>
+            </behavior>
+        </completion>
+        <completion string="Uint8Array">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[value])</append>
+            </behavior>
+        </completion>
+        <completion string="Uint8ClampedArray">
+            <behavior prefix="(?&lt;=new\s)">
+                <append>($[value])</append>
+            </behavior>
+        </completion>
+        
+        <!-- Functionals -->
+        <!-- <completion string="AsyncFunction" /> The AsyncFunction constructor is not a global object. -->
+        <!-- <completion string="Function" /> Excluded to avoid annoyance with 'function'. -->
+        <!-- <completion string="Generator" /> The Generator constructor is not a global object. -->
+        <!-- <completion string="GeneratorFunction" /> The GeneratorFunction constructor is not a global object. -->
+    </set>
+    
+    <!-- Functions -->
+    <set name="javascript.functions" symbol="function">
+        <completion string="atob" />
+        <completion string="btoa" />
+        <completion string="clearInterval" />
+        <completion string="clearTimeout" />
+        <completion string="createImageBitmap" />
+        <completion string="fetch" />
+        <completion string="queueMicrotask" />
+        <completion string="setInterval" />
+        <completion string="setTimeout" />
+    </set>
+    
+    <!-- Static Properties -->
+    <set name="javascript.properties.date" symbol="static-property">
+        <completion string="UTC" priority="10">
+            <behavior prefix="(?&lt;=new\sDate.)">
+                <append>($[values])</append>
+            </behavior>
+        </completion>
+    </set>
+    <set name="javascript.properties.intl" symbol="static-property">
+        <completion string="Collator" priority="10">
+            <behavior prefix="(?&lt;=new\sIntl.)">
+                <append>($[locales])</append>
+            </behavior>
+        </completion>
+        <completion string="DateTimeFormat" priority="10">
+            <behavior prefix="(?&lt;=new\sIntl.)">
+                <append>($[locales])</append>
+            </behavior>
+        </completion>
+        <completion string="ListFormat" priority="10">
+            <behavior prefix="(?&lt;=new\sIntl.)">
+                <append>($[locales])</append>
+            </behavior>
+        </completion>
+        <completion string="Locale" priority="10">
+            <behavior prefix="(?&lt;=new\sIntl.)">
+                <append>($[tag])</append>
+            </behavior>
+        </completion>
+        <completion string="NumberFormat" priority="10">
+            <behavior prefix="(?&lt;=new\sIntl.)">
+                <append>($[locales])</append>
+            </behavior>
+        </completion>
+        <completion string="PluralRules" priority="10">
+            <behavior prefix="(?&lt;=new\sIntl.)">
+                <append>($[locales])</append>
+            </behavior>
+        </completion>
+        <completion string="RelativeTimeFormat" priority="10">
+            <behavior prefix="(?&lt;=new\sIntl.)">
+                <append>($[locales])</append>
+            </behavior>
+        </completion>
+        <completion string="Segmenter" priority="10">
+            <behavior prefix="(?&lt;=new\sIntl.)">
+                <append>($[locales])</append>
+            </behavior>
+        </completion>
+    </set>
+    <set name="javascript.properties.math" symbol="static-property">
+        <completion string="E" priority="10" />
+        <completion string="LN10" priority="10" />
+        <completion string="LN2" priority="10" />
+        <completion string="LOG10E" priority="10" />
+        <completion string="LOG2E" priority="10" />
+        <completion string="PI" priority="10" />
+        <completion string="SQRT1_2" priority="10" />
+        <completion string="SQRT2" priority="10" />
+    </set>
+    <set name="javascript.methods.math" symbol="method">
+        <completion string="abs" priority="10" />
+        <completion string="acos" priority="10" />
+        <completion string="acosh" priority="10" />
+        <completion string="asin" priority="10" />
+        <completion string="asinh" priority="10" />
+        <completion string="atan" priority="10" />
+        <completion string="atan2" priority="10" />
+        <completion string="atanh" priority="10" />
+        <completion string="cbrt" priority="10" />
+        <completion string="ceil" priority="10" />
+        <completion string="clz32" priority="10" />
+        <completion string="cos" priority="10" />
+        <completion string="cosh" priority="10" />
+        <completion string="exp" priority="10" />
+        <completion string="expm1" priority="10" />
+        <completion string="floor" priority="10" />
+        <completion string="fround" priority="10" />
+        <completion string="hypot" priority="10" />
+        <completion string="imul" priority="10" />
+        <completion string="log" priority="10" />
+        <completion string="log10" priority="10" />
+        <completion string="log1p" priority="10" />
+        <completion string="log2" priority="10" />
+        <completion string="max" priority="10" />
+        <completion string="min" priority="10" />
+        <completion string="pow" priority="10" />
+        <completion string="random" priority="10" />
+        <completion string="round" priority="10" />
+        <completion string="sign" priority="10" />
+        <completion string="sin" priority="10" />
+        <completion string="sinh" priority="10" />
+        <completion string="sqrt" priority="10" />
+        <completion string="tan" priority="10" />
+        <completion string="tanh" priority="10" />
+        <completion string="trunc" priority="10" />
+    </set>
+    <set name="javascript.properties.number" symbol="static-property">
+        <completion string="EPSILON" priority="10" />
+        <completion string="MAX_SAFE_INTEGER" priority="10" />
+        <completion string="MAX_VALUE" priority="10" />
+        <completion string="MIN_SAFE_INTEGER" priority="10" />
+        <completion string="MIN_VALUE" priority="10" />
+        <completion string="NaN" priority="10" />
+        <completion string="NEGATIVE_INFINITY" priority="10" />
+        <completion string="POSITIVE_INFINITY" priority="10" />
+    </set>
+    <set name="javascript.properties.typedarray" symbol="static-property">
+        <completion string="BYTES_PER_ELEMENT" priority="10" />
+    </set>
+    <set name="javascript.properties.webassembly" symbol="static-property">
+        <completion string="CompileError" priority="10" />
+        <completion string="Exception" priority="10" />
+        <completion string="Global" priority="10" />
+        <completion string="Instance" priority="10" />
+        <completion string="LinkError" priority="10" />
+        <completion string="Memory" priority="10" />
+        <completion string="Module" priority="10" />
+        <completion string="RuntimeError" priority="10" />
+        <completion string="Table" priority="10" />
+        <completion string="Tag" priority="10" />
+    </set>
+</completions>

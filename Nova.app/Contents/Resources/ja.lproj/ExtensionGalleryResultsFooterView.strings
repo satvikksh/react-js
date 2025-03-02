@@ -1,0 +1,6 @@
+
+/* Class = "NSButtonCell"; title = "Show More Results"; ObjectID = "HTA-jg-gWL"; */
+"HTA-jg-gWL.title" = "より多くの結果を表示";
+
+/* Class = "NSTextFieldCell"; title = "No Results Found"; ObjectID = "Te4-sQ-CCw"; */
+"Te4-sQ-CCw.title" = "見つかりません";

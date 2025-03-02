@@ -1,0 +1,87 @@
+
+/* Class = "NSTextFieldCell"; title = "<<Count>>"; ObjectID = "2HC-2E-wSz"; */
+"2HC-2E-wSz.title" = "<<Count>>";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Insert a replace wildcard"; ObjectID = "3kh-fD-4NZ"; */
+"3kh-fD-4NZ.ibShadowedToolTip" = "Insérer un caractère générique de remplacement";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "search in selection"; ObjectID = "4D3-A6-mVp"; */
+"4D3-A6-mVp.ibExternalAccessibilityDescription" = "rechercher dans la sélection";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Search only in the selection"; ObjectID = "4D3-A6-mVp"; */
+"4D3-A6-mVp.ibShadowedToolTip" = "Rechercher uniquement dans la sélection";
+
+/* Class = "NSButtonCell"; title = "Replace"; ObjectID = "4m4-PI-dIz"; */
+"4m4-PI-dIz.title" = "Remplacer";
+
+/* Class = "NSMenuItem"; title = "Matches Word"; ObjectID = "AQ4-CU-hKN"; */
+"AQ4-CU-hKN.title" = "Correspond au mot";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "case sensitive"; ObjectID = "B6Y-IN-Um6"; */
+"B6Y-IN-Um6.ibExternalAccessibilityDescription" = "sensible à la casse";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Match text case"; ObjectID = "B6Y-IN-Um6"; */
+"B6Y-IN-Um6.ibShadowedToolTip" = "Respecter la casse du texte";
+
+/* Class = "NSButtonCell"; title = "Done"; ObjectID = "BSD-b3-RPp"; */
+"BSD-b3-RPp.title" = "Terminé";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "replace"; ObjectID = "CRi-0y-H9m"; */
+"CRi-0y-H9m.ibExternalAccessibilityDescription" = "remplacer";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "The text pattern with which to replace"; ObjectID = "CRi-0y-H9m"; */
+"CRi-0y-H9m.ibShadowedToolTip" = "Forme de texte à substituer";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Replace the current match"; ObjectID = "DoN-ZT-2RO"; */
+"DoN-ZT-2RO.ibShadowedToolTip" = "Remplacer la correspondance actuelle";
+
+/* Class = "NSMenuItem"; title = "Begins With"; ObjectID = "Hqd-SG-2uQ"; */
+"Hqd-SG-2uQ.title" = "Commence par";
+
+/* Class = "NSButtonCell"; title = "All"; ObjectID = "MdX-M1-gaY"; */
+"MdX-M1-gaY.title" = "Tout";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Close the find bar"; ObjectID = "NER-4T-pXY"; */
+"NER-4T-pXY.ibShadowedToolTip" = "Fermer la barre de recherche";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "next match"; ObjectID = "Na5-AI-bcn"; */
+"Na5-AI-bcn.ibExternalAccessibilityDescription" = "correspondance suivante";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show the next match"; ObjectID = "Na5-AI-bcn"; */
+"Na5-AI-bcn.ibShadowedToolTip" = "Afficher la correspondance suivante";
+
+/* Class = "NSMenuItem"; title = "Contains"; ObjectID = "TT5-fV-8fJ"; */
+"TT5-fV-8fJ.title" = "Contient";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "find"; ObjectID = "WpZ-QX-p2e"; */
+"WpZ-QX-p2e.ibExternalAccessibilityDescription" = "rechercher";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "The text pattern to match"; ObjectID = "WpZ-QX-p2e"; */
+"WpZ-QX-p2e.ibShadowedToolTip" = "Forme de texte à rechercher";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "replace all"; ObjectID = "XlO-kf-9KA"; */
+"XlO-kf-9KA.ibExternalAccessibilityDescription" = "tout remplacer";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Replace all matches"; ObjectID = "XlO-kf-9KA"; */
+"XlO-kf-9KA.ibShadowedToolTip" = "Remplacer toutes les correspondances";
+
+/* Class = "NSMenuItem"; title = "Ends With"; ObjectID = "cd0-hA-cJd"; */
+"cd0-hA-cJd.title" = "Se termine par";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Replace"; ObjectID = "gsJ-Du-FS2"; */
+"gsJ-Du-FS2.placeholderString" = "Remplacer";
+
+/* Class = "NSMenuItem"; title = "Regular Expression"; ObjectID = "jXz-Rp-zLf"; */
+"jXz-Rp-zLf.title" = "Expression régulière";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "previous match"; ObjectID = "t0m-48-tEa"; */
+"t0m-48-tEa.ibExternalAccessibilityDescription" = "correspondance précédente";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show the previous match"; ObjectID = "t0m-48-tEa"; */
+"t0m-48-tEa.ibShadowedToolTip" = "Afficher la correspondance précédente";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Find"; ObjectID = "uuv-nj-e7p"; */
+"uuv-nj-e7p.placeholderString" = "Rechercher";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Insert a find wildcard"; ObjectID = "yzB-fU-zkf"; */
+"yzB-fU-zkf.ibShadowedToolTip" = "Insérer un caractère générique de recherche";

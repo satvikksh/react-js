@@ -1,0 +1,1140 @@
+
+/* Class = "NSMenuItem"; title = "Sign Up for Panic News…"; ObjectID = "0Cy-Jg-ujR"; */
+"0Cy-Jg-ujR.title" = "Panic Newsの登録…";
+
+/* Class = "NSMenuItem"; title = "Select Next Occurrence"; ObjectID = "0Xa-mU-cEO"; */
+"0Xa-mU-cEO.title" = "単語の次のインスタンスを選択";
+
+/* Class = "NSMenuItem"; title = "Jump to Declaration"; ObjectID = "0aL-bC-eCI"; */
+"0aL-bC-eCI.title" = "宣言にジャンプ";
+
+/* Class = "NSMenuItem"; title = "Move Tab to Split On Left"; ObjectID = "0zR-Kb-Key"; */
+"0zR-Kb-Key.title" = "分割ウインドウを左に移動";
+
+/* Class = "NSMenuItem"; title = "Open Recent"; ObjectID = "1QQ-bm-dZH"; */
+"1QQ-bm-dZH.title" = "最近使った項目を開く";
+
+/* Class = "NSMenuItem"; title = "Open Preview in Browser"; ObjectID = "1V8-cl-KiW"; */
+"1V8-cl-KiW.title" = "ブラウザでプレビューして開く";
+
+/* Class = "NSMenuItem"; title = "Nova"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "Nova";
+
+/* Class = "NSMenuItem"; title = "Show Ignored Files"; ObjectID = "1mL-RO-ySr"; */
+"1mL-RO-ySr.title" = "除外ファイルを表示";
+
+/* Class = "NSMenuItem"; title = "Back"; ObjectID = "1sR-Hk-Vf9"; */
+"1sR-Hk-Vf9.title" = "戻る";
+
+/* Class = "NSMenuItem"; title = "Jump to Next Change"; ObjectID = "286-tH-3eK"; */
+"286-tH-3eK.title" = "次の変更にジャンプ";
+
+/* Class = "NSMenuItem"; title = "Project"; ObjectID = "2MZ-b1-vqe"; */
+"2MZ-b1-vqe.title" = "プロジェクト";
+
+/* Class = "NSMenuItem"; title = "Step Out"; ObjectID = "2ba-ep-ogu"; */
+"2ba-ep-ogu.title" = "ステップアウト";
+
+/* Class = "NSMenuItem"; title = "Close Window"; ObjectID = "2e7-ci-cZ6"; */
+"2e7-ci-cZ6.title" = "ウインドウを閉じる";
+
+/* Class = "NSMenuItem"; title = "Cut"; ObjectID = "2eP-aq-p8R"; */
+"2eP-aq-p8R.title" = "カット";
+
+/* Class = "NSMenuItem"; title = "Jump to Previous Occurrence"; ObjectID = "2st-JB-IfW"; */
+"2st-JB-IfW.title" = "前のインスタンスにジャンプ";
+
+/* Class = "NSMenuItem"; title = "Jump to Definition"; ObjectID = "38T-jb-zgY"; */
+"38T-jb-zgY.title" = "定義にジャンプ";
+
+/* Class = "NSMenuItem"; title = "New"; ObjectID = "3AU-4T-yOi"; */
+"3AU-4T-yOi.title" = "新規";
+
+/* Class = "NSMenuItem"; title = "Step Back"; ObjectID = "3Ef-sh-LjD"; */
+"3Ef-sh-LjD.title" = "ステップバック";
+
+/* Class = "NSMenuItem"; title = "License…"; ObjectID = "3Hh-C6-jAf"; */
+"3Hh-C6-jAf.title" = "ライセンス…";
+
+/* Class = "NSMenuItem"; title = "Wrap Lines"; ObjectID = "3Lb-eP-4ug"; */
+"3Lb-eP-4ug.title" = "行の折り返し";
+
+/* Class = "NSMenu"; title = "Substitutions"; ObjectID = "4C5-Gh-OzE"; */
+"4C5-Gh-OzE.title" = "自動置換";
+
+/* Class = "NSMenuItem"; title = "Use Selection for Find"; ObjectID = "4Dv-Ss-YSG"; */
+"4Dv-Ss-YSG.title" = "選択部分を検索に使用";
+
+/* Class = "NSMenuItem"; title = "Sort Tabs in Split by Type"; ObjectID = "4Ml-kD-hlW"; */
+"4Ml-kD-hlW.title" = "分割を形式で並び替え";
+
+/* Class = "NSMenuItem"; title = "Clear Issues from Previous Tasks"; ObjectID = "4jl-mc-Rvs"; */
+"4jl-mc-Rvs.title" = "前回タスクの問題を削除";
+
+/* Class = "NSMenuItem"; title = "Focus Split Above"; ObjectID = "4kr-kt-P9C"; */
+"4kr-kt-P9C.title" = "上を選択";
+
+/* Class = "NSMenuItem"; title = "Quit Nova"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Novaを終了";
+
+/* Class = "NSMenuItem"; title = "Smart Links"; ObjectID = "4yR-di-jU3"; */
+"4yR-di-jU3.title" = "スマートリンク";
+
+/* Class = "NSMenuItem"; title = "Run"; ObjectID = "4za-KS-iz9"; */
+"4za-KS-iz9.title" = "実行";
+
+/* Class = "NSMenuItem"; title = "Copy Lines Down"; ObjectID = "5Et-pE-395"; */
+"5Et-pE-395.title" = "行をコピーして上に挿入";
+
+/* Class = "NSMenuItem"; title = "Increase Font Size"; ObjectID = "5OZ-44-rD1"; */
+"5OZ-44-rD1.title" = "フォントを大きく";
+
+/* Class = "NSMenuItem"; title = "Fold Level 4"; ObjectID = "5Um-Ai-oBi"; */
+"5Um-Ai-oBi.title" = "レベル4";
+
+/* Class = "NSMenuItem"; title = "Stop Speaking"; ObjectID = "5aq-ZN-zJP"; */
+"5aq-ZN-zJP.title" = "読み上げを停止";
+
+/* Class = "NSMenuItem"; title = "About Nova"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "Novaについて";
+
+/* Class = "NSMenuItem"; title = "Launcher"; ObjectID = "5u9-dR-6kr"; */
+"5u9-dR-6kr.title" = "ランチャー";
+
+/* Class = "NSMenuItem"; title = "Fold"; ObjectID = "5vY-HG-v3j"; */
+"5vY-HG-v3j.title" = "折りたたむ";
+
+/* Class = "NSMenuItem"; title = "Find in Project…"; ObjectID = "62k-W4-qGl"; */
+"62k-W4-qGl.title" = "プロジェクト内を検索…";
+
+/* Class = "NSMenuItem"; title = "Show Code Structure Headers"; ObjectID = "6Ef-xo-0RM"; */
+"6Ef-xo-0RM.title" = "コード構造化ヘッダを表示";
+
+/* Class = "NSMenuItem"; title = "Select All"; ObjectID = "6Td-2V-kWH"; */
+"6Td-2V-kWH.title" = "すべてを選択";
+
+/* Class = "NSMenuItem"; title = "Rename"; ObjectID = "6Uc-be-8VS"; */
+"6Uc-be-8VS.title" = "名前を変更";
+
+/* Class = "NSMenuItem"; title = "Reopen Last Closed Tab"; ObjectID = "6Za-Y2-C49"; */
+"6Za-Y2-C49.title" = "最後に閉じたタブを開く";
+
+/* Class = "NSMenuItem"; title = "Build"; ObjectID = "6bS-BR-g2X"; */
+"6bS-BR-g2X.title" = "ビルド";
+
+/* Class = "NSMenuItem"; title = "Clean"; ObjectID = "6eV-T2-2vK"; */
+"6eV-T2-2vK.title" = "クリーン";
+
+/* Class = "NSMenuItem"; title = "Find Next"; ObjectID = "6gY-Ks-NrY"; */
+"6gY-Ks-NrY.title" = "次を検索";
+
+/* Class = "NSMenuItem"; title = "Select Previous Occurrence"; ObjectID = "6sR-d5-5pD"; */
+"6sR-d5-5pD.title" = "単語の前のインスタンスを選択";
+
+/* Class = "NSMenuItem"; title = "Focus Current Split"; ObjectID = "70a-Mq-xKe"; */
+"70a-Mq-xKe.title" = "現在の分割ウインドウを選択";
+
+/* Class = "NSMenuItem"; title = "Purchase Nova Online…"; ObjectID = "786-br-d7d"; */
+"786-br-d7d.title" = "オンラインでNovaを購入…";
+
+/* Class = "NSMenuItem"; title = "New File"; ObjectID = "7I9-fj-XT0"; */
+"7I9-fj-XT0.title" = "新規ファイル";
+
+/* Class = "NSMenuItem"; title = "Paste and Preserve Formatting"; ObjectID = "7Nv-4j-wNP"; */
+"7Nv-4j-wNP.title" = "ペーストしてスタイルを合わせる";
+
+/* Class = "NSMenuItem"; title = "Commit…"; ObjectID = "7R3-Pd-PrU"; */
+"7R3-Pd-PrU.title" = "コミット…";
+
+/* Class = "NSMenuItem"; title = "Unlock Nova…"; ObjectID = "7jX-sF-WyH"; */
+"7jX-sF-WyH.title" = "Novaをアンロックする…";
+
+/* Class = "NSMenuItem"; title = "Shift Right"; ObjectID = "8M7-6J-d0M"; */
+"8M7-6J-d0M.title" = "インデントを増やす";
+
+/* Class = "NSMenuItem"; title = "Character Inspector"; ObjectID = "8Ua-zc-vWK"; */
+"8Ua-zc-vWK.title" = "キャラクターインスペクター";
+
+/* Class = "NSMenuItem"; title = "Go"; ObjectID = "8e3-f1-4Vm"; */
+"8e3-f1-4Vm.title" = "移動";
+
+/* Class = "NSMenuItem"; title = "Discard All Changes…"; ObjectID = "8fL-yd-CAq"; */
+"8fL-yd-CAq.title" = "すべての変更を破棄…";
+
+/* Class = "NSMenuItem"; title = "Duplicate Tab in Split On Left"; ObjectID = "8mK-7B-pKD"; */
+"8mK-7B-pKD.title" = "左に分割";
+
+/* Class = "NSMenuItem"; title = "Structure"; ObjectID = "8p9-JZ-4Vf"; */
+"8p9-JZ-4Vf.title" = "構造";
+
+/* Class = "NSMenuItem"; title = "Stage Selected Files"; ObjectID = "9Q0-km-xvn"; */
+"9Q0-km-xvn.title" = "選択されたファイルをステージング";
+
+/* Class = "NSMenuItem"; title = "Copy with Syntax Highlighting"; ObjectID = "9k0-9r-PYL"; */
+"9k0-9r-PYL.title" = "言語ハイライトごとコピー";
+
+/* Class = "NSMenuItem"; title = "Mark for Publish"; ObjectID = "9ug-Vm-gnq"; */
+"9ug-Vm-gnq.title" = "公開項目としてマーク";
+
+/* Class = "NSMenuItem"; title = "Open Quickly in Symbols…"; ObjectID = "A0Z-kK-VWc"; */
+"A0Z-kK-VWc.title" = "シンボルをすばやく開く…";
+
+/* Class = "NSMenuItem"; title = "Smart Dashes"; ObjectID = "A1h-Wl-rmL"; */
+"A1h-Wl-rmL.title" = "スマートダッシュ記号";
+
+/* Class = "NSMenuItem"; title = "Capitalize"; ObjectID = "A9X-tZ-Hjg"; */
+"A9X-tZ-Hjg.title" = "語頭を大文字にする";
+
+/* Class = "NSMenuItem"; title = "Show Debug Sidebar"; ObjectID = "A9d-qs-tA7"; */
+"A9d-qs-tA7.title" = "デバッグサイドバーを表示";
+
+/* Class = "NSMenuItem"; title = "Transfer Selected Items"; ObjectID = "ARp-aa-FHL"; */
+"ARp-aa-FHL.title" = "選択された項目を転送";
+
+/* Class = "NSMenuItem"; title = "Reload"; ObjectID = "AYd-YX-Hqq"; */
+"AYd-YX-Hqq.title" = "再読み込み";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSMenuItem"; title = "Transformations"; ObjectID = "Ade-Ng-K1W"; */
+"Ade-Ng-K1W.title" = "変換";
+
+/* Class = "NSMenuItem"; title = "Show Invisible Characters"; ObjectID = "Axd-we-T9b"; */
+"Axd-we-T9b.title" = "不可視文字を表示";
+
+/* Class = "NSMenuItem"; title = "Unmark for Publish"; ObjectID = "BAA-do-XWU"; */
+"BAA-do-XWU.title" = "公開項目マークを解除";
+
+/* Class = "NSMenuItem"; title = "Find Next in Project"; ObjectID = "BIt-PG-8GZ"; */
+"BIt-PG-8GZ.title" = "プロジェクト内の次を検索";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
+"BOF-NM-1cW.title" = "環境設定…";
+
+/* Class = "NSMenuItem"; title = "Select All Find Matches"; ObjectID = "BZz-tD-VLh"; */
+"BZz-tD-VLh.title" = "マッチした検索をすべて選択";
+
+/* Class = "NSMenuItem"; title = "Save As…"; ObjectID = "Bw7-FT-i3A"; */
+"Bw7-FT-i3A.title" = "別名で保存…";
+
+/* Class = "NSMenuItem"; title = "Select Below"; ObjectID = "CAO-cW-U7n"; */
+"CAO-cW-U7n.title" = "下を選択";
+
+/* Class = "NSMenuItem"; title = "Show Issues Sidebar"; ObjectID = "CB9-k3-pZz"; */
+"CB9-k3-pZz.title" = "バリデーション";
+
+/* Class = "NSMenuItem"; title = "Comment Selection (Alternate)"; ObjectID = "CGR-XC-bCE"; */
+"CGR-XC-bCE.title" = "選択を1行コメントアウト";
+
+/* Class = "NSMenuItem"; title = "Split Preview Right"; ObjectID = "CcI-tW-zOA"; */
+"CcI-tW-zOA.title" = "右に分割してプレビュー";
+
+/* Class = "NSMenuItem"; title = "Clear Scrollback"; ObjectID = "CjW-ci-Jgb"; */
+"CjW-ci-Jgb.title" = "スクロールバックを削除";
+
+/* Class = "NSMenuItem"; title = "Move Tab to Split Below"; ObjectID = "DC9-vb-1Yr"; */
+"DC9-vb-1Yr.title" = "分割ウインドウを下に移動";
+
+/* Class = "NSMenu"; title = "Breakpoints"; ObjectID = "DDr-1M-xJw"; */
+"DDr-1M-xJw.title" = "ブレークポイント";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "DPh-Cm-Ryb"; */
+"DPh-Cm-Ryb.title" = "編集";
+
+/* Class = "NSMenuItem"; title = "Close Tab"; ObjectID = "DVo-aG-piG"; */
+"DVo-aG-piG.title" = "タブを閉じる";
+
+/* Class = "NSMenuItem"; title = "Window with Server"; ObjectID = "DXM-2s-ipc"; */
+"DXM-2s-ipc.title" = "サーバに接続して新規ウインドウ";
+
+/* Class = "NSMenu"; title = "Window with Server"; ObjectID = "DYY-t1-qho"; */
+"DYY-t1-qho.title" = "サーバに接続して新規ウインドウ";
+
+/* Class = "NSMenuItem"; title = "Jump to Next Placeholder"; ObjectID = "E1T-Xo-eMV"; */
+"E1T-Xo-eMV.title" = "次のプレイスホルダーにジャンプ";
+
+/* Class = "NSMenu"; title = "Remote Terminal"; ObjectID = "EAe-PE-Wad"; */
+"EAe-PE-Wad.title" = "新規リモートターミナル";
+
+/* Class = "NSMenuItem"; title = "Activate Project as Extension"; ObjectID = "EHt-Jp-NSX"; */
+"EHt-Jp-NSX.title" = "ワークスペースに機能拡張を適用";
+
+/* Class = "NSMenuItem"; title = "Step Over"; ObjectID = "En5-qA-cg8"; */
+"En5-qA-cg8.title" = "ステップオーバー";
+
+/* Class = "NSMenuItem"; title = "Jump to Implementations"; ObjectID = "Euk-WU-39g"; */
+"Euk-WU-39g.title" = "実装にジャンプ";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "ヘルプ";
+
+/* Class = "NSMenuItem"; title = "Go to Server Remote Path"; ObjectID = "FGh-fq-7kq"; */
+"FGh-fq-7kq.title" = "サーバリモートパスに移動";
+
+/* Class = "NSMenuItem"; title = "Nova Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "Novaヘルプ";
+
+/* Class = "NSMenu"; title = "Recently Closed Tabs"; ObjectID = "FR9-SJ-3wh"; */
+"FR9-SJ-3wh.title" = "最近閉じたタブ";
+
+/* Class = "NSMenuItem"; title = "Decrease Font Size"; ObjectID = "FWy-c0-3gQ"; */
+"FWy-c0-3gQ.title" = "フォントを小さく";
+
+/* Class = "NSMenuItem"; title = "Copy URL"; ObjectID = "FYH-M3-WF1"; */
+"FYH-M3-WF1.title" = "URL をコピー";
+
+/* Class = "NSMenu"; title = "Actions"; ObjectID = "FnL-Qz-XLD"; */
+"FnL-Qz-XLD.title" = "アクション";
+
+/* Class = "NSMenuItem"; title = "Tasks"; ObjectID = "GDj-Yw-35E"; */
+"GDj-Yw-35E.title" = "タスク";
+
+/* Class = "NSMenuItem"; title = "Copy Path"; ObjectID = "GKn-2h-3oW"; */
+"GKn-2h-3oW.title" = "パスをコピー";
+
+/* Class = "NSMenuItem"; title = "Unstage All Changes"; ObjectID = "Gfc-at-iXd"; */
+"Gfc-at-iXd.title" = "すべての変更のステージングを解除";
+
+/* Class = "NSMenuItem"; title = "Stage All Changes"; ObjectID = "Gqt-Be-bAd"; */
+"Gqt-Be-bAd.title" = "すべての変更をステージング";
+
+/* Class = "NSMenuItem"; title = "Preview In"; ObjectID = "GvO-Zl-9LU"; */
+"GvO-Zl-9LU.title" = "ブラウザを指定してプレビュー";
+
+/* Class = "NSMenu"; title = "Text Encoding"; ObjectID = "H3D-3T-lwq"; */
+"H3D-3T-lwq.title" = "テキストエンコード";
+
+/* Class = "NSMenuItem"; title = "Show in Files Sidebar"; ObjectID = "H5f-nq-Mpv"; */
+"H5f-nq-Mpv.title" = "ファイルサイドバーで表示";
+
+/* Class = "NSMenuItem"; title = "Create New Extension…"; ObjectID = "H6U-cu-5nh"; */
+"H6U-cu-5nh.title" = "新規機能拡張を作成…";
+
+/* Class = "NSMenuItem"; title = "View"; ObjectID = "H8h-7b-M4v"; */
+"H8h-7b-M4v.title" = "表示";
+
+/* Class = "NSMenuItem"; title = "Select Line"; ObjectID = "HEg-Ay-PdK"; */
+"HEg-Ay-PdK.title" = "行を選択";
+
+/* Class = "NSMenuItem"; title = "Lock Split"; ObjectID = "HM9-5K-Fi1"; */
+"HM9-5K-Fi1.title" = "分割をロック";
+
+/* Class = "NSMenuItem"; title = "Fold Level 1"; ObjectID = "HuH-ns-a77"; */
+"HuH-ns-a77.title" = "レベル1";
+
+/* Class = "NSMenu"; title = "View"; ObjectID = "HyV-fh-RgO"; */
+"HyV-fh-RgO.title" = "表示";
+
+/* Class = "NSMenuItem"; title = "Smart Copy/Paste"; ObjectID = "HzY-BW-Lmt"; */
+"HzY-BW-Lmt.title" = "スマートコピー／ペースト";
+
+/* Class = "NSMenuItem"; title = "Select Find Matches in Selection"; ObjectID = "I0T-dc-lo4"; */
+"I0T-dc-lo4.title" = "選択内でマッチした検索を選択";
+
+/* Class = "NSMenuItem"; title = "Open…"; ObjectID = "IAo-SY-fd9"; */
+"IAo-SY-fd9.title" = "開く…";
+
+/* Class = "NSMenuItem"; title = "Substitutions"; ObjectID = "IBT-KU-jlY"; */
+"IBT-KU-jlY.title" = "自動置換";
+
+/* Class = "NSMenuItem"; title = "Customize Touch Bar…"; ObjectID = "ICm-sY-i1x"; */
+"ICm-sY-i1x.title" = "Touch Barをカスタマイズ…";
+
+/* Class = "NSMenuItem"; title = "Publish Selected Items"; ObjectID = "IoD-LE-6uj"; */
+"IoD-LE-6uj.title" = "選択項目をアップロード";
+
+/* Class = "NSMenuItem"; title = "Show Git Sidebar"; ObjectID = "J4Q-NS-3EF"; */
+"J4Q-NS-3EF.title" = "Git";
+
+/* Class = "NSMenuItem"; title = "Find…"; ObjectID = "JKB-tA-iMK"; */
+"JKB-tA-iMK.title" = "検索…";
+
+/* Class = "NSMenuItem"; title = "Show Spelling and Grammar"; ObjectID = "KGS-HI-B2y"; */
+"KGS-HI-B2y.title" = "スペルと文法を表示";
+
+/* Class = "NSMenuItem"; title = "Zoom to Fit"; ObjectID = "KN3-1a-bkG"; */
+"KN3-1a-bkG.title" = "ウインドウに合わせる";
+
+/* Class = "NSMenu"; title = "Find"; ObjectID = "KQq-fu-0Mi"; */
+"KQq-fu-0Mi.title" = "検索";
+
+/* Class = "NSMenuItem"; title = "Revert to Saved…"; ObjectID = "KaW-ft-85H"; */
+"KaW-ft-85H.title" = "最後の保存に戻す…";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "すべてを表示";
+
+/* Class = "NSMenuItem"; title = "Duplicate Tab in Split On Right"; ObjectID = "Kyf-UA-Ees"; */
+"Kyf-UA-Ees.title" = "右に分割";
+
+/* Class = "NSMenuItem"; title = "Split Preview Left"; ObjectID = "L0q-62-KIf"; */
+"L0q-62-KIf.title" = "左に分割してプレビュー";
+
+/* Class = "NSMenuItem"; title = "Vim Mode"; ObjectID = "L6J-Fu-dEP"; */
+"L6J-Fu-dEP.title" = "Vimモード";
+
+/* Class = "NSMenuItem"; title = "Jump to Previous Change"; ObjectID = "L6S-cf-em4"; */
+"L6S-cf-em4.title" = "前の変更にジャンプ";
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
+"LE2-aR-0XJ.title" = "すべてを手前に移動";
+
+/* Class = "NSMenuItem"; title = "Save All"; ObjectID = "LTF-MA-fNp"; */
+"LTF-MA-fNp.title" = "すべてを保存";
+
+/* Class = "NSMenuItem"; title = "Select All Occurrences"; ObjectID = "LqC-8E-l0P"; */
+"LqC-8E-l0P.title" = "すべてのインスタンスを選択";
+
+/* Class = "NSMenuItem"; title = "Show Type and Function Separators"; ObjectID = "Lwg-Lk-z3s"; */
+"Lwg-Lk-z3s.title" = "型と関数の区切りを表示";
+
+/* Class = "NSMenuItem"; title = "Show Code Actions"; ObjectID = "M0n-cP-6EE"; */
+"M0n-cP-6EE.title" = "コードアクションを表示";
+
+/* Class = "NSMenuItem"; title = "Find Previous in Project"; ObjectID = "MES-23-HMb"; */
+"MES-23-HMb.title" = "プロジェクト内の前を検索";
+
+/* Class = "NSMenuItem"; title = "Select Inside Brackets"; ObjectID = "MMB-Mz-p4F"; */
+"MMB-Mz-p4F.title" = "カッコ内を選択";
+
+/* Class = "NSMenu"; title = "Open With"; ObjectID = "MQL-fB-9Bu"; */
+"MQL-fB-9Bu.title" = "このアプリケーションで開く";
+
+/* Class = "NSMenuItem"; title = "Initialize Empty Repository…"; ObjectID = "Mbw-xD-gA3"; */
+"Mbw-xD-gA3.title" = "空のリポジトリを初期化中…";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "サービス";
+
+/* Class = "NSMenu"; title = "Git"; ObjectID = "NON-H9-Ric"; */
+"NON-H9-Ric.title" = "Git";
+
+/* Class = "NSMenuItem"; title = "Edit Task…"; ObjectID = "Nb1-S7-ubG"; */
+"Nb1-S7-ubG.title" = "タスクを編集…";
+
+/* Class = "NSMenuItem"; title = "Show Previous Window Tab"; ObjectID = "Nek-dl-J4G"; */
+"Nek-dl-J4G.title" = "前のウインドウタブを表示";
+
+/* Class = "NSMenuItem"; title = "Start Speaking"; ObjectID = "Nxh-jH-Uyv"; */
+"Nxh-jH-Uyv.title" = "読み上げを開始";
+
+/* Class = "NSMenuItem"; title = "Text Encoding"; ObjectID = "O11-5H-P8C"; */
+"O11-5H-P8C.title" = "テキストエンコード";
+
+/* Class = "NSMenuItem"; title = "Shift Left"; ObjectID = "OEq-Fk-Nor"; */
+"OEq-Fk-Nor.title" = "インデントを減らす";
+
+/* Class = "NSMenuItem"; title = "Document"; ObjectID = "OOQ-Rp-pB0"; */
+"OOQ-Rp-pB0.title" = "新規タブ";
+
+/* Class = "NSMenuItem"; title = "Show Publish Sidebar"; ObjectID = "OSX-MT-LRJ"; */
+"OSX-MT-LRJ.title" = "公開";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "しまう";
+
+/* Class = "NSMenuItem"; title = "Clear Selected Items"; ObjectID = "Ok6-cC-ni9"; */
+"Ok6-cC-ni9.title" = "選択された項目を解除";
+
+/* Class = "NSMenuItem"; title = "Hide Nova"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Novaを隠す";
+
+/* Class = "NSMenuItem"; title = "Stop"; ObjectID = "OwO-wM-65e"; */
+"OwO-wM-65e.title" = "終了";
+
+/* Class = "NSMenuItem"; title = "Enable Breakpoint at Current Line"; ObjectID = "P34-zv-fc8"; */
+"P34-zv-fc8.title" = "現在の行のブレークポイントを有効化";
+
+/* Class = "NSMenu"; title = "Always Open With"; ObjectID = "PBf-ee-kF6"; */
+"PBf-ee-kF6.title" = "常にこのアプリケーションで開く";
+
+/* Class = "NSMenuItem"; title = "Activate Breakpoints"; ObjectID = "PSh-LJ-G0O"; */
+"PSh-LJ-G0O.title" = "ブレイクポイントを設定";
+
+/* Class = "NSMenuItem"; title = "Duplicate Tab in Split Below"; ObjectID = "PYi-B0-7rV"; */
+"PYi-B0-7rV.title" = "下に分割";
+
+/* Class = "NSMenuItem"; title = "Data Detectors"; ObjectID = "Ps2-LU-9e5"; */
+"Ps2-LU-9e5.title" = "データ検出";
+
+/* Class = "NSMenuItem"; title = "Breakpoints"; ObjectID = "QJL-GN-zAu"; */
+"QJL-GN-zAu.title" = "ブレークポイント";
+
+/* Class = "NSMenuItem"; title = "Show Files Sidebar"; ObjectID = "QPh-jz-RjP"; */
+"QPh-jz-RjP.title" = "ファイル";
+
+/* Class = "NSMenuItem"; title = "Show All Window Tabs"; ObjectID = "Qc2-Hv-4Zl"; */
+"Qc2-Hv-4Zl.title" = "すべてのウインドウタブを表示";
+
+/* Class = "NSMenuItem"; title = "Unfold"; ObjectID = "Qfp-LQ-u9K"; */
+"Qfp-LQ-u9K.title" = "折りたたみ解除";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
+"R4o-n2-Eq4.title" = "拡大／縮小";
+
+/* Class = "NSMenuItem"; title = "Command Palette…"; ObjectID = "R7h-XD-Nsn"; */
+"R7h-XD-Nsn.title" = "コマンドパレット…";
+
+/* Class = "NSMenuItem"; title = "Copy Relative Path"; ObjectID = "RUh-ol-MBV"; */
+"RUh-ol-MBV.title" = "相対パスをコピー";
+
+/* Class = "NSMenuItem"; title = "Show Minimap"; ObjectID = "RXS-4y-CbH"; */
+"RXS-4y-CbH.title" = "ミニマップを表示";
+
+/* Class = "NSMenuItem"; title = "Format Document"; ObjectID = "Rh6-cg-wrY"; */
+"Rh6-cg-wrY.title" = "書類を整形";
+
+/* Class = "NSMenuItem"; title = "Delete All Breakpoints"; ObjectID = "RjG-Hj-f5h"; */
+"RjG-Hj-f5h.title" = "すべてのブレークポイントを削除";
+
+/* Class = "NSMenu"; title = "Editor"; ObjectID = "S0D-21-Vg9"; */
+"S0D-21-Vg9.title" = "書式";
+
+/* Class = "NSMenuItem"; title = "Report a Problem or Feature Request…"; ObjectID = "SGD-m6-rcy"; */
+"SGD-m6-rcy.title" = "フィードバックを送信…";
+
+/* Class = "NSMenuItem"; title = "Find"; ObjectID = "SUs-Xc-o4t"; */
+"SUs-Xc-o4t.title" = "検索";
+
+/* Class = "NSMenuItem"; title = "Copy Lines Up"; ObjectID = "SaF-6Q-xIS"; */
+"SaF-6Q-xIS.title" = "行をコピーして下に挿入";
+
+/* Class = "NSMenuItem"; title = "Show Previous Tab"; ObjectID = "Seu-DM-nsJ"; */
+"Seu-DM-nsJ.title" = "前のタブを表示";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "T7e-pH-LlL"; */
+"T7e-pH-LlL.title" = "新規ウインドウ";
+
+/* Class = "NSMenuItem"; title = "Split Preview Upward"; ObjectID = "THt-WN-czg"; */
+"THt-WN-czg.title" = "上に分割してプレビュー";
+
+/* Class = "NSMenuItem"; title = "Clone…"; ObjectID = "TP1-wb-g59"; */
+"TP1-wb-g59.title" = "クローン…";
+
+/* Class = "NSMenuItem"; title = "Focus Next Split"; ObjectID = "TSU-co-pFW"; */
+"TSU-co-pFW.title" = "次の分割ウインドウを選択";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "ウインドウ";
+
+/* Class = "NSMenuItem"; title = "New Folder"; ObjectID = "Tts-mr-1pU"; */
+"Tts-mr-1pU.title" = "新規フォルダ";
+
+/* Class = "NSMenuItem"; title = "Fetch"; ObjectID = "Tut-B3-hvH"; */
+"Tut-B3-hvH.title" = "フェッチ";
+
+/* Class = "NSMenuItem"; title = "Restart"; ObjectID = "Tv3-89-MtC"; */
+"Tv3-89-MtC.title" = "リスタート";
+
+/* Class = "NSMenuItem"; title = "Show Left Sidebar"; ObjectID = "UEE-pz-hyY"; */
+//"UEE-pz-hyY.title" = "--$$ STRING IS MISSING $$--";
+
+/* Class = "NSMenuItem"; title = "Trim Trailing Whitespace"; ObjectID = "ULL-fL-agc"; */
+"ULL-fL-agc.title" = "行末の空白をトリム";
+
+/* Class = "NSMenuItem"; title = "Split Preview Downward"; ObjectID = "Uxy-29-ec6"; */
+"Uxy-29-ec6.title" = "下に分割してプレビュー";
+
+/* Class = "NSMenuItem"; title = "Choose Task"; ObjectID = "VIy-Yl-ne1"; */
+"VIy-Yl-ne1.title" = "タスクを選択";
+
+/* Class = "NSMenu"; title = "Display Options"; ObjectID = "VKa-55-Sff"; */
+"VKa-55-Sff.title" = "表示オプション";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "ほかを隠す";
+
+/* Class = "NSMenuItem"; title = "Magnify Split"; ObjectID = "VhI-Vz-g3l"; */
+"VhI-Vz-g3l.title" = "分割を拡大";
+
+/* Class = "NSMenuItem"; title = "Unfold All"; ObjectID = "Vzf-NP-mTc"; */
+"Vzf-NP-mTc.title" = "すべての折りたたみを解除";
+
+/* Class = "NSMenuItem"; title = "Recently Closed Tabs"; ObjectID = "W8K-3U-y4e"; */
+"W8K-3U-y4e.title" = "最近閉じたタブ";
+
+/* Class = "NSMenuItem"; title = "Duplicate Tab in Split Above"; ObjectID = "W9P-bz-eXG"; */
+"W9P-bz-eXG.title" = "上に分割";
+
+/* Class = "NSMenuItem"; title = "Undo"; ObjectID = "WKn-vG-3sA"; */
+"WKn-vG-3sA.title" = "取り消す";
+
+/* Class = "NSMenu"; title = "Go"; ObjectID = "WOX-zV-1Up"; */
+"WOX-zV-1Up.title" = "移動";
+
+/* Class = "NSMenuItem"; title = "Show Find Sidebar"; ObjectID = "Wvx-ac-IfB"; */
+"Wvx-ac-IfB.title" = "検索";
+
+/* Class = "NSMenuItem"; title = "Convert Tabs to Spaces"; ObjectID = "X3z-XM-0eO"; */
+"X3z-XM-0eO.title" = "タブコードをスペースに変換";
+
+/* Class = "NSMenuItem"; title = "Clear Menu"; ObjectID = "X9T-LV-bui"; */
+"X9T-LV-bui.title" = "メニューを削除";
+
+/* Class = "NSMenu"; title = "Code Folding"; ObjectID = "Xib-Np-nbR"; */
+"Xib-Np-nbR.title" = "コードの折りたたみ";
+
+/* Class = "NSMenuItem"; title = "Forward"; ObjectID = "Xtf-1c-Xmc"; */
+"Xtf-1c-Xmc.title" = "進む";
+
+/* Class = "NSMenuItem"; title = "Project with New Folder…"; ObjectID = "XwQ-Vr-vih"; */
+"XwQ-Vr-vih.title" = "新規フォルダからプロジェクト作成";
+
+/* Class = "NSMenuItem"; title = "Jump to Previous Placeholder"; ObjectID = "Y5m-yx-yHN"; */
+"Y5m-yx-yHN.title" = "前のプレイスホルダーにジャンプ";
+
+/* Class = "NSMenuItem"; title = "Delete"; ObjectID = "Y6t-f1-cEZ"; */
+"Y6t-f1-cEZ.title" = "削除";
+
+/* Class = "NSMenuItem"; title = "Enclosing Folder"; ObjectID = "YD7-Ch-myp"; */
+"YD7-Ch-myp.title" = "階層を戻る";
+
+/* Class = "NSMenuItem"; title = "Step Into"; ObjectID = "Ym5-Ym-hPj"; */
+"Ym5-Ym-hPj.title" = "ステップイン";
+
+/* Class = "NSMenu"; title = "Syntax"; ObjectID = "YsV-Wm-YMH"; */
+"YsV-Wm-YMH.title" = "言語モード";
+
+/* Class = "NSMenu"; title = "Behaviors"; ObjectID = "YyM-yt-Pet"; */
+"YyM-yt-Pet.title" = "挙動設定";
+
+/* Class = "NSMenu"; title = "Extensions"; ObjectID = "ZEG-IS-xNM"; */
+"ZEG-IS-xNM.title" = "機能拡張";
+
+/* Class = "NSMenuItem"; title = "Replace All"; ObjectID = "ZiN-K3-MAR"; */
+"ZiN-K3-MAR.title" = "すべてを置換";
+
+/* Class = "NSMenuItem"; title = "Close Split"; ObjectID = "Zyn-2K-gs7"; */
+"Zyn-2K-gs7.title" = "分割を閉じる";
+
+/* Class = "NSMenuItem"; title = "Checkout Revision…"; ObjectID = "a0p-Kp-oyI"; */
+"a0p-Kp-oyI.title" = "リビジョンをチェックアウト…";
+
+/* Class = "NSMenuItem"; title = "Import from Coda 2…"; ObjectID = "a8T-fG-bqe"; */
+"a8T-fG-bqe.title" = "Coda 2から移行する…";
+
+/* Class = "NSMenuItem"; title = "Print…"; ObjectID = "aTl-1u-JFS"; */
+"aTl-1u-JFS.title" = "プリント…";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "ウインドウ";
+
+/* Class = "NSMenuItem"; title = "Spelling and Grammar"; ObjectID = "aWu-et-AO9"; */
+"aWu-et-AO9.title" = "スペルと文法";
+
+/* Class = "NSMenuItem"; title = "Discard Changes in Selected Files…"; ObjectID = "ahW-wG-m5D"; */
+"ahW-wG-m5D.title" = "選択されたファイルの変更を破棄…";
+
+/* Class = "NSMenuItem"; title = "Actual Size"; ObjectID = "b1B-Bz-wBP"; */
+"b1B-Bz-wBP.title" = "実際のサイズ";
+
+/* Class = "NSMenuItem"; title = "Show Next Tab"; ObjectID = "bJa-N4-fbd"; */
+"bJa-N4-fbd.title" = "次のタブを表示";
+
+/* Class = "NSMenuItem"; title = "Add Breakpoint at Current Line"; ObjectID = "bSU-2E-WEl"; */
+"bSU-2E-WEl.title" = "現在の行にブレークポイントを追加";
+
+/* Class = "NSMenuItem"; title = "Apply Preferred Code Action"; ObjectID = "bZo-E8-SBm"; */
+"bZo-E8-SBm.title" = "優先コードアクションを適用";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "bcR-QT-uWr"; */
+"bcR-QT-uWr.title" = "編集";
+
+/* Class = "NSMenuItem"; title = "Code Folding"; ObjectID = "bhT-Zg-cEe"; */
+"bhT-Zg-cEe.title" = "コードの折りたたみ";
+
+/* Class = "NSMenu"; title = "File"; ObjectID = "bib-Uj-vzu"; */
+"bib-Uj-vzu.title" = "ファイル";
+
+/* Class = "NSMenuItem"; title = "Pull"; ObjectID = "bv3-cD-BIY"; */
+"bv3-cD-BIY.title" = "プル";
+
+/* Class = "NSMenuItem"; title = "Reverse Publish Selected Items"; ObjectID = "byi-2N-Ukh"; */
+"byi-2N-Ukh.title" = "選択項目をダウンロード";
+
+/* Class = "NSMenuItem"; title = "Nova Home Page"; ObjectID = "cJ1-te-ZMQ"; */
+"cJ1-te-ZMQ.title" = "Novaホームページ";
+
+/* Class = "NSMenuItem"; title = "Check Grammar With Spelling"; ObjectID = "cPJ-T7-Vmd"; */
+"cPJ-T7-Vmd.title" = "文法とスペルをチェック";
+
+/* Class = "NSMenuItem"; title = "Show Debug Console"; ObjectID = "cWv-sg-7mz"; */
+"cWv-sg-7mz.title" = "デバッグコンソールを表示";
+
+/* Class = "NSMenuItem"; title = "Show Next Window Tab"; ObjectID = "cgW-Vy-2lQ"; */
+"cgW-Vy-2lQ.title" = "次のウインドウタブを表示";
+
+/* Class = "NSMenuItem"; title = "Add Cursors At Ends of Lines"; ObjectID = "cj4-Pq-Rml"; */
+"cj4-Pq-Rml.title" = "行末にカーソルを追加";
+
+/* Class = "NSMenuItem"; title = "Push"; ObjectID = "clG-zh-U2h"; */
+"clG-zh-U2h.title" = "プッシュ";
+
+/* Class = "NSMenuItem"; title = "Clear All"; ObjectID = "cnu-EM-dOG"; */
+"cnu-EM-dOG.title" = "すべてを削除";
+
+/* Class = "NSMenuItem"; title = "Open in New Window"; ObjectID = "d26-XY-Wht"; */
+"d26-XY-Wht.title" = "新規ウインドウで開く";
+
+/* Class = "NSMenu"; title = "New"; ObjectID = "dFa-Rh-R78"; */
+"dFa-Rh-R78.title" = "新規";
+
+/* Class = "NSMenu"; title = "Sidebar Layout"; ObjectID = "dHx-FE-JCb"; */
+"dHx-FE-JCb.title" = "サイドバーレイアウト";
+
+/* Class = "NSMenuItem"; title = "Replace"; ObjectID = "dJJ-tN-sN9"; */
+"dJJ-tN-sN9.title" = "置換";
+
+/* Class = "NSMenuItem"; title = "File"; ObjectID = "dMs-cI-mzQ"; */
+"dMs-cI-mzQ.title" = "ファイル";
+
+/* Class = "NSMenuItem"; title = "Show Completions"; ObjectID = "dQl-fb-Nb2"; */
+"dQl-fb-Nb2.title" = "補完候補を表示";
+
+/* Class = "NSMenuItem"; title = "Local Terminal"; ObjectID = "db9-3c-hIk"; */
+"db9-3c-hIk.title" = "新規ローカルターミナル";
+
+/* Class = "NSMenuItem"; title = "Delete Lines"; ObjectID = "ddB-Mw-FcL"; */
+"ddB-Mw-FcL.title" = "行を削除";
+
+/* Class = "NSMenuItem"; title = "Git"; ObjectID = "ddH-io-wLJ"; */
+"ddH-io-wLJ.title" = "Git";
+
+/* Class = "NSMenuItem"; title = "Close Window"; ObjectID = "doN-Fe-8r8"; */
+"doN-Fe-8r8.title" = "ウインドウを閉じる";
+
+/* Class = "NSMenuItem"; title = "Format Selection"; ObjectID = "doq-Ac-75N"; */
+"doq-Ac-75N.title" = "選択を整形";
+
+/* Class = "NSMenuItem"; title = "Open Preview in Tab"; ObjectID = "dss-BO-M11"; */
+"dss-BO-M11.title" = "タブを開いてプレビュー";
+
+/* Class = "NSMenuItem"; title = "Select Above"; ObjectID = "eDg-2S-eD1"; */
+"eDg-2S-eD1.title" = "上を選択";
+
+/* Class = "NSMenuItem"; title = "Show All Sidebars"; ObjectID = "eLc-Xs-doe"; */
+"eLc-Xs-doe.title" = "すべてのサイドバーを表示";
+
+/* Class = "NSMenu"; title = "Selection"; ObjectID = "eQs-XE-cwe"; */
+"eQs-XE-cwe.title" = "選択";
+
+/* Class = "NSMenuItem"; title = "Text Replacement"; ObjectID = "eVd-4V-MSJ"; */
+"eVd-4V-MSJ.title" = "テキストの置換";
+
+/* Class = "NSMenuItem"; title = "Close Other Tabs"; ObjectID = "edf-46-MrR"; */
+"edf-46-MrR.title" = "その他のタブを閉じる";
+
+/* Class = "NSMenuItem"; title = "Open Quickly in Files…"; ObjectID = "efD-cB-Szb"; */
+"efD-cB-Szb.title" = "ファイルをすばやく開く…";
+
+/* Class = "NSMenuItem"; title = "Fold Level 2"; ObjectID = "efZ-BA-6bP"; */
+"efZ-BA-6bP.title" = "レベル2";
+
+/* Class = "NSMenuItem"; title = "New Document"; ObjectID = "etE-gD-fQA"; */
+"etE-gD-fQA.title" = "新規書類";
+
+/* Class = "NSMenu"; title = "Debug"; ObjectID = "f3M-i6-ypn"; */
+"f3M-i6-ypn.title" = "デバッグ";
+
+/* Class = "NSMenuItem"; title = "Select Word"; ObjectID = "f7l-j4-K6G"; */
+"f7l-j4-K6G.title" = "単語を選択";
+
+/* Class = "NSMenuItem"; title = "Move Lines Down"; ObjectID = "f8K-Vu-G3i"; */
+"f8K-Vu-G3i.title" = "行を下に移動";
+
+/* Class = "NSMenu"; title = "Sidebars"; ObjectID = "fCR-2u-Ct7"; */
+"fCR-2u-Ct7.title" = "サイドバー";
+
+/* Class = "NSMenuItem"; title = "Remote Terminal"; ObjectID = "fPg-hY-nxC"; */
+"fPg-hY-nxC.title" = "新規リモートターミナル";
+
+/* Class = "NSMenuItem"; title = "Redo"; ObjectID = "fn8-Ck-zgo"; */
+"fn8-Ck-zgo.title" = "やり直す";
+
+/* Class = "NSMenuItem"; title = "Focus Split On Left"; ObjectID = "fo6-Qh-aN3"; */
+"fo6-Qh-aN3.title" = "左を選択";
+
+/* Class = "NSMenuItem"; title = "Unstage Selected Files"; ObjectID = "fqh-CT-txz"; */
+"fqh-CT-txz.title" = "選択されたファイルのステージング解除";
+
+/* Class = "NSMenuItem"; title = "Merge All Windows"; ObjectID = "ftT-vh-RJa"; */
+"ftT-vh-RJa.title" = "すべてのウインドウをマージ";
+
+/* Class = "NSMenu"; title = "Line Endings"; ObjectID = "fzW-Gu-WTL"; */
+"fzW-Gu-WTL.title" = "改行コード";
+
+/* Class = "NSMenuItem"; title = "Show Last Change for Line"; ObjectID = "g85-9z-fMm"; */
+"g85-9z-fMm.title" = "行の最後の変更を表示";
+
+/* Class = "NSMenuItem"; title = "Show Metadata Folder in Finder"; ObjectID = "g8e-yW-hLp"; */
+"g8e-yW-hLp.title" = "メタデータフォルダをFinderで表示";
+
+/* Class = "NSMenuItem"; title = "Pin Tab"; ObjectID = "gCs-fa-spM"; */
+"gCs-fa-spM.title" = "タブをピン留め";
+
+/* Class = "NSMenuItem"; title = "Extensions"; ObjectID = "gjd-9r-zUT"; */
+"gjd-9r-zUT.title" = "機能拡張";
+
+/* Class = "NSMenuItem"; title = "Fold Comment Blocks"; ObjectID = "gqj-JY-v4V"; */
+"gqj-JY-v4V.title" = "コメントブロックを折りたたむ";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "h9v-sN-MEq"; */
+"h9v-sN-MEq.title" = "コピー";
+
+/* Class = "NSMenuItem"; title = "Show Extension Console"; ObjectID = "hWx-hJ-YIL"; */
+"hWx-hJ-YIL.title" = "機能拡張コンソールを表示";
+
+/* Class = "NSMenuItem"; title = "Show Right Sidebar"; ObjectID = "heC-YH-Gq2"; */
+"heC-YH-Gq2.title" = "右サイドバーを表示";
+
+/* Class = "NSMenuItem"; title = "Jump to Matching Bracket"; ObjectID = "hos-77-vVX"; */
+"hos-77-vVX.title" = "マッチするカッコにジャンプ";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "サービス";
+
+/* Class = "NSMenuItem"; title = "Focus Split On Right"; ObjectID = "i6d-Jr-Rd3"; */
+"i6d-Jr-Rd3.title" = "右を選択";
+
+/* Class = "NSMenuItem"; title = "Actions"; ObjectID = "iVN-Ts-hfJ"; */
+"iVN-Ts-hfJ.title" = "アクション";
+
+/* Class = "NSMenuItem"; title = "Go to Symbol…"; ObjectID = "ia5-cE-YzH"; */
+"ia5-cE-YzH.title" = "シンボルに移動…";
+
+/* Class = "NSMenu"; title = "Purchase"; ObjectID = "id1-YF-Iem"; */
+"id1-YF-Iem.title" = "購入";
+
+/* Class = "NSMenuItem"; title = "Move Tab to Split Above"; ObjectID = "ihA-tk-T90"; */
+"ihA-tk-T90.title" = "分割ウインドウを上に移動";
+
+/* Class = "NSMenuItem"; title = "Show Symbols Sidebar"; ObjectID = "io2-Bc-pty"; */
+"io2-Bc-pty.title" = "シンボル";
+
+/* Class = "NSMenuItem"; title = "Deactivate Project as Extension"; ObjectID = "ior-vR-VLR"; */
+"ior-vR-VLR.title" = "ワークスペースの機能拡張を解除";
+
+/* Class = "NSMenuItem"; title = "Reload Page From Origin"; ObjectID = "iyL-ed-kBb"; */
+"iyL-ed-kBb.title" = "オリジナルからページを再読み込み";
+
+/* Class = "NSMenuItem"; title = "Move Lines Up"; ObjectID = "jYR-LB-grn"; */
+"jYR-LB-grn.title" = "行を上に移動";
+
+/* Class = "NSMenuItem"; title = "Transcript"; ObjectID = "jg8-4C-UMq"; */
+"jg8-4C-UMq.title" = "トランスクリプト";
+
+/* Class = "NSMenuItem"; title = "Speech"; ObjectID = "k2j-Xn-wNF"; */
+"k2j-Xn-wNF.title" = "スピーチ";
+
+/* Class = "NSMenuItem"; title = "Comment Selection"; ObjectID = "k3k-CI-Ays"; */
+"k3k-CI-Ays.title" = "選択をコメントアウト";
+
+/* Class = "NSMenuItem"; title = "Quick Look"; ObjectID = "k9z-eG-BZQ"; */
+"k9z-eG-BZQ.title" = "クイックルック";
+
+/* Class = "NSMenu"; title = "Project"; ObjectID = "kUs-or-m2m"; */
+"kUs-or-m2m.title" = "プロジェクト";
+
+/* Class = "NSMenuItem"; title = "Submit to the Extension Library…"; ObjectID = "kbM-nT-bN4"; */
+"kbM-nT-bN4.title" = "拡張機能をギャラリーに送信…";
+
+/* Class = "NSMenuItem"; title = "Correct Spelling Automatically"; ObjectID = "kho-oB-eC3"; */
+"kho-oB-eC3.title" = "スペルを自動的に修正";
+
+/* Class = "NSMenuItem"; title = "Add Cursors At Beginning of Lines"; ObjectID = "kiC-ac-efs"; */
+"kiC-ac-efs.title" = "行頭にカーソルを追加";
+
+/* Class = "NSMenuItem"; title = "Open Quickly…"; ObjectID = "kpo-4w-pcQ"; */
+"kpo-4w-pcQ.title" = "すばやく開く…";
+
+/* Class = "NSMenuItem"; title = "Move Tab to New Window"; ObjectID = "kqt-hk-iz3"; */
+"kqt-hk-iz3.title" = "タブを新しいウインドウに移動";
+
+/* Class = "NSMenuItem"; title = "Show All Tabs"; ObjectID = "ku5-Yd-BLb"; */
+"ku5-Yd-BLb.title" = "すべてのタブを表示";
+
+/* Class = "NSMenuItem"; title = "Preview"; ObjectID = "kub-Ut-Rwm"; */
+"kub-Ut-Rwm.title" = "プレビュー";
+
+/* Class = "NSMenuItem"; title = "Compress"; ObjectID = "kww-qd-od7"; */
+"kww-qd-od7.title" = "圧縮";
+
+/* Class = "NSMenuItem"; title = "Make Upper Case"; ObjectID = "lAK-iy-z91"; */
+"lAK-iy-z91.title" = "大文字にする";
+
+/* Class = "NSMenuItem"; title = "Selection"; ObjectID = "lDO-W7-iWs"; */
+"lDO-W7-iWs.title" = "選択";
+
+/* Class = "NSMenuItem"; title = "Fold Level 6"; ObjectID = "lDR-Mr-7ay"; */
+"lDR-Mr-7ay.title" = "レベル6";
+
+/* Class = "NSMenuItem"; title = "Get Info"; ObjectID = "lDo-8O-K38"; */
+"lDo-8O-K38.title" = "情報を見る";
+
+/* Class = "NSMenuItem"; title = "Make Lower Case"; ObjectID = "lgX-QU-13T"; */
+"lgX-QU-13T.title" = "小文字にする";
+
+/* Class = "NSMenuItem"; title = "Jump to Next Occurrence"; ObjectID = "ltI-gN-eWy"; */
+"ltI-gN-eWy.title" = "次のインスタンスにジャンプ";
+
+/* Class = "NSMenuItem"; title = "Behaviors"; ObjectID = "m19-az-SnR"; */
+"m19-az-SnR.title" = "挙動設定";
+
+/* Class = "NSMenu"; title = "Speech"; ObjectID = "m78-kB-L9r"; */
+"m78-kB-L9r.title" = "スピーチ";
+
+/* Class = "NSMenu"; title = "Open Recent"; ObjectID = "mBX-7y-N1D"; */
+"mBX-7y-N1D.title" = "最近使った項目を開く";
+
+/* Class = "NSMenuItem"; title = "Paste"; ObjectID = "mCI-ob-qL3"; */
+"mCI-ob-qL3.title" = "ペースト";
+
+/* Class = "NSMenuItem"; title = "Show Code Folding Ribbon"; ObjectID = "mF3-8t-MOC"; */
+"mF3-8t-MOC.title" = "コード折りたたみリボンを表示";
+
+/* Class = "NSMenuItem"; title = "Check Spelling While Typing"; ObjectID = "mit-1k-ReU"; */
+"mit-1k-ReU.title" = "入力中に自動スペルチェック";
+
+/* Class = "NSMenuItem"; title = "Sidebar Layout"; ObjectID = "n77-Ef-3Nv"; */
+"n77-Ef-3Nv.title" = "サイドバーレイアウト";
+
+/* Class = "NSMenuItem"; title = "Jump to References"; ObjectID = "nO3-v0-Qg9"; */
+"nO3-v0-Qg9.title" = "参照にジャンプ";
+
+/* Class = "NSMenuItem"; title = "Replace and Find Next"; ObjectID = "nPv-p4-Ciw"; */
+"nPv-p4-Ciw.title" = "置換して次を検索";
+
+/* Class = "NSMenuItem"; title = "Go to Folder…"; ObjectID = "nXp-Vg-gvu"; */
+"nXp-Vg-gvu.title" = "フォルダに移動…";
+
+/* Class = "NSMenuItem"; title = "Show Last Change for Line Ignoring Whitespace"; ObjectID = "ncg-w2-dc0"; */
+"ncg-w2-dc0.title" = "空白を無視して最終行の変更を表示";
+
+/* Class = "NSMenuItem"; title = "Show in Finder"; ObjectID = "npv-h3-tBy"; */
+"npv-h3-tBy.title" = "Finderに表示";
+
+/* Class = "NSMenuItem"; title = "New Layout…"; ObjectID = "o0v-pQ-BwW"; */
+"o0v-pQ-BwW.title" = "レイアウトを保存…";
+
+/* Class = "NSMenuItem"; title = "File Browser"; ObjectID = "oB1-RR-RXo"; */
+"oB1-RR-RXo.title" = "新規ファイルブラウザ";
+
+/* Class = "NSMenuItem"; title = "Show Extension Console"; ObjectID = "oCj-At-orf"; */
+"oCj-At-orf.title" = "機能拡張コンソールを表示";
+
+/* Class = "NSMenuItem"; title = "Show Terminals Dock"; ObjectID = "oCz-76-jXx"; */
+"oCz-76-jXx.title" = "ターミナルDockを表示";
+
+/* Class = "NSMenuItem"; title = "Show Substitutions"; ObjectID = "ody-I0-bFr"; */
+"ody-I0-bFr.title" = "自動置換を表示";
+
+/* Class = "NSMenuItem"; title = "Unfold Methods & Functions"; ObjectID = "ozB-gy-X3l"; */
+"ozB-gy-X3l.title" = "メソッドと関数の折りたたみを解除";
+
+/* Class = "NSMenuItem"; title = "Jump to Selection"; ObjectID = "pFJ-fE-c7I"; */
+"pFJ-fE-c7I.title" = "選択部分にジャンプ";
+
+/* Class = "NSMenuItem"; title = "Save & Publish"; ObjectID = "pPM-7F-Okc"; */
+"pPM-7F-Okc.title" = "保存して公開";
+
+/* Class = "NSMenuItem"; title = "Manage Layouts…"; ObjectID = "pSd-yO-e91"; */
+"pSd-yO-e91.title" = "レイアウトを管理…";
+
+/* Class = "NSMenuItem"; title = "Fold Level 3"; ObjectID = "ph7-c6-BA3"; */
+"ph7-c6-BA3.title" = "レベル3";
+
+/* Class = "NSMenuItem"; title = "Unfold Comment Blocks"; ObjectID = "phb-el-VEM"; */
+"phb-el-VEM.title" = "コメントブロックの折りたたみを解除";
+
+/* Class = "NSMenuItem"; title = "Move Tab to Split On Right"; ObjectID = "piy-kY-fxk"; */
+"piy-kY-fxk.title" = "分割ウインドウを右に移動";
+
+/* Class = "NSMenuItem"; title = "Sort Tabs in Split by Name"; ObjectID = "pnL-Fd-4U4"; */
+"pnL-Fd-4U4.title" = "分割を名前で並び替え";
+
+/* Class = "NSMenuItem"; title = "Splits"; ObjectID = "pwD-3U-1ew"; */
+"pwD-3U-1ew.title" = "分割ウインドウ";
+
+/* Class = "NSMenuItem"; title = "Save…"; ObjectID = "pxx-59-PXV"; */
+"pxx-59-PXV.title" = "保存…";
+
+/* Class = "NSMenuItem"; title = "Project Settings…"; ObjectID = "qrJ-fC-WX8"; */
+"qrJ-fC-WX8.title" = "プロジェクト設定…";
+
+/* Class = "NSMenuItem"; title = "Focus Split Below"; ObjectID = "qtV-GS-NVJ"; */
+"qtV-GS-NVJ.title" = "下を選択";
+
+/* Class = "NSMenuItem"; title = "Smart Quotes"; ObjectID = "qug-Ew-19m"; */
+"qug-Ew-19m.title" = "スマート引用符";
+
+/* Class = "NSMenuItem"; title = "Convert Spaces to Tabs"; ObjectID = "rIn-Il-OlI"; */
+"rIn-Il-OlI.title" = "スペースをタブコードに変換";
+
+/* Class = "NSMenuItem"; title = "Extension Library…"; ObjectID = "rKq-cl-xQy"; */
+"rKq-cl-xQy.title" = "機能拡張を管理する…";
+
+/* Class = "NSMenuItem"; title = "Show Reports Sidebar"; ObjectID = "rSn-ZK-q75"; */
+"rSn-ZK-q75.title" = "レポート";
+
+/* Class = "NSMenuItem"; title = "Check Document Now"; ObjectID = "rVp-O7-KnY"; */
+"rVp-O7-KnY.title" = "書類をチェック";
+
+/* Class = "NSMenuItem"; title = "Line Endings"; ObjectID = "rX8-BA-yqy"; */
+"rX8-BA-yqy.title" = "改行コード";
+
+/* Class = "NSMenuItem"; title = "Fold Level 5"; ObjectID = "rfq-FB-A6X"; */
+"rfq-FB-A6X.title" = "レベル5";
+
+/* Class = "NSMenu"; title = "Spelling"; ObjectID = "rhH-XT-b8x"; */
+"rhH-XT-b8x.title" = "スペル";
+
+/* Class = "NSMenuItem"; title = "Show Comparison"; ObjectID = "rjo-n0-gw3"; */
+"rjo-n0-gw3.title" = "比較を表示";
+
+/* Class = "NSMenuItem"; title = "Focus Previous Split"; ObjectID = "rue-IG-Ajd"; */
+"rue-IG-Ajd.title" = "前の分割ウインドウを選択";
+
+/* Class = "NSMenuItem"; title = "Show Hidden Files"; ObjectID = "s5E-jS-9D3"; */
+"s5E-jS-9D3.title" = "不可視項目を表示";
+
+/* Class = "NSMenuItem"; title = "Find Previous"; ObjectID = "sgb-Ls-go4"; */
+"sgb-Ls-go4.title" = "前を検索";
+
+/* Class = "NSMenuItem"; title = "Duplicate"; ObjectID = "t0k-pH-Ps0"; */
+"t0k-pH-Ps0.title" = "複製";
+
+/* Class = "NSMenuItem"; title = "Syntax"; ObjectID = "tCh-SP-xt6"; */
+"tCh-SP-xt6.title" = "言語モード";
+
+/* Class = "NSMenuItem"; title = "Always Open With"; ObjectID = "tR9-cz-5Ss"; */
+"tR9-cz-5Ss.title" = "常にこのアプリケーションで開く";
+
+/* Class = "NSMenuItem"; title = "Jump to Type Definition"; ObjectID = "tVg-cT-nJT"; */
+"tVg-cT-nJT.title" = "型定義にジャンプ";
+
+/* Class = "NSMenuItem"; title = "Reload Status"; ObjectID = "tci-NW-ZKS"; */
+"tci-NW-ZKS.title" = "ステータスを再読み込み";
+
+/* Class = "NSMenu"; title = "Publish"; ObjectID = "tv7-Ra-LFG"; */
+"tv7-Ra-LFG.title" = "公開";
+
+/* Class = "NSMenuItem"; title = "Show Debug Pane"; ObjectID = "u3S-gs-138"; */
+"u3S-gs-138.title" = "デバッグペインを表示";
+
+/* Class = "NSMenu"; title = "Nova"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "Nova";
+
+/* Class = "NSMenuItem"; title = "Check for Updates…"; ObjectID = "ue4-ei-mPo"; */
+"ue4-ei-mPo.title" = "アップデートを確認…";
+
+/* Class = "NSMenuItem"; title = "Publish"; ObjectID = "uyL-tb-q7w"; */
+"uyL-tb-q7w.title" = "公開";
+
+/* Class = "NSMenuItem"; title = "Open with Finder"; ObjectID = "v9X-6p-ahN"; */
+"v9X-6p-ahN.title" = "Finderで開く";
+
+/* Class = "NSMenuItem"; title = "Syntax Inspector"; ObjectID = "vCk-xe-AyS"; */
+"vCk-xe-AyS.title" = "言語インスペクタ";
+
+/* Class = "NSMenu"; title = "Splits"; ObjectID = "vLi-GG-J7u"; */
+"vLi-GG-J7u.title" = "分割ウインドウ";
+
+/* Class = "NSMenuItem"; title = "Go to Line…"; ObjectID = "vUu-tC-Ya5"; */
+"vUu-tC-Ya5.title" = "行を指定して移動…";
+
+/* Class = "NSMenuItem"; title = "Open With"; ObjectID = "vgM-D2-WBS"; */
+"vgM-D2-WBS.title" = "このアプリケーションで開く";
+
+/* Class = "NSMenu"; title = "Tasks"; ObjectID = "vkM-6R-fl8"; */
+"vkM-6R-fl8.title" = "タスク";
+
+/* Class = "NSMenuItem"; title = "Show Remote Sidebar"; ObjectID = "vsD-Ar-CrS"; */
+"vsD-Ar-CrS.title" = "リモート";
+
+/* Class = "NSMenu"; title = "Transformations"; ObjectID = "vtR-5Z-drx"; */
+"vtR-5Z-drx.title" = "変換";
+
+/* Class = "NSMenuItem"; title = "Editor"; ObjectID = "vzE-L3-HIh"; */
+"vzE-L3-HIh.title" = "書式";
+
+/* Class = "NSMenuItem"; title = "Show Folders Above Files"; ObjectID = "w2N-uI-omL"; */
+"w2N-uI-omL.title" = "フォルダを上位に表示";
+
+/* Class = "NSMenuItem"; title = "Create Branch…"; ObjectID = "wPh-w7-EhZ"; */
+"wPh-w7-EhZ.title" = "ブランチを作成";
+
+/* Class = "NSMenuItem"; title = "Fold Methods & Functions"; ObjectID = "wRe-91-mYA"; */
+"wRe-91-mYA.title" = "メソッドと関数を折りたたむ";
+
+/* Class = "NSMenuItem"; title = "Publish All"; ObjectID = "wTj-xa-R3A"; */
+"wTj-xa-R3A.title" = "すべてを公開";
+
+/* Class = "NSMenu"; title = "Structure"; ObjectID = "wbi-1a-mEM"; */
+"wbi-1a-mEM.title" = "構造";
+
+/* Class = "NSMenuItem"; title = "Find and Replace…"; ObjectID = "wbk-A2-39y"; */
+"wbk-A2-39y.title" = "検索と置換…";
+
+/* Class = "NSMenuItem"; title = "Release Notes"; ObjectID = "wd1-E7-dXW"; */
+"wd1-E7-dXW.title" = "リリースノート";
+
+/* Class = "NSMenuItem"; title = "New Window"; ObjectID = "whG-sm-qgJ"; */
+"whG-sm-qgJ.title" = "新規ウインドウ";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "ヘルプ";
+
+/* Class = "NSMenuItem"; title = "Show Window Tab Bar"; ObjectID = "wxC-Db-keK"; */
+"wxC-Db-keK.title" = "ウインドウタブバーを表示";
+
+/* Class = "NSMenu"; title = "Preview"; ObjectID = "wzd-p4-ONT"; */
+"wzd-p4-ONT.title" = "プレビュー";
+
+/* Class = "NSMenuItem"; title = "Show Clips Sidebar"; ObjectID = "x93-k5-eTL"; */
+"x93-k5-eTL.title" = "クリップ";
+
+/* Class = "NSMenuItem"; title = "Replace and Find Previous"; ObjectID = "xdC-ni-4dz"; */
+"xdC-ni-4dz.title" = "置換して前を検索";
+
+/* Class = "NSMenuItem"; title = "Display Options"; ObjectID = "xmu-hL-12Q"; */
+// "xmu-hL-12Q.title" = "--$$ STRING IS MISSING $$--";
+
+/* Class = "NSMenuItem"; title = "Use Selection for Replace"; ObjectID = "xqO-D0-T4f"; */
+"xqO-D0-T4f.title" = "選択部分を置換に使用";
+
+/* Class = "NSMenuItem"; title = "Document"; ObjectID = "xyz-Hi-6bZ"; */
+"xyz-Hi-6bZ.title" = "新規書類";
+
+/* Class = "NSMenuItem"; title = "Debug"; ObjectID = "y0a-pD-Jed"; */
+"y0a-pD-Jed.title" = "デバッグ";
+
+/* Class = "NSMenuItem"; title = "Close Current Tag"; ObjectID = "y9Z-zv-Dog"; */
+"y9Z-zv-Dog.title" = "現在のタグを閉じる";
+
+/* Class = "NSMenuItem"; title = "Go to Project Local Path"; ObjectID = "yAy-up-C31"; */
+"yAy-up-C31.title" = "プロジェクトローカルパスに移動";
+
+/* Class = "NSMenuItem"; title = "Sidebars"; ObjectID = "yE4-ST-qzv"; */
+"yE4-ST-qzv.title" = "サイドバー";
+
+/* Class = "NSMenuItem"; title = "Move…"; ObjectID = "ymI-lg-QNb"; */
+"ymI-lg-QNb.title" = "パスを指定して移動…";
+
+/* Class = "NSMenu"; title = "Preview In"; ObjectID = "yyo-Hp-a5X"; */
+"yyo-Hp-a5X.title" = "ブラウザを指定してプレビュー";
+
+/* Class = "NSMenuItem"; title = "Purchase"; ObjectID = "zNk-yB-mFa"; */
+"zNk-yB-mFa.title" = "購入";
+
+/* Class = "NSMenuItem"; title = "Show Line Numbers"; ObjectID = "zZo-pq-7vv"; */
+"zZo-pq-7vv.title" = "行番号を表示";
+
+/* Class = "NSMenuItem"; title = "Pause"; ObjectID = "zdX-LD-HpA"; */
+"zdX-LD-HpA.title" = "中断";
+
+/* Class = "NSMenuItem"; title = "Enter Full Screen"; ObjectID = "zrz-Af-fdH"; */
+"zrz-Af-fdH.title" = "フルスクリーンにする";
+
+/* Class = "NSMenuItem"; title = "Add Ignore Rules for Selected Items"; ObjectID = "zsw-Yc-6tC"; */
+"zsw-Yc-6tC.title" = "選択項目の無視ルールを追加";

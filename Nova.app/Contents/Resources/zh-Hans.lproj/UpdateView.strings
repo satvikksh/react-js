@@ -1,0 +1,15 @@
+
+/* Class = "NSTextFieldCell"; title = "<<DescriptiveText>>"; ObjectID = "1B8-ll-QAg"; */
+"1B8-ll-QAg.title" = "<<DescriptiveText>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Title>>"; ObjectID = "FKe-eP-Wgu"; */
+"FKe-eP-Wgu.title" = "<<Title>>";
+
+/* Class = "NSButtonCell"; title = "See What's New"; ObjectID = "HCk-KV-ziQ"; */
+"HCk-KV-ziQ.title" = "查看新功能";
+
+/* Class = "NSButtonCell"; title = "<<SupressUpdate>>"; ObjectID = "auR-j7-heG"; */
+"auR-j7-heG.title" = "<<SupressUpdate>>";
+
+/* Class = "NSButtonCell"; title = "Install & Restart"; ObjectID = "li7-ed-h8q"; */
+"li7-ed-h8q.title" = "安全并重启";

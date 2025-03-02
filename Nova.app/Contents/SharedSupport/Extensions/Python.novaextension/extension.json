@@ -1,0 +1,179 @@
+{
+    "identifier": "panic.Python",
+    "name": "Python",
+    "author": "Panic Inc.",
+    
+    "main": "main.js",
+    
+    "entitlements": {
+        "filesystem": "readwrite",
+        "process": true,
+    },
+    
+    "activationEvents": [
+        "onLanguage:python",
+        "onCommand:python.resolveInterpreter"
+    ],
+    
+    "breakpoints": [
+        {
+            "syntax": "python"
+        }
+    ],
+    
+    "configWorkspace": [
+        {
+            "key": "python.interpreter",
+            "title": "Interpreter",
+            "description": "The path to the Python interpreter to use for invoking scripts.",
+            "type": "enum",
+            "resolve": "python.resolveInterpreter",
+            "allowCustom": true
+        }
+    ],
+    
+    "configWorkspaceImage": "__filetype.py",
+    
+    "debugAdapters": {
+        "debugpy": {
+            "name": "Python",
+            "image": "task-python"
+        }
+    },
+    
+    "taskTemplates": {
+        "pythonDebug": {
+            "name": "Python Debug",
+            "description": "Run and debug Python scripts, modules, and apps.",
+            "image": "task-python",
+            "tasks": {
+                "run": {
+                    "resolve": "python",
+                    "data": {"type": "pythonDebug"}
+                }
+            },
+            "config": [
+                {
+                    "key": "python.debug.script",
+                    "title": "Script",
+                    "type": "path",
+                    "relative": true,
+                    "description": "The path to the Python script to target for debugging. This option is mutually exclusive with \"Module\". If both are specified, the script will be preferred."
+                },
+                {
+                    "key": "python.debug.module",
+                    "title": "Module",
+                    "type": "string",
+                    "description": "The name of the Python module to target for debugging. This option is mutually exclusive with \"Script\". If both are specified, the script will be preferred."
+                },
+                {
+                    "key": "python.debug.customArgs",
+                    "title": "Arguments",
+                    "description": "Custom arguments to pass to the target.",
+                    "type": "stringArray"
+                },
+                {
+                    "key": "python.debug.workingDirectory",
+                    "title": "Working Directory",
+                    "description": "The working directory in which to invoke the script. By default, the project folder is used.",
+                    "type": "path",
+                    "placeholder": "Project Root",
+                    "allowFiles": false,
+                    "allowFolders": true,
+                    "relative": true
+                },
+                {
+                    "key": "python.debug.django",
+                    "title": "Debug Django Templates",
+                    "description": "Whether debugging should be enabled within Django templates.",
+                    "type": "boolean"
+                },
+                {
+                    "key": "python.debug.jinja",
+                    "title": "Debug Jinja Templates",
+                    "description": "Whether debugging should be enabled within Jinja (Flask) templates.",
+                    "type": "boolean"
+                },
+                {
+                    "key": "python.debug.pyramid",
+                    "title": "Debug Pyramid Applications",
+                    "description": "Whether debugging should be enabled within Pyramid applications.",
+                    "type": "boolean"
+                },
+                {
+                    "key": "python.debug.debugExternal",
+                    "title": "Debug External Modules",
+                    "description": "Whether debugging should be enabled for code outside of the project directory (such as external modules and the standard library).",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "pythonRemoteDebug": {
+            "name": "Python Remote Debug",
+            "description": "Run and debug Python scripts, modules, and apps running on a remote server.",
+            "image": "task-python",
+            "tasks": {
+                "run": {
+                    "resolve": "python",
+                    "data": {"type": "pythonRemoteDebug"}
+                }
+            },
+            "config": [
+                {
+                    "key": "python.debug.host",
+                    "title": "Host",
+                    "description": "The hostname or IP address of a remote server on which debugpy is listening for connections.",
+                    "type": "string",
+                    "placeholder": "example.com"
+                },
+                {
+                    "key": "python.debug.port",
+                    "title": "Port",
+                    "description": "The port on which debugpy is listening for connections.",
+                    "type": "number",
+                    "min": 1024,
+                    "max": 65535
+                },
+                {
+                    "key": "python.debug.pathMappings",
+                    "title": "Path Mappings",
+                    "description": "Mappings between the local project paths and remote debugged paths.",
+                    "type": "objectArray",
+                    "children": [
+                        {
+                            "key": "localRoot",
+                            "title": "Local",
+                            "type": "path",
+                            "allowFiles": false,
+                            "allowFolders": true,
+                            "relative": true
+                        },
+                        {
+                            "key": "remoteRoot",
+                            "title": "Remote",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "key": "python.debug.django",
+                    "title": "Debug Django Templates",
+                    "description": "Whether debugging should be enabled within Django templates.",
+                    "type": "boolean"
+                },
+                {
+                    "key": "python.debug.jinja",
+                    "title": "Debug Jinja Templates",
+                    "description": "Whether debugging should be enabled within Jinja (Flask) templates.",
+                    "type": "boolean"
+                },
+                {
+                    "key": "python.debug.debugExternal",
+                    "title": "Debug External Modules",
+                    "description": "Whether debugging should be enabled for code outside of the project directory (such as external modules and the standard library).",
+                    "type": "boolean"
+                }
+            ]
+        }
+    }
+}

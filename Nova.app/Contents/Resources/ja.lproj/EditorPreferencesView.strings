@@ -1,0 +1,630 @@
+
+/* Class = "NSTextFieldCell"; title = "Insertion Point:"; ObjectID = "0M9-Z2-Pdj"; */
+"0M9-Z2-Pdj.title" = "入力カーソル:";
+
+/* Class = "NSMenuItem"; title = "Underline"; ObjectID = "0Ug-Gf-0jM"; */
+"0Ug-Gf-0jM.title" = "アンダーライン";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Font Style"; ObjectID = "1AW-Kf-G7I"; */
+"1AW-Kf-G7I.ibExternalAccessibilityDescription" = "フォントスタイル";
+
+/* Class = "NSMenuItem"; title = "Red"; ObjectID = "1Gh-IP-xSB"; */
+"1Gh-IP-xSB.title" = "レッド";
+
+/* Class = "NSMenuItem"; title = "Visible Always"; ObjectID = "1fe-IJ-ryV"; */
+"1fe-IJ-ryV.title" = "常に";
+
+/* Class = "NSTabViewItem"; label = "Extensions"; ObjectID = "1g9-bN-1Nw"; */
+"1g9-bN-1Nw.label" = "機能拡張";
+
+/* Class = "NSButtonCell"; title = "Wrap lines to editor width"; ObjectID = "1xY-cM-I2V"; */
+"1xY-cM-I2V.title" = "エディタの幅で行を折り返す";
+
+/* Class = "NSMenuItem"; title = "Protanopia"; ObjectID = "2DX-3f-U9Y"; */
+"2DX-3f-U9Y.title" = "Protanopia";
+
+/* Class = "NSMenuItem"; title = "HTML"; ObjectID = "2Fj-qE-TXP"; */
+"2Fj-qE-TXP.title" = "HTML";
+
+/* Class = "NSMenuItem"; title = "Yellow"; ObjectID = "2I6-0Z-uPE"; */
+"2I6-0Z-uPE.title" = "イエロー";
+
+/* Class = "NSTextFieldCell"; title = "Saving:"; ObjectID = "2Uc-nI-0gc"; */
+"2Uc-nI-0gc.title" = "保存時:";
+
+/* Class = "NSMenuItem"; title = "Windows (CRLF)"; ObjectID = "2WZ-fZ-j2k"; */
+"2WZ-fZ-j2k.title" = "Windows (CRLF)";
+
+/* Class = "NSTabViewItem"; label = "Vim"; ObjectID = "32q-Sm-13L"; */
+"32q-Sm-13L.label" = "Vim";
+
+/* Class = "NSMenuItem"; title = "Bisexual Pride"; ObjectID = "382-y8-8LG"; */
+"382-y8-8LG.title" = "Bisexual Pride";
+
+/* Class = "NSMenuItem"; title = "Block"; ObjectID = "3VP-Y9-9TM"; */
+"3VP-Y9-9TM.title" = "ブロック";
+
+/* Class = "NSMenuItem"; title = "Gray"; ObjectID = "3jq-ed-bTD"; */
+"3jq-ed-bTD.title" = "グレー";
+
+/* Class = "NSTextFieldCell"; title = "Language servers may define specific characters, beyond Return and Tab, which accept the selected completion automatically."; ObjectID = "3mS-B7-nTk"; */
+"3mS-B7-nTk.title" = "言語サーバは選択された候補を補完する際、ReturnおよびTab以外の特定の文字を定義する場合があります。";
+
+/* Class = "NSMenuItem"; title = "ASCII"; ObjectID = "4IT-Uu-evX"; */
+"4IT-Uu-evX.title" = "ASCII";
+
+/* Class = "NSMenuItem"; title = "Large"; ObjectID = "4q1-7M-bkZ"; */
+"4q1-7M-bkZ.title" = "大きい";
+
+/* Class = "NSMenuItem"; title = "Dash-Dot-Dot"; ObjectID = "5JB-bQ-Ug5"; */
+"5JB-bQ-Ug5.title" = "ダッシュ-ドット-ドット";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Font Options"; ObjectID = "5Oy-Tp-WNy"; */
+"5Oy-Tp-WNy.ibExternalAccessibilityDescription" = "フォントオプション";
+
+/* Class = "NSMenuItem"; title = "Genderfluid Pride"; ObjectID = "5YD-dv-Teq"; */
+"5YD-dv-Teq.title" = "Genderfluid Pride";
+
+/* Class = "NSButtonCell"; title = "⇥ Tab"; ObjectID = "5YR-GS-xpq"; */
+"5YR-GS-xpq.title" = "⇥ Tab";
+
+/* Class = "NSTabViewItem"; label = "Display"; ObjectID = "5l5-bR-1I7"; */
+"5l5-bR-1I7.label" = "画面";
+
+/* Class = "NSMenuItem"; title = "Gray"; ObjectID = "6BV-c8-bAI"; */
+"6BV-c8-bAI.title" = "グレー";
+
+/* Class = "NSStepper"; ibExternalAccessibilityDescription = "Font Size"; ObjectID = "6Xe-ud-oiX"; */
+"6Xe-ud-oiX.ibExternalAccessibilityDescription" = "フォントサイズ";
+
+/* Class = "NSMenuItem"; title = "Deuteranopia"; ObjectID = "6ow-tH-DyM"; */
+"6ow-tH-DyM.title" = "Deuteranopia";
+
+/* Class = "NSButtonCell"; title = "Configure using .editorconfig files"; ObjectID = "7ig-wK-mld"; */
+"7ig-wK-mld.title" = ".editorconfigファイルを使用して構成する";
+
+/* Class = "NSMenuItem"; title = "Tritanopia"; ObjectID = "7n3-Zf-hoK"; */
+"7n3-Zf-hoK.title" = "Tritanopia";
+
+/* Class = "NSMenuItem"; title = "Vertical Bar"; ObjectID = "82S-Oh-eEw"; */
+"82S-Oh-eEw.title" = "垂直バー";
+
+/* Class = "NSMenuItem"; title = "Transgender Pride"; ObjectID = "8ac-3t-OOq"; */
+"8ac-3t-OOq.title" = "Transgender Pride";
+
+/* Class = "NSMenuItem"; title = "Orange"; ObjectID = "BHc-AG-TKO"; */
+"BHc-AG-TKO.title" = "オレンジ";
+
+/* Class = "NSButtonCell"; title = "Show an alert if opened files have inconsistent line endings"; ObjectID = "BWh-m5-1tr"; */
+"BWh-m5-1tr.title" = "一貫性の無い改行コードを含む書類の場合、警告する";
+
+/* Class = "NSMenuItem"; title = "Agender Pride"; ObjectID = "CaG-WB-kmh"; */
+"CaG-WB-kmh.title" = "Agender Pride";
+
+/* Class = "NSMenuItem"; title = "None"; ObjectID = "D55-MM-dJ0"; */
+"D55-MM-dJ0.title" = "なし";
+
+/* Class = "NSButtonCell"; title = "Suggest completions when typing"; ObjectID = "D5P-BG-Ltt"; */
+"D5P-BG-Ltt.title" = "入力中に補完候補をサジェストする";
+
+/* Class = "NSButtonCell"; title = "Show indentation guides"; ObjectID = "DZg-Eq-hga"; */
+"DZg-Eq-hga.title" = "インデントガイドを表示する";
+
+/* Class = "NSButtonCell"; title = "Wrap selection in typed delimiters"; ObjectID = "EgT-Mt-kkd"; */
+"EgT-Mt-kkd.title" = "入力したカッコで選択を囲む";
+
+/* Class = "NSMenuItem"; title = "macOS / Unix (LF)"; ObjectID = "Euf-E8-boI"; */
+"Euf-E8-boI.title" = "macOS / Unix (LF)";
+
+/* Class = "NSMenuItem"; title = "Teal"; ObjectID = "F9s-6n-mU5"; */
+"F9s-6n-mU5.title" = "ティール";
+
+/* Class = "NSMenuItem"; title = "Hidden"; ObjectID = "FlJ-xt-V6r"; */
+"FlJ-xt-V6r.title" = "隠す";
+
+/* Class = "NSMenuItem"; title = "Aromantic Pride"; ObjectID = "G0h-2f-9ZL"; */
+"G0h-2f-9ZL.title" = "Aromantic Pride";
+
+/* Class = "NSMenuItem"; title = "Beach Day"; ObjectID = "GQQ-aS-yBT"; */
+"GQQ-aS-yBT.title" = "Beach Day";
+
+/* Class = "NSMenuItem"; title = "Beach Day"; ObjectID = "Ghm-8h-fG1"; */
+"Ghm-8h-fG1.title" = "Beach Day";
+
+/* Class = "NSTextFieldCell"; title = "Bracket Palette:"; ObjectID = "Gls-Vw-tl0"; */
+"Gls-Vw-tl0.title" = "カッコパレット:";
+
+/* Class = "NSMenuItem"; title = "Visible In Focused Editor"; ObjectID = "HVz-VF-ORx"; */
+"HVz-VF-ORx.title" = "選択されたエディタのみ";
+
+/* Class = "NSButtonCell"; title = "Suggest Clips when typing"; ObjectID = "HYI-2X-Flb"; */
+"HYI-2X-Flb.title" = "入力中にクリップをサジェストする";
+
+/* Class = "NSButtonCell"; title = "Insert and type-over matching delimiters"; ObjectID = "Hbt-Og-fJB"; */
+"Hbt-Og-fJB.title" = "一致するカッコを自動で挿入する";
+
+/* Class = "NSTextFieldCell"; placeholderString = "0.0"; ObjectID = "HgK-4Y-WId"; */
+"HgK-4Y-WId.placeholderString" = "0.0";
+
+/* Class = "NSMenuItem"; title = "Blue"; ObjectID = "IBD-qv-vaT"; */
+"IBD-qv-vaT.title" = "ブルー";
+
+/* Class = "NSTextFieldCell"; placeholderString = "4"; ObjectID = "IiE-Nw-5QH"; */
+"IiE-Nw-5QH.placeholderString" = "4";
+
+/* Class = "NSMenuItem"; title = "Cyberpunk"; ObjectID = "Isc-AB-bY9"; */
+"Isc-AB-bY9.title" = "Cyberpunk";
+
+/* Class = "NSButtonCell"; title = "Code actions indicator"; ObjectID = "Iup-Ru-7mJ"; */
+"Iup-Ru-7mJ.title" = "コードアクションインジケータ";
+
+/* Class = "NSMenuItem"; title = "MacRoman"; ObjectID = "J9R-Qe-fZI"; */
+"J9R-Qe-fZI.title" = "MacRoman";
+
+/* Class = "NSMenuItem"; title = "Inserts a breakpoint"; ObjectID = "JUp-Fa-6QF"; */
+"JUp-Fa-6QF.title" = "ブレークポイントを挿入する";
+
+/* Class = "NSMenuItem"; title = "Genderfluid Pride"; ObjectID = "JmZ-5d-y0A"; */
+"JmZ-5d-y0A.title" = "Genderfluid";
+
+/* Class = "NSButtonCell"; title = "Minimap"; ObjectID = "Jqf-hI-Ikw"; */
+"Jqf-hI-Ikw.title" = "ミニマップ";
+
+/* Class = "NSTextFieldCell"; title = "Default Line Endings:"; ObjectID = "KC7-d2-3ST"; */
+"KC7-d2-3ST.title" = "デフォルトの改行コード:";
+
+/* Class = "NSButtonCell"; title = "Symbol path"; ObjectID = "KRH-o4-B6G"; */
+"KRH-o4-B6G.title" = "Symbol path";
+
+/* Class = "NSMenuItem"; title = "Genderqueer Pride"; ObjectID = "LEH-Lf-SaQ"; */
+"LEH-Lf-SaQ.title" = "Genderqueer Pride";
+
+/* Class = "NSMenuItem"; title = "Rainbow"; ObjectID = "Lfq-1x-hy5"; */
+"Lfq-1x-hy5.title" = "レインボー";
+
+/* Class = "NSTextFieldCell"; title = "Font:"; ObjectID = "Lrf-55-S41"; */
+"Lrf-55-S41.title" = "フォント:";
+
+/* Class = "NSMenuItem"; title = "Aromantic Pride"; ObjectID = "Lzn-a4-jYf"; */
+"Lzn-a4-jYf.title" = "Aromantic Pride";
+
+/* Class = "NSButtonCell"; title = "Automatically reload preview after typing"; ObjectID = "M0L-wv-Imh"; */
+"M0L-wv-Imh.title" = "入力後にプレビューを自動的に再読み込みする";
+
+/* Class = "NSMenuItem"; title = "Pansexual Pride"; ObjectID = "MHc-Sq-QfS"; */
+"MHc-Sq-QfS.title" = "Pansexual Pride";
+
+/* Class = "NSTextFieldCell"; title = "Status View:"; ObjectID = "MSP-0O-2bT"; */
+"MSP-0O-2bT.title" = "ステータス表示:";
+
+/* Class = "NSButtonCell"; title = "Enable Vim mode"; ObjectID = "MX7-Ix-ILO"; */
+"MX7-Ix-ILO.title" = "Vimモードを有効にする";
+
+/* Class = "NSButtonCell"; title = "Accept completions on server-defined characters"; ObjectID = "MjW-HP-IlG"; */
+"MjW-HP-IlG.title" = "サーバ定義文字による補完を許可する";
+
+/* Class = "NSMenuItem"; title = "<<Family>>"; ObjectID = "MvR-18-45X"; */
+"MvR-18-45X.title" = "<<Family>>";
+
+/* Class = "NSTextFieldCell"; title = "px"; ObjectID = "MzD-Wj-lYg"; */
+"MzD-Wj-lYg.title" = "px";
+
+/* Class = "NSMenuItem"; title = "Bisexual Pride"; ObjectID = "N0n-ac-g0d"; */
+"N0n-ac-g0d.title" = "Bisexual Pride";
+
+/* Class = "NSButtonCell"; title = "Show In Gutter"; ObjectID = "N5i-Md-BQR"; */
+"N5i-Md-BQR.title" = "余白に表示";
+
+/* Class = "NSMenuItem"; title = "Yellow"; ObjectID = "NGU-gB-dPW"; */
+"NGU-gB-dPW.title" = "イエロー";
+
+/* Class = "NSMenuItem"; title = "CSS"; ObjectID = "Ndb-uF-e6K"; */
+"Ndb-uF-e6K.title" = "CSS";
+
+/* Class = "NSTextFieldCell"; title = "Indentation Guides:"; ObjectID = "Opd-J6-bql"; */
+"Opd-J6-bql.title" = "インデントガイド:";
+
+/* Class = "NSButtonCell"; title = "Use pasteboard for unnamed register"; ObjectID = "Ovt-v0-aKV"; */
+"Ovt-v0-aKV.title" = "Unnamedレジスタでペーストボードを使用する";
+
+/* Class = "NSMenuItem"; title = "Synthwave"; ObjectID = "QKv-RJ-EhV"; */
+"QKv-RJ-EhV.title" = "Synthwave";
+
+/* Class = "NSTextFieldCell"; title = "Wrapping Keys:"; ObjectID = "RUC-XS-wgH"; */
+"RUC-XS-wgH.title" = "折り返しキー:";
+
+/* Class = "NSMenuItem"; title = "Panic Palette"; ObjectID = "RaJ-Hp-UGc"; */
+"RaJ-Hp-UGc.title" = "Panicパレット";
+
+/* Class = "NSTextFieldCell"; title = "Line height is specified as a multiple of font size."; ObjectID = "RcV-Rk-0wT"; */
+"RcV-Rk-0wT.title" = "フォントサイズに入力値を乗じた値が指定されます。";
+
+/* Class = "NSMenuItem"; title = "Pink"; ObjectID = "RjU-cV-xMW"; */
+"RjU-cV-xMW.title" = "ピンク";
+
+/* Class = "NSButtonCell"; title = "Invisibles"; ObjectID = "SDu-E8-uqH"; */
+"SDu-E8-uqH.title" = "不可視文字";
+
+/* Class = "NSButtonCell"; title = "Current line highlight"; ObjectID = "Sa8-aw-V93"; */
+"Sa8-aw-V93.title" = "選択行ハイライト";
+
+/* Class = "NSMenuItem"; title = "Tabs"; ObjectID = "T3w-h1-ANs"; */
+"T3w-h1-ANs.title" = "タブコード";
+
+/* Class = "NSMenuItem"; title = "Transgender Pride"; ObjectID = "T64-79-BXn"; */
+"T64-79-BXn.title" = "Transgender Pride";
+
+/* Class = "NSButtonCell"; title = "Violet"; ObjectID = "Tdj-LG-HwA"; */
+"Tdj-LG-HwA.title" = "バイオレット";
+
+/* Class = "NSButtonCell"; title = "Automatically insert closing tags"; ObjectID = "Tnq-yo-OEv"; */
+"Tnq-yo-OEv.title" = "終了タグを自動的に補完する";
+
+/* Class = "NSMenuItem"; title = "Intersex Pride"; ObjectID = "TtK-hF-ZPF"; */
+"TtK-hF-ZPF.title" = "Intersex Pride";
+
+/* Class = "NSTextFieldCell"; title = "Completions:"; ObjectID = "Tts-cU-MsD"; */
+"Tts-cU-MsD.title" = "コード補完:";
+
+/* Class = "NSButtonCell"; title = "Show In Editor"; ObjectID = "TwK-Ym-pcV"; */
+"TwK-Ym-pcV.title" = "エディタ内に表示";
+
+/* Class = "NSTextFieldCell"; title = "Palette:"; ObjectID = "U9E-mr-OvQ"; */
+"U9E-mr-OvQ.title" = "パレット:";
+
+/* Class = "NSButtonCell"; title = "Completions"; ObjectID = "UGE-Z1-WEk"; */
+"UGE-Z1-WEk.title" = "コード補完を使用する";
+
+/* Class = "NSMenuItem"; title = "Green"; ObjectID = "UVS-mA-XYf"; */
+"UVS-mA-XYf.title" = "グリーン";
+
+/* Class = "NSMenuItem"; title = "Pink"; ObjectID = "UdK-RA-cJ2"; */
+"UdK-RA-cJ2.title" = "ピンク";
+
+/* Class = "NSButtonCell"; title = "Contextual hover information"; ObjectID = "Ups-Op-F7i"; */
+"Ups-Op-F7i.title" = "文脈にマッチした情報をホバーさせる";
+
+/* Class = "NSButtonCell"; title = "← & →"; ObjectID = "V4h-vr-pa6"; */
+"V4h-vr-pa6.title" = "← & →";
+
+/* Class = "NSMenuItem"; title = "Purple"; ObjectID = "VFi-3s-cqw"; */
+"VFi-3s-cqw.title" = "パープル";
+
+/* Class = "NSMenuItem"; title = "Orange"; ObjectID = "VN0-Sy-HFb"; */
+"VN0-Sy-HFb.title" = "オレンジ";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Font Size"; ObjectID = "Vjb-Jf-8gs"; */
+"Vjb-Jf-8gs.ibExternalAccessibilityDescription" = "フォントサイズ";
+
+/* Class = "NSTextFieldCell"; title = "Accept completions with:"; ObjectID = "VkE-5S-Aug"; */
+"VkE-5S-Aug.title" = "補完に応じるキー:";
+
+/* Class = "NSTextFieldCell"; title = "Default Syntax:"; ObjectID = "WDR-sR-QN7"; */
+"WDR-sR-QN7.title" = "デフォルトの言語モード:";
+
+/* Class = "NSMenuItem"; title = "None"; ObjectID = "WPK-yL-SBc"; */
+"WPK-yL-SBc.title" = "使用しない";
+
+/* Class = "NSTabViewItem"; label = "Editing"; ObjectID = "XDR-p8-i1O"; */
+"XDR-p8-i1O.label" = "編集";
+
+/* Class = "NSMenuItem"; title = "Deuteranopia"; ObjectID = "XEe-e9-EiT"; */
+"XEe-e9-EiT.title" = "2色覚";
+
+/* Class = "NSButtonCell"; title = "Auditory"; ObjectID = "XUo-Vm-Ww3"; */
+"XUo-Vm-Ww3.title" = "オーディオベル";
+
+/* Class = "NSMenuItem"; title = "Tritanopia"; ObjectID = "Xfs-Nm-3fr"; */
+"Xfs-Nm-3fr.title" = "3色覚";
+
+/* Class = "NSButtonCell"; title = "Indent wrapped lines to match leading whitespace"; ObjectID = "XiZ-96-7u1"; */
+"XiZ-96-7u1.title" = "先頭の空白に一致するよう折り返し行をインデントする";
+
+/* Class = "NSMenuItem"; title = "JavaScript"; ObjectID = "XvS-ET-zcs"; */
+"XvS-ET-zcs.title" = "JavaScript";
+
+/* Class = "NSMenuItem"; title = "Cyberpunk"; ObjectID = "Y9d-Fv-5ra"; */
+"Y9d-Fv-5ra.title" = "Cyberpunk";
+
+/* Class = "NSButtonCell"; title = "Code structure headers"; ObjectID = "ZHJ-pB-lnq"; */
+"ZHJ-pB-lnq.title" = "コード構造ヘッダ";
+
+/* Class = "NSButtonCell"; title = "Highlight instances of selected symbol"; ObjectID = "ZId-hh-NwN"; */
+"ZId-hh-NwN.title" = "選択されたシンボルのインスタンスをハイライトする";
+
+/* Class = "NSTextFieldCell"; title = "EditorConfig:"; ObjectID = "Zbu-nT-GCw"; */
+ "Zbu-nT-GCw.title" = "EditorConfig:";
+
+/* Class = "NSButtonCell"; title = "Reformat indentation of pasted text"; ObjectID = "aUd-Wl-rNn"; */
+"aUd-Wl-rNn.title" = "挿入テキストに応じてインデントを調整する";
+
+/* Class = "NSTextFieldCell"; title = "Clicking a line number:"; ObjectID = "agS-z7-gfu"; */
+"agS-z7-gfu.title" = "行番号のクリック時:";
+
+/* Class = "NSMenuItem"; title = "Six Colors"; ObjectID = "bKs-Lf-RCJ"; */
+"bKs-Lf-RCJ.title" = "シックス・カラーズ";
+
+/* Class = "NSMenuItem"; title = "Spaces"; ObjectID = "bOl-a3-naB"; */
+"bOl-a3-naB.title" = "空白スペース";
+
+/* Class = "NSMenuItem"; title = "Demisexual Pride"; ObjectID = "bok-Rf-ild"; */
+"bok-Rf-ild.title" = "Demisexual Pride";
+
+/* Class = "NSMenuItem"; title = "Synthwave"; ObjectID = "bud-3n-FZD"; */
+"bud-3n-FZD.title" = "Synthwave";
+
+/* Class = "NSMenuItem"; title = "Dash"; ObjectID = "c6w-Wa-9Wa"; */
+"c6w-Wa-9Wa.title" = "ダッシュ";
+
+/* Class = "NSMenuItem"; title = "Rainbow"; ObjectID = "cON-cu-65v"; */
+"cON-cu-65v.title" = "レインボー";
+
+/* Class = "NSMenuItem"; title = "Hybrid"; ObjectID = "cnj-3D-6v0"; */
+"cnj-3D-6v0.title" = "ハイブリッド";
+
+/* Class = "NSMenuItem"; title = "Green"; ObjectID = "cwP-UG-Flh"; */
+"cwP-UG-Flh.title" = "グリーン";
+
+/* Class = "NSTextFieldCell"; title = "Line Numbers:"; ObjectID = "cy7-8E-NRK"; */
+"cy7-8E-NRK.title" = "行番号:";
+
+/* Class = "NSButtonCell"; title = "Highlight matching brackets and tags"; ObjectID = "dJ6-EL-n89"; */
+"dJ6-EL-n89.title" = "マッチするカッコとタグをハイライトする";
+
+/* Class = "NSMenuItem"; title = "Asexual Pride"; ObjectID = "dqf-3M-sHA"; */
+"dqf-3M-sHA.title" = "Asexual Pride";
+
+/* Class = "NSTextFieldCell"; title = "Vim:"; ObjectID = "e2B-mA-KzR"; */
+"e2B-mA-KzR.title" = "Vim:";
+
+/* Class = "NSTextFieldCell"; title = "Indent wrapped lines by"; ObjectID = "e9k-9b-WpP"; */
+"e9k-9b-WpP.title" = "折り返し行のインデント幅";
+
+/* Class = "NSButtonCell"; title = "⌫ Delete"; ObjectID = "eBT-BH-f9N"; */
+"eBT-BH-f9N.title" = "⌫ Delete";
+
+/* Class = "NSMenuItem"; title = "Purple"; ObjectID = "eVE-Ob-nZj"; */
+"eVE-Ob-nZj.title" = "パープル";
+
+/* Class = "NSButtonCell"; title = "Autodetect indentation when opening existing files"; ObjectID = "ecO-bX-Phn"; */
+"ecO-bX-Phn.title" = "ファイルを開く際、インデントを自動検出する";
+
+/* Class = "NSMenuItem"; title = "Lesbian Pride"; ObjectID = "fAQ-HB-xUc"; */
+"fAQ-HB-xUc.title" = "Lesbian Pride";
+
+/* Class = "NSMenuItem"; title = "Protanopia"; ObjectID = "fMT-7d-fcY"; */
+"fMT-7d-fcY.title" = "１色型色覚";
+
+/* Class = "NSMenuItem"; title = "Intersex Pride"; ObjectID = "frs-z0-QIw"; */
+"frs-z0-QIw.title" = "Intersex Pride";
+
+/* Class = "NSButtonCell"; title = "Adjust indentation while typing"; ObjectID = "fwU-MQ-F0y"; */
+"fwU-MQ-F0y.title" = "入力中にインデントを調整する";
+
+/* Class = "NSMenuItem"; title = "Dash-Dot"; ObjectID = "fwr-yN-Xm0"; */
+"fwr-yN-Xm0.title" = "ダッシュ-ドット";
+
+/* Class = "NSMenuItem"; title = "UTF-8"; ObjectID = "g8U-EI-zM9"; */
+"g8U-EI-zM9.title" = "UTF-8";
+
+/* Class = "NSMenuItem"; title = "Absolute"; ObjectID = "gBI-DO-b4j"; */
+"gBI-DO-b4j.title" = "絶対的表示";
+
+/* Class = "NSTextFieldCell"; title = "Pattern:"; ObjectID = "gky-jd-vFX"; */
+"gky-jd-vFX.title" = "パターン:";
+
+/* Class = "NSButtonCell"; title = "Manage Extensions…"; ObjectID = "h1O-DH-eFO"; */
+"h1O-DH-eFO.title" = "機能拡張を管理…";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Font Family"; ObjectID = "h7E-4O-akc"; */
+"h7E-4O-akc.ibExternalAccessibilityDescription" = "フォント";
+
+/* Class = "NSMenuItem"; title = "Six Colors"; ObjectID = "hAr-f1-yqR"; */
+"hAr-f1-yqR.title" = "シックス・カラーズ";
+
+/* Class = "NSButtonCell"; title = "Select prefix when double-clicking identifiers"; ObjectID = "i7O-St-EBW"; */
+"i7O-St-EBW.title" = "変数をダブルクリックして接頭辞を選択する";
+
+/* Class = "NSTabViewItem"; label = "Indentation"; ObjectID = "iOX-OW-I8A"; */
+"iOX-OW-I8A.label" = "インデント設定";
+
+/* Class = "NSTextFieldCell"; title = "Language Servers:"; ObjectID = "iSD-Hf-oyp"; */
+"iSD-Hf-oyp.title" = "言語サーバ:";
+
+/* Class = "NSMenuItem"; title = "Asexual Pride"; ObjectID = "ihb-bl-BAe"; */
+"ihb-bl-BAe.title" = "Asexual Pride";
+
+/* Class = "NSTextFieldCell"; title = "Show:"; ObjectID = "irm-ew-a6x"; */
+"irm-ew-a6x.title" = "表示:";
+
+/* Class = "NSTextFieldCell"; title = "Editor Overscroll:"; ObjectID = "jEV-Y6-krX"; */
+"jEV-Y6-krX.title" = "オーバースクロール:";
+
+/* Class = "NSMenuItem"; title = "Small"; ObjectID = "jr4-69-Pdd"; */
+"jr4-69-Pdd.title" = "小さい";
+
+/* Class = "NSButtonCell"; title = "Options…"; ObjectID = "kh3-UB-fGc"; */
+"kh3-UB-fGc.title" = "オプション…";
+
+/* Class = "NSMenuItem"; title = "Vaporwave"; ObjectID = "ku4-Fj-bXp"; */
+"ku4-Fj-bXp.title" = "Vaporwave";
+
+/* Class = "NSMenuItem"; title = "Demisexual Pride"; ObjectID = "l5w-Us-WEF"; */
+"l5w-Us-WEF.title" = "Demisexual";
+
+/* Class = "NSTextFieldCell"; title = "Letter Spacing:"; ObjectID = "lT0-Bb-ULO"; */
+"lT0-Bb-ULO.title" = "文字の間隔:";
+
+/* Class = "NSButtonCell"; title = "Code folding ribbon"; ObjectID = "lVl-SZ-54R"; */
+"lVl-SZ-54R.title" = "折りたたみバー";
+
+/* Class = "NSButtonCell"; title = "Toggling comment includes a space"; ObjectID = "lZa-vE-3mY"; */
+"lZa-vE-3mY.title" = "トグルコメントにスペースを含める";
+
+/* Class = "NSTextFieldCell"; title = "Line Height:"; ObjectID = "lhu-Yv-tPK"; */
+"lhu-Yv-tPK.title" = "行の高さ:";
+
+/* Class = "NSTextFieldCell"; title = "The alternate behavior can be performed by using an Option-click."; ObjectID = "m9d-Aw-pQ7"; */
+"m9d-Aw-pQ7.title" = "option + クリックで、設定の逆の操作を行えます。";
+
+/* Class = "NSTextFieldCell"; title = "Multiple wrap guides may be specified by separating with commas."; ObjectID = "mBY-d8-IBd"; */
+"mBY-d8-IBd.title" = "複数の折り返しガイドを指定するには、カンマで区切ります。";
+
+/* Class = "NSTextFieldCell"; title = "Typing:"; ObjectID = "mOQ-pR-cKo"; */
+"mOQ-pR-cKo.title" = "入力中:";
+
+/* Class = "NSMenuItem"; title = "Gay Pride"; ObjectID = "mb2-2B-r7V"; */
+"mb2-2B-r7V.title" = "Gay Pride";
+
+/* Class = "NSMenuItem"; title = "Relative"; ObjectID = "mkf-UX-osq"; */
+"mkf-UX-osq.title" = "相対的表示";
+
+/* Class = "NSButtonCell"; title = "Automatically indent new lines"; ObjectID = "mlu-a8-e5C"; */
+"mlu-a8-e5C.title" = "改行時に自動でインデントする";
+
+/* Class = "NSTextFieldCell"; title = "Options:"; ObjectID = "mr3-kb-dvJ"; */
+"mr3-kb-dvJ.title" = "オプション:";
+
+/* Class = "NSButtonCell"; title = "⏎ Return"; ObjectID = "mxR-xq-I2o"; */
+"mxR-xq-I2o.title" = "⏎ Return";
+
+/* Class = "NSMenuItem"; title = "Solid"; ObjectID = "n1r-mm-Hhu"; */
+"n1r-mm-Hhu.title" = "ソリッド";
+
+/* Class = "NSButtonCell"; title = "Trim whitespace from whitespace-only lines"; ObjectID = "nFI-dQ-1pA"; */
+"nFI-dQ-1pA.title" = "空白のみの行から空白を削除する";
+
+/* Class = "NSMenuItem"; title = "Non-Binary Pride"; ObjectID = "nez-lu-kJy"; */
+"nez-lu-kJy.title" = "Non-Binary Pride";
+
+/* Class = "NSTextFieldCell"; title = "Prefer Indent Using:"; ObjectID = "niT-w8-6D8"; */
+"niT-w8-6D8.title" = "使用するインデント:";
+
+/* Class = "NSButtonCell"; title = "h & l"; ObjectID = "niY-8n-RFA"; */
+"niY-8n-RFA.title" = "h & l";
+
+/* Class = "NSMenuItem"; title = "Selects the line"; ObjectID = "nrY-kG-3ot"; */
+"nrY-kG-3ot.title" = "行を選択する";
+
+/* Class = "NSMenuItem"; title = "Medium"; ObjectID = "oCf-Ew-12F"; */
+"oCf-Ew-12F.title" = "標準";
+
+/* Class = "NSButtonCell"; title = "Space"; ObjectID = "oTU-yc-rha"; */
+"oTU-yc-rha.title" = "Space";
+
+/* Class = "NSMenuItem"; title = "None"; ObjectID = "opo-ab-St2"; */
+"opo-ab-St2.title" = "なし";
+
+/* Class = "NSMenuItem"; title = "Red"; ObjectID = "ov5-Du-Sfv"; */
+"ov5-Du-Sfv.title" = "レッド";
+
+/* Class = "NSButtonCell"; title = "Blink insertion point"; ObjectID = "oxm-Zl-R2A"; */
+"oxm-Zl-R2A.title" = "挿入ポイントを点滅";
+
+/* Class = "NSMenuItem"; title = "Panic Palette"; ObjectID = "p2L-Kn-5jR"; */
+"p2L-Kn-5jR.title" = "Panicパレット";
+
+/* Class = "NSButtonCell"; title = "Signature help for arguments"; ObjectID = "pJm-55-rAl"; */
+"pJm-55-rAl.title" = "引数のシグネチャヘルプ";
+
+/* Class = "NSTextFieldCell"; title = "Opacity:"; ObjectID = "pXx-FH-BSc"; */
+"pXx-FH-BSc.title" = "不透明度:";
+
+/* Class = "NSTextFieldCell"; title = "spaces"; ObjectID = "psa-7E-yIC"; */
+"psa-7E-yIC.title" = "スペース";
+
+/* Class = "NSMenuItem"; title = "Blue"; ObjectID = "r0G-Ys-VFH"; */
+"r0G-Ys-VFH.title" = "ブルー";
+
+/* Class = "NSButtonCell"; title = "Show wrap guide at column"; ObjectID = "r9G-jA-Cta"; */
+"r9G-jA-Cta.title" = "折り返しガイドを表示:";
+
+/* Class = "NSButtonCell"; title = "Prefer commenting by line"; ObjectID = "r9m-a4-U8A"; */
+"r9m-a4-U8A.title" = "1行コメントアウトを優先する";
+
+/* Class = "NSTextFieldCell"; title = "Requires a relevant extension compatible with the Language Server Protocol."; ObjectID = "rKW-Ye-n0R"; */
+"rKW-Ye-n0R.title" = "言語サーバ（Language Server）プロトコルと互換性のある関連した機能拡張が必要です。";
+
+/* Class = "NSButtonCell"; title = "Visual"; ObjectID = "s6x-eX-RyW"; */
+"s6x-eX-RyW.title" = "ビジュアルベル";
+
+/* Class = "NSMenuItem"; title = "Gay Pride"; ObjectID = "sYU-3O-JpY"; */
+"sYU-3O-JpY.title" = "Gay Pride";
+
+/* Class = "NSMenuItem"; title = "Teal"; ObjectID = "sjY-8N-RaM"; */
+"sjY-8N-RaM.title" = "ティール";
+
+/* Class = "NSTextFieldCell"; title = "Tab Width:"; ObjectID = "slD-aU-TZM"; */
+"slD-aU-TZM.title" = "幅:";
+
+/* Class = "NSMenuItem"; title = "Pansexual Pride"; ObjectID = "snG-y1-3K6"; */
+"snG-y1-3K6.title" = "Pansexual Pride";
+
+/* Class = "NSButtonCell"; title = "Show command suggestions"; ObjectID = "u6t-8q-J3E"; */
+"u6t-8q-J3E.title" = "コマンドをサジェストする";
+
+/* Class = "NSButtonCell"; title = "Line numbers"; ObjectID = "uDQ-qd-vRA"; */
+"uDQ-qd-vRA.title" = "行番号";
+
+/* Class = "NSButtonCell"; title = "File path"; ObjectID = "uFU-TH-hja"; */
+"uFU-TH-hja.title" = "ファイルパス";
+
+/* Class = "NSTextFieldCell"; placeholderString = "4"; ObjectID = "uSD-jw-NzF"; */
+"uSD-jw-NzF.placeholderString" = "4";
+
+/* Class = "NSTextFieldCell"; title = "spaces"; ObjectID = "ulR-P2-Vxi"; */
+"ulR-P2-Vxi.title" = "スペース";
+
+/* Class = "NSButtonCell"; title = "Type and function separators"; ObjectID = "v4o-QC-LEj"; */
+"v4o-QC-LEj.title" = "入力と機能セパレータ";
+
+/* Class = "NSMenuItem"; title = "Dot"; ObjectID = "vBr-jg-Y4f"; */
+"vBr-jg-Y4f.title" = "ドット";
+
+/* Class = "NSTextFieldCell"; placeholderString = "1.0"; ObjectID = "vFk-q6-fTg"; */
+"vFk-q6-fTg.placeholderString" = "1.5";
+
+/* Class = "NSTextFieldCell"; title = "Default Text Encoding:"; ObjectID = "vTc-qt-o5I"; */
+"vTc-qt-o5I.title" = "デフォルトのエンコード:";
+
+/* Class = "NSButtonCell"; title = "Links"; ObjectID = "vak-n5-ZJA"; */
+"vak-n5-ZJA.title" = "リンク";
+
+/* Class = "NSMenuItem"; title = "Classic Mac OS (CR)"; ObjectID = "w4a-ui-4jW"; */
+"w4a-ui-4jW.title" = "クラシックMac OS (CR)";
+
+/* Class = "NSMenuItem"; title = "Lesbian Pride"; ObjectID = "wEb-nT-K2x"; */
+"wEb-nT-K2x.title" = "Lesbian Pride";
+
+/* Class = "NSTextFieldCell"; title = "Color Previews:"; ObjectID = "wNV-t3-j4P"; */
+"wNV-t3-j4P.title" = "カラーのプレビュー:";
+
+/* Class = "NSMenuItem"; title = "Agender Pride"; ObjectID = "wZZ-WH-RQo"; */
+"wZZ-WH-RQo.title" = "Agender Pride";
+
+/* Class = "NSButtonCell"; title = "Ensure a trailing newline at the end of files"; ObjectID = "wwl-tE-wND"; */
+"wwl-tE-wND.title" = "ファイル終端に改行を追加する";
+
+/* Class = "NSMenuItem"; title = "Vaporwave"; ObjectID = "wx3-Y9-d3D"; */
+"wx3-Y9-d3D.title" = "Vaporwave";
+
+/* Class = "NSTextFieldCell"; title = "Beep Style:"; ObjectID = "xRo-gH-AmJ"; */
+"xRo-gH-AmJ.title" = "ビープ形式:";
+
+/* Class = "NSMenuItem"; title = "Genderqueer Pride"; ObjectID = "xnG-40-LBJ"; */
+"xnG-40-LBJ.title" = "Genderqueer Pride";
+
+/* Class = "NSMenuItem"; title = "Non-Binary Pride"; ObjectID = "xyq-uh-WgB"; */
+"xyq-uh-WgB.title" = "Non-Binary Pride";
+
+/* Class = "NSMenuItem"; title = "<<Style>>"; ObjectID = "y7P-gf-avV"; */
+"y7P-gf-avV.title" = "<<Style>>";
+
+/* Class = "NSButtonCell"; title = "~ Tilde"; ObjectID = "z1k-Ol-JTl"; */
+ "z1k-Ol-JTl.title" = "~ Tilde";
+
+/* Class = "NSTextFieldCell"; title = "Automatically set indentation style, line endings, and more based on .editorconfig files in a project."; ObjectID = "zMQ-8Z-RNM"; */
+"zMQ-8Z-RNM.title" = "プロジェクトフォルダ内の.editorconfigファイルを参照し、インデントスタイルや改行コードなどを自動的に設定し適用するようにします。";
+
+/* Class = "NSButtonCell"; title = "Automatically trim trailing whitespace"; ObjectID = "zZI-Mg-bw3"; */
+"zZI-Mg-bw3.title" = "行末の空白を自動トリムする";

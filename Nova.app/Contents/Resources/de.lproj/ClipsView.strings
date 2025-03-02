@@ -1,0 +1,111 @@
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "action button"; ObjectID = "0NU-hX-LRG"; */
+"0NU-hX-LRG.ibExternalAccessibilityDescription" = "Aktionstaste";
+
+/* Class = "NSMenuItem"; title = "Import Clips…"; ObjectID = "0TE-SH-g4R"; */
+"0TE-SH-g4R.title" = "Clips importieren …";
+
+/* Class = "NSSearchFieldCell"; placeholderString = "Filter"; ObjectID = "0ie-fA-5A8"; */
+"0ie-fA-5A8.placeholderString" = "Filtern";
+
+/* Class = "NSButtonCell"; title = "Extensions"; ObjectID = "4Yj-y2-DK0"; */
+"4Yj-y2-DK0.title" = "Erweiterungen";
+
+/* Class = "NSTextFieldCell"; title = "def foobar():\n    return self;"; ObjectID = "4hg-cJ-dqd"; */
+"4hg-cJ-dqd.title" = "def foobar():\n    return self;";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "(untitled group)"; ObjectID = "7cD-Uk-pva"; */
+"7cD-Uk-pva.ibShadowedIsNilPlaceholder" = "(unbenannte Gruppe)";
+
+/* Class = "NSMenuItem"; title = "Delete"; ObjectID = "8Ys-ss-Hfr"; */
+"8Ys-ss-Hfr.title" = "Löschen";
+
+/* Class = "NSButtonCell"; title = "Global"; ObjectID = "AXd-a3-Val"; */
+"AXd-a3-Val.title" = "Global";
+
+/* Class = "NSMenuItem"; title = "Add Clip"; ObjectID = "BxK-Eb-Nnt"; */
+"BxK-Eb-Nnt.title" = "Clip hinzufügen";
+
+/* Class = "NSTextFieldCell"; title = "Clip Name"; ObjectID = "CWs-Wd-WJp"; */
+"CWs-Wd-WJp.title" = "Clip-Name";
+
+/* Class = "NSMenuItem"; title = "Export Clips…"; ObjectID = "EXT-nV-Zbd"; */
+"EXT-nV-Zbd.title" = "Clips exportieren …";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "(untitled clip)"; ObjectID = "Etk-78-vZY"; */
+"Etk-78-vZY.ibShadowedIsNilPlaceholder" = "(unbenannter Clip)";
+
+/* Class = "NSButtonCell"; title = "Project"; ObjectID = "Fvd-f3-fb6"; */
+"Fvd-f3-fb6.title" = "Projekt";
+
+/* Class = "NSTextFieldCell"; title = "Extension"; ObjectID = "G5d-Jr-1ha"; */
+"G5d-Jr-1ha.title" = "Suffix";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "add clip"; ObjectID = "Hse-uT-4ZM"; */
+"Hse-uT-4ZM.ibExternalAccessibilityDescription" = "Clip hinzufügen";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Add a new clip"; ObjectID = "Hse-uT-4ZM"; */
+"Hse-uT-4ZM.ibShadowedToolTip" = "Neuen Clip hinzufügen";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "(untitled group)"; ObjectID = "LB1-0A-iHT"; */
+"LB1-0A-iHT.ibShadowedIsNilPlaceholder" = "(unbenannte Gruppe)";
+
+/* Class = "NSButtonCell"; title = "Find More Clips…"; ObjectID = "UHI-xk-VOv"; */
+"UHI-xk-VOv.title" = "Mehr Clips finden …";
+
+/* Class = "NSSearchField"; ibExternalAccessibilityDescription = "Clips filter"; ObjectID = "UJb-rj-CCG"; */
+"UJb-rj-CCG.ibExternalAccessibilityDescription" = "Clips-Filter";
+
+/* Class = "NSSearchField"; ibShadowedToolTip = "Show files with matching name"; ObjectID = "UJb-rj-CCG"; */
+"UJb-rj-CCG.ibShadowedToolTip" = "Dateien mit übereinstimmendem Namen anzeigen";
+
+/* Class = "NSMenuItem"; title = "Add Clip"; ObjectID = "amk-dW-EAE"; */
+"amk-dW-EAE.title" = "Clip hinzufügen";
+
+/* Class = "NSTextFieldCell"; title = "Click the + button to add clips."; ObjectID = "cOI-Q2-rnq"; */
+"cOI-Q2-rnq.title" = "Klicken Sie auf die +-Taste, um Clips hinzuzufügen.";
+
+/* Class = "NSTextFieldCell"; title = "key"; ObjectID = "eie-wa-O0P"; */
+"eie-wa-O0P.title" = "Schlüssel";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "global clips"; ObjectID = "ejG-C9-gwC"; */
+"ejG-C9-gwC.ibExternalAccessibilityDescription" = "globale Clips";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Clips that are available for all documents"; ObjectID = "ejG-C9-gwC"; */
+"ejG-C9-gwC.ibShadowedToolTip" = "Clips, die für alle Dokumente verfügbar sind";
+
+/* Class = "NSTextFieldCell"; title = "Group Name"; ObjectID = "iAp-PI-Maj"; */
+"iAp-PI-Maj.title" = "Gruppenname";
+
+/* Class = "NSMenuItem"; title = "Duplicate"; ObjectID = "j26-Yl-KKX"; */
+"j26-Yl-KKX.title" = "Duplizieren";
+
+/* Class = "NSMenuItem"; title = "Add Group"; ObjectID = "jHl-Dp-kHs"; */
+"jHl-Dp-kHs.title" = "Gruppe hinzufügen";
+
+/* Class = "NSTextFieldCell"; title = "trigger"; ObjectID = "md0-2B-JHJ"; */
+"md0-2B-JHJ.title" = "Auslöser";
+
+/* Class = "NSMenuItem"; title = "Add Group"; ObjectID = "qEI-AS-a0i"; */
+"qEI-AS-a0i.title" = "Gruppe hinzufügen";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "extension clips"; ObjectID = "rLk-eS-wwV"; */
+"rLk-eS-wwV.ibExternalAccessibilityDescription" = "Erweiterungsclips";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Clips that are provided by extensions"; ObjectID = "rLk-eS-wwV"; */
+"rLk-eS-wwV.ibShadowedToolTip" = "Clips, die durch Erweiterungen bereitgestellt werden";
+
+/* Class = "NSMenuItem"; title = "Edit…"; ObjectID = "uSz-Gm-PRc"; */
+"uSz-Gm-PRc.title" = "Bearbeiten …";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "wWS-TM-Wy0"; */
+"wWS-TM-Wy0.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "syntax"; ObjectID = "wjy-CJ-DzK"; */
+"wjy-CJ-DzK.title" = "Syntax";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "project clips"; ObjectID = "xfA-LH-X9N"; */
+"xfA-LH-X9N.ibExternalAccessibilityDescription" = "Projektclips";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Clips that are stored within this project"; ObjectID = "xfA-LH-X9N"; */
+"xfA-LH-X9N.ibShadowedToolTip" = "Clips, die in diesem Projekt gespeichert sind";

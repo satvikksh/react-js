@@ -1,0 +1,12 @@
+
+/* Class = "NSTextFieldCell"; title = "Extension Not Installed"; ObjectID = "3UU-rX-qov"; */
+"3UU-rX-qov.title" = "Erweiterung nicht installiert";
+
+/* Class = "NSTextFieldCell"; title = "<extension name>"; ObjectID = "GMn-8O-zip"; */
+"GMn-8O-zip.title" = "<extension name>";
+
+/* Class = "NSButtonCell"; title = "Show in Extension Library…"; ObjectID = "TfL-qe-aZt"; */
+"TfL-qe-aZt.title" = "In der Erweiterungsbibliothek einblenden …";
+
+/* Class = "NSTextFieldCell"; title = "This object requires an extension that is not installed. You can try installing it from the extension library."; ObjectID = "eJB-pT-7bf"; */
+"eJB-pT-7bf.title" = "Für dieses Objekt ist eine Erweiterung erforderlich, die nicht installiert ist. Sie können versuchen, sie aus der Erweiterungsbibliothek zu installieren.";

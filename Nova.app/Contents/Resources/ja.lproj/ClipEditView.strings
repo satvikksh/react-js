@@ -1,0 +1,42 @@
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "1se-cY-xmf"; */
+"1se-cY-xmf.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "4Xp-Uh-Jzt"; */
+"4Xp-Uh-Jzt.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "Trigger:"; ObjectID = "7EB-Q6-xGo"; */
+"7EB-Q6-xGo.title" = "TABトリガー:";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "The key combination which inserts the clip"; ObjectID = "E8Z-8K-ppn"; */
+"E8Z-8K-ppn.ibShadowedToolTip" = "クリップを挿入するキーの組み合わせを設定します";
+
+/* Class = "NSMenuItem"; title = "Insert Placeholder"; ObjectID = "Fbm-QQ-tH1"; */
+"Fbm-QQ-tH1.title" = "プレイスホルダーを挿入";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "The text to match for completion"; ObjectID = "I13-zC-VwH"; */
+"I13-zC-VwH.ibShadowedToolTip" = "クリップを挿入するトリガーとなる文字列を設定します";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Title"; ObjectID = "Jia-Qn-Td5"; */
+"Jia-Qn-Td5.placeholderString" = "クリップ名";
+
+/* Class = "NSTextFieldCell"; title = "Key:"; ObjectID = "XE8-x8-pfA"; */
+"XE8-x8-pfA.title" = "キー:";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "kP5-tB-cbb"; */
+"kP5-tB-cbb.title" = "Item 2";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "oBQ-iY-xp2"; */
+"oBQ-iY-xp2.title" = "キャンセル";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "qDV-NQ-nMV"; */
+"qDV-NQ-nMV.title" = "Item 1";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "syntax"; ObjectID = "uIB-wi-5vT"; */
+"uIB-wi-5vT.ibExternalAccessibilityDescription" = "言語モード";
+
+/* Class = "NSButtonCell"; title = "Save"; ObjectID = "wiJ-4C-zB8"; */
+"wiJ-4C-zB8.title" = "保存";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "zwS-Hi-mvs"; */
+"zwS-Hi-mvs.title" = "Item 2";

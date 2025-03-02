@@ -1,0 +1,81 @@
+
+/* Class = "NSMenuItem"; title = "is not"; ObjectID = "2fx-FQ-NlK"; */
+"2fx-FQ-NlK.title" = "ist nicht";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "534-sa-cx2"; */
+"534-sa-cx2.title" = "Box";
+
+/* Class = "NSMenuItem"; title = "contains"; ObjectID = "5Q1-64-s8K"; */
+"5Q1-64-s8K.title" = "enthält";
+
+/* Class = "NSTextFieldCell"; title = "<<PlaceholderLabel>>"; ObjectID = "Dvd-3A-BDx"; */
+"Dvd-3A-BDx.title" = "<<PlaceholderLabel>>";
+
+/* Class = "NSTextFieldCell"; title = "Filters"; ObjectID = "Eaz-wv-ehL"; */
+"Eaz-wv-ehL.title" = "Filtern";
+
+/* Class = "NSMenuItem"; title = "begins with"; ObjectID = "FtO-Qk-t8V"; */
+"FtO-Qk-t8V.title" = "beginnt mit";
+
+/* Class = "NSMenuItem"; title = "address"; ObjectID = "Od4-7e-4GJ"; */
+"Od4-7e-4GJ.title" = "Adresse";
+
+/* Class = "NSMenuItem"; title = "All"; ObjectID = "VuJ-TW-gaw"; */
+"VuJ-TW-gaw.title" = "Alle";
+
+/* Class = "NSTextFieldCell"; title = "Click the + button to add filters."; ObjectID = "WLp-15-CPr"; */
+"WLp-15-CPr.title" = "Klicken Sie auf die +-Taste, um Filter hinzuzufügen.";
+
+/* Class = "NSTextFieldCell"; title = "Search for files:"; ObjectID = "Woy-J8-B7P"; */
+"Woy-J8-B7P.title" = "Nach Dateien suchen:";
+
+/* Class = "NSMenuItem"; title = "sign"; ObjectID = "YRF-tN-d6e"; */
+"YRF-tN-d6e.title" = "Zeichen";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "bSf-3m-mOv"; */
+"bSf-3m-mOv.title" = "Box";
+
+/* Class = "NSMenuItem"; title = "Any"; ObjectID = "c9w-mw-bYa"; */
+"c9w-mw-bYa.title" = "Jede";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Add a new scope"; ObjectID = "ddo-CY-H1R"; */
+"ddo-CY-H1R.ibExternalAccessibilityDescription" = "Neuen Bereich hinzufügen";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Add a new scope"; ObjectID = "ddo-CY-H1R"; */
+"ddo-CY-H1R.ibShadowedToolTip" = "Neuen Bereich hinzufügen";
+
+/* Class = "NSMenuItem"; title = "ends with"; ObjectID = "gsB-Og-UlK"; */
+"gsB-Og-UlK.title" = "endet mit";
+
+/* Class = "NSMenuItem"; title = "is"; ObjectID = "lCm-NR-CaK"; */
+"lCm-NR-CaK.title" = "ist";
+
+/* Class = "NSTextFieldCell"; title = "Hold ⌥ Option to create nested rules."; ObjectID = "lHG-aX-iPj"; */
+"lHG-aX-iPj.title" = "Halten Sie die ⌥ Wahltaste gedrückt, um verschachtelte Regeln zu erstellen.";
+
+/* Class = "NSTextFieldCell"; title = "<<Item>>"; ObjectID = "lX8-n6-Jmh"; */
+"lX8-n6-Jmh.title" = "<<Item>>";
+
+/* Class = "NSTextFieldCell"; title = "<<DescriptiveText>>"; ObjectID = "nLu-5g-Hai"; */
+"nLu-5g-Hai.title" = "<<DescriptiveText>>";
+
+/* Class = "NSMenuItem"; title = "of the following are true"; ObjectID = "ohd-cf-cHZ"; */
+"ohd-cf-cHZ.title" = "der folgenden Möglichkeiten ist wahr";
+
+/* Class = "NSButtonCell"; title = "Done"; ObjectID = "pk1-Uh-8KF"; */
+"pk1-Uh-8KF.title" = "Fertig";
+
+/* Class = "NSMenuItem"; title = "name"; ObjectID = "rD2-5Q-APG"; */
+"rD2-5Q-APG.title" = "Name";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Remove selected scopes"; ObjectID = "urx-DG-eho"; */
+"urx-DG-eho.ibExternalAccessibilityDescription" = "Ausgewählte Bereiche entfernen";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Remove selected scopes"; ObjectID = "urx-DG-eho"; */
+"urx-DG-eho.ibShadowedToolTip" = "Ausgewählte Bereiche entfernen";
+
+/* Class = "NSTextFieldCell"; title = "<<Header>>"; ObjectID = "wfL-d1-uB0"; */
+"wfL-d1-uB0.title" = "<<Header>>";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "zbf-Ez-mgP"; */
+"zbf-Ez-mgP.title" = "Text Cell";

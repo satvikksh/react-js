@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="pod" subsyntax="true">
+    <meta>
+        <name>POD</name>
+        <type>markup</type>
+    </meta>
+    
+    <comments>
+        <single>
+            <expression>#</expression>
+        </single>
+    </comments>
+    
+    <tree-sitter>
+        <highlights path="pod/highlights.scm" />
+    </tree-sitter>
+</syntax>

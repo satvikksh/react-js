@@ -1,0 +1,21 @@
+
+/* Class = "NSTextFieldCell"; title = "Environment Overrides"; ObjectID = "0V0-7t-6H2"; */
+"0V0-7t-6H2.title" = "Umgebungsüberschreibungen";
+
+/* Class = "NSTextFieldCell"; title = "Appearance"; ObjectID = "35h-n4-7Vi"; */
+"35h-n4-7Vi.title" = "Erscheinungsbild";
+
+/* Class = "NSTextFieldCell"; title = "Light"; ObjectID = "3jh-Jg-MsG"; */
+"3jh-Jg-MsG.title" = "Licht";
+
+/* Class = "NSSwitch"; ibExternalAccessibilityDescription = "appearance override"; ObjectID = "5Iy-KC-o4E"; */
+"5Iy-KC-o4E.ibExternalAccessibilityDescription" = "Erscheinungsbildüberschreibung";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "BXN-6m-z8q"; */
+"BXN-6m-z8q.title" = "Box";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "RDs-1Z-9wD"; */
+"RDs-1Z-9wD.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "Dark"; ObjectID = "Xwm-wh-bvO"; */
+"Xwm-wh-bvO.title" = "Dunkel";

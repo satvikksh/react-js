@@ -1,0 +1,12 @@
+
+/* Class = "NSTextFieldCell"; title = "by Panic Inc."; ObjectID = "huy-ro-QdB"; */
+"huy-ro-QdB.title" = "by Panic Inc.";
+
+/* Class = "NSTextFieldCell"; title = "Extension Name"; ObjectID = "ibS-qc-QaF"; */
+"ibS-qc-QaF.title" = "機能拡張名";
+
+/* Class = "NSButtonCell"; title = "Extension Preferences…"; ObjectID = "m84-T6-Z8i"; */
+"m84-T6-Z8i.title" = "機能拡張環境設定…";
+
+/* Class = "NSTextFieldCell"; title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus, purus a gravida dignissim, odio justo molestie odio, eu ornare nunc lacus eu velit."; ObjectID = "zlN-u9-2Qs"; */
+"zlN-u9-2Qs.title" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus, purus a gravida dignissim, odio justo molestie odio, eu ornare nunc lacus eu velit.";

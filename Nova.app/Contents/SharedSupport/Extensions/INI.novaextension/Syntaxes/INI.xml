@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="ini">
+    <meta>
+        <name>INI</name>
+        <type>structured</type>
+        <preferred-file-extension>ini</preferred-file-extension>
+    </meta>
+    
+    <detectors>
+        <extension>ini,cfg,gitconfig,editorconfig,gitmodules,flake8</extension>
+    </detectors>
+    
+    <comments>
+        <single>
+            <expression>;</expression>
+        </single>
+    </comments>
+    
+    <tree-sitter>
+        <highlights />
+        <folds />
+        <symbols />
+    </tree-sitter>
+</syntax>

@@ -1,0 +1,9 @@
+{
+    "name": "Task Template",
+    "extension": "novaextension",
+    "description": "An extension which adds one or more Task templates.",
+    "rewritablePaths": [
+        "README.md"	
+    ],
+    "showEntitlements": false
+}

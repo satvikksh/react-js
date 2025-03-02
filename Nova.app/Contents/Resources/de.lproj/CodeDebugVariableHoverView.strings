@@ -1,0 +1,9 @@
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Print Description"; ObjectID = "0CY-qJ-mmL"; */
+"0CY-qJ-mmL.ibExternalAccessibilityDescription" = "Beschreibung drucken";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Print a description of the variable"; ObjectID = "0CY-qJ-mmL"; */
+"0CY-qJ-mmL.ibShadowedToolTip" = "Eine Beschreibung der Variablen ausgeben";
+
+/* Class = "NSTextFieldCell"; title = "<<VariableName>>"; ObjectID = "TKo-bc-epu"; */
+"TKo-bc-epu.title" = "<<VariableName>>";

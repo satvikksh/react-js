@@ -1,0 +1,418 @@
+meta {
+    -theme-display-name: "Bright";
+    -theme-interface-style: light;
+    -theme-vibrancy: vibrant;
+    -theme-accent-color: auto;
+}
+
+
+/*
+ * Window styles
+ */
+meta.window {
+    background-color: color(display-p3 0.975 0.975 0.975);
+    border-color: color(display-p3 0 0 0 / 0.1);
+}
+
+meta.titlebar {
+    border-color: color(display-p3 0 0 0 / 0.25);
+}
+meta.titlebar.inactive {
+}
+
+meta.divider {
+}
+
+meta.button {
+    background: linear-gradient(color(display-p3 1 1 1 / 0.6), color(display-p3 0.94 0.94 0.94 / 0.6));
+    border: linear-gradient(color(display-p3 0 0 0 / 0.2), color(display-p3 0 0 0 / 0.3));
+    color: black;
+}
+meta.button.highlighted {
+    background: linear-gradient(color(display-p3 0.9 0.9 0.9 / 0.6), color(display-p3 0.86 0.86 0.86 / 0.6));
+    border: linear-gradient(color(display-p3 0 0 0 / 0.2), color(display-p3 0 0 0 / 0.3));
+    color: black;
+}
+meta.button.selected {
+    color: white;
+}
+meta.button.highlighted.selected {
+    color: white;
+}
+
+meta.textfield {
+    background-color: color(display-p3 0 0 0 / 0.04);
+    border-color: color(display-p3 0 0 0 / 0.16);
+}
+meta.textfield.highlighted {
+    background-color: white;
+    border-color: color(display-p3 0 0 0 / 0.25);
+}
+
+
+/*
+ * Document styles
+ */
+meta.document {
+    background-color: white;
+}
+
+/* Text */
+meta.text {
+    color: color(display-p3 0.15 0.15 0.15);
+}
+meta.text.invisible {
+    color: color(display-p3 0.19 0.194 0.2 / 0.25);
+}
+meta.text.selected {
+}
+
+/* Cursor */
+meta.cursor {
+    background-color: color(display-p3 1 1 0.9);
+}
+
+/* Indentation Guides */
+meta.indentguide {
+    color: color(display-p3 0 0 0 / 0.2);
+}
+
+/* Gutter */
+meta.gutter {
+    color: color(display-p3 0.675 0.706 0.75);
+}
+meta.gutter.selected {
+    color: color(display-p3 0.36 0.377 0.4);
+    background-color: color(display-p3 0.903 0.926 0.95);
+}
+
+
+/*
+ * Syntax styles
+ */
+comment {
+    color: color(display-p3 0.523 0.534 0.55);
+}
+comment.delimiter {
+    color: color(display-p3 0.713 0.728 0.75);
+}
+comment.doctag {
+    color: color(display-p3 0.333 0.34 0.35);
+}
+processing {
+    color: color(display-p3 0.38 0.4 0.392);
+}
+processing.argument {
+    color: color(display-p3 0.238 0.25 0.245);
+}
+declaration {
+    color: color(display-p3 0.38 0.4 0.392);
+}
+bracket {
+    color: color(display-p3 0.15 0.15 0.15);
+}
+operator {
+    color: color(display-p3 0.22 0.522 0.953);
+}
+link {
+    color: color(display-p3 0.16 0.373 0.8);
+}
+invalid {
+    background-color: color(display-p3 1 0.333 0.2 / 0.2);
+}
+
+/* Keywords */
+keyword {
+    color: color(display-p3 0.139 0.371 0.696);
+}
+keyword.modifier {
+    color: color(display-p3 0.333 0.24 0.8);
+    font-style: italic;
+}
+keyword.condition {
+    color: color(display-p3 0.139 0.371 0.696);
+}
+keyword.construct {
+    color: color(display-p3 0.139 0.371 0.696);
+}
+keyword.statement {
+    color: color(display-p3 0.139 0.371 0.696);
+}
+keyword.self {
+    color: color(display-p3 0.139 0.371 0.696);
+}
+keyword.self.prefix {
+    color: color(display-p3 0.118 0.295 0.58);
+}
+
+/* Values */
+value.boolean {
+    color: color(display-p3 0.139 0.371 0.696);
+}
+value.null {
+    color: color(display-p3 0.139 0.371 0.696);
+}
+value.number {
+    color: color(display-p3 0.85 0.212 0.425);
+}
+value.number.prefix {
+    color: color(display-p3 0.6 0.151 0.3);
+}
+value.entity {
+    color: color(display-p3 0.139 0.371 0.696);
+}
+value.symbol {
+    color: color(display-p3 0.139 0.371 0.696);
+}
+
+/* Identifiers */
+identifier.type {
+    color: color(display-p3 0.193 0.337 0.35);
+}
+identifier.type.declare {
+    color: color(display-p3 0.165 0.39 0.55);
+    font-weight: bold;
+}
+identifier.constant,
+identifier.global,
+identifier.variable {
+    color: color(display-p3 0.509 0.227 0.65);
+}
+identifier.constant.prefix,
+identifier.global.prefix,
+identifier.variable.prefix {
+    color: color(display-p3 0.274 0.122 0.35);
+}
+identifier.property {
+    color: color(display-p3 0.65 0.227 0.509);
+}
+identifier.property.prefix {
+    color: color(display-p3 0.35 0.122 0.274);
+}
+identifier.decorator {
+    color: color(display-p3 0.333 0.24 0.8);
+}
+identifier.decorator.prefix {
+    color: color(display-p3 0.208 0.15 0.5);
+}
+identifier.function,
+identifier.method {
+    color: color(display-p3 0.275 0.5 0.5);
+}
+identifier.function.prefix,
+identifier.method.prefix {
+    color: color(display-p3 0.193 0.35 0.35);
+}
+identifier.key {
+    color: color(display-p3 0.65 0.227 0.509);
+}
+identifier.argument {
+    color: color(display-p3 0.65 0.227 0.65);
+}
+identifier.argument.prefix {
+    color: color(display-p3 0.35 0.122 0.35);
+}
+
+/* Strings */
+string {
+    color: color(display-p3 0.75 0.24 0.113);
+}
+string.delimiter {
+    color: color(display-p3 0.551 0.161 0.083);
+}
+string.escape {
+    color: color(display-p3 0.551 0.161 0.083);
+}
+string.key {
+    color: color(display-p3 0.139 0.371 0.696);
+}
+string-keyword {
+    color: color(display-p3 0.665 0.175 0.7);
+}
+string-template {
+    color: color(display-p3 0.92 0.39 0.258);
+}
+regex {
+    color: color(display-p3 0.456 0.6 0.168);
+}
+regex.bracket {
+    color: color(display-p3 0.456 0.6 0.168);
+}
+regex.character {
+    color: color(display-p3 0.456 0.6 0.168);
+}
+regex.delimiter {
+    color: color(display-p3 0.304 0.4 0.112);
+}
+regex.escape {
+    color: color(display-p3 0.304 0.4 0.112);
+}
+regex.operator {
+    color: color(display-p3 0.456 0.6 0.168);
+}
+
+/* Markup */
+markup.heading {
+    color: color(display-p3 0.139 0.371 0.696);
+}
+markup.heading.prefix {
+    color: color(display-p3 0.11 0.293 0.55);
+}
+markup.line {
+    color: color(display-p3 0.413 0.481 0.55);
+}
+markup.bold {
+    color: color(display-p3 0.304 0.4 0.112);
+    font-weight: bold;
+}
+markup.bold.delimiter {
+    color: color(display-p3 0.456 0.6 0.168);
+}
+markup.italic {
+    color: color(display-p3 0.45 0.304 0.158);
+    font-style: italic;
+}
+markup.italic.delimiter {
+    color: color(display-p3 0.7 0.473 0.245);
+}
+markup.strikethrough {
+    color: color(display-p3 0.8 0.256 0.12);
+    text-decoration: line-through color(display-p3 0.8 0.256 0.12 / 0.6);
+}
+markup.strikethrough.delimiter {
+    color: color(display-p3 1 0.44 0.3);
+}
+markup.list.item {
+    color: color(display-p3 0.78 0.234 0.416);
+}
+markup.code {
+    background-color: color(display-p3 0.5 0.5 0.5 / 0.15);
+}
+markup.code.delimiter {
+    color: color(display-p3 0.3 0.3 0.3);
+}
+markup.code-block.delimiter {
+    color: color(display-p3 0.3 0.3 0.3);
+}
+markup.code-block.language {
+    color: color(display-p3 0.509 0.227 0.65);
+}
+markup.link {
+    color: color(display-p3 0.16 0.373 0.8);
+}
+markup.link-label {
+    color: color(display-p3 0.509 0.227 0.65);
+}
+markup.link-label.bracket {
+    color: color(display-p3 0.15 0.15 0.15);
+}
+markup.link-label.value.number {
+    color: color(display-p3 0.78 0.234 0.416);
+}
+
+/* Tags */
+tag {
+    color: color(display-p3 0.32 0.52 0.8);
+}
+tag.name {
+    color: color(display-p3 0.139 0.371 0.696);
+}
+tag.attribute.name {
+    color: color(display-p3 0.227 0.532 0.749);
+}
+tag.attribute.operator {
+    color: color(display-p3 0.22 0.522 0.953);
+}
+tag.attribute.value {
+    color: color(display-p3 0.456 0.6 0.168);
+}
+tag.attribute.value.delimiter {
+    color: color(display-p3 0.304 0.4 0.112);
+}
+tag.attribute.value.link {
+    color: color(display-p3 0.16 0.373 0.8);
+}
+tag.framework {
+    color: color(display-p3 0.58 0.36 0.8);
+}
+tag.framework.name {
+    color: color(display-p3 0.315 0.03 0.6);
+}
+tag.framework.name.prefix {
+    color: color(display-p3 0.21 0.02 0.4);
+}
+tag.framework.attribute.name {
+    color: color(display-p3 0.375 0.188 0.75);
+}
+cdata {
+    color: color(display-p3 0.456 0.6 0.168);
+}
+cdata.delimiter {
+    color: color(display-p3 0.304 0.4 0.112);
+}
+cdata.label {
+    color: color(display-p3 0.608 0.8 0.224);
+}
+
+/* Styles */
+style.at {
+    color: color(display-p3 0.8 0.52 0.24);
+    font-weight: bold;
+}
+style.selector.universal {
+    color: color(display-p3 0.22 0.522 0.953);
+}
+style.selector.nesting {
+    color: color(display-p3 0.22 0.522 0.953);
+}
+style.selector.element {
+    font-weight: bold;
+}
+style.selector.id {
+    color: color(display-p3 0.333 0.24 0.8);
+}
+style.selector.id.prefix {
+    color: color(display-p3 0.208 0.15 0.5);
+}
+style.selector.class {
+    color: color(display-p3 0.7 0.473 0.245);
+}
+style.selector.class.prefix {
+    color: color(display-p3 0.45 0.304 0.158);
+}
+style.selector.pseudoclass {
+    color: color(display-p3 0.456 0.6 0.168);
+}
+style.selector.pseudoclass.prefix {
+    color: color(display-p3 0.304 0.4 0.112);
+}
+style.selector.pseudoelement {
+    color: color(display-p3 0.65 0.227 0.509);
+}
+style.selector.pseudoelement.prefix {
+    color: color(display-p3 0.35 0.122 0.274);
+}
+style.selector.placeholder {
+    color: color(display-p3 0.413 0.481 0.55);
+}
+style.selector.placeholder.prefix {
+    color: color(display-p3 0.263 0.306 0.35);
+}
+style.attribute.name {
+    color: color(display-p3 0.139 0.371 0.696);
+}
+style.value.color.hex {
+    color: color(display-p3 0.85 0.212 0.425);
+}
+style.value.color.hex.prefix {
+    color: color(display-p3 0.6 0.151 0.3);
+}
+style.value.color.named {
+    color: color(display-p3 0.456 0.6 0.168);
+}
+style.value.keyword {
+    color: color(display-p3 0.456 0.6 0.168);
+}
+style.value.number.unit {
+    color: color(display-p3 0.6 0.151 0.3);
+}

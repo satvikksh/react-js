@@ -1,0 +1,311 @@
+{
+    "identifier": "panic.JavaScript",
+    "name": "JavaScript",
+    "author": "Panic Inc.",
+    
+    "main": "main.js",
+    
+    "entitlements": {
+        "filesystem": "readwrite",
+        "process": true,
+    },
+    
+    "activationEvents": [
+        "onLanguage:javascript",
+        "onLanguage:typescript",
+        "onLanguage:tsx"
+    ],
+    
+    "breakpoints": [
+        {
+            "syntax": "javascript"
+        },
+        {
+            "syntax": "typescript"
+        },
+        {
+            "syntax": "tsx"
+        }
+    ],
+    
+    "debugAdapters": {
+        "chrome": {
+            "name": "Chrome",
+            "image": "chrome"
+        },
+        "deno": {
+            "name": "Deno",
+            "image": "deno"
+        },
+        "node": {
+            "name": "Node",
+            "image": "node"
+        }
+    },
+    
+    "taskTemplates": {
+        "chromeDebug": {
+            "name": "Chrome Debug",
+            "description": "Debug JavaScript within a browser using the Chrome DevTools Protocol.",
+            "image": "chrome",
+            "tasks": {
+                "run": {
+                    "resolve": "javascript",
+                    "data": {
+                        "type": "chromeDebug"
+                    }
+                }
+            },
+            "config": [
+                {
+                    "key": "request",
+                    "title": "Launch Type",
+                    "type": "enum",
+                    "default": "launch",
+                    "values": [
+                        ["launch", "Launch"],
+                        ["attach", "Attach"]
+                    ],
+                    "description": "When launching, a new instance of the browser will be opened and set to use remote debugging.\n\nWhen attaching, the debugger will attempt to connect to an already-running instance of the browser in debug mode. The browser must have been started with debugging enabled via the `--remote-debugging-port` option."
+                },
+                {
+                    "key": "sourceURL",
+                    "title": "Source URL",
+                    "type": "string",
+                    "placeholder": "Preview URL",
+                    "description": "The URL to open and debug when launching. If not set, the configured preview URL for the project will be used."
+                },
+                {
+                    "key": "sourceRoot",
+                    "title": "Source Root",
+                    "type": "path",
+                    "relative": true,
+                    "allowFolders": true,
+                    "allowFiles": false,
+                    "placeholder": "Preview Root",
+                    "description": "The root directory that represents the source root being served. If not set, the configured preview source root for the project will be used."
+                },
+                {
+                    "key": "stopOnEntry",
+                    "title": "Stop on Entry",
+                    "description": "Whether to stop automatically after launch.",
+                    "type": "boolean",
+                    "default": false
+                },
+                {
+                    "key": "port",
+                    "title": "Debug Server Port",
+                    "type": "number",
+                    "placeholder": "9222",
+                    "min": 1024,
+                    "max": 65535,
+                    "description": "The debugging port on which the browser will be listening for connections."
+                },
+                {
+                    "key": "launchPath",
+                    "title": "Application",
+                    "type": "path",
+                    "filetype": ["app"],
+                    "placeholder": "Automatic",
+                    "description": "The browser to launch which supports the Chrome DevTools Protocol. If 'Automatic', Google Chrome will be searched for in your Applications folder."
+                },
+                {
+                    "key": "launchArgs",
+                    "title": "Launch Arguments",
+                    "description": "Additional custom command-line arguments to pass to the browser when launching.",
+                    "type": "stringArray"
+                }
+            ]
+        },
+        
+        "denoDebug": {
+            "name": "Deno Debug",
+            "description": "Debug a Deno application.",
+            "image": "deno",
+            "tasks": {
+                "run": {
+                    "resolve": "javascript",
+                    "data": {
+                        "type": "denoDebug"
+                    }
+                }
+            },
+            "config": [
+                {
+                    "key": "request",
+                    "title": "Launch Type",
+                    "type": "enum",
+                    "default": "launch",
+                    "values": [
+                        ["launch", "Launch"],
+                        ["attach", "Attach"]
+                    ],
+                    "description": "When launching, a new instance of the application will be started and set to use remote debugging. When attaching, the debugger will attempt to connect to an already-running instance of the Deno debugger."
+                },
+                {
+                    "key": "scriptPath",
+                    "title": "Script Path",
+                    "type": "path",
+                    "relative": true,
+                    "allowFolders": false,
+                    "allowFiles": true,
+                    "description": "The script which should be invoked to launch the application. If not specified, the runtime will be invoked without a script."
+                },
+                {
+                    "key": "launchArgs",
+                    "title": "Launch Arguments",
+                    "description": "Arguments to pass to the debugged application.",
+                    "type": "stringArray"
+                },
+                {
+                    "key": "runtimeExecutable",
+                    "title": "Runtime Executable",
+                    "type": "path",
+                    "relative": true,
+                    "allowFolders": false,
+                    "allowFiles": true,
+                    "placeholder": "deno",
+                    "description": "The runtime executable to invoke to launch the application. Defaults to `deno`."
+                },
+                {
+                    "key": "stopOnEntry",
+                    "title": "Stop on Entry",
+                    "description": "Whether to stop automatically after launch.",
+                    "type": "boolean",
+                    "default": false
+                },
+                {
+                    "key": "port",
+                    "title": "Debug Server Port",
+                    "type": "number",
+                    "placeholder": "9229",
+                    "min": 1024,
+                    "max": 65535,
+                    "description": "The debugging port on which Deno will be listening for connections."
+                },
+                {
+                    "key": "runtimeArgs",
+                    "title": "Runtime Arguments",
+                    "description": "Additional arguments to pass to the Deno runtime.",
+                    "type": "stringArray"
+                },
+                {
+                    "key": "pathMappings",
+                    "title": "Path Mappings",
+                    "description": "Mappings between the local project paths and remote debugged paths. Generally only used when attaching to a remote instance of Deno.",
+                    "type": "objectArray",
+                    "children": [
+                        {
+                            "key": "localRoot",
+                            "title": "Local",
+                            "type": "path",
+                            "allowFiles": false,
+                            "allowFolders": true,
+                            "relative": true
+                        },
+                        {
+                            "key": "remoteRoot",
+                            "title": "Remote",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        },
+        
+        "nodeDebug": {
+            "name": "Node.js Debug",
+            "description": "Debug a Node.js application.",
+            "image": "node",
+            "tasks": {
+                "run": {
+                    "resolve": "javascript",
+                    "data": {
+                        "type": "nodeDebug"
+                    }
+                }
+            },
+            "config": [
+                {
+                    "key": "request",
+                    "title": "Launch Type",
+                    "type": "enum",
+                    "default": "launch",
+                    "values": [
+                        ["launch", "Launch"],
+                        ["attach", "Attach"]
+                    ],
+                    "description": "When launching, a new instance of the application will be started and set to use remote debugging. When attaching, the debugger will attempt to connect to an already-running instance of the Node.js debugger."
+                },
+                {
+                    "key": "scriptPath",
+                    "title": "Script Path",
+                    "type": "path",
+                    "relative": true,
+                    "allowFolders": false,
+                    "allowFiles": true,
+                    "description": "The script which should be invoked to launch the application. If not specified, the runtime will be invoked without a script."
+                },
+                {
+                    "key": "launchArgs",
+                    "title": "Launch Arguments",
+                    "description": "Arguments to pass to the debugged application.",
+                    "type": "stringArray"
+                },
+                {
+                    "key": "runtimeExecutable",
+                    "title": "Runtime Executable",
+                    "type": "path",
+                    "relative": true,
+                    "allowFolders": false,
+                    "allowFiles": true,
+                    "placeholder": "node",
+                    "description": "The runtime executable to invoke to launch the application. Defaults to `node`."
+                },
+                {
+                    "key": "stopOnEntry",
+                    "title": "Stop on Entry",
+                    "description": "Whether to stop automatically after launch.",
+                    "type": "boolean",
+                    "default": false
+                },
+                {
+                    "key": "port",
+                    "title": "Debug Server Port",
+                    "type": "number",
+                    "placeholder": "9222",
+                    "min": 1024,
+                    "max": 65535,
+                    "description": "The debugging port on which Node.js will be listening for connections."
+                },
+                {
+                    "key": "runtimeArgs",
+                    "title": "Runtime Arguments",
+                    "description": "Additional arguments to pass to the Node.js runtime.",
+                    "type": "stringArray"
+                },
+                {
+                    "key": "pathMappings",
+                    "title": "Path Mappings",
+                    "description": "Mappings between the local project paths and remote debugged paths. Generally only used when attaching to a remote instance of Node.",
+                    "type": "objectArray",
+                    "children": [
+                        {
+                            "key": "localRoot",
+                            "title": "Local",
+                            "type": "path",
+                            "allowFiles": false,
+                            "allowFolders": true,
+                            "relative": true
+                        },
+                        {
+                            "key": "remoteRoot",
+                            "title": "Remote",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

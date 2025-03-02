@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="scss">
+    <meta>
+        <name>SCSS</name>
+        <type>stylesheet</type>
+        <preferred-file-extension>scss</preferred-file-extension>
+    </meta>
+    
+    <detectors>
+        <extension>scss</extension>
+    </detectors>
+    
+    <identifiers>
+        <prefixes>
+            <string>#$</string>
+        </prefixes>
+    </identifiers>
+    
+    <indentation>
+        <increase>
+            <expression>(\{[^}\"']*$)|(\[[^\]\"']*$)|(\([^)\"']*$)</expression>
+        </increase>
+        <decrease>
+            <expression>^\s*(\s*/\*.*\*/\s*)*[\}\]\)\\]</expression>
+        </decrease>
+    </indentation>
+    
+    <comments>
+        <multiline>
+            <starts-with>
+                <expression>/*</expression>
+            </starts-with>
+            <ends-with>
+                <expression>*/</expression>
+            </ends-with>
+        </multiline>
+        <single>
+            <expression>//</expression>
+        </single>
+    </comments>
+    
+    <scopes>
+        <include syntax="css" collection="comments" />
+        <include syntax="self" collection="interpolations" />
+        <include syntax="self" collection="variable-definitions" />
+        <include syntax="self" collection="at-rules" />
+        <include syntax="self" collection="rules" />
+        
+        <include syntax="css" collection="*" />
+    </scopes>
+    
+    <collections>
+        <!-- At-Rules -->
+        <collection name="at-rules" override="true">
+            <!-- @use -->
+            <scope name="scss.style.at-rule.use">
+                <symbol type="style-directive">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>(@use)\s+</expression>
+                    <capture number="1" name="scss.style.at-rule.include.at" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="css" collection="comments" optional="true" />
+                    
+                    <include syntax="css" collection="strings" />
+                    
+                    <scope name="scss.keyword" optional="true">
+                        <expression>\b(with)\b</expression>
+                    </scope>
+                    
+                    <scope name="scss.use.arguments">
+                        <starts-with>
+                            <expression>\(</expression>
+                            <capture number="0" name="scss.bracket" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>\)</expression>
+                            <capture number="0" name="scss.bracket" />
+                        </ends-with>
+                        <subscopes>
+                            <cut-off>
+                                <expression>@(media|supports|document|page|font-face|include|mixin)\b</expression>
+                            </cut-off>
+                            <include syntax="self" collection="variable-definitions" />
+                            <scope name="scss.style.use.argument.separator">
+                                <expression>,</expression>
+                            </scope>
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+            
+            <!-- @include -->
+            <scope name="scss.style.at-rule.include">
+                <symbol type="style-directive">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>(@include)\s+([a-zA-Z_-][a-zA-ZÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]*)?</expression>
+                    <capture number="1" name="scss.style.at-rule.include.at" />
+                    <capture number="2" name="scss.style.at-rule.include.function.identifier.name" />
+                </starts-with>
+                <ends-with>
+                    <expression>(?&lt;=\})|;</expression>
+                </ends-with>
+                <subscopes>
+                    <cut-off>
+                        <expression>@(media|supports|document|page|font-face|include|mixin)\b</expression>
+                    </cut-off>
+                    
+                    <include syntax="css" collection="comments" />
+                    
+                    <scope name="scss.style.include.arguments">
+                        <starts-with>
+                            <expression>\(</expression>
+                            <capture number="0" name="scss.style.include.arguments.bracket" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>\)</expression>
+                            <capture number="0" name="scss.style.include.arguments.bracket" />
+                        </ends-with>
+                        <subscopes>
+                            <include syntax="self" collection="values" />
+                            <scope name="scss.style.include.argument.separator">
+                                <expression>,</expression>
+                            </scope>
+                        </subscopes>
+                    </scope>
+                    
+                    <include syntax="self" collection="attribute-lists" />
+                </subscopes>
+            </scope>
+            
+            <!-- @mixin -->
+            <scope name="scss.style.at-rule.mixin">
+                <symbol type="function">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>(@mixin)\s+([a-zA-Z_-][a-zA-ZÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]*)?</expression>
+                    <capture number="1" name="scss.style.at-rule.mixin.at" />
+                    <capture number="2" name="scss.style.at-rule.mixin.function.identifier.name" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="css" collection="comments" optional="true" repeat="true" />
+                    
+                    <scope name="scss.style.mixin.arguments" optional="true">
+                        <starts-with>
+                            <expression>\(</expression>
+                            <capture number="0" name="scss.style.mixin.arguments.bracket" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>\)</expression>
+                            <capture number="0" name="scss.style.mixin.arguments.bracket" />
+                        </ends-with>
+                        <subscopes>
+                            <scope name="scss.style.mixin.argument">
+                                <symbol type="argument" />
+                                <starts-with>
+                                    <expression>($(?:[a-zA-Z_-][a-zA-ZÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]*))\s*(:)?</expression>
+                                    <capture number="1" name="scss.style.mixin.argument.identifier.variable.name" />
+                                    <capture number="2" name="scss.style.mixin.argument.colon" />
+                                </starts-with>
+                                <ends-with>
+                                    <expression>(?=,|\))</expression>
+                                </ends-with>
+                                <subscopes>
+                                    <include syntax="self" collection="values" />
+                                </subscopes>
+                            </scope>
+                            <scope name="scss.style.function.argument.identifier.variable.name">
+                                <symbol type="argument" />
+                                <expression>\$[a-zA-ZÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]+</expression>
+                            </scope>
+                            <include syntax="self" collection="values" />
+                            <scope name="scss.style.mixin.argument.separator">
+                                <expression>,</expression>
+                            </scope>
+                        </subscopes>
+                    </scope>
+                    
+                    <include syntax="self" collection="at-rule-selector-blocks" />
+                </subscopes>
+            </scope>
+            
+            <!-- @function -->
+            <scope name="scss.style.at-rule.function">
+                <symbol type="function">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>(@function)\s+([a-zA-Z_-][a-zA-ZÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]*)?</expression>
+                    <capture number="1" name="scss.style.at-rule.function.at" />
+                    <capture number="2" name="scss.style.at-rule.function.identifier.name" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="css" collection="comments" optional="true" repeat="true" />
+                    
+                    <scope name="scss.style.function.arguments">
+                        <starts-with>
+                            <expression>\(</expression>
+                            <capture number="0" name="scss.style.function.arguments.bracket" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>\)</expression>
+                            <capture number="0" name="scss.style.function.arguments.bracket" />
+                        </ends-with>
+                        <subscopes>
+                            <scope name="scss.style.function.argument">
+                                <symbol type="argument" />
+                                <starts-with>
+                                    <expression>($(?:[a-zA-Z_-][a-zA-ZÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]*))\s*(:)?</expression>
+                                    <capture number="1" name="scss.style.function.argument.identifier.variable.name" />
+                                    <capture number="2" name="scss.style.function.argument.colon" />
+                                </starts-with>
+                                <ends-with>
+                                    <expression>(?=,|\))</expression>
+                                </ends-with>
+                                <subscopes>
+                                    <include syntax="self" collection="values" />
+                                </subscopes>
+                            </scope>
+                            <scope name="scss.style.function.argument.identifier.variable.name">
+                                <symbol type="argument" />
+                                <expression>\$[a-zA-ZÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]+</expression>
+                            </scope>
+                            <include syntax="self" collection="values" />
+                            <scope name="scss.style.function.argument.separator">
+                                <expression>,</expression>
+                            </scope>
+                        </subscopes>
+                    </scope>
+                    
+                    <include syntax="self" collection="at-rule-selector-blocks" />
+                </subscopes>
+            </scope>
+            
+            <!-- @each -->
+            <scope name="scss.style.at-rule.each">
+                <symbol type="style-directive">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>(@each)\s+</expression>
+                    <capture number="1" name="scss.style.at-rule.at" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="css" collection="comments" optional="true" repeat="true" />
+                    
+                    <include syntax="self" collection="variables" optional="true" />
+                    
+                    <scope name="scss.keyword" optional="true">
+                        <expression>\b(in)\b</expression>
+                    </scope>
+                    
+                    <include syntax="self" collection="variables" optional="true" />
+                    
+                    <include syntax="self" collection="attribute-lists" optional="true" />
+                </subscopes>
+            </scope>
+            
+            <!-- @for -->
+            <scope name="scss.style.at-rule.for">
+                <symbol type="style-directive">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>(@for)\s+</expression>
+                    <capture number="1" name="scss.style.at-rule.at" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="css" collection="comments" optional="true" repeat="true" />
+                    
+                    <include syntax="self" collection="variables" optional="true" />
+                    
+                    <scope name="scss.keyword" optional="true">
+                        <expression>\b(from)\b</expression>
+                    </scope>
+                    
+                    <include syntax="self" collection="values" optional="true" />
+                    
+                    <scope name="scss.keyword" optional="true">
+                        <expression>\b(to)\b</expression>
+                    </scope>
+                    
+                    <include syntax="self" collection="values" optional="true" />
+                    
+                    <include syntax="self" collection="attribute-lists" optional="true" />
+                </subscopes>
+            </scope>
+            
+            <!-- @while -->
+            <scope name="scss.style.at-rule.while">
+                <symbol type="style-directive">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>(@while)\s+</expression>
+                    <capture number="1" name="scss.style.at-rule.at" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="css" collection="comments" optional="true" repeat="true" />
+                    
+                    <include syntax="self" collection="conditional-expressions" optional="true" />
+                    
+                    <include syntax="self" collection="attribute-lists" optional="true" />
+                </subscopes>
+            </scope>
+            
+            <!-- @if -->
+            <scope name="scss.style.at-rule.if">
+                <symbol type="style-directive">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>(@if)\s+</expression>
+                    <capture number="1" name="scss.style.at-rule.at" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="css" collection="comments" optional="true" repeat="true" />
+                    
+                    <include syntax="self" collection="conditional-expressions" optional="true" repeat="true" />
+                    
+                    <include syntax="self" collection="attribute-lists" optional="true" />
+                </subscopes>
+            </scope>
+            
+            <!-- @else if -->
+            <scope name="scss.style.at-rule.elseif">
+                <symbol type="style-directive">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>(@else\sif)\s+</expression>
+                    <capture number="1" name="scss.style.at-rule.at" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="css" collection="comments" optional="true" repeat="true" />
+                    
+                    <include syntax="self" collection="conditional-expressions" optional="true" repeat="true" />
+                    
+                    <include syntax="self" collection="attribute-lists" optional="true" />
+                </subscopes>
+            </scope>
+            
+            <!-- @else -->
+            <scope name="scss.style.at-rule.else">
+                <symbol type="style-directive">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>(@else)\s+</expression>
+                    <capture number="1" name="scss.style.at-rule.at" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="css" collection="comments" optional="true" repeat="true" />
+                    
+                    <include syntax="self" collection="attribute-lists" optional="true" />
+                </subscopes>
+            </scope>
+            
+            <!-- Other SCSS Directives -->
+            <scope name="scss.style.at-rule">
+                <symbol type="style-directive">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>@(return|error|warn|debug|forward|content|function|extend|at-root|if|else|for|while)\b</expression>
+                    <capture number="0" name="scss.style.at-rule.at" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="css" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="values" optional="true" repeat="true" />
+                </subscopes>
+            </scope>
+            
+            <!-- CSS At-Rules -->
+            <include syntax="css" collection="at-rules" />
+        </collection>
+        
+        <!-- Rules -->
+        <collection name="rules" override="true">
+            <scope name="scss.style.rule">
+                <symbol type="style-ruleset" name-selector="style.selector">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>
+                        (?=
+                            [&amp;+&gt;~*\\\[]
+                            |\b[a-zA-Z]
+                            |(?:\:|\.|\#)(?:[a-zA-Z-])
+                        )
+                        (?![a-zA-Z-][a-zA-Z0-9-]*:(?:[^\w]|[a-zA-Z0-9-_]+(?:;)))
+                    </expression>
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="selectors" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="attribute-lists" />
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Selectors -->
+        <collection name="selectors" override="true">
+            <scope name="scss.style.selector">
+                <starts-with>
+                    <expression>(?![a-zA-Z_-][a-zA-Z0-9_-]*\s*:\s)(?=[&amp;+&gt;~:.*\#a-zA-Z\\\[])</expression>
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="selector-components" repeat="true" />
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Selector Components -->
+        <collection name="selector-components">
+            <include syntax="css" collection="comments" />
+            <include syntax="self" collection="interpolations" />
+            <include syntax="css" collection="pseudoelements" />
+            <include syntax="css" collection="simple-selectors" />
+            <scope name="scss.style.selector.operator">
+                <expression>&amp;|\+|&gt;|~</expression>
+            </scope>
+            <scope name="scss.style.selector.separator">
+                <expression>,</expression>
+            </scope>
+        </collection>
+        
+        <!-- Definition Blocks inside of certain @at-rules -->
+        <collection name="at-rule-selector-blocks" override="true">
+            <scope name="scss.style.at-rule.media.definition">
+                <symbol type="block">
+                    <context behavior="subtree" fold-type="style-directive" />
+                </symbol>
+                <starts-with>
+                    <expression>\{</expression>
+                    <capture number="0" name="scss.at-rule.definition.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\}</expression>
+                    <capture number="0" name="scss.at-rule.definition.bracket" />
+                </ends-with>
+                <subscopes>
+                    <include syntax="css" collection="comments" />
+                    <include syntax="self" collection="at-rules" />
+                    <include syntax="self" collection="attributes" />
+                    <include syntax="self" collection="rules" />
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Interpolations -->
+        <collection name="interpolations">
+            <scope name="scss.interpolation">
+                <starts-with>
+                    <expression>\#\{</expression>
+                    <capture number="0" name="scss.bracket.interpolation" />
+                </starts-with>
+                <ends-with>
+                    <expression>\}</expression>
+                    <capture number="0" name="scss.bracket.interpolation" />
+                </ends-with>
+                <subscopes>
+                    <include syntax="self" collection="variables" />
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Values -->
+        <collection name="values" override="true">
+            <!-- Keywords -->
+            <scope name="scss.style.value.keyword.default">
+                <expression>!default</expression>
+            </scope>
+            
+            <!-- Interpolations -->
+            <include syntax="self" collection="interpolations" />
+            
+            <!-- Identifiers -->
+            <include syntax="self" collection="variables" />
+            
+            <!-- CSS Values -->
+            <include syntax="css" collection="values" />
+            
+            <!-- Functions -->
+            <scope name="scss.style.value.function">
+                <starts-with>
+                    <expression>\b([a-zA-Z-][a-zA-ZÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]*)(\()</expression>
+                    <capture number="1" name="scss.style.value.function.name" />
+                    <capture number="2" name="scss.style.value.function.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>(\))</expression>
+                    <capture number="1" name="scss.style.value.function.bracket" />
+                </ends-with>
+                <subscopes>
+                    <include syntax="self" collection="values" />
+                </subscopes>
+            </scope>
+            
+            <!-- Operators -->
+            <scope name="scss.style.operator">
+                <expression>(-|\+|\*|\/|%|!=|==|&lt;=|&lt;|&gt;=|&gt;|\band\b|\bor\b|\bnot\b)</expression>
+            </scope>
+        </collection>
+        
+        <!-- Variables -->
+        <collection name="variables">
+            <scope name="scss.style.value.identifier.variable">
+                <expression>\$[a-zA-ZÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]+</expression>
+            </scope>
+        </collection>
+        
+        <!-- Variable Definitions -->
+        <collection name="variable-definitions">
+            <scope name="scss.style.variable-definition">
+                <symbol type="variable" scope="local" />
+                <starts-with>
+                    <expression>(\$[a-zA-ZÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]+)\s*(:)</expression>
+                    <capture number="1" name="scss.style.variable-definition.identifier.variable.name" />
+                    <capture number="2" name="scss.style.variable-definition.separator" />
+                </starts-with>
+                <ends-with>
+                    <expression>;</expression>
+                </ends-with>
+                <subscopes>
+                    <cut-off>
+                        <expression>(?=\}|\))</expression>
+                    </cut-off>
+                    <include syntax="css" collection="comments" />
+                    <scope name="scss.style.variable-definition.value">
+                        <starts-with>
+                            <expression>(?&lt;=:)</expression>
+                        </starts-with>
+                        <ends-with>
+                            <expression>(?=;)</expression>
+                        </ends-with>
+                        <subscopes>
+                            <cut-off>
+                                <expression>(?=\}|\))</expression>
+                            </cut-off>
+                            <include syntax="self" collection="lists" />
+                            <include syntax="self" collection="values" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Lists & Maps -->
+        <collection name="lists">
+            <scope name="scss.style.list">
+                <starts-with>
+                    <expression>\(</expression>
+                    <capture number="0" name="scss.style.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\)</expression>
+                    <capture number="0" name="scss.style.bracket" />
+                </ends-with>
+                <subscopes>
+                    <cut-off>
+                        <expression>(?=;|\})</expression>
+                    </cut-off>
+                    <scope name="scss.style.map.key.unquoted">
+                        <starts-with>
+                            <expression>\b([a-zA-Z-_][a-zA-ZÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]*)\s*(:)</expression>
+                            <capture number="1" name="scss.style.identifier.key.name" />
+                            <capture number="2" name="scss.style.separator" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>,|(?=\))</expression>
+                        </ends-with>
+                        <subscopes>
+                            <cut-off>
+                                <expression>(?=\})</expression>
+                            </cut-off>
+                            <include syntax="css" collection="comments" />
+                            <scope name="scss.style.map.value">
+                                <starts-with>
+                                    <expression>(?&lt;=:)</expression>
+                                </starts-with>
+                                <ends-with>
+                                    <expression>(?=,|;|\}|\))</expression>
+                                </ends-with>
+                                <subscopes>
+                                    <include syntax="self" collection="values" />
+                                </subscopes>
+                            </scope>
+                        </subscopes>
+                    </scope>
+                    <scope name="scss.style.map.key.double-quoted">
+                        <starts-with>
+                            <expression>&quot;([^\\&quot;]|\\.)*(?:(&quot;\s*(:))|$)</expression>
+                            <capture number="2" name="scss.style.separator" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>,|(?=\))</expression>
+                        </ends-with>
+                        <subscopes>
+                            <cut-off>
+                                <expression>(?=\})</expression>
+                            </cut-off>
+                            <include syntax="css" collection="comments" />
+                            <scope name="scss.style.map.value">
+                                <starts-with>
+                                    <expression>(?&lt;=:)</expression>
+                                </starts-with>
+                                <ends-with>
+                                    <expression>(?=,|;|\}|\))</expression>
+                                </ends-with>
+                                <subscopes>
+                                    <include syntax="self" collection="values" />
+                                </subscopes>
+                            </scope>
+                        </subscopes>
+                    </scope>
+                    <scope name="scss.style.map.key.single-quoted">
+                        <starts-with>
+                            <expression>&quot;([^\\&apos;]|\\.)*(?:(&apos;\s*(:))|$)</expression>
+                            <capture number="2" name="scss.style.separator" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>,|(?=\))</expression>
+                        </ends-with>
+                        <subscopes>
+                            <cut-off>
+                                <expression>(?=\})</expression>
+                            </cut-off>
+                            <include syntax="css" collection="comments" />
+                            <scope name="scss.style.map.value">
+                                <starts-with>
+                                    <expression>(?&lt;=:)</expression>
+                                </starts-with>
+                                <ends-with>
+                                    <expression>(?=,|;|\}|\))</expression>
+                                </ends-with>
+                                <subscopes>
+                                    <include syntax="self" collection="values" />
+                                </subscopes>
+                            </scope>
+                        </subscopes>
+                    </scope>
+                    
+                    <include syntax="self" collection="values" />
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Attribute Lists -->
+        <collection name="attribute-lists" override="true">
+            <scope name="scss.style.attribute-list">
+                <symbol type="block">
+                    <context behavior="subtree" />
+                </symbol>
+                <starts-with>
+                    <expression>\{</expression>
+                    <capture number="0" name="scss.style.attribute-list.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\}</expression>
+                    <capture number="0" name="scss.style.attribute-list.bracket" />
+                </ends-with>
+                <subscopes>
+                    <include syntax="css" collection="comments" />
+                    <include syntax="self" collection="variable-definitions" />
+                    <include syntax="self" collection="at-rules" />
+                    <include syntax="self" collection="attributes" />
+                    <include syntax="self" collection="rules" />
+                    <include syntax="self" collection="interpolations" />
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Attributes -->
+        <collection name="attributes" override="true">
+            <include syntax="css" collection="attributes" />
+            
+            <scope name="scss.attribute.interpolated">
+                <starts-with>
+                    <expression>
+                    (?=
+                        (?:\b[a-zA-Z-][a-zA-ZÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]*)\#\{
+                        |\#\{
+                    )
+                    </expression>
+                </starts-with>
+                <ends-with>
+                    <expression>;|(?=\}|\))</expression>
+                </ends-with>
+                <subscopes anchored="true" skip-whitespace="false">
+                    <include syntax="self" collection="attribute-name-components" repeat="true" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="scss.style.attribute.separator">
+                        <expression>:</expression>
+                    </scope>
+                    <scope name="scss.style.attribute.value" optional="true">
+                        <starts-with>
+                            <expression>(?&lt;=:)</expression>
+                        </starts-with>
+                        <ends-with>
+                            <expression>(?=;|(?=\}|\)))</expression>
+                        </ends-with>
+                        <subscopes>
+                            <include syntax="self" collection="comments" />
+                            <include syntax="self" collection="values" />
+                        </subscopes>
+                    </scope>
+                    <scope name="css.semicolon" optional="true">
+                        <expression>;</expression>
+                    </scope>
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- Attribute Name Components -->
+        <collection name="attribute-name-components">
+            <include syntax="self" collection="interpolations" />
+            <scope name="scss.attribute.name-component">
+                <expression>([a-zA-Z-_][A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9-_]*)</expression>
+            </scope>
+        </collection>
+        
+        <!-- Attribute Values -->
+        <collection name="attribute-values" override="true">
+            <include syntax="css" collection="attribute-values" />
+            <include syntax="self" collection="attribute-lists" />
+        </collection>
+        
+        <!-- Conditional Expressions -->
+        <collection name="conditional-expressions">
+            <include syntax="css" collection="comments" />
+            <include syntax="self" collection="values" />
+            <include syntax="self" collection="operators" />
+            <scope name="scss.conditional.bare-word">
+                <expression>[a-zA-Z_][a-zA-Z0-9_-]*</expression>
+            </scope>
+        </collection>
+        
+        <!-- Operators -->
+        <collection name="operators">
+            <scope name="python.keyword">
+                <expression>\b(and|or|not)\b</expression>
+            </scope>
+            <scope name="python.operator">
+                <expression>(\+|\-|\*|\*\*|/|%|\=|\=\=|!\=|\&lt;|\&gt;|\&lt;\=|\&gt;=)</expression>
+            </scope>
+        </collection>
+    </collections>
+</syntax>

@@ -1,0 +1,66 @@
+
+/* Class = "NSTableColumn"; headerCell.title = "Message"; ObjectID = "0Hh-Br-F4Z"; */
+"0Hh-Br-F4Z.headerCell.title" = "メッセージ";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "5en-Sq-YQq"; */
+ "5en-Sq-YQq.title" = "Table View Cell";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Source"; ObjectID = "75x-nC-oMw"; */
+"75x-nC-oMw.ibExternalAccessibilityDescription" = "ソース管理";
+
+/* Class = "NSSearchField"; ibExternalAccessibilityDescription = "Message filter"; ObjectID = "EBd-o8-5OE"; */
+"EBd-o8-5OE.ibExternalAccessibilityDescription" = "メッセージ検索";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "FE5-kC-FX9"; */
+"FE5-kC-FX9.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "JTn-bU-934"; */
+"JTn-bU-934.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "KkC-1a-oKo"; */
+"KkC-1a-oKo.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Mms-I5-ykd"; */
+"Mms-I5-ykd.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "QZa-35-YaZ"; */
+"QZa-35-YaZ.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "WdY-nK-Wtu"; */
+"WdY-nK-Wtu.title" = "Text Cell";
+
+/* Class = "NSDateFormatter"; ibShadowedDateFormat = "H:mm:ss.SSSSSS"; ObjectID = "ZDC-Cx-8S1"; */
+"ZDC-Cx-8S1.ibShadowedDateFormat" = "H:mm:ss.SSSSSS";
+
+/* Class = "NSButtonCell"; title = "Warnings"; ObjectID = "aRd-PD-FBP"; */
+"aRd-PD-FBP.title" = "警告";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "d1S-XX-Ujq"; */
+"d1S-XX-Ujq.title" = "Item 2";
+
+/* Class = "NSButtonCell"; title = "Logs"; ObjectID = "gYj-0F-uuk"; */
+"gYj-0F-uuk.title" = "ログ";
+
+/* Class = "NSButtonCell"; title = "Errors"; ObjectID = "l2q-5E-GbV"; */
+"l2q-5E-GbV.title" = "エラー";
+
+/* Class = "NSButtonCell"; title = "Clear"; ObjectID = "lkp-jp-2xB"; */
+"lkp-jp-2xB.title" = "削除";
+
+/* Class = "NSTableColumn"; headerCell.title = "Time"; ObjectID = "mxn-Py-th2"; */
+"mxn-Py-th2.headerCell.title" = "時刻";
+
+/* Class = "NSTableColumn"; headerCell.title = "Source"; ObjectID = "ot5-8j-5RN"; */
+"ot5-8j-5RN.headerCell.title" = "ソース";
+
+/* Class = "NSTextFieldCell"; title = "0:00:00.000000"; ObjectID = "pIb-3G-hau"; */
+"pIb-3G-hau.title" = "0:00:00.000000";
+
+/* Class = "NSSearchFieldCell"; placeholderString = "Filter"; ObjectID = "up6-mu-3vb"; */
+"up6-mu-3vb.placeholderString" = "検索";
+
+/* Class = "NSButtonCell"; title = "All"; ObjectID = "uph-KL-4Mm"; */
+"uph-KL-4Mm.title" = "すべて";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "v4w-Kb-aDd"; */
+ "v4w-Kb-aDd.title" = "Table View Cell";

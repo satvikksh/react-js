@@ -1,0 +1,51 @@
+
+/* Class = "NSTextFieldCell"; title = "<<x>>"; ObjectID = "1mD-mu-Ftb"; */
+"1mD-mu-Ftb.title" = "<<x>>";
+
+/* Class = "NSTextFieldCell"; title = "<<x>>"; ObjectID = "8Pq-4g-Fc9"; */
+"8Pq-4g-Fc9.title" = "<<x>>";
+
+/* Class = "NSMenuItem"; title = "Add Remote…"; ObjectID = "AZ3-kl-Mo5"; */
+"AZ3-kl-Mo5.title" = "リモートを追加…";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "D5U-zj-kLt"; */
+"D5U-zj-kLt.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Create New Branch…"; ObjectID = "FSb-Au-kYN"; */
+"FSb-Au-kYN.title" = "新規ブランチを作成…";
+
+/* Class = "NSTextFieldCell"; title = "<<Value>>"; ObjectID = "UH7-pl-vvm"; */
+"UH7-pl-vvm.title" = "<<Value>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Value>>"; ObjectID = "Utg-oB-vZH"; */
+"Utg-oB-vZH.title" = "<<Value>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Ref>>"; ObjectID = "WpQ-c8-ylj"; */
+"WpQ-c8-ylj.title" = "<<Ref>>";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Add Function Breakpoint"; ObjectID = "XRi-ui-EC1"; */
+"XRi-ui-EC1.ibExternalAccessibilityDescription" = "関数ブレークポイントを追加";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Add a new function breakpoint"; ObjectID = "XRi-ui-EC1"; */
+"XRi-ui-EC1.ibShadowedToolTip" = "新規関数ブレークポイントを追加します";
+
+/* Class = "NSMenuItem"; title = "Create New Tag…"; ObjectID = "eVs-hG-LRG"; */
+"eVs-hG-LRG.title" = "新規タグを作成…";
+
+/* Class = "NSTextFieldCell"; title = "<<x>>"; ObjectID = "hRJ-l3-7Ix"; */
+"hRJ-l3-7Ix.title" = "<<x>>";
+
+/* Class = "NSSearchField"; ibExternalAccessibilityDescription = "Clips filter"; ObjectID = "hzh-4z-o3y"; */
+"hzh-4z-o3y.ibExternalAccessibilityDescription" = "クリップフィルタ";
+
+/* Class = "NSSearchField"; ibShadowedToolTip = "Show files with matching name"; ObjectID = "hzh-4z-o3y"; */
+"hzh-4z-o3y.ibShadowedToolTip" = "マッチするファイル名を表示します";
+
+/* Class = "NSTextFieldCell"; title = "<<Header>>"; ObjectID = "nLN-Mg-Opz"; */
+"nLN-Mg-Opz.title" = "<<Header>>";
+
+/* Class = "NSSearchFieldCell"; placeholderString = "Filter"; ObjectID = "x9d-vD-Owg"; */
+"x9d-vD-Owg.placeholderString" = "検索";
+
+/* Class = "NSTextFieldCell"; title = "<<Value>>"; ObjectID = "z6j-Lw-lrY"; */
+"z6j-Lw-lrY.title" = "<<Value>>";

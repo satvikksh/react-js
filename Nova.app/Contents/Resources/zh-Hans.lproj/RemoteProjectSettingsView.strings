@@ -1,0 +1,12 @@
+
+/* Class = "NSTextFieldCell"; title = "The name to display for the project, which can be different than the containing folder."; ObjectID = "6Y1-Cn-NZS"; */
+"6Y1-Cn-NZS.title" = "项目的显示名称，可以与所在文件夹不同。";
+
+/* Class = "NSTextFieldCell"; title = "Project Name:"; ObjectID = "I6K-9G-Pdl"; */
+"I6K-9G-Pdl.title" = "项目名称：";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "M0M-UB-gPo"; */
+"M0M-UB-gPo.title" = "好";
+
+/* Class = "NSTextFieldCell"; title = "Artwork:"; ObjectID = "hwk-A8-suo"; */
+"hwk-A8-suo.title" = "插图：";

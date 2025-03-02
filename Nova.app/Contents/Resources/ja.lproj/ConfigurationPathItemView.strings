@@ -1,0 +1,9 @@
+
+/* Class = "NSButtonCell"; title = "Choose…"; ObjectID = "LvH-Wf-iy0"; */
+"LvH-Wf-iy0.title" = "選択…";
+
+/* Class = "NSTextFieldCell"; title = "Item Name"; ObjectID = "VA1-jW-hBc"; */
+"VA1-jW-hBc.title" = "Item Name";
+
+/* Class = "NSTextFieldCell"; title = "Item Description"; ObjectID = "daf-7p-ylF"; */
+"daf-7p-ylF.title" = "Item Description";

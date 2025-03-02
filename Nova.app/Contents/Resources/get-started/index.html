@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <link rel="stylesheet" href="./get-started.css" type="text/css" media="screen">
+        <title>Get Started</title>
+    </head>
+    <body>
+        <canvas id="starfield"></canvas>
+        
+        <div id="get-started-button">
+            <a href="">
+                Get Started
+            </a>
+        </div>
+		
+        <script>
+	        // Detect reduced motion
+	        var fullMotion = true;
+	        if (window.matchMedia &&
+	            window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+	                document.body.classList.add('reduce-motion');
+	                fullMotion = false;
+	            }
+        
+	        // Detect WebGL (from http://www.studyjs.com/webgl/webglcontext.html)
+	        var webgl = null;
+	        var canvas = document.createElement('canvas');
+	        var webglContextParams = ['webgl', 'experimental-webgl', 'webkit-3d', 'moz-webgl'];
+	        var webglContext = null;
+	        for (var index = 0; index < webglContextParams.length; index++) {
+	            try {
+	                webglContext = canvas.getContext(webglContextParams[index]);
+	                if (webglContext) {
+	                    //breaking as we got our context
+	                    webgl = true;
+	                    break;
+	                }
+	            } catch (E) {
+	                console.log(E);
+	            }
+	        }
+        
+        
+	        if (webgl && fullMotion) {
+	            var starfieldJS = document.createElement("script");
+	            starfieldJS.src = "./nova-starfield-get-started.min.js";
+	            document.body.appendChild(starfieldJS);
+	        }            
+        
+            function eventFire(el, etype){
+              if (el.fireEvent) {
+                el.fireEvent('on' + etype);
+              } else {
+                var evObj = document.createEvent('Events');
+                evObj.initEvent(etype, true, false);
+                el.dispatchEvent(evObj);
+              }
+            }
+			
+			var warpButton = document.querySelector('#get-started-button');
+            
+            function startWarp() {
+                eventFire(warpButton, 'mousedown');
+            }
+            
+            function stopWarp() {
+                eventFire(warpButton, 'mouseup');
+            }
+            
+                        
+        </script>
+    </body>
+</html>

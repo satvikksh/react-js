@@ -1,0 +1,10 @@
+{
+	"name": "Key Bindings",
+	"extension": "novaextension",
+	"description": "An extension which adds one or more key binding sets.",
+	"rewritablePaths": [
+		"README.md",
+		"KeyBindings/{{ name }}.json"
+	],
+	"showEntitlements": false
+}

@@ -1,0 +1,1590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="javascript">
+    <meta>
+        <name>JavaScript</name>
+        <type>script</type>
+        <preferred-file-extension>js</preferred-file-extension>
+        <scriptable shebang="#!/usr/bin/env node" />
+    </meta>
+    
+    <detectors>
+        <extension>js,jsx,es,es6,cjs,mjs,njs,sjs,ssjs,javascript</extension>
+        <match-content lines="5" priority="low">^(//)?\s*vi:\s*(syntax|ft)=(js|javascript|jscript|ecmascript)\b</match-content>
+    </detectors>
+    
+    <indentation>
+        <increase>
+            <expression>(\{[^}\"']*$)|(\[[^\]\"']*$)|(\([^)\"']*$)</expression>
+        </increase>
+        <decrease>
+            <expression>^\s*(\s*/\*.*\*/\s*)*[\}\]\)\\]</expression>
+        </decrease>
+    </indentation>
+    
+    <comments>
+        <single>
+            <expression>//</expression>
+        </single>
+        <multiline>
+            <starts-with>
+                <expression>/*</expression>
+            </starts-with>
+            <ends-with>
+                <expression>*/</expression>
+            </ends-with>
+        </multiline>
+        
+        <conditional>
+            <match-selector>jsx.tag,jsx.text</match-selector>
+            <multiline>
+                <starts-with>
+                    <expression>{/*</expression>
+                </starts-with>
+                <ends-with>
+                    <expression>*/}</expression>
+                </ends-with>
+            </multiline>
+        </conditional>
+    </comments>
+    
+    <autoclosing-pairs>
+        <pair open="{" close="}" />
+        <pair open="[" close="]" />
+        <pair open="(" close=")" />
+        <pair open="&apos;" close="&apos;" notIn="string,regex,comment" />
+        <pair open="&quot;" close="&quot;" notIn="string,regex" />
+        <pair open="`" close="`" notIn="string,regex,comment" />
+        <pair open="“" close="”" notIn="string,regex" />
+        <pair open="‘" close="’" notIn="string,regex,comment" />
+        <pair open="/**" close=" */" notIn="string,regex,comment" />
+    </autoclosing-pairs>
+    
+    <surrounding-pairs>
+        <pair open="{" close="}" />
+        <pair open="[" close="]" />
+        <pair open="(" close=")" />
+        <pair open="&apos;" close="&apos;" />
+        <pair open="&quot;" close="&quot;" />
+        <pair open="`" close="`" />
+        <pair open="“" close="”" />
+        <pair open="‘" close="’" />
+        <pair open="&lt;" close="&gt;" />
+    </surrounding-pairs>
+    
+    <injection>
+        <expression>(^js$|^JS$|^jsx$|^JSX$|javascript|JavaScript|Javascript|ecmascript|ECMAScript)</expression>
+    </injection>
+    
+    <tree-sitter>
+        <highlights path="javascript/highlights.scm" />
+        <highlights path="javascript/highlights-shared.scm" />
+        <highlights path="javascript/highlights-jsx.scm" />
+        <injections path="javascript/injections.scm" />
+        <folds path="javascript/folds.scm" />
+        <folds path="javascript/folds-jsx.scm" />
+        <symbols path="javascript/symbols.scm" />
+        <symbols path="javascript/symbols-jsx.scm" />
+    </tree-sitter>
+    
+    
+    <!-- The JavaScript regular expression grammar scopes are deprecated.
+         They remain for backwards compatibility with third-party extensions.
+         Do not rely on these for new grammars.
+         They will be removed in a future release. -->
+    
+    <scopes>
+        <include syntax="self" collection="comments" />
+        <include syntax="self" collection="imports" />
+        <include syntax="self" collection="definitions" />
+        <include syntax="self" collection="variables" />
+        <include syntax="self" collection="functions" />
+        <include syntax="self" collection="keywords" />
+        <include syntax="self" collection="values" />
+        <include syntax="self" collection="identifiers" />
+        <include syntax="self" collection="blocks" />
+        <include syntax="self" collection="syntax" />
+    </scopes>
+    
+    <collections>
+        <!-- !Comments -->
+        <collection name="comments">
+            <scope name="javascript.comment.single.shebang">
+                <expression>^\#!(.*)$</expression>
+                <capture number="1" name="javascript.comment.content" />
+            </scope>
+            <scope name="javascript.comment.single" spell-check="true">
+                <expression>\/\/(.*)$</expression>
+                <capture number="1" name="javascript.comment.content" />
+            </scope>
+            <scope name="javascript.comment.block" spell-check="true">
+                <starts-with>
+                    <expression>\/\*</expression>
+                </starts-with>
+                <ends-with>
+                    <expression>\*\/</expression>
+                </ends-with>
+            </scope>
+        </collection>
+        
+        <!-- !Blocks -->
+        <collection name="blocks">
+            <scope name="javascript.block">
+                <symbol type="block">
+                    <context behavior="subtree" />
+                </symbol>
+                <starts-with>
+                    <expression>\{</expression>
+                    <capture number="0" name="javascript.block.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\}</expression>
+                    <capture number="0" name="javascript.block.bracket" />
+                </ends-with>
+                <subscopes>
+                    <include syntax="self" />
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- !Imports -->
+        <collection name="imports">
+            <scope name="javascript.import">
+                <starts-with>
+                    <expression>\b(import)\b</expression>
+                    <capture number="1" name="javascript.keyword.statement.import" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="import-references" optional="true" repeat="true" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="import-paths" />
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- !Import References -->
+        <collection name="import-references">
+            <include syntax="self" collection="comments" optional="true" repeat="true" />
+            <scope name="javascript.destructure">
+                <starts-with>
+                    <expression>\{</expression>
+                    <capture number="0" name="javascript.destructure.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\}</expression>
+                    <capture number="0" name="javascript.destructure.bracket" />
+                </ends-with>
+                <subscopes>
+                    <cut-off>
+                        <expression>(?=\b(?:static|async|function|class|if|else|while|for)\b)</expression>
+                    </cut-off>
+                    <include syntax="self" collection="comments" />
+                    <include syntax="self" collection="import-as-expression" />
+                    <scope name="javascript.identifier">
+                        <symbol type="variable" scope="external" />
+                        <expression>(?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*</expression>
+                    </scope>
+                    <scope name="javascript.comma">
+                        <expression>,</expression>
+                    </scope>
+                </subscopes>
+            </scope>
+            <scope name="javascript.keyword.modifier">
+                <expression>from</expression>
+            </scope>
+            <include syntax="self" collection="import-as-expression" />
+            <scope name="javascript.operator.all">
+                <expression>\*</expression>
+            </scope>
+            <scope name="javascript.identifier">
+                <symbol type="variable" scope="external" />
+                <expression>(?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*</expression>
+            </scope>
+            <scope name="javascript.comma">
+                <expression>,</expression>
+            </scope>
+        </collection>
+        
+        <!-- !Import As Expression -->
+        <collection name="import-as-expression">
+            <scope name="javascript.import-as-expression">
+                <starts-with>
+                    <expression>(?:(?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*|(\*))(?=\s+(?:as)\b)</expression>
+                    <capture number="1" name="javascript.operator" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <scope name="javascript.keyword.modifier">
+                        <expression>\b(as)\b</expression>
+                    </scope>
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="javascript.identifier">
+                        <symbol type="variable" scope="external" />
+                        <expression>(?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*</expression>
+                    </scope>
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- !Import Paths -->
+        <collection name="import-paths">
+            <scope name="javascript.string.double-quoted.path">
+                <starts-with>
+                    <expression>&quot;</expression>
+                    <capture number="0" name="javascript.string.double-quoted.path.delimiter" />
+                </starts-with>
+                <ends-with>
+                    <expression>&quot;|(?:(?&lt;!\\)$)</expression>
+                    <capture number="0" name="javascript.string.double-quoted.path.delimiter" />
+                </ends-with>
+                <subscopes>
+                    <scope name="javascript.string.double-quoted.path.escape">
+                        <expression>\\(?:\\|&quot;|n|r|t|b|f)</expression>
+                    </scope>
+                </subscopes>
+            </scope>
+            <scope name="javascript.string.single-quoted.path">
+                <starts-with>
+                    <expression>&apos;</expression>
+                    <capture number="0" name="javascript.string.single-quoted.path.delimiter" />
+                </starts-with>
+                <ends-with>
+                    <expression>&apos;|(?:(?&lt;!\\)$)</expression>
+                    <capture number="0" name="javascript.string.single-quoted.path.delimiter" />
+                </ends-with>
+                <subscopes>
+                    <scope name="javascript.string.single-quoted.path.escape">
+                        <expression>\\(?:\\|&apos;|n|r|t|b|f)</expression>
+                    </scope>
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- !Definitions -->
+        <collection name="definitions">
+            <scope name="javascript.definition.class">
+                <symbol type="class">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>\b(class)\s+([a-zA-Z_\$][A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)\b</expression>
+                    <capture number="1" name="javascript.keyword.construct.class" />
+                    <capture number="2" name="javascript.identifier.type.class.name" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="javascript.class.extends" optional="true">
+                        <expression>\b(extends)\s+([a-zA-Z_\$][A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_\.]*)</expression>
+                        <capture number="1" name="javascript.keyword.modifier.extends" />
+                        <capture number="2" name="javascript.identifier.type.class.superclass" />
+                    </scope>
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="javascript.block">
+                        <symbol type="block">
+                            <context behavior="subtree" fold-type="class" />
+                        </symbol>
+                        <starts-with>
+                            <expression>\{</expression>
+                            <capture number="0" name="javascript.bracket" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>\}</expression>
+                            <capture number="0" name="javascript.bracket" />
+                        </ends-with>
+                        <subscopes>
+                            <include syntax="self" collection="comments" />
+                            <include syntax="self" collection="properties" />
+                            <include syntax="self" collection="methods" />
+                            <scope name="javascript.keyword.modifier">
+                                <strings>
+                                    <string>static</string>
+                                    <string>async</string>
+                                    <string>get</string>
+                                    <string>set</string>
+                                </strings>
+                            </scope>
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- !Variables -->
+        <collection name="variables">
+            <!-- !Named Function Variables -->
+            <scope name="javascript.definition.function.variable">
+                <symbol type="function">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>\b(let|var|const)\s+((?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)\s*(=)\s*(?:(async)\s+)?(function)(\*)?(?=\s*\()</expression>
+                    <capture number="1" name="javascript.keyword.construct" />
+                    <capture number="2" name="javascript.function.identifier.name" />
+                    <capture number="3" name="javascript.operator.equals" />
+                    <capture number="4" name="javascript.keyword.modifier" />
+                    <capture number="5" name="javascript.keyword.construct" />
+                    <capture number="6" name="javascript.operator" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="function-blocks" />
+                </subscopes>
+            </scope>
+            <scope name="javascript.definition.function.variable">
+                <symbol type="function">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>((?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)\s*(=)\s*(?:(async)\s+)?(function)(\*)?(?=\s*\()</expression>
+                    <capture number="1" name="javascript.function.identifier.name" />
+                    <capture number="2" name="javascript.operator.equals" />
+                    <capture number="3" name="javascript.keyword.modifier" />
+                    <capture number="4" name="javascript.keyword.construct" />
+                    <capture number="5" name="javascript.operator" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="function-blocks" />
+                </subscopes>
+            </scope>
+            
+            <!-- !Arrow Function Variables -->
+            <scope name="javascript.definition.function.arrow.named.local">
+                <symbol type="function">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>
+                        \b(let|var|const)\s+((?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)\s*(=)\s* # Variable
+                        (?:(async)\s+)?(?=(?:
+                            (?&lt;![A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]) # Not preceeded by an identifier
+                            (?:\(
+                                (?:
+                                    # Opening parenthesis preceeded by an identifier (function call)
+                                    ((?&lt;=[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_])\()
+                                    # Closing parenthesis not followed by the arrow operator
+                                    | (\)(?!\s*=&gt;))
+                                    # All characters other than parenthesis
+                                    | [^\(\)]
+                                )*
+                            \)) # (arg, arg) =>
+                            |(?:(?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*) # arg =>
+                        )\s*=&gt;\s*)
+                    </expression>
+                    <capture number="1" name="javascript.keyword.construct" />
+                    <capture number="2" name="javascript.identifier.function.name" />
+                    <capture number="3" name="javascript.operator.equals" />
+                    <capture number="4" name="javascript.keyword.modifier" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arrow-function-arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="javascript.operator">
+                        <expression>=&gt;</expression>
+                    </scope>
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arrow-function-body-expressions" />
+                </subscopes>
+            </scope>
+            <scope name="javascript.definition.function.arrow.named.global">
+                <symbol type="function">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>
+                        ((?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)\s*(=)\s* # Variable
+                        (?:(async)\s+)?(?=(?:
+                            (?&lt;![A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]) # Not preceeded by an identifier
+                            (?:\(
+                                (?:
+                                    # Opening parenthesis preceeded by an identifier (function call)
+                                    ((?&lt;=[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_])\()
+                                    # Closing parenthesis not followed by the arrow operator
+                                    | (\)(?!\s*=&gt;))
+                                    # All characters other than parenthesis
+                                    | [^\(\)]
+                                )*
+                            \)) # (arg, arg) =>
+                            |(?:(?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*) # arg =>
+                        )\s*=&gt;\s*)
+                    </expression>
+                    <capture number="1" name="javascript.identifier.function.name" />
+                    <capture number="2" name="javascript.operator.equals" />
+                    <capture number="3" name="javascript.keyword.modifier" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arrow-function-arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="javascript.operator">
+                        <expression>=&gt;</expression>
+                    </scope>
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arrow-function-body-expressions" />
+                </subscopes>
+            </scope>
+            
+            <scope name="javascript.definition.property">
+                <symbol type="property" scope="private" />
+                <expression>(this)(\.)(\#?[a-zA-Z_\$][A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)\s*(\=)</expression>
+                <capture number="1" name="javascript.keyword.self" />
+                <capture number="2" name="javascript.operator" />
+                <capture number="3" name="javascript.identifier.property.name" />
+                <capture number="4" name="javascript.operator" />
+            </scope>
+            
+            <!-- !Destructuring Assignment -->
+            <scope name="javascript.destructure-assignment-array">
+                <starts-with>
+                    <expression>\b(let|var|const)\s+(\[)(?=[a-zA-ZA-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_,\s\.]+\]\s*\=)</expression>
+                    <capture number="1" name="javascript.keyword.construct" />
+                    <capture number="2" name="javascript.destructure.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\]</expression>
+                    <capture number="0" name="javascript.destructure.bracket" />
+                </ends-with>
+                <subscopes>
+                    <cut-off>
+                        <expression>(?=\b(?:static|async|function|class|if|else|while|for)\b)</expression>
+                    </cut-off>
+                    <scope name="javascript.identifier">
+                        <symbol type="variable" scope="local" />
+                        <expression>(?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*</expression>
+                    </scope>
+                    <scope name="javascript.rest">
+                        <symbol type="variable" scope="local" />
+                        <expression>(\.\.\.)((?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)</expression>
+                        <capture number="1" name="javascript.rest.operator" />
+                        <capture number="2" name="javascript.rest.identifier.name" />
+                    </scope>
+                    <scope name="javascript.comma">
+                        <expression>,</expression>
+                    </scope>
+                </subscopes>
+            </scope>
+            <scope name="javascript.destructure-assignment-array">
+                <starts-with>
+                    <expression>(?&lt;![a-zA-ZA-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_])(\[)(?=[a-zA-ZA-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_,\s\.]+\]\s*\=)</expression>
+                    <capture number="1" name="javascript.destructure.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\]</expression>
+                    <capture number="0" name="javascript.destructure.bracket" />
+                </ends-with>
+                <subscopes>
+                    <cut-off>
+                        <expression>(?=\b(?:static|async|function|class|if|else|while|for)\b)</expression>
+                    </cut-off>
+                    <scope name="javascript.identifier">
+                        <symbol type="variable" scope="local" />
+                        <expression>(?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*</expression>
+                    </scope>
+                    <scope name="javascript.rest">
+                        <symbol type="variable" scope="local" />
+                        <expression>(\.\.\.)((?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)</expression>
+                        <capture number="1" name="javascript.rest.operator" />
+                        <capture number="2" name="javascript.rest.identifier.name" />
+                    </scope>
+                    <scope name="javascript.comma">
+                        <expression>,</expression>
+                    </scope>
+                </subscopes>
+            </scope>
+            <scope name="javascript.destructure-assignment-object">
+                <starts-with>
+                    <expression>\b(let|var|const)\s+(\{)(?=[a-zA-ZA-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_,\s\.]+\}\s*\=)</expression>
+                    <capture number="1" name="javascript.keyword.construct" />
+                    <capture number="2" name="javascript.destructure.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\}</expression>
+                    <capture number="0" name="javascript.destructure.bracket" />
+                </ends-with>
+                <subscopes>
+                    <cut-off>
+                        <expression>(?=\b(?:static|async|function|class|if|else|while|for)\b)</expression>
+                    </cut-off>
+                    <scope name="javascript.identifier">
+                        <symbol type="variable" scope="local" />
+                        <expression>(?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*</expression>
+                    </scope>
+                    <scope name="javascript.rest">
+                        <symbol type="variable" scope="local" />
+                        <expression>(\.\.\.)((?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)</expression>
+                        <capture number="1" name="javascript.rest.operator" />
+                        <capture number="2" name="javascript.rest.identifier.name" />
+                    </scope>
+                    <scope name="javascript.comma">
+                        <expression>,</expression>
+                    </scope>
+                </subscopes>
+            </scope>
+            <scope name="javascript.destructure-assignment-object">
+                <starts-with>
+                    <expression>(?&lt;![a-zA-ZA-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_])(\{)(?=[a-zA-ZA-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_,\s\.]+\}\s*\=)</expression>
+                    <capture number="1" name="javascript.destructure.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\}</expression>
+                    <capture number="0" name="javascript.destructure.bracket" />
+                </ends-with>
+                <subscopes>
+                    <cut-off>
+                        <expression>(?=\b(?:static|async|function|class|if|else|while|for)\b)</expression>
+                    </cut-off>
+                    <scope name="javascript.identifier">
+                        <symbol type="variable" scope="local" />
+                        <expression>(?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*</expression>
+                    </scope>
+                    <scope name="javascript.rest">
+                        <symbol type="variable" scope="local" />
+                        <expression>(\.\.\.)((?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)</expression>
+                        <capture number="1" name="javascript.rest.operator" />
+                        <capture number="2" name="javascript.rest.identifier.name" />
+                    </scope>
+                    <scope name="javascript.comma">
+                        <expression>,</expression>
+                    </scope>
+                </subscopes>
+            </scope>
+            
+            <scope name="javascript.definition.constant.local">
+                <symbol type="constant" scope="local" />
+                <expression>\b(const)\s+([a-zA-Z_\$][A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)\s*(\=)</expression>
+                <capture number="1" name="javascript.keyword.construct" />
+                <capture number="2" name="javascript.identifier.name" />
+                <capture number="3" name="javascript.operator" />
+            </scope>
+            
+            <scope name="javascript.definition.variable.local">
+                <symbol type="variable" scope="local" />
+                <expression>\b(let|var)\s+([a-zA-Z_\$][A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)\s*(\=)</expression>
+                <capture number="1" name="javascript.keyword.construct" />
+                <capture number="2" name="javascript.identifier.name" />
+                <capture number="3" name="javascript.operator" />
+            </scope>
+            
+            <scope name="javascript.definition.variable.global">
+                <symbol type="variable" scope="global" />
+                <expression>(?&lt;!\.)((?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)\s*(\=(?!\=|&gt;))</expression>
+                <capture number="1" name="javascript.identifier.name" />
+                <capture number="2" name="javascript.operator" />
+            </scope>
+        </collection>
+        
+        <!-- !Functions -->
+        <collection name="functions">
+            <scope name="javascript.definition.function.named">
+                <symbol type="function">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>(?:\b(async)\s+)?\b(function)(\*)?\s+([a-zA-Z_\$][A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)</expression>
+                    <capture number="1" name="javascript.keyword.modifier" />
+                    <capture number="2" name="javascript.keyword.construct" />
+                    <capture number="3" name="javascript.operator" />
+                    <capture number="4" name="javascript.identifier.function.name" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="function-blocks" />
+                </subscopes>
+            </scope>
+            
+            <scope name="javascript.definition.function.anonymous">
+                <symbol type="function" anonymous="true">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>(?:\b(async)\s+)?\b(function)(\*)?(?=\s*\()</expression>
+                    <capture number="1" name="javascript.keyword.modifier" />
+                    <capture number="2" name="javascript.keyword.construct" />
+                    <capture number="3" name="javascript.operator" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="function-blocks" />
+                </subscopes>
+            </scope>
+            <scope name="javascript.definition.function.arrow.anonymous">
+                <symbol type="function" anonymous="true">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>(?:\b(async)\s+)?(?=(?:
+                        (?&lt;![A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]) # Not preceeded by an identifier
+                        (?:\(
+                            (?:
+                                # Opening parenthesis preceeded by an identifier (function call)
+                                ((?&lt;=[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_])\()
+                                # Closing parenthesis not followed by the arrow operator
+                                | (\)(?!\s*=&gt;))
+                                # All characters other than parenthesis
+                                | [^\(\)]
+                            )*
+                        \)) # (arg, arg) =>
+                        |(?:(?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*) # arg =>
+                    )\s*=&gt;\s*)</expression>
+                    <capture number="1" name="javascript.keyword.modifier" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arrow-function-arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="javascript.operator">
+                        <expression>=&gt;</expression>
+                    </scope>
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arrow-function-body-expressions" />
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- !Methods -->
+        <collection name="methods">
+            <scope name="javascript.method.constructor">
+                <symbol type="constructor">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>\b(constructor)\b</expression>
+                    <capture number="1" name="javascript.keyword.construct.name.constructor" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="function-blocks" />
+                </subscopes>
+            </scope>
+            
+            <scope name="javascript.method.getter">
+                <symbol type="getter">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>\b(get)\s+([a-zA-Z_\$][A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)\b</expression>
+                    <capture number="1" name="javascript.keyword.modifier" />
+                    <capture number="2" name="javascript.identifier.method.name" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="function-blocks" />
+                </subscopes>
+            </scope>
+            
+            <scope name="javascript.method.setter">
+                <symbol type="setter">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>\b(set)\s+([a-zA-Z_\$][A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)\b</expression>
+                    <capture number="1" name="javascript.keyword.modifier" />
+                    <capture number="2" name="javascript.identifier.method.name" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="function-blocks" />
+                </subscopes>
+            </scope>
+            
+            <scope name="javascript.method">
+                <symbol type="method">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>(?:\b(static)\s+)?(?:\b(async)(\*)?\s+)?(\*)?([a-zA-Z_\$][A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)\b\s*(?=\()</expression>
+                    <capture number="1" name="javascript.keyword.modifier" />
+                    <capture number="2" name="javascript.keyword.modifier" />
+                    <capture number="3" name="javascript.operator" />
+                    <capture number="4" name="javascript.operator" />
+                    <capture number="5" name="javascript.identifier.method.name" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="function-blocks" />
+                </subscopes>
+            </scope>
+            
+            <scope name="javascript.method.getter.computed">
+                <symbol type="getter">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>\b(get)\s+(\[)</expression>
+                    <capture number="1" name="javascript.keyword.modifier" />
+                    <capture number="2" name="javascript.bracket" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="javascript.method.computed.expression.name">
+                        <starts-with>
+                            <expression>(?=[^\]])</expression>
+                        </starts-with>
+                        <ends-with>
+                            <expression>(?=\])</expression>
+                        </ends-with>
+                        <subscopes anchored="true">
+                            <include syntax="self" collection="expressions" repeat="true" />
+                        </subscopes>
+                    </scope>
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="javascript.bracket">
+                        <expression>\]</expression>
+                    </scope>
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="function-blocks" />
+                </subscopes>
+            </scope>
+            
+            <scope name="javascript.method.setter.computed">
+                <symbol type="setter">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>\b(set)\s+(\[)</expression>
+                    <capture number="1" name="javascript.keyword.modifier" />
+                    <capture number="2" name="javascript.bracket" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="javascript.method.computed.expression.name">
+                        <starts-with>
+                            <expression>(?=[^\]])</expression>
+                        </starts-with>
+                        <ends-with>
+                            <expression>(?=\])</expression>
+                        </ends-with>
+                        <subscopes anchored="true">
+                            <include syntax="self" collection="expressions" repeat="true" />
+                        </subscopes>
+                    </scope>
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="javascript.bracket">
+                        <expression>\]</expression>
+                    </scope>
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="function-blocks" />
+                </subscopes>
+            </scope>
+            
+            <scope name="javascript.method.computed">
+                <symbol type="method">
+                    <context behavior="subtree" foldable="false" />
+                </symbol>
+                <starts-with>
+                    <expression>(?:(?:\b(async)(\*)?\s+)|(\*)?)(\[)</expression>
+                    <capture number="1" name="javascript.keyword.modifier" />
+                    <capture number="2" name="javascript.operator" />
+                    <capture number="3" name="javascript.operator" />
+                    <capture number="4" name="javascript.bracket" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="javascript.method.computed.expression.name">
+                        <starts-with>
+                            <expression>(?=[^\]])</expression>
+                        </starts-with>
+                        <ends-with>
+                            <expression>(?=\])</expression>
+                        </ends-with>
+                        <subscopes anchored="true">
+                            <include syntax="self" collection="expressions" repeat="true" />
+                        </subscopes>
+                    </scope>
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="javascript.bracket">
+                        <expression>\]</expression>
+                    </scope>
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="function-blocks" />
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- !Properties -->
+        <collection name="properties">
+            <scope name="javascript.class-field-private">
+                <symbol type="property" scope="private" />
+                <starts-with>
+                    <expression>(?:\b(static)\s+)?((\#)[a-zA-Z_\$][A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)(?=\s*(?:\=|$))</expression>
+                    <capture number="1" name="javascript.keyword.modifier" />
+                    <capture number="2" name="javascript.identifier.name" />
+                    <capture number="3" name="javascript.operator" />
+                </starts-with>
+                <ends-with>
+                    <expression>(?=;|$)</expression>
+                </ends-with>
+                <subscopes>
+                    <cut-off>
+                        <expression>(?=\b(?:static|async|function|class|if|else|while|for)\b)</expression>
+                    </cut-off>
+                    <include syntax="self" collection="comments" />
+                    <include syntax="self" collection="keywords" />
+                    <include syntax="self" collection="values" />
+                    <include syntax="self" collection="identifiers" />
+                    <include syntax="self" collection="blocks" />
+                    <scope name="javascript.operator.equals">
+                        <expression>=</expression>
+                    </scope>
+                </subscopes>
+            </scope>
+            
+            <scope name="javascript.class-field">
+                <symbol type="property" />
+                <starts-with>
+                    <expression>(?:\b(static)\s+)?([a-zA-Z_\$][A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)(?=\s*(?:\=|$))</expression>
+                    <capture number="1" name="javascript.keyword.modifier" />
+                    <capture number="2" name="javascript.identifier.name" />
+                </starts-with>
+                <ends-with>
+                    <expression>(?=;|$)</expression>
+                </ends-with>
+                <subscopes>
+                    <cut-off>
+                        <expression>(?=\b(?:static|async|function|class|if|else|while|for)\b)</expression>
+                    </cut-off>
+                    <include syntax="self" collection="comments" />
+                    <include syntax="self" collection="keywords" />
+                    <include syntax="self" collection="values" />
+                    <include syntax="self" collection="identifiers" />
+                    <include syntax="self" collection="blocks" />
+                    <scope name="javascript.operator.equals">
+                        <expression>=</expression>
+                    </scope>
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- !Arguments for Functions -->
+        <collection name="arguments">
+            <scope name="javascript.arguments">
+                <include syntax="self" collection="comments" />
+                <starts-with>
+                    <expression>\(</expression>
+                    <capture number="0" name="javascript.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\)</expression>
+                    <capture number="0" name="javascript.bracket" />
+                </ends-with>
+                <subscopes anchored="true">
+                    <include syntax="self" collection="argument-items" optional="true" repeat="true" />
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- !Argument Items -->
+        <collection name="argument-items">
+            <include syntax="self" collection="comments" />
+            
+            <scope name="javascript.comma">
+                <expression>,</expression>
+            </scope>
+            
+            <scope name="javascript.destructure-array">
+                <starts-with>
+                    <expression>\[</expression>
+                    <capture number="0" name="javascript.bracket" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="argument-items" optional="true" repeat="true" />
+                    
+                    <scope name="javascript.bracket">
+                        <expression>\]</expression>
+                    </scope>
+                    
+                    <scope name="javascript.argument.default-value" optional="true">
+                        <starts-with>
+                            <expression>\=</expression>
+                            <capture number="0" name="javascript.operator" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>(?=\)|\,)</expression>
+                        </ends-with>
+                        <subscopes anchored="true">
+                            <include syntax="self" collection="expressions" repeat="true" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+            
+            <scope name="javascript.destructure-object">
+                <starts-with>
+                    <expression>\{</expression>
+                    <capture number="0" name="javascript.bracket" />
+                </starts-with>
+                <ends-with />
+                <subscopes anchored="true">
+                    <include syntax="self" collection="argument-items" optional="true" repeat="true" />
+                    
+                    <scope name="javascript.bracket">
+                        <expression>\}</expression>
+                    </scope>
+                    
+                    <scope name="javascript.argument.default-value" optional="true">
+                        <starts-with>
+                            <expression>\=</expression>
+                            <capture number="0" name="javascript.operator" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>(?=\)|\,)</expression>
+                        </ends-with>
+                        <subscopes anchored="true">
+                            <include syntax="self" collection="expressions" repeat="true" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+            
+            <scope name="javascript.argument.rest">
+                <symbol type="argument" />
+                <starts-with>
+                    <expression>(\.\.\.)\b([a-zA-Z_][A-Za-z0-9_]*)\b</expression>
+                    <capture number="1" name="javascript.operator" />
+                    <capture number="2" name="javascript.identifier.argument.rest.name" />
+                </starts-with>
+                <ends-with>
+                    <expression>(?=\)|\,)</expression>
+                </ends-with>
+                <subscopes anchored="true">
+                    <scope name="javascript.argument.default-value">
+                        <starts-with>
+                            <expression>\=</expression>
+                            <capture number="0" name="javascript.operator" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>(?=\)|\,)</expression>
+                        </ends-with>
+                        <subscopes anchored="true">
+                            <include syntax="self" collection="expressions" repeat="true" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+            
+            <scope name="javascript.argument">
+                <symbol type="argument" />
+                <starts-with>
+                    <expression>\b([a-zA-Z_][A-Za-z0-9_]*)\b(\?|!)?</expression>
+                    <capture number="1" name="javascript.identifier.argument.name" />
+                    <capture number="2" name="javascript.operator" />
+                </starts-with>
+                <ends-with>
+                    <expression>(?=\)|\,)</expression>
+                </ends-with>
+                <subscopes anchored="true">
+                    <scope name="javascript.argument.default-value">
+                        <starts-with>
+                            <expression>\=</expression>
+                            <capture number="0" name="javascript.operator" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>(?=\)|\,)</expression>
+                        </ends-with>
+                        <subscopes anchored="true">
+                            <include syntax="self" collection="expressions" repeat="true" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- !Arguments for Arrow Functions -->
+        <collection name="arrow-function-arguments">
+            <scope name="javascript.identifier.argument.name.single">
+                <symbol type="argument" />
+                <expression>(?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*(?=\s*=&gt;)</expression>
+            </scope>
+            <include syntax="self" collection="arguments" />
+        </collection>
+        
+        <!-- !Expressions for Arrow Functions -->
+        <collection name="arrow-function-body-expressions">
+            <include syntax="self" collection="function-blocks" />
+            <include syntax="self" collection="expressions" />
+        </collection>
+        
+        <!-- !Function Blocks -->
+        <collection name="function-blocks">
+            <scope name="javascript.block">
+                <symbol type="block">
+                    <context behavior="subtree" fold-type="function" />
+                </symbol>
+                <starts-with>
+                    <expression>\{</expression>
+                    <capture number="0" name="javascript.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\}</expression>
+                    <capture number="0" name="javascript.bracket" />
+                </ends-with>
+                <subscopes>
+                    <include syntax="self" />
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- !Keywords -->
+        <collection name="keywords">
+            <scope name="javascript.keyword.construct">
+                <strings>
+                    <string>class</string>
+                    <string>const</string>
+                    <string>constructor</string>
+                    <string>enum</string>
+                    <string>function</string>
+                    <string>interface</string>
+                    <string>label</string>
+                    <string>let</string>
+                    <string>new</string>
+                    <string>package</string>
+                    <string>var</string>
+                    <string>void</string>
+                </strings>
+            </scope>
+            <scope name="javascript.keyword.modifier">
+                <strings>
+                    <string>as</string>
+                    <string>async</string>
+                    <string>export</string>
+                    <string>extends</string>
+                    <string>from</string>
+                    <string>implements</string>
+                    <string>in</string>
+                    <string>instanceof</string>
+                    <string>of</string>
+                    <string>private</string>
+                    <string>protected</string>
+                    <string>public</string>
+                    <string>static</string>
+                    <string>typeof</string>
+                </strings>
+            </scope>
+            <scope name="javascript.keyword.condition">
+                <strings>
+                    <string>case</string>
+                    <string>catch</string>
+                    <string>default</string>
+                    <string>do</string>
+                    <string>else</string>
+                    <string>finally</string>
+                    <string>for</string>
+                    <string>if</string>
+                    <string>switch</string>
+                    <string>try</string>
+                    <string>while</string>
+                    <string>with</string>
+                </strings>
+            </scope>
+            <scope name="javascript.keyword.statement">
+                <strings>
+                    <string>await</string>
+                    <string>break</string>
+                    <string>continue</string>
+                    <string>debugger</string>
+                    <string>delete</string>
+                    <string>import</string>
+                    <string>return</string>
+                    <string>throw</string>
+                    <string>yield</string>
+                </strings>
+            </scope>
+            <scope name="javascript.keyword.self">
+                <strings>
+                    <string>this</string>
+                    <string>super</string>
+                </strings>
+            </scope>
+        </collection>
+        
+        <!-- !Expressions -->
+        <collection name="expressions">
+            <include syntax="self" collection="comments" />
+            <include syntax="self" collection="keywords" />
+            <include syntax="self" collection="values" />
+            <include syntax="self" collection="identifiers" />
+            <scope name="javascript.group">
+                <starts-with>
+                    <expression>\(</expression>
+                    <capture number="0" name="javascript.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\)</expression>
+                    <capture number="0" name="javascript.bracket" />
+                </ends-with>
+                <subscopes>
+                    <include syntax="self" collection="expressions" />
+                </subscopes>
+            </scope>
+            <include syntax="self" collection="blocks" />
+            <include syntax="self" collection="syntax" />
+        </collection>
+        
+        <!-- !Key Expressions -->
+        <collection name="key-expressions">
+            <include syntax="self" collection="comments" />
+            
+            <!-- !Computed Keys -->
+            <scope name="javascript.key-expression.computed">
+                <symbol type="property">
+                    <context behavior="subtree" />
+                </symbol>
+                <starts-with>
+                    <expression>(\[)(?=[^\]\{]+\]:)</expression>
+                    <capture number="1" name="javascript.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>(?=,|\})</expression>
+                </ends-with>
+                <subscopes anchored="true" skip-whitespace="lazy">
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="javascript.key-expression.computed.expression.name">
+                        <starts-with>
+                            <expression>(?=[^\]])</expression>
+                        </starts-with>
+                        <ends-with>
+                            <expression>(?=\])</expression>
+                        </ends-with>
+                        <subscopes anchored="true">
+                            <include syntax="self" collection="expressions" repeat="true" />
+                        </subscopes>
+                    </scope>
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <scope name="javascript.bracket">
+                        <expression>\]</expression>
+                    </scope>
+                    <scope name="javascript.colon">
+                        <expression>:</expression>
+                    </scope>
+                    <include syntax="self" collection="expressions" repeat="true" />
+                </subscopes>
+            </scope>
+            
+            <!-- !Unquoted Keys -->
+            <scope name="javascript.key-expression.function">
+                <symbol type="method" />
+                <starts-with>
+                    <expression>((?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)\s*(:)(?=\s*function\b)</expression>
+                    <capture number="`1`" name="javascript.identifier.key.name" />
+                    <capture number="2" name="javascript.colon" />
+                </starts-with>
+                <ends-with>
+                    <expression>(?=\}|,)</expression>
+                </ends-with>
+                <subscopes anchored="true" skip-whitespace="lazy">
+                    <scope name="javascript.key-expression.function">
+                        <expression>\b(function)(?:(\*)?|\b)</expression>
+                        <capture number="1" name="javascript.function.keyword.construct" />
+                        <capture number="2" name="javascript.operator" />
+                    </scope>
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="function-blocks" />
+                </subscopes>
+            </scope>
+            <scope name="javascript.key-expression">
+                <symbol type="property">
+                    <context behavior="subtree" />
+                </symbol>
+                <starts-with>
+                    <expression>((?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)\s*(:)</expression>
+                    <capture number="1" name="javascript.identifier.key.name" />
+                    <capture number="2" name="javascript.colon" />
+                </starts-with>
+                <ends-with>
+                    <expression>(?=\}|,)</expression>
+                </ends-with>
+                <subscopes anchored="true" skip-whitespace="lazy">
+                    <include syntax="self" collection="expressions" />
+                </subscopes>
+            </scope>
+            
+            <!-- !Quoted Keys -->
+            <scope name="javascript.key-expression.function.quoted">
+                <symbol type="method" />
+                <starts-with>
+                    <expression>((&quot;|&apos;)((?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)(\2))\s*(:)(?=\s*function\b)</expression>
+                    <capture number="1" name="javascript.key.string" />
+                    <capture number="2" name="javascript.key.string.delimiter" />
+                    <capture number="3" name="javascript.identifier.key.name" />
+                    <capture number="4" name="javascript.key.string.delimiter" />
+                    <capture number="5" name="javascript.colon" />
+                </starts-with>
+                <ends-with>
+                    <expression>(?=\}|,)</expression>
+                </ends-with>
+                <subscopes anchored="true">
+                    <scope name="javascript.key-expression.function">
+                        <expression>\b(function)(?:(\*)?|\b)</expression>
+                        <capture number="1" name="javascript.function.keyword.construct" />
+                        <capture number="2" name="javascript.operator" />
+                    </scope>
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="arguments" />
+                    <include syntax="self" collection="comments" optional="true" repeat="true" />
+                    <include syntax="self" collection="function-blocks" />
+                </subscopes>
+            </scope>
+            <scope name="javascript.key-expression.quoted">
+                <symbol type="property">
+                    <context behavior="subtree" />
+                </symbol>
+                <starts-with>
+                    <expression>((&quot;|&apos;)((?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)(\2))\s*(:)</expression>
+                    <capture number="1" name="javascript.key.string" />
+                    <capture number="2" name="javascript.key.string.delimiter" />
+                    <capture number="3" name="javascript.identifier.key.name" />
+                    <capture number="4" name="javascript.key.string.delimiter" />
+                    <capture number="5" name="javascript.colon" />
+                </starts-with>
+                <ends-with>
+                    <expression>(?=\}|,)</expression>
+                </ends-with>
+                <subscopes anchored="true">
+                    <include syntax="self" collection="expressions" repeat="true" />
+                </subscopes>
+            </scope>
+            
+            <include syntax="self" collection="methods" />
+            
+            <scope name="javascript.comma">
+                <expression>,</expression>
+            </scope>
+        </collection>
+        
+        <!-- !Values -->
+        <collection name="values">
+            <include syntax="self" collection="strings" />
+            <include syntax="self" collection="functions" />
+            
+            <scope name="javascript.object-literal">
+                <symbol type="block">
+                    <context behavior="subtree" />
+                </symbol>
+                <starts-with>
+                    <expression>
+                        (?&lt;=[=\-+:,\(\[])\s*(\{)
+                        | (\{)(?=\s*[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]+\s*:|\})
+                    </expression>
+                    <capture number="1" name="javascript.block.bracket" />
+                    <capture number="2" name="javascript.block.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\}</expression>
+                    <capture number="0" name="javascript.block.bracket" />
+                </ends-with>
+                <subscopes>
+                    <include syntax="self" collection="key-expressions" />
+                    <include syntax="self" />
+                </subscopes>
+            </scope>
+            
+            <scope name="javascript.value.null">
+                <strings>
+                    <string>null</string>
+                    <string>undefined</string>
+                    <string>NaN</string>
+                    <string>Infinity</string>
+                </strings>
+            </scope>
+            
+            <scope name="javascript.value.boolean">
+                <strings>
+                    <string>true</string>
+                    <string>false</string>
+                </strings>
+            </scope>
+            
+            <scope name="javascript.value.number.binary">
+                <expression>\b(0[bB])([01]+)\b</expression>
+                <capture number="1" name="javascript.value.number.binary.prefix" />
+            </scope>
+            <scope name="javascript.value.number.octal">
+                <expression>\b(0[oO])([0-7]+)\b</expression>
+                <capture number="1" name="javascript.value.number.octal.prefix" />
+            </scope>
+            <scope name="javascript.value.number.hexadecimal">
+                <expression>\b(0[xX])([a-fA-F0-9]+)\b</expression>
+                <capture number="1" name="javascript.value.number.hexadecimal.prefix" />
+            </scope>
+            <scope name="javascript.value.number.decimal">
+                <expression>
+                    (-)? # sign
+                    (
+                        \b\d+(\.\d*)? # 0, 0., 0.0
+                        | \.\d+ # .0
+                    )
+                    ((e|E)(\+|-)?\d+)? # exponent
+                    \b
+                </expression>
+                <capture number="1" name="javascript.operator" />
+            </scope>
+            
+            <scope name="javascript.collection.array">
+                <starts-with>
+                    <expression>\[</expression>
+                    <capture number="0" name="javascript.bracket" />
+                </starts-with>
+                <ends-with>
+                    <expression>\]</expression>
+                    <capture number="0" name="javascript.bracket" />
+                </ends-with>
+                <subscopes>
+                    <include syntax="self" collection="expressions" />
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- !Strings -->
+        <collection name="strings">
+            <scope name="javascript.string.backtick-quoted">
+                <starts-with>
+                    <expression>`</expression>
+                    <capture number="0" name="javascript.string.backtick-quoted.delimiter" />
+                </starts-with>
+                <ends-with>
+                    <expression>`</expression>
+                    <capture number="0" name="javascript.string.backtick-quoted.delimiter" />
+                </ends-with>
+                <subscopes>
+                    <scope name="javascript.string.backtick-quoted.escape">
+                        <expression>\\.</expression>
+                    </scope>
+                    <scope name="javascript.string-template-block" reset-styles="true">
+                        <starts-with>
+                            <expression>\$\{</expression>
+                            <capture number="0" name="javascript.string-template.open" />
+                        </starts-with>
+                        <ends-with>
+                            <expression>\}</expression>
+                            <capture number="0" name="javascript.string-template.close" />
+                        </ends-with>
+                        <subscopes>
+                            <include syntax="self" collection="string-literal-inline-expressions" />
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+            <scope name="javascript.string.double-quoted">
+                <starts-with>
+                    <expression>&quot;</expression>
+                    <capture number="0" name="javascript.string.double-quoted.delimiter" />
+                </starts-with>
+                <ends-with>
+                    <expression>&quot;|(?:(?&lt;!\\)$)</expression>
+                    <capture number="0" name="javascript.string.double-quoted.delimiter" />
+                </ends-with>
+                <subscopes>
+                    <scope name="javascript.string.double-quoted.escape">
+                        <expression>\\.</expression>
+                    </scope>
+                </subscopes>
+            </scope>
+            <scope name="javascript.string.single-quoted">
+                <starts-with>
+                    <expression>&apos;</expression>
+                    <capture number="0" name="javascript.string.single-quoted.delimiter" />
+                </starts-with>
+                <ends-with>
+                    <expression>&apos;|(?:(?&lt;!\\)$)</expression>
+                    <capture number="0" name="javascript.string.single-quoted.delimiter" />
+                </ends-with>
+                <subscopes>
+                    <scope name="javascript.string.single-quoted.escape">
+                        <expression>\\.</expression>
+                    </scope>
+                </subscopes>
+            </scope>
+            <scope name="javascript.string.regex">
+                <starts-with>
+                    <expression>(?&lt;=[\[=(?:+,!]|^|return|=&gt;|:|&amp;&amp;|\|\|)\s*(/)(?=[^/*+?].*/)</expression>
+                    <capture number="1" name="javascript.string.regex.delimiter" />
+                </starts-with>
+                <ends-with>
+                    <expression>(/)([cgimosuxy]+\b)?</expression>
+                    <capture number="1" name="javascript.string.regex.delimiter" />
+                </ends-with>
+                <subscopes>
+                    <scope name="javascript.string.regex.escape">
+                        <expression>\\.</expression>
+                    </scope>
+                    <scope name="javascript.string.regex.character-class">
+                        <starts-with>
+                            <expression>\[</expression>
+                        </starts-with>
+                        <ends-with>
+                            <expression>\]</expression>
+                        </ends-with>
+                        <subscopes>
+                            <scope name="javascript.string.regex.escape">
+                                <expression>\\.</expression>
+                            </scope>
+                            <cut-off>
+                                <expression>(?=/)</expression>
+                            </cut-off>
+                        </subscopes>
+                    </scope>
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- !Expressions for String Literals -->
+        <collection name="string-literal-inline-expressions">
+            <scope name="javascript.string-literal.inline-expression">
+                <starts-with>
+                    <expression>(?=[^;|{])</expression>
+                </starts-with>
+                <ends-with>
+                    <expression>(?=\})</expression>
+                </ends-with>
+                <subscopes>
+                    <include syntax="self" collection="expressions" />
+                </subscopes>
+            </scope>
+        </collection>
+        
+        <!-- !Identifiers -->
+        <collection name="identifiers">
+            <scope name="javascript.identifier.core.global">
+                <strings prefix="(?&lt;!\.)">
+                    <string>arguments</string>
+                    <string>crypto</string>
+                    <string>document</string>
+                    <string>localStorage</string>
+                    <string>sessionStorage</string>
+                    <string>window</string>
+                    <string>Object</string>
+                    <string>Symbol</string>
+                    <string>Boolean</string>
+                    <string>Date</string>
+                    <string>Function</string>
+                    <string>Math</string>
+                    <string>Number</string>
+                    <string>String</string>
+                    <string>RegExp</string>
+                    <string>Array</string>
+                    <string>Int8Array</string>
+                    <string>Uint8Array</string>
+                    <string>Uint8ClampedArray</string>
+                    <string>Int16Array</string>
+                    <string>Uint16Array</string>
+                    <string>Int32Array</string>
+                    <string>Uint32Array</string>
+                    <string>Float32Array</string>
+                    <string>Float64Array</string>
+                    <string>Map</string>
+                    <string>Set</string>
+                    <string>WeakMap</string>
+                    <string>WeakSet</string>
+                    <string>ArrayBuffer</string>
+                    <string>DataView</string>
+                    <string>JSON</string>
+                    <string>Promise</string>
+                    <string>Generator</string>
+                    <string>GeneratorFunction</string>
+                    <string>Reflect</string>
+                    <string>Proxy</string>
+                    <string>Intl</string>
+                    <string>Error</string>
+                    <string>EvalError</string>
+                    <string>InternalError</string>
+                    <string>RangeError</string>
+                    <string>ReferenceError</string>
+                    <string>SyntaxError</string>
+                    <string>TypeError</string>
+                    <string>URIError</string>
+                </strings>
+            </scope>
+            <scope name="javascript.identifier.core.function">
+                <strings prefix="(?&lt;!\.)" suffix="(?=\()">
+                    <string>decodeURLComponent</string>
+                    <string>decodeURI</string>
+                    <string>encodeURIComponent</string>
+                    <string>encodeURI</string>
+                    <string>escape</string>
+                    <string>eval</string>
+                    <string>isFinite</string>
+                    <string>isNaN</string>
+                    <string>parseFloat</string>
+                    <string>parseInt</string>
+                    <string>unescape</string>
+                </strings>
+            </scope>
+            <scope name="javascript.identifier.property">
+                <expression>(?&lt;=\.)((?:\#?)[a-zA-Z_\$][A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)\b(?!\()</expression>
+            </scope>
+            <scope name="javascript.identifier.method">
+                <expression>(?&lt;=\.)([a-zA-Z_\$][A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)(?=\()</expression>
+            </scope>
+            <scope name="javascript.identifier.function">
+                <expression>(?&lt;!\.)((?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*)(?=\()</expression>
+            </scope>
+            <scope name="javascript.identifier.constant">
+                <expression>(?&lt;![a-z0-9_])(?:\b[A-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*</expression>
+            </scope>
+            <scope name="javascript.identifier">
+                <expression>(?:\b[a-zA-Z_]|\$)[A-Za-zÀ-ÖØ-öø-ÿŸřŘšŠžŽ0-9_]*</expression>
+            </scope>
+        </collection>
+        
+        <!-- !Syntax -->
+        <collection name="syntax">
+            <scope name="javascript.operator">
+                <expression>(\+|\-|\*|/|%|\+\+|\-\-|\=|\=\=|!\=|\+\=|\-\=|\*\=|/\=|%\=|\&lt;|\&gt;|\&lt;\=|\&gt;=|\=\=\=|!\=\=|&amp;&amp;|\||\|\||!|\^|&amp;|\&lt;\&lt;|\&gt;\&gt;|~)</expression>
+            </scope>
+            <scope name="javascript.operator.spread">
+                <expression>\.\.\.</expression>
+            </scope>
+            <scope name="javascript.dot">
+                <expression>\.</expression>
+            </scope>
+            <scope name="javascript.bracket">
+                <expression>[\(\[\)\]]</expression>
+            </scope>
+            <scope name="javascript.comma">
+                <expression>,</expression>
+            </scope>
+            <scope name="javascript.semicolon">
+                <expression>;</expression>
+            </scope>
+        </collection>
+    </collections>
+</syntax>

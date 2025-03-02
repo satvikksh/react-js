@@ -1,0 +1,18 @@
+on openTerminal(location, remoteHost, serverPort, u, pass)
+
+	tell application "Prompt"
+		activate
+
+		if ((count of remoteHost) is greater than 0) then
+			if ((count of pass) is greater than 0) then
+				connect to address remoteHost as user u using port serverPort with password pass to folder location
+			else
+				connect to address remoteHost as user u using port serverPort to folder location
+			end if
+		else
+			open local terminal to folder location
+		end if
+
+	end tell
+
+end openTerminal

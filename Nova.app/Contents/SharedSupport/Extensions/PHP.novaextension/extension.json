@@ -1,0 +1,179 @@
+{
+    "identifier": "panic.PHP",
+    "name": "PHP",
+    "author": "Panic Inc.",
+    
+    "main": "main.js",
+    
+    "entitlements": {
+        "filesystem": "readwrite",
+        "process": true
+    },
+    
+    "activationEvents": [
+        "onLanguage:php",
+        "onCommand:php.resolveInterpreter"
+    ],
+    
+    "issueMatchers": {
+        "php-linter": {
+            "pattern": {
+                "regexp": "^(?:PHP\\s+)?Parse error:\\s+(.+?)(?:\\s+\\(([a-zA-Z0-9-_]+)\\))? in ([^:]+?) on line (\\d+)$",
+                "message": 1,
+                "code": 2,
+                "file": 3,
+                "line": 4,
+                "severity": "error"
+            }
+        }
+    },
+    
+    "breakpoints": [
+        {
+            "syntax": "php"
+        }
+    ],
+    
+    "configWorkspace": [
+        {
+            "key": "php.interpreter",
+            "title": "Interpreter",
+            "description": "The path to the PHP interpreter to use for invoking scripts. By default, an interpreter will be looked for on your PATH.",
+            "type": "enum",
+            "resolve": "php.resolveInterpreter",
+            "allowCustom": true,
+            "placeholder": "Automatic"
+        },
+        {
+            "key": "php.validate",
+            "title": "Validation",
+            "type": "enum",
+            "description": "Whether automatic validation of open PHP files should be performed, and when to perform the validation.",
+            "values": [
+                [null, "Disabled"],
+                ["onSave", "On Save"],
+                ["onChange", "On Change"]
+            ],
+            "default": null
+        }
+    ],
+    
+    "configWorkspaceImage": "__filetype.php",
+    
+    "debugAdapters": {
+        "php": {
+            "name": "PHP",
+            "image": "task-php"
+        }
+    },
+    
+    "taskTemplates": {
+        "phpDebug": {
+            "name": "PHP Debug",
+            "description": "Listens for connections from Xdebug to debug PHP applications.",
+            "image": "task-php",
+            "tasks": {
+                "run": {
+                    "resolve": "php",
+                    "data": {"type": "phpDebug"}
+                }
+            },
+            "config": [
+                {
+                    "key": "php.debug.port",
+                    "title": "Xdebug Port",
+                    "description": "The port on which to listen for incoming Xdebug connections.",
+                    "type": "number",
+                    "min": 1024,
+                    "max": 65535,
+                    "placeholder": "9003"
+                },
+                {
+                    "key": "php.debug.allowRemote",
+                    "title": "Allow Remote Connections",
+                    "description": "Whether connections from instances of Xdebug that are not running on this computer are allowed.",
+                    "type": "boolean",
+                    "default": false
+                },
+                {
+                    "key": "php.debug.stopOnEntry",
+                    "title": "Stop on Entry",
+                    "description": "Whether to stop automatically after launch.",
+                    "type": "boolean",
+                    "default": false
+                },
+                {
+                    "key": "php.debug.serverSourceRoot",
+                    "title": "Server Source Root",
+                    "description": "The path to the source being debugged on the remote target. This is only required if using a remote instance of Xdebug.",
+                    "type": "string"
+                },
+                {
+                    "key": "php.debug.localSourceRoot",
+                    "title": "Local Source Root",
+                    "description": "The path to the source being debugged on this computer. By default, the project folder is used. This is only required if using a remote instance of Xdebug.",
+                    "type": "path",
+                    "placeholder": "Project Root",
+                    "relative": true,
+                    "allowFolders": true,
+                    "allowFiles": false,
+                }
+            ]
+        },
+        "phpLocalServerDebug": {
+            "name": "PHP Local Web Server",
+            "description": "Starts the PHP development web server with support for debugging using Xdebug.",
+            "image": "task-php",
+            "tasks": {
+                "run": {
+                    "resolve": "php",
+                    "data": {"type": "phpLocalServerDebug"}
+                }
+            },
+            "config": [
+                {
+                    "key": "php.debug.serverPort",
+                    "title": "Server Port",
+                    "description": "The port on which to start the PHP development server.",
+                    "type": "number",
+                    "min": 1024,
+                    "max": 65535,
+                    "placeholder": "8000",
+                },
+                {
+                    "key": "php.debug.port",
+                    "title": "Xdebug Port",
+                    "description": "The port on which to listen for incoming Xdebug connections.",
+                    "type": "number",
+                    "min": 1024,
+                    "max": 65535,
+                    "placeholder": "9003"
+                },
+                {
+                    "key": "php.debug.launchBrowser",
+                    "title": "Open in Browser",
+                    "description": "Whether to automatically open the development site in your default web browser.",
+                    "type": "boolean",
+                    "default": false
+                },
+                {
+                    "key": "php.debug.stopOnEntry",
+                    "title": "Stop on Entry",
+                    "description": "Whether to stop automatically after launch.",
+                    "type": "boolean",
+                    "default": false
+                },
+                {
+                    "key": "php.debug.localSourceRoot",
+                    "title": "Local Source Root",
+                    "description": "The root path to serve via the web server. By default, the project folder is used.",
+                    "type": "path",
+                    "placeholder": "Project Root",
+                    "relative": true,
+                    "allowFolders": true,
+                    "allowFiles": false,
+                }
+            ]
+        },
+    }
+}

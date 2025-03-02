@@ -1,0 +1,159 @@
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Swatch List"; ObjectID = "3hP-sG-GDb"; */
+"3hP-sG-GDb.ibExternalAccessibilityDescription" = "リスト切り替え";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Hexadecimal"; ObjectID = "4CQ-rJ-nFd"; */
+"4CQ-rJ-nFd.ibExternalAccessibilityDescription" = "16進数";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "4GU-o3-mEN"; */
+"4GU-o3-mEN.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Rename List…"; ObjectID = "5cJ-5J-fNc"; */
+"5cJ-5J-fNc.title" = "リスト名を変更…";
+
+/* Class = "NSTextFieldCell"; title = "#"; ObjectID = "5v0-Cn-fBH"; Note = "\"Hexadecimal\" color field single-character abbreviation"; */
+ "5v0-Cn-fBH.title" = "#";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Opacity"; ObjectID = "7SA-Q5-Zna"; */
+"7SA-Q5-Zna.ibExternalAccessibilityDescription" = "不透明度";
+
+/* Class = "NSMenuItem"; title = "HSB"; ObjectID = "8JX-PI-oWy"; */
+ "8JX-PI-oWy.title" = "HSB";
+
+/* Class = "NSTextFieldCell"; title = "%"; ObjectID = "9cf-O1-Bdt"; Note = "\"Opacity\" color channel label single-character abbreviation"; */
+ "9cf-O1-Bdt.title" = "%";
+
+/* Class = "NSMenuItem"; title = "RGB Float"; ObjectID = "Am8-4u-3KF"; */
+"Am8-4u-3KF.title" = "RGBフロート";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Sample Color"; ObjectID = "D7s-yF-vyT"; */
+"D7s-yF-vyT.ibExternalAccessibilityDescription" = "サンプルカラー";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Sample a color from the screen"; ObjectID = "D7s-yF-vyT"; */
+"D7s-yF-vyT.ibShadowedToolTip" = "画面からカラーをサンプルします";
+
+/* Class = "NSTextFieldCell"; title = "R"; ObjectID = "GZg-K4-3p3"; Note = "\"Red\" color channel label single-character abbreviation"; */
+ "GZg-K4-3p3.title" = "R";
+
+/* Class = "NSMenuItem"; title = "Export…"; ObjectID = "HJ3-1K-cek"; */
+"HJ3-1K-cek.title" = "書き出す…";
+
+/* Class = "NSView"; ibExternalAccessibilityDescription = "Hue"; ObjectID = "HR4-Kl-foj"; */
+"HR4-Kl-foj.ibExternalAccessibilityDescription" = "色相";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Actions"; ObjectID = "Hg5-MP-VWZ"; */
+"Hg5-MP-VWZ.ibExternalAccessibilityDescription" = "アクション";
+
+/* Class = "NSMenuItem"; title = "Copy Color as Hex"; ObjectID = "Iuf-Xr-L0E"; */
+"Iuf-Xr-L0E.title" = "カラーを16進数でコピー";
+
+/* Class = "NSMenuItem"; title = "Move List…"; ObjectID = "Lmp-ub-HYa"; */
+"Lmp-ub-HYa.title" = "リストを移動…";
+
+/* Class = "NSButtonCell"; title = "New Project Swatch List"; ObjectID = "MIA-GB-6aH"; */
+"MIA-GB-6aH.title" = "新規プロジェクト見本リスト";
+
+/* Class = "NSMenuItem"; title = "New Global List…"; ObjectID = "N1V-Yf-AiK"; */
+"N1V-Yf-AiK.title" = "新規グローバルリスト…";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Color Space"; ObjectID = "NiF-3B-mx8"; */
+"NiF-3B-mx8.ibExternalAccessibilityDescription" = "色空間";
+
+/* Class = "NSMenuItem"; title = "Clamp to sRGB"; ObjectID = "TB9-zU-pkC"; */
+"TB9-zU-pkC.title" = "sRGBにクランプ";
+
+/* Class = "NSTextFieldCell"; title = "Swatches"; ObjectID = "Wf7-Hs-qtg"; */
+"Wf7-Hs-qtg.title" = "見本";
+
+/* Class = "NSMenuItem"; title = "HSL"; ObjectID = "Yzg-TM-VzD"; */
+ "Yzg-TM-VzD.title" = "HSL";
+
+/* Class = "NSTextFieldCell"; title = "G"; ObjectID = "Zaq-Gg-iRT"; Note = "\"Green\" color channel label single-character abbreviation"; */
+ "Zaq-Gg-iRT.title" = "G";
+
+/* Class = "NSMenuItem"; title = "RGB 8-bit"; ObjectID = "ZnI-V5-xR5"; */
+ "ZnI-V5-xR5.title" = "RGB 8-bit";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Input Format"; ObjectID = "ZrV-rn-sRo"; */
+"ZrV-rn-sRo.ibExternalAccessibilityDescription" = "入力形式";
+
+/* Class = "NSMenuItem"; title = "<<Item>>"; ObjectID = "ZsR-68-EnP"; */
+"ZsR-68-EnP.title" = "<<Item>>";
+
+/* Class = "NSMenuItem"; title = "<<Item>>"; ObjectID = "d4p-CR-ZRd"; */
+"d4p-CR-ZRd.title" = "<<Item>>";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Green"; ObjectID = "dZu-G4-aYN"; */
+"dZu-G4-aYN.ibExternalAccessibilityDescription" = "グリーン";
+
+/* Class = "NSTextFieldCell"; title = "<<Name>>"; ObjectID = "fHh-g2-5c2"; */
+"fHh-g2-5c2.title" = "<<Name>>";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Red"; ObjectID = "fe4-2f-Ydm"; */
+"fe4-2f-Ydm.ibExternalAccessibilityDescription" = "レッド";
+
+/* Class = "NSTextFieldCell"; title = "B"; ObjectID = "hBd-oU-iwK"; Note = "\"Blue\" color channel label single-character abbreviation"; */
+"hBd-oU-iwK.title" = "バイト";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "Actions"; ObjectID = "hSh-zm-Ma2"; */
+"hSh-zm-Ma2.ibExternalAccessibilityDescription" = "アクション";
+
+/* Class = "NSMenuItem"; title = "Duplicate List…"; ObjectID = "hbl-Cs-f5p"; */
+"hbl-Cs-f5p.title" = "リストを複製…";
+
+/* Class = "NSMenuItem"; title = "Import…"; ObjectID = "jNG-kI-CyB"; */
+"jNG-kI-CyB.title" = "読み込み…";
+
+/* Class = "NSView"; ibExternalAccessibilityDescription = "Saturation and Brightness"; ObjectID = "jfO-Fs-OMg"; */
+"jfO-Fs-OMg.ibExternalAccessibilityDescription" = "彩度と輝度";
+
+/* Class = "NSMenuItem"; title = "Remove List…"; ObjectID = "jl3-7f-6dD"; */
+"jl3-7f-6dD.title" = "リストを削除…";
+
+/* Class = "NSMenuItem"; title = "Rename"; ObjectID = "joh-Ji-QuO"; */
+"joh-Ji-QuO.title" = "名前を変更";
+
+/* Class = "NSTextField"; ibExternalAccessibilityDescription = "Blue"; ObjectID = "kp0-8f-V1p"; */
+"kp0-8f-V1p.ibExternalAccessibilityDescription" = "ブルー";
+
+/* Class = "NSButtonCell"; title = "New Global Swatch List"; ObjectID = "lUL-PO-uM2"; */
+"lUL-PO-uM2.title" = "新規グローバル見本リスト";
+
+/* Class = "NSView"; ibExternalAccessibilityDescription = "Opacity"; ObjectID = "mJ9-Tq-pEo"; */
+"mJ9-Tq-pEo.ibExternalAccessibilityDescription" = "不透明度";
+
+/* Class = "NSMenuItem"; title = "<<Item>>"; ObjectID = "mQd-qL-iCI"; */
+"mQd-qL-iCI.title" = "<<Item>>";
+
+/* Class = "NSTextFieldCell"; title = "<<Space>>"; ObjectID = "mpR-vk-NtV"; */
+"mpR-vk-NtV.title" = "<<Space>>";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "(Unnamed)"; ObjectID = "ncG-az-539"; */
+"ncG-az-539.ibShadowedIsNilPlaceholder" = "（名称未設定）";
+
+/* Class = "NSMenuItem"; title = "Remove"; ObjectID = "pKx-o7-gBl"; */
+"pKx-o7-gBl.title" = "削除";
+
+/* Class = "NSTextFieldCell"; title = "<<Value>>"; ObjectID = "sC2-Is-i8s"; */
+"sC2-Is-i8s.title" = "<<Value>>";
+
+/* Class = "NSMenuItem"; title = "New Project List…"; ObjectID = "sms-6e-4U1"; */
+"sms-6e-4U1.title" = "新規プロジェクトリスト…";
+
+/* Class = "NSTextFieldCell"; title = "Create swatch lists to organize colors. You can store them in your project, or globally to reuse everywhere."; ObjectID = "uIS-9I-Wp0"; */
+"uIS-9I-Wp0.title" = "カラーを整理するための見本リストを作成します。プロジェクトに保存することも、グローバルに保存してどこから再利用することも可能です。";
+
+/* Class = "NSMenuItem"; title = "Show sRGB Clamp Curve"; ObjectID = "uSZ-Et-HPR"; */
+"uSZ-Et-HPR.title" = "sRGB色空間を表示";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "Presentation"; ObjectID = "vMz-sx-ZhJ"; */
+"vMz-sx-ZhJ.ibExternalAccessibilityDescription" = "Presentation";
+
+/* Class = "NSSegmentedCell"; wi1-Vc-fw4.ibShadowedLabels[0] = "Picker"; ObjectID = "wi1-Vc-fw4"; */
+"wi1-Vc-fw4.ibShadowedLabels[0]" = "Picker";
+
+/* Class = "NSSegmentedCell"; wi1-Vc-fw4.ibShadowedLabels[1] = "Swatches"; ObjectID = "wi1-Vc-fw4"; */
+"wi1-Vc-fw4.ibShadowedLabels[1]" = "Swatches";
+
+/* Class = "NSMenuItem"; title = "New Swatch from Color"; ObjectID = "z4f-mf-7oh"; */
+"z4f-mf-7oh.title" = "カラーから新規見本を作成";

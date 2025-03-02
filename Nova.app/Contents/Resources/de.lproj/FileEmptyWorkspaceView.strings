@@ -1,0 +1,24 @@
+
+/* Class = "NSButtonCell"; title = "New Project…"; ObjectID = "8T2-5Q-ejn"; */
+"8T2-5Q-ejn.title" = "Neues Projekt …";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "HqT-Xs-Adx"; */
+"HqT-Xs-Adx.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "Open…"; ObjectID = "SaV-LJ-tdV"; */
+"SaV-LJ-tdV.title" = "Öffnen …";
+
+/* Class = "NSTextFieldCell"; title = "Group Name"; ObjectID = "Tqe-h9-kKK"; */
+"Tqe-h9-kKK.title" = "Gruppenname";
+
+/* Class = "NSTextFieldCell"; title = "You have not yet chosen a project\nfor this window."; ObjectID = "Xlp-cL-3np"; */
+"Xlp-cL-3np.title" = "Sie haben noch kein Projekt für dieses\nFenster ausgewählt.";
+
+/* Class = "NSTextFieldCell"; title = "Connecting…"; ObjectID = "lDv-aY-Nf6"; */
+"lDv-aY-Nf6.title" = "Verbinden …";
+
+/* Class = "NSButtonCell"; title = "Clone…"; ObjectID = "nhO-9N-uel"; */
+"nhO-9N-uel.title" = "Klonen …";
+
+/* Class = "NSTextFieldCell"; title = "Filename"; ObjectID = "s4S-z1-6i7"; */
+"s4S-z1-6i7.title" = "Dateiname";

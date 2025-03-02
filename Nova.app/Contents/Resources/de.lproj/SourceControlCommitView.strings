@@ -1,0 +1,27 @@
+
+/* Class = "NSTextFieldCell"; title = "SHA"; ObjectID = "3u1-JM-TIj"; */
+"3u1-JM-TIj.title" = "SHA";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Copy commit hash"; ObjectID = "5ES-5Y-ozU"; */
+"5ES-5Y-ozU.ibShadowedToolTip" = "Commit-Hash kopieren";
+
+/* Class = "NSButtonCell"; title = "Checkout…"; ObjectID = "5gL-8v-g2Q"; */
+"5gL-8v-g2Q.title" = "Auschecken …";
+
+/* Class = "NSTextFieldCell"; title = "Summary"; ObjectID = "C9w-f0-JHU"; */
+"C9w-f0-JHU.title" = "Zusammenfassung";
+
+/* Class = "NSButtonCell"; title = "Cherry-Pick…"; ObjectID = "W0n-4P-dje"; */
+"W0n-4P-dje.title" = "Cherry-Pick …";
+
+/* Class = "NSButtonCell"; title = "New Tag…"; ObjectID = "dw1-en-DGR"; */
+"dw1-en-DGR.title" = "Neues Tag …";
+
+/* Class = "NSTextFieldCell"; title = "Date"; ObjectID = "fZ5-nx-1m8"; */
+"fZ5-nx-1m8.title" = "Datum";
+
+/* Class = "NSTextFieldCell"; title = "Author"; ObjectID = "r4B-HW-9J1"; */
+"r4B-HW-9J1.title" = "Autor";
+
+/* Class = "NSButtonCell"; title = "New Branch…"; ObjectID = "sCL-S0-H1n"; */
+"sCL-S0-H1n.title" = "Neuer Zweig …";

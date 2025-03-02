@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="html+ejs">
+    <meta>
+        <name>HTML (EJS)</name>
+        <type>markup</type>
+        <preferred-file-extension>html.ejs</preferred-file-extension>
+        <parent>html</parent>
+    </meta>
+    
+    <detectors>
+        <extension>html.ejs,htm.ejs</extension>
+    </detectors>
+    
+    <comments>
+        <multiline>
+            <starts-with>
+                <expression>&lt;!--</expression>
+            </starts-with>
+            <ends-with>
+                <expression>--&gt;</expression>
+            </ends-with>
+        </multiline>
+    </comments>
+    
+    <injection>
+        <expression>^(ejs|html\+js|html\+ejs)$</expression>
+    </injection>
+    
+    <tree-sitter language="embedded_template">
+        <highlights path="html+ejs/highlights.scm" />
+        <injections path="html+ejs/injections.scm" />
+    </tree-sitter>
+</syntax>

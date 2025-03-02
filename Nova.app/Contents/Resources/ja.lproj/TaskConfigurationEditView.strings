@@ -1,0 +1,261 @@
+
+/* Class = "NSButtonCell"; title = "Path:"; ObjectID = "0Ez-uV-9Aa"; */
+"0Ez-uV-9Aa.title" = "パス:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Automatic"; ObjectID = "0g3-hP-pPh"; */
+"0g3-hP-pPh.placeholderString" = "自動";
+
+/* Class = "NSTextFieldCell"; title = "Environment Variables"; ObjectID = "1UK-Bn-CuO"; */
+"1UK-Bn-CuO.title" = "環境変数";
+
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "Variable"; ObjectID = "1ej-F8-UuC"; */
+"1ej-F8-UuC.ibShadowedIsNilPlaceholder" = "変数";
+
+/* Class = "NSMenuItem"; title = "On Finish"; ObjectID = "1j3-a1-JIy"; */
+"1j3-a1-JIy.title" = "完了時";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Automatic"; ObjectID = "1vO-nR-tCw"; */
+"1vO-nR-tCw.placeholderString" = "自動";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "2kI-mC-01h"; */
+"2kI-mC-01h.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "The command or shell that should receive the script to run."; ObjectID = "2pk-uI-w6Y"; */
+"2pk-uI-w6Y.title" = "実行のためのスクリプトを受け取るコマンドまたはシェルです。";
+
+/* Class = "NSMenuItem"; title = "Never"; ObjectID = "3PI-72-e1s"; */
+"3PI-72-e1s.title" = "しない";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "insert shebang"; ObjectID = "3ep-v6-GOU"; */
+"3ep-v6-GOU.ibExternalAccessibilityDescription" = "シバン宣言を挿入";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Insert a shebang for the script language"; ObjectID = "3ep-v6-GOU"; */
+"3ep-v6-GOU.ibShadowedToolTip" = "スクリプト言語にシバン宣言を挿入します";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Automatic"; ObjectID = "42U-Ax-TwN"; */
+"42U-Ax-TwN.placeholderString" = "自動";
+
+/* Class = "NSTextFieldCell"; title = "The command or shell that should receive the script to run."; ObjectID = "59N-dY-AZI"; */
+"59N-dY-AZI.title" = "実行のためのスクリプトを受け取るコマンドまたはシェルです。";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "5BZ-tj-mSO"; */
+"5BZ-tj-mSO.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "6Pf-Q9-NTN"; */
+"6Pf-Q9-NTN.title" = "Item 1";
+
+/* Class = "NSTableColumn"; headerCell.title = "Value"; ObjectID = "732-Im-xgy"; */
+"732-Im-xgy.headerCell.title" = "値";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "insert shebang"; ObjectID = "81j-zm-Hiv"; */
+"81j-zm-Hiv.ibExternalAccessibilityDescription" = "シバン宣言を挿入";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Insert a shebang for the script language"; ObjectID = "81j-zm-Hiv"; */
+"81j-zm-Hiv.ibShadowedToolTip" = "スクリプト言語にシバン宣言を挿入します";
+
+/* Class = "NSTabViewItem"; label = "Arguments"; ObjectID = "8W4-oC-XOm"; */
+"8W4-oC-XOm.label" = "引数";
+
+/* Class = "NSButtonCell"; title = "Build Before Running"; ObjectID = "8s4-T5-2DN"; */
+"8s4-T5-2DN.title" = "実行前にビルドする";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Value"; ObjectID = "9Qi-Im-NJc"; */
+"9Qi-Im-NJc.placeholderString" = "値";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "remove argument"; ObjectID = "9bK-tE-PeV"; */
+"9bK-tE-PeV.ibExternalAccessibilityDescription" = "引数を削除";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "Acl-gy-dwD"; */
+"Acl-gy-dwD.title" = "Item 2";
+
+/* Class = "NSTabViewItem"; label = "Run"; ObjectID = "BOm-hT-sE6"; */
+"BOm-hT-sE6.label" = "実行";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "BsK-4u-rq5"; */
+"BsK-4u-rq5.title" = "Item 3";
+
+/* Class = "NSButtonCell"; title = "Script:"; ObjectID = "F2R-zI-Ou3"; */
+"F2R-zI-Ou3.title" = "スクリプト:";
+
+/* Class = "NSTextFieldCell"; title = "Arguments Passed On Launch"; ObjectID = "For-Jr-JD6"; */
+"For-Jr-JD6.title" = "起動時に渡される引数";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Variable"; ObjectID = "GST-tt-H0r"; */
+"GST-tt-H0r.placeholderString" = "変数";
+
+/* Class = "NSTextFieldCell"; title = "Interpreter:"; ObjectID = "Gqh-Ps-nkp"; */
+"Gqh-Ps-nkp.title" = "インタプリタ:";
+
+/* Class = "NSTextFieldCell"; title = "The command or shell that should receive the script to run."; ObjectID = "H8s-PG-ljV"; */
+"H8s-PG-ljV.title" = "実行のためのスクリプトを受け取るコマンドまたはシェルです。";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "HGX-0Q-GvR"; */
+"HGX-0Q-GvR.title" = "Item 3";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "script language"; ObjectID = "HNB-kZ-0XQ"; */
+"HNB-kZ-0XQ.ibExternalAccessibilityDescription" = "スクリプト言語";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Set the script language"; ObjectID = "HNB-kZ-0XQ"; */
+"HNB-kZ-0XQ.ibShadowedToolTip" = "スクリプト言語を設定します";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "HoH-Qq-xB0"; */
+"HoH-Qq-xB0.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Interpreter:"; ObjectID = "I1U-DD-QOK"; */
+"I1U-DD-QOK.title" = "インタプリタ:";
+
+/* Class = "NSTextFieldCell"; title = "Scripts receive the action being invoked as an environment variable named NOVA_TASK_NAME."; ObjectID = "JcR-Xr-FJJ"; */
+"JcR-Xr-FJJ.title" = "スクリプトはNOVA_TASK_NAMEという名前の環境変数として呼び出されるアクションを受け取ります。";
+
+/* Class = "NSButtonCell"; title = "Enable the Clean action for this task"; ObjectID = "Jm9-Oj-cqU"; */
+"Jm9-Oj-cqU.title" = "このタスクのクリーンアクションを有効にする";
+
+/* Class = "NSButtonCell"; title = "Choose…"; ObjectID = "L8c-SA-abA"; */
+"L8c-SA-abA.title" = "選択…";
+
+/* Class = "NSTableColumn"; headerCell.title = "Value"; ObjectID = "Lig-U4-6nF"; */
+"Lig-U4-6nF.headerCell.title" = "引数";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "script language"; ObjectID = "NE0-Qs-xAR"; */
+"NE0-Qs-xAR.ibExternalAccessibilityDescription" = "スクリプト言語";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Set the script language"; ObjectID = "NE0-Qs-xAR"; */
+"NE0-Qs-xAR.ibShadowedToolTip" = "スクリプト言語を設定します";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "insert shebang"; ObjectID = "Oe6-k5-13J"; */
+"Oe6-k5-13J.ibExternalAccessibilityDescription" = "シバン宣言を挿入";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Insert a shebang for the script language"; ObjectID = "Oe6-k5-13J"; */
+"Oe6-k5-13J.ibShadowedToolTip" = "スクリプト言語にシバン宣言を挿入します";
+
+/* Class = "NSButtonCell"; title = "Global Variables"; ObjectID = "QkW-3T-ebt"; */
+"QkW-3T-ebt.title" = "グローバル変数";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "QrU-pQ-OhF"; */
+"QrU-pQ-OhF.title" = "Item 2";
+
+/* Class = "NSButtonCell"; title = "Enable the Build action for this task"; ObjectID = "SYZ-pQ-z2O"; */
+"SYZ-pQ-z2O.title" = "このタスクのクリーンアクションを有効にする";
+
+/* Class = "NSButtonCell"; title = "Path:"; ObjectID = "Uag-rF-czF"; */
+"Uag-rF-czF.title" = "パス:";
+
+/* Class = "NSTextFieldCell"; title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."; ObjectID = "Uz2-Hl-HUn"; */
+"Uz2-Hl-HUn.title" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+
+/* Class = "NSTextFieldCell"; title = "Interpreter:"; ObjectID = "Vhm-bX-4it"; */
+"Vhm-bX-4it.title" = "インタプリタ:";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "add argument"; ObjectID = "VnV-Qi-u2c"; */
+"VnV-Qi-u2c.ibExternalAccessibilityDescription" = "引数を追加";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "WEV-Dc-MoZ"; */
+"WEV-Dc-MoZ.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "X2f-WH-Dyh"; */
+"X2f-WH-Dyh.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Insert Wildcard"; ObjectID = "XGF-Ln-Rsd"; */
+"XGF-Ln-Rsd.title" = "ワイルドカードを挿入";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "YDK-pm-LB3"; */
+"YDK-pm-LB3.title" = "Item 2";
+
+/* Class = "NSButtonCell"; title = "Script:"; ObjectID = "Z8S-R9-wq9"; */
+"Z8S-R9-wq9.title" = "スクリプト:";
+
+/* Class = "NSTextFieldCell"; title = "Open report:"; ObjectID = "ZUz-s2-leh"; */
+"ZUz-s2-leh.title" = "レポートを開く:";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Show and manage available servers"; ObjectID = "aRF-Ib-K7K"; */
+"aRF-Ib-K7K.ibShadowedToolTip" = "利用可能なサーバの表示と管理を行います";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Value"; ObjectID = "aa0-nk-68G"; */
+"aa0-nk-68G.placeholderString" = "値";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "au6-vA-aoF"; */
+"au6-vA-aoF.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "bBV-4l-yjJ"; */
+"bBV-4l-yjJ.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Insert Wildcard"; ObjectID = "bVk-Gt-04p"; */
+"bVk-Gt-04p.title" = "ワイルドカードを挿入";
+
+/* Class = "NSButtonCell"; title = "Choose…"; ObjectID = "bm2-SE-LhD"; */
+"bm2-SE-LhD.title" = "選択…";
+
+/* Class = "NSMenuItem"; title = "On Failure"; ObjectID = "cpw-tk-DAg"; */
+"cpw-tk-DAg.title" = "失敗時";
+
+/* Class = "NSTableColumn"; headerCell.title = "Variable"; ObjectID = "d21-dM-hZZ"; */
+"d21-dM-hZZ.headerCell.title" = "変数";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "dvz-aW-iFU"; */
+"dvz-aW-iFU.title" = "Item 2";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "add environment variable"; ObjectID = "eLX-jY-Tgd"; */
+"eLX-jY-Tgd.ibExternalAccessibilityDescription" = "環境変数を追加";
+
+/* Class = "NSPopUpButton"; ibExternalAccessibilityDescription = "script language"; ObjectID = "fu8-fp-hhd"; */
+"fu8-fp-hhd.ibExternalAccessibilityDescription" = "スクリプト言語";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Set the script language"; ObjectID = "fu8-fp-hhd"; */
+"fu8-fp-hhd.ibShadowedToolTip" = "スクリプト言語を設定します";
+
+/* Class = "NSButtonCell"; title = "Script:"; ObjectID = "gHY-Yl-Tdf"; */
+"gHY-Yl-Tdf.title" = "スクリプト:";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "gWc-Go-EhY"; */
+"gWc-Go-EhY.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "h7I-UK-5hW"; */
+"h7I-UK-5hW.title" = "Item 2";
+
+/* Class = "NSButtonCell"; title = "Choose…"; ObjectID = "hC0-hT-HXv"; */
+"hC0-hT-HXv.title" = "選択…";
+
+/* Class = "NSButtonCell"; title = "Show progress indicator in the toolbar"; ObjectID = "hqC-KB-G5O"; */
+"hqC-KB-G5O.title" = "アクティビティをツールバーに表示する";
+
+/* Class = "NSTabViewItem"; label = "Build"; ObjectID = "jRW-gA-NL1"; */
+"jRW-gA-NL1.label" = "ビルド";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "jiA-dX-jah"; */
+"jiA-dX-jah.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "On Success"; ObjectID = "jjy-QX-4bQ"; */
+"jjy-QX-4bQ.title" = "成功時";
+
+/* Class = "NSButtonCell"; title = "#!"; ObjectID = "jyz-yv-xAm"; */
+"jyz-yv-xAm.title" = "#!";
+
+/* Class = "NSButtonCell"; title = "#!"; ObjectID = "nuT-Cm-hfW"; */
+"nuT-Cm-hfW.title" = "#!";
+
+/* Class = "NSButtonCell"; title = "Enable the Run action for this task"; ObjectID = "o9g-Tj-v3c"; */
+"o9g-Tj-v3c.title" = "このタスクのクリーンアクションを有効にする";
+
+/* Class = "NSButtonCell"; title = "#!"; ObjectID = "osd-IE-P35"; */
+"osd-IE-P35.title" = "#!";
+
+/* Class = "NSTabViewItem"; label = "Clean"; ObjectID = "p8Z-As-YPP"; */
+"p8Z-As-YPP.label" = "クリーン";
+
+/* Class = "NSButton"; ibExternalAccessibilityDescription = "remove environment variable"; ObjectID = "r02-wE-YC0"; */
+"r02-wE-YC0.ibExternalAccessibilityDescription" = "環境変数を削除";
+
+/* Class = "NSTextFieldCell"; title = "Where:"; ObjectID = "sI6-lE-bG2"; */
+"sI6-lE-bG2.title" = "場所: ";
+
+/* Class = "NSMenuItem"; title = "On Run"; ObjectID = "uDW-hF-h09"; */
+"uDW-hF-h09.title" = "実行時";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "vuz-S0-aLn"; */
+"vuz-S0-aLn.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "x86-Hi-tao"; */
+"x86-Hi-tao.title" = "Item 2";
+
+/* Class = "NSButtonCell"; title = "Path:"; ObjectID = "yAD-vO-40b"; */
+"yAD-vO-40b.title" = "パス:";

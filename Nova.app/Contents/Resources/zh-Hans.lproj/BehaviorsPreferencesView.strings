@@ -1,0 +1,117 @@
+
+/* Class = "NSMenuItem"; title = "Show"; ObjectID = "1IL-eR-hdk"; */
+"1IL-eR-hdk.title" = "显示";
+
+/* Class = "NSMenuItem"; title = "Extension Console"; ObjectID = "2N4-sA-fAQ"; */
+"2N4-sA-fAQ.title" = "扩展控制台";
+
+/* Class = "NSTextFieldCell"; title = "sidebar"; ObjectID = "5hJ-xi-kjL"; */
+"5hJ-xi-kjL.title" = "边栏";
+
+/* Class = "NSTextFieldCell"; title = "<<Item>>"; ObjectID = "5zP-C4-pVF"; */
+"5zP-C4-pVF.title" = "<<Item>>";
+
+/* Class = "NSMenuItem"; title = "Debug"; ObjectID = "6Jr-ve-CnD"; */
+"6Jr-ve-CnD.title" = "调试";
+
+/* Class = "NSButtonCell"; title = "Play sound"; ObjectID = "7r5-Um-kN4"; */
+"7r5-Um-kN4.title" = "播放声音";
+
+/* Class = "NSButtonCell"; title = "Run"; ObjectID = "Av2-6u-JC1"; */
+"Av2-6u-JC1.title" = "运行";
+
+/* Class = "NSMenuItem"; title = "Transcript"; ObjectID = "Chk-kJ-wKw"; */
+"Chk-kJ-wKw.title" = "抄本";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Ckv-a2-kYS"; */
+"Ckv-a2-kYS.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "DTo-6W-6Qw"; */
+"DTo-6W-6Qw.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "Ja4-vh-iqb"; */
+"Ja4-vh-iqb.title" = "Item 3";
+
+/* Class = "NSButtonCell"; title = "Speak announcement using"; ObjectID = "JvY-iD-uMW"; */
+"JvY-iD-uMW.title" = "讲出公告使用";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "Jw1-2t-3po"; */
+"Jw1-2t-3po.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Current"; ObjectID = "KPs-Fu-Olz"; */
+"KPs-Fu-Olz.title" = "当前";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "KT8-P1-rP3"; */
+"KT8-P1-rP3.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Remote"; ObjectID = "L77-5I-tAH"; */
+"L77-5I-tAH.title" = "远程";
+
+/* Class = "NSMenuItem"; title = "Hide"; ObjectID = "M57-6l-OtC"; */
+"M57-6l-OtC.title" = "隐藏";
+
+/* Class = "NSButtonCell"; title = "Notify using bezel or system notification"; ObjectID = "NLw-1G-7Ri"; */
+"NLw-1G-7Ri.title" = "通知时使用提醒卡或系统通知";
+
+/* Class = "NSMenuItem"; title = "Find"; ObjectID = "Ntg-ZG-Szx"; */
+"Ntg-ZG-Szx.title" = "查找";
+
+/* Class = "NSButtonCell"; title = "Bounce icon in Dock if application inactive"; ObjectID = "OQP-A1-Y8U"; */
+"OQP-A1-Y8U.title" = "如果应用程序不活动，则在程序坞中跳动图标";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "PTP-m3-F5W"; */
+"PTP-m3-F5W.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Debug Console"; ObjectID = "PnE-FN-awf"; */
+"PnE-FN-awf.title" = "调试器";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "Xtk-uU-cN3"; */
+"Xtk-uU-cN3.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Git"; ObjectID = "f6I-7k-49c"; */
+"f6I-7k-49c.title" = "Git";
+
+/* Class = "NSMenuItem"; title = "Hide"; ObjectID = "gGG-0S-cMS"; */
+"gGG-0S-cMS.title" = "隐藏";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "gMv-w6-4gf"; */
+"gMv-w6-4gf.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "<<Item>>"; ObjectID = "hXe-Ca-j7a"; */
+"hXe-Ca-j7a.title" = "<<Item>>";
+
+/* Class = "NSMenuItem"; title = "Publish"; ObjectID = "hbW-Go-oUO"; */
+"hbW-Go-oUO.title" = "发布";
+
+/* Class = "NSMenuItem"; title = "Clips"; ObjectID = "jqm-tk-00e"; */
+"jqm-tk-00e.title" = "剪辑";
+
+/* Class = "NSMenuItem"; title = "Current"; ObjectID = "nOS-es-8EF"; */
+"nOS-es-8EF.title" = "当前";
+
+/* Class = "NSMenuItem"; title = "Files"; ObjectID = "pFJ-bq-usX"; */
+"pFJ-bq-usX.title" = "文件";
+
+/* Class = "NSMenuItem"; title = "Reports"; ObjectID = "q6c-Ib-ul0"; */
+"q6c-Ib-ul0.title" = "报告";
+
+/* Class = "NSTextFieldCell"; title = "debug pane"; ObjectID = "q7i-Ex-pfF"; */
+"q7i-Ex-pfF.title" = "调试窗格";
+
+/* Class = "NSTextFieldCell"; title = "<<Header>>"; ObjectID = "qBb-Kd-KkO"; */
+"qBb-Kd-KkO.title" = "<<Header>>";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "qdf-T6-Riy"; */
+"qdf-T6-Riy.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Issues"; ObjectID = "rLb-PN-DVU"; */
+"rLb-PN-DVU.title" = "问题";
+
+/* Class = "NSMenuItem"; title = "Show"; ObjectID = "sMV-cw-y0c"; */
+"sMV-cw-y0c.title" = "显示";
+
+/* Class = "NSMenuItem"; title = "Symbols"; ObjectID = "sdk-YC-GZy"; */
+"sdk-YC-GZy.title" = "符号";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "xPj-oN-wTC"; */
+"xPj-oN-wTC.title" = "Item 2";
